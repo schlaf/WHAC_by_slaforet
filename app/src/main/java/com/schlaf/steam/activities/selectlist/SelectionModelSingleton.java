@@ -256,7 +256,7 @@ public class SelectionModelSingleton {
 	/**
 	 * return every unique entry that has the warjack in attachment (caster, jack marshall). if return.size() > 1, the user must
 	 * be prompted in case of deletion
-	 * @param unitId
+	 * @param warjackId
 	 * @return ArrayList<SelectedUnit>
 	 */
 	public List<JackCommander> warjackDeletionChoices(String warjackId) {
@@ -496,8 +496,8 @@ public class SelectionModelSingleton {
 	
 	/**
 	 * remove first occurence of warjack/beast for selected caster/warlock
-	 * @param jack
-	 * @param caster
+	 * @param jackId
+	 * @param casterOrMarshall
 	 */
 	public void removeWarjack(String jackId, JackCommander casterOrMarshall) {
 		casterOrMarshall.removeJack(jackId);
@@ -520,7 +520,8 @@ public class SelectionModelSingleton {
 	
 	/**
 	 * directly remove entry from list
-	 * @param entry
+	 * @param group
+     * @param child
 	 */
 	public void removeSelectedSubEntry(SelectedEntry group, SelectedEntry child) {
 		if (group instanceof SelectedArmyCommander) {
@@ -1308,7 +1309,7 @@ public class SelectionModelSingleton {
 			HashMap<String, TierEntry> map = level.getOnlyModelsById(); 
 			for (SelectionEntry model : selectionEntries) {
 				if (model.isSelected()) {
-					if ( ! map.containsKey(model.getId()) ) {
+					if ( ! map.containsKey(model.getId()) && !model.isObjective()) { // objectives do not count!
 //						Log.d("computeTiersLevel", "model " + model.getId() + " not authorized in tiers level " + level.getLevel());
 						levelOK = false;
 						break;
@@ -1414,10 +1415,16 @@ public class SelectionModelSingleton {
 			// all FA to 0, except those accepted in tiers/contracts, which will be setted after
 			for (SelectionEntry entry : selectionEntries) {
 				entry.setAlteredFA(0);
-			}
+                // make sure objectives can be selected
+                if (entry.isObjective()) {
+                    entry.setAlteredFA(1);
+                }
+            }
 		}
-		
-		if (currentTiers != null) {
+
+
+
+        if (currentTiers != null) {
 			// allow only allowed models with their base FA
 			for (TierLevel level : currentTiers.getLevels()) {
 				for (TierEntry allowedModel : level.getOnlyModels()) {
@@ -1781,8 +1788,7 @@ public class SelectionModelSingleton {
 	
 	/**
 	 * return every entry, searching in attached jacks, ua, wa, ... 
-	 * @param id
-	 * @return
+	 * @return List<SelectedEntry>
 	 */
 	private List<SelectedEntry> getSelectedEntriesIncludingChildren() {
 		ArrayList<SelectedEntry> result = new ArrayList<SelectedEntry>();
@@ -2068,8 +2074,6 @@ public class SelectionModelSingleton {
 	
 	/**
 	 * handle selectable value for mercs entry
-	 * @param warcasterCount
-	 * @param mercWarcasterCount
 	 */
 	private void handleOnlyInTiersOrContracts() {
 		// hide all models not allowed unless in a specific tiers
