@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset xsi:noNamespaceSchemaLocation="warmachine.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <armies>
+    <army faction="faction_skorne" name="Skorne">
+      <warlocks>
+        <warlock id="Sw01" name="Master Tormentor Morghoul" generation="P" full_name="Master Tormentor Morghoul" qualification="Skorne Warlock" fury="5" warbeast_points="7" fa="C" completed="true">
+          <basestats name="MORGHOUL" spd="7" str="6" mat="8" rat="4" def="17" arm="13" cmd="8" hitpoints="15" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Ripper " pow="3" count="2" p_plus_s="9" magical="true">
+              <capacity title="DOUBLE STRIKE">This model can make two additional attacks for each fury point spent to make additional attacks with this weapon.</capacity>
+              <capacity title="INFLICT PAIN">When it hits a warbeast with this weapon, this model can place 1 fury point on or remove 1 fury point from the warbeast.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Pain &amp; Suffering">While in Morghoul's control area, enemy models cannot spend focus, be forced, or have damage transferred to them. Pain &amp; Suffering lasts for one round.</feat>
+          <spell name="ABUSE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly warbeast gains +2 SPD and STR for one round but suffers d3 damage points.</spell>
+          <spell name="ADMONITION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement within 6" of target model in this model's battlegroup, the affected model can immediately advance up to 3", then Admonition expires. The affected model cannot be targeted by free strikes during this movement.</spell>
+          <spell name="TORMENT" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">When a model is damaged by Torment, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.</spell>
+          <capacity title="ANATOMICAL PRECISION">When this model's melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+          <capacity title="MALTREATMENT">Once per turn during its activation this model can remove 1 fury point from a warbeast in its battlegroup that is in its control area and add 1 fury point to its own current total. The warbeast suffers  d3 damage points.</capacity>
+          <capacity title="OVERTAKE">When this model destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1".</capacity>
+          <capacity title="PERFECT BALANCE">This model cannot be targeted by combined melee attacks, combined ranged attacks, or free strikes. Models do not gain back strike bonuses against this model. When knocked down, this model can stand up during its activation without forfeiting its movement or action if it is able to forfeit its movement or action to stand up.</capacity>
+          <capacity title="SPRINT">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+        </warlock>
+        <warlock id="Sx01" name="Lord Assassin Morghoul" generation="E" full_name="Lord Assassin Morghoul" qualification="Skorne Epic Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
+          <basestats name="MORGHOUL" spd="7" str="6" mat="8" rat="4" def="17" arm="13" cmd="8" hitpoints="15" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Mercy" pow="6" p_plus_s="12" magical="true" weapon_master="true" />
+            <melee_weapon name="Fan of Shadows" pow="2" p_plus_s="8" magical="true">
+              <capacity title="BLIND">When a model is hit by an attack with this weapon, it suffers Blind for one round. (A blind model cannot make ranged or magic attacks, suffers from –4 MAT and DEF, cannot run or charge, and must forfeit either its movement or action during its next activation.)</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Assassination Run">Whie in Morghoul's control area, friendly Faction models gain +2 DEF and Evasive. Assassination Run lasts for one round. (A model with Evasive cannot be targeted by free strikes. It can advance up to 2" immediately after an enemy ranged attack that missed it is resolved unless it was missed while advancing.)</feat>
+          <spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes one normal melee attack with one of its melee weapons against each enemy model in its LOS that is in the weapon's melee range. These attacks are simultaneous.</spell>
+          <spell name="GHOST WALK" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains Ghostly for one turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)</spell>
+          <spell name="SILENCE OF DEATH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit's melee weapons gain Grievous Wounds. (When a model is hit by a weapon with Grievous Wounds, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.)</spell>
+          <capacity title="APPARITION">During your Control Phase, place this model anywhere completely within 2" of its current location.</capacity>
+          <capacity title="ARCANE ASSASSIN">When making attacks, ignore focus points overboosting the target's Power Field and spell effects adding to its ARM or DEF.</capacity>
+          <capacity title="ELITE CADRE [PAINGIVERS]">Friendly Paingiver models gain Perfect Balance.</capacity>
+          <capacity title="PERFECT BALANCE">This model cannot be targeted by combined melee attacks, combined ranged attacks, or free strikes. Models do not gain back strike bonuses against this model. When knocked down, this model can stand up during its activation without forfeiting its movement or action if it is able to forfeit its movement or action to stand up.</capacity>
+        </warlock>
+        <warlock id="Sw02" name="Archdomina Makeda" generation="P" full_name="Archdomina Makeda" qualification="Skorne Warlock" fury="6" warbeast_points="5" fa="C" completed="true">
+          <basestats name="MAKEDA" spd="6" str="7" mat="7" rat="4" def="15" arm="16" cmd="9" hitpoints="16" />
+          <weapons>
+            <melee_weapon name="Sword of Baalash " pow="5" count="2" p_plus_s="12" magical="true">
+              <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Walking Death">For one round, friendly living Faction trooper models destroyed while in Makeda's control area return to play during your next Maintenance Phase with one unmarked damage box. Place returned models in Makeda's control area in formation and within 3" of another model in their units. Returned models forfeit their normal movement the turn they are placed.</feat>
+          <spell name="CARNAGE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction models gain +2 to melee attack rolls against enemy models in this model's control area. Carnage lasts for one turn.</spell>
+          <spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and ARM.</spell>
+          <spell name="MUZZLE" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Muzzle cannot advance toward this model for one round.</spell>
+          <spell name="SAVAGERY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +5 SPD when making a full advance but cannot make ranged attacks.</spell>
+          <capacity title="BLOOD-QUENCHED">This model gains a cumulative +1 STR and ARM for each living enemy model it destroys with a melee attack during its activation. This bonus lasts for one round.</capacity>
+          <capacity title="INSPIRATION [SKORNE MODELS]">Friendly Skorne models/units in this model's command range never flee and immediately rally.</capacity>
+          <capacity title="SIDE STEP">When this model hits an enemy model with an initial attack or a special attack that is not a power attack, it can advance up to 2" after the attack is resolved. This model cannot be targeted by free strikes during this movement.</capacity>
+        </warlock>
+        <warlock id="Sx02" name="Supreme Archdomina Makeda" generation="E" full_name="Supreme Archdomina Makeda" qualification="Skorne Epic Warlock" fury="6" warbeast_points="5" fa="C" completed="true">
+          <basestats name="MAKEDA" spd="6" str="7" mat="7" rat="4" def="15" arm="17" cmd="10" hitpoints="16" />
+          <weapons>
+            <melee_weapon name="Sword of Baalash " pow="5" count="2" p_plus_s="12" magical="true" />
+          </weapons>
+          <feat title="Instruments of War">While in Makeda's control area, friendly Faction models gain boosted melee attack rolls and cannot be knocked down or targeted by free strikes. Instruments of War lasts for one round.</feat>
+          <spell name="ENGINE OF DESTRUCTION" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains +2 SPD, +4 STR and +4 MAT or one round.</spell>
+          <spell name="LEASH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Immediately after this model ends its normal movement, target warbeast in its battlegroup can advance up to 3" toward it.</spell>
+          <spell name="ROAD TO WAR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction non-warlock models activating in this model's control area gain +2" movement this turn.</spell>
+          <spell name="STRANGLEHOLD" cost="2" rng="10" aoe="-" pow="11" up="NO" off="YES">A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.</spell>
+          <capacity title="ELITE CADRE [PRAETORIAN SWORDSMEN]">Friendly Praetorian Swordsmen models gain Vengeance. (During your Maintenance Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.)</capacity>
+          <capacity title="INSPIRATION [SKORNE MODELS]">Friendly Skorne models/units in this model's command range never flee and immediately rally.</capacity>
+          <capacity title="STAY DEATH">Once per turn, when a friendly living Faction trooper model is disabled in this model's command range, this model can spend 1 fury point for the disabled model to heal 1 damage point.</capacity>
+        </warlock>
+        <warlock id="Sz02" name="Makeda &amp; the Exalted Court" generation="EE" full_name="Makeda &amp; the Exalted Court" qualification="Skorne Epic Warlock Unit" fury="6" warbeast_points="2" fa="C" completed="true">
+          <basestats name="MAKEDA" spd="6" str="7" mat="8" rat="4" def="15" arm="17" cmd="10" hitpoints="16" officer="true" />
+          <weapons>
+            <melee_weapon name="Talon of Murzoul" pow="8" p_plus_s="15" magical="true" reach="true">
+              <capacity title="BLOOD BOON">Once per activation, immediately after resolving an attack in which it destroyed a living enemy model with this weapon, this model can cast a spell with COST 3 or less without spending fury.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Dance of Death">When a model in Makeda's battlegroup destroys one or more enemy models in her control area with an attack, either Makeda can gain 1 fury point or 1 fury point can be removed from a model in her battlegroup that is in her control area. Dance of Death lasts for one turn.</feat>
+          <spell name="ELIMINATOR" cost="3" rng="8" aoe="3" pow="13" up="NO" off="YES">Immediately after this attack is resolved, this model can advance up to 2" for each enemy model destroyed by the attack.</spell>
+          <spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Center a 5" AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll. Each enemy model damaged by Ground Zero is pushed d6" directly away from this model in the order you choose.</spell>
+          <spell name="SUNHAMMER" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Enemy warbeasts/warjacks that advance more than 1" and end their normal movement in this model's control area suffer d3 damage points.</spell>
+          <spell name="VORTEX OF DESTRUCTION" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">Damage rolls against enemy models in this model's melee range are automatically boosted.</spell>
+          <capacity title="WARLOCK UNIT">This unit is made up of Makeda and 2 Exalted Guardians.</capacity>
+          <capacity title="INSPIRATION [SKORNE]">Friendly Skorne models/units in this model's command range never flee and immediately rally.</capacity>
+          <capacity title="BATTLE-DRIVEN">When a model in this unit is damaged by an enemy attack, after the attack is resolved models in this unit gain +2 STR and ARM and Pathfinder for one round.</capacity>
+          <model id="Exalted Guardian 1">
+            <basestats name="EXALTED GUARDIAN A" spd="6" str="7" mat="8" rat="3" def="12" arm="18" cmd="10" hitpoints="5" construct="true" />
+            <weapons>
+              <melee_weapon name="Sword " pow="5" count="2" p_plus_s="12" magical="true" />
+            </weapons>
+            <capacity title="BATTLE-DRIVEN">When a model in this unit is damaged by an enemy attack, after the attack is resolved models in this unit gain +2 STR and ARM and Pathfinder for one round.</capacity>
+            <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+          </model>
+          <model id="Exalted Guardian 2">
+            <basestats name="EXALTED GUARDIAN B" spd="6" str="7" mat="8" rat="3" def="12" arm="18" cmd="10" hitpoints="5" construct="true" />
+            <weapons>
+              <melee_weapon name="Sword " pow="5" count="2" p_plus_s="12" magical="true" />
+            </weapons>
+          </model>
+        </warlock>
+        <warlock id="Sw03" name="Lord Tyrant Hexeris" generation="P" full_name="Lord Tyrant Hexeris" qualification="Skorne Warlock" fury="7" warbeast_points="6" fa="C" completed="true">
+          <basestats name="HEXERIS" spd="6" str="8" mat="7" rat="4" def="15" arm="16" cmd="8" hitpoints="17" />
+          <weapons>
+            <melee_weapon name="Gulgata" pow="6" p_plus_s="14" magical="true" reach="true">
+              <capacity title="BEAT BACK">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+              <capacity title="LIFE DRINKER">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Dark Dominion">When a living or undead enemy model is boxed by an attack while in Hexeris' control area, take control of it. The model becomes a friendly Undead model. If it is a trooper, it becomes a solo. The model can immediately advance up to 3" and can make one normal melee attack, then remove the model from play. When making this attack, ignore the effects of lost aspects on affected warbeasts. The model cannot be targeted by free strikes during this movement. Dark Dominion lasts for one turn.</feat>
+          <spell name="DEATH MARCH" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly unit gains +2 MAT and Vengeance. (During your Maintenance Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.)</spell>
+          <spell name="OBLITERATION" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">The force of this attacks blasts apart the earth itself.</spell>
+          <spell name="PSYCHIC VAMPIRE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">When an enemy model casts a spell or uses an animus while in this model's control area, the enemy model suffers 1 damage point and this model heals 1 damage point.</spell>
+          <spell name="SOULFIRE" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">When a living non-soulless model is boxed by Soulfire, this model gains 1 FURY point and the boxed model is removed from play.</spell>
+          <spell name="SOUL SLAVE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warbeast in this model's battlegroup automatically passes threshold checks. This model can channel spells through the affected warbeast.</spell>
+          <capacity title="VAMPIRIC REAPING">This model can reave fury points from enemy warbeasts destroyed in its control area if it is closer to the warbeast than all other models that could reave its fury.</capacity>
+        </warlock>
+        <warlock id="Sx03" name="Lord Arbiter Hexeris" generation="E" full_name="Lord Arbiter Hexeris" qualification="Skorne Epic Warlock" fury="7" warbeast_points="6" fa="C" completed="true">
+          <basestats name="HEXERIS" spd="6" str="8" mat="7" rat="4" def="15" arm="16" cmd="8" hitpoints="17" />
+          <weapons>
+            <melee_weapon name="Gulgata" pow="6" p_plus_s="14" magical="true" reach="true">
+              <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Arcane Reaver">Immediately remove any number of soul tokens, fury points, and focus points from non-warlock, non-warcaster models in Hexeris' control area. For each soul token or focus or fury point removed, place one fury point on Hexeris. Hexeris cannot exceed his current FURY in fury points as a result of Arcane Reaver.</feat>
+          <spell name="ARCANE RECKONING" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains Whiplash. (When an enemy model misses a model with Whiplash with a magic attack, the attacking model becomes the target and is automatically hit by the attack. AOE magic attacks that miss are centered on the attacking model. The model with Whiplash is the point of origin for all these attacks.)</spell>
+          <spell name="ASHEN VEIL" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains concealment. Living enemy models suffer –2 to attack rolls while within 2" of an affected model.</spell>
+          <spell name="ASHES TO ASHES" cost="4" rng="8" aoe="*" pow="10" up="NO" off="YES">If target model is hit, it and the d6 nearest enemy models within 5" of it suffer a POW 10 fire damage roll.</spell>
+          <spell name="BLACK SPOT" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">Target enemy warrior model/unit suffers –2 DEF. When a friendly Faction model destroys one or more affected models with a melee or ranged attack during its activation, immediately after the attack is resolved it can make one additional melee or ranged attack regardless of ROF. Attacks gained from Black Spot cannot generate additional attacks from Black Spot.</spell>
+          <spell name="HELLFIRE" cost="3" rng="10" aoe="-" pow="14" up="NO" off="YES">A model/unit hit by Hellfire must pass a command check or flee.</spell>
+          <capacity title="VAMPIRIC HARVEST">When a living enemy model is destroyed in this model's control area, a model in this model's battlegroup in its control area can heal 1 damage point.</capacity>
+          <capacity title="WARBEST BOND">One non-character warbeast in Hexeris' battlegroup can begin the game bonded to him. Hexeris can channel spells through the bonded warbeast while it is in his command range.</capacity>
+        </warlock>
+        <warlock id="SW04" name="Tyrant Xerxis" generation="P" full_name="Tyrant Xerxis" qualification="Skorne Warlock" fury="5" warbeast_points="5" fa="C" completed="true">
+          <basestats name="XERXIS" spd="5" str="8" mat="8" rat="4" def="13" arm="18" cmd="9" hitpoints="19" />
+          <weapons>
+            <melee_weapon name="Pillars of Halaak " pow="6" count="2" p_plus_s="14" magical="true" reach="true">
+              <capacity title="COMBO SMITE (★ACTION)">Make a melee attack. On a hit, instead of making a normal damage roll the target model is slammed d6" directly away from this model and suffers a damage roll with POW equal to the STR of this model plus twice the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Total Annihilation">While in Xerxis' control area, friendly Faction models gain an additional die on their melee damage rolls. While in Xerxis' control area and B2B with another friendly Faction model, friendly Faction models gain +2 ARM. Total Annihilation lasts for one round.</feat>
+          <spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and ARM.</spell>
+          <spell name="FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 to melee damage rolls but suffers –1 DEF.</spell>
+          <spell name="INHOSPITABLE GROUND" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, enemy models treat open terrain as rough terrain. Inhospitable Ground lasts for one round.</spell>
+          <capacity title="BATTLE PLAN">During this model's activation, it can use one of the following plans. A friendly Faction model/unit can be affected by only one plan each turn.</capacity>
+          <capacity title="● OVERCOME">RNG 5. Target friendly Faction warrior model/unit. If the model/unit is in range, it gains Pathfinder for one turn.</capacity>
+          <capacity title="● PRESS FORWARD">RNG 5. Target friendly Faction warrior model/unit. If the model/unit is in range, it gains +2 SPD when making a full advance this turn.</capacity>
+          <capacity title="MARTIAL DISCIPLINE">Friendly living Faction warrior models with small or medium bases can ignore friendly Faction warrior models in this model's command range when determining LOS and can advance through friendly Faction warrior models in this model's command range if they have enough movement to move completely past them.</capacity>
+          <capacity title="OVERTAKE">When this model destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1".</capacity>
+        </warlock>
+		<warlock id="Sx04" name="Xerxis, Fury of Halaak" generation="E" full_name="Xerxis, Fury of Halaak" qualification="Skorne Epic Cavalry Battle Engine Warlock" fury="5" warbeast_points="5" fa="C" completed="true">
+		  <basestats name="XERXIS" spd="7" str="8" mat="8" rat="4" def="13" arm="19" cmd="9" hitpoints="19" />
+		  <weapons>
+			<melee_weapon name="Lamentor" pow="7" p_plus_s="15" magical="true" reach="true">
+				<capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+			</melee_weapon>
+			<melee_weapon name="War Standard" pow="4" p_plus_s="12" reach="true" />
+			<mount_weapon name="Mount" pow="14">
+				<capacity title="KNOCKDOWN">When a model is hit by an attack with this weapon, it is knocked down.</capacity>
+				<capacity title="PITCH (★ATTACK)">Instead of making a normal damage roll on a hit, this model throws the model hit as if it had hit with and passed the STR check of a throw power attack. The thrown model suffers a damage roll with POW equal to the POW of this weapon. The POW of collateral damage is equal lo the POW of this weapon.</capacity>
+			</mount_weapon>
+		  </weapons>
+		  <feat title="Hand of the Ancients">All models are in Xerxis' control area. Friendly Faction models/units gain an additional die on attack and damage rolls. Discard one die from each roll. Hand of the Ancients lasts for one turn.</feat>
+		  <spell name="IGNITE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack damage rolls. Affected models gain Critical Fire on their normal melee attacks.</spell>
+		  <spell name="MOBILITY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Models in this model's battlegroup currently in its control area gain +2 SPD and Pathfinder for one turn.</spell>
+		  <spell name="STRANGLEHOLD" cost="2" rng="10" aoe="-" pow="11" up="NO" off="YES">A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.</spell>
+		  <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+		  <capacity title="WARBEAST BOND">One non-character warbeast in Xerxis' battlegroup can begin the game bonded to him. Once per turn during his activation, Xerxis can cast the bonded warbeast's animus as a spell without spending fury.</capacity>
+        </warlock>
+        <warlock id="SW05" name="Supreme Aptimus Zaal &amp; Kovaas" generation="P" full_name="Supreme Aptimus Zaal &amp; Kovaas" qualification="Skorne Warlock" fury="7" warbeast_points="5" fa="C" completed="true">
+          <basestats name="ZAAL" spd="6" str="5" mat="6" rat="6" def="15" arm="14" cmd="8" hitpoints="15" gunfighter="true" />
+          <weapons>
+            <ranged_weapon name="Spirit Eye" rng="8" rof="1" aoe="-" pow="6" magical="true">
+              <capacity title="ANNIHILATING GAZE">When a living model is hit by this attack, add its current STR to the damage roll.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Staff of Aarakis" pow="4" p_plus_s="9" magical="true" reach="true" />            
+          </weapons>
+          <feat title="Rage of Ancients">Zaal gains a number of ancestral rage tokens equal to the number of friendly Faction warrior models that have been destroyed and not returned to play since the start of the game. While in Zaal's control area, friendly Faction models can spend ancestral rage tokens on Zaal to boost melee attack or melee damage rolls. At the end of the turn, remove unspent ancestral rage tokens from Zaal.</feat>
+          <spell name="AWAKENED SPIRIT" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warbeast in this model's battlegroup can use its animus once during its activation without being forced. A warbeast that uses its animus as a result of Awakened Spirit cannot also be forced to use its animus that activation.</spell>
+          <spell name="HEX BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">Enemy upkeep spells and animi on the model/unit directly hit by Hex Blast immediately expire.</spell>
+          <spell name="INVIOLABLE RESOLVE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM and Fearless.</spell>
+          <spell name="LAST STAND" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains an additional die on its melee attack and melee damage rolls. If an affected model makes a melee attack, it is destroyed at the end of the turn.</spell>
+          <spell name="SUNDER SPIRIT" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Sunder Spirit loses its animus for one round.</spell>
+          <capacity title="DIRECT SPIRITS">When a friendly living Faction warrior model is destroyed in this model's control area and generates a soul, you choose which eligible model gains the soul, regardless of the proximity of other models. Enemy models never gain soul tokens for friendly living Faction warrior models destroyed in this model's control area.</capacity>
+          <capacity title="GHOST SIGHT">This model does not require LOS in order to target friendly models with spells. This models ignores LOS when making ranged and magic attacks. This model ignores concealment and cover when resolving ranged attacks.</capacity>
+          <capacity title="SOUL CONVERTER">Once per turn during its activation, this model can spend 1 fury point to give each Ancestral Guardian currently in its control area one soul token.</capacity>
+          <capacity title="UNION [ANCESTRAL GUARDIANS]">This model can transfer damage to friendly Ancestral Guardians.</capacity>
+          <model id="Kovaas" qualification="Skorne Solo">
+            <basestats name="KOVAAS" spd="6" str="0" mat="8" rat="3" def="13" arm="14" cmd="10" hitpoints="5" abomination="true" incorporeal="true" undead="true" />
+            <weapons>
+              <melee_weapon name="Wasting Touch" pow="14" p_plus_s="14" magical="true" reach="true">
+                <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="DESSICATOR (★ACTION)">Center a 4" AOE cloud effect on this model. Living models entering or ending their activation in the AOE suffer 1 point of damage. The AOE remains in play for one round.</capacity>
+            <capacity title="DESTRUCTION SPAWNED">This model does not start the game in play. When a friendly Ancestral Guardian is destroyed while in Zaal's control area, replace the Ancestral Guardian with a Kovaas unless there is already a friendly Kovaas in play. If the Ancestral Guardian had soul tokens on it at the time it was destroyed, place up to three of those soul tokens on the Kovaas replacing it. Effects on the destroyed Ancestral Guardian expire. The Kovaas cannot activate the turn it is put in play.</capacity>
+            <capacity title="SOUL TAKER">This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
+          </model>
+        </warlock>
+        <warlock id="SW06" name="Void Seer Mordikaar" generation="P" full_name="Void Seer Mordikaar" qualification="Skorne Warlock" fury="7" warbeast_points="5" fa="C" completed="true">
+          <basestats name="MORDIKAAR" spd="6" str="5" mat="5" rat="6" def="14" arm="16" cmd="8" hitpoints="16" />
+          <weapons>
+            <ranged_weapon name="Death Blast" rng="10" rof="1" aoe="3" pow="13" magical="true">
+              <capacity title="LIFE DRINKER">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Eidolon" pow="6" p_plus_s="11" magical="true">
+              <capacity title="LIFE DRINKER">See above.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Void Wind">While in Mordikaar's control area, friendly Faction models gain +3 DEF and Poltergeist. Void Wind lasts for one round.</feat>
+          <spell name="BANISHING WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Enemy upkeep spells on target friendly model/unit expire. Affected models cannot be targeted by enemy spells or animi.</spell>
+          <spell name="ESSENCE BLAST" cost="3" rng="CTRL" aoe="*" pow="-" up="NO" off="YES">Choose a friendly living non-warlock/warcaster Faction model in this model's control area. Make a SP 6 magic attack using the chosen model as the attack's point of origin. Models hit suffer a damage roll with a POW equal to 5 + the base STR of the chosen model. After the spell is resolved, remove the chosen model from play.</spell>
+          <spell name="GHOST WALK" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains Ghostly for one turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)</spell>
+          <spell name="HOLLOW" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly living Faction warrior model/unit gains Tough and Undead. This model gains one soul token when an affected model is destroyed by an enemy attack, continuous effect, or collateral damage.</spell>
+          <spell name="REVIVE" cost="3" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Return one destroyed friendly Faction Grunt to play with one unmarked damage box. It must be placed in this model's control area in formation and within 3" of another model in its unit.</spell>
+          <capacity title="CULL SOUL">This model gains one soul token for each living enemy model destroyed within 2" of it. After this model leaches during your next Control Phase, replace each soul token on it with 1 fury point.</capacity>
+          <capacity title="POLTERGEIST">When an enemy model misses this model with an attack, immediately after the attack is resolved you can choose to push the enemy model d3" directly away from this model.</capacity>
+          <capacity title="VOID LORD">While in this model's control area, friendly Void Spirit models gain boosted melee attack rolls.</capacity>
+        </warlock>
+        <warlock id="SW07" name="Dominar Rasheth" generation="P" full_name="Dominar Rasheth" qualification="Skorne Warlock" fury="8" warbeast_points="5" fa="C" completed="true">
+          <basestats name="RASHETH" spd="4" str="4" mat="1" rat="1" def="10" arm="14" cmd="8" hitpoints="20" />
+          <weapons />
+          <feat title="Plague Wind">While in Rasheth's control area, living enemy models suffer –2 STR and ARM. When a living model is destroyed in his control area, Rasheth heals 1 damage point. Plague Wind lasts for one round.</feat>
+          <spell name="BLOOD MARK" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target enemy model suffers –2 ARM. This model can transfer damage from an enemy attack to the affected model one time, then Blood Mark expires.</spell>
+          <spell name="BREATH OF CORRUPTION" cost="3" rng="8" aoe="3" pow="12" up="NO" off="YES">Models hit suffer a POW 12 corrosion damage roll. The AOE is a cloud effect that remains in play for one round. Models entering or ending their activation in the AOE suffer 1 point of corrosion damage.</spell>
+          <spell name="CARNIVORE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack rolls against living models. When an affected model boxes a living model with a melee attack, the boxed model is removed from play and this model heals d3 damage points.</spell>
+          <spell name="CASTIGATE" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">For one round, enemy models lose the Arc Node advantage while in this model's control area.</spell>
+          <spell name="INFLUENCE" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-warcaster, non-warlock warrior model. The model immediately makes one normal melee attack, then Influence expires.</spell>
+          <spell name="SUNDER SPIRIT" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Sunder Spirit loses its animus for one round.</spell>
+          <capacity title="DARK RITUALS">Once per activation, this model can channel a spell through a friendly warrior model in its control area. Once a spell is cast this way, the model it was channeled through suffers d3 damage points.</capacity>
+          <capacity title="IMPERVIOUS FLESH">When this model is hit by a ranged attack, the attacker rolls one less damage die.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+        </warlock>
+        <warlock id="SW08" name="Master Ascetic Naaresh" generation="P" full_name="Master Ascetic Naaresh" qualification="Skorne Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="NAARESH" spd="6" str="6" mat="7" rat="4" def="15" arm="15" cmd="7" hitpoints="17" tough="true" />
+          <weapons>
+            <melee_weapon name="Katara" pow="4" count="2" p_plus_s="10" magical="true">
+              <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+              <capacity title="LIFE DRINKER">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Imperishable Flesh">Immedately apply up to 1 damage point to each aspect of warbeasts in Naaresh's battlegroup that are currently in his control area. Naaresh heals 1 damage point for each damage point applied. For one round, while in Naaresh's control area, warbeasts in his battlegroup gain +1 STR and ARM for each of their damaged aspects.</feat>
+          <spell name="BLEED" cost="2" rng="8" aoe="-" pow="10" up="NO" off="YES">When Bleed destroys a living enemy model, this model heals d3 damage points.</spell>
+          <spell name="CYCLONE" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes a full advance. It cannot be targeted by free strikes during this movement. At the end of this movement, this model can make one melee attack against each model in its LOS that is in its melee range. Cyclone can be cast only once per turn.</spell>
+          <spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model/unit gains +3 DEF but suffers –1 SPD.</spell>
+          <spell name="LAMENTATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Enemy models pay double the focus or fury point cost to cast or upkeep spells while in this model's control area.</spell>
+          <capacity title="BLOOD TRADE">This model can upkeep spells by suffering 1 damage point per spell instead of spending fury.</capacity>
+          <capacity title="FLAGELLANT">This model is automatically hit by melee attacks made by friendly models.</capacity>
+          <capacity title="PAIN MONGER">When this model suffers damage from an attack, it gains one blood token. For each blood token on this model, it gains +1 STR and ARM. This model can have up to five blood tokens at a time. Remove all blood tokens from this model at the start of your Control Phase.</capacity>
+        </warlock>
+      </warlocks>
+      <warbeasts>
+        <warbeast id="SB01" name="Cyclops Savage" full_name="Cyclops Savage" qualification="Skorne Light Warbeast" fa="U" cost="5" fury="3" threshold="8" damage_spiral="7-8-7" completed="true">
+          <basestats name="SAVAGE" spd="6" str="8" mat="6" rat="3" def="13" arm="17" cmd="6" />
+          <weapons>
+            <melee_weapon name="Falchion" pow="5" p_plus_s="13" reach="true" />
+          </weapons>
+          <animus name="PRESCIENCE" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains Future Sight. Prescience last for one turn.</animus>
+          <capacity title="FUTURE SIGHT">This model can boost attack and damage rolls after rolling.</capacity>
+        </warbeast>
+        <warbeast id="SB02" name="Cyclops Brute" full_name="Cyclops Brute" qualification="Skorne Light Warbeast" fa="U" cost="5" fury="3" threshold="9" damage_spiral="7-8-7" completed="true">
+          <basestats name="BRUTE" spd="6" str="8" mat="5" rat="3" def="13" arm="17" cmd="6" />
+          <weapons>
+            <melee_weapon name="Shield" pow="1" p_plus_s="9" shield="true" location="L" />
+            <melee_weapon name="Halberd" pow="4" p_plus_s="12" reach="true" location="R">
+              <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="SAFEGUARD" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model cannot be knocked down. When it is slammed, reduce the slam distance rolled by 3. Safeguard lasts for one round.</animus>
+          <capacity title="INTUITION">When an enemy model targets this model with an attack and the attack roll results in a hit, you can immediately force this model to cause the enemy model to reroll the attack roll.</capacity>
+          <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+        </warbeast>
+        <warbeast id="SB03" name="Cyclops Shaman" full_name="Cyclops Shaman" qualification="Skorne Light Warbeast" fa="U" cost="5" fury="3" threshold="9" damage_spiral="7-6-9" completed="true">
+          <basestats name="SHAMAN" spd="6" str="7" mat="5" rat="5" def="13" arm="16" cmd="7" />
+          <weapons>
+            <ranged_weapon name="Evil Eye" rng="10" rof="1" aoe="-" pow="12" magical="true" location="H">
+              <capacity title="GHOST SHOT">This model ignores LOS when making attacks with this weapon. When resolving attacks with this weapon, ignore concealment and cover.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Battle Spear" pow="4" p_plus_s="11" magical="true" reach="true" />            
+          </weapons>
+          <animus name="SPIRIT BLADE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Enemy upkeep spells and animi on target friendly model/unit expire.</animus>
+          <capacity title="CRAFT TALISMAN (★ACTION)">RNG 3. Target friendly Faction warlock. If the warlock is in range, when he casts a spell and is its point of origin, the spell gains +2 RNG. Spells with RNG SELF, SP, or CTRL are not affected. Craft Talisman lasts for one turn.</capacity>
+          <capacity title="PRIMAL MAGIC">This model can use the animus of any friendly Faction non-character warbeast in its command range as if the animus were its own.</capacity>
+        </warbeast>
+        <warbeast id="SB04" name="Basilisk Drake" full_name="Basilisk Drake" qualification="Skorne Light Warbeast" fa="U" cost="4" fury="3" threshold="9" damage_spiral="7-5-7" completed="true">
+          <basestats name="DRAKE" spd="6" str="8" mat="5" rat="5" def="13" arm="16" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Withering Gaze" rng="SP8" rof="1" aoe="-" pow="14" magical="true" location="H" />
+			<melee_weapon name="Bite" pow="4" p_plus_s="12" location="H" />            
+          </weapons>
+          <animus name="LURKER" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model gains Bushwhack. Lurker lasts for one turn. (During its activation, a model with Bushwhack can make its combat action before its normal movement. If it does, it must make a full advance as its normal movement this activation.)</animus>
+        </warbeast>
+        <warbeast id="SB05" name="Basilisk Krea" full_name="Basilisk Krea" qualification="Skorne Light Warbeast" fa="U" cost="4" fury="3" threshold="8" damage_spiral="7-5-9" completed="true">
+          <basestats name="KREA" spd="6" str="8" mat="4" rat="4" def="12" arm="16" cmd="6" eyelesssight="true" />
+          <weapons>
+            <ranged_weapon name="Spiritual Paralysis" rng="8" rof="1" aoe="-" pow="-" location="H">
+              <capacity title="PARALYSIS">A living model hit by this weapon has its base DEF reduced to 7 and cannot run or charge. Paralysis lasts for one round.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Bite" pow="4" p_plus_s="12" location="H" />            
+          </weapons>
+          <animus name="PARALYTIC AURA" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains +2 DEF and ARM against ranged attacks. While within 2" of this model, friendly models gain +2 DEF and ARM against ranged attacks and enemy models suffer –2 DEF. Paralytic Aura lasts for one round.</animus>
+          <capacity title="FLANK [BASILISK DRAKE]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
+        </warbeast>
+        <warbeast id="SB06" name="Titan Gladiator" full_name="Titan Gladiator" qualification="Skorne Heavy Warbeast" fa="U" cost="8" fury="4" threshold="9" damage_spiral="9-12-9" completed="true">
+          <basestats name="GLADIATOR" spd="4" str="12" mat="6" rat="3" def="12" arm="19" cmd="7" />
+          <weapons>
+            <melee_weapon name="Tusks" pow="3" p_plus_s="15" location="H">
+              <capacity title="HARD HEAD">This model can add this weapon's POW to its head-butt and slam power attack damage rolls.</capacity>
+            </melee_weapon>
+            <melee_weapon name="War Gauntlet" pow="4" p_plus_s="16" open_fist="true" location="L" />
+            <melee_weapon name="War Gauntlet" pow="4" p_plus_s="16" open_fist="true" location="R" />
+          </weapons>
+          <animus name="RUSH" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly warbeast gains +2" movement and Pathfinder. Rush lasts for one turn.</animus>
+          <capacity title="BULLHEADED">When this model frenzies, if it would charge a model, it targets that model with a slam power attack instead. If it cannot, it frenzies normally.</capacity>
+          <capacity title="FOLLOW UP">When this model slams an enemy model, immediately after the slam is resolved this model can advance directly toward the slammed model up to the distance the slammed model was moved.</capacity>
+          <capacity title="GRAND SLAM">This model can make slam power attacks without spending focus or being forced. Models slammed by this model are moved an additional 2".</capacity>
+        </warbeast>
+        <warbeast id="SB07" name="Titan Cannoneer" full_name="Titan Cannoneer" qualification="Skorne Heavy Warbeast" fa="U" cost="9" fury="4" threshold="9" damage_spiral="9-10-7" completed="true">
+          <basestats name="CANNONEER" spd="4" str="12" mat="5" rat="4" def="12" arm="18" cmd="7" />
+          <weapons>
+            <ranged_weapon name="Siege Gun" rng="12" rof="1" aoe="3" pow="15" location="R" />
+			<melee_weapon name="Tusks" pow="3" p_plus_s="15" location="H">
+              <capacity title="HARD HEAD">This model can add this weapon's POW on its head-butt and slam power attack damage rolls.</capacity>
+            </melee_weapon>
+            <melee_weapon name="War Mace" pow="4" p_plus_s="16" location="L" />            
+          </weapons>
+          <animus name="DIMINISH" cost="2" rng="SELF" aoe="*" pow="-" up="NO" off="NO">While within 2" of this model, enemy models suffer –2 STR. Diminish lasts for one round.</animus>
+          <capacity title="BULLHEADED">When this model frenzies, if it would charge a model, it targets that model with a slam power attack instead. If it cannot, it frenzies normally.</capacity>
+        </warbeast>
+        <warbeast id="SB08" name="Bronzeback Titan" full_name="Bronzeback Titan" qualification="Skorne Heavy Warbeast" fa="U" cost="10" fury="5" threshold="8" damage_spiral="9-14-10" completed="true">
+          <basestats name="BRONZEBACK" spd="4" str="13" mat="7" rat="3" def="12" arm="19" cmd="6" />
+          <weapons>
+            <melee_weapon name="Tusks" pow="3" p_plus_s="16" location="H">
+              <capacity title="HARD HEAD">This model can add this weapon's POW on its head-butt and slam power attack damage rolls.</capacity>
+            </melee_weapon>
+            <melee_weapon name="War Gauntlet" pow="4" p_plus_s="17" open_fist="true" location="L">
+              <capacity title="CHAIN ATTACK: GRAB &amp;amp; SMASH">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make a double-hand throw, head-butt, headlock/weapon lock, push, or throw power attack against that target.</capacity>
+            </melee_weapon>
+			<melee_weapon name="War Gauntlet" pow="4" p_plus_s="17" open_fist="true" location="R">
+              <capacity title="CHAIN ATTACK: GRAB &amp;amp; SMASH">See above.</capacity>
+            </melee_weapon>			
+          </weapons>
+          <animus name="TRAIN WRECK" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO"> Target friendly warbeast's melee weapons gain Beat Back. Train Wreck lasts for one turn. (Immediately after a normal attack with a weapon with Beat Back is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".)</animus>
+          <capacity title="COUNTER CHARGE">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+          <capacity title="HYPER AGGRESSIVE">When this model suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.</capacity>
+          <capacity title="LEADERSHIP [TITANS]">While in this model's command range, friendly Titan non-Bronzeback warbeasts automatically pass THR checks.</capacity>
+        </warbeast>
+        <warbeast id="SB09" name="Rhinodon" full_name="Rhinodon" qualification="Skorne Heavy Warbeast" fa="U" cost="7" fury="4" threshold="9" damage_spiral="7-11-9" completed="true">
+          <basestats name="RHINODON" spd="5" str="10" mat="5" rat="3" def="11" arm="18" cmd="6" />
+          <weapons>
+            <melee_weapon name="Tail" pow="4" p_plus_s="14" reach="true" location="-">
+              <capacity title="REAR ATTACK">When declaring and resolving attacks with this weapon, this model's front arc extends to 360 degrees.</capacity>
+              <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Claw" pow="3" p_plus_s="13" open_fist="true" location="L" />
+            <melee_weapon name="Claw" pow="3" p_plus_s="13" open_fist="true" location="R" />
+          </weapons>
+          <animus name="AMUCK" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">When target friendly warbeast makes a special attack, its attack rolls are boosted. Amuck lasts for one turn.</animus>
+          <capacity title="BACK PLATES">When a model hits this model with a free strike attack, immediately after the attack is resolved the attacking model suffers d6 damage points.</capacity>
+        </warbeast>
+        <warbeast id="SB10" name="Molik Karn" full_name="Molik Karn" qualification="Skorne Cyclops Character Heavy Warbeast" fa="C" cost="11" fury="4" threshold="10" damage_spiral="9-10-9" completed="true">
+          <basestats name="MOLIK KARN" spd="6" str="8" mat="7" rat="3" def="13" arm="18" cmd="8" />
+          <weapons>
+            <melee_weapon name="Falchion" pow="5" p_plus_s="13" reach="true" weapon_master="true" location="L">
+              <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Falchion" pow="5" p_plus_s="13" reach="true" weapon_master="true" location="R">
+              <capacity title="COMBO STRIKE (★ATTACK)">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="FATE WALKER" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">After all friendly models end their activation this turn, this model can make a full advance. Fate Walker lasts for one turn.</animus>
+          <capacity title="AFFINITY [MAKEDA]">While in Makeda's control area, Molik Karn gains +1 FURY.</capacity>
+          <capacity title="CHIEFTAIN [CYCLOPS]">While in this model's command range, friendly Cyclops models can use its current CMD and THR in place of their own current values.</capacity>
+          <capacity title="FUTURE SIGHT">This model can boost attack and damage rolls after rolling.</capacity>
+          <capacity title="INTUITION">When an enemy model targets this model with an attack and the attack roll results in a hit, you can immediately force this model to cause the enemy model to reroll the attack roll.</capacity>
+          <capacity title="SIDE STEP">When this model hits an enemy model with an initial attack or a special attack that is not a power attack, it can advance up to 2" after the attack is resolved. This model cannot be targeted by free strikes during this movement.</capacity>
+        </warbeast>
+        <warbeast id="SB11" name="Titan Sentry" full_name="Titan Sentry" qualification="Skorne Heavy Warbeast" fa="U" cost="9" fury="4" threshold="9" damage_spiral="9-12-9" completed="true">
+          <basestats name="SENTRY" spd="4" str="12" mat="5" rat="3" def="11" arm="19" cmd="7" />
+          <weapons>
+            <melee_weapon name="Halberd" pow="4" p_plus_s="16" reach="true" location="R">
+              <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Shield" pow="1" p_plus_s="13" shield="true" location="L" />
+            <melee_weapon name="Tusks" pow="3" p_plus_s="15" location="H">
+              <capacity title="HARD HEAD">This model can add this weapon's POW to its head-butt and slam power attack damage rolls.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="LOCKER" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Enemy warbeast and warjack models in this model's melee range can only advance directly toward it. Locker lasts for one round.</animus>
+          <capacity title="BRACE FOR IMPACT">When this model is slammed, reduce the slam distance rolled by 3. If the total slam distance is 0 or less, this model is not knocked down. This model is not knocked down when it suffers collateral damage.</capacity>
+        </warbeast>
+        <warbeast id="SB12" name="Razor Worm" full_name="Razor Worm" qualification="Skorne Light Warbeast" fa="U" cost="4" fury="3" threshold="8" damage_spiral="5-8-8" completed="true">
+          <basestats name="RAZOR WORM" spd="6" str="8" mat="6" rat="0" def="13" arm="16" cmd="6" advance_deployment="true" eyelesssight="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="4" p_plus_s="12" location="H" />
+          </weapons>
+          <animus name="BOMB SHELTER" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model gains Girded. Bomb Shelter lasts for one round. (A model with Girded does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.)</animus>
+          <capacity title="DIG IN (★ACTION)">This model gains cover, does not suffer blast damage, and does not block LOS. This model remains dug in until it moves, is placed, or is engaged. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <capacity title="DRAG BELOW">During this model's activation, immediately after resolving an attack in which is boxed a living enemy model, this mode can use Drag Below. The boxed model is removed from play and this model can immediately make a full advance and then perform a Dig In special action, then its activation ends.</capacity>
+          <capacity title="SERPENTINE">This model cannot make slam or trample power attacks and cannot be knocked down.</capacity>
+        </warbeast>
+        <warbeast id="SB13" name="Tiberion" full_name="Tiberion" qualification="Skorne Character Titan Heavy Warbeast" fa="C" cost="11" fury="4" threshold="10" damage_spiral="10-10-10" completed="true">
+          <basestats name="TIBERION" spd="4" str="12" mat="7" rat="3" def="11" arm="19" cmd="8" />
+          <weapons>
+            <melee_weapon name="Shield" pow="1" p_plus_s="13" shield="true" location="L" />
+            <melee_weapon name="Tetsubo" pow="6" p_plus_s="18" reach="true" location="R">
+              <capacity title="CRITICAL SMITE">On a critical hit, this model can slam the model hit instead of rolling damage normally. The model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to the STR of this model plus the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Tusks" pow="3" p_plus_s="15" location="H">
+              <capacity title="HARD HEAD">This model can add this weapon's POW to its head-butt and slam power attack damage rolls.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="BUMP" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">When target friendly model is damaged by an enemy melee attack, after the attack is resolved the enemy model is pushed 3" directly away from the affected model, then Bump expires. Bump lasts for one round.</animus>
+          <capacity title="IMMOVABLE OBJECT">This model cannot be knocked down or placed. It can move or be moved only during its normal movement.</capacity>
+          <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+          <capacity title="SPECIAL ISSUE [XERXIS]">This model can be included in Xerxis's theme forces. It can also be bonded to Xerxis.</capacity>
+        </warbeast>
+        <warbeast id="SB14" name="Cyclops Raider" full_name="Cyclops Raider" qualification="Skorne Light Warbeast" fa="U" cost="5" fury="3" threshold="8" damage_spiral="7-8-7" completed="true">
+          <basestats name="RAIDER" spd="6" str="8" mat="5" rat="5" def="13" arm="16" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Heavy Reiver" rng="10" rof="1" aoe="-" pow="12" location="L">
+              <capacity title="BURST FIRE">Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large or huge bases.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Punching Spike" pow="3" p_plus_s="11" open_fist="true" location="R" />            
+          </weapons>
+          <animus name="FAR STRIKE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model's ranged weapons gain Snipe. Far Strike lasts for one turn. (An attack with a Snipe weapon gains +4 RNG.)</animus>
+          <capacity title="ARCANE PRECISION">If this model forfeits its movement during its activation to gain the aiming bonus, it ignores Stealth that activation.</capacity>
+        </warbeast>
+        <warbeast id="SB15" name="Archidon" full_name="Archidon" qualification="Skorne Heavy Warbeast" fa="U" cost="7" fury="4" threshold="9" damage_spiral="7-10-7" completed="true">
+          <basestats name="ARCHIDON" spd="7" str="10" mat="6" rat="1" def="14" arm="17" cmd="6" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="15" location="H">
+              <capacity title="CRITICAL PITCH">On a critical hit, instead of rolling damage normally you can choose to have this model throw the model hit. Treat the throw as if this model had hit with and passed the STR check of a throw power attack. The thrown model suffers a damage roll with POW equal to this model's STR plus the POW of the weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="LIGHTNING STRIKE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model gains Sprint. Lightning Strike lasts for one turn. (At the end of its activation, if a model with Sprint destroyed one or more enemy models with melee attacks this activation it can make a full advance.)</animus>
+          <capacity title="FLIGHT">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="SERPENTINE">This model cannot make slam or trample power attacks and cannot be knocked down.</capacity>
+        </warbeast>
+        <warbeast id="SB16" name="Despoiler" full_name="Despoiler" qualification="Skorne Character Heavy Warbeast" fa="C" cost="10" fury="4" threshold="10" damage_spiral="7-11-12" completed="true">
+          <basestats name="DESPOILER" spd="5" str="10" mat="6" rat="3" def="11" arm="18" cmd="7" eyelesssight="true" />
+          <weapons>
+            <melee_weapon name="Claw" pow="3" p_plus_s="13" open_fist="true" location="L" />
+            <melee_weapon name="Claw" pow="3" p_plus_s="13" open_fist="true" location="R" />
+            <melee_weapon name="Tail" pow="4" p_plus_s="14" reach="true">
+              <capacity title="REAR ATTACK">When declaring and resolving attacks with this weapon, this model's front arc extends to 360 degrees.</capacity>
+              <capacity title="CRITICAL BRUTAL DAMAGE">On a critical hit, gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="ARCANE SUPRESSION" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">While within 10" of this model, enemy models must pay double fury and focus points to cast or upkeep spells. Arcane Supression lasts for one round.</animus>
+          <capacity title="INSCRUTABLE">Opponents cannot take control of this model.</capacity>
+          <capacity title="SPECIAL ISSUE [MORDIKAAR]">This model can be included in Mordikaar's theme forces. It can also be bonded to Mordikaar.</capacity>
+          <capacity title="DEATH GATE">Once per round when a living enemy warrior model is boxed while within 2" of this model, remove the boxed model from play and replace it with a Void Spirit model.</capacity>
+          <capacity title="AFFINITY [MORDIKAAR]">While this model is in Mordikaar's control area, it gains Dark Shroud. (While in the melee range of a model with Dark Shroud, enemy models suffer –2 ARM.)</capacity>
+          <capacity title="BLACK ARTS">A friendly Faction warlock with this model in its control area can upkeep one spell without spending fury.</capacity>
+        </warbeast>
+        <warbeast id="SB17" name="Reptile Hound" full_name="Reptile Hound" qualification="Skorne Lesser Warbeast" fa="U" cost="2" fury="2" threshold="8" damage_spiral="4-5-4" completed="true">
+          <basestats name="REPTILE HOUND" spd="7" str="6" mat="5" rat="1" def="13" arm="13" cmd="6" />
+          <weapons>
+            <melee_weapon name="Bite" pow="2" p_plus_s="8" />
+          </weapons>
+          <animus name="SLAUGHTERHOUSE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains Take Down. Slaughterhouse lasts for one turn. (Models disabled by a melee attack made by a model with Take Down cannot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.)</animus>
+          <capacity title="LESSER WARBEAST">This model cannot make power attacks.</capacity>
+          <capacity title="FLANK [ANOTHER REPTILE HOUND]">When this model make a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
+        </warbeast>
+        <warbeast id="SB18" name="Mammoth" full_name="Mammoth" qualification="Skorne Gargantuan" fa="2" cost="20" fury="5" threshold="9" damage_spiral="11-22-17" completed="true">
+          <basestats name="MAMMOTH" spd="4" str="15" mat="6" rat="3" def="8" arm="20" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Siege Battery" rng="10" rof="3" aoe="4" pow="15" />
+			<melee_weapon name="Tusks" pow="3" p_plus_s="18" location="H">
+              <capacity title="CRITICAL PITCH">On a critical hit, instead of rolling damage normally you can choose to have this model throw the model hit. Treat the throw as if this model had hit with and passed the STR check of a throw power attack. The thrown model suffers a damage roll with POW equal to this model's STR plus the POW of the weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>
+            <melee_weapon name="War Gauntlet" pow="4" p_plus_s="19" open_fist="true" location="L" />
+            <melee_weapon name="War Gauntlet" pow="4" p_plus_s="19" open_fist="true" location="R" />            
+          </weapons>
+          <animus name="COUNTERBLAST" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">When an enemy model advances and ends its movement in this model's command range, this model can make one normal melee or ranged attack targeting that model, then Counterblast expires. Counterblast lasts for one round.</animus>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+        </warbeast>
+      </warbeasts>
+      <battleEngines>
+        <battleEngine id="SE01" name="Siege Animantarax" full_name="Siege Animantarax" qualification="Skorne Battle Engine" fa="2" cost="9" completed="true">
+          <basestats name="SIEGE ANIMANTARAX" spd="5" str="13" mat="7" rat="5" def="10" arm="19" cmd="10" hitpoints="22" fearless="true" />
+          <weapons>
+            <ranged_weapon name="Double Reiver" rng="10" rof="1" aoe="-" pow="13">
+              <capacity title="RAPID FIRE [D3+1]">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3+1. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+              <capacity title="BURST FIRE">Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large or huge bases.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Club Tail" pow="3" p_plus_s="16" reach="true">
+              <capacity title="REAR ATTACK">When declaring and resolving attacks with this weapon, this model's front arc extends to 360 degrees.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Spear" pow="4" p_plus_s="10" reach="true" location="L">
+              <capacity title="INDEPENDENT ATTACK">This attack has base STR 6 and base POW 4 for P+S 10.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Spear" pow="4" p_plus_s="10" reach="true" location="R">
+              <capacity title="INDEPENDENT ATTACK">See above.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="WEAPON PLATFORM">This model can make melee and ranged attacks in the same activation. When this model makes its initial melee attacks or a power attack, it can also make its initial ranged attacks. This model can make ranged attacks even while in melee.</capacity>
+          <capacity title="HYPER AGGRESSIVE">When this model suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.</capacity>
+          <capacity title="CANTANKEROUS">When this model is damaged by an enemy attack it gains one rage token. This model can have up to three rage tokens at any time. For each rage token on this model when it declares a melee attack, it gains +1 to the damage roll. During its activation, this model can spend rage tokens to boost Club Tail melee attack or Club Tail damage rolls, at one token per boost.</capacity>
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="SU01" name="Paingiver Bloodrunners" full_name="Paingiver Bloodrunners" qualification="Skorne Unit" fa="2" base_cost="5" full_cost="-" baseCount="6" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="7" rat="4" def="14" arm="11" cmd="8" advance_deployment="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Assassin's Blade" pow="3" p_plus_s="8" />
+          </weapons>
+          <capacity title="ANATOMICAL PRECISION">When this model's melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+          <capacity title="SHADOW PLAY">If a model in this unit damages one or more enemy models with a melee attack during its combat action, at the end of its combat action you can place one model in the unit in formation anywhere within 1" of another model in this unit.</capacity>
+        </unit>
+        <unit id="SU02" name="Cataphract Arcuarii" full_name="Cataphract Arcuarii" qualification="Skorne Unit" fa="2" base_cost="6" full_cost="9" baseCount="4" fullCount="6" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="7" mat="7" rat="6" def="12" arm="15" cmd="9" hitpoints="8" fearless="true" cra="true" />
+          <weapons>
+            <ranged_weapon name="Harpoon" rng="8" rof="1" aoe="-" pow="12">
+              <capacity title="DRAG">If this weapon damages an enemy model with an equal or smaller base, immediately after the attack is resolved the damaged model can be pushed any distance directly toward this model. After the damaged model is moved, this model can make one normal melee attack against the model pushed. After resolving this melee attack, this model can make additional melee attacks during its combat action.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Arcus" pow="5" p_plus_s="12" reach="true" weapon_master="true" />            
+          </weapons>
+        </unit>
+        <unit id="SU03" name="Cataphract Cetrati" full_name="Cataphract Cetrati" qualification="Skorne Unit" fa="2" base_cost="8" full_cost="11" baseCount="4" fullCount="6" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="7" mat="7" rat="5" def="12" arm="16" cmd="9" hitpoints="8" fearless="true" cma="true" />
+          <weapons>
+            <melee_weapon name="War Spear" pow="4" p_plus_s="11" reach="true" weapon_master="true" />
+          </weapons>
+          <capacity title="SHIELD WALL (ORDER)">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
+          <unit_attachment id="SA03" name="Tyrant Vorkesh" full_name="Tyrant Vorkesh" qualification="Skorne Character Unit Attachment" fa="C" cost="3" completed="true">
+            <model id="Tyrant Vorkesh">
+              <basestats name="VORKESH" spd="5" str="7" mat="8" rat="5" def="12" arm="16" cmd="9" hitpoints="8" fearless="true" cma="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Arm of Rahaal" pow="6" p_plus_s="13" magical="true" reach="true" weapon_master="true">
+                  <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="ATTACHMENT [CATAPHRACT CETRATI]">This attachment can be added to a Cataphract Cetrati unit.</capacity>
+              <capacity title="CLEAVE">When this model destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved the model can make one additional melee attack. This model can gain only one additional attack from Cleave each activation.</capacity>
+              <capacity title="GRANTED: SPELL WARD">While this model is in play, models in its unit gain Spell Ward. (A model with Spell Ward cannot be targeted by spells.)</capacity>
+              <capacity title="TACTICS: PRECISION STRIKE">Models in this unit gain Precision Strike. (When a model with Precision Strike damages a warjack or warbeast with a melee attack, choose which column or branch suffers the damage.)</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="SU04" name="Immortals" full_name="Immortals" qualification="Skorne Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="7" mat="6" rat="3" def="12" arm="17" cmd="8" construct="true" />
+          <weapons>
+            <melee_weapon name="Great Sword" pow="6" p_plus_s="13" magical="true" reach="true" />
+          </weapons>
+          <capacity title="RESONANCE [ANCESTRAL GUARDIAN]">When it begins its activation in the command range of a friendly Ancestral Guardian model, this model gains +2" movement this activation.</capacity>
+          <capacity title="VENGEANCE">During your Maintenance Phase, if one or more models in this unit were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.</capacity>
+        </unit>
+        <unit id="SU05" name="Paingiver Beast Handlers" full_name="Paingiver Beast Handlers" qualification="Skorne Unit" fa="2" base_cost="2" full_cost="3" baseCount="4" fullCount="6" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="4" def="13" arm="11" cmd="8" />
+          <weapons>
+            <melee_weapon name="Barbed Whip" pow="3" p_plus_s="8" reach="true">
+              <capacity title="INFLICT PAIN">When it hits a warbeast with this weapon, this model can place 1 fury point on or remove 1 fury point from the warbeast.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="ANATOMICAL PRECISION">When this model's melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+          <capacity title="BEAST MANIPULATION">A warbeast can be affected by only one Beast Manipulation special action each turn.</capacity>
+          <capacity title="● CONDITION (★ACTION)">RNG 3. Target friendly Faction warbeast. If the warbeast is in range, place any number of fury points on or remove any number of fury points from it.</capacity>
+          <capacity title="● ENRAGE (★ACTION)">RNG 3. Target friendly Faction warbeast. If the warbeast is in range, it gains +2 STR and must charge or make a slam or a trample power attack without being forced during its next activation. Enrage lasts for one turn.</capacity>
+          <capacity title="● MEDICATE (★ACTION)" type="*Action">RNG 3. Target friendly Faction warbeast. If the warbeast is in range, it heals d3 damage points. A warbeast can be affected by Medicate only once per turn.</capacity>
+        </unit>
+        <unit id="SU06" name="Praetorian Ferox" full_name="Praetorian Ferox" qualification="Skorne Cavalry Unit" fa="1" base_cost="7" full_cost="11" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="8" str="7" mat="6" rat="4" def="13" arm="17" cmd="9" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Cavalry Spear" pow="5" p_plus_s="12" reach="true">
+              <capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12" />
+          </weapons>
+          <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+          <capacity title="JUMP">After using its normal movement to make a full advance but before performing an action, you can place this model anywhere completely within 5" of its current location. Any effects that prevent it from charging also prevent it from using Jump.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+        </unit>
+        <unit id="SU07" name="Praetorian Karax" full_name="Praetorian Karax" qualification="Skorne Unit" fa="2" base_cost="4" full_cost="6" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="5" rat="4" def="12" arm="14" cmd="9" cma="true" />
+          <weapons>
+            <melee_weapon name="Pike" pow="4" p_plus_s="10" reach="true" />
+          </weapons>
+          <capacity title="GIRDED">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
+          <capacity title="RANKED ATTACKS">Friendly Faction models can ignore this model when determining LOS.</capacity>
+          <capacity title="SHIELD WALL (ORDER)">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
+        </unit>
+        <unit id="SU08" name="Praetorian Swordsmen" full_name="Praetorian Swordsmen" qualification="Skorne Unit" fa="3" base_cost="4" full_cost="6" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" />
+          <weapons>
+            <melee_weapon name="Sword " pow="3" count="2" p_plus_s="9">
+              <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="PENETRATING STRIKE">After hitting a warjack or warbeast with this model's melee attack, you can choose to have it suffer 1 damage point instead of a normal damage roll.</capacity>
+          <unit_attachment id="SA01" name="Praetorian Swordsmen Officer &amp; Standard" full_name="Praetorian Swordsmen Officer &amp; Standard" qualification="Skorne Unit Attachment" fa="1" cost="2" completed="true">
+            <model id="Officer">
+              <basestats name="OFFICER" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="10" hitpoints="5" officer="true" />
+              <weapons>
+                <melee_weapon name="Sword" pow="3" count="2" p_plus_s="9">
+                  <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="ATTACHMENT [PRAETORIAN SWORDSMEN]">This attachment can be added to a Praetorian Swordsmen unit.</capacity>
+              <capacity title="GRANTED: SIDE STEP">While this model is in play, models in this unit gain Side Step. (When a model with Side Step hits an enemy model with an initial attack or a special attack that is not a power attack, it can advance up to 2" after the attack is resolved. It cannot be targeted by free strikes during this movement.)</capacity>
+              <capacity title="PENETRATING STRIKE">After hitting a warjack or warbeast with this model's melee attack, you can choose to have it suffer 1 damage point instead of a normal damage roll.</capacity>
+              <capacity title="PERFECT STRIKE">Once per game during this unit's activation, this model can use Perfect Strike. During this activation, when making melee attacks, models in this unit can deal 1 damage point instead of making a damage roll.</capacity>
+              <capacity title="TACTICS: RANKED ATTACKS">Models in this unit gain Ranked Attacks. (Friendly Faction models can ignore models with Ranked Attacks when determining LOS.)</capacity>
+            </model>
+            <model id="Praetorian Swordsmen Standard" name="Standard Bearer" full_name="Standard Bearer">
+              <basestats name="STANDARD BEARER" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" hitpoints="0" standard_bearer="true" />
+              <weapons />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="SU09" name="Tyrant Commander &amp; Standard Bearer" full_name="Tyrant Commander &amp; Standard Bearer" qualification="Skorne Unit" fa="2" base_cost="3" full_cost="-" baseCount="2" fullCount="-" completed="true">
+          <basestats name="TYRANT" spd="5" str="7" mat="8" rat="4" def="12" arm="16" cmd="10" hitpoints="8" fearless="true" commander="true" officer="true" />
+          <weapons>
+            <melee_weapon name="Halberd" pow="5" p_plus_s="12" reach="true" weapon_master="true">
+              <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="BATTLE PLAN">During this model's activation, it can use one of the following plans. A friendly Faction model/unit can be affected by only one plan each turn.</capacity>
+          <capacity title="● OVERCOME">RNG 5. Target friendly Faction warrior model/unit. If the model/unit is in range, it gains Pathfinder for one turn.</capacity>
+          <capacity title="● PRESS FORWARD">RNG 5. Target friendly Faction warrior model/unit. If the model/unit is in range it gains +2 SPD when making a full advance this turn.</capacity>
+          <capacity title="● REVEILLE">Knocked down friendly Faction models in this model's command range immediately stand up. Models that were knocked down this turn are not affected by Reveille.</capacity>
+          <model id="Standard">
+            <basestats name="STANDARD BEARER" spd="5" str="6" mat="6" rat="4" def="13" arm="14" cmd="8" hitpoints="5" />
+            <weapons>
+              <melee_weapon name="Sword" pow="3" p_plus_s="9" />
+            </weapons>
+            <capacity title="INSPIRATION [SKORNE]">Friendly Skorne models/units in this model's command range never flee and immediately rally.</capacity>
+          </model>
+        </unit>
+        <unit id="SU10" name="Venator Catapult Crew" full_name="Venator Catapult Crew" qualification="Skorne Weapon Crew Unit" fa="2" base_cost="3" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="LEADER" spd="4" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Catapult" rng="18" rof="1" aoe="4" pow="15">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+              <capacity title="INACCURATE">This model suffers –4 to attack rolls with this weapon.</capacity>
+              <capacity title="LIGHT ARTILLERY">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="MINIMUM RANGE [8]">Attacks made with this weapon cannot target any model within 8" of it.</capacity>
+              <capacity title="RANGE FINDER">While B2B with one or more grunts in this unit, the leader gains +2 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sword" pow="3" p_plus_s="8" />            
+          </weapons>
+          <model id="SU10_Grunts">
+            <basestats name="GRUNTS" spd="4" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" />
+            <weapons>
+              <melee_weapon name="Sword" pow="3" p_plus_s="8" />
+            </weapons>
+          </model>
+        </unit>
+        <unit id="SU11" name="Venators Reivers" full_name="Venators Reivers" qualification="Skorne Unit" fa="3" base_cost="5" full_cost="9" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" cra="true" />
+          <weapons>
+            <ranged_weapon name="Reiver" rng="12" rof="1" aoe="-" pow="10">
+              <capacity title="BURST FIRE">Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large or huge bases.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sword" pow="3" p_plus_s="8" />
+          </weapons>
+          <unit_attachment id="SA02" name="Venators Reiver Officer &amp; Standard" full_name="Venators Reiver Officer &amp; Standard" qualification="Skorne Unit Attachment" fa="1" cost="2" completed="true">
+            <model id="Venators Reiver Officer">
+              <basestats name="OFFICER" spd="6" str="5" mat="6" rat="6" def="13" arm="13" cmd="8" hitpoints="5" cra="true" officer="true" />
+              <weapons>
+                <ranged_weapon name="Reiver" rng="12" rof="1" aoe="-" pow="10">
+                  <capacity title="BURST FIRE">Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large or huge bases.</capacity>
+                </ranged_weapon>
+				<melee_weapon name="Sword" pow="3" p_plus_s="8" />                
+              </weapons>
+              <capacity title="ATTACHMENT [VENATOR REIVERS]">This attachment can be added to a Venator Reivers unit.</capacity>
+              <capacity title="EXTENDED FIRE">Once per game while in formation, this model can use Extended Fire during its unit's activation. This activation, models in this unit gain +4 RNG to their ranged attacks.</capacity>
+              <capacity title="GRANTED: REFORM">While this model is in play, after all models in its unit have completed their actions, each can advance up to 3".</capacity>
+            </model>
+            <model id="Venators Reiver Standard">
+              <basestats name="STANDARD BEARER" spd="6" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" hitpoints="0" standard_bearer="true" />
+              <weapons>
+                <melee_weapon name="Sword" pow="3" p_plus_s="8" />
+              </weapons>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="SU12" name="Nihilators" full_name="Nihilators" qualification="Skorne Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="7" mat="7" rat="4" def="13" arm="13" cmd="7" fearless="true" tough="true" />
+          <weapons>
+            <melee_weapon name="Great Sword" pow="5" p_plus_s="12" reach="true" />
+          </weapons>
+          <capacity title="BERSERK">When this model destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</capacity>
+        </unit>
+        <unit id="SU13" name="Venator Flayer Cannon Crew" full_name="Venator Flayer Cannon Crew" qualification="Skorne Weapon Crew Unit" fa="2" base_cost="2" full_cost="-" baseCount="2" fullCount="-" completed="true">
+          <basestats name="LEADER" spd="4" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Flayer Cannon" rng="14" rof="1" aoe="-" pow="12">
+              <capacity title="BURST FIRE">Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large or huge bases</capacity>
+              <capacity title="LIGHT ARTILLERY">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="RANGE FINDER">While B2B with the Grunt, this model gains +2 to attack rolls with this weapon.</capacity>
+              <capacity title="STRAFE [D3] (★ACTION)">Make d3 ranged attacks targeting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more attacks than the primary target. Strafe counts as one attack for ROF.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sword" pow="3" p_plus_s="8" />            
+          </weapons>
+          <model id="SU13_grunts" full_name="Grunt">
+            <basestats name="GRUNTS" spd="4" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" />
+            <weapons>
+              <melee_weapon name="Sword" pow="3" p_plus_s="8" />
+            </weapons>
+          </model>
+        </unit>
+        <unit id="SU14" name="Venators Slingers" full_name="Venators Slingers" qualification="Skorne Unit" fa="2" base_cost="4" full_cost="6" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="5" def="12" arm="12" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Sling" rng="10" rof="1" aoe="-" pow="10" corrosion="true">
+              <capacity title="ACID BATH">If this attack directly hits a target, center a 3" AOE on the target. Models in the AOE suffer Continuous Effect: Corrosion.</capacity>
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+              <capacity title="EROSION">This model rolls an additional die on this weapon's damage rolls against non-living models.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sword" pow="3" p_plus_s="8" />            
+          </weapons>
+        </unit>
+        <unit id="SU15" name="Cataphract Incindiarii" full_name="Cataphract Incindiarii" qualification="Skorne Unit" fa="2" base_cost="6" full_cost="9" baseCount="4" fullCount="6" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="7" mat="7" rat="6" def="12" arm="15" cmd="9" hitpoints="8" fearless="true" cra="true" />
+          <weapons>
+            <ranged_weapon name="Incindus" rng="10" rof="1" aoe="3" pow="12" fire="true" continuous_fire="true" />
+			<melee_weapon name="Incindus Blade" pow="4" p_plus_s="11" />            
+          </weapons>
+        </unit>
+      </units>
+      <solos>
+        <solo id="SS01" name="Agonizer" full_name="Agonizer" qualification="Skorne Solo" fa="1" cost="2" completed="true">
+          <basestats name="AGONIZER" spd="5" str="7" mat="3" rat="1" def="13" arm="16" cmd="6" hitpoints="8" fearless="true" />
+          <weapons />
+          <capacity title="AGONIES">Once during its activation, this model can spend 1 fury point to use one of the following effects. Enemy models suffer these effects while within 4" of this model + 1" per fury point on it. These effects last for one round.</capacity>
+          <capacity title="● GNAWING PAIN">Affected enemy warbeasts suffer –2 to their damage rolls.</capacity>
+          <capacity title="● MADDENING">Affected enemy warbeasts suffer –2 THR.</capacity>
+          <capacity title="● SPIRITUAL AFFLICTION">Affected enemy warbeasts lose their animi. Affected enemy warjacks lose Arc Node advantage and cannot be allocated focus.</capacity>
+          <capacity title="FURY BANK">While this model is in a friendly warlock's control area during the warlock's activation, the warlock can move fury points from itself to this model. This model can have up to 5 fury points at a time. While this model is in a friendly Faction warlock's control area, the warlock can leach fury from this model as if it were a warbeast.</capacity>
+        </solo>
+        <solo id="SS02" name="Ancestral Guardian" full_name="Ancestral Guardian" qualification="Skorne Solo" fa="3" cost="3" completed="true">
+          <basestats name="GUARDIAN" spd="4" str="8" mat="8" rat="3" def="10" arm="18" cmd="10" hitpoints="10" construct="true" />
+          <weapons>
+            <melee_weapon name="Halberd" pow="5" p_plus_s="13" magical="true" reach="true" />
+          </weapons>
+          <capacity title="DEFENSIVE STRIKE">Once per turn, when an enemy model advances into and ends its movement in this model's melee range, this model can immediately make one normal melee attack against it.</capacity>
+          <capacity title="SOUL GUARDIAN">This model gains one soul token for each friendly living Faction warrior model destroyed in its command range by a continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
+          <capacity title="SPIRIT DRIVEN">At the beginning of this model's activation, it can spend one soul token to gain +2" movement this activation.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+        </solo>
+        <solo id="SS03" name="Paingiver Bloodrunner Master Tormentor" full_name="Paingiver Bloodrunner Master Tormentor" qualification="Skorne Solo" fa="2" cost="2" completed="true">
+          <basestats name="MASTER TORMENTOR" spd="6" str="5" mat="7" rat="4" def="14" arm="13" cmd="9" hitpoints="5" advance_deployment="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Barbed Whip" pow="3" p_plus_s="8" reach="true">
+              <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="ANATOMICAL PRECISION">When this model's melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+          <capacity title="SPRINT">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation, it can make a full advance.</capacity>
+          <capacity title="VETERAN LEADER [PAINGIVER BLOODRUNNERS]">Friendly Paingiver Bloodrunners trooper models gain +2 to attack rolls while this model is in their LOS.</capacity>
+        </solo>
+        <solo id="SS04" name="Extoller Soulward" full_name="Extoller Soulward" qualification="Skorne Solo" fa="2" cost="2" completed="true">
+          <basestats name="SOULWARD" spd="6" str="5" mat="5" rat="5" def="14" arm="12" cmd="8" hitpoints="5" gunfighter="true" />
+          <weapons>
+            <ranged_weapon name="Spirit Eye" rng="8" rof="1" aoe="-" pow="3" magical="true">
+              <capacity title="ANNIHILATING GAZE">When a living model is hit by this attack, add its current STR to the damage roll.</capacity>
+              <capacity title="GHOST SHOT">This model ignores LOS when making attacks with this weapon. When resolving attacks with this weapon, ignore concealment and cover.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="GATEKEEPER">This model gains one soul token for each friendly living Faction warrior model destroyed in its command range by a continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to five soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
+          <capacity title="GHOST SHIELD">This model gains +1 ARM for each soul token currently on it.</capacity>
+          <capacity title="GUIDANCE (★ACTION)">RNG 5. Target friendly Faction model. If the model is in range, it gains Eyeless Sight and its weapons gain Magical Weapon for one turn.</capacity>
+          <capacity title="SPIRIT GUIDE">During its activation, you can remove soul tokens from this model and place them on friendly Faction models in this model's command range that have the Soul Guardian ability. A model cannot have more than three soul tokens as a result of Spirit Guide.</capacity>
+        </solo>
+        <solo id="SS05" name="Tyrant Rhadeim" full_name="Tyrant Rhadeim" qualification="Skorne Dragoon Character Solo" fa="C" cost="5" completed="true">
+          <basestats name="RHADEIM" spd="8" str="7" mat="8" rat="4" def="14" arm="17" cmd="10" hitpoints="10" commander="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Lance of Bashek" pow="5" p_plus_s="12" magical="true" reach="true">
+              <capacity title="ARMOR PIERCING (★ATTACK)">When calculating damage from this attack, halve the base ARM stats of models hit that have medium or larger bases. This attack gains +2 to damage rolls against models with small bases.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12" />
+          </weapons>
+          <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+          <capacity title="DRAGOON">While mounted, this model has base SPD 8 and base ARM 17. While dismounted, it has base SPD 6, base ARM 15, and loses Jump, Pathfinder, and Steady.</capacity>
+          <capacity title="EVASIVE">This model cannot be targeted by free strikes. This model can advance up to 2" immediately after an enemy ranged attack that missed it is resolved unless it was missed while advancing.</capacity>
+          <capacity title="JUMP">After using its normal movement to make a full advance but before performing an action, you can place this model anywhere completely within 5" of its current location. Any effects that prevent it from charging also prevent it from using Jump.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+          <capacity title="VETERAN LEADER [PRAETORIAN FEROX]">Friendly Praetorian Ferox trooper models gain +2 to attack rolls while this model is in their LOS.</capacity>
+          <model id="SS05_Dismount" name="Tyrant Rhadeim (Dismount)" full_name="Tyrant Rhadeim (Dismount)">
+            <basestats name="RHADEIM (DISMOUNTED)" spd="6" str="7" mat="8" rat="4" def="14" arm="15" cmd="10" hitpoints="5" commander="true" />
+            <weapons>
+              <melee_weapon name="Lance of Bashek" pow="5" p_plus_s="12" magical="true" reach="true" />
+            </weapons>
+          </model>
+        </solo>
+        <solo id="SS06" name="Void Spirit" full_name="Void Spirit" qualification="Skorne Solo" fa="2" cost="2" completed="true">
+          <basestats name="VOID SPIRIT" spd="6" str="6" mat="7" rat="3" def="14" arm="12" cmd="5" hitpoints="5" abomination="true" incorporeal="true" undead="true" />
+          <weapons>
+            <melee_weapon name="Talon" pow="6" p_plus_s="12" magical="true">
+              <capacity title="ERUPTION OF ASH">If a model is boxed by an attack made with this weapon, center a 3" AOE cloud effect on the boxed model and then remove that model form play. The AOE remains in play for one round. Enemy models in the AOE when it was put in play are hit and suffer a POW 12 fire damage roll. Enemy models entering or ending their activation in the AOE suffer a POW 12 fire damage roll. Eruption of Ash damage rolls cannot be boosted.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="ANNIHILATOR">This model gains an additional die on melee damage rolls against living models. When a living model is destroyed within 3" of this model, it never generates a soul token.</capacity>
+          <capacity title="POLTERGEIST">When an enemy model misses this model with an attack, immediately after the attack is resolved you can choose to push the enemy model d3" directly away from this model.</capacity>
+        </solo>
+        <solo id="SS07" name="Paingiver Task Master" full_name="Paingiver Task Master" qualification="Skorne Solo" fa="2" cost="2" completed="true">
+          <basestats name="TASK MASTER" spd="6" str="6" mat="6" rat="4" def="13" arm="13" cmd="9" hitpoints="5" />
+          <weapons>
+            <melee_weapon name="Man Catcher" pow="4" p_plus_s="10" reach="true">
+              <capacity title="MAN CATCHER (★ACTION)">This attack causes no damage. A warrior model hit suffers –2 DEF and for one round cannot advance while within this model's melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="ANATOMICAL PRECISION">When this model's melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+          <capacity title="NO SLEEPING ON THE JOB [MINION]">This model and friendly Minion models in its command range cannot be knocked down.</capacity>
+          <capacity title="SLAVE DRIVER">A Minion model/unit can be affected by only one Slave Driver special action each turn.</capacity>
+          <capacity title="● PAIN DRIVER (★ACTION)">RNG 3. Target friendly non-warlock Minion warrior model/unit. If the model is in range, it gains +2 STR for one round.</capacity>
+          <capacity title="● TEMPER FLESH (★ACTION)">RNG 3. Target friendly Minion warrior model/unit. If the model/unit is in range, it gains Fearless and Tough for one round.</capacity>
+        </solo>
+        <solo id="SS08" name="Aptimus Marketh" full_name="Aptimus Marketh" qualification="Skorne Extoller Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="MARKETH" spd="6" str="5" mat="6" rat="5" def="13" arm="12" cmd="8" hitpoints="5" fearless="true" />
+          <weapons>
+            <melee_weapon name="Gravitas" pow="6" p_plus_s="11" magical="true" reach="true" />
+          </weapons>
+          <capacity title="ATTACHED">Before the start of the game, attach this model to a friendly Faction warlock for the rest of the game. Each warlock can have only one model attached to it.</capacity>
+          <capacity title="GATEKEEPER">This model gains one soul token for each friendly living Faction warrior model destroyed in its command range by a continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to five soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
+          <capacity title="GHOST SHIELD">This model gains +1 ARM for each soul token currently on it.</capacity>
+          <capacity title="SOUL TAP">While this model is in its warlock's control area, its warlock can spend soul tokens on it to upkeep spells at one token per spell upkept.</capacity>
+          <capacity title="SPELL SLAVE (★ACTION)">This model must be in its warlock's control area to make the Spell Slave special action. When it does, it casts one of its warlock's spells with a COST of 3 or less. The warlock is considered to have cast that spell but this model is its point of origin. When making a magic attack roll, this model uses its warlock's FURY. This cannot cast spells with a RNG of SELF or CTRL.</capacity>
+        </solo>
+        <solo id="SS09" name="Hakaar the Destroyer" full_name="Hakaar the Destroyer" qualification="Skorne Ancestral Guardian Character Solo" fa="C" cost="4" completed="true">
+          <basestats name="HAKAAR" spd="4" str="8" mat="9" rat="3" def="10" arm="18" cmd="10" hitpoints="10" construct="true" />
+          <weapons>
+            <melee_weapon name="Great Sword " pow="5" count="2" p_plus_s="13" magical="true" reach="true">
+              <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+              <capacity title="LIFE DRINKER">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="GHOST SHIELD">This model gains +1 ARM for each soul token currently on it.</capacity>
+          <capacity title="RIGHTEOUS VENGEANCE">If one or more friendly Faction warrior models were destroyed or removed from play by enemy attacks while within 5" of this model during your opponent's last turn, after resolving continuous effects during your Maintenance Phase, this model can make a full advance followed by one normal melee attack.</capacity>
+          <capacity title="SOUL GUARDIAN">This model gains one soul token for each friendly living Faction warrior model destroyed in its command range by a continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+        </solo>
+        <solo id="SS10" name="Mortitheurge Willbreaker" full_name="Mortitheurge Willbreaker" qualification="Skorne Solo" fa="2" cost="2" completed="true">
+          <basestats name="MORTITHEURGE" spd="6" str="5" mat="5" rat="4" def="13" arm="13" cmd="9" hitpoints="5" commander="true" />
+          <weapons />
+          <capacity title="BEAST MASTER">This model can force friendly Faction warbeasts in its command range as if it were their controlling warlock.</capacity>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="ANCILLARY ATTACK (★ACTION)">RNG 5. Target friendly Faction warbeast. If the warbeast is in range, it immediately makes one normal melee or ranged attack. A warbeast can make an Ancillary Attack special action only once per turn.</capacity>
+          <capacity title="● INFLUENCE (★ATTACK)">Influence is a RNG 10 magic attack. Take control of target enemy non-warcaster, non-warlock warrior model hit. The model immediately makes one normal melee attack, then Influence expires.</capacity>
+          <capacity title="● PUPPET MASTER (★ACTION OR ATTACK)">Puppet Master is a RNG 10 spell. When it targets an enemy model/unit, it is a magic attack. You can have one affected model reroll one ore more dice of your choice rolled for a command check, attack, or damage roll, then Puppet Master expires. Puppet Master lasts for one round.</capacity>
+        </solo>
+        <solo id="SS11" name="Tyrant Zaadesh" full_name="Tyrant Zaadesh" qualification="Skorne Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="ZAADESH" spd="6" str="6" mat="6" rat="4" def="13" arm="15" cmd="9" focus="4" hitpoints="5" fearless="true" lesser_warlock="true" />
+          <weapons>
+            <melee_weapon name="Deathsong" pow="6" p_plus_s="12" magical="true" reach="true" />
+          </weapons>
+          <spell name="PERDITION" cost="2" rng="10" aoe="-" pow="10" up="NO" off="YES">When an enemy model is damaged by Perdition, immediately after the attack is resolved one warbeast in this model's battlegroup that is currently in this model's control area can make a full advance toward the nearest enemy model. A model can advance as a result of Perdition only once per turn.</spell>
+		  <spell name="TAG TEAM" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While within this model's control area, models in its battlegroup gain +2 on melee attack and melee damage rolls against models within melee range of another model in this model's battlegroup.</spell>
+		  <capacity title="LESSER WARLOCK">This model is not a warlock but has the following warlock special rules: Battlegroup Commander, Control Area, Damage Transferance, Forcing, Fury Manipulation, Healing, and Spellcaster.</capacity>
+          <capacity title="PROTECTIVE BATTLEGROUP">Once per round, when this model is directly hit by a ranged or magic attack during your opponent's turn, you can choose to have another model in this model's battlegroup within 2" of this model that is not incorporeal, knocked down, or stationary to be directly hit instead. The chosen model is automatically hit and suffers all damage and effects.</capacity>		  
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>

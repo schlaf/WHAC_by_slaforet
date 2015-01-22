@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/battle_plan_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/modelLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/layoutActions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/button_move_hit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_move_melee" />
+
+                <ImageButton
+                    android:id="@+id/button_move_shoot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_move_shoot" />
+
+                <ImageButton
+                    android:id="@+id/button_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_charge" />
+
+                <ImageButton
+                    android:id="@+id/button_move_run"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_run" />
+
+                <ImageButton
+                    android:id="@+id/button_slam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_slam" />
+
+                <ImageButton
+                    android:id="@+id/button_trample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_trample" />
+
+                <ImageButton
+                    android:id="@+id/button_feat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_feat" />
+
+                <ImageButton
+                    android:id="@+id/button_spell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_spell" />
+                <ImageButton
+                    android:id="@+id/button_special"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/unselected_action_background"
+                    android:src="@drawable/action_special" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/spellsLine1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBox01"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:text="CheckBox"
+                android:textSize="@dimen/textview_small_height" />
+
+            <CheckBox
+                android:id="@+id/checkBox02"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:text="CheckBox"
+                android:textSize="@dimen/textview_small_height" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/spellsLine2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBox03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CheckBox"
+                android:textSize="@dimen/textview_small_height" />
+
+            <CheckBox
+                android:id="@+id/checkBox04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CheckBox"
+                android:textSize="@dimen/textview_small_height" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/spellsLine3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/checkBox05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CheckBox"
+                android:textSize="@dimen/textview_small_height" />
+
+            <CheckBox
+                android:id="@+id/checkBox06"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CheckBox"
+                android:textSize="@dimen/textview_small_height" />
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/specialActionLine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/addActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0"
+                android:background="@drawable/empty"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/add" />
+
+        <Spinner
+            android:id="@+id/spinnerSpecialAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:spinnerMode="dropdown"/>
+        
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/empty"
+            android:contentDescription="@string/delete"
+            android:src="@drawable/ic_menu_delete" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    
+    <ImageView
+        android:id="@+id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/drag_drop" />
+ </LinearLayout>

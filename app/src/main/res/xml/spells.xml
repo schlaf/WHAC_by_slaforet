@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spells>
+
+	
+	<spell
+		name="ADMONITION"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">When an enemy model advances and ends its movement within 6" of target model in this model's battlegroup, the affected model can immediately advance up to 3", then Admonition expires. The affected model cannot be targeted by free strikes during this movement.</spell>
+	<spell
+		name="AGITATION"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">
+Place 1 fury point on each enemy warbeast currently in this model's
+control area. This spell can only be cast once per turn.
+					</spell>
+		
+	<spell
+		name="ANNIHILATION"
+		cost="4"
+		rng="10"
+		aoe="3"
+		pow="10"
+		up="NO"
+		off="YES">Models hit suffer a POW 10 damage roll. Models boxed by Annihilation are removed from play. This model gains a soul token for each living non-soulless enemy model removed from play this way.</spell>
+	<spell name="ARCANE BOLT"
+		cost="2"
+		rng="12"
+		aoe="-"
+		pow="11"
+		up="NO"
+		off="YES">Magical bolts of energy streak toward the target model.
+</spell>
+	<spell
+		name="ASHEN VEIL"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model / unit gains concealment. Living enemy models suffer -2 to attack rolls while within 2" of an affected model.</spell>
+<spell
+		name="AVATAR OF SLAUGHTER"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target this model or Scrapjack. The affected model gains +2 to melee attack rolls. When it destroys an enemy model with a melee attack during its activation, after the attack is resolved the affected model can advance up to 1" and make an additional melee attack</spell>	
+	<spell
+		name="AWARENESS"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">
+While in this model's control area, the front arcs of models in its battlegroup are extended to 360° and when determining LOS those models ignore cloud effects, forests, and intervening models. Awareness lasts for one round.
+      </spell>
+	<spell
+		name="BACKLASH"
+		cost="3"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">When target enemy warjack that is part of a battlegroup is damaged, its controller suffers l damage point</spell>
+	<spell
+		name="BANISHING WARD"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Enemy upkeep spells on target friendly model/unit expire. Affected
+models cannot be targeted by enemy spells or animi.
+
+					</spell>
+					<spell name="BEFUDDLE"
+		cost="2"
+		rng="10"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="YES">On a hit, you can immediately advance target enemy non-warcaster/non-warlock model up to 3". 
+Affected models cannot be targeted by free strikes during this movement. A model can move only once per turn as a result of Befuddle.
+</spell>
+						
+	<spell
+		name="BLACK SPOT"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">Target enemy warrior model/unit suffers -2 DEF. When a friendly Faction model destroys one or more affected models with a melee or ranged attack during its activation, immediately after the attack is resolved it can make one additional melee or ranged attack regardless of ROF. Attacks gained from Black Spot cannot generate additional attacks from Black Spot.</spell>
+	<spell
+		name="BATTERING RAM"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">When an enemy model is hit by Battering Ram, it can be pushed 3" directly away from the spell's point of origin.</spell>
+	<spell
+		name="BLAZING EFFIGY"
+		cost="4"
+		rng="8"
+		aoe="-"
+		pow="14"
+		up="NO"
+		off="NO">Enemy models within 2" of target friendly Faction warjack suffer a POW l4 fire damage roll.</spell>
+	<spell
+		name="BLEED"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="10"
+		up="NO"
+		off="YES">When Bleed destroys a living enemy model, this model heals d3 damage points.</spell>
+						<spell name="BLOOD FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly warrior model/unit gains an additional die on melee damage rolls but suffers -2 DEF.
+					</spell>
+
+		<spell
+		name="BLOOD RAIN"
+		cost="3"
+		rng="8"
+		aoe="3"
+		pow="12"
+		up="NO"
+		off="YES">Blood Rain causes corrosion damage. Models hit suffer the Corrosion continuous effect</spell>
+	<spell
+		name="BONE SHAKER"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">When this spell boxes a living or undead non-warcaster non-warlock enemy warrior model, you can immediately make a full advance with the enemy model followed by a normal melee attack, then the boxed model is removed from play. The boxed model cannot be targeted by free strikes during this movement.</spell>
+	<spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">
+During its activation, target friendly model can charge without spending focus or being forced and gains +2" movement and
+Pathfinder when it charges. Boundless Charge lasts for one turn.
+</spell>
+	
+	<spell
+		name="BREATH OF CORRUPTION"
+		cost="3"
+		rng="8"
+		aoe="3"
+		pow="12"
+		up="NO"
+		off="YES">Models hit suffer a POW l2 corrosion damage roll. The AOE is a cloud effect that remains in play for one round. Models entering or ending their activation in the AOE suffer 1 point of corrosion damage</spell>
+<spell
+		name="BROADSIDE"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">Models in this model's battlegroup currently in its control area can immediately make one normal ranged attack. Attacks gained from Broadside do not count against a weapon's ROF. Broadside can be cast only once per turn. </spell>	
+	<spell name="BULLET DODGER"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model gains +2 DEF against ranged attack rolls and Dodge,
+(A model with Dodge can advance up to 2" immediately after an enemy
+attack that missed it is resolved unless it was missed while advancing. It
+cannot be targeted by free strikes during this movement.)
+</spell>
+	<spell
+		name="CARNAGE"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">Friendly Faction models gain +2 to melee attack rolls against enemy models in this model's control area. Carnage lasts for one turn.</spell>
+	<spell
+		name="CASTIGATE"
+		cost="2"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">
+For one round, enemy models lose the Arc Node advantage while in this model's control area.
+</spell>
+	<spell
+		name="CATACLYSM"
+		cost="4"
+		rng="8"
+		aoe="5"
+		pow="20"
+		up="NO"
+		off="YES">
+    Target enemy model is automatically hit. Reduce the base POW of Cataclysm by l for each full inch between the target and this model. Blast damage affects only enemy models. Cataclysm has no effect if the target model is out of range.
+   </spell>
+
+
+	
+	<spell
+		name="CAUSTIC MIST"
+		cost="2"
+		rng="CTRL"
+		aoe="3"
+		pow="-"
+		up="NO"
+		off="NO">Place a 3" AOE cloud effect completely within this model's control area. A model entering or ending its activation in the AOE suffers 1 point of corrosion damage   Caustic Mist lasts for one round.</spell>
+	<spell
+		name="CHASTEN"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">
+Enemy upkeep spells and animi on target model/unit damaged by Chasten expire.
+    </spell>
+	<spell
+		name="CLEANSING FIRE"
+		cost="3"
+		rng="8"
+		aoe="3"
+		pow="14"
+		up="NO"
+		off="YES">Cleansing Fire causes fire damage. On a critical hit, models hit suffer the Fire continuous effect.</spell>
+	<spell
+		name="CONVECTION"
+		cost="2"
+		rng="10"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">When Convection destroys a living enemy model, allocate 1 focus point to a warjack in this model's battlegroup that is in its control area.</spell>
+	<spell
+		name="CREATOR'S WRATH"
+		cost="2"
+		rng="SELF"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+This model gains an additional die on melee attack and melee damage rolls. When making a melee attack, it ignores spell effects that add to the target's DEF or ARM.      </spell>
+	
+	<spell
+		name="CRIPPLING GRASP"
+		cost="3"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">Target model/unit suffers -2 SPD, STR, DEF, and ARM and cannot run or make special attacks.</spell>
+	<spell
+		name="CRUSADER'S CALL"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">
+Friendly faction models beginning a charge while in this model's control area this turn gain +2" movement.
+    </spell>
+	<spell
+		name="CURSE OF SHADOWS"
+		cost="3"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">Target model/unit suffers -2 ARM and cannot make free strikes. A model can advance through an affected model if it has enough movement to move completely past its base.</spell>
+	<spell name="CYCLONE" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model immediately makes a full advance. It cannot be targeted by free strikes during this movement.
+At the end of this movement, this model can make one melee attack against each model in its LOS that is in its melee range.
+Cyclone can be cast only once per turn.
+</spell>
+	
+	<spell
+		name="DARK GUIDANCE"
+		cost="4"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">While in this model's control area, friendly Faction models gain an additional die on their melee attack rolls this turn.</spell>
+	<spell name="DASH"
+		cost="2"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">While in this model's control area, friendly Faction warrior models cannot be targeted by free strikes. This model and friendly Faction warrior models activating in its control area gain +1 SPD. Dash lasts for one turn.
+	</spell>
+	<spell
+		name="DEATH KNELL"
+		cost="4"
+		rng="8"
+		aoe="4"
+		pow="10"
+		up="NO"
+		off="YES">Before dealing damage, count the number of models in the AOE. Add the result to each Death Knell damage roll.</spell>
+	<spell
+		name="DEATH WARD"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly Faction model/ unit gains +2 ARM. If an affected warjack is damaged, you choose which column suffers the damage.</spell>
+	 <spell name="ENERGIZER" cost="*" rng="SELF" aoe="CTRL" pow ="-" up="NO" off="NO">
+This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.
+ </spell>
+	
+	<spell
+		name="DEFENDER'S WARD"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly Faction model/unit gains +2DEF and ARM.</spell>
+	<spell
+		name="ENGINE OF DESTRUCTION"
+		cost="2"
+		rng="SELF"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">This model gains +2 SPD, +4 STR, and +4 MAT for one round</spell>
+	<spell
+		name="ESCORT"
+		cost="2"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="YES"
+		off="NO">Warjacks in this model's battlegroup beginning their activations in its control area gain +2" movement. This model gains +2 ARM while one or more warjacks in its battlegroup are within 3" of it.</spell>
+	<spell
+		name="EXCARNATE"
+		cost="3"
+		rng="10"
+		aoe="-"
+		pow="13"
+		up="NO"
+		off="YES">When a living enemy warrior model is boxed by Excarnate, remove it from play. You can then add one Grunt to a friendly Faction small-based undead unit in this model's control area. The Grunt must be placed in formation and within 3" of this model.</spell>
+	<spell
+		name="EXPLOSIVO"
+		cost="1"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">When target friendly model makes a normal attack with a non-spray
+ranged weapon, the weapon gains Magical Weapon. If the weapon
+was AOE- it becomes AOE 3. An affected model cannot participate in a
+combined ranged attack. Models in the AOE other than the model that was
+directly hit suffer blast damage but do not suffer any other effects of the
+attack. Explosivo expires immediately after resolving target model's next
+ranged attack. Explosivo lasts for one turn.
+</spell>
+	<spell
+		name="FEAST OF WORMS"
+		cost="4"
+		rng="10"
+		aoe="4"
+		pow="12"
+		up="YES"
+		off="YES">While in the AOE, enemy models suffer -2 ARM. The AOE remains in play as long as upkeep is paid</spell>
+	<spell name="FOG OF WAR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">
+Models gain concealment while in this model's control area.
+</spell>
+	
+	<spell name="FORCE BLAST"
+		cost="3"
+		rng="CTRL"
+		aoe="*"
+		pow="-"
+		up="NO"
+		off="NO">Target a model in this model's battlegroup in it's control area. Enemy models currently within 2" of the target model are pushed 4" directly away from it in the order you choose
+</spell>
+		<spell name="FORCE BLOW"
+		cost="3"
+		rng="10"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">Models damaged by Force Blow are knocked down.
+</spell>
+	<spell
+		name="FORTUNE"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Target friendly Faction model/unit can reroll its missed attack rolls. Each
+attack roll can be rerolled only once as a result of Fortune.
+					</spell>
+	<spell name="FREEZING GRIP" cost="4" rng="8" aoe="-" pow="-" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+	
+	<spell name="FULL THROTTLE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+Warjacks in this model's battlegroup beginning their activations in its control area can run, charge,
+or make slam or trample power attacks without spending focus that activation. While in this model's
+control area, models in its battlegroup gain boosted melee attack rolls. Full Throttle lasts for one turn.
+</spell>
+	
+	<spell
+		name="DOOM SPIRAL"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">When Doom Spiral damages a warjack that is part of a battlegroup, its controller suffers d3 damage points.</spell>
+	<spell
+		name="DRAGON SLAYER"
+		cost="3"
+		rng="SELF"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">This model gains +2 STR and ARM. Models cannot reave fury from warbeasts destroyed by this model. When this model destroys an enemy model with fury points on it with an attack, this model gains a number of focus points equal to the fury points on the destroyed model.</spell>
+	<spell
+		name="FEAR OF GOD"
+		cost="2"
+		rng="10"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">
+    Target enemy model/unit cannot give orders, receive orders, or make special attacks.
+    </spell>
+	<spell
+		name="FIRE STEP"
+		cost="2"
+		rng="SELF"
+		aoe="*"
+		pow="13"
+		up="NO"
+		off="NO">Enemy models within 2" of this model suffer a POW 13 fire damage roll. After the damage is resolved, place this model completely within 3" of its current location. Fire Step can be cast only once per activation.</spell>
+	<spell
+		name="FLAGELLATION"
+		cost="2"
+		rng="SELF"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">When making melee attacks, this model ignores both focus points overboosting the target's Power Field and spell effects that add to its DEF or ARM. Models damaged by this model lose Tough and cannot be healed for one round.</spell>
+<spell name="FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly model/unit gains +3 to melee damage rolls but suffers -1 DEF.
+</spell>
+	
+<spell
+		name="GALLOWS"
+		cost="3"
+		rng="10"
+		aoe="-"
+		pow="13"
+		up="NO"
+		off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallow's point of origin</spell>	
+	<spell
+		name="GHOST WALK"
+		cost="3"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">Target friendly model/unit gains Ghostly for one turn. (When it advances, a model with Ghostly ignores movement penalties from terrain and obstacles and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)</spell>
+										<spell
+		name="GUIDED FIRE"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">While in this model's control area, models in its battlegroup gain boosted
+ranged attack rolls for one turn.
+		</spell>
+	
+	<spell
+		name="GUIDED HAND"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">
+Target friendly model/unit gains an additional die on each model's first melee attack roll this turn.    
+</spell>
+
+  
+
+	
+	<spell
+		name="HELLBOUND"
+		cost="3"
+		rng="SELF"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">This model cannot be targeted by charges. While within 5" of this model, enemy models treat open ground as rough terrain.</spell>
+	<spell
+		name="HELLFIRE"
+		cost="3"
+		rng="10"
+		aoe="-"
+		pow="14"
+		up="NO"
+		off="YES">A model/ unit hit by Hellfire must pass a command check or flee.</spell>
+	<spell
+		name="HELLMOUTH"
+		cost="4"
+		rng="8"
+		aoe="*"
+		pow="12"
+		up="NO"
+		off="YES">If this attack misses, nothing happens. If it hits, before making the damage roll, push models within 3" of the model hit 3" directly toward it in the order you choose. Then center a 3" AOE on the model hit. Models hit suffer a POW 12 damage roll. Models boxed by Hellmouth are removed from play.</spell>
+	<spell
+		name="HEX BLAST"
+		cost="3"
+		rng="10"
+		aoe="3"
+		pow="13"
+		up="NO"
+		off="YES">Enemy upkeep spells and animi on the model/ unit directly hit by Hex Blast immediately expire.</spell>
+	<spell
+		name="HEX HAMMER"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="YES"
+		off="NO">When an enemy model casts a spell or uses an animus while in this model's control area, after the spell or animus has been cast or used the enemy model suffers d3 damage points.</spell>
+	<spell
+		name="HOLY WARD"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Target friendly Faction model/unit gains +2 DEF and cannot be targeted by enemy spells or animi.
+</spell>
+<spell name="HOT SHOT" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target model in this model's battlegroup gains boosted ranged attack damage rolls.
+</spell>
+	
+	<spell
+		name="ICY GRIP"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">Target enemy warrior model/unit without Immunity: Cold suffers -2 DEF and cannot run or make special attack.</spell>
+	<spell
+		name="IGNITE"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model/unit gains +2 to melee attack damage rolls.  Affected models gain Critical Fire on their normal melee attacks.</spell>
+	<spell
+		name="IMMOLATION"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">Immolation causes fire damage. On a critical hit, the model hit suffer the Fire continuous effect</spell>
+	<spell
+		name="INFLUENCE"
+		cost="1"
+		rng="10"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="YES">Take control of target enemy non-warcaster, non-warlock warrior model. The model immediately makes one normal melee attack, then Influence expires.</spell>
+	<spell name="INHOSPITABLE GROUND"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">While in this model's control area, enemy models treat open terrain as rough terrain. Inhospitable Ground lasts for one round.
+	</spell>	
+	<spell
+		name="INFERNAL MACHINE"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target warjack in this model's battlegroup gains Terror and +2 MAT and SPD.</spell>
+	<spell
+		name="INVIOLABLE RESOLVE"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Target friendly Faction model/unit gains +2 ARM and Fearless
+    </spell>
+<spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+Target friendly warrior model/unit gains +3 DEF but suffers -1 SPD.
+</spell>
+	
+	<spell
+		name="JUMP START"
+		cost="1"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">Models in this model's battlegroup that are currently in its control area can immediately turn to face any direction. Affected models that are stationary or knocked down are no longer stationary and stand up. Models that were knocked down this turn are not affected by Jump Start.</spell>
+<spell name="KILLING GROUND" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+Friendly Faction models beginning a charge in this model's control area gain Pathfinder. Warbeasts in this model's battlegroup beginning their activations in this model's control area can charge or make slam power attacks against enemy models without being forced. Killing Ground lasts for one turn.
+</spell>
+
+		
+		<spell
+		name="LAMENTATION"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="YES"
+		off="NO">Enemy models pay double the focus or fury point cost to cast or upkeep spells while in this models control area.</spell>
+	<spell
+		name="MAGE BLIGHT"
+		cost="5"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">While in this model's control area, living enemy models cannot cast spells or use feats. Mage Blight lasts for one round.</spell>
+	<spell
+		name="MAGIC BULLET"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">If target friendly Faction model's next normal ranged attack directly hits, after resolving the attack choose a mode] within 4" of the model hit. The chosen model suffers an unboostable POW 12 magic damage roll. The point of origin for this damage is the model hit. After resolving this damage roll, Magic Bullet expires. Magic Bullet lasts for one turn.
+		</spell>
+	<spell name="MAGNETIC HOLD" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">
+Target model/unit suffers -2SPD and DEF. Friendly Faction models with Construct charging an affected model gain +2" movement.
+</spell>
+	
+	<spell
+		name="MALEDICTION"
+		cost="2"
+		rng="SELF"
+		aoe="*"
+		pow="-"
+		up="YES"
+		off="NO">While within 2" of this model, enemy models suffer -2 DEF and ARM.</spell>
+	<spell
+		name="MARKED FOR DEATH"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">Target enemy model/ unit suffers -2 DEF and loses lncorporeal and Stealth and cannot gain those abilities while affected by Marked for Death. Friendly Faction models can target an affected model regardless of LOS.</spell>
+	<spell
+		name="MOBILITY"
+		cost="2"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">Models in this model's battlegroup currently in its control area gain +2 SPD and Pathfinder for one turn.</spell>
+<spell name="MOSH PIT" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">
+While in this model's control area, friendly models gain Knockdown on their melee weapons. Mosh Pit lasts for one turn. (When a model is hit with an attack by a weapon with Knockdown, it is knocked down.)
+</spell>
+		<spell
+		name="MURDER OF CROWS"
+		cost="3"
+		rng="CTRL"
+		aoe="5"
+		pow="*"
+		up="YES"
+		off="NO">Place a 5" AOE cloud effect anywhere completely in this model's control area. Any model that is not part of this model's battlegroup that enters or ends its activation in the AOE suffers an unboostable POW 8 damage roll.</spell>
+<spell name="OBLITERATION" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">
+The force of this attacks blasts apart the earth itself.
+</spell>
+				
+		<spell
+		name="OCCULTATION"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model/unit gains Stealth.</spell>
+	<spell
+		name="OVERRUN"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">When target model in this model's battlegroup destroys one or more enemy models with an attack, immediately after the attack is resolved one model in this model's battlegroup that is in its control area can make a full advance, then Overrun expires. Overrun can be cast only once per turn and lasts for one turn</spell>
+	<spell
+		name="PARASITE"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">Target model/unit suffers -3 ARM and this model gains +1 ARM.</spell>
+	<spell
+		name="PERDITION"
+		cost="2"
+		rng="10"
+		aoe="-"
+		pow="10"
+		up="NO"
+		off="YES">When an enemy model is damaged by Perdition, immediately after the attack is resolved one warjack in this model's battlegroup that is currently in this model's control area can make a full advance toward the nearest enemy model. A model can advance as a result of Perdition only once per turn.</spell>
+	<spell
+		name="PHANTOM HUNTER"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target model in this model's battlegroup ignores LOS when making charges, slams, and attacks. That model ignores concealment and cover when resolving attacks.</spell>
+					
+	<spell
+		name="PRIMAL SHOCK"
+		cost="2"
+		rng="CTRL"
+		aoe="-"
+		pow="*"
+		up="NO"
+		off="YES">
+Choose a friendly Faction warbeast in this model's control area. Target an
+enemy model within 8" of the chosen warbeast and make a magic attack against
+it. The chosen warbeast is the attack's point of origin. If the enemy model is hit,
+it suffers a damage roll with a POW equal to the warbeast's base STR.
+					</spell>
+		
+	<spell
+		name="PURIFICATION"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">
+Continuous effects, animi, and upkeep spells in this model's control area immediately expire.    </spell>
+	<spell
+		name="PURSUIT"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="YES">If target enemy model/unit advances during its activation, immediately after ending this movement one model in this model's battlegroup that is in its control area can make a full advance.</spell>
+	<spell
+		name="RAMPAGER"
+		cost="3"
+		rng="10"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="YES">
+Take control of target enemy non-character warbeast. You can make one
+full advance with the warbeast and can then make one normal attack with
+it, then Rampager expires. While the warbeast is affected by Rampager,
+it cannot be forced and you cannot use its animus. Rampager can be cast
+only once per turn.
+
+					</spell>
+					
+<spell
+		name="RAZOR WIND"
+		cost="2"
+		rng="10"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">
+A blade of wind slices through the target model
+					</spell>	
+               <spell name="REDLINE" cost="2" rng="6" aoe="-" pow ="-" up="YES" off="NO">
+Target warjack in this model's battlegroup gains +2 STR and SPD and can run, charge, or make power attack slams or tramples without spending focus. When it ends its activation, it suffers d3 damage points.
+               </spell>
+					
+<spell
+		name="RIFT"
+		cost="3"
+		rng="8"
+		aoe="4"
+		pow="13"
+		up="NO"
+		off="YES">
+The AOE is rough terrain and remains in play for one round.
+					</spell>	
+	<spell
+		name="QUICKEN"
+		cost="3"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model/unit gains +2 SPD and +2 DEF against ranged and magic attack rolls.
+		</spell>
+	<spell
+		name="RAVAGER"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">Target model in this model's battlegroup gains Berserk for one turn. While affected by Ravager, a model cannot make Chain Attacks. When a model with Berserk destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</spell>
+	<spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">
+Target model/unit becomes stationary for one round unless it has Immunity: Cold.
+</spell>
+	
+	
+	<spell name="RECONSTRUCT" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">
+When target waijack in this model's battlegroup is disabled by an enemy attack anytime except while it is advancing, place it anywhere
+within 3" of its current location. Remove 1 damage point from each system, then Reconstruct expires.
+</spell>
+	
+	<spell
+		name="REFUGE"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+When target friendly Faction model hits an enemy model with an attack
+during its activation, immediately after its combat action ends the affected
+model can make a full advance. It cannot be targeted by free strikes during
+this movement.
+</spell>
+	<spell
+		name="RIFT"
+		cost="3"
+		rng="8"
+		aoe="4"
+		pow="13"
+		up="NO"
+		off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+	<spell
+		name="RITUAL SACRIFICE"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">Remove target friendly warrior model from play. Skarre gains d6 additional focus points during your next Control Phase. Ritual Sacrifice can be cast only once per turn.</spell>
+	<spell
+		name="ROCK WALL"
+		cost="2"
+		rng="CTRL"
+		aoe="WALL"
+		pow="-"
+		up="YES"
+		off="NO">Place a wall template anywhere completely in this model's control area
+where it does not touch a model's base, an obstruction, or an obstacle. The
+wall is a linear obstacle that provides cover.
+		</spell>
+	<spell
+		name="SACROSANCT"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Target a friendly Faction model/unit. When an enemy non-warcaster, non-warlock warrior model destroys one or more affected models with an attack, immediately after the attack is resolved the attacking model is knocked down.
+    </spell>
+	<spell
+		name="SACRIFICIAL LAMB"
+		cost="1"
+		rng="CTRL"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">Remove one friendly living Faction model in this model's control area from play to allocate l focus point to each warjack in this model's battlegroup that is currently in its control area. Sacrificial Lamb can be cast only once per turn.</spell>
+	<spell
+		name="SCOURGE"
+		cost="4"
+		rng="8"
+		aoe="3"
+		pow="13"
+		up="NO"
+		off="YES">All models hit by Scourge are knocked down.</spell>
+	<spell
+		name="SCYTHING TOUCH"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model/unit gains +2 to melee attack damage rolls. Affected models gain Critical Corrosion on their normal melee attacks.</spell>
+	<spell
+		name="SENTRY"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">When an enemy model advances and ends its movement in the LOS of a target friendly model, the affected model can immediately make one normal ranged attack then Sentry expires.</spell>
+	<spell
+		name="SHADOWMANCER"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">Models in this model's battlegroup gain Dark Shroud and Stealth while in its control area. Shadowmancer lasts for one round. (While in the melee range of a model with Dark Shroud, enemy models suffer -2 ARM.)</spell>
+<spell name="SHATTER STORM" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+When target friendly Faction model/unit directly hits and boxes an enemy model with a ranged or melee attack, center a
+3" AOE on the boxed model, then remove that model from play. Models in the AOE are hit and suffer an unboostable POW 8 blast damage roll.
+</spell>
+               <spell name="SIDEKICK" cost="3" rng="6" aoe="-" pow ="-" up="YES" off="NO">
+Target warjack in this model's battlegroup cannot be knocked down, pushed, placed, or moved by a slam and gains +2 DEF. While this model is B2B with target model, it cannot be knocked down, pushed, placed, or moved by a slam and gains +2 DEF.
+               </spell>
+			
+		<spell
+		name="SNIPE"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model's/unit's ranged weapons gain +4 RNG.
+		</spell>
+	<spell
+		name="SOUL GATE"
+		cost="3"
+		rng="CTRL"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">Remove a friendly trooper model in this model's control area from play and replace it with target warjack in this model's battlegroup that is in its control area. LOS to that target is not required. The warjack cannot activate this turn after being placed by Soul Gate.</spell>
+	<spell
+		name="SOUL HARVESTER"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">When target friendly Faction model/unit destroys a living enemy model with a melee attack, this model gains the destroyed model's soul token regardless of the proximity of other models.</spell>
+	<spell
+		name="SPECTRAL STEEL"
+		cost="3"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target warjack in this model's battlegroup gains +2 ARM and Ghostly. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)</spell>
+	<spell name="STARCROSSED"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">While in this model's control area enemy models gain an additional die on
+attack rolls. Discard the highest die of each roll. Starcrossed lasts for one round.
+</spell>
+	<spell
+		name="STRANGLEHOLD"
+		cost="2"
+		rng="10"
+		aoe="-"
+		pow="11"
+		up="NO"
+		off="YES">
+A model damaged by Stranglehold forfeits either its movement or its
+action during its next activation, as its controller chooses.
+
+					</spell>
+	<spell
+		name="STYGIAN ABYSS"
+		cost="3"
+		rng="10"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">On a critical hit, the model hit suffers Shadow Bind for one round. (A model suffering Shadow Bind suffers -3 DEF, and for one round when it advances it cannot move except to change facing.)</spell>
+	<spell
+		name="SUDDEN DEATH"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">When an enemy model advances and ends its movement within 6" of target friendly Faction non-warcaster warrior model and the affected model is not engaged, the affected model can immediately charge the enemy model, then Sudden Death expires. A trooper model that charges as a result of Sudden Death ignores unit formation while resolving the charge. If the trooper model is out of formation after the charge attack is resolved, it is destroyed before Sudden Death expires.</spell>
+
+	<spell
+		name="SUNDER SPIRIT"
+		cost="2"
+		rng="10"
+		aoe="-"
+		pow="12"
+		up="NO"
+		off="YES">
+An enemy warbeast damaged by Sunder Spirit loses its animus for one round.
+					</spell>
+<spell
+		name="SUPERIORITY"
+		cost="3"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Target friendly Faction warjack gains +2 SPD, MAT and DEF and cannot be knocked down.
+					</spell>
+<spell
+		name="SURE FOOT"
+		cost="3"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Target friendly Faction model gains +2 DEF and cannot be knocked down. While within 3" of the affected model, friendly Faction models also gain +2 DEF and cannot be knocked down.
+					</spell>
+	
+					
+					<spell
+		name="SYNERGY"
+		cost="2"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="YES"
+		off="NO">While in its control area, models in this model's battlegroup gain a +1 cumulative bonus on melee attack and melee damage rolls for each other model in the battlegroup that hit an enemy model with a melee attack this turn while in this model's control area.</spell>
+	<spell
+		name="TACTICAL SUPREMACY"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model/unit can advance up to 3" after all models have ended their activations on your turn.
+		</spell>
+	<spell
+		name="TELEKINESIS"
+		cost="2"
+		rng="8"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="*">Place target model completely within 2" of it's current location. When Telekinesis targets an enemy model, it is an offensive spell and requires a magic attack roll. A model can be affected by Telekinesis only once per turn.</spell>
+	<spell
+		name="TELEPORT"
+		cost="2"
+		rng="SELF"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">Place this model anywhere completely within 8" of its current location, then its activation ends.</spell>
+	<spell name="TEMPEST" cost="4" rng="8" aoe="4" pow="12" up="NO" off="YES">
+Models hit by Tempest are knocked down and suffer a POW 12 damage roll.
+</spell>
+	
+	<spell
+		name="TERMINAL VELOCITY"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">Warjacks in this model's battlegroup that are currently in its control area can charge or make power attacks without spending focus and gain boosted melee attack rolls against living models. When an affected model targets a living model with a charge or slam power attack, it gains +2" movement. Terminal Velocity lasts for one turn.</spell>
+	<spell
+		name="TRUE PATH"
+		cost="3"
+		rng="SELF"
+		aoe="CTRL"
+		pow="-"
+		up="NO"
+		off="NO">Friendly Faction warrior models/units beginning their activations in the model's control area gain +2" movement and Pathfinder during their activations. True Path lasts for one turn.</spell>
+	<spell
+		name="TWISTER"
+		cost="2"
+		rng="10"
+		aoe="3"
+		pow="10"
+		up="NO"
+		off="YES">The AOE is a cloud effect that remains in play for one round</spell>
+<spell
+		name="UNSEEN PATH"
+		cost="2"
+		rng="CTRL"
+		aoe="-"
+		pow="-"
+		up="NO"
+		off="NO">Unseen Path can be cast only while Scrapjack is in this model's control area. When Unseen Path is cast, immediately place this model within 2" of Scrapjack or place Scrapjack within 2" of this model. A model can not advance this turn after being placed by Unseen Path</spell>
+			<spell
+		name="VEIL OF MISTS"
+		cost="3"
+		rng="CTRL"
+		aoe="4"
+		pow="-"
+		up="YES"
+		off="NO">Place a 4" AOE cloud effect anywhere completely within this model's control area. This AOE does not block friendly Faction models' LOS. While in the AOE, friendly Faction models gain Pathfinder and can move through obstructions and other models if they have enough movement to move completely past them.</spell>
+	<spell
+		name="VENOM"
+		cost="2"
+		rng="SP8"
+		aoe="-"
+		pow="10"
+		up="NO"
+		off="YES">Venom causes corrosion damage. Models hit suffer the Corrosion continuous effect</spell>
+	<spell
+		name="VOID GATE"
+		cost="4"
+		rng="10"
+		aoe="4"
+		pow="13"
+		up="YES"
+		off="YES">While in the AOE, enemy models cannot channel spells, be allocated focus, or be forced. The AOE remains in play as long as its upkeep is paid.</spell>
+	<spell
+		name="WALL OF FIRE"
+		cost="2"
+		rng="CTRL"
+		aoe="WALL"
+		pow="-"
+		up="YES"
+		off="NO">Place the wall template anywhere completely within this model's control area where it does not touch a model's base, an obstruction, or an obstacle. When a model enters or ends its activation in the wall area, it suffers an unboostable POW l2 fire damage roll and the Fire continuous effect. Models within the wall template gain concealment.</spell>
+
+		<!-- hordes version! -->
+		<spell name="WARPATH" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">
+When a friendly Faction model in this model's control area destroys one or more enemy models with a melee or ranged attack during its activation, immediately after the attack is resolved, one warbeast in this model's battlegroup that is in its control area can advance up to 3". A warbeast can advance only once per turn as a result of Warpath.
+	</spell>
+	
+		<spell name="WATCHER" cost="3" rng="SELF" aoe="-" pow="-" up="YES" off="NO">
+When an enemy model advances and ends its movement within 6" of this model, choose a warjack in this model's battlegroup that is in it's control area. That warjack can immediately make a full advance and then can make one normal melee or ranged attack targeting the enemy model. The attack and damage rolls againt that model are boosted. After the attack is resolved Watcher expires.
+	</spell>
+			<spell
+		name="WEALD SECRETS"
+		cost="2"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">Target friendly model/unit gains Camouflage and Pathfinder (A model with Camouflage gains an additional +2 DEF when benefiting from concealment or cover.)
+		</spell>
+	<spell
+		name="WILD AGGRESSION"
+		cost="3"
+		rng="6"
+		aoe="-"
+		pow="-"
+		up="YES"
+		off="NO">
+Target friendly living vvrbeast in this model's battlegroup can run, charge,
+or make slam or trample power attacks without being forced and gains
+boosted melee attack rolls.
+
+					</spell>		
+<spell name="WIND RUSH" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model can immediately make a full advance and gains +2 DEF for one round. Wind Rush can be cast only once per turn.
+</spell>
+						
+						<spell name="WIND WALL" cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">
+This model cannot make ranged attacks, and non-magical ranged attacks targeting it automatically miss. While completely within 3" of dwis model, models cannot make ranged attacks and non-magical ranged attacks targeting them automatically miss. Wind Wall lasts for one round.
+</spell>
+
+		<!--  end of sorrted. -->
+
+
+
+
+
+
+
+
+
+
+
+
+</spells>
+
+

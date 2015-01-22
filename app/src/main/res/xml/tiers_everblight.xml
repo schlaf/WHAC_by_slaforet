@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tiers name="Lylyth - Hunter Killers" casterId="Ew01" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Blighted Nyss Archers, Blighted Nyss Raptors, Legion units with Stealth</models>
+          </type>
+          <type type="SOLOS">
+              <models>Incubi, Legion solos with Stealth</models>
+          </type>
+      </availableModels>            
+    <level number="1">
+      <only>
+        <entry id="Ew01" />
+        <entry id="EB19" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EU01" />
+        <entry id="EA01" />
+        <entry id="EU04" />
+        <entry id="EU07" />
+        <entry id="EA03" />
+        <entry id="EU11" />
+        <entry id="EA04" />
+        <entry id="ES02" />
+        <entry id="ES04" />
+        <entry id="ES08" />
+      </only>
+      <benefits>
+        <ingameeffect>Additionally, you gain +1 on your starting roll for the game.</ingameeffect>
+        <alterFA bonus="1" entryId="EU04" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2EU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="EA01" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  ES08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="ES08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Place Annyssa Ryvaal and Blighted Nyss Raptor units after normal deployment. These models are placed at the same time as your models with Advance Deployment (if any). These models must be placed within you normal deployment zone.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2EB05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Lesser warbeasts and Raeks in Lylith's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Lylyth2 - Ravens of War" casterId="Ex01" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts with ranged weapons</models>
+          </type>
+          <type type="UNITS">
+              <models>Blighted Nyss Raptors, Blighted Nyss Striders</models>
+          </type>
+          <type type="SOLOS">
+              <models>Striders solos, Annyssa Ryvaal</models>
+          </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="Ex01" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EU04" />
+        <entry id="EU07" />
+        <entry id="EA03" />
+        <entry id="ES08" />
+        <entry id="ES04" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="EU07" />
+        <alterFA bonus="1" entryId="ES04">
+          <forEach>
+            <entry id="EU04" />
+            <entry id="EU07" />
+          </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2EU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="EA03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2ES04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="ES04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For every two Strider Deathstalker solo in the army, place one 4" AOE forest template anywhere completely within 20" of the back edge of Lylith's deployment zone after terrain has been placed but before either player deploys his army. Forest templates cannot be placed within 3" of another terrain feature, including forest templates.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(EB06 EB07 EB08 EB09 EB12 EB13 EB14 EB16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="EB06" />
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB12" />
+          <entry id="EB13" />
+          <entry id="EB14" />
+          <entry id="EB16" />
+          <entry id="EB17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warbeasts in Lylith's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Lylyth3 - Scourge of God" casterId="Ez01" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Legion units with ranged weapons</models>
+          </type>
+          <type type="SOLOS">
+              <models>Beast Mistress, Blighted Nyss Shepherd, Legion solos with ranged weapons</models>
+          </type>
+      </availableModels>        
+    <level number="1">
+      <only>
+        <entry id="Ez01" />
+        <entry id="EB19" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EU01" />
+        <entry id="EA01" />
+        <entry id="EU05" />
+        <entry id="EU07" />
+        <entry id="EA03" />
+        <entry id="EU09" />
+        <entry id="EA06" />
+        <entry id="ES10" />
+        <entry id="ES03" />
+        <entry id="ES04" />
+        <entry id="ES08" />
+        <entry id="EU04" />
+      </only>
+      <benefits>
+        <ingameeffect>Fore each Strider Deathstalker solo in the army, you can redeploy one model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1(EU01 EA01 EU05 EU07 EU09 EU04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EU01" />
+          <entry id="EA01" />
+          <entry id="EU05" />
+          <entry id="EU07" />
+          <entry id="EU09" />
+          <entry id="EU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Units gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1ES03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="ES03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Fore each Blighted Nyss Shepherd solo in the army, one warbeast in Lylyth's battlegroup can use it's animus during your first turn without being forced. These warbeasts cannot also be forced to use their animi that turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  1(EB17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EB17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="EB01" />
+          <entry id="EB02" />
+          <entry id="EB12" />
+          <forEach>
+            <entry id="EB17"/>
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Thagrosh - Army of Annihilation" casterId="Ew02" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Spawning Vessels, Blighted Ogrun units  </models>
+          </type>
+          <type type="SOLOS">
+              <models>The Forsaken, Blighted Ogrun solos</models>
+          </type>
+      </availableModels>            
+    
+    <level number="1">
+      <only>
+        <entry id="Ew02" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EA06" />
+        <entry id="EU06" />
+        <entry id="EU08" />
+        <entry id="EU09" />
+        <entry id="ES05" />
+        <entry id="ES06" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="EU06" />
+        <alterFA bonus="512" entryId="EU08" />
+        <alterFA bonus="512" entryId="EU09" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(EU08 EU09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU08" />
+          <entry id="EU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="ES06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  EU06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Lesser warbeasts in Thagrosh's battlegroup gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(EB07 EB08 EB09 EB11 EB13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB11" />
+          <entry id="EB13" />
+          <entry id="EB21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2"' forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Thagrosh2 - Dragon's Host" casterId="Ex02" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts, Typhon</models>
+          </type>
+          <type type="UNITS">
+              <models>Blighted Nyss Legionnaires, Legion units with Flight</models>
+          </type>
+          <type type="SOLOS">
+              <models>Incubi, Spell Martyrs, The Forsaken, Legion solos with Flight</models>
+          </type>
+      </availableModels>         
+    <level number="1">
+      <only>
+        <entry id="Ex02" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB10" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EU02" />
+        <entry id="EA05" />
+        <entry id="EU10" />
+        <entry id="ES02" />
+        <entry id="ES07" />
+        <entry id="ES05" />
+        <entry id="ES01" />
+        <entry id="ES03" />
+      </only>
+      <benefits>
+        <ingameeffect>Additionally, units and solos with Flight gain Advance Deployment</ingameeffect>
+        <alterFA bonus="512" entryId="EU02" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  ES01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="ES01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain + 1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2EU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Blighted Nyss Legionnaire units gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(EB07 EB08 EB09 EB10 EB11 EB13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB10" />
+          <entry id="EB11" />
+          <entry id="EB13" />
+          <entry id="EB21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For every two heavy warbeasts in the army, add a Blighted Nyss Shepherd solo to the army free of cost. These solos ignore FA restrictions.</ingameeffect>
+        <freeModel>
+          <entry id="ES03" />
+          <forEach>
+            <entry id="EB07" />
+            <entry id="EB08" />
+            <entry id="EB09" />
+            <entry id="EB10" />
+            <entry id="EB11" />
+            <entry id="EB13" />
+            <entry id="EB21" />
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+  </tiers>
+  
+  
+  <tiers name="Thagrosh1 - New Blood (NQ50)" casterId="Ew02" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Spawning Vessel</models>
+          </type>
+          <type type="SOLOS">
+              <models>Beast Mistress, Blighted Nyss Shepherd, Blighted Nyss Sorceress &amp; Hellion, Spell Martyr, Succubus</models>
+          </type>
+      </availableModels>          
+    <level number="1">
+      <only>
+        <entry id="Ew02" />
+        <!--  Legion non-character warbeasts -->
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB10" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <!-- Spawning Vessel -->
+        <entry id="EU06" />
+        <!-- Beast Mistress, Blighted Nyss Shepherd, Blighted Nyss Sorceress & Hellion, Spell Martyr, Succubus -->
+        <entry id="ES10" />
+        <entry id="ES03" />
+        <entry id="ES01" />
+        <entry id="ES07" />
+        <entry id="ES09" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="2" entryId="EU06" />
+        <alterFA bonus="2" entryId="ES10" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  ES01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Each Spawning Vessel in the army begins the game with one corpse token.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- The army includes two or more Beast Mistress solos-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="ES10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Add one warbeast to each Beast Mistress's battlegroup free of cost.</ingameeffect>
+        <freeModel>
+          <entry id="EB01"/>
+          <entry id="EB02"/>
+          <entry id="EB12"/>
+          <forEach>
+              <entry id="ES10" />
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- The army includes three or more warbeasts with Dig In. -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="EB06" />
+          <entry id="EB12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Beast Mistresses and warbeasts in their battlegroups gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>  
+  <tiers name="Vayl - Winter Storm" casterId="Ew03" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Spawning Vessel, Blighted Nyss units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Blighted Nyss Shepherds, Incubi, Spell Martyrs, Legion solos with Magic Ability </models>
+          </type>
+      </availableModels>          
+  
+    <level number="1">
+      <only>
+        <entry id="Ew03" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EU01" />
+        <entry id="EA01" />
+        <entry id="EU02" />
+        <entry id="EA05" />
+        <entry id="EU03" />
+        <entry id="EA02" />
+        <entry id="EU04" />
+        <entry id="EU05" />
+        <entry id="EU07" />
+        <entry id="EA03" />
+        <entry id="EU10" />
+        <entry id="EU11" />
+        <entry id="EA04" />
+        <entry id="EU06" />
+        <entry id="ES03" />
+        <entry id="ES02" />
+        <entry id="ES07" />
+        <entry id="ES01" />
+        <entry id="ES09" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="EU11" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2EU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="EA04" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  EU06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warbeasts in Vayl's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  5(EB01 EB02 EB03 EB04 EB05 EB06 EB07 EB08 EB09 EB11 EB12 EB13 EB14 EB16 EB17 EB18 EB19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="5">
+          <entry id="EB01" />
+          <entry id="EB02" />
+          <entry id="EB03" />
+          <entry id="EB04" />
+          <entry id="EB05" />
+          <entry id="EB06" />
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB11" />
+          <entry id="EB12" />
+          <entry id="EB13" />
+          <entry id="EB14" />
+          <entry id="EB16" />
+          <entry id="EB17" />
+          <entry id="EB18" />
+          <entry id="EB19" />
+          <entry id="EB21" />
+          <entry id="EB22" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>The LOS of models without Eyeless Sight is reduced to 8" during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Vayl2 - Machinations of Shadow" casterId="Ex03" faction="faction_everblight">
+    <level number="1">
+      <only>
+        <entry id="Ex03" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB10" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB15" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EU02" />
+        <entry id="EU05" />
+        <entry id="EU06" />
+        <entry id="EU11" />
+        <entry id="EA04" />
+        <entry id="EU12" />
+        <entry id="ES03" />
+        <entry id="ES07" />
+        <entry id="ES01" />
+        <entry id="EE01" />
+        <entry id="ES09" />
+        <entry id="EA05" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  EU06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(EB01 EB04 EB08 EB07 EB17 EB18 EB19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="EB01" />
+          <entry id="EB04" />
+          <entry id="EB08" />
+          <entry id="EB07" />
+          <entry id="EB17" />
+          <entry id="EB18" />
+          <entry id="EB19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(EB07 EB08 EB09 EB10 EB11 EB13 EB15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB10" />
+          <entry id="EB11" />
+          <entry id="EB13" />
+          <entry id="EB15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="EB07" />
+        <alterCost bonus="1" entryId="EB08" />
+        <alterCost bonus="1" entryId="EB09" />
+        <alterCost bonus="1" entryId="EB10" />
+        <alterCost bonus="1" entryId="EB11" />
+        <alterCost bonus="1" entryId="EB13" />
+        <alterCost bonus="1" entryId="EB15" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Rhyas - Alpha Strike" casterId="EW04" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Blighted Nyss Hex Hunters, Blighted Nyss Swordsmen, Blackfrost Shard</models>
+          </type>
+          <type type="SOLOS">
+              <models>Blighted Nyss Shepherds, Incubi</models>
+          </type>
+      </availableModels>            
+  
+    <level number="1">
+      <only>
+        <entry id="EW04" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EU11" />
+        <entry id="EA04" />
+        <entry id="EU03" />
+        <entry id="EA02" />
+        <entry id="EU12" />
+        <entry id="ES03" />
+        <entry id="ES02" />
+      </only>
+      <benefits>
+        <ingameeffect>You gain + 1 on your starting roll for the game. 
+        </ingameeffect>
+        <alterFA bonus="512" entryId="EU03" />
+        <alterFA bonus="512" entryId="EA02" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2EU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Blighted Nyss Swordsman units gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  EU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models/units in your army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2EB08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="EB08" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Rhyas - Rearguard (NQ36)" casterId="EW04" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts, Typhon</models>
+          </type>
+          <type type="UNITS">
+              <models>Blighted Nyss Swordsmen, Blighted Ogrun units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Blighted Nyss Shepherd, Blighted Ogrun solos, Succubus</models>
+          </type>
+      </availableModels>            
+  
+    <level number="1">
+      <only>
+        <entry id="EW04" />
+        <!-- Non-character warbeasts, Typhon -->
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB10" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <!-- Blighted Nyss Swordsmen, Blighted Ogrun units -->
+        <entry id="EU03" />
+        <entry id="EA02" />
+        <entry id="EU08" />
+        <entry id="EU09" />
+        <!-- Blighted Nyss Shepherd, Blighted Ogrun solos, Succubus -->
+        <entry id="ES03" />
+        <entry id="ES06" />
+        <entry id="ES09" />
+        <entry id="EA06" />
+      </only>
+      <benefits>
+        <ingameeffect>Models/units gain Stealth during the first round of the game.</ingameeffect>
+        <alterFA bonus="1" entryId="ES06">
+          <forEach>
+            <entry id="EU08"/>
+            <entry id="EU09"/>
+          </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have The army includes one or more Blighted Nyss Swordsmen units.-->
+      <must_have> 
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="EA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- The army includes Typhon. -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EB10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Rhyas' upkeep spells. These spells and their targets must be declared before either player sets up models. Rhyas does not pay fury to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- The army includes two or more Blighted Ogrun units. -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU08" />
+          <entry id="EU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Blighted Ogrun models gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Saeryn - Fallen Angels" casterId="EW05" faction="faction_everblight">
+  
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts with Flight, Nephilim warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Legion units with Flight </models>
+          </type>
+          <type type="SOLOS">
+              <models>Blighted Nyss Shepherd, Blighted Nyss Sorceress &amp; Hellion, Spell Martyrs</models>
+          </type>
+      </availableModels>            
+  
+    <level number="1">
+      <only>
+        <entry id="EW05" />
+        <entry id="EB04" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB01" />
+        <entry id="EB03" />
+        <entry id="EB14" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EU10" />
+        <entry id="ES01" />
+        <entry id="ES03" />
+        <entry id="ES07" />
+      </only>
+      <benefits>
+        <ingameeffect>Spell Martyr solos gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  ES01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="ES01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain + 1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(EB07 EB08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  4(EB03 EB04 EB14 EB18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="4">
+          <entry id="EB03" />
+          <entry id="EB04" />
+          <entry id="EB14" />
+          <entry id="EB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="EB14" />
+          <entry id="EB03" />
+          <entry id="EB04" />
+          <entry id="EB18" />
+        </freeModel>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Absylonia - Winds of Change" casterId="EW06" faction="faction_everblight">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts, Typhon</models>
+          </type>
+          <type type="UNITS">
+              <models>Spawning Vessel </models>
+          </type>
+          <type type="SOLOS">
+              <models>Blighted Nyss Shepherds, The Forsaken</models>
+          </type>
+      </availableModels>            
+  
+    <level number="1">
+      <only>
+        <entry id="EW06" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB10" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB18" />
+        <entry id="EB17" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EU06" />
+        <entry id="ES03" />
+        <entry id="ES05" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="ES05">
+        <forEach>
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB10" />
+          <entry id="EB11" />
+          <entry id="EB13" />
+          <entry id="EB21" />
+        </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3(EB01 EB02 EB12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="EB01" />
+          <entry id="EB02" />
+          <entry id="EB12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Lesser warbeasts in Absylonia's battlegroup gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(ES05)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="ES05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Forsaken solo in the army, one heavy warbeast in Absylonia's battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(EB07 EB08 EB09 EB10 EB11 EB13 EB15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB10" />
+          <entry id="EB11" />
+          <entry id="EB13" />
+          <entry id="EB21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="EB07" />
+        <alterCost bonus="1" entryId="EB08" />
+        <alterCost bonus="1" entryId="EB09" />
+        <alterCost bonus="1" entryId="EB10" />
+        <alterCost bonus="1" entryId="EB11" />
+        <alterCost bonus="1" entryId="EB13" />
+        <alterCost bonus="1" entryId="EB15" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Bethayne - Black Magic" casterId="EW07" faction="faction_everblight">
+     <availableModels>
+          <type type="WARBEASTS">
+              <models>Non-character Legion warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Spawning Vessel, Legion units with Magic Ability</models>
+          </type>
+          <type type="SOLOS">
+              <models>The Forsaken, Incubi, Spell Martyrs, Legion solos with Magic Ability</models>
+          </type>
+      </availableModels>              
+    <level number="1">
+      <only>
+        <entry id="EW07" />
+        <entry id="EB20" />
+        <!-- belphagor -->
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EB21" />
+        <entry id="EB22" />
+        <entry id="EU06" />
+        <entry id="EU11" />
+        <entry id="EA04" />
+        <entry id="EU12" />
+        <entry id="ES05" />
+        <entry id="ES02" />
+        <entry id="ES07" />
+        <entry id="ES01" />
+        <entry id="ES09" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="ES01">
+          <forEach>
+            <entry id="EU06"/>
+            <entry id="EU11"/>
+            <entry id="EU12"/>
+          </forEach>
+        </alterFA>
+        <alterCost bonus="1" entryId="ES01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2ES01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="ES01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Blighted Nyss Sorceress &amp; Hellion solo in the army, you can redeploy one model/unit after both players have deployed but before the first player's first  turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(EU11 EU12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EU11" />
+          <entry id="EU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Increase the COST of spells and animi cast by enemy models by + 1 during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(EB07 EB08 EB09 EB11 EB13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB11" />
+          <entry id="EB13" />
+          <entry id="EB21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warbeasts in Bethayne's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Kallus - Unconquerable Dominion" casterId="EW08" faction="faction_everblight">
+    <level number="1">
+      <only>
+        <entry id="EW08" />
+        <entry id="EB01" />
+        <entry id="EB02" />
+        <entry id="EB03" />
+        <entry id="EB04" />
+        <entry id="EB05" />
+        <entry id="EB06" />
+        <entry id="EB07" />
+        <entry id="EB08" />
+        <entry id="EB09" />
+        <entry id="EB11" />
+        <entry id="EB12" />
+        <entry id="EB13" />
+        <entry id="EB14" />
+        <entry id="EB16" />
+        <entry id="EB17" />
+        <entry id="EB18" />
+        <entry id="EB19" />
+        <entry id="EU10" />
+        <entry id="EU02" />
+        <entry id="EA05" />
+        <entry id="EU03" />
+        <entry id="EA02" />
+        <entry id="ES02" />
+        <entry id="ES07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="EU03" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1(EA05 EA02)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="EA05" />
+          <entry id="EA02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(EB07 EB08 EB09 EB11 EB13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="EB07" />
+          <entry id="EB08" />
+          <entry id="EB09" />
+          <entry id="EB11" />
+          <entry id="EB13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  4(EU10 EU02 EU03)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="EU10" />
+          <entry id="EU02" />
+          <entry id="EU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

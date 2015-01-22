@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/countDown_zone1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:visibility="visible" >
+
+        <com.schlaf.steam.activities.chrono.CountDownView
+            android:id="@+id/countDownView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:background="@drawable/btn_keyboard_key_fulltrans_normal"
+        android:contentDescription="@string/empty"
+        android:onClick="pauseChrono"
+        android:paddingBottom="1dp"
+        android:src="@drawable/ic_media_pause" />
+
+    <FrameLayout
+        android:id="@+id/countDown_zone2"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:visibility="visible" >
+
+        <com.schlaf.steam.activities.chrono.CountDownView
+            android:id="@+id/countDownView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp" />
+    </FrameLayout>
+
+
+</LinearLayout>

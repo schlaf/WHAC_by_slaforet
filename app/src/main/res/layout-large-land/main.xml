@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="40dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <Button
+                android:id="@+id/button_build_army"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_input_add"
+                android:minHeight="96dp"
+                android:onClick="startArmy"
+                android:text="@string/build_army" />
+
+            <Button
+                android:id="@+id/button_load_army"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/edit_list_icon"
+                android:onClick="loadArmy"
+                android:text="@string/load_army" />
+
+            <Button
+                android:id="@+id/button_card_library"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/stat_card"
+                android:onClick="cardLibrary"
+                android:text="@string/card_library" />
+
+            <Button
+                android:id="@+id/button_scenario_library"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sr2014"
+                android:onClick="scenarioLibrary"
+                android:text="@string/steamroller" />
+
+            <Button
+                android:id="@+id/button_collection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/collection"
+                android:onClick="collection"
+                android:text="@string/my_collection" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <Button
+                android:id="@+id/button_launch_battle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/battle_icon"
+                android:drawableRight="@drawable/battle_icon"
+                android:minHeight="96dp"
+                android:onClick="startBattle"
+                android:text="@string/launch_battle" />
+
+            <Button
+                android:id="@+id/button_battle_results"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/victory"
+                android:onClick="battleResults"
+                android:text="@string/battle_results" />
+
+            <Button
+                android:id="@+id/button_preferences"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_preferences"
+                android:onClick="preferences"
+                android:text="@string/preferences" />
+
+            <Button
+                android:id="@+id/button_import_files"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/import_content"
+                android:onClick="importDataFile"
+                android:text="@string/import_data" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_version"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_help"
+                    android:onClick="version"
+                    android:text="@string/version" />
+
+                <Button
+                android:id="@+id/button_donate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/donate"
+                android:onClick="donate"
+                android:text="@string/donate" />
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="activateSecretImport"
+        android:text="@string/pp_copyright"
+        android:textSize="@dimen/textview_small_height" />
+
+</LinearLayout>

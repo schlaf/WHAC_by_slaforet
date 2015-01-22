@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Black"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/center_frame"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+    </FrameLayout>
+    
+    <ImageView
+        android:id="@+id/imageBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/center_frame"
+        android:src="@drawable/ic_menu_back" />
+
+    <TextView
+        android:id="@+id/back_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/imageBack"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/center_frame"
+        android:text="Back"
+        android:textSize="25sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/back_label"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/gradient_line_blue" >
+
+    </FrameLayout>
+
+</RelativeLayout>

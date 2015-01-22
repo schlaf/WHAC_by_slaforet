@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="Axis - Sustained Attack" casterId="cocW02" faction="faction_cyriss">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Convergence non-character vectors without ranged weapons</models>
+            </type>
+            <type type="UNITS">
+                <models>Small-based units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Enigma Foundries</models>
+            </type>
+      </availableModels>
+      
+    <level number="1">
+      <only>
+        <entry id="cocW02" />
+        <entry id="cocJ01" />
+        <entry id="cocJ03" />
+        <entry id="cocJ07" />
+        <entry id="cocJ08" />
+        <entry id="cocU01" />
+        <entry id="cocU02" />
+        <entry id="cocU03" />
+        <entry id="cocU05" />
+        <entry id="cocS05" />
+        <entry id="cocA01" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="2" entryId="cocS05" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(cocS05)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="cocS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterCost bonus="1" entryId="cocS05" />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(cocU01 cocU02 cocU03)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="cocU01" />
+          <entry id="cocU02" />
+          <entry id="cocU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" >Clockwork Vessels units gain Advanced Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(cocJ07 cocJ08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="cocJ07" />
+          <entry id="cocJ08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">For each vector in the battlegroup, place a wreck marker on the table before the game starts.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Aurora - Maiden of Gears" casterId="cocW01" faction="faction_cyriss">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Convergence non-character vectors</models>
+            </type>
+            <type type="UNITS">
+                <models>Optifex units, units with Flight</models>
+            </type>
+            <type type="SOLOS">
+                <models>Optifex solos, Servitor solos, Steelsoul Protector solos, solos with Flight</models>
+            </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="cocW01" />
+        <entry id="cocJ01" />
+        <entry id="cocJ02" />
+        <entry id="cocJ03" />
+        <entry id="cocJ04" />
+        <entry id="cocJ05" />
+        <entry id="cocJ06" />
+        <entry id="cocJ07" />
+        <entry id="cocJ08" />
+        <entry id="cocJ09" />
+        <entry id="cocJ10" />
+        <entry id="cocJ11" />
+        <entry id="cocU01" />
+        <entry id="cocU05" />
+        <entry id="cocS02" />
+        <entry id="cocS01" />
+        <entry id="cocS03" />
+        <entry id="cocS04" />
+        <entry id="cocS06" />
+        <entry id="cocA01" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="2" entryId="cocU01" />
+        <alterFA bonus="2" entryId="cocS06" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3(cocU01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="cocU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Clockwork Angel units gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1(cocS06)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="cocS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Steelsoul Protectors gain Advanced Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(cocJ05 cocJ06 cocJ07 cocJ08 cocJ09 cocJ10)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="cocJ05" />
+          <entry id="cocJ06" />
+          <entry id="cocJ07" />
+          <entry id="cocJ08" />
+          <entry id="cocJ09" />
+          <entry id="cocJ10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Heavy vectors in Aurora’s battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Syntherion - The Great Machine" casterId="cocW05" faction="faction_cyriss">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Convergence non-character vectors</models>
+            </type>
+            <type type="UNITS">
+                <models>Optifex units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Optifex solos, Servitor solos</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Transfinite Emergence Projector</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="cocW05" />
+        <entry id="cocJ01" />
+        <entry id="cocJ02" />
+        <entry id="cocJ03" />
+        <entry id="cocJ04" />
+        <entry id="cocJ05" />
+        <entry id="cocJ06" />
+        <entry id="cocJ07" />
+        <entry id="cocJ08" />
+        <entry id="cocJ09" />
+        <entry id="cocJ10" />
+        <entry id="cocJ11" />
+        <entry id="cocU05" />
+        <entry id="cocS01" />
+        <entry id="cocS02" />
+        <entry id="cocS03" />
+        <entry id="cocS04" />
+        <entry id="cocE01" />
+        <entry id="cocA01" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty">Algorithmic Dispersion Optifex models gain Advanced Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1(cocJ01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="cocJ01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" >Reduce the cost of Syntherion’s spells by 1 during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1(cocU05)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="cocU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">For each Optifex Directive unit in the army, the Corollary begins the game with 1 focus point (to a maximum of 3).</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  5(cocJ01 cocJ02 cocJ03 cocJ04 cocJ05 cocJ06 cocJ07 cocJ08 cocJ09 cocJ10 cocJ11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="5">
+          <entry id="cocJ01" />
+          <entry id="cocJ02" />
+          <entry id="cocJ03" />
+          <entry id="cocJ04" />
+          <entry id="cocJ05" />
+          <entry id="cocJ06" />
+          <entry id="cocJ07" />
+          <entry id="cocJ08" />
+          <entry id="cocJ09" />
+          <entry id="cocJ10" />
+          <entry id="cocJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <freeModel>
+          <entry id="cocJ03" />
+        </freeModel>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Lucant - Iron Giants" casterId="cocW04" faction="faction_cyriss">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Convergence non-character vectors</models>
+            </type>
+            <type type="UNITS">
+                <models>Medium- and large-based units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Medium- and large-based solos</models>
+            </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="cocW04" />
+        <entry id="cocJ01" />
+        <entry id="cocJ02" />
+        <entry id="cocJ03" />
+        <entry id="cocJ04" />
+        <entry id="cocJ05" />
+        <entry id="cocJ06" />
+        <entry id="cocJ07" />
+        <entry id="cocJ08" />
+        <entry id="cocJ09" />
+        <entry id="cocJ10" />
+        <entry id="cocJ11" />
+        <entry id="cocU04" />
+        <entry id="cocU06" />
+        <entry id="cocU07" />
+        <entry id="cocS05" />
+        <entry id="cocS06" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="1" entryId="cocU04" />
+        <alterFA bonus="1" entryId="cocU06" />
+        <alterFA bonus="1" entryId="cocU07" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1(cocU07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="cocU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(cocU04 cocU06)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="cocU04" />
+          <entry id="cocU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">One Clockwork Vessel unit without a ranged attack gains Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(cocJ05 cocJ06 cocJ07 cocJ08 cocJ09 cocJ10)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="cocJ05" />
+          <entry id="cocJ06" />
+          <entry id="cocJ07" />
+          <entry id="cocJ08" />
+          <entry id="cocJ09" />
+          <entry id="cocJ10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterCost bonus="1" entryId="cocJ06" />
+        <alterCost bonus="1" entryId="cocJ08" />
+        <alterCost bonus="1" entryId="cocJ10" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Iron Mother - Carrier Group" casterId="cocW03" faction="faction_cyriss">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Convergence non-character vectors</models>
+            </type>
+            <type type="UNITS">
+                <models>Optifex units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Servitor solos, Steelsoul Protector solos</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Transfinite Emergence Projector</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="cocW03" />
+        <entry id="cocJ01" />
+        <entry id="cocJ02" />
+        <entry id="cocJ03" />
+        <entry id="cocJ04" />
+        <entry id="cocJ05" />
+        <entry id="cocJ06" />
+        <entry id="cocJ07" />
+        <entry id="cocJ08" />
+        <entry id="cocJ09" />
+        <entry id="cocJ10" />
+        <entry id="cocJ11" />
+        <entry id="cocU05" />
+        <entry id="cocS01" />
+        <entry id="cocS03" />
+        <entry id="cocS04" />
+        <entry id="cocS06" />
+        <entry id="cocE01" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="1" entryId="cocS01" />
+        <alterFA bonus="1" entryId="cocS03" />
+        <alterFA bonus="1" entryId="cocS04" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1(cocU05)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="cocU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Vectors in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(cocS01 cocS03 cocS04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="cocS01" />
+          <entry id="cocS03" />
+          <entry id="cocS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Servitor solos gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  1(cocJ11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="cocJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">During your first turn, when a Prime Axiom uses Launch Servitor you can place up to three Servitor solos instead of placing one.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset xsi:noNamespaceSchemaLocation="warmachine.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <armies>
+    <army faction="faction_khador" name="Khador">
+      <warcasters>
+        <warcaster id="Kw01" name="Orsus Zoktavir, The Butcher of Khardov" generation="P" full_name="Orsus Zoktavir, The Butcher of Khardov" qualification="Khador Warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="BUTCHER" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" terror="true" />
+          <weapons>
+            <melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true" />
+            <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <feat title="Folie Meurtrière">Durant la séquence de jeu en cours, toutes les figurines Khadoréennes amies situées dans la ZdC du boucher lancent un dé supplémentaire sur tous leurs jets de degats d'attaques.</feat>
+          <spell name="Furie" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurine/unité amie ciblé subit un malus de -1 DEF mais bénéficie de +3 sur ses jets de dégats de corps-à-corps.</spell>
+          <spell name="Chair d'Acier" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurinede guerrier/unité amie ciblé bénéficie de +3 DEF et subit un malus de -1 VTS.</spell>
+          <spell name="A toute vapeur" cost="3" rng="caster" aoe="CTRL" pow="-" up="NO" off="NO">Les Warjacks de la phalange du Boucher commencant leur activation dans sa ZdC peuvent courir, charger ou effectuer un Grand slam ou un piétinement sans dépenser de focus. De plus, les figurines de la phalange du Boucher et situé dans ZdC voient leurs jets d'attaques de corps-à-corps automatiquement boostées pendant un tour. </spell>
+          <spell name="Extermination" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">la force de cette attaque atomise la terre elle-meme.</spell>
+        </warcaster>
+        <warcaster id="Kx01" name="Kommander Orsus Zoktavir" generation="E" full_name="Kommander Orsus Zoktavir" qualification="Khador Epic Warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="BUTCHER" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" terror="true" />
+          <weapons>
+            <melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true" />
+            <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <feat title="Haine Bouillonnante">Zoktavir gange un marqueur de rage pour chaque ennemi détruit dans sa ZdC. Après que toutes les figurines amies aient terminé leur activation, plus aucun marqueurs ne peut etre gagné et Zoktavir peut donné jusqu'à 3 marquers de rage à n'importe quelle figurine Kadhoréenne amie qui n'est pas un Warcaster et qui est présente dans sa ZdC. Retirez les marqueurs restants sur Zoktavir. Une figurine peut dépenser un unique marqueur de rage pour effectuer un déplacement suivi d'une attaque de corps-à-corps normale. Les marqueurs de rage peuvent également utilisés pour une attaque supplémentaire, Boost de la meme maniere qu'un point de focus. Défaussez les marqueurs de rage non utilisés à la fin de la séquence de jeu en cours.</feat>
+          <spell name="Charge Forcenée" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Pendant sont activation, la figurine amie ciblée peut charger sans dépenser de focus ni etre contrainte et bénéficie de +2 pouces de mouvement et éclaireur lorsqu'elle 
+charge. Charge Forcenée dure une séquence de jeu</spell>
+          <spell name="Exterminateur" cost="3" rng="8" aoe="3" pow="13" up="NO" off="YES">Immédiatement après que l'attaque ait été résolue, Zoktavir peut se déplacer de 2 pouces pour chaque figurine ennemie détruite par cette attaque.</spell>
+          <spell name="Furie" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurine/unité amie ciblé subit un malus de -1 DEF mais bénéficie de +3 sur ses jets de dégats de corps-à-corps.</spell>
+          <spell name="Ravageur" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">La figurine ciblée et faisant partie de la phalange de Zoktavir gagne Berserk durant la séquence de jeu en cours. Une figurine affectée par Ravageur ne peut pas effectuer d'Enchainement. (A chaque fois qu'une figurine affectée par Berserker détruit une figurine a l'aide d'une attaque de corps-à-corps durant son action de combat, il doit immédiatement effectuer une attaque de corps-à-corps contre une autre figurine situé dans sa zone de corps-à-corps, qu'elle soit amie ou ennemie.)</spell>
+          <capacity title="Démence Arcanique">Le FOC de base de Zoktavir varie de tour en tour. Au début de la partie et au cours de chacune des phase de controle du joueur qui le dirige, lancez 1D6 +1. le résultat représente le FOC de base de Zoktavir pour ce tour. Si Zoktavir a détruit trois figurines ennemies ou plus a l'aide d'attaques de corps-à-corps au cours du tour précédent, son FOC de base est automatiquement égal à 7 durant ce tour. La ZdC de Zoktavir est toujours de 12 pouces.</capacity>
+          <capacity title="Vision Circulaire">L'Arc frontal de Zoktavir est de 360 degrés</capacity>
+          <capacity title="Accès de Rage">Les Warjacks de la phalange de Zoktavir situé dans sa ZdC peuvent charger ou effectuer des prises spéciales sans dépenser de point de focus. Si Zoktavir détruit une ou plusieurs figurines ennemies, les warjacks de sa phalange situé dans sa ZdC au moment de cette destruction bénéficient de +2 VTS et ACC durant la séquence de jeu en cours.</capacity>
+          <capacity title="Folie Homicide">A chaque fois que Zoktavir effectue une attaque de corps-à-corps durant sont activation, il doit effectuer une attaque de corps-à-corps contre chacune des figurines situées dans sa zones de corps-à-corps. Chaque attaque est résolue individuellement et en totalité. Après la résolution de chaque attaque, appliquez immédiatement les règles spéciales des cibles. déterminez les dégats normalement. Après la résolution de ces attaques et s'il n'y a aucune figurine dans la zone de corps-à-corps de Zoktavir, il peut se déplacer d'une distance maximale de 1 pouce.</capacity>
+        </warcaster>
+        <warcaster id="Kz01" name="Kommander Zoktavir, The Butcher Unleashed" generation="EE" full_name="Kommander Zoktavir, The Butcher Unleashed" qualification="Khador Epic Caster Unit" focus="6" warjack_points="4" fa="C">
+          <basestats name="ZOKTAVIR" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" officer="true" terror="true" />
+          <weapons>
+            <melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true" />
+            <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <feat title="Red Haze">Zoktavir gains up to 6 focus points. He cannot have more focus points than his current FOCUS as a result of Red Haze. Enemy models/units in Zoktavir's melee range automatically fail command checks for one round.</feat>
+          <spell name="ENERGIZER" cost="*" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.</spell>
+          <spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes one normal melee attack with one of its melee weapons against each enemy model in its LOS that is in the weapon's melee range. These attacks are simultaneous.</spell>
+          <spell name="IMPENDING DOOM" cost="2" rng="SELF" aoe="*" pow="-" up="NO" off="NO">Enemy models within 5" of this model are pushed 5" directly toward it in the order you choose.</spell>
+          <spell name="OBLITERATION" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">The force of this attack blasts apart the earth itself.</spell>
+          <spell name="SILENCE OF DEATH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit's melee weapons gain Grievous Wounds. (When a model is hit by a weapon with Grievous Wounds, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.)</spell>
+          <capacity title="GRANTED: VENGEANCE">While this model is in play, models in its unit gain Vengeance. (During your Maintenance Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.)</capacity>
+          <capacity title="WARCASTER UNIT">This unit is made up of Zoktavir and two War Argus.</capacity>
+          <model id="kz01_argus1" name="War Argus" full_name="War Argus">
+            <basestats name="WAR ARGUS A" spd="6" str="7" mat="5" rat="4" def="14" arm="14" cmd="6" hitpoints="8" terror="true" />
+            <weapons>
+              <melee_weapon name="Bite" pow="4" count="2" p_plus_s="11">
+                <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="CIRCULAR VISION">This model's front arc extends to 360 degrees.</capacity>
+            <capacity title="GANG">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+            <capacity title="GRANTED: RELENTLESS CHARGE">While this model is in play, models in this unit gain Relentless Charge. (Models with Relentless Charge gain Pathfinder during activations they charge.)</capacity>
+            <capacity title="SPRINT">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+          </model>
+          <model id="kz01_argus2" name="War Argus" full_name="War Argus">
+            <basestats name="WAR ARGUS B" spd="6" str="7" mat="5" rat="4" def="14" arm="14" cmd="6" hitpoints="8" terror="true" />
+            <weapons>
+              <melee_weapon name="Bite" pow="4" count="2" p_plus_s="11">
+                <capacity title="COMBO STRIKE (★ATTACK)">See above.</capacity>
+              </melee_weapon>
+            </weapons>
+          </model>
+        </warcaster>
+        <warcaster id="Kw02" name="Kommander Sorscha" generation="P" full_name="Kommander Sorscha" qualification="Khador Warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="SORSCHA" spd="6" str="6" mat="6" rat="5" def="16" arm="14" cmd="9" hitpoints="17" immunity_frost="true" />
+          <weapons>
+            <melee_weapon name="Croc de Givre" pow="7" p_plus_s="13" magical="true" reach="true">
+              <capacity title="Gel Critique">Sur une touche critique, la figurine touchée devient stationnaire pendant un tour à moins qu'elle ne soit dotée d'imunité: Froid</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Canon à main" rng="12" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <feat title="Regard de Glace">Toute figurine ennemie sans imunite:Froid et sotuée dans la zone de controle et la LDV de Sorsha au moment ou ce pouvoir est utilisé devient stationnaire pendant un tour.</feat>
+          <spell name="Charge Forcenée" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Pendant sont activation, la figurine amie ciblée peut charger sans dépenser de focus ni etre contrainte et bénéficie de +2 pouces de mouvement et éclaireur lorsqu'elle 
+charge. Charge Forcenée dure une séquence de jeu</spell>
+          <spell name="Brouillard de Guerre" cost="3" rng="Lanc" aoe="CTRL" pow="-" up="YES" off="NO">Toute figurine bénéficie de la dissimulation tant qu'elle est située dans la ZdC de cette figurine</spell>
+          <spell name="Etreinte de Glace" cost="4" rng="8" aoe="-" pow="-" up="NO" off="YES">La Figurine/unité ciblée devient stationnaire pendant un tour à moins qu'elle ne soit dotée d'immunité: Froid</spell>
+          <spell name="Lame de Vent" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">Une lame de vent transperce la figurine ciblée</spell>
+          <spell name="Tempete" cost="4" rng="8" aoe="4" pow="12" up="NO" off="YES">Toute figurine touchée par Tempete est mise au tapis et subit un jet de dégats de PUI 12</spell>
+          <spell name="Bourasque" cost="2" rng="Lanc" aoe="-" pow="-" up="NO" off="NO">Cette figurine peut imédiatement effectuer une avance tactique et bénificie de +2 DEF pendant un tour
+Bourrasque ne peut etre lancer qu'une fois par tour</spell>
+        </warcaster>
+        <warcaster id="Kx02" name="Forward Kommander Sorscha" generation="E" full_name="Forward Kommander Sorscha" qualification="Khador Epic Warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="SORSCHA" spd="6" str="6" mat="7" rat="5" def="16" arm="15" cmd="8" hitpoints="17" immunity_frost="true" />
+          <weapons>
+            <melee_weapon name="Croc de Givre" pow="7" p_plus_s="13" magical="true" reach="true">
+              <capacity title="Gel Critique">Sur une touche critique, la figurine touchée devient stationnaire pendant un tour à moins qu'elle ne soit dotée d'imunité: Froid</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Quatre-Fut" rng="10" rof="1" aoe="-" pow="10">
+              <capacity title="Tir Multiples (★Attaque)">Après la résolution d'une attaque réussie de Quatre-Futs, Sorsha peut immédiatement effectuer une attaque de Quatre-Futs supplémentaire, qui doit prendre pour cible la dernière figurine touchée ou une figurine située dans un rayon de 1 pouces autour de la dernière cible touchée. Sorscha peut effectuer jusqu'à quatre attaques de Quatre-Futs au cours d'une meme activation.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Etreinte de l'Hiver">Durant la séquence de jeu en cours, les figurines ennemies ne bénéficiant pas d'Immunité: Froid et présentes dans la ZdC de Sorscha voient les dégats excédant leur ARM doublés.</feat>
+          <spell name="Charge Forcenée" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Pendant sont activation, la figurine amie ciblée peut charger sans dépenser de focus ni etre contrainte et bénéficie de +2 pouces de mouvement et éclaireur lorsqu'elle 
+charge. Charge Forcenée dure une séquence de jeu</spell>
+          <spell name="Cyclone" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Sorscha peut immédiatement ce déplacer de sa VTS actuelle en pouces et ne peut pas etre la cible de frappe gratuites au cours de ce mouvement. après son déplacement, elle peut effectuer une attaque de corps-à-corps contre chacune des figurines présentes dans sa LdV et dans sa zone de corps-à-corps. Cyclone ne peut etre lancé qu'une fois par tour.</spell>
+          <spell name="Etreinte de Glace" cost="4" rng="8" aoe="-" pow="-" up="NO" off="YES">La Figurine/unité ciblée devient stationnaire pendant un tour à moins qu'elle ne soit dotée d'immunité: Froid</spell>
+          <spell name="Chair d'Acier" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurinede guerrier/unité amie ciblé bénéficie de +3 DEF et subit un malus de -1 VTS.</spell>
+          <spell name="Lame de Vent" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">Une lame de vent transperce la figurine ciblée.</spell>
+          <spell name="Eclats de Givre" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Les figurines détruites par une touche directe suite à une attaque de la figurine/unité khadoréene amie ciblée explosent avec une ADE de 3 pouces et sont retirées du jeu. Toutes les figurines situées dans l'ADE subissent un jet de dégats d'explosion non poustable de PUI 8.</spell>
+          <capacity title="Enegie du Désespoir [Winter Guard] (★Action)">POR CMD. Ciblez une unité amie de Winter Guard. Si elle est à portée, celle ci bénéficie de 2 pouces supplémentaires lors de son déplacement durant la phase d'activation en cours.</capacity>
+          <capacity title="Encadrement d'Elite [Winter Guard]">Les Winter Guard inclus dans la meme armée que Sorscha gagnent la compétence Armes Jumelées. (relancer les jets d'attaques  échoué (une fois maximum)).</capacity>
+          <capacity title="Warjack Lié">Un seul warjack non unique de la phalange de Sorsha commence la partie lié à elle. Le warjack gagne immunité: froid. Lorsqu'une figurine ennemie termine son activation dans un rayon de 2 pouces autour du warjak lié, elle devient stationnaire durant un tour, à moins qu'elle n'ait immunité: Froid.</capacity>
+        </warcaster>
+        <warcaster id="Kw03" name="Vladimir Tzepesci, The Dark Prince" generation="P" generation_id="vlad" full_name="Vladimir Tzepesci, The Dark Prince" qualification="Khador Warcaster" focus="7" warjack_points="5" fa="C">
+          <basestats name="VLADIMIR" spd="6" str="6" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Escarmouche" pow="7" p_plus_s="13" magical="true">
+              <capacity title="Bénédiction de Sang">Immédiatement après avoir détruit une figurine ennemie vivante lors d'une attaque avec Escarmouche, Vladimir peut lancer gratuitement un sort d'un cout de 3 focus ou moins. Bénédiction de Sang ne peut etre utilisé qu'une fois par activation.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Ruine" pow="4" p_plus_s="10" magical="true" />
+          </weapons>
+          <feat title="Marche Forcée">Daurant la séquences de jeu en cours, les warjacks de la Phalange de Vladimir situés dans sa ZdC au moment ou ce pouvoir est utilisé doublent leur VTS et peuvent courrir ou charger sans dépenser de focus.</feat>
+          <spell name="Sang des Rois" cost="4" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Vladimir bénéficie de +3 VTS, FOR, ACC, ATD, DEF, ARM et CMD durant le tour de jeu en cours.</spell>
+          <spell name="Charge Forcenée" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Pendant sont activation, la figurine amie ciblée peut charger sans dépenser de focus ni etre contrainte et bénéficie de +2 pouces de mouvement et éclaireur lorsqu'elle 
+charge. Charge Forcenée dure une séquence de jeu.</spell>
+          <spell name="Lame de Vent" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">Une Lame de Vent transperce la figurine ciblée.</spell>
+          <spell name="Signes et Présages" cost="4" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Pendant la séquence de jeu en cours, Toutes les figurines Khadoréennes amies situées dans la ZdC de Vladimir, y compris lui-mem, lancent un dé suppl"mentaire sur tous leurs jets d'attaques et de dégats. Pour chaque jet, ne comptabilisez pas le dé le plus bas.</spell>
+          <spell name="Muraille de Vent " cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Toute attaque à distance non-magique contre Vladimir ou une figurine entièrement située dans un rayon de 3 pouces autour de lui échoue automatiquement. Aucune des figurines entièrement situées dans un rayon de 3 pouces autour de Vladimir , y compris lui-meme ne peut effectuer d'attaques à distance. Muraille de Vent dure un tour.</spell>
+          <capacity title="Parade">Vladimir ne peut pas etre la cible de frappes gratuites.</capacity>
+        </warcaster>
+        <warcaster id="Kx03" name="Vladimir Tzepesci, The Dark Champion" generation="E" generation_id="vlad" full_name="Vladimir Tzepesci, The Dark Champion" qualification="Khador Epic Warcaster" focus="7" warjack_points="5" fa="C">
+          <basestats name="VLADIMIR" spd="6" str="6" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Empire" pow="8" p_plus_s="14" magical="true" reach="true">
+              <capacity title="Feu du Destin">Après une attaque d'Empire réussie contre une figurine mort-vivante, lancez un dé de dégats supplémentaire.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Heritage de Sang">Choisissez d3 +3 figurines de guerriers Khadoréenes amies, autre que des Personnage, et présentes dans la ZdC de Vladimir. Ces Figurines bénéficie de +3 VTS, FOR, ACC, ATD, DEF, ARM et CMD durant le tour de jeu en cours.</feat>
+          <spell name="Assaillir" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Le Warjack Khadoréen ami ciblé peut charger ou effectuer un Slam ou un pétinement sans dépenser de focus à +2 pouces. Les figurines slammées par le warjack sont déplacées de +2 pouces.</spell>
+          <spell name="Main du Destin" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurine/unité Khadoréenne amie ciblée peut lancée un dé supplémentaire sur tous ses jets d'attaque et de dégats. Défaussez-vous du dé le plus faible de chaque jet.</spell>
+          <spell name="Paroxysme Guerrier" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">Vladimir lance un dé supplémentaire sur ses jets d'attaque de corps-à-corps et ne peut pas etre la cible de frappe gratuites.</spell>
+          <spell name="Lame de vent" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">Une Lame de Vent transperce la figurine ciblée.</spell>
+          <spell name="Transmission" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Tant qu'lle se trouve dans la ZdC de vladimir, toute figurine de guerrier Khadoréenne amie, autre qu'un warcaster, peut booster un jet d'attaque de corps-à-corps ou un jet dégats de corps-à-corps durant son activation en retirant un point de focus non dépensé à Vladimir.</spell>
+          <spell name="Rafale de Vent" cost="2" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">Placez un gabarit de 5 pouces de façon à ce qu'il soit completement inclus dans la ZdC de Vladimir. Les effets de nuée touchés par l'ADE sont retirés du jeu. Les figurines dans l'ADE subissent un malus de -3 ATD. Rafale de Vent dure un tour.</spell>
+          <capacity title="Epreuves du Sang">A chaque fois que Vladimir subit un ou plusieur point de dégats du faits d'une attaque ennemie, il gagne un marqueur de sang. Au cours de la phase de controle suivante du joueur qui le dirige, remplacez chaque marqueur de sang par un point de focus supplémentaire.</capacity>
+          <capacity title="Attaque Préventive">Vladimir peut effectuer une attaque préventive contre une figurine ennemie qui termine son mouvement dans sa zone de corps-à-corps. Appliquez les effets de l'attaque préventive dès la fin du mouvement. Si Vladimir réalise une attaque préventive, il ne peut en faire d'autres jusqu'à la fin de la séquence de jeu suivante du joueur qui le dirige.</capacity>
+          <capacity title="Puissance des Rois">Lorsque Vladimir est blessé pour la première fois, il bénéficie de +1 VTS, FOR, DEF et CMD pour le reste de la partie. S'il est réduit à 10 PV ou moins, ce bonus devient de +2 pour le reste de la partie. S'il est réduit à 5 PV ou moins, ce bonus devient de +3 pour le reste de la partie. Ces avantages restent en jeu meme si Vladimir régénere sont champ de force. Si une figurine amie endommage Vladimir pour une raison quelconque, il perd tous les avantages lié a Puissance des Rois pour le restant de la partie. </capacity>
+        </warcaster>
+        <warcaster id="Kz03" name="Vladimir Tzepesci, Great Prince of Umbrey" generation="EE" generation_id="vlad" full_name="Vladimir Tzepesci, Great Prince of Umbrey" qualification="Khador Cavalry Epic Warcaster" focus="7" warjack_points="5" fa="C">
+          <basestats name="VLADIMIR" spd="8" str="6" mat="7" rat="5" def="15" arm="17" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Horse Lord's Spear" pow="6" p_plus_s="12" magical="true" reach="true">
+              <capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Huntsman" pow="7" p_plus_s="13" magical="true">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12">
+            </mount_weapon>
+          </weapons>
+          <feat title="Charge of the Horse Lords">While in Vladimir's control area, friendly Faction warjacks and cavalry models gain Side Step and Sprint. Charge of the Horse Lords lasts for one turn.(When a model with Side Step hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved. A model with Side Step cannot be targeted by free strikes during this movement.) (At the end of its activation, if it destroyed one or more enemy models with melee attacks during its activation, a model with Sprint can make a full advance.)</feat>
+          <spell name="DASH" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models cannot be targeted by free strikes. This model and friendly Faction warrior models activating in its control area gain +1 SPD. Dash lasts for one turn.</spell>
+          <spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes one normal melee attack with one of its melee weapons against each enemy model in its LOS that is in the weapon's melee range. These attacks are simultaneous.</spell>
+          <spell name="HAND OF FATE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains an additional die on attack and damage rolls. Discard the low die in each roll.</spell>
+          <spell name="INFERNAL MACHINE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup gains Terror and +2 MAT and SPD.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <spell name="WIND WALL" cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model cannot make ranged attacks, and non-magical ranged attacks targeting it automatically miss. While completely within 3" of this model, models cannot make ranged attacks and non-magical ranged attacks targeting them automatically miss. Wind Wall lasts for one round.</spell>
+          <capacity title="BLOOD-QUENCHED">This model gains a cumulative +1 STR and ARM for each living enemy model it destroys with a melee attack during its activation. This bonus lasts for one round.</capacity>
+          <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+          <capacity title="RELENTLESS CHARGE">This model gains Pathfinder during activations it charges.</capacity>
+        </warcaster>
+        <warcaster id="Kw04" name="Kommandant Irusk" generation="P" generation_id="irusk" full_name="Kommandant Irusk" qualification="Khador Warcaster" focus="7" warjack_points="6" fa="C">
+          <basestats name="IRUSK" spd="6" str="6" mat="7" rat="6" def="15" arm="15" cmd="10" hitpoints="17" />
+          <weapons>
+            <melee_weapon name="Agresseur" pow="6" p_plus_s="12" magical="true" />
+            <ranged_weapon name="Lame-Canon" rng="10" rof="2" aoe="-" pow="13" />
+          </weapons>
+          <feat title="Indéfectible Loyauté">Tant qu'elles se trouvent dans la ZdC d'Irusk, toutes figurines de guerriers/unités khadoréennes amies bénéficient de Sans Peur, robuste et de +2 sur leurs jets d'attaque à distance et de corps-à-corps et ne peuvent etre mises au tapis. Lorsqu'une de guerrier khadoréenne amie effectue un jet de Robuste de 4 5 ou 6 en étant dans la ZdC d'Irusk, reste en jeu avec 1 PV. Indéfectible Loyauté dur 1 tour.</feat>
+          <spell name="Déflagration" cost="3" rng="CTRL" aoe="3" pow="8" up="NO" off="YES">Cible toute les figurines dans la ZdC d'Irusk, ignore les LDV.Déflagration, ignore les couverts, le dissimulation, l"élévation, et Furtivité. Toute les figurines situé dans la ZdC subissent une explosion de PUI8.</spell>
+          <spell name="Furie Guerrière" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Pendant un tour, la figurine de guerrier/unité khadoréenne amie ciblée gagne sans peur et lance un dé supplémentaire sur ces jets de dégats d'attaques de corps-à-corps.</spell>
+          <spell name="Broyage" cost="3" rng="10" aoe="-" pow="14" up="NO" off="YES">Un Warjack toucher par Broyage subit un point de dégats supplémentaire dans sa premiere case de système Mouvement disponible. Reportez ce point après les dégats normaux de Broyage.</spell>
+          <spell name="Terrain Impraticable" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Tant qu'elles sont dans la ZdC d'Irusk, toutes les figurines ennemies considèrent le terrain dégagè comme terrain difficile.Terrain Impraticable dure 1 tour.</spell>
+          <spell name="Chair d'Acier" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurinede guerrier/unité amie ciblé bénéficie de +3 DEF et subit un malus de -1 VTS.</spell>
+          <spell name="Supériorité" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Le warjack khadoréen ciblé gagne +2 VTS, ACC,et DEF et ne peut pas etre mis au tapis.</spell>
+          <capacity title="Assaut">Pendant une charge, après le mouvement mais avant d'ffectuer sont attaque de charge, Irusk peut effectuer un Assaut.
+lors d'un Assaut, Irusk effectue une unique attaque à distance sans subire AUCUNE pénalité (cible au corps-à-corps par exemple). Assaut fonctionne meme si la cible n'est pas dans la zone de corps-à-corps a la fin de son mouvement. Irusk ne peut pas utiliser Assaut si il était en corps-à-corps au début de son activation.</capacity>
+          <capacity title="Travail Rapide">Lorsqu'Irusk détruit au moins un ennemie avec une attaque de corps-à-corps durant son action de combat, immédiatement après que l'attaque ait été effectuée Irusk peut faire une attaque à distance normale. Les attaques supplémentaires n'entrent pas dans la CDT d'une arme.</capacity>
+        </warcaster>
+        <warcaster id="Kx04" name="Supreme Kommandant Irusk" generation="E" generation_id="irusk" full_name="Supreme Kommandant Irusk" qualification="Khador Epic Warcaster" focus="7" warjack_points="5" fa="C">
+          <basestats name="IRUSK" spd="6" str="6" mat="7" rat="6" def="15" arm="15" cmd="10" hitpoints="17" />
+          <weapons>
+            <melee_weapon name="Fin de Partie" pow="7" p_plus_s="13" magical="true" />
+            <ranged_weapon name="Pistolet" rng="12" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <feat title="Position Désespérée">Toutes les figurines khadoréennes amies situées dans la ZdC d'Irusk au moment de l'utilisation de ce pouvoir, ignorent les effets de nuée et les foret lors de la détermination des LDV et gagnent Eclaireur. Les figurines affectées qui sont au tapis ce relèvent immédiatement.
+Toutes les figurines/unités ennemies situées dans la ZdC de Irusk subissent un malus de -2 VTS et ne peuvent ni donner, nirecevoir d'ordre. Position Désespérée dure un tour.</feat>
+          <spell name="Déflagration" cost="3" rng="CTRL" aoe="3" pow="8" up="NO" off="YES">Cible toute les figurines dans la ZdC d'Irusk, ignore les LDV.Déflagration, ignore les couverts, le dissimulation, l"élévation, et Furtivité. Toute les figurines situé dans la ZdC subissent une explosion de PUI8.</spell>
+          <spell name="Ruse de Diversion" cost="3" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">Placer un gabarit d'ADE 5 pouces de facon a ce qu'il soit entièrement dans la ZdC d'Irusk.Toute les figurines amies dans l'ADE Gagne éclaireur et peuvent ce déplacer au travers d'obstruction et d'autres figurines du moment qu'elles diposent de suffisament de MVT pour traverser complètement. Toute figurine ennemie considère l'ADE comme un terrain difficile. Ruse de Diversion dure un tour.</spell>
+          <spell name="Furie Guerrière" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Pendant un tour, la figurine de guerrier/unité khadoréenne amie ciblée gagne sans peur et lance un dé supplémentaire sur ces jets de dégats d'attaques de corps-à-corps.</spell>
+          <spell name="Afflux d'Energie" cost="*" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Irusk dépense de 1 a 3 points de focus lorsque le sort est lancer. Chaque figurine de sa phalange dans la ZdC d'Irusk gagnent un déplacement immédiat de a pouce par point de focus utilisé. Afflux d'Energie ne peut etre lancer qu'une fois par séquence de jeu.</spell>
+          <spell name="Tir d'Efficacité" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Les premiers jets d'attaques et de dégats d'attaques à distance de chacune des activations de la figurine khadoréenne ciblée sont automatiquement boostés.</spell>
+          <spell name="Suprématie Tactique" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurine/unité amue ciblée peut se déplacer d'une distance maximale de 3 pouces après l'activation de toutes les figurines amies durant votre séquence de jeu.</spell>
+          <capacity title="Discipline Martiale">Tant qu'elles sont situées a portée de commandement d'Irusk, toutes les figurines de gueriier khadoréennes vivantes amies dotées de socles petits et moyens, y compris Irusk bénéficie de Discipline Martiale.
+Toute figurine bénéficiant de Discipline Martiale peut ignorer les figurines de Guerrier Khadoréenne amie lors du tracage des LDV. Au cours de son activation, toute figurine affectée peut se déplacer à travers d'autres figurines de guerrier khadoréennes amies situées a portées de commandement d'Irusk si elle peut la dépasser en totalité.</capacity>
+          <capacity title="Obéissance Total">Tant qu'elles sont situées a portée de commandement d'Irusk,  les figurines de gueriiers khadoréennes vivantes amies et non Warcaster gagne robuste.</capacity>
+          <capacity title="Warjack Lié (EPIC IRUSK)">Un seul Warjack non unique de la phalange d'Irusk peut commencer la partie lié à lui. Ce warjack gagne +2 DEF et ne peut etre mis au tapis.</capacity>
+        </warcaster>
+        <warcaster id="KW05" name="Karchev the Terrible" generation="P" full_name="Karchev the Terrible" qualification="Khador Warcaster" focus="5" warjack_points="5" fa="C">
+          <basestats name="KARCHEV" spd="4" str="12" mat="7" rat="5" def="12" arm="19" cmd="8" />
+          <weapons>
+            <melee_weapon name="Gantelet" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Hache Tellurique" pow="7" count="0" p_plus_s="19" magical="true" reach="true" location="R" />
+            <ranged_weapon name="Fissure" rng="SP10" rof="1" aoe="-" pow="12" location="R">
+              <capacity title="Au Tapis">Une figurine touchée par une attaque de Fissure est mise au tapis.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Guerre Totale">Durant la séquence de jeu en cours, toutes les figurines de la phalange de Karchev et situés dans sa ZdC gagnent Eclaireur et peuvent charger et effectuer des Prises Spéciales sans dépenser de points de focus. Au début de leurs activation, les figurines affectées peuvent se tourner pour faire face à n'importe quelle direction avant de se déplacer. Guerre Total dure 1 tour.</feat>
+          <spell name="Eruption" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">Les figurines dans l'ADE subissent un jet de dégats de PUI 14 de type: Feu. Eruption est un effet de Nuée qui reste en jeu durant un tour. une figurine qui pénetre ou qui termine son mouvement dans la nuée subit un jet de dégats non boostable de PUI 14 de type: Feu. </spell>
+          <spell name="Point Zéro" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Centrez un gabarit d'ADE 5 pouces sur Karchev. Les figurines dans l'ADE, Karchev non compris, subissent un jet de dégats de PUI 13. Les figurines endommagé par Point Zéro sont repoussées de 1D6 pouces dans la direction opposée a Kartchev. Le joueur que dirige Karchev choisit l'ordre dans lequel les figurines sont déplacées. une figurine repoussée se déplace à mi-vitesse dans les terrain difficile et s'arrete si elle entre en contact avec un obstacle, une obstruction ou une figurine de socle supérieur ou égale à la sienne. Une figurine repoussée ne peuvent pas subir de frappe gratuite pendant leurs mouvement.</spell>
+          <spell name="Frère d'Armes" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Tant qu'elles se trouvent dans la ZdC de Karchev, chacune des figurines de sa phalange bénéficie de +1 DEF pour chaque figurine de la phalange, à l'exclusion d'elle-meme, avec laquelle elle est en contact socle-à-socle et ne peut etre mise au tapis.</spell>
+          <spell name="Train de Warjack" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">Si Karchev s'approche à 2 pouces ou moins d'un Warjack ami durant son mouvement normal, ce warjack peut etre placè en contact socle-à-socle avec Karchev à la fin du tour de ce dernier. Il doit avoir suffisament de place pour le socle du Warjack, et il doit etre entierement placé dans l'arc arriere de karchev. 3 Warjack maximum peuvent etre déplacé par Train de Warjack. Ces Warjack ne peuvent pas etre la cible de Frappe Gratuite lors du déplacement de Train de Warjack.</spell>
+          <spell name="Rage Surnaturelle" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Les figurines de la phalange de Karchev (y compris lui-meme) actuellement situées dans sa ZdC bénéficie de jets d'attaque et de dégats au corps-à-corps boostés durant une séquence de jeu. au cours de cette séquence les armes des figurines affectées gagnent Arme Magique</spell>
+          <capacity title="Turbine Arcanomékanique">Au début  e sa phase d'activatio, Karchev peut bénéficier d'un des deux avantages suivants:
++2 pouces de mouvements et Eclaireur
+1 point de focus supplémentaire.
+Les effets de Turbine Arcanomékanique durent 1 tour.</capacity>
+          <capacity title="Mi-Homme Mi-Machine">Karchev est une figurine vivante, mais n'est ni un warjack ni un guerrier vivant. Karchev fonctionne de la meme façon qu'une figurine vivante, mais n'est ni un warjack ni une figurine de guerrier. Karchev possede une grille de dégats et subit des dégats de la meme façon qu'un warjack. Karchev peut faire des attaques de Piétinement ou de Slam et effectuer des prises spéciales sans dépenser de focus, pour autant que son Gantelet ne soit pas désactivé. Karchev ne peut effectuer de coups de boules. Les cases marquée d'un P sur son tableau  d'avarie représente le systeme Pilote de Karchev. Des figurine khadoréennes amies disposant de la compétence Réparation peuvent tenter de réparer Karchev de la meme façon qu'un warjack, mais ne peuvent tenter de réparer son système Pilote. Lorsque Karchev dépense des points de focus pour se soigner ou que Karchev subit un soin autre que réparation il ne peut réparer que son systeme Pilote. Dans l'eau profonde les dégats subit ne touche que son système Pilote.</capacity>
+        </warcaster>
+        <warcaster id="KW06" name="Koldun Kommander Aleksandra Zerkova" generation="P" full_name="Koldun Kommander Aleksandra Zerkova" qualification="Khador Greylord Warcaster" focus="7" warjack_points="6" fa="C">
+          <basestats name="ZERKOVA" spd="6" str="5" mat="6" rat="5" def="15" arm="15" cmd="9" hitpoints="16" immunity_frost="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Quietus" pow="6" p_plus_s="11" magical="true">
+              <capacity title="Dysfonctionnement">Un Warjack touché par cette arme devient stationnaire pendant un tour.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Sceptre des Murmures" rng="8" rof="1" aoe="-" pow="13" magical="true" />
+          </weapons>
+          <feat title="Vents Hurlants">Les figurines ennemies commençant leur activation dans la ZdC de Zerkova ne peuvent ni courir, ni charger, ni effectuer d'attaques spéciales, ni donner ou recevoir d'ordres, ni accomplir d'action spéciales, et perdent keurs attaques à distance initiales. Vents Hurlants dure un tour.</feat>
+          <spell name="Rune de Bannissement" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Tout sort à entretient ennemi sur la figurine/unité amie ciblée prend fin. Aucune figurine ne peut etre ciblée par des sorts ou des animi ennemis.</spell>
+          <spell name="Rafale de Force" cost="3" rng="CTRL" aoe="*" pow="-" up="NO" off="NO">Ciblez une figurine de la phalange de Zerkova et presente dans sa ZdC. Toutes les figurines ennemies situées dans un rayon de 2 pouces autour de la figurine ciblée sont repoussée de 4 pouces dans la direction exactement opposée à celle-ci, dans un ordre déterminé par le joueur qui dirige Zerkova.</spell>
+          <spell name="Etreinte Glacée" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">La figurine de guerrier/unité ennemie ciblée ne disposant pas d'une immunitée: Froid subit -2 DEF et ne peut ni courir ni accomplir d'attaque spéciales.</spell>
+          <spell name="Influence" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Prenez le controle de la figurine de guerrier ennemie ciblée, autre qu'un warcaster ou un warlock. La figurine effectue immédiatement une attaque de corps-à-corps normale. Influence prend ensuite fin.</spell>
+          <spell name=" Lame de Vent" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">Une lame de vent transperce la figurine ciblée</spell>
+          <spell name="Tornade" cost="2" rng="10" aoe="3" pow="10" up="NO" off="YES">Après avoir reporté les dégats, laissez l'ADE de Tornade en jeu pendant un tour en tant que nuée.</spell>
+          <spell name="Veilleur" cost="3" rng="SELF" aoe="-" pow="-" up="YES" off="NO">Lorsqu'une figurine ennemie termine son mouvement normal dans un rayon de 6 pouces autour de Zerkova, le warjack de sa phalange ciblé et dans sa ZdC peut immédiatement se déplacer d'une distance maximum égale a sa VTS et effectuer une unique action de corps-à-corps ou à distance ciblant la figurine ennemie, les jets d'attaque et de dégats sont automatiquement boostés. Après la résolution de l'attaque, ce sort prend fin.</spell>
+          <capacity title="Artefacts Mystiques">A chaque fois qu'elle lance un sort, Zerkova peut choisir une unique compétence parmi les suivantes. Chaque compétence ne peut etre utilisée qu'une seule fois par activation et prend fin dès que le sort est lancé.</capacity>
+          <capacity title="● Sphère de Focus">Le cout du sort diminue de un.</capacity>
+          <capacity title="● Pierre Fantome">Lorsque Zerkova lance un sort, son arc avant sétend à 360°, elle peut cibler une figurine dans sa ZdC sans tenir compte des LDV et ignore la Furtivité.</capacity>
+          <capacity title="● Lentille de Tarvodh">Le sort bénéficie de +3 POR</capacity>
+          <capacity title="Sceau Orgoth">A chaque fois qu'une attaque magique cible Zerkova, elle subit -3 de POR. A chaque fois qu'une attaque magique touche de manière directe Zerkova, la figurine attaquante subit 1D6 point de dégats après résolution de l'attaque.</capacity>
+        </warcaster>
+        <warcaster id="KW07" name="Old Witch of Khador" generation="P" full_name="Old Witch of Khador" qualification="Khador Warcaster" focus="7" warjack_points="3" fa="C" companionId="Scrapjack">
+          <basestats name="OLD WITCH" spd="5" str="7" mat="6" rat="3" def="15" arm="14" cmd="8" hitpoints="16" pathfinder="true" terror="true" />
+          <weapons>
+            <melee_weapon name="Griffes de Fer" pow="6" count="2" p_plus_s="13" magical="true" />
+          </weapons>
+          <feat title="Champ de Serres">Les figurines ennemies se trouvant dans la ZdC de la Old Witch of Khador ne peuvent pas courir, charger ou effectuer des attaques spéciales. Les figurines ennmies qui avancent et terminent leur mouvement dans la ZdC de Old Witch of Khador subissent imédiatement un jet de dégats non boostable de PUI 14. Champ de Serres dure un tour.</feat>
+          <spell name="Massacre" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Massacre peut cibler Old Witch of Khador ou le 'jack de Récup'. La figurine ciblée bénéficie de +2 à ses jets d'attaque de corps-à-corps et peut se déplacer de 1 pouce et effectuer une attaque de corps-à-corps supplémentaire immédiatement après avoir détruit une figurine de guerrier ennemie avec une attaque de corps-à-corps durant son activation.</spell>
+          <spell name="Potence" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">Lorsqu'une figurine ennemie est touchée par cette attaque, elle peut etre déplacée de 1d6 pouces directement vers la source de Potence.</spell>
+          <spell name="Chair d'acier" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurine de guerrier/unité amie ciblé bénéficie de +3 DEF et subit un malus de -1 VTS.</spell>
+          <spell name="Nuée de Corbeaux" cost="3" rng="CTRL" aoe="5" pow="*" up="YES" off="NO">Placez un effet de nuée de 5 pouces d'ADE de façon à ce qu'il soit entièrement dans la ZdC de Old Witch of Khador. Toute figurine n'étant pas de la phalange de Old Witch of Khador et qui entre dans l'ADE subit un jet de dégats non boostable de PUI 8.</spell>
+          <spell name="Sentier Invisible" cost="2" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Sentier Invisible ne peut etre lancé que lorsque le 'jack de Récup' est présent dans la ZdC de Old Witch of Khador. Lorsque Sentier Invisible est lancé placer immédiatement la Old Witch of Khador à 2 pouces du 'jack de Récup'  ou placer le 'jack de Récup' à 2 pouces de la Old Witch of Khador. Il doit y avoir suffisament de place pour le socle de la figurine dans sa nouvelle position. Une figurine affectée par Sentier Invisible ne peut pas subir de frappe gratuite. Une figurine ne peut plus se déplacer après Sentier Invisible durant cette séquence de jeu.</spell>
+          <spell name="Secrets des Bois" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurine/unité amie ciblée gagne Camouflage et Eclaireur. (Toute figurine dotée de Camouflage gagne un bonus de +2 DEF quand elle bénéficie d'une dissimulation ou d'un couvert.)</spell>
+          <capacity title="Grand Pouvoir">Durant sa phase de controle, la Old Witch of Khador peut entretenir un sort sans dépenser de points de focus. Les autres sors doivent etre entretenus de maniere habituelle.</capacity>
+          <capacity title="Prédation">La Old Witch of Khador gagne furtivité lorsqu'elle se trouve dans un terrain procurant la dissimulation, l'ADE d'un sort procurant dissimulation ou l'ADE d'un effet de nuée</capacity>
+          <capacity title="Augure">La Old Witch of Khador et les Warjack de sa phalange ignorent les effets de nuées et les forets lors de la détermination des LDV.</capacity>
+          <capacity title="Chasse aux Ames">la Old Witch of Khador gange un marqueur d'ame pour chaque figurine ennemie vivante détruite dans un rayon de 2 pouces autours d'elle. Au cours de la phase de contrçole suivante du joueur qui la dirage, remplacez chaque marqueur d'ame par un point de focus.</capacity>
+        </warcaster>
+        <warcaster id="KW08" name="Kommander Strakhov" generation="P" full_name="Kommander Strakhov" qualification="Khador Warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="STRAKHOV" spd="6" str="7" mat="7" rat="6" def="15" arm="16" cmd="9" hitpoints="17" immunity_corrosion="true" immunity_fire="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Epée de Tranchée" pow="6" p_plus_s="13" magical="true">
+              <capacity title="Charge brutale">La figurine gagne +2 à ces jets d'attaque de charge avec cette arme.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Bombe à Scories" rng="6" rof="1" aoe="3" pow="14" fire="true">
+              <capacity title="Encombrant">Lorsque une figurine a attaquer avec cette armes elle ne peut pas attaquer avec une autre arme à distance dans la meme activation et vice versa</capacity>
+              <capacity title="Fumée">L'ADE de cette arme est un effet de nuée qui reste en jeu pendant un tour.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Fusil Anti-Emeute" rng="10" rof="1" aoe="-" pow="12">
+              <capacity title="Tir Rapide [D3]">Si vous décidez d'effectuer des attaques initiales avec cette arme au début de l'action de combat de cette figurine, lancez 1D3. le résultat obtenu est le nombre d'attaque que cette figurine peut effectuer avec cette arme pendant sont activation, sans tenir compte de la CDT.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Poing d'Acier">Toutes les figurines de Faction amies qui chargent ou effectue une prise spéciale slam contre une figurine ennemie situé dans la ZdC de Strakhov bénéficient de +4 pouces de mouvement et gagnent Eclaireur. Tous les Warjacks de la phalange de Strakhov peuvent charger et effectuer des prises spéciales slam sans dépenser de focus contre une figurine ennemie situé dans la ZdC de Strakhov. Poing de Fer dure une séquence de jeu.</feat>
+          <spell name="Bélier" cost="2" rng="6" aoe="-" pow="12" up="NO" off="YES">A chaque fois qu'une figurine ennemie est touché par Bélier, elle peut etre poussée de 3 pouces dans la direction exactement opposée au point d'origine du sort.</spell>
+          <spell name="Occultation" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">La figurine/unité amie ciblé gagne Furtivité.</spell>
+          <spell name="Déborder" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Lorsque la figurine ciblée dans la phalange de cette figurine détruit une ou plusieurs figurines ennemies avec une attaque, une figurine de la phalange de cette unité située dans sa ZdC peut effectuer une avance tactique immédiatement après la résolution de l'attaque. Déborder prend ensuite fin. Débordé ne peut etre lancer qu'une seule fois par tour et dure une séquence de jeu.</spell>
+          <spell name="Rift" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">L'ADE est un terrain difficile qui reste en jeu 1 tour.</spell>
+          <spell name="Sentinelle" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Lorsqu'une figurine ennemie avance et termine son mouvement dans la LDV de la figurine de la faction amie ciblée, la figurine affectée peut immédiatement effectuer une unique attaque à distance normale. Sentinelle dur un tour.</spell>
+          <spell name="Superiorité" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Le warjack de faction ami ciblé bénéficie de +2 en VTS, ACC et DEF et ne peut pas etre mis au tapis.</spell>
+          <capacity title="Masque Alchimique">Cette figurine ignore les effets de gaz.
+Lors de la détermination des LDV ou de la résolution des attaques, cette figurine ignore les effets de nuée.</capacity>
+          <capacity title="Encadrement d'Elite [Assault Kommandos]">Toute les figurine de Kommandos Assault amie gagne Eclaireur</capacity>
+          <capacity title="Sprint">A la fin de l'activation de cette figurine, si elle à détruit une ou plusieur figurines ennemies avec des attaques de corps-à-corps pendant cette activation, elle peut effectuer une avance tactique.</capacity>
+        </warcaster>
+        <warcaster id="KW09" name="Kommander Harkevich, The Iron Wolf " generation="P" full_name="Kommander Harkevich, The Iron Wolf " qualification="Khador Warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="HARKEVICH" spd="6" str="7" mat="7" rat="6" def="15" arm="16" cmd="8" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Minister" pow="7" p_plus_s="14" magical="true">
+              <capacity title="BEAT BACK">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1'' directly away from the attacking model. After the enemy is pushed, the attacking model can advance up to 1".</capacity>
+              <capacity title="CRITICAL STAGGER">On a critical hit, the model hit loses its initial attacks and cannot make special attack for one round.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <feat title="Hour of the Wolf">While in Harkevich's control area, models in his battlegroup gain +3 ARM. Models in Harkevich's battlegroup beginning their activation within his control area can charge or slam power attack without spending focus. If a model in Harkevich's battlegroup that is in his control area declares a charge or slam against an enemy model, it can make a normal ranged attack before advancing. Attacks gained from Hour of the Wolf do not count against a weapon's ROF. Hour of the Wolf lasts for one round.</feat>
+          <spell name="BROADSIDE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Models in this model's battlegroup currently in its control area can immediately make one normal ranged attack. Attacks gained from Broadside do not count against a weapon's ROF. Broadside can be cast only once per turn.</spell>
+          <spell name="ESCORT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Warjacks in this model's battlegroup beginning their activations in its control area gain +2" movement. This model gains +2 ARM while one or more warjacks in its battlegroup are within 3" of it.</spell>
+          <spell name="FORTUNE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit can reroll its missed attack rolls. Each attack roll can be rerolled only once as a result of Fortune.</spell>
+          <spell name="JUMP START" cost="1" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Models in this model's battlegroup that are currently in its control area stand up and are no longer stationary. Affected models can turn to face any direction. Models that were knocked down this turn are not affected by Jump Start.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <capacity title="FIELD MARSHAL [PATHFINDER]">Models in this model's battlegroup gain Pathfinder.</capacity>
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="Scrapjack" name="Scrapjack" full_name="Scrapjack" qualification="Khador Character Light Warjack" fa="C" cost="0" damage_grid="xxxxxxxx..xxx....x......MCAACMxMCCMx">
+          <basestats name="SCRAPJACK" spd="6" str="8" mat="5" rat="3" def="14" arm="16" cmd="0" arc_node="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Serre Mékanique" pow="4" count="2" p_plus_s="12" reach="true" />
+          </weapons>
+          <capacity title="Compagnon [Old Witch of Khador]">Le Scrapjack est automatiquement inclus dans toute armée comprenant la Old Witch of Khador. Si la Old Witch of Khador est détruite ou retirée du jeu, retirez également le Scrapjack. Le Scrapjack fait partie de la phalange de la Old Witch of Khador.</capacity>
+          <capacity title="Prédation">Le Scrapjack gagne furtivité lorsqu'elle se trouve dans un terrain procurant la dissimulation, l'ADE d'un sort procurant dissimulation ou l'ADE d'un effet de nuée</capacity>
+          <capacity title="Warjack Lié [Old Witch of Khador]">Le Scrapjack est lié à la Old Witch of Khador. lorsque la Old Witch of Khador subit des dégats par une attaque ennemie, le Scrapjack bénéficie de +2 VTS et +2 à ses jets d'attaque et de dégats durant un tour.</capacity>
+          <restricted_to id="KW07" />
+        </warjack>
+        <warjack id="KJ01" name="Destroyer" full_name="Destroyer" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="DESTROYER" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Hache du Bourreau" pow="5" p_plus_s="17" location="R">
+              <capacity title="Amputation Critique">Sur une touche critique, les systèmes de warjack bas et arme ayant subi des dégat suite a cette attaque sont désactivés</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Bombarde" rng="14" rof="1" aoe="3" pow="14" location="L">
+              <capacity title="Tire en Cloche">Lorsqu'elle attaque avec cette arme, cette figurine peut ignorer les figurines interférentes, à l'exception de celles qui sont situées dans un rayon de 1 pouce autour de la cible.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="KJ02" name="Juggernaut" full_name="Juggernaut" qualification="Khador Heavy Warjack" fa="U" cost="7" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="JUGGERNAUT" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Gantelet" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Hache de Glace" pow="7" count="0" p_plus_s="19" location="R">
+              <capacity title="Gel Critique">Sur une touche critique, la figurine touchée devient stationnaire pendant un tour à moins qu'elle ne soit dotée d'Immunité: Froid</capacity>
+            </melee_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="KJ03" name="Marauder" full_name="Marauder" qualification="Khador Heavy Warjack" fa="U" cost="7" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="MARAUDER" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Bélier Hydraulique" pow="4" p_plus_s="16" location="L">
+              <capacity title="Frappe Répulsive (★Attaque)">Marauder peut effectuer des attaques normales en se servant individuellement de chaque Bélier Hydraulique ou porter une attaque spéciale en utilisant sees deux Bélier Hydraulique. Effectuer un seul jet d'attaque pour l'attaque de Frappe Répulsive. sur une touche réussie, au lieu de subir un jet de dégat normal, la figurine ciblé est slammée a 1D6 pouces dans la direction exactement opposée au Marauder. La figurine subit un jet de dégats égal à la FOR actuelle du Marauder plus deux fois la PUI d'un Bélier Hydraulique. si la figurinne slammée entre en collision avec une figurine dotée d'un socle égale ou inférieur, cette dernière subit un jets de dégats collatéraux équivalent à la FOR actuelle du Maraudeur. Les sorts et pénalités de mouvement qui interdisent les charges ou les slams n'empechent pas le Combo Slam.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Bélier Hydraulique" pow="4" p_plus_s="16" location="R">
+              <capacity title="Frappe Répulsive (★Attaque)">Marauder peut effectuer des attaques normales en se servant individuellement de chaque Bélier Hydraulique ou porter une attaque spéciale en utilisant sees deux Bélier Hydraulique. Effectuer un seul jet d'attaque pour l'attaque de Frappe Répulsive. sur une touche réussie, au lieu de subir un jet de dégat normal, la figurine ciblé est slammée a 1D6 pouces dans la direction exactement opposée au Marauder. La figurine subit un jet de dégats égal à la FOR actuelle du Marauder plus deux fois la PUI d'un Bélier Hydraulique. si la figurinne slammée entre en collision avec une figurine dotée d'un socle égale ou inférieur, cette dernière subit un jets de dégats collatéraux équivalent à la FOR actuelle du Maraudeur. Les sorts et pénalités de mouvement qui interdisent les charges ou les slams n'empechent pas le Combo Slam.</capacity>
+            </melee_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="KJ04" name="Berserker" full_name="Berserker" qualification="Khador Heavy Warjack" fa="U" cost="6" damage_grid="x....x.............L..R.LLMCRRxMMxCx">
+          <basestats name="BERSERKER" spd="4" str="11" mat="5" rat="3" def="11" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Hache de Guerre" pow="5" p_plus_s="16" location="L">
+              <capacity title="Enchainement: Sauvagerie">Si le Berserker touche une meme cible avec ses deux hache de guerre au cours d'une meme activation, il peut, après la résolution des attaques initiales, effectuer un coup de boule contre la cible sans avoir a dépenser de points de focus.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Hache de Guerre" pow="5" p_plus_s="16" location="R">
+              <capacity title="Enchainemenr: Sauvagerie">Si le Berserker touche une meme cible avec ses deux hache de guerre au cours d'une meme activation, il peut, après la résolution des attaques initiales, effectuer un coup de boule contre la cible sans avoir a dépenser de points de focus.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Agressif">Le berserker peut charger ou courir sans dépenser de point de focus.</capacity>
+          <capacity title="Instable">Le cortex du berserker est dangeureusement instable et peut exploser a tout moment. Lancez 1D6 à la fin de chaque activation ou le berserker a dépensé au moins un point de focus. Si le résultat est inférieur ou égale au nombre de points de focus dépensés, le berserker explose. Toutes figurines situé dans un rayon de 3 pouces autour du berserker subissent un jet de dégats de PUI 14, et le berserker est retiré du jeu. Ne remplacez pas le berserker par un marqueur d'épave.</capacity>
+        </warjack>
+        <warjack id="KJ05" name="Devastator" full_name="Devastator" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="DEVASTATOR" spd="4" str="12" mat="6" rat="4" def="10" arm="25" cmd="0" />
+          <weapons>
+            <melee_weapon name="Poing Bouclier" pow="4" p_plus_s="16" open_fist="true" location="L" />
+            <melee_weapon name="Poing Bouclier" pow="4" p_plus_s="16" open_fist="true" location="R" />
+          </weapons>
+          <capacity title="Coque Blindée">L'armure du devastator est réduite a 4 à chaque fois que l'un de ses bras est mis HS. Si le devastator effectue une attaque, son armure passe à 17 jusqu'au début de sa prochaine activation. Les Bras du devastator ne peuvent pas etre bloqués</capacity>
+          <capacity title="Rouleau Compresseur">Si le devastator se déplace au contact socle-à-socle d'une figurine ennemie, cette dernière est repoussée de 2 pouces maximum dans la direction opposée a celle du devastator. Une figurine ne peut etre repoussée qu'une fois par activation et ne peut traverser ou enjamber d'autre figurine. Les figurine repoussée par le rouleau compresseur ne sont pas sujettes par le frappe gratuotes durants ce mouvement. Rouleau Compresseur n'a pas d'effet lorsque le devastator effectue une prise spéciale piétinement.</capacity>
+          <capacity title="Grele Mortelle (★Attaque)">Toutes les figurines en contact socle-à-socle avec le devastator subissent un jet de dégats d'explosion de PUI18. Toutes les autres figurines situées dans un rayon de 3 pouces autour du devastator subissent un het de dégats d'explosion de PUI 9. Les jets de dégats doivent etre boosté séparément. Quand cette figurine charge, au lieu d'effectuer une attaque de charge, elle peut faire une attaque de Grele mortelle, grele mortelle ne nécessite pas de cible. Le devastator peut dépenser des points de focus pour effectuer des attaques de corps-à-corps supplémentaires après l'attaque de grele mortelle.</capacity>
+        </warjack>
+        <warjack id="KJ06" name="Kodiak" full_name="Kodiak" qualification="Khador Heavy Warjack" fa="U" cost="8" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="KODIAK" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Gantelet Blindés" pow="4" p_plus_s="16" open_fist="true" location="L">
+              <capacity title="Enchainement: Démolir">Si le Kodiak touche la meme cible avec ses deux attaques initiale de Gantelet Blindés dans la meme activation, il peut, après la résolution des attaques initiales, effectuer immédiatement et gratuitetment une prise spéciale sélectionnée dans la liste suivante: Coup de boule, poussée, prise de tete/prise de bras, projection, ou projection à deux mains.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Gantelet Blindés" pow="4" p_plus_s="16" open_fist="true" location="R">
+              <capacity title="Enchainement: Démolir">Si le Kodiak touche la meme cible avec ses deux attaques initiale de Gantelet Blindés dans la meme activation, il peut, après la résolution des attaques initiales, effectuer immédiatement et gratuitetment une prise spéciale sélectionnée dans la liste suivante: Coup de boule, poussée, prise de tete/prise de bras, projection, ou projection à deux mains.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Chaudiere Lourde">Kodiak peut courir sans dépenser de focus.</capacity>
+          <capacity title="Dégazer (★Attaque)">Center une nuée ADE de 3 pouces centrer sur Kodiak active pendant un tour. La nuée reste a l'endrot de la table ou elle a été placer meme si le Kodiak se déplace. Toute figurine vivante située dans l'ADE lorsque la nuée est mise en jeu subit un jet de dégats de PUI 12. les jets de dégats doivent etre boostés séparément. Dégazer n'est pas une attaque de corps-à-corps, mais peut tout de meme etre effectuer durant une charge. Kodiak ne lance pas de dé de dégats supplémentaie lorsqu'il charge et effectue Dégazer, mais ce jet de dégats peut etre boosté de façon normale. kodiak peut dépenser des points de focus pour effectuer des attaques de corps-à-corps supplémentaireaprès une attaque Dégazer. Dégazer ne nécessite pas de cible.</capacity>
+        </warjack>
+        <warjack id="KJ07" name="Behemoth" full_name="Behemoth" qualification="Khador Character Heavy Warjack" fa="C" cost="13" damage_grid="....................SS..LLMCRRLMMCCR">
+          <basestats name="BEHEMOTH" spd="4" str="12" mat="6" rat="4" def="10" arm="21" cmd="0" />
+          <weapons>
+            <melee_weapon name="Gantelet" pow="0" p_plus_s="12" open_fist="true" location="L">
+              <capacity title="Perce-Armure"> Lors du calcul des dégats infligés par cette arme, divisez par 2 l'ARM de base de la figuine touchée si elle possède un socle moyen ou large. contre des figurines possédant un petit socle, cette arme bénéficie d'un bonus de +2 sur ses jets de dégats.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Gantelet" pow="0" p_plus_s="12" open_fist="true" location="R">
+              <capacity title="Perce-Armure"> Lors du calcul des dégats infligés par cette arme, divisez par 2 l'ARM de base de la figuine touchée si elle possède un socle moyen ou large. contre des figurines possédant un petit socle, cette arme bénéficie d'un bonus de +2 sur ses jets de dégats.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Bombarde " count="2" rng="14" rof="1" aoe="3" pow="14">
+              <capacity title="Tir en Cloche">Lorsqu'elle attaque avec cette arme, cette figurine peut ignorer les figurines interférentes, à l'exception de celles qui sont situées dans un rayon de 1 pouce autour de la cible.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Cortex Secondaire">Le cortex secondaire du Béhémoth est un système qui sert a controler ses bombarde. Les cases S dans la grille de dégats repésentent le cortex secondaire. il est possible d'atribuer jusqu'à trois points de focus au cortex secondaire. Ces points de focus doivent etre séparés des points de focus attribués de la facon normale, et ne peuvent etre utilisés que pour booster les jets d'attaque et de dégats des bombardes. Les points de focus attribués de facon normale ne peuvent pas etre utiliser pour booster les jets d'attaques et de dégats des bombarde. Si le cortex secondaire est mis HS, le béhémoth ne peut pas effectuer d'attaques à distance. les effets qui endommagent le cortex n'affectent pas le cortex secondaire. Le béhémoth peut effectuer des attaques de bombarde et de corps-à-corps au cours de la meme activation. Le béhémoth peut effectuer des attaques de bombarde meme lorsqu'il est engagé au corps-à-corps, mais il ne peut pas cibler les figurines qui l'engagent. le béhémoth subit -2 sur ses jets d'attaque de bombarde tant qu'il est engagé ou pendant toute l'activation ou il charge, slam ou piétine.</capacity>
+        </warjack>
+        <warjack id="KJ08" name="Spriggan" full_name="Spriggan" qualification="Khador Heavy Warjack" fa="U" cost="10" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="SPRIGGAN" spd="4" str="12" mat="6" rat="4" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Bouclier d'Assaut" pow="2" p_plus_s="14" shield="true" location="L" />
+            <melee_weapon name="Lance de Guerre" pow="6" count="0" p_plus_s="18" reach="true" location="R">
+              <capacity title="Charge Puissante">Lorsqu'il effectue une attaque de charge avec sa lance, le Spriggan bénéficie de +2 sur son jet d'attaque.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Lance-Grenade" count="2" rng="10" rof="1" aoe="3" pow="10">
+              <capacity title="Tir en Cloche">Lorsqu'elle attaque avec cette arme, cette figurine peut ignorer les figurines interférentes, à l'exception de celles qui sont situées dans un rayon de 1 pouce autour de la cible.</capacity>
+              <capacity title="Fusée Eclairantes">Au Lieur d'effectuer une attaque normale, vous pouvez utiliser Fusée Eclairantes. Placez un gabarit d'ADE 3 pouces de façon a ce qu'il soit entièrement situé dans un rayon de 10 pouces autour du Spriggan. Le centre du gabarit doit ce trouver dans laLDV du Spriggan, en ignorant les figurine interférentes. Tant qu'elles sont situées dans l'ADE, les figurine perdent les bénéfice de Camouflage et Furtivité et les figurines les ciblant ignorent les effets de nuée lors de la détermination des LDV. L'ADE disparait à la fin de la séquence de jeu en cours.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Rouleau Compresseur">Si le Spriggan se déplace au contact socle-à-socle d'une figurine ennemie, cette dernière est repoussée de 2 pouces maximum dans la direction opposée a celle du Spriggan. Une figurine ne peut etre repoussée qu'une fois par activation et ne peut traverser ou enjamber d'autre figurine. Les figurine repoussée par le rouleau compresseur ne sont pas sujettes par le frappe gratuites durants ce mouvement. Rouleau Compresseur n'a pas d'effet lorsque le Spriggan effectue une prise spéciale piétinement.</capacity>
+        </warjack>
+        <warjack id="KJ09" name="Beast 09" full_name="Beast 09" qualification="Khador Character Heavy Warjack" fa="C" cost="11" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="BEAST 09" spd="4" str="12" mat="7" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Gantelet" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Brise-Glace" pow="7" count="0" p_plus_s="19" reach="true" location="R">
+              <capacity title="Gel Critique">Sur une touche critique, la figurine touchée devient stationnaire pendant un tour à moins qu'elle ne soit dotée d'imunité: Froid</capacity>
+              <capacity title="Fauchage (★Attaque)">Beast 09 peut effectuer une attaque de corps-à-corps avec Brise-Glace contre chacune des figurine situé à portée de corps-à-corps dans son arc avant. Chaque attaque est résolue individuellement er en totalité.
+Après la résolution de chaque attaque, appliquer immédiatement les règles spéciale des cibles. Déterminez les dégats normalement. Une figurine ne peut pas etre touchée si une regle spéciale l'empeche d'etre ciblée ou si la LDV de l'attaquant vers cette cible est complètement bloquée par un éléments de décor.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Affinité [SORSCHA]">Tant que Beast 09 est situé dans la ZdC de Sorsha, il peut relancer les jets d'attaque de charge et de slam ratés. Les jets d'attaque ne peuvent etre relanceés qu'une seule fois grace à cette affinité.</capacity>
+          <capacity title="Chaudière Lourde">Beast 09 peut courir sans dépenser de point de focus.</capacity>
+          <capacity title="Suragressif">A chaque fois que Beast 09 subit des dégats suite a une attaque ennemie en dehors de lorsqu'il se déplace, il peut effectuer un mouvement d'une distance maximale égale à sa VTS actuelle en pouces dans la direction exacte de la figurine attaquante immédiatement après la résolution de l'attaque.</capacity>
+          <capacity title="Empreinte: Meurtrier">Beast 09 peut dépenser un unique point de focus durant son activation pour utiliser Meurtrier. Durant cette activation, Beast 09 bénéficie d'un dé supplémentaire sur ses jets d'attaque de corps-à-corps contre les figurines de guerrier vivantes ennemies.</capacity>
+        </warjack>
+        <warjack id="KJ10" name="Drago" full_name="Drago" qualification="Khador Character Heavy Warjack" fa="C" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+          <basestats name="DRAGO" spd="4" str="11" mat="7" rat="3" def="11" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Hache de Bourreau" pow="5" p_plus_s="16" location="L">
+              <capacity title="Enchainement: Bain de Sang">Si les deux bras de Drago sont fonctionnels et que Drago touche la meme cible avec ses deux attaques initiales de Hache de Bourreau au cours de la meme activation, il peut effectuer une attaque de corps-à-corps supplémentaire contre chacunes des figurines situé dans sa zone de corps-à-corps sans dépenser de point de focus immédiatement après la résolution des attaques initiales. Chaque attaque est résolue indviduellement et en totalité. après la résolution de chaque attaque, appliquez immédiatement les règles spéciales des cibles. une figurine ne peut pas etre touchée si une regle spéciale l'empeche d'etre ciblée ou si la ligne de vue de l'attaquant vers cette cible est complètement bloquer par un élément de décor.</capacity>
+              <capacity title="Amputation Critique">Sur une touche critique, les systèmes de warjack bas et arme ayant subi des dégat suite a cette attaque sont désactivés.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Hache de Bourreau" pow="5" p_plus_s="16" location="R">
+              <capacity title="Enchainement: Bain de Sang">Si les deux bras de Drago sont fonctionnels et que Drago touche la meme cible avec ses deux attaques initiales de Hache de Bourreau au cours de la meme activation, il peut effectuer une attaque de corps-à-corps supplémentaire contre chacunes des figurines situé dans sa zone de corps-à-corps sans dépenser de point de focus immédiatement après la résolution des attaques initiales. Chaque attaque est résolue indviduellement et en totalité. après la résolution de chaque attaque, appliquez immédiatement les règles spéciales des cibles. une figurine ne peut pas etre touchée si une regle spéciale l'empeche d'etre ciblée ou si la ligne de vue de l'attaquant vers cette cible est complètement bloquer par un élément de décor.</capacity>
+              <capacity title="Amputation Critique">Sur une touche critique, les systèmes de warjack bas et arme ayant subi des dégat suite a cette attaque sont désactivés</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Agressif">Cette figurine peut courir ou charger sans dépenser de point de focus.</capacity>
+          <capacity title="Affinité [VLADIMIR]">Tant que Drago est situé dans la ZdC de vladimir, le joueur qui dirige Drago peut choisir de ne pas effectuer les jets d'Instable. A chaque fois que Drago effectue une attaque alors qu'il est situé dans la ZdC  de Vladimir, lancez un dé supplémentaire sur les jets d'attaque et de dégats. pour chaque jet, ne comptabilisez pas le dé affichant le résultat le plus bas.</capacity>
+          <capacity title="Empreinte: Hors de Controle">Drago peut dépenser un point de focus pour utiliser Hors de Controle. Si Drago détruit une ou plusieurs figurines ennemies à l'aide d'une attaque de corps-à-corps normale durant l'activation en cours, et qu'ils n'y a plus de figurine ennemie dans sa zone de corps-à-corps, il peut se déplacer d'une distance maximum de 1 pouce immédiatement après la résolution de toutes les attaques générées par cette attaque.</capacity>
+          <capacity title="Instable">Le cortex de Drago est dangeureusement instable et peut exploser a tout moment. Lancez 1D6 à la fin de chaque activation ou Drago a dépensé au moins un point de focus. Si le résultat est inférieur ou égale au nombre de points de focus dépensés, Drago explose. Toutes figurines situé dans un rayon de 3 pouces autour de Drago subissent un jet de dégats de PUI 14, et le Drago est retiré du jeu. Ne remplacez pas le Drago par un marqueur d'épave.</capacity>
+        </warjack>
+        <warjack id="KJ11" name="Decimator" full_name="Decimator" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="DECIMATOR" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Déchiqueteuse" pow="6" p_plus_s="18" location="R">
+              <capacity title="Attaque Prolongée">Une fois que le Decimator a touché un cible avec Déchiqueteuse, les attaques supplémentaires portées avec cette arme contre la meme cible lors de la meme séquence de jeu touche automatiquement. aucun jet d'attaque supplémentaire n'est requis.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Assomoir" rng="10" rof="2" aoe="-" pow="15" location="L">
+              <capacity title="Repousser">A chaque fois que le Decimator réussit une attasue à distance avec cette arme, sa cible peut etre repoussée de 1 pouce dans la direction exactement oposer à celle du Decimator, immédiatement après la résolution de l'attaque. Le Decimator peut ensuite se déplacer de 1 pouce maximum en direction du centre de la figurine repoussée.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="KJ12" name="Torch" full_name="Torch" qualification="Khador Character Heavy Warjack" fa="C" cost="10" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="TORCH" spd="4" str="12" mat="7" rat="5" def="10" arm="20" cmd="0" gunfighter="true" immunity_corrosion="true" immunity_fire="true" />
+          <weapons>
+            <melee_weapon name="Spiked Fist" pow="4" p_plus_s="16" open_fist="true" location="L" />
+            <melee_weapon name="Rip Saw" pow="6" count="0" p_plus_s="18" location="R">
+              <capacity title="SUSTAINED ATTACK">During this model's activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Flamethrower" rng="SP6" rof="1" aoe="-" pow="12" location="L" fire="true" continuous_fire="true" />
+          </weapons>
+          <capacity title="RELENTLESS CHARGE">This model gains Pathfinder during activations it charges.</capacity>
+          <capacity title="SMOKE BOMBS (★ACTION)">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+          <capacity title="SPECIAL ISSUE [STRAKHOV]">This model can be included in Strakhov's theme forces. It can be also bonded to Strakhov.</capacity>
+          <capacity title="VIRTUOSO">This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+        </warjack>
+        <warjack id="KJ13" name="Demolisher" full_name="Demolisher" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="DEMOLISHER" spd="4" str="12" mat="6" rat="4" def="10" arm="25" cmd="0" gunfighter="true" />
+          <weapons>
+            <melee_weapon name="Shield Fist" pow="4" p_plus_s="16" open_fist="true" location="L" />
+            <melee_weapon name="Shield Fist" pow="4" p_plus_s="16" open_fist="true" location="R" />
+            <ranged_weapon name="Shoulder Cannon" count="2" rng="8" rof="1" aoe="4" pow="15" />
+          </weapons>
+          <capacity title="ARMORED SHELL">While one of its arm systems is crippled, this model's base ARM is 21; while both arm systems are crippled, its base ARM is 17. If this model makes an attack other than a head-butt, slam, or trample power attack, its base ARM is 17 until the start of its next activation. This model's arms cannot be locked.</capacity>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+          <capacity title="GIRDED">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
+        </warjack>
+        <warjack id="KJ14" name="Black Ivan" full_name="Black Ivan" qualification="Khador Character Heavy Warjack" fa="C" cost="10" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="BLACK IVAN" spd="4" str="12" mat="6" rat="5" def="12" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Bear Claw" pow="4" p_plus_s="16" open_fist="true" location="R">
+              <capacity title="CRITICAL BRUTAL DAMAGE">On a critical hit, gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Bombard" rng="14" rof="1" aoe="3" pow="14" location="L">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="AFFINITY [HARKEVICH]">While in Harkevich's control area, this model gains boosted ranged attack rolls.</capacity>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+          <capacity title="DODGE">This model can advance up to 2" immediately after an enemy attack that missed it is resolved unless it was missed while advancing. It cannot be targeted by free strikes during this movement.</capacity>
+        </warjack>
+        <warjack id="KJ16" name="Grolar" full_name="Grolar" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx">
+          <basestats name="GROLAR" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" gunfighter="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Piston Hammer" pow="6" p_plus_s="18" location="R">
+              <capacity title="RAM">When an enemy model is hit by this weapon, it is knocked down and can be pushed 1" directly away from this model. If it is pushed, this model can immediately advance directly toward the pushed model up to the distance that model was moved.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Auto Cannon" rng="8" rof="5" aoe="-" pow="12" location="L">
+              <capacity title="DOUBLE STRIKE">This model can make two additional attacks for each focus point spent to make additional attacks with this weapon.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="FLEET">At the start of this model's activation, it can spend 1 focus point once to gain +2" movement for one turn.</capacity>
+          <capacity title="VIRTUOSO">This model can make melee and ranged attacks during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+        </warjack>
+      </warjacks>
+      <colossals>
+        <colossal id="KJ15" name="Conquest" full_name="Conquest" qualification="Khador Colossal" fa="2" cost="19" damage_grid_left="xxx...xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="...xxx....xxSS....CSRRR.CCCCRRMMMMCR">
+          <basestats name="CONQUEST" spd="4" str="18" mat="6" rat="4" def="7" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Fist" pow="4" p_plus_s="22" open_fist="true" location="L" />
+            <melee_weapon name="Fist" pow="4" p_plus_s="22" open_fist="true" location="R" />
+            <ranged_weapon name="Main Guns" rng="15" rof="1" aoe="4" pow="15" location="S">
+              <capacity title="CRITICAL DEVASTATION">On a critical hit, instead of suffering a normal damage roll, each model in the AOE is thrown d6" directly away from the attacker regardless of its base size. Roll only once for all of the affected models. Move models farthest from the attacker first. The model directly hit by the attack suffers a POW 15 damage roll. Other models hit by the attack suffer a POW 8 damage roll. The POW of collateral damage is equal to the POW of the damage roll suffered by the thrown model.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Secondary Battery" rng="12" rof="1" aoe="3" pow="12" location="L">
+              <capacity title="CREEPING BARRAGE">Instead of attacking with this weapon during this model's activation, if it is not currently crippled you can place two 3" AOEs anywhere completely within this weapon's RNG, centered on points in this model's LOS, ignoring intervening models. The AOEs must be placed within 1" of each other. A model entering or ending its activation in one or more of the AOEs suffers an unboostable POW 6 blast damage roll. The AOEs remain in play for one round. If this model is destroyed or removed from play, immediately remove the AOEs from play.</capacity>
+              <capacity title="LINKED GUNS">When this model makes an initial attack with this weapon, after the initial attack has been resolved it can immediately make one additional attack against the target of the initial attack. This additional attack ignores this weapon's ROF.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Secondary Battery" rng="12" rof="1" aoe="3" pow="12" location="R">
+              <capacity title="CREEPING BARRAGE">See above.</capacity>
+              <capacity title="LINKED GUNS">See above.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="KE01" name="Gun Carriage" full_name="Gun Carriage" qualification="Khador Cavalry Battle Engine" fa="2" cost="9">
+          <basestats name="GUN CARRIAGE" spd="7" str="12" mat="6" rat="5" def="10" arm="20" cmd="10" hitpoints="22" construct="true" />
+          <weapons>
+            <ranged_weapon name="Heavy Cannon" rng="12" rof="1" aoe="4" pow="14" location="L">
+              <capacity title="CRATER">The AOE is rough terrain and remains in play for one round.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Heavy Cannon" rng="12" rof="1" aoe="4" pow="14" location="R">
+              <capacity title="CRATER">See above.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11">
+              <capacity title="REAR ATTACK">When declaring and resolving attacks with this weapon, this model's front arc extends to 360 degrees.</capacity>
+            </ranged_weapon>
+            <mount_weapon name="Mount" pow="12">
+            </mount_weapon>
+          </weapons>
+          <capacity title="POWER ATTACK TRAMPLE">This model can make trample power attacks.</capacity>
+          <capacity title="WEAPON PLATFORM">This model can make melee and ranged attacks in the same activation. When this model makes its initial melee attacks or a power attack, it can also make its initial ranged attacks. This model can make ranged attacks even while in melee.</capacity>
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="KU01" name="Battle Mechaniks" full_name="Battle Mechaniks" qualification="Khador Unit" fa="3" base_cost="2" full_cost="3" baseCount="4" fullCount="6" has_unit_attachment="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="5" rat="4" def="13" arm="12" cmd="8" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Clé à Molette" pow="2" p_plus_s="8" />
+          </weapons>
+          <capacity title="Sentinelle de fer"> Lorsqu'une figurine de cette unité est en contact socle-à-socle avec un Warjack Khadoréen ami, elle gange +2 DEF et ARM et ne peut pas etre mise à terre.</capacity>
+          <capacity title="Réparation [7] (★ACTION)">Un Mékanicien peut tenter de réparer tout Warjack Khadoréen ami endommagé. Pour tenté une réparation, le Mékanicien doit etre en contact socle-à-socle avec le Warjack endommagé et effectuer un test d'aptutude. Si le test est  réussi, lancez 1D6 et retirez le nombre de points de dégats correspondant n'importe ou sur la grille de dégat du Warjack.</capacity>
+          <capacity title="Assister la Réparation (★ACTION)">Une figurine de cette unité peut assister un autre Mékanicien qui effectue une action de réparation. La figurine effectuant cette action doit etre en contact socle-à-socle avec le Warjack que le Mékanicien répare pour pouvoir l'assister. Pour chaque figurine l'assistant de cette facon, le Mékanicien ciblé ajoute +1 a sa capacité de réparation, et retire un point de dégats supplémentaire si son test est réussi.</capacity>
+          <unit_attachment id="KA08" name="Battle Mechanik Officer" full_name="Battle Mechanik Officer" qualification="Khador Unit Attachment" fa="2" cost="2">
+            <model id="Battle Mechanik Officer">
+              <basestats name="OFFICER" spd="4" str="9" mat="6" rat="4" def="11" arm="16" cmd="9" hitpoints="8" officer="true" />
+              <weapons>
+                <melee_weapon name="Clé" pow="4" p_plus_s="13" />
+              </weapons>
+              <capacity title="Soutien [Mékanicien d'Assault]">Ce soutien peut etre ajouter a une unité de Mékanicien d'Assault.</capacity>
+              <capacity title="Autorisé: MAN-O-WAR MECHANIK">Tant que cette figurine est en jeu , les figurines de son unité peuvent faire une action spéciale de réparation pour tenter de réparer les modèles Man-O- War endommagés comme si elles étaient warjacks . Les figurines de l'unité avec la capacité Assister la Réparation peut aider à la réparation des modèles Man-O- War .</capacity>
+              <capacity title="Lash">Cette Figurine et les Mékanicien en contact socle-à-socle ne peuvent pas entre mis à terre</capacity>
+              <capacity title="Réparation [9] (★ACTION)">Un Mékanicien Officier peut tenter de réparer tout Warjack Khadoréen ami endommagé. Pour tenté une réparation, le Mékanicien doit etre en contact socle-à-socle avec le Warjack endommagé et effectuer un test d'aptutude. Si le test est  réussi, lancez 1D6 et retirez le nombre de points de dégats correspondant n'importe ou sur la grille de dégat du Warjack.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU02" name="Doom Reavers" full_name="Doom Reavers" qualification="Khador Unit" fa="2" base_cost="6" full_cost="-" baseCount="6" fullCount="-" has_unit_attachment="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="7" mat="7" rat="4" def="13" arm="14" cmd="7" abomination="true" advance_deployment="true" fearless="true" />
+          <weapons>
+            <melee_weapon name="Lame Maudite" pow="6" p_plus_s="13" magical="true" reach="true" weapon_master="true" />
+          </weapons>
+          <capacity title="Berserker">A chaque fois qu'un Doom Reavers détruit une figurine a l'aide d'une attaque de corps-à-corps durant son action de combat, il doit immédiatement effectuer une attaque corps-à-corps contre une autre figurine située dans sa zone de corps-à-corps, qu'elle soit amie ou ennemie.</capacity>
+          <capacity title="Immunité aux sorts">Un Doom Reaver ne peut pas etre ciblé par des sorts, amis ou ennemis.</capacity>
+          <unit_attachment id="KA06" name="Greylord Escort" full_name="Greylord Escort" qualification="Khador Doom Reaver Unit Attachment" fa="1" cost="2">
+            <model id="Greylord Escort">
+              <basestats name="GREYLORD ESCORT" spd="6" str="5" mat="5" rat="4" def="13" arm="13" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Hache Runique" pow="5" p_plus_s="10" magical="true" reach="true" />
+              </weapons>
+              <capacity title="Soutien [DOOM REAVERS]">Ce soutien peut etre ajouté à une unité de Doom Reavers.</capacity>
+              <capacity title="Apport: Silence">Tant que cette figurine est en jeu, les figurines de sont unité ne sont pas obligées d'effectuer des attaques de Berserker.</capacity>
+              <capacity title="Apport: Robuste">Tant que cette figurine est en jeu, les figurines de sont unité gagnent Robuste</capacity>
+              <capacity title="Compétence Magique [7]" />
+              <capacity title="● Morsure du Froid (★ATTACK)">Morsure du Froid est une attaque magique de PER ES 8. Toute figurinetouchée suvit un jet de dégats de froid de PUI 12.</capacity>
+              <capacity title="Sanctuaire Magique">Cette figurine ne peut pas etre ciblée par les sorts.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU03" name="Iron Fang Pikemen" full_name="Iron Fang Pikemen" qualification="Khador Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" cma="true" />
+          <weapons>
+            <melee_weapon name="Lance Explosive" pow="7" p_plus_s="13" reach="true">
+              <capacity title="Mise au Tapis Critique">Sur une touche critique, la figurine ciblé est mise au tapis.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Mur de Bouclier (Ordre)">Chacune des figurines ayant reçu cet ordre, et socle-à-socle avec une autre figurine de l'unité à la fin du mouvement de l'unité, bénéficie de +4 ARM tant qu'elle reste en contact avec celle-ci.
+Un troupier qui n'a pas reçu cet ordre ne peut pas se joindre au mur de boucliers. Ce bonus ne s'applique pas aux dégats dont le point d'origine se situe dans l'arc arrière de la figurine. Les figurines qui ne terminent pas leur mouvement en contact socle-à-socle avec une autre figurine de l'unité ne bénéficie pas du mur de bouclier. Ce bonus dure un tour. L'unité peut commencer la partie sous l'effet de mur de boucliers.</capacity>
+          <unit_attachment id="KA01" name="Iron Fang Officer &amp; Standard" full_name="Iron Fang Officer &amp; Standard" qualification="Khador Unit Attachment" fa="1" cost="2">
+            <model id="Iron Fang Pikemen Officer">
+              <basestats name="OFFICER" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="10" hitpoints="5" cma="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Lance Explosive" pow="7" p_plus_s="13" reach="true">
+                  <capacity title="Mise au Tapis Critique">Sur une touche critique, la figurine ciblé est mise au tapis</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="Soutien [Iron Fangk Pikement]">Ce soutien peut etre ajouté à une unité d'Iron Fang Pikemen.</capacity>
+              <capacity title="Formation Défensive">Une fois par partie durant l'activation de son unité, l'Officier peut utiliser Fprmation Défensiv. Immédiatement après que tout les membres de l'unités aient réaliser leur activation, a l'exception de l'Officier, peuvent ce déplacer de 6 pouces maximum. Tout les ordres précédement actifs sur l'unité expirent, et l'unité bénéficie de l'ordre: Mur de Boucliers.</capacity>
+              <capacity title="Tactique: Charge implacable"> Les figurines de cette unité bénéficie de Charge Implacable. (Les Figurines bénéficiant de Charge Implacable gagnent Eclaireur durant les activation ou elle chargent.)</capacity>
+            </model>
+            <model id="Iron Fang Pikemen Standard">
+              <basestats name="STANDARD BEARER" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" standard_bearer="true" />
+              <weapons />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU04" name="Man-O-War Shocktroopers" full_name="Man-O-War Shocktroopers" qualification="Khador Unit" fa="3" base_cost="6" full_cost="9" baseCount="3" fullCount="5">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="9" mat="7" rat="5" def="11" arm="17" cmd="9" hitpoints="8" fearless="true" cma="true" />
+          <weapons>
+            <melee_weapon name="Exterminatrice" pow="5" p_plus_s="14" reach="true" />
+            <ranged_weapon name="Bouclier Canon" rng="6" rof="1" aoe="-" pow="14" />
+          </weapons>
+          <capacity title="Mur de Bouclier (Ordre)">Chacune des figurines ayant reçu cet ordre, et socle-à-socle avec une autre figurine de l'unité à la fin du mouvement de l'unité, bénéficie de +4 ARM tant qu'elle reste en contact avec celle-ci.
+Un troupier qui n'a pas reçu cet ordre ne peut pas se joindre au mur de boucliers. Ce bonus ne s'applique pas aux dégats dont le point d'origine se situe dans l'arc arrière de la figurine. Les figurines qui ne terminent pas leur mouvement en contact socle-à-socle avec une autre figurine de l'unité ne bénéficie pas du mur de bouclier. Ce bonus dure un tour. L'unité peut commencer la partie sous l'effet de mur de boucliers.</capacity>
+        </unit>
+        <unit id="KU05" name="Widowmakers" full_name="Widowmakers" qualification="Khador Unit" fa="1" base_cost="4" full_cost="-" baseCount="4" fullCount="-">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="4" rat="7" def="14" arm="11" cmd="8" advance_deployment="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Epée" pow="3" p_plus_s="8" />
+            <ranged_weapon name="Fusil de Chasse" rng="14" rof="1" aoe="-" pow="10" />
+          </weapons>
+          <capacity title="Camouflage">Les widowmakers gagnent un bonus supplémentaire de +2 DEF quand ils bénéficie d'une dissimulation ou d'un couvert.</capacity>
+          <capacity title="Tireur Embusqué">Lorsqu'un Widowmaker endommage un warjack le joueur qui le dirige choisit la colonne qui subit les dégats. Lorsqu'un Widiwmakers endommage une Warbeast, le joueur qui le dirige choisit la branche qui subit les dégat.
+Après toute attaque à distance réussie, un widowmaker peut infliger automatiquement un point de dégats au lieu d'effectuer un jet de dégats. Un Widowmaker perd cet avantage lorsqu'il participe a une Attaque à Distance Combinée.</capacity>
+        </unit>
+        <unit id="KU06" name="Winter Guard Infantry" full_name="Winter Guard Infantry" qualification="Khador Unit" fa="3" base_cost="4" full_cost="6" baseCount="6" fullCount="10" has_unit_attachment="true" has_weapon_attachment="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" cra="true" />
+          <weapons>
+            <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+            <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <unit_attachment id="KA02" name="Winter Guard Officer &amp; Standard" full_name="Winter Guard Officer &amp; Standard" qualification="Khador Unit Attachment" fa="1" cost="2">
+            <model id="Winter Guard Infantry Officer">
+              <basestats name="OFFICER" spd="6" str="5" mat="6" rat="6" def="12" arm="13" cmd="9" hitpoints="5" cra="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+                <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+              </weapons>
+              <capacity title="Soutien [Winter Guard Infantry]">Ce soutien d'unité peut etre ajouté à une unité de Winter Guard Infantry.</capacity>
+              <capacity title="Formation Entrelacée (Ordre)">Les Winter Guard Infantry qui recoiventcet ordre doivent avancer durant l'activation en cours et bénéficient de +2 DEF pendant un tour.</capacity>
+              <capacity title="Tactiques: Attaque de corps-à-corps combinée">Les figurines de cette unité gagnent Attaque de corps-à-corps combinée.</capacity>
+            </model>
+            <model id="Winter Guard Infantry Standard">
+              <basestats name="STANDARD BEARER" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" cra="true" standard_bearer="true" />
+              <weapons>
+                <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+                <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+              </weapons>
+              <capacity title="Tir de Mitraille">Tant que le Porte Etendard est en formation, les figurine de l'unité peuvent effectuer des attaques spéciales de Tir de Mitraille au lieu d'attaque deTromblon standard. Une attaque spéciale Tir de Mitraille est une attaque de POR ES8, ADE -, et de PUI 10. Les figurines effectuant des attaque de Tir de Mitraille ne peuvent pas participer à des attaques à distance combinées.</capacity>
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="KA03" name="Winter Guard Infantry Rocketeer" full_name="Winter Guard Infantry Rocketeer" qualification="Khador Weapon Attachment" fa="2" cost="1" max_wa="3">
+            <model id="Winter Guard Infantry Rocketeer">
+              <basestats name="ROCKETEER" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" cra="true" />
+              <weapons>
+                <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+                <ranged_weapon name="Fusée" rng="14" rof="1" aoe="3" pow="12">
+                  <capacity title="Encombrant">Le Rocketeer ne peut pas effectuer à la fois des attaque de Tromblon et de Fusée au cours d'une meme activation.</capacity>
+                  <capacity title="Arme de Soutien">Lorsqu'il attaque avec la Fusée, Le Rocketeer ne peut pas participer à une attaque à distance combinée.</capacity>
+                </ranged_weapon>
+                <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+              </weapons>
+              <capacity title="Soutien [Winter Guard Infantry]">Ce soutien d'unité peut etre ajouté à une unité de Winter Guard Infantry.</capacity>
+              <capacity title="Ramasser">Des q'un Rocketeer est détruit ou retiré du jeu, un Winter Guard Infantry de son unité dans un rayon de 1 pouce autour de lui peut ramasser ses armes. Retirez la figurine de Winter Guard Infantry de la table et remplacez le par la figurine de Rocketeer. Tout les effets, sorts et animi sur le Winter Guard Infantry remplacé sont appliquer au nouveau rocketeer. tous les effets, sort et animi sur l'ancien Rocketeer prennent fin.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="KU07" name="Greylord Ternion" full_name="Greylord Ternion" qualification="Khador Unit" fa="3" base_cost="4" full_cost="-" baseCount="3" fullCount="-">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="4" def="13" arm="13" cmd="9" />
+          <weapons>
+            <melee_weapon name="Hache Runique" pow="5" p_plus_s="10" magical="true" />
+          </weapons>
+          <capacity title="Compétence Magique [7]">Si sur 2D6 + [7] donne un résultat supérieur ou égale a la DEF de la cible l'attaque est réussie. Le Greylord ne peut pas effectuer d'attaque supplémentaire après une attaque magique.</capacity>
+          <capacity title="● Blizzard (★Acton)">La figurine amie ciblée dans les 5 pouces est entourée par un effet de nuée Blizzard d'ADE 3 pendant un tour. La nuée reste sur la figurine meme si elle ce déplace. Ne faite pas de jet de déviation. Si la figurine Ciblé est détruite ou retirée du jeu, l'effet expire imédiatement</capacity>
+          <capacity title="● Morsure du Froid (★Attaque)">Attaque Magique de POR ES8. les Figurine touchées subissent un jet de dégats de PUI12 de type : Froid</capacity>
+          <capacity title="● Prison de Glace (★Attaque)">La prison de glace est une attaque magique de POR 10. figurine ciblée suffre d'un malus cumulable de -2 DEF pendant un séquence de jeu, sauf si elle bénéficie d'immunité: Froid.
+Si une figurine qui ne dispose pas de l'immunité: Froid est touchée par 3 attaque de prison de glace ou plus au cours de la meme séquence de jeu, elle devient stationnaire pendant 1 tour.</capacity>
+        </unit>
+        <unit id="KU08" name="Kossite Woodsmen" full_name="Kossite Woodsmen" qualification="Khador Unit" fa="2" base_cost="4" full_cost="6" baseCount="6" fullCount="10">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="4" def="12" arm="10" cmd="7" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Arme de Melée" pow="3" p_plus_s="8" />
+            <ranged_weapon name="Attaque à Distance" rng="10" rof="1" aoe="-" pow="10" />
+          </weapons>
+          <capacity title="Embuscade">Le joueur controlant les Kossite Woodsmen n'est pas obligé de déployer en début de partie. Il peut au lieu de cela les placer en jeu à la fin d'une de ses phases de controle après le premier tour. Lorsqu'ils sont placés sur la table, positionnez les Kossite Woodsmen en formation a 3 pouces ou moins de n'importe quel bord de table, à l'exception de celui par lequel l'adversaire s'est déployé.</capacity>
+          <capacity title="Camouflage">Les Kossite Woodsmen gagnent un bonus supplémentaire de +2 DEF quand ils bénéficie d'une dissimulation ou d'un couvert.</capacity>
+          <capacity title="Reformation">Après que toutes les figurines de l'unité aient terminé leur action, chacune d'elle peut avancer d'une distance maximum égale à 3 pouces dans n'importe quel direction.</capacity>
+        </unit>
+        <unit id="KU09" name="Winter Guard Mortar Crew" full_name="Winter Guard Mortar Crew" qualification="Khador Weapon Crew Unit" fa="2" base_cost="3" full_cost="-" baseCount="2" fullCount="-">
+          <basestats name="LEADER" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+          <weapons>
+            <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+            <ranged_weapon name="Mortier" rng="20" rof="1" aoe="4" pow="16">
+              <capacity title="Tir en Cloche">Lorsqu'elle attaque avec cette arme, cette figurine peut ignorer les figurines interférentes, à l'exception de celles qui sont situées dans un rayon de 1 pouce autour de la cible.</capacity>
+              <capacity title="Imprécis">Cette figurine subit un malus de -4 sur ses jets d'attaqu de mortier</capacity>
+              <capacity title="Artillerie légère">Le Mortier ne peut pas etre utilisé pour effectuer des attaques à distance ou des actions spéciale lorsque le chef se déplace. Le chef ne reçoit pas de bonus de visée lorsqu'il renonce a son mouvement pour attaquer avec le Mortier et ne peut pas charger. Si le chef attaque avec le Mortier il ne peut pas attaquer avec d'autres armes durant cette activation.</capacity>
+              <capacity title="Porté Minimum [8]">Aucune figurine comprise dans un rayon de 8 pouces autour du Chef ne peut etre prise pour cible par une attaque de mortier.</capacity>
+              <capacity title="Evaluation de Distance">Tant qu'ils est en contact B2B avec un ou plusieurs fantassins de son unité, le chef bénéficie d'un bonus de +2 ATD sur ses jets d'attaque à distance avec le Mortier.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <model id="mortar_grunt" full_name="Grunt" qualification="model">
+            <basestats name="GRUNT" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+            <weapons>
+              <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+              <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+            </weapons>
+          </model>
+        </unit>
+        <unit id="KU10" name="Assault Kommandos" full_name="Assault Kommandos" qualification="Khador Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_weapon_attachment="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="6" rat="5" def="12" arm="14" cmd="9" immunity_corrosion="true" immunity_fire="true" />
+          <weapons>
+            <melee_weapon name="Bouclier de Combat" pow="2" p_plus_s="8" />
+            <melee_weapon name="Baionette" pow="3" p_plus_s="9" />
+            <ranged_weapon name="Carbine" rng="10" rof="1" aoe="-" pow="10" />
+            <ranged_weapon name="Lance-Grenades à Gaz" rng="10" rof="1" aoe="3" pow="-">
+              <capacity title="Gaz étrangleur">si l'attaque touche, centrez un gabarit ADE 3 pouces sur la figurine ciblée. Le gabarit reste sur la table pendant un tour. Si l(attaque échoue, rien ne se passe. Tant qu'elles se trouvent dans l'ADE du gaz étrangleur, les figurines vivantes subissent -2 DEF et -2 sur leurs jets d'attaque. Les effets de plusieurs bombe à gaz étrangleur ne sont pas cumulable.</capacity>
+              <capacity title="Encombrant">les Kommando ne peuvent pas effectuer à la fois des attaque de carabine et de lance-grenade à gaz au cours d'une meme activation.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Masque Alchimique">Cette figurine ignore les effets de gaz.
+Lors de la détermination des LDV ou de la résolution des attaques, cette figurine ignore les effets de nuée.</capacity>
+          <capacity title="Coups et Blessures (Ordre)">Tout Kommando qui reçoit cet ordre peut effectuer une unique attaque à distance avant sont mouvement normal. Après cette attaque, il doit charger ou courir. L'attaque à distance est effectuer avant la déclaration de charge.</capacity>
+          <capacity title="Mur de Boucliers (Ordre)">Chacune des figurines ayant reçu cet ordre, et socle-à-socle avec une autre figurine de l'unité à la fin du mouvement de l'unité, bénéficie de +4 ARM tant qu'elle reste en contact avec celle-ci.
+Un troupier qui n'a pas reçu cet ordre ne peut pas se joindre au mur de boucliers. Ce bonus ne s'applique pas aux dégats dont le point d'origine se situe dans l'arc arrière de la figurine. Les figurines qui ne terminent pas leur mouvement en contact socle-à-socle avec une autre figurine de l'unité ne bénéficie pas du mur de bouclier. Ce bonus dure un tour. L'unité peut commencer la partie sous l'effet de mur de boucliers.</capacity>
+          <weapon_attachment id="KA05" name="Assault Kommando Flame Thrower" full_name="Assault Kommando Flame Thrower" qualification="Khador Weapon Attachment" fa="2" cost="1" max_wa="3">
+            <model id="Assault Kommando Flame Thrower">
+              <basestats name="KOMMANDO" spd="6" str="6" mat="6" rat="5" def="12" arm="14" cmd="9" immunity_corrosion="true" immunity_fire="true" />
+              <weapons>
+                <melee_weapon name="Bouclier de combat" pow="2" p_plus_s="8" />
+                <ranged_weapon name="Lance-flammes" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
+              </weapons>
+              <capacity title="Soutien [Kommando d'assault]">Ce soutien peut etre ajouté à une unitée de Kommandos d'assault</capacity>
+              <capacity title="Explosion de Flammes">Lorsque cette figurine est mise hors de combat, centrez une ADE de 5 pouces sur elle, puis retirez-la du jeu. Toute fugurine dans l'ADE subit l'effet continu: Feu</capacity>
+              <capacity title="Masque d'Alchimique">Cette figurine ignore les effets de gaz.
+Lors de la détermination des LDV ou de la résolution des attaques, cette figurine ignore les effets de nuée.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="KU11" name="Iron Fang Uhlans" full_name="Iron Fang Uhlans" qualification="Khador Cavalry Unit" fa="1" base_cost="7" full_cost="11" baseCount="3" fullCount="5">
+          <basestats name="LEADER &amp; GRUNTS" spd="8" str="6" mat="6" rat="4" def="13" arm="17" cmd="9" hitpoints="5" />
+          <weapons>
+            <melee_weapon name="Lance Explosive" pow="10" p_plus_s="16">
+              <capacity title="Mise au Tapis">Sur une touche critique, la figurine ciblé est mise au tapis</capacity>
+              <capacity title="Lance de Cavalerie">Cette Lance ne peut etre utiliser que pour effectuer des attaques de charge. Lorsque qu'un Uhlan charge sur au moin 3 pouces, sa Lance gagne Allonge jusqu'à la résolution de la charge.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Lance de Contact" pow="4" p_plus_s="10">
+              <capacity title="Combat Rapproché">S'il a chargé sur au moin 3 pouces, un Uhlan ne peut pas effectuer d'attaque initiale avec sa lance de contact au cours de la meme activation.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12">
+              <capacity title="Mise au Tapis Critique" type="">Sur une touche critique, la figurine ciblé est mise au tapis</capacity>
+            </mount_weapon>
+          </weapons>
+          <capacity title="Cavalier de Guerre">Un Uhlans peut effectuer une unique attaque de corps-à-corps de monture au cours de toute action de combat durant laquelle il n'a pas effectuer de charge.</capacity>
+          <capacity title="Ligne défensive">Un Uhlans bénéficie de +2 ARM lorsqu'il est en contact socle-à-socle avec un ou plusieurs Uhlans de son unité.</capacity>
+          <capacity title="Charge Implacable">Les Figurines bénéficiant de Charge Implacable gagnent Eclaireur durant les activation ou elle charge.</capacity>
+        </unit>
+        <unit id="KU12" name="Man-O-War Demolition Corps" full_name="Man-O-War Demolition Corps" qualification="Khador Unit" fa="3" base_cost="6" full_cost="9" baseCount="3" fullCount="5">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="9" mat="7" rat="5" def="11" arm="16" cmd="9" hitpoints="8" fearless="true" />
+          <weapons>
+            <melee_weapon name="Marteau de Glace" pow="5" p_plus_s="14" reach="true">
+              <capacity title="Balancier (★Attaque)">La figuine peut imédiatement effectuer deux attaque de corps-à-corps.</capacity>
+              <capacity title="Brise-Glace (★Attaque)">La figurine effectue une unique attaque de corps-à-corps. l'attaque est réussie, lancé un dé supplémentaire lors du jet de dégats</capacity>
+            </melee_weapon>
+          </weapons>
+        </unit>
+        <unit id="KU13" name="Winter Guard Field Gun Crew" full_name="Winter Guard Field Gun Crew" qualification="Khador Weapon Crew Unit" fa="2" base_cost="2" full_cost="-" baseCount="3" fullCount="-">
+          <basestats name="LEADER" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+          <weapons>
+            <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+            <ranged_weapon name="Canon" rng="16" rof="1" aoe="-" pow="14">
+              <capacity title="Mise au Tapis Critique">Surune touche critique avec cette arme, la figurine ciblée est mise au tapis.</capacity>
+              <capacity title="Artillerie légère">Le Canon ne peut pas etre utilisé pour effectuer des attaques à distance ou des actions spéciale lorsque le chef se déplace. Le chef ne reçoit pas de bonus de visée lorsqu'il renonce a son mouvement pour attaquer avec le Canon et ne peut pas charger. Si le chef attaque avec le Canon il ne peut pas attaquer avec d'autres armes durant cette activation.</capacity>
+              <capacity title="Evaluation de Distance">Tant qu'ils est en contact B2B avec un ou plusieurs fantassins de son unité, le chef bénéficie d'un bonus de +2 ATD sur ses jets d'attaque à distance avec le Canon.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <model id="fieldgun_grunt" full_name="Grunt" qualification="model">
+            <basestats name="GRUNTS" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+            <weapons>
+              <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+              <ranged_weapon name="Tromblon" rng="8" rof="1" aoe="-" pow="12" />
+            </weapons>
+          </model>
+        </unit>
+        <unit id="KU14" name="Great Bears of Gallowswood" full_name="Great Bears of Gallowswood" qualification="Khador Iron Fang Character Unit" fa="C" base_cost="5" full_cost="-" baseCount="3" fullCount="-">
+          <basestats name="VOLKOV" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="9" hitpoints="5" fearless="true" officer="true" tough="true" />
+          <weapons>
+            <melee_weapon name="Grande Hache" pow="5" p_plus_s="12" reach="true" weapon_master="true">
+              <capacity title="Balancier (★Attaque)">Une figurine utilisant Balancier peut immédiatement effectuer deux attaques de corps-à-corps.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Formation Defensive">Lorsque cette figurine est en contact socle-à-socle avec une ou plusieur figurines de sont unité, elle gagne +2 ARM.</capacity>
+          <capacity title="Apport: Charge Implacable">Tant que Volkov est en jeu, les figurines de cette unité bénéficie de Charge Implacable. (Les Figurines bénéficiant de Charge Implacable gagnent Eclaireur durant les activation ou elle charge.)</capacity>
+          <capacity title="Frappe Precise">Lorsqu'elle cause des dégats à un warjack ou une warbeast en corps-à-corps, cette figurine choisit la colonne ou la branche dans laquelle les dégats s'appliquent.</capacity>
+          <model id="Kolsk">
+            <basestats name="KOLSK" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="9" hitpoints="5" fearless="true" tough="true" />
+            <weapons>
+              <melee_weapon name="Grande Hache" pow="5" p_plus_s="12" reach="true" weapon_master="true">
+                <capacity title="Balancier (★Attaque)">Une figurine utilisant Balancier peut immédiatement effectuer deux attaques de corps-à-corps.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="Apport: Stable">Tant que Kolsk est en jeu, les figurines de cette unité bénéficie de Stable. (Les figurine bénéficiant de Stable ne peuvent etre mise au tapis).</capacity>
+            <capacity title="Frappe Précise">Lorsqu'elle cause des dégats à un warjack ou une warbeast en corps-à-corps, cette figurine choisit la colonne ou la branche dans laquelle les dégats s'appliquent.</capacity>
+            <capacity title="Formation Défensive">Lorsque cette figurine est en contact socle-à-socle avec une ou plusieur figurines de sont unité, elle gagne +2 ARM.</capacity>
+          </model>
+          <model id="Yarovich">
+            <basestats name="YAROVICH" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="9" hitpoints="5" fearless="true" tough="true" />
+            <weapons>
+              <melee_weapon name="Grande Hache" pow="5" p_plus_s="12" reach="true" weapon_master="true">
+                <capacity title="Balancier (★Attaque)">Une figurine utilisant Balancier peut immédiatement effectuer deux attaques de corps-à-corps.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="Apport: Vision Circulaire">Tant que Yarovich est en jeu, les figurines de cette unité bénéficie de Vision Circulaire. (Arc Frontal de 360 degrés)</capacity>
+            <capacity title="Frappe Précise">Lorsqu'elle cause des dégats à un warjack ou une warbeast en corps-à-corps, cette figurine choisit la colonne ou la branche dans laquelle les dégats s'appliquent.</capacity>
+            <capacity title="Formation Défensive">Lorsque cette figurine est en contact socle-à-socle avec une ou plusieur figurines de sont unité, elle gagne +2 ARM.</capacity>
+          </model>
+        </unit>
+        <unit id="KU15" name="Kayazy Assassins" full_name="Kayazy Assassins" qualification="Khador Ally Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="7" rat="4" def="14" arm="11" cmd="8" stealth="true" />
+          <weapons>
+            <melee_weapon name="Lames d'assassin" pow="4" p_plus_s="10" />
+          </weapons>
+          <capacity title="Coup Vicieux">Les figurines de cette unité lancent un dé supllémentaire lors de leursjets de dégats d'attaque de dos.</capacity>
+          <capacity title="Gang">Toute figurine de cette unité bénéficie de +2 sur ses jet d'attaque et de dégats lorsqu'elle effectue une attaque de corps-à-corps ciblant une figurine ennemie située dans la eone de corps-à-corps d'une autre figurine de son unité.</capacity>
+          <capacity title="Parade">Les figurines de cette unité ne peuvent pas etre la cible de frappes gratuites.</capacity>
+          <unit_attachment id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss" qualification="Khador Ally Unit Attachment" fa="1" cost="2">
+            <model id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss">
+              <basestats name="UNDERBOSS" spd="6" str="6" mat="8" rat="4" def="14" arm="11" cmd="9" hitpoints="5" officer="true" stealth="true" tough="true" />
+              <weapons>
+                <melee_weapon name="Lames d'assassin" pow="4" count="2" p_plus_s="10" />
+              </weapons>
+              <capacity title="Soutien [Kayazy Assassins]">Ce soutien peut etre ajouté à une unité de Kayazy Assassins.</capacity>
+              <capacity title="Coup Vicieux">Les figurines de cette unité lancent un dé supllémentaire lors de leursjets de dégats d'attaque de dos.</capacity>
+              <capacity title="Gang">Toute figurine de cette unité bénéficie de +2 sur ses jet d'attaque et de dégats lorsqu'elle effectue une attaque de corps-à-corps ciblant une figurine ennemie située dans la eone de corps-à-corps d'une autre figurine de son unité.</capacity>
+              <capacity title="Manoeuvre d'assassinat">Kayazy Assassin Underboss peut utiliser Manoeuvre d'Assassinat une fois par partie, au cours de l'activation de son unité. Durant l'activation en cours, toutes figurines de l'unité peuvent se déplacer au travers d'autres figurines si elle peuvent les traverser completement. Toutes les figurines de l'unité ignorent les figurines faisant interférence lors de la détermination des charges. Aucune figurine de l'unité ne peut etre la cible de frappe gratuites.</capacity>
+              <capacity title="Parade">Les figurines de cette unité ne peuvent pas etre la cible de frappes gratuites.</capacity>
+              <capacity title="Tactique: Duelliste">Toutes les figurines de cette unité gagnent Duelliste. Toute figurine dotée de duelliste bénéficie de +2 DEF contre les attaques de corps-à-corps.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU16" name="Man-O-War Bombardiers" full_name="Man-O-War Bombardiers" qualification="Khador Unit" fa="1" base_cost="7" full_cost="11" baseCount="3" fullCount="5">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="9" mat="7" rat="5" def="11" arm="16" cmd="9" hitpoints="8" fearless="true" />
+          <weapons>
+            <melee_weapon name="Chain Blade" pow="4" p_plus_s="13">
+              <capacity title="CRITICAL SHRED">On a critical hit, after the attack is resolved this model can make one additional attack against the model hit.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Grenade Cannon" rng="10" rof="1" aoe="3" pow="14">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </unit>
+        <unit id="KU17" name="Winter Guard Rifle Corps" full_name="Winter Guard Rifle Corps" qualification="Khador Unit" fa="3" base_cost="5" full_cost="8" baseCount="6" fullCount="10">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+          <weapons>
+            <melee_weapon name="Hache" pow="3" p_plus_s="8" />
+            <ranged_weapon name="Fusil" rng="14" rof="1" aoe="-" pow="10" />
+          </weapons>
+          <capacity title="Attaques en Formation">Toute figurine de Faction amie peut ignorer cette figurine lors de la détermination des LDV.</capacity>
+          <capacity title="Tir d'Interdiction (Ordre)">Cet Ordre ne peut etre donné que lorsqu'au moins deux figurine de cette unité, dotées d'armes à distances et en formation, peuvent renoncer a leur action. Toute figurine en formation de cette unité doit renoncer a sont action. A l'exception du porte étendard, toute figurine qui renonce a sont action est un participant. Placez une ADE de facon à ce qu'elle soit entierement située dans un rayon de 14 pouces de tout les participants, le point centrale de l'ADE devant etre dans la LDV de tous les participants en ignorant les figurines interférentes. La taille de l'ADE dépend du nombre de participants. Pour 2 à 4 participants, l'ADE est de 3 pouces. Pour 5 à 7 participants, l'ADE est de 4 pouces. Pour 8 participants ou plus, l'ADE est de 5 pouces. A chaque fois qu'une figurine entre ou termine son activation dans l'ADE, elle subit un jet de dégats de PUI 10. Tir de suppression dure un tour ou jusqu'à ce que tous les participants aient été détruits ou retirés du jeu</capacity>
+        </unit>
+        <unit id="KU18" name="Kayazy Eliminators" full_name="Kayazy Eliminators" qualification="Khador Ally Unit" fa="2" base_cost="3" full_cost="-" baseCount="2" fullCount="-">
+          <basestats name="LEADER &amp; GRUNTS" spd="7" str="5" mat="7" rat="4" def="15" arm="11" cmd="9" hitpoints="5" stealth="true" />
+          <weapons>
+            <melee_weapon name="Assassin Blade " pow="4" count="2" p_plus_s="9">
+              <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="ACROBATICS">This model can advance through other models if it has enough movement to move completely past their bases. This model cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="DUELIST">This models gains +2 DEF against melee attack rolls.</capacity>
+          <capacity title="GANG">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+          <capacity title="SIDE STEP">When this model hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved. This model cannot be targeted by free strikes during this movement.</capacity>
+        </unit>
+        <unit id="KU19" name="Greylord Outriders" full_name="Greylord Outriders" qualification="Khador Light Cavalry Unit" fa="1" base_cost="6" full_cost="9" baseCount="3" fullCount="5">
+          <basestats name="LEADER &amp; GRUNTS" spd="9" str="5" mat="5" rat="4" def="13" arm="15" cmd="9" hitpoints="5" immunity_frost="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Rune Axe" pow="5" p_plus_s="10" magical="true" />
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="SNOW-WREATHED">This model always has concealment.</capacity>
+          <capacity title="MAGIC ABILITY [6]" />
+          <capacity title="● FROSTBITE (★ATTACK)">Frostbite is a RNG SP 8 magic attack. Models hit suffer a POW 12 cold damage roll.</capacity>
+          <capacity title="● WINTER'S WIND (★ACTION)">RNG 5. Target friendly Faction model with Immunity: Cold. When an enemy model without Immunity: Cold ends its activation within 2" of the target model, the enemy model becomes stationary for one round. Winter's Wind lasts for one round.</capacity>
+        </unit>
+      </units>
+      <solos>
+        <solo id="KS01" name="Manhunter" full_name="Manhunter" qualification="Khador Solo" fa="2" cost="2">
+          <basestats name="MANHUNTER" spd="6" str="8" mat="8" rat="4" def="14" arm="14" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Haches" pow="3" count="2" p_plus_s="11" weapon_master="true" />
+          </weapons>
+          <capacity title="Camouflage">Le Manhunter gagne +2 Def quand il bénéficie d'une dissimulation ou d'un couvert.</capacity>
+        </solo>
+        <solo id="KS02" name="Man-O-War Kovnik" full_name="Man-O-War Kovnik" qualification="Khador Solo" fa="2" cost="3">
+          <basestats name="KOVNIK" spd="4" str="9" mat="8" rat="6" def="11" arm="18" cmd="9" hitpoints="8" fearless="true" commander="true" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Hache Canon" pow="6" p_plus_s="15" weapon_master="true" />
+            <ranged_weapon name="Canon" rng="8" rof="1" aoe="-" pow="14" />
+          </weapons>
+          <capacity title="Diriger: Attaque Boostée">Le Kovnik peut tenter de diriger chacun des warjacks sous son controle et se trouvant à portée de commandement. Pour Diriger un warjack, Kovnik doit effectuer un test de CMD à un moment quelconque de son activation. Si le test est un échec le warjack ne bénéficiera pas des effets de Jack Marshal lors de cette séquence de jeu.</capacity>
+          <capacity title="Officier de Campagne [ShockTrooper ou Demolition Corps]">Une Unité supplémentaire de ShockTrooper ou Demolition Corps peut etre recrutée au-dela de sa limitation normale si Kovnik est dans l'armée</capacity>
+          <capacity title="Prise Spéciale Slam">Kovnik peut effectuer des Prise Spéciale Slam.</capacity>
+        </solo>
+        <solo id="KS03" name="Kovnik Jozef Grigorovich" full_name="Kovnik Jozef Grigorovich" qualification="Khador Winter Guard Character Solo" fa="C" cost="2">
+          <basestats name="GRIGOROVICH" spd="6" str="8" mat="7" rat="6" def="12" arm="14" cmd="9" hitpoints="5" commander="true" />
+          <weapons>
+            <melee_weapon name="Sabre" pow="4" p_plus_s="12" />
+            <ranged_weapon name="Canon à Main" rng="12" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <capacity title="Discours Patriotiques">Grigorovitvh peut faire un des discours suivant à n'importe quel moment de son activation. le discour affecte une unité de WinterGuard dans sa zone de CdT</capacity>
+          <capacity title="● Force de l'Ours">Les figurines affectées gagne +3 FOR pour un tour.</capacity>
+          <capacity title="●Courage des Patriarches">Les figurines affectées gagne Sans Peur et Robustesse pour un tour.</capacity>
+          <capacity title="● Pour la Mère Patrie"> Les jets d'attaques des figurines affectées sont boostés pour un tour.</capacity>
+          <capacity title="Pion Sacrifiable [Winter Guard]">A chaque fois que Grigorovitch est touché par une attaque à distance ennemie, vous pouvez désigner un Winter Guard ami non Intangible, situé dans un rayon de 3 pouces autour de lui, comme étant touché à sa place. Le Winter Guard est touché automatiquement et subit tous les dégats et effets de l'attaque.</capacity>
+        </solo>
+        <solo id="KS04" name="Man-O-War Drakhun" full_name="Man-O-War Drakhun" qualification="Khador Dragoon Solo" fa="1" cost="4" dragoon="true" dismount_option="true" dismount_cost="5">
+          <basestats name="DRAKHUN" spd="7" str="9" mat="8" rat="6" def="11" arm="19" cmd="9" hitpoints="10" fearless="true" />
+          <weapons>
+            <melee_weapon name="Exterminatrice" pow="5" p_plus_s="14" reach="true" weapon_master="true" />
+            <ranged_weapon name="Bouclier Canon" rng="6" rof="1" aoe="-" pow="14" />
+            <mount_weapon name="Monture" pow="14">
+              <capacity title="Mise au Tapis Critique" type="">Sur une touche critique, la figurine ciblée est mise au tapis.</capacity>
+            </mount_weapon>
+          </weapons>
+          <capacity title="Cavalier de Guerre">Le Drakhun peut effectuer une unique attaque de corps-à-corps de Monture au cours de toute action de combat durant l'aquelle il n'a pas effectué d'attaque de charge.</capacity>
+          <capacity title="Contre-Charge">Le Drakhun peut charger une figurine ennemi qui termine son mouvement normal dans un rayon de 6 pouces autour de lui et dans sa LDV. Résolvez cette charge dès que la figurine ennemie a terminé son mouvement. Si le Drakhun effectue une contre-charge, il ne peut pas en effectuer d'autre avant la séquence de jeu du joueur qui le dirige. 
+Le Drakhun ne peut pas effectuer de contre-charge s'il est engagé.</capacity>
+          <capacity title="Dragon">Tant qu'il est en selle, Drakhun à une VTS de base de 7 et une ARM de base de 19. Lorsque toutes les cases de dégats du Drakhun ont été noircie sauf si l'otion à pied a été choisie. Dans ce cas retirez la figurine de Drakhun en selle et remplacez la part la figurine à pied. Les points de dégats qui déplassent le nombre de points de vie restant au drakhun en selle sont perdus. Les effete ennemie actif sur le en Selle reste sur le à Pied. A pied Drakhun a une VTS de base de 4 et une ARM de base de 17.</capacity>
+          <capacity title="Stable">Drakhun ne peut pas etre mis au tapis.</capacity>
+          <model id="KS04_dismount" name="Drakhun (Dismounted)" full_name="Drakhun (Dismounted)">
+            <basestats name="DRAKHUN (DISMOUNTED)" spd="4" str="9" mat="8" rat="6" def="11" arm="17" cmd="9" hitpoints="8" fearless="true" />
+            <weapons>
+              <melee_weapon name="Annihilator Blade" pow="5" p_plus_s="14" reach="true" weapon_master="true" />
+              <ranged_weapon name="Shield Cannon" rng="6" rof="1" aoe="-" pow="14" />
+            </weapons>
+          </model>
+        </solo>
+        <solo id="KS05" name="Fenris" full_name="Fenris" qualification="Khador Dragoon Character Solo" fa="C" cost="5" dragoon="true">
+          <basestats name="FENRIS" spd="8" str="7" mat="8" rat="4" def="13" arm="16" cmd="8" hitpoints="10" abomination="true" fearless="true" tough="true" />
+          <weapons>
+            <melee_weapon name="Lames Maudites" pow="6" count="2" p_plus_s="13" magical="true" reach="true" weapon_master="true" />
+            <mount_weapon name="Monture" pow="12" />
+          </weapons>
+          <capacity title="Berserker">A chaque fois que Fenris détruit une figurine a l'aide d'une attaque de corps-à-corps durant son action de combat, il doit immédiatement effectuer une attaque corps-à-corps contre une autre figurine située dans sa zone de corps-à-corps, qu'elle soit amie ou ennemie.</capacity>
+          <capacity title="Dragon">Tant qu'il est En selle, Fenris a une VTS de base de 8 et une ARM de base de 16. A pied Fenris a une VTS de base de 6 et une ARM de base de 14.</capacity>
+          <capacity title="Commandant [Doom Reavers]">Tant qu'elles sont dans la zone de commandement de Fenris, les figurines de Doom Reavers amies bénéficie de Silence</capacity>
+          <capacity title="Silence">Cette figurines n'est pas obligée d'effectuer des attaques de Berserker.</capacity>
+          <capacity title="Immunité aux sorts">Fenris ne peut pas etre ciblé par des sorts, amis ou ennemis.</capacity>
+          <model id="KS05_dismount" name="Fenris (Dismounted)" full_name="Fenris (Dismounted)">
+            <basestats name="FENRIS (DISMOUNTED)" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="8" hitpoints="5" abomination="true" fearless="true" tough="true" />
+            <weapons>
+              <melee_weapon name="Fellblade" pow="6" count="2" p_plus_s="13" magical="true" reach="true" weapon_master="true" />
+            </weapons>
+          </model>
+        </solo>
+        <solo id="KS06" name="Koldun Lord" full_name="Koldun Lord" qualification="Khador Greylord Solo" fa="1" cost="2">
+          <basestats name="KOLDUN LORD" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="9" hitpoints="5" commander="true" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Hache Runique" pow="5" p_plus_s="10" magical="true" />
+          </weapons>
+          <capacity title="Mage de Bataille">Une fois par séquence de jeu, lorsque cette figurine détruit une ou plusieurs figurines ennemies grace à une attaque au corps-à-corps durant son activation, immédiatement après que l'attaque ait été résolue, Koldun peut effectuer une attaque magique ou une action spéciale.</capacity>
+          <capacity title="Encadrement d'Elite [GREYLORD TERNIONS]">Les unités amis Greylord Ternion gagne Mage de Bataille.</capacity>
+          <capacity title="IRON WALL">This model gains +2 ARM for each warjack it controls B2B with it. When this model is directly hit by an enemy ranged or magic attack, you can choose to have one of those non-incorporeal warjacks to be directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+          <capacity title="Compétence Magique [7]" />
+          <capacity title="● Morsure du Froid (★Attaque)">Attaque Magique de POR ES8. les Figurine touchées subissent un jet de dégats de PUI12 de type : Froid</capacity>
+          <capacity title="● Prison de Glace (★Attaque)">La prison de glace est une attaque magique de POR 10. figurine ciblée suffre d'un malus cumulable de -2 DEF pendant un séquence de jeu, sauf si elle bénéficie d'immunité: Froid.
+Si une figurine qui ne dispose pas de l'immunité: Froid est touchée par 3 attaque de prison de glace ou plus au cours de la meme séquence de jeu, elle devient stationnaire pendant 1 tour.</capacity>
+          <capacity title="● Boost de Puissance (★ACTION)">POR 5. Ciblez un warjack khadoréen ami. S'il est à portée et n'a pas de points de focus, il gagne 1 point de focus. Si le warjack souffrait de disruption, cet effet prend fin.</capacity>
+        </solo>
+        <solo id="KS07" name="Uhlan Kovnik Markhov" full_name="Uhlan Kovnik Markhov" qualification="Khador Iron Fang Cavalry Character Solo" fa="C" cost="4">
+          <basestats name="MARKHOV" spd="8" str="6" mat="8" rat="4" def="13" arm="18" cmd="9" hitpoints="10" fearless="true" commander="true" />
+          <weapons>
+            <melee_weapon name="Lance de Cavalerie" pow="10" p_plus_s="16">
+              <capacity title="Lance de Cavalerie">Cette Lance ne peut etre utiliser que pour effectuer des attaques de charge. Lorsque qu'un Uhlan charge sur au moin 3 pouces, sa Lance gagne Allonge jusqu'à la résolution de la charge.</capacity>
+              <capacity title="Ogive">Centrez un gabarit de 4 pouces sur la figurine directement touchée par cette attaque. Les figurines présentes dans l'ADE subissent un jets de dégats d'explosion de PUI 10. Ces dégats ne sont pas considérés comme ayant été causés par une attaque de corps-à-corps. Lors d'une touche critique, les figurines présentes dans l'ADE sont mises au tapis. Markhov n'est pas affecté par Ogive.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Lance de Contact" pow="4" p_plus_s="10">
+              <capacity title="Combat Rapproché">S'il a chargé sur au moin 3 pouces,Markhov ne peut pas effectuer d'attaque initiale avec sa lance de contact au cours de la meme activation.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Monture" pow="12">
+            </mount_weapon>
+          </weapons>
+          <capacity title="Cavalier de Guerre">Markhov peut effectuer une unique attaque de corps-à-corps de Monture au cours de toute action de combat durant l'aquelle il n'a pas effectué d'attaque de charge.</capacity>
+          <capacity title="Encadrement d'Elite [Iron Fang Uhlans]">Les unité/figurine Iron Fang Uhlans gagnent Cavalier Emérites. (Une figurine avec la compétence Cavalier Emérites peut ignorer les figurines de son unité lors de la résolution des LDV. Au cours de son activation une figurine avec cette compétence peut se déplacer à travers d'autres figurines de son unité si elle peut les traversé completement.)</capacity>
+          <capacity title="Inspirer [Iron Fang Uhlans]">Les figurines/unités Iron Fang Uhlans amies dans la zone de commandement de Markhov ne fuient jamais et peuvent se rallier immédiatement.</capacity>
+          <capacity title="Frappe Précise">Lorsqu'il cause des dégats a un warjack ou une Warbeast au corps-à-corps, choisissez la colonne dans laquelle les dégats s'appliquent.</capacity>
+        </solo>
+        <solo id="KS08" name="War Dog" full_name="War Dog" qualification="Khador Solo" fa="1" cost="1" warcaster_attachment="true">
+          <basestats name="WAR DOG" spd="7" str="7" mat="6" rat="1" def="13" arm="14" cmd="6" hitpoints="5" tough="true" />
+          <weapons>
+            <melee_weapon name="Morsure" pow="4" count="0" p_plus_s="11" location="" />
+          </weapons>
+          <capacity title="Attache">Avant le début de la partie, attachez cette figurine à un warcaster Khadoréen ami pour le reste de la partie. Chaque Warcaster ne peutavoir qu'une seul figuriné attachée à lui.</capacity>
+          <capacity title="Contre-Charge">Le war dog peut charger une figurine ennemi qui termine son mouvement normal dans un rayon de 6 pouces autour de lui et dans sa LDV. Résolvez cette charge dès que la figurine ennemie a terminé son mouvement. Si le war dog effectue une contre-charge, il ne peut pas en effectuer d'autre avant la séquence de jeu su joueur qui le dirige. 
+Le war dog ne peut pas effectuer de contre-charge s'il est engagé.</capacity>
+          <capacity title="Chien de Garde">Tant que le war dog est situé dans un rayon de 3 pouces de son Warcaster et qu'il n'est pas stationnaire ou mis au tapis, son warcaster ne peut pas etre la cible de frappe gratuite et bénéficie de +2 DEF contre les attaques de corps-à-corps, et aucune figurine attaquant le Warcaster ne bénéficie de bonus d'attaque de dos.</capacity>
+          <capacity title="Chasseur">Cette figurine ignore les forets et les bonus couvert et de dissimulation lors de la détermination des LDV ou lors d'attaques à distance.</capacity>
+          <capacity title="Rapporte">Immédiatement après la résolution d'une attaque de charge, le war dog peut se déplacer d'une distance maximale égale a sa VTS actuelle vers son Warcaster. Pendant ce mouvement, le war dog ne peut pas etre la cible de frappes gratuites.</capacity>
+        </solo>
+        <solo id="KS09" name="Yuri the Axe" full_name="Yuri the Axe" qualification="Khador Character Solo" fa="C" cost="3">
+          <basestats name="YURI" spd="6" str="8" mat="8" rat="4" def="14" arm="14" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Grande Hache" pow="5" p_plus_s="13" weapon_master="true">
+              <capacity title="Fauchage (★Attaque)">Cette figurine peut effectuer une attaque de corps-à-corps contre chacune des figurines dans sa zone de corps-à-corps.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Camouflage">Cette figurine gagnent un bonus supplémentaire de +2 DEF quand ils bénéficie d'une dissimulation ou d'un couvert.</capacity>
+          <capacity title="Encadrement d'Elite [Kossite Woodsmen et Manhunters]">Tous les Kossite Woodsmen et Manhunters inclus dans la meme armée que Yuri gagnent Habitant des Forets</capacity>
+          <capacity title="Habitant des Forets">La LDV de cette figurine n'est jamais bloquée par les forets. Tant qu'elle est située dans une foret, cette figurine bénéficie de +2 DEF contre les attaque de corps-à-corps et peut se déplacer au travers des obstructions et des autres figurines si elle dispose de suffisament de mouvement pour les traverser complètement.</capacity>
+        </solo>
+        <solo id="KS10" name="Widowmaker Marksman" full_name="Widowmaker Marksman" qualification="Khador Solo" fa="1" cost="2">
+          <basestats name="MARKSMAN" spd="6" str="5" mat="4" rat="8" def="14" arm="11" cmd="9" hitpoints="5" advance_deployment="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Epée" pow="3" p_plus_s="8" />
+            <ranged_weapon name="Libérateur Vanar" rng="14" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <capacity title="Camouflage">Cette figurine gagnent un bonus supplémentaire de +2 DEF quand ils bénéficie d'une dissimulation ou d'un couvert.</capacity>
+          <capacity title="Leadership [Widomakers]">Tant qu'elle est située à portée de commandement de cette figurine, toute figurine Widomaker amie gagne Chasseur Agile</capacity>
+          <capacity title="Tireur Embusqué">Lorsque Marksman endommage un warjack le joueur qui le dirige choisit la colonne qui subit les dégats. Lorsque Marksman endommage une Warbeast, le joueur qui le dirige choisit la branche qui subit les dégat.
+Après toute attaque à distance réussie, un widowmaker peut infliger automatiquement un point de dégats au lieu d'effectuer un jet de dégats. Un Widowmaker perd cet avantage lorsqu'il participe a une Attaque à Distance Combinée.</capacity>
+          <capacity title="Chasseur Agile">A chaque fois que cette figurine détruit une figurine ennemie avec une attaque a distance normale, elle peut avancer de 2 pouces maximum immédiatement après la résolution de l'attaque.</capacity>
+        </solo>
+        <solo id="KA07" name="Koldun Kapitan Valachev" full_name="Koldun Kapitan Valachev" qualification="Khador Character Unit Attachment" fa="C" cost="2" mercenary_attachment="true">
+          <basestats name="VALACHEV" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="9" hitpoints="5" officer="true" />
+          <weapons>
+            <melee_weapon name="Saber" pow="4" p_plus_s="9" magical="true" />
+          </weapons>
+          <capacity title="ATTACHMENT [SMALL- OR MEDIUM-BASED MERCENARY]">This attachment can be added to a Small- or Medium-Based Mercenary unit</capacity>
+          <capacity title="GREYLORD">This model is a Greylord model.</capacity>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="● DISBINDING (★ACTION)">Enemy upkeep spells on this model and/or its unit immediately expire.</capacity>
+          <capacity title="● FROSTBITE (★ATTACK)">Frostbite is a RNG SP 8 magic attack. Models hit suffer a POW 12 cold damage roll.</capacity>
+          <capacity title="● ZEPHYR (★ACTION)">Models in this unit that are in formation can immediately advance up to 3". They cannot be targeted by free strikes during this movement.</capacity>
+          <capacity title="RANKING OFFICER">This model is a Ranking Officer. While the model is in play, models in its unit are Khador models instead of Mercenary models.</capacity>
+        </solo>
+        <solo id="KS11" name="Iron Fang Kovnik" full_name="Iron Fang Kovnik" qualification="Khador Solo" fa="2" cost="2">
+          <basestats name="KOVNIK" spd="6" str="7" mat="7" rat="4" def="13" arm="15" cmd="10" hitpoints="5" commander="true" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Great Axe" pow="5" p_plus_s="12" reach="true" weapon_master="true" />
+          </weapons>
+          <capacity title="NO SLEEPING ON THE JOB [IRON FANG]">This model and friendly Iron Fang models in its command range cannot be knocked down.</capacity>
+          <capacity title="SHIELD MARCH (★ACTION)">RNG 5. Target friendly Faction unit. If the unit is in range, when it receives the Shield Wall order, the models in the unit gain +2" movement that activation. Shield March lasts for one turn.</capacity>
+          <capacity title="UNYIELDING">While engaging an enemy model, this model gains +2 ARM.</capacity>
+        </solo>
+        <solo id="KS12" name="Kovnik Andrei Malakov" full_name="Kovnik Andrei Malakov" qualification="Khador Character Solo" fa="C" cost="3">
+          <basestats name="MALAKOV" spd="6" str="6" mat="6" rat="4" def="14" arm="13" cmd="8" hitpoints="5" fearless="true" journeyman_warcaster="true" />
+          <weapons>
+            <melee_weapon name="Mechanika Blade" pow="5" p_plus_s="11" magical="true" />
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" />
+          </weapons>
+          <capacity title="JOURNEYMAN WARCASTER">This model is not a warcaster but has the following warcaster special rules: Battlegroup Commander, Control Area, Focus Manipulation, Power Field, and Spellcaster.</capacity>
+          <capacity title="SUCKER!">If this model is directly hit by an enemy ranged attack, choose a friendly living non-incorporeal warrior model within 2" of it to be directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+        </solo>
+        <solo id="KA09" name="Black Dragon Officer &amp; Standard" full_name="Black Dragon Officer &amp; Standard" qualification="Khador Iron Fang Pikemen Unit Attachment" fa="2" cost="2">
+          <basestats name="OFFICER" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="10" hitpoints="5" cma="true" officer="true" />
+          <weapons>
+            <melee_weapon name="Blasting Pike" pow="7" p_plus_s="13" reach="true">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="TACTICS: PRECISION STRIKE">Models in this unit gain Precision Strike. (When a model with Precision Strike damages a warjack or warbeast with a melee attack, choose which column or branch suffers the damage.)</capacity>
+          <capacity title="IRON ZEAL">Once per game during its unit's activation, this model can use Iron Zeal. For one round, while in formation, models in this unit gain +4 ARM and cannot become stationary or be knocked down.</capacity>
+          <model id="black_dragon_standard" name="Standard" full_name="Standard">
+            <basestats name="STANDARD BEARER" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" standard_bearer="true" />
+            <capacity title="GRANTED: FEARLESS">While this model is in play, models in its unit gain Fearless.</capacity>
+          </model>
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>

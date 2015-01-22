@@ -1,0 +1,1654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="Asphyxious1 - Scavengers of the Line" casterId="Cw01" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Cankerworm</models>
+          </type>
+          <type type="UNITS">
+              <models>Bane Thralls, Bile Thralls, Mechanithralls, Necrosurgeon &amp; Stitch Thralls</models>
+          </type>
+          <type type="SOLOS">
+              <models>Bloat Thralls, Machine Wraiths, Necrotech, Scrap thralls, Skarlock thrall</models>
+          </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="Cw01" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ06" />
+        <entry id="CJ20" />
+        <entry id="CJ21"/> <!-- add inflictor -->
+        <entry id="CU01" />
+        <entry id="CA04" />
+        <entry id="CU02" />
+        <entry id="CU03" />
+        <entry id="CA02" />
+        <entry id="CU15" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        <entry id="CS02" />
+        <entry id="CS05" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS01" />
+      </only>
+      <benefits>
+        <ingameeffect>Mechanithall units in this army gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3CS03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CS03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="CJ07" />
+        <alterCost bonus="1" entryId="CJ14" />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have in battlegroup  CJ06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CJ06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each wajack in Asphyxious' battlegroup, place one wreck marker of the corresponding size within 20" of the back edge of Asphyxious' deployment zone after terrain has been placed but before either player deploys his army. Wreck markers cannot be placed within 3" of a terrain feature.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(CJ07 CJ08 CJ09 CJ10 CJ11 CJ14 CJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CJ07" />
+          <entry id="CJ08" />
+          <entry id="CJ09" />
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ14" />
+          <entry id="CJ18" />
+          <entry id="CJ21"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warjacks in the army gain +2SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Asphyxious2 - Dark Alliance" casterId="Cx01" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Cankerworm</models>
+          </type>
+          <type type="UNITS">
+              <models>Bane units, Cephalyx units, Withershadow combine</models>
+          </type>
+          <type type="SOLOS">
+              <models>Necrotech scrap thralls, Skarlock thrall, Bane solos, Cephalyx solos, Bane lord Tartarus</models>
+          </type>
+      </availableModels>
+    <level number="1">
+      <only>
+        <entry id="Cx01" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ06" />
+        <entry id="CJ12" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21"/>
+        <entry id="CU01" />
+        <entry id="CA04" />
+        <entry id="CU06" />
+        <entry id="CU13" />
+        <entry id="CU14" />
+        <entry id="CU12" />
+        <entry id="CU17" /> <!-- add bane riders -->
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS01" />
+        <entry id="CS07" />
+      </only>
+      <benefits>
+        <ingameeffect>Cephalyx units gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  CU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You can redeploy one model/unit after both players have deployed but before the first player first turn. The redeployed models must be placed on the table in a location they could have been deployed initially</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2CU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="CU14" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  CJ12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CJ12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Each warjack in Asphyxious' battlegroup is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Asphyxious allocates.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Asphyxious3 - Orchestrations of Annihilation" casterId="Cz01" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Cankerworm, Malice</models>
+          </type>
+          <type type="UNITS">
+              <models>Bile Thralls, Mechanithralls, Necrosurgeons, Soulhunters, Withershadow Combine</models>
+          </type>
+          <type type="SOLOS">
+              <models>Warwitch Sirens, non-character undead Cryx solos</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Wraith Engines</models>
+          </type>
+      </availableModels>            
+    <level number="1">
+      <only>
+        <entry id="Cz01" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ06" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ15" />
+        <entry id="CJ16" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CE01" />
+        <entry id="CU02" />
+        <entry id="CU03" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        <entry id="CA02" />
+        <entry id="CU15" />
+        <entry id="CU08" />
+        <entry id="CU12" />
+        <entry id="CS11" />
+        <entry id="CS02" />
+        <entry id="CS03" />
+        <entry id="CS05" />
+        <entry id="CS06" />
+        <entry id="CS13" />
+      </only>
+      <benefits>
+        <ingameeffect >Add a Necrotech solo free of cost for each helljack or colossal in the army. These solos ignore FA restrictions.</ingameeffect>
+        <freeModel>
+          <entry id="CS03" />
+          <forEach>
+            <entry id="CJ07" />
+            <entry id="CJ08" />
+            <entry id="CJ09" />
+            <entry id="CJ10" />
+            <entry id="CJ11" />
+            <entry id="CJ14" />
+            <entry id="CJ16" />
+            <entry id="CJ18" />
+            <entry id="CJ20" />
+            <entry id="CJ21" />
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  CS06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Pistol Wraith solos gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(CU02 CU03 CU15 CU08 CU12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CU02" />
+          <entry id="CU03" />
+          <entry id="CU15" />
+          <entry id="CU08" />
+          <entry id="CU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >For each unit in the army, one model can begin the game with a corpse or soul token.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  CJ20-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CJ20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Deneghra1 - Witching Hour" casterId="Cw02" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Bile Thralls, Mechanithralls</models>
+          </type>
+          <type type="SOLOS">
+              <models>Necrotechs, Scrap Thralls, Pistol Wraiths, Skarlock Thrall, Warwitch Solos</models>
+          </type>
+      </availableModels>                  
+    <level number="1">
+      <only>
+        <entry id="Cw02" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21"/>
+        <entry id="CU02" />
+        <entry id="CU03" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        <entry id="CA02" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS06" />
+        <entry id="CS01" />
+        <entry id="CS11" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="CS11">
+            <forEach>
+                <entry id="CJ14"/>
+                <entry id="CJ18"/>
+                <entry id="CJ11"/>
+                <entry id="CJ21"/>
+                <entry id="CJ10"/>
+                <entry id="CJ08"/>
+                <entry id="CJ09"/>
+                <entry id="CJ07"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  4(CS03 CS04 CS06 CS01 CS11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="CS03" />
+          <entry id="CS04" />
+          <entry id="CS06" />
+          <entry id="CS01" />
+          <entry id="CS11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have in battlegroup  5(CJ01 CJ02 CJ03 CJ15 CJ04 CJ05 CJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="4">
+          <entry id="CJ01" />
+          <entry id="CJ02" />
+          <entry id="CJ03" />
+          <entry id="CJ15" />
+          <entry id="CJ04" />
+          <entry id="CJ05" />
+          <entry id="CJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="CJ01" />
+          <entry id="CJ02" />
+          <entry id="CJ03" />
+          <entry id="CJ15" />
+          <entry id="CJ04" />
+          <entry id="CJ05" />
+          <entry id="CJ17" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(CJ07 CJ08 CJ09 CJ10 CJ11 CJ14 CJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CJ07" />
+          <entry id="CJ08" />
+          <entry id="CJ09" />
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ14" />
+          <entry id="CJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Up to one Helljack gain Advance Move for each Warwitch Siren solo in the army. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Deneghra2 - Shadow Play" casterId="Cx02" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Nightmare</models>
+          </type>
+          <type type="UNITS">
+              <models>Bane Knights, Cryx units with Incorporeal</models>
+          </type>
+          <type type="SOLOS">
+              <models>Skarlock Thrall, Cryx solos with Incorporeal, Warwitch Solos</models>
+          </type>
+      </availableModels>                    
+    <level number="1">
+      <only>
+        <entry id="Cx02" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CJ13" /> <!--  nightmare -->
+        <entry id="CU06" />
+        <entry id="CU09" />
+        <entry id="CS01" />
+        <entry id="CS05" />
+        <entry id="CS06" />
+        <entry id="CS11" />
+      </only>
+      <benefits>
+        <ingameeffect>Solos with Incorporeal gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(CU06 CU09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU06" />
+          <entry id="CU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Add a machine Wraith solo free of cost for each unit in the army after the second (actually, does not work, only one Machine Wraith is free!)</ingameeffect>
+        <freeModel>
+          <entry id="CS05" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have in battlegroup  CJ13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CJ13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models in Deneghra's battlegroup gain Ghostly during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(CJ01 CJ02 CJ03 CJ15 CJ04 CJ05 CJ07 CJ08 CJ09 CJ10 CJ11 CJ14 CJ13 CJ17 CJ18 CJ20)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CJ01" />
+          <entry id="CJ02" />
+          <entry id="CJ03" />
+          <entry id="CJ15" />
+          <entry id="CJ04" />
+          <entry id="CJ05" />
+          <entry id="CJ07" />
+          <entry id="CJ08" />
+          <entry id="CJ09" />
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ14" />
+          <entry id="CJ13" />
+          <entry id="CJ17" />
+          <entry id="CJ18" />
+          <entry id="CJ20" />
+          <entry id="CJ21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Goreshade1 - Seekers in Darkness" casterId="Cw05" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks with Pathfinder</models>
+          </type>
+          <type type="UNITS">
+              <models>Bane Thralls, Cylena Raefyll &amp; Nyss Hunters</models>
+          </type>
+          <type type="SOLOS">
+              <models>Cryx solos with Incorporeal, Bane Lord Tartarus</models>
+          </type>
+      </availableModels>                          
+    <level number="1">
+      <only>
+        <entry id="Cw05" />
+        <entry id="CJ04" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CU01" />
+        <entry id="CA04" />
+        <entry id="MU05" />
+        <entry id="CS05" />
+        <entry id="CS06" />
+        <entry id="CS07" />
+      </only>
+      <benefits>
+        <ingameeffect>Stalker Bonejacks gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2CU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Bane Thrall units and Bane Lord Tartarus gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  MU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  4CJ04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CJ04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="CJ04" />
+        </freeModel>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Goreshade2 - Heresy of Shadows" casterId="Cx05" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Bane units, The Withershadow combine</models>
+          </type>
+          <type type="SOLOS">
+              <models>Necrotechs, Scrap thralls, Pistol wraiths, Skarlock thrall, Bane solos</models>
+          </type>
+      </availableModels>
+    <level number="1">
+      <only>
+        <entry id="Cx05" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CU01" />
+        <entry id="CA04" />
+        <entry id="CU06" />
+        <entry id="CU12" />
+        <entry id="CU17" /> <!-- add bane riders -->
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS06" />
+        <entry id="CS01" />
+        <entry id="CS07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="CU01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2CU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="CA04" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  CU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You can redeploy models in Goreshade's battlegroup after both players have deployed but before the first player first turn. The redeployed models must be placed on the table in a location they could have been deployed initially</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(CJ01 CJ02 CJ03 CJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CJ01" />
+          <entry id="CJ02" />
+          <entry id="CJ03" />
+          <entry id="CJ15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Goreshade's upkeep spells. These spells and their targets must be declared before either player sets up models. Goreshade does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Skarre1 - Shore Leave" casterId="Cw03" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character bonejacks, Cryx helljacks with Amphibious</models>
+          </type>
+          <type type="UNITS">
+              <models>Black Ogruns Boarding Parties, Bloodgorgers, Revenant units, Satyxis units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Necrotechs, Scrap thralls, Skarlock thrall, Satyxis solos, Capt. Rengrave, Gen. Gerlak Slaughterborn.</models>
+          </type>
+      </availableModels>
+      
+    <level number="1">
+      <only>
+        <entry id="Cw03" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CU07" />
+        <entry id="CU10" />
+        <entry id="CU09" />
+        <entry id="CU05" />
+        <entry id="CA06" />
+        <entry id="CU11" />
+        <entry id="CU04" />
+        <entry id="CA03" />
+        <entry id="CU16" />
+        <entry id="CA05" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS01" />
+        <entry id="CS12" />
+        <entry id="CS08" />
+        <entry id="CS10" />
+      </only>
+      <benefits>
+        <ingameeffect>Helljacks with Amphibious gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(CU04 CU16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU04" />
+          <entry id="CU16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models/units gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have in battlegroup  2(CJ10 CJ11 CJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each helljack in Skarre's battlegroup, place one 4" AOE anywhere completely within 20" of the back edge of Skarre's deployment zone after both players have finished deploying their armies but before the first player takes his first turn. The AOE is shallow water terrain. These AOE cannot be placed within 3" of another terrain feature.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(CU07 CU10)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU07" />
+          <entry id="CU10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>General Gerlak Slaughterborn and medium-based units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Skarre1 - Ships in the Night (NQ37)" casterId="Cw03" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Freebooter, Mariner</models>
+          </type>
+          <type type="UNITS">
+              <models> Black Ogrun Boarding Parties, Revenant units, non-character Sea Dog units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Skarlock Thall, Warwitch Sirens, Undead solos with 'Jack Marshal </models>
+          </type>
+      </availableModels>            
+      
+    <level number="1">
+      <only>
+        <entry id="Cw03" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ15" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CU07" />
+        <entry id="CU05" />
+        <entry id="CA06" />
+        <entry id="CU11" />
+        <entry id="CU09" />
+        <entry id="CS01" />
+        <entry id="CS11" />
+        <entry id="CS13" />
+        <entry id="MU12" />
+        <entry id="MU13" />
+        <entry id="MA02" />
+        <entry id="MU14" />
+        <entry id="MJ12forCw03" />
+        <entry id="MJ13forCw03" />
+      </only>
+      <benefits>
+        <ingameeffect>The army can include non-character Sea Dog units, Freebooter warjacks, and Mariner warjacks. These models are considered to be friendly Cryx models.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1(CU05 CU09 CU11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU05" />
+          <entry id="CU09" />
+          <entry id="CU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Revenant units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(CJ04 CJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CJ04" />
+          <entry id="CJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Bonejacks with Pathfinder or Flight gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(MU12 MU13 MU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MU12" />
+          <entry id="MU13" />
+          <entry id="MU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="MU12" />
+        <alterCost bonus="1" entryId="MU13" />
+        <alterCost bonus="1" entryId="MU14" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Skarre2 - Merchants of Death" casterId="Cx03" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Satyxis units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Satyxis solos</models>
+          </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="Cx03" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CU04" />
+        <entry id="CA03" />
+        <entry id="CU16" />
+        <entry id="CA05" />
+        <entry id="CS12" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="CU04" />
+        <alterFA entryId="CS12" bonus="1">
+            <forEach>
+                <entry id="CU04"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2CU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="CA03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1CA05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CA05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Satyxis models/units gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(CJ07 CJ08 CJ09 CJ10 CJ11 CJ14 CJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CJ07" />
+          <entry id="CJ08" />
+          <entry id="CJ09" />
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ14" />
+          <entry id="CJ18" />
+          <entry id="CJ21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Mortenebra - Infernal Machines" casterId="CW07" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Bile Thralls, Mechanithralls, Necrosurgeon &amp; Stitch Thralls, Soulhunters</models>
+          </type>
+          <type type="SOLOS">
+              <models>Bloat Thralls, Necrotechs, Scrap Thralls, Warwitch Sirens</models>
+          </type>
+      </availableModels>            
+    <level number="1">
+      <only>
+        <entry id="CW07" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ12" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CU02" />
+        <entry id="CU03" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        <entry id="CA02" />
+        <entry id="CU15" />
+        <entry id="CU08" />
+        <entry id="CS02" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS11" />
+      </only>
+      <benefits>
+        <ingameeffect>Scrap Thralls solos gain Advance Deployment.</ingameeffect>
+        <alterFA bonus="1" entryId="CS03">
+            <forEach>
+                <entry id="CJ14"/>
+                <entry id="CJ18"/>
+                <entry id="CJ11"/>
+                <entry id="CJ21"/>
+                <entry id="CJ10"/>
+                <entry id="CJ08"/>
+                <entry id="CJ09"/>
+                <entry id="CJ07"/>
+                <entry id="CJ12"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2CS11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CS11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Helljacks gain Stealth during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <only>
+        <entry id="CW07" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ12" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CS02" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS11" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="CJ07" />
+        <alterCost bonus="1" entryId="CJ08" />
+        <alterCost bonus="1" entryId="CJ09" />
+        <alterCost bonus="1" entryId="CJ10" />
+        <alterCost bonus="1" entryId="CJ11" />
+        <alterCost bonus="1" entryId="CJ12" />
+        <alterCost bonus="1" entryId="CJ14" />
+        <alterCost bonus="1" entryId="CJ18" />
+        <alterCost bonus="1" entryId="CJ21" />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  4(CJ07 CJ08 CJ09 CJ10 CJ11 CJ12 CJ14 CJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="CJ07" />
+          <entry id="CJ08" />
+          <entry id="CJ09" />
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ12" />
+          <entry id="CJ14" />
+          <entry id="CJ18" />
+          <entry id="CJ21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Terminus - The Ghost Fleet" casterId="CW04" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Deathjack</models>
+          </type>
+          <type type="UNITS">
+              <models>Bloodgorgers, Soulhunters, Revenant units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Necrotechs, Scrap Thralls, Skarlock Thrall, Revenant solos, Darragh Wrathe, Gen. Gerlak Slaughterborn</models>
+          </type>
+      </availableModels>                  
+    <level number="1">
+      <only>
+        <entry id="CW04" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ12" />
+        <entry id="CJ20" />
+        <entry id="CJ21"/>
+        <entry id="CU10" />
+        <entry id="CU08" />
+        <entry id="CU09" />
+        <entry id="CU05" />
+        <entry id="CA06" />
+        <entry id="CU11" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS01" />
+        <entry id="CS08" />
+        <entry id="CS09" />
+        <entry id="CS10" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="CU05" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  CS08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Capt. Rengrave and Revenant units gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  CU09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Revenant models/units gain Incorporeal during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(CJ10 CJ11 CJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Helljacks in Terminus' battlegroup with Amphibious gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Venethrax - The Dragon Slayers" casterId="CW08" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Black Ogrun Boarding Parties, Bloodgorgers, Mechanithralls, Necrosurgeon &amp; Stitch Thrall</models>
+          </type>
+          <type type="SOLOS">
+              <models>Pistol Wraiths, Skarlock Thrall, Gen. Gerlak Slaughterborn</models>
+          </type>
+      </availableModels>                  
+      
+    <level number="1">
+      <only>
+        <entry id="CW08" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21"/>
+        <entry id="CU07" />
+        <entry id="CU10" />
+        <entry id="CU03" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        <entry id="CA02" />
+        <entry id="CU15" />
+        <entry id="CS06" />
+        <entry id="CS01" />
+        <entry id="CS10" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="CJ09" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(CU07 CU10 CU03 CU15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CU07" />
+          <entry id="CU10" />
+          <entry id="CU03" />
+          <entry id="CU15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each  unit included in the army, place up to one 3" AOE cloud effect in play after terrain has been placed but before either player deploys his army. These AOE must be placed within 20" of the back edge of Venethrax's deployment zone and remain in play for one round. Cloud effects cannot be placed within 3" of a terrain feature. Models with Eyeless Sight do not ignore these cloud effects. These cloud effects leave play after the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  CS10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CS10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Gerlak Slaughterborn and Bloodgorgers units gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2CJ09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CJ09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Seether Helljacks in Venethrax's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Witch Coven - Auguries of War" casterId="CW06" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Deathjack</models>
+          </type>
+          <type type="UNITS">
+              <models>Bane Knights, Satyxis Blood Witches, Soulhunters, The Withershadow Combine</models>
+          </type>
+          <type type="SOLOS">
+              <models>Necrotech, Scrap Thralls, Pistol Wraiths, Skarlock Thrall, Warwitch solos, Darragh Wrathe</models>
+          </type>
+      </availableModels>          
+    <level number="1">
+      <only>
+        <entry id="CW06" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ12" />
+        <entry id="CJ20" />
+        <entry id="CJ21"/>
+        <entry id="CU06" />
+        <entry id="CU16" />
+        <entry id="CA05" />
+        <entry id="CU08" />
+        <entry id="CU12" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS06" />
+        <entry id="CS01" />
+        <entry id="CS11" />
+        <entry id="CS09" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="CU08" />
+        <alterFA bonus="1" entryId="CS11">
+            <forEach>
+                <entry id="CJ14"/>
+                <entry id="CJ18"/>
+                <entry id="CJ11"/>
+                <entry id="CJ21"/>
+                <entry id="CJ10"/>
+                <entry id="CJ08"/>
+                <entry id="CJ09"/>
+                <entry id="CJ07"/>
+                <entry id="CJ12"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  CS09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CS09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Soulhunter models each begin with one soul token.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  CU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You can redeploy one model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(CJ07 CJ08 CJ09 CJ10 CJ11 CJ14 CJ18 CJ12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CJ07" />
+          <entry id="CJ08" />
+          <entry id="CJ09" />
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ14" />
+          <entry id="CJ18" />
+          <entry id="CJ12" />
+          <entry id="CJ21"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Up to one helljack gains Advance Deployment for each Warwitch Siren solo in the army.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Witch Coven - Machine Minds (NQ #45)" casterId="CW06" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Malice</models>
+          </type>
+          <type type="UNITS">
+              <models>Bile Thralls, Mechanithralls, Necrosurgeon &amp; Stitch Thralls</models>
+          </type>
+          <type type="SOLOS">
+              <models>Iron Lich Overseers, Machine Wraiths, Necrotechs , Scrap Thralls , Skarlock Thrall, Warwitch Sirens</models>
+          </type>
+      </availableModels>                
+    <level number="1">
+      <only>
+        <entry id="CW06" />
+        <!-- non-char warjacks + malice -->
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ15" />
+        <entry id="CJ16" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ19" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <!-- bile thrall, mcthrall, necrosurgeon -->
+        <entry id="CU02" />
+        <entry id="CU03" />
+        <entry id="CA02" />
+        <entry id="CU15" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        <!-- iron lich overseers, machine wraith, Necrotechs , Scrap Thralls,Skarlock Thrall,Warwitch Siren -->
+        <entry id="CS13" />
+        <entry id="CS05" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS01" />
+        <entry id="CS11" />
+      </only>
+      <benefits>
+        <ingameeffect>Iron Lich Overseers can 'jack marshall up to 3 warjacks.</ingameeffect>
+        <alterFA bonus="1" entryId="CS13" />
+        <alterMarshal entryId="CS13" bonus="1"/>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  CS09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CS13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Reduce the cost of Bonejacks marshaled by an Iron Lich Overseer by 1. Reduce the cost of Helljacks marshaled by an Iron Lich Overseer by 2.</ingameeffect>
+        <alterCost entryId="CJ01" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ02" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ03" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ04" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ05" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ07" bonus="2" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ08" bonus="2" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ09" bonus="2" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ10" bonus="2" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ11" bonus="2" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ14" bonus="2" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ15" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ17" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ18" bonus="2" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ21" bonus="2" onlyIfAttachedTo="CS13"/>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  CU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="CS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Machine Wraiths gain Ambush.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(CJ07 CJ08 CJ09 CJ10 CJ11 CJ14 CJ18 CJ12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="true" minNumber="2">
+          <entry id="CJ01" />
+          <entry id="CJ02" />
+          <entry id="CJ03" />
+          <entry id="CJ04" />
+          <entry id="CJ05" />
+          <entry id="CJ07" />
+          <entry id="CJ08" />
+          <entry id="CJ09" />
+          <entry id="CJ10" />
+          <entry id="CJ11" />
+          <entry id="CJ14" />
+          <entry id="CJ15" />
+          <entry id="CJ16" />
+          <entry id="CJ17" />
+          <entry id="CJ18" />
+          <entry id="CJ19" />
+          <entry id="CJ21" />
+          </entrygroup>
+        </must_have>
+      <benefits>
+        <ingameeffect>Each model with Soul Taker starts with an extra soul. </ingameeffect>
+      </benefits>
+    </level>
+  </tiers>  
+  
+  
+  <tiers name="Scaverous - Funeral Rites" casterId="CW09" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Deathjack, Erebus</models>
+          </type>
+          <type type="UNITS">
+              <models>Mechanithralls, Necrosurgeon &amp; Stitch Thralls, Cryx units with Magic Ability</models>
+          </type>
+          <type type="SOLOS">
+              <models>Necrotechs , Scrap Thralls, Skarlock Thrall, Cryx solos with Magic Ability, Wraith Solos</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Wraith Engines</models>
+          </type>
+      </availableModels>                      
+    <level number="1">
+      <only>
+        <entry id="CW09" />
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ15" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ12" />
+        <entry id="CJ19" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        <entry id="CU03" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        <entry id="CA02" />
+        <entry id="CU15" />
+        <entry id="CU14" />
+        <entry id="CU12" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS01" />
+        <entry id="CS11" />
+        <entry id="CS09" />
+        <entry id="CS13" />
+        <entry id="CS05" />
+        <entry id="CS06" />
+        <entry id="CE01" />
+      </only>
+      <benefits>
+        <ingameeffect>Free Scrap Thralls are not included along with the Necrotech.</ingameeffect>
+        <freeModel>
+            <entry id="CS03"/>
+            <forEach>
+                <entry id="CJ14"/>
+                <entry id="CJ18"/>
+                <entry id="CJ11"/>
+                <entry id="CJ21"/>
+                <entry id="CJ10"/>
+                <entry id="CJ08"/>
+                <entry id="CJ09"/>
+                <entry id="CJ07"/>
+                <entry id="CJ12"/>
+                <entry id="CJ19"/>
+            </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  CU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models in the army with Soul Taker each begin with one soul token.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  CE01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CE01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Wraith solos in the army gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  CJ19-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CJ19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  
+  <tiers name="Deneghra2 - Body and Soul (NQ52)" casterId="CW09" faction="faction_cryx">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cryx non-character warjacks, Deathjack, Nightmare</models>
+          </type>
+          <type type="UNITS">
+              <models>Bile thralls, Cephalyx Mind Slavers, Cephalyx overlords, Mechanithralls, Necrosurgeon &amp; Stitch Thralls</models>
+          </type>
+          <type type="SOLOS">
+              <models>Iron lich Overseers, Necrotechs &amp; Scrap Thralls, Ragman, Skarlock Thrall, Warwitch Sirens</models>
+          </type>
+      </availableModels>                   
+    <level number="1">
+      <only>
+        <entry id="Cx02" />
+        <!-- non-character cryx warjacks, Nightmare, DeathJack -->
+        <entry id="CJ01" />
+        <entry id="CJ02" />
+        <entry id="CJ03" />
+        <entry id="CJ15" />
+        <entry id="CJ04" />
+        <entry id="CJ05" />
+        <entry id="CJ07" />
+        <entry id="CJ08" />
+        <entry id="CJ09" />
+        <entry id="CJ10" />
+        <entry id="CJ11" />
+        <entry id="CJ14" />
+        <entry id="CJ17" />
+        <entry id="CJ18" />
+        <entry id="CJ20" />
+        <entry id="CJ21" />
+        
+        <entry id="CJ13"/>
+        <entry id="CJ12"/>
+        
+        <!-- bile thralls, cephalyx mind slavers, ceph. overlords, mcthrall, necrosurgeon -->
+        <entry id="CU02" />
+        <entry id="CU03"/>
+        <entry id="CA02" />
+        <entry id="CS15"/> <!-- as attached to CU02 or CU03 -->
+        
+        <entry id="CU13"/>
+        <entry id="CU14"/>
+        <entry id="CU15"/>
+        
+        <!-- Iron lich overseer, Necrotech & Scrapthralls, Ragman, Scarlock thrall, Warwitch sirens -->
+        <entry id="CS13" />
+        <entry id="CS03" />
+        <entry id="CS04" />
+        <entry id="CS11" />
+        <entry id="MS22"/>
+      </only>
+      <benefits>
+        <ingameeffect></ingameeffect>
+        <alterCost entryId="CU13" bonus="1"/>
+        <alterCost entryId="CU14" bonus="1"/>
+        <alterFA entryId="CU13" bonus="1"></alterFA>
+        <alterFA entryId="CU14" bonus="1"></alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- One or more Cephalyx mind slaver & Drudge units -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Cephalyx Mind Slaver &amp; Drudge units gain advance deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- One or more Cephalyx overlords units -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="CU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Three or more solos with magic ability (warwitch siren, ragman, Iron Lich overseer) -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="CS13" />
+          <entry id="CS11" />
+          <entry id="MS22"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Enemy non-caster units/models begin the game with Deneghra's upkeep spells. The spells do not cost upkeep on the first turn. </ingameeffect>
+      </benefits>
+    </level>
+  </tiers>  
+  
+</tierslist>

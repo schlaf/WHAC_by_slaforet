@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset xsi:noNamespaceSchemaLocation="warmachine.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <armies>
+    <army faction="faction_khador" name="Khador">
+      <warcasters>
+        <warcaster id="Kw01" name="Orsus Zoktavir, The Butcher of Khardov" generation="P" full_name="Orsus Zoktavir, The Butcher of Khardov" qualification="Khador Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="BUTCHER" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" terror="true" />
+          <weapons>
+            <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true" />            
+          </weapons>
+          <feat title="Blood Frenzy">While in the Butcher's control area, friendly Faction models gain an additional die on attack damage rolls this turn.</feat>
+          <spell name="FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 to melee damage rolls but suffers –1 DEF.</spell>
+          <spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model/unit gains +3 DEF but suffers –1 SPD.</spell>
+          <spell name="FULL THROTTLE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Warjacks in this model's battlegroup beginning their activations in its control area can run, charge, or make slam or trample power attacks without spending focus that activation. While in this model's control area, models in its battlegroup gain boosted melee attack rolls. Full Throttle lasts for one turn.</spell>
+          <spell name="OBLITERATION" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">The force of this attacks blasts apart the earth itself.</spell>
+        </warcaster>
+        <warcaster id="Kx01" name="Kommander Orsus Zoktavir" generation="E" full_name="Kommander Orsus Zoktavir" qualification="Khador Epic Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="BUTCHER" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" terror="true" />
+          <weapons>
+            <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true" />            
+          </weapons>
+          <feat title="Feel the Hate">Zoktavir gains one rage token each time an enemy model is destroyed in his control area. After all friendly models have completed their activations, no more tokens can be gained and Zoktavir can give up to three rage tokens to any friendly non-warcaster Faction model in his control area. Then remove any rage tokens remaining on Zoktavir. A model can spend one rage token once to make a full advance followed by one normal melee attack. Rage tokens can also be spent to make normal melee attacks or to boost melee attack or melee damage rolls at one token per attack or boost. Remove unspent rage tokens from play at the end of the turn.</feat>
+          <spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">During its activation, target friendly model can charge without spending focus or being forced and gains +2" movement and Pathfinder when it charges. Boundless Charge lasts for one turn.</spell>
+          <spell name="ELIMINATOR" cost="3" rng="8" aoe="3" pow="13" up="NO" off="YES">Immediately after this attack is resolved, this model can advance up to 2" for each enemy model destroyed by the attack.</spell>
+          <spell name="FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 to melee damage rolls but suffers –1 DEF.</spell>
+          <spell name="RAVAGER" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target model in this model's battlegroup gains Berserk for one turn. While affected by Ravager, a model cannot make Chain Attacks. (When a model with Berserk destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.)</spell>
+          <capacity title="ARCANE DEMENTIA">For each round, Zoktavir's base FOCUS is d6+1, rolled at the beginning of the game and at the beginning each of your Control Phases before this model replenishes its focus. If he destroyed three or more enemy models with melee attacks since the beginning of your previous turn, do not roll to determine his base FOCUS; it is automatically 7. Zoktavir's control area is always 12".</capacity>
+          <capacity title="CIRCULAR VISION">This model's front arc extends to 360 degrees.</capacity>
+          <capacity title="CONFERRED RAGE">Warjacks in this model's battlegroup beginning their activations in its control area can charge or make power attacks without spending focus. When this model destroys one or more enemy models during its activation, Warjacks in its battlegroup beginning their activations in its control area gain +2 SPD and MAT for one turn.</capacity>
+          <capacity title="HOMICIDAL MANIAC">When this model makes a normal melee attack during its activation, it makes one melee attack against each model in its LOS and melee range. If there are no enemy models in this model's melee range after resolving a normal melee attack in which it destroyed one or more, it can advance up to 1".</capacity>
+        </warcaster>
+        <warcaster id="Kz01" name="Kommander Zoktavir, The Butcher Unleashed" generation="EE" full_name="Kommander Zoktavir, The Butcher Unleashed" qualification="Khador Epic Caster Unit" focus="6" warjack_points="4" fa="C" completed="true">
+          <basestats name="ZOKTAVIR" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" officer="true" terror="true" />
+          <weapons>
+            <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Lola" pow="8" p_plus_s="16" magical="true" reach="true" weapon_master="true" />            
+          </weapons>
+          <feat title="Red Haze">Zoktavir gains up to 6 focus points. He cannot have more focus points than his current FOCUS as a result of Red Haze. Enemy models/units in Zoktavir's melee range automatically fail command checks for one round.</feat>
+          <spell name="ENERGIZER" cost="*" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.</spell>
+          <spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes one normal melee attack with one of its melee weapons against each enemy model in its LOS that is in the weapon's melee range. These attacks are simultaneous.</spell>
+          <spell name="IMPENDING DOOM" cost="2" rng="SELF" aoe="*" pow="-" up="NO" off="NO">Enemy models within 5" of this model are pushed 5" directly toward it in the order you choose.</spell>
+          <spell name="OBLITERATION" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">The force of this attack blasts apart the earth itself.</spell>
+          <spell name="SILENCE OF DEATH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit's melee weapons gain Grievous Wounds. (When a model is hit by a weapon with Grievous Wounds, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.)</spell>
+          <capacity title="GRANTED: VENGEANCE">While this model is in play, models in its unit gain Vengeance. (During your Maintenance Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.)</capacity>
+          <capacity title="WARCASTER UNIT">This unit is made up of Zoktavir and two War Argus.</capacity>
+          <model id="kz01_argus1" name="War Argus" full_name="War Argus">
+            <basestats name="WAR ARGUS A" spd="6" str="7" mat="5" rat="4" def="14" arm="14" cmd="6" hitpoints="8" terror="true" />
+            <weapons>
+              <melee_weapon name="Bite" pow="4" count="2" p_plus_s="11">
+                <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="CIRCULAR VISION">This model's front arc extends to 360 degrees.</capacity>
+            <capacity title="GANG">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+            <capacity title="GRANTED: RELENTLESS CHARGE">While this model is in play, models in this unit gain Relentless Charge. (Models with Relentless Charge gain Pathfinder during activations they charge.)</capacity>
+            <capacity title="SPRINT">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+          </model>
+          <model id="kz01_argus2" name="War Argus" full_name="War Argus">
+            <basestats name="WAR ARGUS B" spd="6" str="7" mat="5" rat="4" def="14" arm="14" cmd="6" hitpoints="8" terror="true" />
+            <weapons>
+              <melee_weapon name="Bite" pow="4" count="2" p_plus_s="11">
+                <capacity title="COMBO STRIKE (★ATTACK)">See above.</capacity>
+              </melee_weapon>
+            </weapons>
+          </model>
+        </warcaster>
+        <warcaster id="Kw02" name="Kommander Sorscha" generation="P" full_name="Kommander Sorscha" qualification="Khador Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="SORSCHA" spd="6" str="6" mat="6" rat="5" def="16" arm="14" cmd="9" hitpoints="17" immunity_frost="true" />
+          <weapons>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Frostfang" pow="7" p_plus_s="13" magical="true" reach="true">
+              <capacity title="CRITICAL FREEZE">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Icy Gaze">Enemy models currently in Sorscha's control area and LOS become stationary for one round unless they have Immunity: Cold.</feat>
+          <spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">During its activation, target friendly model can charge without spending focus or being forced and gains +2" movement and Pathfinder when it charges. Boundless Charge lasts for one turn.</spell>
+          <spell name="FOG OF WAR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Models gain concealment while in this model's control area.</spell>
+          <spell name="FREEZING GRIP" cost="4" rng="8" aoe="-" pow="-" up="NO" off="YES">Target model/unit without Immunity: Cold becomes stationary for one round.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <spell name="TEMPEST" cost="4" rng="8" aoe="4" pow="12" up="NO" off="YES">Models hit by Tempest are knocked down and suffer a POW 12 damage roll.</spell>
+          <spell name="WIND RUSH" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model can immediately make a full advance and gains +2 DEF for one round. Wind Rush can be cast only once per turn.</spell>
+        </warcaster>
+        <warcaster id="Kx02" name="Forward Kommander Sorscha" generation="E" full_name="Forward Kommander Sorscha" qualification="Khador Epic Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="SORSCHA" spd="6" str="6" mat="7" rat="5" def="16" arm="15" cmd="8" hitpoints="17" immunity_frost="true" />
+          <weapons>
+            <ranged_weapon name="Quad Iron" rng="10" rof="1" aoe="-" pow="10">
+              <capacity title="MULTI-FIRE (★ATTACK)">Make an attack with this weapon. On a hit, after resolving the attack this model can immediately make one additional attack with this weapon targeting the last model hit or another model within 2" of the last model hit, ignoring ROF. This model can make up to four attacks during its activation as a result of Multi-Fire.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Frostfang" pow="7" p_plus_s="13" magical="true" reach="true">
+              <capacity title="CRITICAL FREEZE">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Winter's Chill">Damage to enemy models without Immunity: Cold currently in Sorscha's control area that exceeds ARM is doubled this turn.</feat>
+          <spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">During its activation, target friendly model can charge without spending focus or being forced and gains +2" movement and Pathfinder when it charges. Boundless Charge lasts for one turn.</spell>
+          <spell name="CYCLONE" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes a full advance. It cannot be targeted by free strikes during this movement. At the end of this movement, this model can make one melee attack against each model in its LOS that is in its melee range. Cyclone can be cast only once per turn.</spell>
+          <spell name="FREEZING GRIP" cost="4" rng="8" aoe="-" pow="-" up="NO" off="YES">Target model/unit without Immunity: Cold becomes stationary for one round.</spell>
+          <spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model/unit gains +3 DEF but suffers –1 SPD.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <spell name="SHATTER STORM" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When target friendly Faction model/unit directly hits and boxes an enemy model with a ranged or melee attack, center a 3" AOE on the boxed model, then remove that model from play. Models in the AOE are hit and suffer an unboostable POW 8 blast damage roll.</spell>
+          <capacity title="DESPERATE PACE [WINTER GUARD] (★ACTION)">RNG CMD. Target Friendly Winter Guard unit. If the Winter Guard unit is in range, it gains +2" movement during its activation this turn.</capacity>
+          <capacity title="ELITE CADRE [WINTER GUARD]">Friendly Winter Guard models gain Combined Arms. (When a model with Combined Arms misses an attack roll when making a combined ranged attack, it can reroll that attack roll. Each attack roll can be rerolled only once as a result of Combined Arms.)</capacity>
+          <capacity title="WARJACK BOND (EPIC SORSCHA)">One non-character warjack in Sorscha's battlegroup begins the game bonded to her. The warjack gains Immunity: Cold. When an enemy model ends its activation within 2" of the bonded warjack, the enemy model becomes stationary for one round unless that model has Immunity: Cold.</capacity>
+        </warcaster>
+        <warcaster id="Kw03" name="Vladimir Tzepesci, The Dark Prince" generation="P" generation_id="vlad" full_name="Vladimir Tzepesci, The Dark Prince" qualification="Khador Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+          <basestats name="VLADIMIR" spd="6" str="6" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Skirmisher" pow="7" p_plus_s="13" magical="true">
+              <capacity title="BLOOD BOON">Once per activation, immediately after resolving an attack in which it destroyed a living enemy model with this weapon, this model can cast a spell with COST 3 or less without spending focus.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Ruin" pow="4" p_plus_s="10" magical="true" />
+          </weapons>
+          <feat title="Forced March">Warjacks in Vladimir's battlegroup beginning their activations in his control area double their base SPD and can run or charge without spending focus. Forced March lasts for one turn.</feat>
+          <spell name="BLOOD OF KINGS" cost="4" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Vladimir gains +3 SPD, STR, MAT, DEF, and ARM for one round.</spell>
+          <spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">During its activation, target friendly model can charge without spending focus or being forced and gains +2" movement and Pathfinder when it charges. Boundless Charge lasts for one turn.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <spell name="SIGNS &amp; PORTENTS" cost="4" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction models gain an additional die on attack and damage rolls. Discard the lowest die in each roll. Signs &amp; Portents lasts for one turn.</spell>
+          <spell name="WIND WALL" cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model cannot make ranged attacks, and non-magical ranged attacks targeting it automatically miss. While completely within 3" of this model, models cannot make ranged attacks and non-magical ranged attacks targeting them automatically miss. Wind Wall lasts for one round.</spell>
+          <capacity title="PARRY">This model cannot be targeted by free strikes.</capacity>
+        </warcaster>
+        <warcaster id="Kx03" name="Vladimir Tzepesci, The Dark Champion" generation="E" generation_id="vlad" full_name="Vladimir Tzepesci, The Dark Champion" qualification="Khador Epic Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+          <basestats name="VLADIMIR" spd="6" str="6" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Dominion" pow="8" p_plus_s="14" magical="true" reach="true">
+              <capacity title="BALEFIRE">Gain an additional damage die on this weapon's damage rolls against undead models.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Blood Legacy">Choose d3+3 friendly Faction non-character warrior models currently in Vladimir's control area. Those models gain +3 SPD, STR, MAT, RAT, DEF, ARM, and CMD for one round.</feat>
+          <spell name="ASSAIL" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction warjack can charge or make slam or trample power attacks without spending focus. The warjack gains +2" movement when it charges or makes a slam or trample power attack. Models slammed by the warjack are moved +2".</spell>
+          <spell name="HAND OF FATE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains an additional die on attack and damage rolls. Discard the low die in each roll.</spell>
+          <spell name="MARTIAL PARAGON" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">This model gains an additional die on melee attack rolls and cannot be targeted by free strikes.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <spell name="TRANSFERENCE" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, friendly Faction non-warcaster warrior models can spend 1 focus point on this model to boost a melee attack or melee damage roll during their activations.</spell>
+          <spell name="WIND BLAST" cost="2" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">Place a 5" AOE anywhere completely in this model's control area. Cloud effects overlapping the AOE expire. Models suffer –3 RAT while within the AOE. The AOE remains in play for one round.</spell>
+          <capacity title="BLOOD TRIALS">When this model suffers 1 or more damage points from an enemy attack, it gains one blood token. During your next Control Phase, after this model replenishes its focus but before it allocates focus, replace each blood token with 1 focus point.</capacity>
+          <capacity title="DEFENSIVE STRIKE">Once per turn, when an enemy model advances into and ends its movement in this model's melee range, this model can immediately make one normal melee attack against it.</capacity>
+          <capacity title="MIGHT OF KINGS">When Vladimir is first damaged, he gains +1 SPD, STR, DEF, and CMD for the rest of the game. If he is reduced to 10 or fewer unmarked damage boxes, this bonus increases to +2 for the rest of the game. If he is reduced to 5 or fewer, this bonus increases to +3 for the rest of the game. These benefits remain even if Vladimir heals. If a friendly model damages him with an attack, Vladimir loses Might of Kings for the rest of the game.</capacity>
+        </warcaster>
+        <warcaster id="Kz03" name="Vladimir Tzepesci, Great Prince of Umbrey" generation="EE" generation_id="vlad" full_name="Vladimir Tzepesci, Great Prince of Umbrey" qualification="Khador Cavalry Epic Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+          <basestats name="VLADIMIR" spd="8" str="6" mat="7" rat="5" def="15" arm="17" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Horse Lord's Spear" pow="6" p_plus_s="12" magical="true" reach="true">
+              <capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Huntsman" pow="7" p_plus_s="13" magical="true">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12">
+                <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>            
+            </mount_weapon>
+          </weapons>
+          <feat title="Charge of the Horse Lords">While in Vladimir's control area, friendly Faction warjacks and cavalry models gain Side Step and Sprint. Charge of the Horse Lords lasts for one turn.(When a model with Side Step hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved. A model with Side Step cannot be targeted by free strikes during this movement.) (At the end of its activation, if it destroyed one or more enemy models with melee attacks during its activation, a model with Sprint can make a full advance.)</feat>
+          <spell name="DASH" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models cannot be targeted by free strikes. This model and friendly Faction warrior models activating in its control area gain +1 SPD. Dash lasts for one turn.</spell>
+          <spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes one normal melee attack with one of its melee weapons against each enemy model in its LOS that is in the weapon's melee range. These attacks are simultaneous.</spell>
+          <spell name="HAND OF FATE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains an additional die on attack and damage rolls. Discard the low die in each roll.</spell>
+          <spell name="INFERNAL MACHINE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup gains Terror and +2 MAT and SPD.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <spell name="WIND WALL" cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model cannot make ranged attacks, and non-magical ranged attacks targeting it automatically miss. While completely within 3" of this model, models cannot make ranged attacks and non-magical ranged attacks targeting them automatically miss. Wind Wall lasts for one round.</spell>
+          <capacity title="BLOOD-QUENCHED">This model gains a cumulative +1 STR and ARM for each living enemy model it destroys with a melee attack during its activation. This bonus lasts for one round.</capacity>
+          <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+          <capacity title="RELENTLESS CHARGE">This model gains Pathfinder during activations it charges.</capacity>
+        </warcaster>
+        <warcaster id="Kw04" name="Kommandant Irusk" generation="P" generation_id="irusk" full_name="Kommandant Irusk" qualification="Khador Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
+          <basestats name="IRUSK" spd="6" str="6" mat="7" rat="6" def="15" arm="15" cmd="10" hitpoints="17" />
+          <weapons>
+            <ranged_weapon name="Sword Cannon" rng="10" rof="2" aoe="-" pow="13" />
+			<melee_weapon name="Onslaught" pow="6" p_plus_s="12" magical="true" />            
+          </weapons>
+          <feat title="Undying Loyalty">While in Irusk's control area, friendly Faction warrior models/units gain Fearless, Tough, and +2 to melee and ranged attack rolls and cannot be knocked down. When a friendly Faction warrior model makes a Tough roll of 4, 5, or 6 while in Irusk's control area, that model heals 1 damage point. Undying Loyalty lasts for one round.</feat>
+          <spell name="AIRBURST" cost="3" rng="CTRL" aoe="3" pow="8" up="NO" off="YES">Target any model in this model's control area, ignoring LOS. When resolving Airburst, ignore cover, concealment, elevation, and Stealth. Models hit suffer a POW 8 blast damage roll.</spell>
+          <spell name="BATTLE LUST" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction warrior model/unit gains Fearless and gains an additional die on melee damage rolls for one round.</spell>
+          <spell name="GRIND" cost="3" rng="10" aoe="-" pow="14" up="NO" off="YES">When a warjack is hit by Grind, it suffers 1 damage point to its first available Movement system box.</spell>
+          <spell name="INHOSPITABLE GROUND" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, enemy models treat open terrain as rough terrain. Inhospitable Ground lasts for one round.</spell>
+          <spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model/unit gains +3 DEF but suffers –1 SPD.</spell>
+          <spell name="SUPERIORITY" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction warjack gains +2 SPD, MAT, and DEF and cannot be knocked down.</spell>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+          <capacity title="QUICK WORK">When this model destroys one or more enemy models with a melee attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack. Attacks gained from Quick Work do not count against a weapon's ROF.</capacity>
+        </warcaster>
+        <warcaster id="Kx04" name="Supreme Kommandant Irusk" generation="E" generation_id="irusk" full_name="Supreme Kommandant Irusk" qualification="Khador Epic Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+          <basestats name="IRUSK" spd="6" str="6" mat="7" rat="6" def="15" arm="15" cmd="10" hitpoints="17" />
+          <weapons>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Endgame" pow="7" p_plus_s="13" magical="true" />            
+          </weapons>
+          <feat title="Desperate Ground">Friendly Faction models currently in Irusk's control area ignore cloud effects and forests when determining LOS and gain Pathfinder. Affected models currently knocked down immediately stand up. Enemy models/units beginning their activations in Irusk's control area suffer –2 SPD and cannot give or receive orders. Desperate Ground lasts for one round.</feat>
+          <spell name="AIRBURST" cost="3" rng="CTRL" aoe="3" pow="8" up="NO" off="YES">Target any model in this model's control area, ignoring LOS. When resolving Airburst, ignore cover, concealment, elevation, and Stealth. Models hit suffer a POW 8 blast damage roll.</spell>
+          <spell name="ARTIFICE OF DEVIATION" cost="3" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">Place a 5" AOE anywhere completely in this model's control area. While in the AOE, friendly models gain Pathfinder and can advance through obstructions and other models if they have enough movement to move completely past them. Enemy models treat the AOE as rough terrain. Artifice of Deviation lasts for one round.</spell>
+          <spell name="BATTLE LUST" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction warrior model/unit gains Fearless and gains an additional die on melee damage rolls for one round.</spell>
+          <spell name="ENERGIZER" cost="*" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.</spell>
+          <spell name="FIRE FOR EFFECT" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Boost the attack and damage rolls of target friendly Faction model's first ranged attack each activation.</spell>
+          <spell name="TACTICAL SUPREMACY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit can advance up to 3" after all models have ended their activations on your turn.</spell>
+          <capacity title="MARTIAL DISCIPLINE">Friendly living Faction warrior models with small or medium bases can ignore friendly Faction warrior models in this model's command range when determining LOS and can advance through friendly Faction warrior models in this model's command range if they have enough movement to move completely past them.</capacity>
+          <capacity title="TOTAL OBEDIENCE">While in this model's command range, friendly living non-warcaster Faction warrior models gain Tough.</capacity>
+          <capacity title="WARJACK BOND (EPIC IRUSK)">One non-character warjack in Irusk's battlegroup begins the game bonded to him. The warjack gains +2 DEF and cannot be knocked down.</capacity>
+        </warcaster>
+        <warcaster id="KW05" name="Karchev the Terrible" generation="P" full_name="Karchev the Terrible" qualification="Khador Warcaster" focus="5" warjack_points="5" fa="C" completed="true">
+          <basestats name="KARCHEV" spd="4" str="12" mat="7" rat="5" def="12" arm="19" cmd="8" damage_grid="...................L..R.LLMBRRxMMBBx" />
+          <weapons>
+            <ranged_weapon name="Fissure" rng="SP10" rof="1" aoe="-" pow="12" location="R">
+              <capacity title="KNOCKDOWN">When a model is hit by an attack with this weapon, it is knocked down.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Open Fist" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Sunder" pow="7" count="0" p_plus_s="19" magical="true" reach="true" location="R" />            
+          </weapons>
+          <feat title="Total War">Models in Karchev's battlegroup currently in his control area gain Pathfinder and can charge or make power attacks without spending focus. At the start of their activations, affected models can turn to face any direction before their normal movement. Total War lasts for one turn.</feat>
+          <spell name="ERUPTION" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">Models hit suffer a POW 14 fire damage roll. The AOE is a cloud effect that remains in play for one round. Models entering or ending their activation in the AOE suffer an unboostable POW 14 fire damage roll.</spell>
+          <spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Center a 5" AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll. Each enemy model damaged by Ground Zero is pushed d6" directly away from this model in the order you choose.</spell>
+          <spell name="SIDEARMS" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area and B2B with one or more models in this model's battlegroup, models in this model's battlegroup cannot be knocked down and gain +1 DEF for each other model in the battlegroup with which they are B2B.</spell>
+          <spell name="TOW" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">If during its normal movement this model advances within 2" of a friendly warjack, at the end of that movement you can place the warjack B2B with it, completely within its back arc. Up to three warjacks can be placed by Tow each time this model ends its normal movement.</spell>
+          <spell name="UNEARTHLY RAGE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, this model and warjacks in its battlegroup gain boosted melee attack and melee damage rolls, and their melee weapons gain Magical Weapon. Unearthly Rage lasts for one turn.</spell>
+          <capacity title="ARCANTRIK TURBINE">At the start of this model's activation, it gains either +2" movement and Pathfinder for one turn or 1 focus point.</capacity>
+          <capacity title="MAN IN THE MACHINE">Karchev is a living model, but he is neither a warjack nor a warrior model. He has a damage grid and suffers damage like a warjack. Karchev can make slam, trample, throw, headlock/weapon lock, and push power attacks without spending focus. Karchev cannot make throws or headlock/weapon locks while his Open Fist is crippled. Effects modifying the amount of damage to or the manner in which damage is applied to a warjack also apply to him. The B boxes of Karchev's damage grid represent his Body system. Friendly Faction models with the Repair skill can attempt to repair Karchev like a warjack but cannot repair his Body system. When Karchev spends focus points to heal damage, he can heal damage only to his Body system. If another model heals Karchev through a means other than repair, damage can be removed only from his Body system. While his Body system is crippled, he cannot allocate focus. Karchev is affected by deep water like a warrior model. Apply damage he suffers from deep water only to his Body system.</capacity>
+        </warcaster>
+        <warcaster id="KW06" name="Koldun Kommander Aleksandra Zerkova" generation="P" full_name="Koldun Kommander Aleksandra Zerkova" qualification="Khador Greylord Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
+          <basestats name="ZERKOVA" spd="6" str="5" mat="6" rat="5" def="15" arm="15" cmd="9" hitpoints="16" immunity_frost="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Rod of Whispers" rng="8" rof="1" aoe="-" pow="13" magical="true" />
+			<melee_weapon name="Quietus" pow="6" p_plus_s="11" magical="true">
+              <capacity title="MECHANIKAL SEIZURE">When a warjack is hit by this weapon it becomes stationary for one round.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Howling Wind">Enemy models beginning their activations in Zerkova's control area lose their initial ranged attacks and cannot run, charge, make special attacks, give or receive orders, or make special actions. Howling Wind lasts for one round.</feat>
+          <spell name="BANISHING WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Enemy upkeep spells on target friendly model/unit expire. Affected models cannot be targeted by enemy spells or animi.</spell>
+          <spell name="FORCE BLAST" cost="3" rng="CTRL" aoe="*" pow="-" up="NO" off="NO">Target a model in this model's battlegroup in it's control area. Enemy models currently within 2" of the target model are pushed 4" directly away from it in the order you choose.</spell>
+          <spell name="ICY GRIP" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">Target enemy warrior model/unit without Immunity: Cold suffers –2 DEF and cannot run or make special attack.</spell>
+          <spell name="INFLUENCE" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-warcaster, non-warlock warrior model. The model immediately makes one normal melee attack, then Influence expires.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <spell name="TWISTER" cost="2" rng="10" aoe="3" pow="10" up="NO" off="YES">The AOE is a cloud effect that remains in play for one round.</spell>
+          <spell name="WATCHER" cost="3" rng="SELF" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement within 6" of this model, choose a warjack in this model's battlegroup that is in its control area. That warjack can immediately make a full advance and then can make one normal melee or ranged attack targeting the enemy model. The attack and damage rolls against that model are boosted. After the attack is resolved, Watcher expires.</spell>
+          <capacity title="ARCANE ARTIFACTS">When this model casts a spell, you can choose one of the following abilities. Each ability can be used once per activation and expires after the spell is cast.</capacity>
+          <capacity title="● FOCUS SPHERE">Reduce the COST of the spell by 1.</capacity>
+          <capacity title="● GHOST STONE">This model's front arc extends to 360 degrees, it ignores LOS when targeting models in its control area, and it ignores Stealth.</capacity>
+          <capacity title="● LENS OF TARVODH">The spell gain +3 RNG.</capacity>
+          <capacity title="ORGOTH SEAL">When a model targets this model with an offensive spell, the spell suffer –3 RNG. If a model directly hits this model with an offensive spell, after the attack is resolved the attacking model suffers d6 damage points.</capacity>
+        </warcaster>
+        <warcaster id="KW07" name="Old Witch of Khador" generation="P" full_name="Old Witch of Khador" qualification="Khador Warcaster" focus="7" warjack_points="3" fa="C" companionId="Scrapjack" completed="true">
+          <basestats name="OLD WITCH" spd="5" str="7" mat="6" rat="3" def="15" arm="14" cmd="8" hitpoints="16" pathfinder="true" terror="true" />
+          <weapons>
+            <melee_weapon name="Iron Claws " pow="6" count="2" p_plus_s="13" magical="true" />
+          </weapons>
+          <feat title="Field of Talons">While in the Old Witch's control area, enemy models cannot run, charge, or make special attacks. Enemy models that advance and end their movement in the Old Witch's control area immediately suffer an unboostable POW 14 damage roll. Field of Talons lasts for one round.</feat>
+          <spell name="AVATAR OF SLAUGHTER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target this model or Scrapjack. The affected model gains +2 to melee attack rolls. When it destroys an enemy warrior model with a melee attack during its activation, after the attack is resolved the affected model can advance up to 1" and make an additional melee attack.</spell>
+          <spell name="GALLOWS" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallow's point of origin.</spell>
+          <spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model/unit gains +3 DEF but suffers –1 SPD.</spell>
+          <spell name="MURDER OF CROWS" cost="3" rng="CTRL" aoe="5" pow="*" up="YES" off="NO">Place a 5" AOE cloud effect anywhere completely in this model's control area. Any model that is not part of this model's battlegroup that enters or ends its activation in the AOE suffers an unboostable POW 8 damage roll.</spell>
+          <spell name="UNSEEN PATH" cost="2" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Unseen Path can be cast only while Scrapjack is in this model's control area. When Unseen Path is cast, immediately place this model within 2" of Scrapjack or place Scrapjack within 2" of this model. A model cannot advance this turn after being placed by Unseen Path.</spell>
+          <spell name="WEALD SECRETS" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Camouflage and Pathfinder. (A model with Camouflage gains an additional +2 DEF when benefiting from concealment or cover.)</spell>
+          <capacity title="GREAT POWER">During your Control Phase, this model can upkeep one spell without spending focus or fury.</capacity>
+          <capacity title="PROWL">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+          <capacity title="AUGURY">This model and warjacks in its battlegroup ignore cloud effects and forests when determining LOS.</capacity>
+          <capacity title="CULL SOUL">This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.</capacity>
+        </warcaster>
+        <warcaster id="KW08" name="Kommander Strakhov" generation="P" full_name="Kommander Strakhov" qualification="Khador Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="STRAKHOV" spd="6" str="7" mat="7" rat="6" def="15" arm="16" cmd="9" hitpoints="17" immunity_corrosion="true" immunity_fire="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Cinder Bomb" rng="6" rof="1" aoe="3" pow="14" fire="true">
+              <capacity title="CUMBERSOME">If this model attacks with this weapon during its activation, it cannot attack with another ranged weapon that activation. If this model attacked with another ranged weapon this activation, it cannot attack with this weapon.</capacity>
+              <capacity title="SMOKE">This weapon's AOE is a cloud effect that remains in play for one round.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Riot Gun" rng="10" rof="1" aoe="-" pow="12">
+              <capacity title="RAPID FIRE [D3]">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Trench Sword" pow="6" p_plus_s="13" magical="true">
+              <capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Iron Fist">Friendly Faction models that charge or slam power attack an enemy model while that model is in Strakhov's control area gain +4" movement and Pathfinder. Warjacks in Strakhov's battlegroup can charge and slam power attack an enemy model while the enemy model is in Strakhov's control area without spending focus. Iron Fist lasts for one round.</feat>
+          <spell name="BATTERING RAM" cost="2" rng="6" aoe="-" pow="12" up="NO" off="YES">When an enemy model is hit by Battering Ram, it can be pushed 3" directly away from the spell's point of origin.</spell>
+          <spell name="OCCULTATION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Stealth.</spell>
+          <spell name="OVERRUN" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">When target model in this model's battlegroup destroys one or more enemy models with an attack, immediately after the attack is resolved one model in this model's battlegroup that is in its control area can make a full advance, then Overrun expires. Overrun can be cast only once per turn and lasts for one turn.</spell>
+          <spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+          <spell name="SENTRY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement in the LOS of a target friendly Faction model, the affected model can immediately make one normal ranged attack then Sentry expires.</spell>
+          <spell name="SUPERIORITY" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction warjack gains +2 SPD, MAT, and DEF and cannot be knocked down.</spell>
+          <capacity title="ALCHEMICAL MASK">This model ignores gas effects. When determining LOS or resolving attacks, this model ignores cloud effects.</capacity>
+          <capacity title="ELITE CADRE [ASSAULT KOMMANDOS]">Friendly Assault Kommando models gain Pathfinder.</capacity>
+          <capacity title="SPRINT">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+        </warcaster>
+        <warcaster id="KW09" name="Kommander Harkevich, The Iron Wolf " generation="P" full_name="Kommander Harkevich, The Iron Wolf " qualification="Khador Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="HARKEVICH" spd="6" str="7" mat="7" rat="6" def="15" arm="16" cmd="8" hitpoints="18" />
+          <weapons>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Minister" pow="7" p_plus_s="14" magical="true">
+              <capacity title="BEAT BACK">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1'' directly away from the attacking model. After the enemy is pushed, the attacking model can advance up to 1".</capacity>
+              <capacity title="CRITICAL STAGGER">On a critical hit, the model hit loses its initial attacks and cannot make special attack for one round.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Hour of the Wolf">While in Harkevich's control area, models in his battlegroup gain +3 ARM. Models in Harkevich's battlegroup beginning their activation within his control area can charge or slam power attack without spending focus. If a model in Harkevich's battlegroup that is in his control area declares a charge or slam against an enemy model, it can make a normal ranged attack before advancing. Attacks gained from Hour of the Wolf do not count against a weapon's ROF. Hour of the Wolf lasts for one round.</feat>
+          <spell name="BROADSIDE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Models in this model's battlegroup currently in its control area can immediately make one normal ranged attack. Attacks gained from Broadside do not count against a weapon's ROF. Broadside can be cast only once per turn.</spell>
+          <spell name="ESCORT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Warjacks in this model's battlegroup beginning their activations in its control area gain +2" movement. This model gains +2 ARM while one or more warjacks in its battlegroup are within 3" of it.</spell>
+          <spell name="FORTUNE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit can reroll its missed attack rolls. Each attack roll can be rerolled only once as a result of Fortune.</spell>
+          <spell name="JUMP START" cost="1" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Models in this model's battlegroup that are currently in its control area stand up and are no longer stationary. Affected models can turn to face any direction. Models that were knocked down this turn are not affected by Jump Start.</spell>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+          <capacity title="FIELD MARSHAL [PATHFINDER]">Models in this model's battlegroup gain Pathfinder.</capacity>
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="Scrapjack" name="Scrapjack" full_name="Scrapjack" qualification="Khador Character Light Warjack" fa="C" cost="0" damage_grid="xxxxxxxx..xxx....x......MCAACMxMCCMx" completed="true">
+          <basestats name="SCRAPJACK" spd="6" str="8" mat="5" rat="3" def="14" arm="16" cmd="0" arc_node="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Meckanikal Talons" pow="4" count="2" p_plus_s="12" reach="true" />
+          </weapons>
+          <capacity title="COMPANION [OLD WITCH]">This model is included in any army that includes the Old Witch. If the Old Witch is destroyed or removed from play, remove this model from play. This model is part of the Old Witch's battlegroup.</capacity>
+          <capacity title="PROWL">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+          <capacity title="WARJACK BOND [OLD WITCH]">This model is bonded to the Old Witch. When the Old Witch is damaged by an enemy attack, this model gains +2 SPD and +2 to attack and damage rolls for one round.</capacity>
+          <restricted_to id="KW07" />
+        </warjack>
+        <warjack id="KJ01" name="Destroyer" full_name="Destroyer" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="DESTROYER" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Bombard" rng="14" rof="1" aoe="3" pow="14" location="L">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Executioner Axe" pow="5" p_plus_s="17" location="R">
+              <capacity title="CRITICAL AMPUTATION">On a critical hit, warjack head and arm systems that suffer damage from this attack are crippled.</capacity>
+            </melee_weapon>            
+          </weapons>
+        </warjack>
+        <warjack id="KJ02" name="Juggernaut" full_name="Juggernaut" qualification="Khador Heavy Warjack" fa="U" cost="7" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="JUGGERNAUT" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Ice Axe" pow="7" count="0" p_plus_s="19" location="R">
+              <capacity title="CRITICAL FREEZE">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+            </melee_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="KJ03" name="Marauder" full_name="Marauder" qualification="Khador Heavy Warjack" fa="U" cost="7" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="MARAUDER" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Ram Piston" pow="4" p_plus_s="16" location="L">
+              <capacity title="COMBO SMITE (★ATTACK)">Make a melee attack. On a hit, instead of making a normal damage roll the target model is slammed d6" directly away from this model and suffers a damage roll with POW equal to the STR of this model plus twice the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Ram Piston" pow="4" p_plus_s="16" location="R">
+              <capacity title="COMBO SMITE (★ATTACK)">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="KJ04" name="Berserker" full_name="Berserker" qualification="Khador Heavy Warjack" fa="U" cost="6" damage_grid="x....x.............L..R.LLMCRRxMMxCx" completed="true">
+          <basestats name="BERSERKER" spd="4" str="11" mat="5" rat="3" def="11" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="War Axe" pow="5" p_plus_s="16" location="L">
+              <capacity title="CHAIN ATTACK: BRUTALITY">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one head-butt power attack against that model.</capacity>
+            </melee_weapon>
+            <melee_weapon name="War Axe" pow="5" p_plus_s="16" location="R">
+			  <capacity title="CHAIN ATTACK: BRUTALITY">See above.</capacity>
+			</melee_weapon>  
+          </weapons>
+          <capacity title="AGGRESSIVE">This model can run or charge without spending focus or being forced</capacity>
+          <capacity title="UNSTABLE">At the end of any activation in which this model spent 1 or more focus points, roll a d6. If this roll is equal to or less than the number of focus points spent, this model explodes and models within 3" of it suffer an unboostable POW 14 blast damage roll. Remove this model from play.</capacity>
+        </warjack>
+        <warjack id="KJ05" name="Devastator" full_name="Devastator" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="DEVASTATOR" spd="4" str="12" mat="6" rat="4" def="10" arm="25" cmd="0" />
+          <weapons>
+            <melee_weapon name="Shield Fist" pow="4" p_plus_s="16" open_fist="true" location="L" />
+            <melee_weapon name="Shield Fist" pow="4" p_plus_s="16" open_fist="true" location="R" />
+          </weapons>
+          <capacity title="ARMORED SHELL">While one of its arm systems is crippled, this model's base ARM is 21; while both arm systems are crippled, its base ARM is 17. If this model makes an attack other than a head-butt, slam, or trample power attack, its base ARM is 17 until the start of its next activation. This model's arms cannot be locked.</capacity>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+          <capacity title="RAIN OF DEATH (★ATTACK)">Models B2B with this model suffer a POW 18 blast damage roll. Other models within 3" of this model suffer a POW 9 blast damage roll. When this model charges, instead of making a charge attack it can make a Rain of Death attack. A Rain of Death attack does not need a target. After a Rain of Death attack, this model can make additional melee attacks.</capacity>
+        </warjack>
+        <warjack id="KJ06" name="Kodiak" full_name="Kodiak" qualification="Khador Heavy Warjack" fa="U" cost="8" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="KODIAK" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Armored Fist" pow="4" p_plus_s="16" open_fist="true" location="L">
+              <capacity title="CHAIN ATTACK: GRAB &amp; SMASH">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make a double-hand throw, head-butt, headlock/weapon lock, push, or throw power attack against that target.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Armored Fist" pow="4" p_plus_s="16" open_fist="true" location="R">
+              <capacity title="CHAIN ATTACK: GRAB &amp; SMASH">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="HEAVY BOILER">This model can run without spending focus.</capacity>
+          <capacity title="VENT STEAM (★ATTACK)">Center a 3" AOE cloud effect on this model. Living models currently in the AOE are hit and suffer a POW 12 damage roll. The AOE remains in play for one round. A Vent Steam attack does not need a target. After a Vent Steam attack, this model can make additional melee attacks.</capacity>
+        </warjack>
+        <warjack id="KJ07" name="Behemoth" full_name="Behemoth" qualification="Khador Character Heavy Warjack" fa="C" cost="13" damage_grid="....................SS..LLMCRRLMMCCR" completed="true">
+          <basestats name="BEHEMOTH" spd="4" str="12" mat="6" rat="4" def="10" arm="21" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Bombard " count="2" rng="14" rof="1" aoe="3" pow="14">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Open Fist" pow="0" p_plus_s="12" open_fist="true" location="L">
+              <capacity title="ARMOR PIERCING">When calculating damage from this weapon, halve the base ARM stats of models hit that have medium or larger bases. This weapon gains +2 to damage rolls against models with small bases.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Open Fist" pow="0" p_plus_s="12" open_fist="true" location="R">
+              <capacity title="ARMOR PIERCING">See above.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="SUB-CORTEX">This model has a Sub-Cortex system that controls the operation of its bombards. The S boxes of this warjack's damage grid represent its Sub-Cortex system. The Sub-Cortex can be allocated up to 3 focus points in addition to normal focus allocation to this model. Focus points allocated to the Sub-Cortex can be used only to boost ranged attacks and ranged damage rolls. Focus points allocated to this mode's primarr Cortex cannot be used to boost ranged attack or damage rolls. If the Sub-Cortex is crippled, this model cannot make ranged attacks. Cortex damage effects do not affect the Sub-Cortex. This model can make ranged and melee attacks in the same activation. When this model makes its initial melee attacks or a power attack, it can also make its initial ranged attacks. This model can make ranged attacks even while in melee, but it cannot target a model engaging this model. This model suffers –2 to ranged attack rolls while engaged and during activation it charges, slam power attacks, or trample power attacks.</capacity>
+        </warjack>
+        <warjack id="KJ08" name="Spriggan" full_name="Spriggan" qualification="Khador Heavy Warjack" fa="U" cost="10" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="SPRIGGAN" spd="4" str="12" mat="6" rat="4" def="10" arm="19" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Grenade Launcher " count="2" rng="10" rof="1" aoe="3" pow="10">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+              <capacity title="TARGETING FLARE">Instead of making an attack with this weapon, you can place a 3" AOE anywhere completely within 10" of this model, with a center point in this model's LOS, ignoring intervening models. While a model is in the AOE, it loses Camouflage and Stealth and models can ignore cloud effects when determining LOS to it. The AOE remains in play for one turn.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Assault Shield" pow="2" p_plus_s="14" shield="true" location="L" />
+            <melee_weapon name="War Lance" pow="6" count="0" p_plus_s="18" reach="true" location="R">
+              <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+        </warjack>
+        <warjack id="KJ09" name="Beast 09" full_name="Beast 09" qualification="Khador Character Heavy Warjack" fa="C" cost="11" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="BEAST 09" spd="4" str="12" mat="7" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Ice Breaker" pow="7" count="0" p_plus_s="19" reach="true" location="R">
+              <capacity title="CRITICAL FREEZE">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+              <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="AFFINITY [SORSCHA]">While in Sorscha's control area, Beast can reroll failed slam power attack and charge attack rolls. Attack rolls can be rerolled only once as a result of this affinity.</capacity>
+          <capacity title="HEAVY BOILER">This model can run without spending focus.</capacity>
+          <capacity title="HYPER AGGRESSIVE">When this model suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.</capacity>
+          <capacity title="IMPRINT: MURDEROUS">During its activation, this model can spend 1 focus point to use Murderous. That activation, this model gains an additional die on melee attack rolls against living enemy warrior models.</capacity>
+        </warjack>
+        <warjack id="KJ10" name="Drago" full_name="Drago" qualification="Khador Character Heavy Warjack" fa="C" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="DRAGO" spd="4" str="11" mat="7" rat="3" def="11" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Executioner Axe" pow="5" p_plus_s="16" location="L">
+              <capacity title="CHAIN ATTACK: BLOODBATH">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one melee attack with this weapon against each model in its LOS that is in this weapon's melee range.</capacity>
+              <capacity title="CRITICAL AMPUTATION">On a critical hit, warjack head and arm systems that suffer damage from this attack are crippled.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Executioner Axe" pow="5" p_plus_s="16" location="R">
+              <capacity title="CHAIN ATTACK: BLOODBATH">See above.</capacity>
+              <capacity title="CRITICAL AMPUTATION">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="AGGRESSIVE">This model can run or charge without spending focus or being forced.</capacity>
+          <capacity title="AFFINITY [VLADIMIR]">While Drago is in Vladimir's control area, you can choose not to make Unstable rolls for it. When Drago is in Vladimir's control area and makes an attack, gain an additional die on attack and damage rolls. Discard the lowest die of each roll.</capacity>
+          <capacity title="IMPRINT: RUN RIOT">During its activation, this model can spend 1 focus point to use Run Riot. This activation, after resolving an attack in which this model destroyed one or more enemy models with a normal melee attack, if there are no enemy models within its melee range it can advance up to 1".</capacity>
+          <capacity title="UNSTABLE">At the end of any activation in which this model spent 1 or more focus points, roll a d6. If the roll is equal to or less than the number of focus points spent, this model explodes and models within 3" of it suffer an unboostable POW 14 blast damage roll. Remove this model from play.</capacity>
+        </warjack>
+        <warjack id="KJ11" name="Decimator" full_name="Decimator" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="DECIMATOR" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Dozer" rng="10" rof="2" aoe="-" pow="15" location="L">
+              <capacity title="BEAT BACK">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Rip Saw" pow="6" p_plus_s="18" location="R">
+              <capacity title="SUSTAINED ATTACK">During this model's activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+            </melee_weapon>            
+          </weapons>
+        </warjack>
+        <warjack id="KJ12" name="Torch" full_name="Torch" qualification="Khador Character Heavy Warjack" fa="C" cost="10" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="TORCH" spd="4" str="12" mat="7" rat="5" def="10" arm="20" cmd="0" gunfighter="true" immunity_corrosion="true" immunity_fire="true" />
+          <weapons>
+            <ranged_weapon name="Flamethrower" rng="SP6" rof="1" aoe="-" pow="12" location="L" fire="true" continuous_fire="true" />
+			<melee_weapon name="Spiked Fist" pow="4" p_plus_s="16" open_fist="true" location="L" />
+            <melee_weapon name="Rip Saw" pow="6" count="0" p_plus_s="18" location="R">
+              <capacity title="SUSTAINED ATTACK">During this model's activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="RELENTLESS CHARGE">This model gains Pathfinder during activations it charges.</capacity>
+          <capacity title="SMOKE BOMBS (★ACTION)">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+          <capacity title="SPECIAL ISSUE [STRAKHOV]">This model can be included in Strakhov's theme forces. It can be also bonded to Strakhov.</capacity>
+          <capacity title="VIRTUOSO">This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+        </warjack>
+        <warjack id="KJ13" name="Demolisher" full_name="Demolisher" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="DEMOLISHER" spd="4" str="12" mat="6" rat="4" def="10" arm="25" cmd="0" gunfighter="true" />
+          <weapons>
+            <ranged_weapon name="Shoulder Cannon" count="2" rng="8" rof="1" aoe="4" pow="15" />
+			<melee_weapon name="Shield Fist" pow="4" p_plus_s="16" open_fist="true" location="L" />
+            <melee_weapon name="Shield Fist" pow="4" p_plus_s="16" open_fist="true" location="R" />            
+          </weapons>
+          <capacity title="ARMORED SHELL">While one of its arm systems is crippled, this model's base ARM is 21; while both arm systems are crippled, its base ARM is 17. If this model makes an attack other than a head-butt, slam, or trample power attack, its base ARM is 17 until the start of its next activation. This model's arms cannot be locked.</capacity>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+          <capacity title="GIRDED">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
+        </warjack>
+        <warjack id="KJ14" name="Black Ivan" full_name="Black Ivan" qualification="Khador Character Heavy Warjack" fa="C" cost="10" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="BLACK IVAN" spd="4" str="12" mat="6" rat="5" def="12" arm="20" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Bombard" rng="14" rof="1" aoe="3" pow="14" location="L">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Bear Claw" pow="4" p_plus_s="16" open_fist="true" location="R">
+              <capacity title="CRITICAL BRUTAL DAMAGE">On a critical hit, gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="AFFINITY [HARKEVICH]">While in Harkevich's control area, this model gains boosted ranged attack rolls.</capacity>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+          <capacity title="DODGE">This model can advance up to 2" immediately after an enemy attack that missed it is resolved unless it was missed while advancing. It cannot be targeted by free strikes during this movement.</capacity>
+        </warjack>
+        <warjack id="KJ16" name="Grolar" full_name="Grolar" qualification="Khador Heavy Warjack" fa="U" cost="9" damage_grid="...................L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="GROLAR" spd="4" str="12" mat="6" rat="4" def="10" arm="20" cmd="0" gunfighter="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Auto Cannon" rng="8" rof="5" aoe="-" pow="12" location="L">
+              <capacity title="DOUBLE STRIKE">This model can make two additional attacks for each focus point spent to make additional attacks with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Open Fist" pow="3" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Piston Hammer" pow="6" p_plus_s="18" location="R">
+              <capacity title="RAM">When an enemy model is hit by this weapon, it is knocked down and can be pushed 1" directly away from this model. If it is pushed, this model can immediately advance directly toward the pushed model up to the distance that model was moved.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="FLEET">At the start of this model's activation, it can spend 1 focus point once to gain +2" movement for one turn.</capacity>
+          <capacity title="VIRTUOSO">This model can make melee and ranged attacks during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+        </warjack>
+      </warjacks>
+      <colossals>
+        <colossal id="KJ15" name="Conquest" full_name="Conquest" qualification="Khador Colossal" fa="2" cost="19" damage_grid_left="xxx...xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="...xxx....xxSS....CSRRR.CCCCRRMMMMCR" completed="true">
+          <basestats name="CONQUEST" spd="4" str="18" mat="6" rat="4" def="7" arm="20" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Main Guns" rng="15" rof="1" aoe="4" pow="15" location="S">
+              <capacity title="CRITICAL DEVASTATION">On a critical hit, instead of suffering a normal damage roll, each model in the AOE is thrown d6" directly away from the attacker regardless of its base size. Roll only once for all of the affected models. Move models farthest from the attacker first. The model directly hit by the attack suffers a POW 15 damage roll. Other models hit by the attack suffer a POW 8 damage roll. The POW of collateral damage is equal to the POW of the damage roll suffered by the thrown model.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Secondary Battery" rng="12" rof="1" aoe="3" pow="12" location="L">
+              <capacity title="CREEPING BARRAGE">Instead of attacking with this weapon during this model's activation, if it is not currently crippled you can place two 3" AOEs anywhere completely within this weapon's RNG, centered on points in this model's LOS, ignoring intervening models. The AOEs must be placed within 1" of each other. A model entering or ending its activation in one or more of the AOEs suffers an unboostable POW 6 blast damage roll. The AOEs remain in play for one round. If this model is destroyed or removed from play, immediately remove the AOEs from play.</capacity>
+              <capacity title="LINKED GUNS">When this model makes an initial attack with this weapon, after the initial attack has been resolved it can immediately make one additional attack against the target of the initial attack. This additional attack ignores this weapon's ROF.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Secondary Battery" rng="12" rof="1" aoe="3" pow="12" location="R">
+              <capacity title="CREEPING BARRAGE">See above.</capacity>
+              <capacity title="LINKED GUNS">See above.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Fist" pow="4" p_plus_s="22" open_fist="true" location="L" />
+            <melee_weapon name="Fist" pow="4" p_plus_s="22" open_fist="true" location="R" />            
+          </weapons>
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="KE01" name="Gun Carriage" full_name="Gun Carriage" qualification="Khador Cavalry Battle Engine" fa="2" cost="9" completed="true">
+          <basestats name="GUN CARRIAGE" spd="7" str="12" mat="6" rat="5" def="10" arm="20" cmd="10" hitpoints="22" construct="true" />
+          <weapons>
+            <ranged_weapon name="Heavy Cannon" rng="12" rof="1" aoe="4" pow="14" location="L">
+              <capacity title="CRATER">The AOE is rough terrain and remains in play for one round.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Heavy Cannon" rng="12" rof="1" aoe="4" pow="14" location="R">
+              <capacity title="CRATER">See above.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11">
+              <capacity title="REAR ATTACK">When declaring and resolving attacks with this weapon, this model's front arc extends to 360 degrees.</capacity>
+            </ranged_weapon>
+            <mount_weapon name="Mount" pow="12">              
+                <capacity title="TRAMPLING HOOVES">This model can charge and make charge attacks with this weapon. During a combat action it did not make a charge attack, this model can make one melee attack with this weapon.</capacity>
+                <capacity title="KNOCKDOWN">When a model is hit by an attack with this weapon, it is knocked down.</capacity>              
+            </mount_weapon>
+          </weapons>
+          <capacity title="POWER ATTACK TRAMPLE">This model can make trample power attacks.</capacity>
+          <capacity title="WEAPON PLATFORM">This model can make melee and ranged attacks in the same activation. When this model makes its initial melee attacks or a power attack, it can also make its initial ranged attacks. This model can make ranged attacks even while in melee.</capacity>
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="KU01" name="Battle Mechaniks" full_name="Battle Mechaniks" qualification="Khador Unit" fa="3" base_cost="2" full_cost="3" baseCount="4" fullCount="6" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="5" rat="4" def="13" arm="12" cmd="8" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Monkey Wrench" pow="2" p_plus_s="8" />
+          </weapons>
+          <capacity title="IRON SENTINEL">While B2B with a friendly Faction warjack, this model gains +2 DEF and ARM and cannot be knocked down.</capacity>
+          <capacity title="REPAIR [7] (★ACTION)">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
+          <capacity title="ASSIST REPAIR (★ACTION)">This model can make this special action only when B2B with a friendly Faction warjack. When this model makes an Assist Repair action, choose another model in this unit with the Repair ability also B2B with that warjack. The chosen model gains a cumulative +1 to its Repair skill on its next Repair skill check to repair that warjack this activation. If it passes the Repair check, remove 1 additional damage point from the warjack for each model that used Assist Repair on the chosen model.</capacity>
+          <unit_attachment id="KA08" name="Battle Mechanik Officer" full_name="Battle Mechanik Officer" qualification="Khador Unit Attachment" fa="2" cost="2" completed="true">
+            <model id="Battle Mechanik Officer">
+              <basestats name="OFFICER" spd="4" str="9" mat="6" rat="4" def="11" arm="16" cmd="9" hitpoints="8" officer="true" />
+              <weapons>
+                <melee_weapon name="Wrench" pow="4" p_plus_s="13" />
+              </weapons>
+              <capacity title="ATTACHMENT [BATTLE MECHANIK]">This attachment can be added to a Battle Mechanik unit.</capacity>
+              <capacity title="GRANTED: MAN-O-WAR MECHANIK">While this model is in play, models in its unit can make a Repair special action to attempt to repair damaged Man-O-War models as if they were warjacks. Models in this model's unit with Assist Repair can make an Assist Repair special action to assist in the repair of Man-O-War models.</capacity>
+              <capacity title="LASH">This model and friendly warrior models B2B with it cannot be knocked down.</capacity>
+              <capacity title="REPAIR [9] (★ACTION)">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU02" name="Doom Reavers" full_name="Doom Reavers" qualification="Khador Unit" fa="2" base_cost="6" full_cost="-" baseCount="6" fullCount="-" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="7" mat="7" rat="4" def="13" arm="14" cmd="7" abomination="true" advance_deployment="true" fearless="true" />
+          <weapons>
+            <melee_weapon name="Fellblade" pow="6" p_plus_s="13" magical="true" reach="true" weapon_master="true" />
+          </weapons>
+          <capacity title="BERSERK">When this model destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</capacity>
+          <capacity title="SPELL WARD">This model cannot be targeted by spells.</capacity>
+          <unit_attachment id="KA06" name="Greylord Escort" full_name="Greylord Escort" qualification="Khador Doom Reaver Unit Attachment" fa="1" cost="2" completed="true">
+            <model id="Greylord Escort">
+              <basestats name="GREYLORD ESCORT" spd="6" str="5" mat="5" rat="4" def="13" arm="13" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Orgoth Staff" pow="5" p_plus_s="10" magical="true" reach="true" />
+              </weapons>
+              <capacity title="ATTACHMENT [DOOM REAVERS]">This attachment can be added to a Doom Reavers unit.</capacity>
+              <capacity title="GRANTED: SILENCE">While this model is in play, models in its unit do not have to make Berserk attacks.</capacity>
+              <capacity title="GRANTED: TOUGH">While this model is in play, models in its unit gain Tough.</capacity>
+              <capacity title="MAGIC ABILITY [7]" />
+              <capacity title="● FROSTBITE (★ATTACK)">Frostbite is a RNG SP 8 magic attack. Models hit suffer a POW 12 cold damage roll.</capacity>
+              <capacity title="SPELL WARD">This model cannot be targeted by spells.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU03" name="Iron Fang Pikemen" full_name="Iron Fang Pikemen" qualification="Khador Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" cma="true" />
+          <weapons>
+            <melee_weapon name="Blasting Pike" pow="7" p_plus_s="13" reach="true">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="SHIELD WALL (ORDER)">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
+          <unit_attachment id="KA01" name="Iron Fang Officer &amp; Standard" full_name="Iron Fang Officer &amp; Standard" qualification="Khador Unit Attachment" fa="1" cost="2" completed="true">
+            <model id="Iron Fang Pikemen Officer">
+              <basestats name="OFFICER" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="10" hitpoints="5" cma="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Blasting Pike" pow="7" p_plus_s="13" reach="true">
+                  <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="ATTACHMENT [IRON FANG PIKEMEN]">This attachment can be added to an Iron Fang Pikemen unit.</capacity>
+              <capacity title="DEFENSIVE FORMATION">Once per game during its unit's activation, this model can use Defensive Formation. Immediately after models in this unit complete their actions this turn, models in this unit other than this one can make a full advance, any previous orders this unit was issued expire, and this unit is affected by the Shield Wall order.</capacity>
+              <capacity title="TACTICS: RELENTLESS CHARGE">Models in this unit gain Relentless Charge. (Models with Relentless Charge gain Pathfinder during activations they charge.)</capacity>
+            </model>
+            <model id="Iron Fang Pikemen Standard">
+              <basestats name="STANDARD BEARER" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" standard_bearer="true" />
+              <weapons />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU04" name="Man-O-War Shocktroopers" full_name="Man-O-War Shocktroopers" qualification="Khador Unit" fa="3" base_cost="6" full_cost="9" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="9" mat="7" rat="5" def="11" arm="17" cmd="9" hitpoints="8" fearless="true" cma="true" />
+          <weapons>
+            <ranged_weapon name="Shield Cannon" rng="6" rof="1" aoe="-" pow="14" />
+			<melee_weapon name="Annihilator Blade" pow="5" p_plus_s="14" reach="true" />            
+          </weapons>
+          <capacity title="SHIELD WALL (ORDER)">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
+        </unit>
+        <unit id="KU05" name="Widowmakers" full_name="Widowmakers" qualification="Khador Unit" fa="1" base_cost="4" full_cost="-" baseCount="4" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="4" rat="7" def="14" arm="11" cmd="8" advance_deployment="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Hunting Rifle" rng="14" rof="1" aoe="-" pow="10" />
+			<melee_weapon name="Sword" pow="3" p_plus_s="8" />            
+          </weapons>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="SNIPER">When damaging a warbeast or warjack with a ranged attack, choose which column or branch suffers damage. Instead of rolling damage on a ranged attack, the model can inflict 1 damage point. A model that participates in a combined ranged attack loses Sniper until the attack is resolved.</capacity>
+        </unit>
+        <unit id="KU06" name="Winter Guard Infantry" full_name="Winter Guard Infantry" qualification="Khador Unit" fa="3" base_cost="4" full_cost="6" baseCount="6" fullCount="10" has_unit_attachment="true" has_weapon_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" cra="true" />
+          <weapons>
+            <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Axe" pow="3" p_plus_s="8" />            
+          </weapons>
+          <unit_attachment id="KA02" name="Winter Guard Officer &amp; Standard" full_name="Winter Guard Officer &amp; Standard" qualification="Khador Unit Attachment" fa="1" cost="2" completed="true">
+            <model id="Winter Guard Infantry Officer">
+              <basestats name="OFFICER" spd="6" str="5" mat="6" rat="6" def="12" arm="13" cmd="9" hitpoints="5" cra="true" officer="true" />
+              <weapons>
+                <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+				<melee_weapon name="Axe" pow="3" p_plus_s="8" />                
+              </weapons>
+              <capacity title="ATTACHMENT [WINTER GUARD INFANTRY]">This attachment can be added to a Winter Guard Infantry unit.</capacity>
+              <capacity title="BOB &amp; WEAVE (ORDER)">Affected models make a full advance during their normal movement this activation and gain +2 DEF for one round.</capacity>
+              <capacity title="TACTICS: COMBINED MELEE ATTACK">Models in this unit gain Combined Melee Attack.</capacity>
+            </model>
+            <model id="Winter Guard Infantry Standard">
+              <basestats name="STANDARD BEARER" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" cra="true" standard_bearer="true" />
+              <weapons>
+                <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+				<melee_weapon name="Axe" pow="3" p_plus_s="8" />                
+              </weapons>
+              <capacity title="GRAPE SHOT">While this model is in formation, models in its unit can make a Grape Shot special attack. A Grape Shot special attack is a ranged attack with RNG SP 8, AOE -, and POW 10. When making a Grape Shot special attack, models cannot participate in combined ranged attacks.</capacity>
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="KA03" name="Winter Guard Infantry Rocketeer" full_name="Winter Guard Infantry Rocketeer" qualification="Khador Weapon Attachment" fa="2" cost="1" max_wa="3" completed="true">
+            <model id="Winter Guard Infantry Rocketeer">
+              <basestats name="ROCKETEER" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" cra="true" />
+              <weapons>
+                <ranged_weapon name="Rocket" rng="14" rof="1" aoe="3" pow="12">
+                  <capacity title="CUMBERSOME">If this model attacks with this weapon during its activation, it cannot attack with another ranged weapon that activation. If this model attacked with another ranged weapon this activation, it cannot attack with this weapon.</capacity>
+                  <capacity title="SUPPORT WEAPON">When attacking with this weapon, this model cannot participate in a combined ranged attack.</capacity>
+                </ranged_weapon>
+                <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+				<melee_weapon name="Axe" pow="3" p_plus_s="8" />                
+              </weapons>
+              <capacity title="ATTACHMENT [WINTER GUARD INFANTRY]">This attachment can be added to a Winter Guard Infantry unit.</capacity>
+              <capacity title="TAKE UP">If this model is destroyed or removed from play, you can choose a Grunt in this unit within 1" of this model to take its place. Effects on this model expire, and it gains the effects on the chosen Grunt. Remove the Grunt from the table instead of this model. This model has the same number of unmarked damage boxes as the chosen Grunt.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="KU07" name="Greylord Ternion" full_name="Greylord Ternion" qualification="Khador Unit" fa="3" base_cost="4" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="4" def="13" arm="13" cmd="9" />
+          <weapons>
+            <melee_weapon name="Rune Axe" pow="5" p_plus_s="10" magical="true" />
+          </weapons>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="● BLIZZARD (★ACTION)">RNG 5. Target friendly Faction model. If the model is in range, center a 3" AOE cloud effect on it. The AOE remains centered on the model for one round. If the target model is destroyed or removed from play, remove the AOE from play.</capacity>
+          <capacity title="● FROSTBITE (★ATTACK)">Frostbite is a RNG SP 8 magic attack. Models hit suffer a POW 12 cold damage roll.</capacity>
+          <capacity title="● ICE CAGE (★ATTACK)">Ice Cage is a RNG 10 magic attack. A model hit suffers a cumulative –2 DEF for one turn unless it has Immunity: Cold. When a model without Immunity: Cold is hit with three or more Ice Cage attacks the same turn, it becomes stationary for one round.</capacity>
+        </unit>
+        <unit id="KU08" name="Kossite Woodsmen" full_name="Kossite Woodsmen" qualification="Khador Unit" fa="2" base_cost="4" full_cost="6" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="4" def="12" arm="10" cmd="7" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Ranged Attack" rng="10" rof="1" aoe="-" pow="10" />
+			<melee_weapon name="Hand Weapon" pow="3" p_plus_s="8" />            
+          </weapons>
+          <capacity title="AMBUSH">You can choose not to deploy this unit at the start of the game. If it is not deployed normally, you can put it into play at the end of any of your Control Phases after your first turn. When you do, choose any table edge except the back of you opponent's deployment zone. Place all models in this unit in formation within 3" of the chosen table edge.</capacity>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="REFORM">After all models in this unit have completed their actions, each can advance up to 3".</capacity>
+        </unit>
+        <unit id="KU09" name="Winter Guard Mortar Crew" full_name="Winter Guard Mortar Crew" qualification="Khador Weapon Crew Unit" fa="2" base_cost="3" full_cost="-" baseCount="2" fullCount="-" completed="true">
+          <basestats name="LEADER" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Mortar" rng="20" rof="1" aoe="4" pow="16">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+              <capacity title="INACCURATE">This model suffers –4 to attack rolls with this weapon.</capacity>
+              <capacity title="LIGHT ARTILLERY">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="MINIMUM RANGE [8]">Attacks made with this weapon cannot target any model within 8" of it.</capacity>
+              <capacity title="RANGE FINDER">While B2B with one or more Grunts in this unit, this model gains +2 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Axe" pow="3" p_plus_s="8" />            
+          </weapons>
+          <model id="mortar_grunt" full_name="Grunt" qualification="model">
+            <basestats name="GRUNT" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+            <weapons>
+              <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			  <melee_weapon name="Axe" pow="3" p_plus_s="8" />              
+            </weapons>
+          </model>
+        </unit>
+        <unit id="KU10" name="Assault Kommandos" full_name="Assault Kommandos" qualification="Khador Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_weapon_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="6" rat="5" def="12" arm="14" cmd="9" immunity_corrosion="true" immunity_fire="true" />
+          <weapons>
+            <ranged_weapon name="Carbine" rng="10" rof="1" aoe="-" pow="10" />
+            <ranged_weapon name="Gas Grenade Launcher" rng="10" rof="1" aoe="3" pow="-">
+              <capacity title="STRANGLE GAS">If the attack misses, nothing happens. If it hits, center a 3" AOE gas effect on the model hit. The AOE remains in play for one round. While in the AOE, living models suffer –2 DEF and –2 to attack rolls.</capacity>
+              <capacity title="CUMBERSOME">If this model attacks with this weapon during its activation, it cannot attack with another ranged weapon that activation. If this model attacked with another ranged weapon this activation, it cannot attack with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Combat Shield" pow="2" p_plus_s="8" />
+            <melee_weapon name="Gun Blade" pow="3" p_plus_s="9" />            
+          </weapons>
+          <capacity title="ALCHEMICAL MASK">This model ignores gas effects. When determining LOS or resolving attacks, this model ignores cloud effects.</capacity>
+          <capacity title="ASSAULT &amp; BATTERY (ORDER)">Before their normal movement, affected models can make one ranged attack. During their normal movement, affected models must charge or run. The ranged attack is made before declaring a charge target.</capacity>
+          <capacity title="SHIELD WALL (ORDER)">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
+          <weapon_attachment id="KA05" name="Assault Kommando Flame Thrower" full_name="Assault Kommando Flame Thrower" qualification="Khador Weapon Attachment" fa="2" cost="1" max_wa="3" completed="true">
+            <model id="Assault Kommando Flame Thrower">
+              <basestats name="KOMMANDO" spd="6" str="6" mat="6" rat="5" def="12" arm="14" cmd="9" immunity_corrosion="true" immunity_fire="true" />
+              <weapons>
+                <ranged_weapon name="Flamethrower" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
+				<melee_weapon name="Combat Shield" pow="2" p_plus_s="8" />                
+              </weapons>
+              <capacity title="ATTACHMENT [ASSAULT KOMMANDO]">This attachment can be added to an Assault Kommando unit.</capacity>
+              <capacity title="ALCHEMICAL MASK">This model ignores gas effects. When determining LOS or resolving attacks, this model ignores cloud effects.</capacity>
+              <capacity title="FIERY BLAST">When this model is disabled, center a 5" AOE on it, then remove this model from play. Models in the AOE suffer the Fire continuous effect.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="KU11" name="Iron Fang Uhlans" full_name="Iron Fang Uhlans" qualification="Khador Cavalry Unit" fa="1" base_cost="7" full_cost="11" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="8" str="6" mat="6" rat="4" def="13" arm="17" cmd="9" hitpoints="5" />
+          <weapons>
+            <melee_weapon name="Blasting Lance" pow="10" p_plus_s="16">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+              <capacity title="LANCE">This weapon can be used only to make charge attacks. When this model charges, this weapon gains Reach until the charge is resolved.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Short Spear" pow="4" p_plus_s="10">
+              <capacity title="CLOSE COMBAT">This model cannot make an initial attack with this weapon during an activation it charged at least 3".</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12">              
+                <capacity title="CRITICAL KNOCKDOWN">See above.</capacity>              
+            </mount_weapon>
+          </weapons>
+          <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+          <capacity title="DEFENSIVE LINE">While this model is B2B with one or more models in its unit, it gains +2 ARM.</capacity>
+          <capacity title="RELENTLESS CHARGE">This model gains Pathfinder during activations it charges.</capacity>
+        </unit>
+        <unit id="KU12" name="Man-O-War Demolition Corps" full_name="Man-O-War Demolition Corps" qualification="Khador Unit" fa="3" base_cost="6" full_cost="9" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="9" mat="7" rat="5" def="11" arm="16" cmd="9" hitpoints="8" fearless="true" />
+          <weapons>
+            <melee_weapon name="Ice Maul" pow="5" p_plus_s="14" reach="true">
+              <capacity title="BACKSWING (★ATTACK)">Make a normal attack with this weapon. After resolving the attack, make one additional attack with this weapon.</capacity>
+              <capacity title="ICE BREAKER (★ATTACK)">Make a melee attack with this weapon. Gain an additional die on damage roll.</capacity>
+            </melee_weapon>
+          </weapons>
+        </unit>
+        <unit id="KU13" name="Winter Guard Field Gun Crew" full_name="Winter Guard Field Gun Crew" qualification="Khador Weapon Crew Unit" fa="2" base_cost="2" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="LEADER" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Field Gun" rng="16" rof="1" aoe="-" pow="14">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+              <capacity title="LIGHT ARTILLERY">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="RANGE FINDER">While B2B with one or more grunts in this unit, this model gains +2 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Axe" pow="3" p_plus_s="8" />            
+          </weapons>
+          <model id="fieldgun_grunt" full_name="Grunt" qualification="model">
+            <basestats name="GRUNTS" spd="4" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+            <weapons>
+              <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			  <melee_weapon name="Axe" pow="3" p_plus_s="8" />              
+            </weapons>
+          </model>
+        </unit>
+        <unit id="KU14" name="Great Bears of Gallowswood" full_name="Great Bears of Gallowswood" qualification="Khador Iron Fang Character Unit" fa="C" base_cost="5" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="VOLKOV" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="9" hitpoints="5" fearless="true" officer="true" tough="true" />
+          <weapons>
+            <melee_weapon name="Great Axe" pow="5" p_plus_s="12" reach="true" weapon_master="true">
+              <capacity title="BACKSWING (★ATTACK)">Make a normal attack with this weapon. After resolving the attack, make one additional attack with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="DEFENSIVE LINE">While this model is B2B with one or more models in its unit, it gains +2 ARM.</capacity>
+          <capacity title="GRANTED: RELENTLESS CHARGE">While this model is in play, models in this unit gain Relentless Charge. (Models with Relentless Charge gain Pathfinder during activations they charge.)</capacity>
+          <capacity title="PRECISION STRIKE">When this model damages a warjack or warbeast with a melee attack, choose which column or branch suffers the damage.</capacity>
+          <model id="Kolsk">
+            <basestats name="KOLSK" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="9" hitpoints="5" fearless="true" tough="true" />
+            <weapons>
+              <melee_weapon name="Great Axe" pow="5" p_plus_s="12" reach="true" weapon_master="true">
+                <capacity title="BACKSWING (★ATTACK)">See above.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="GRANTED: STEADY">While this model is in play, models in its unit gain Steady. (Models with Steady cannot be knocked down.)</capacity>
+            <capacity title="PRECISION STRIKE">See above.</capacity>
+            <capacity title="DEFENSIVE LINE">See above.</capacity>
+          </model>
+          <model id="Yarovich">
+            <basestats name="YAROVICH" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="9" hitpoints="5" fearless="true" tough="true" />
+            <weapons>
+              <melee_weapon name="Great Axe" pow="5" p_plus_s="12" reach="true" weapon_master="true">
+                <capacity title="BACKSWING (★ATTACK)">See above.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="GRANTED: CIRCULAR VISION">While this model is in play, models in its unit gain Circular Vision. (The front arc of a model with Circular Vision extends to 360 degrees.)</capacity>
+            <capacity title="PRECISION STRIKE">See above.</capacity>
+            <capacity title="DEFENSIVE LINE">See above.</capacity>
+          </model>
+        </unit>
+        <unit id="KU15" name="Kayazy Assassins" full_name="Kayazy Assassins" qualification="Khador Ally Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="7" rat="4" def="14" arm="11" cmd="8" stealth="true" />
+          <weapons>
+            <melee_weapon name="Assassin Blade" pow="4" p_plus_s="10" />
+          </weapons>
+          <capacity title="BACKSTAB">This model gains an additional die on its back strike damage rolls.</capacity>
+          <capacity title="GANG">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+          <capacity title="PARRY">This model cannot be targeted by free strikes.</capacity>
+          <unit_attachment id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss" qualification="Khador Ally Unit Attachment" fa="1" cost="2" completed="true">
+            <model id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss">
+              <basestats name="UNDERBOSS" spd="6" str="6" mat="8" rat="4" def="14" arm="11" cmd="9" hitpoints="5" officer="true" stealth="true" tough="true" />
+              <weapons>
+                <melee_weapon name="Assassin Blade " count="2" pow="4" p_plus_s="10" />
+              </weapons>
+              <capacity title="ATTACHMENT [KAYAZY ASSASSINS]">This attachment can be added to a Kayazy Assassins unit.</capacity>
+              <capacity title="BACKSTAB">This model gains an additional die on its back strike damage rolls.</capacity>
+              <capacity title="GANG">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+              <capacity title="KILL STROKE">Once per game during its unit's activation, this model can use Kill Stroke. This activation, models in this unit currently in formation can advance trough other models if they have enough movement to move completely past them, ignore intervening models when declaring a charge, and cannot be targeted by free strikes.</capacity>
+              <capacity title="PARRY">This model cannot be targeted by free strikes.</capacity>
+              <capacity title="TACTICS: DUELIST">Models in this unit gain +2 DEF against melee attack rolls.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU16" name="Man-O-War Bombardiers" full_name="Man-O-War Bombardiers" qualification="Khador Unit" fa="1" base_cost="7" full_cost="11" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="9" mat="7" rat="5" def="11" arm="16" cmd="9" hitpoints="8" fearless="true" />
+          <weapons>
+            <ranged_weapon name="Grenade Cannon" rng="10" rof="1" aoe="3" pow="14">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Chain Blade" pow="4" p_plus_s="13">
+              <capacity title="CRITICAL SHRED">On a critical hit, after the attack is resolved this model can make one additional attack against the model hit.</capacity>
+            </melee_weapon>            
+          </weapons>
+        </unit>
+        <unit id="KU17" name="Winter Guard Rifle Corps" full_name="Winter Guard Rifle Corps" qualification="Khador Unit" fa="3" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="5" def="12" arm="13" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Rifle" rng="14" rof="1" aoe="-" pow="10" />
+			<melee_weapon name="Axe" pow="3" p_plus_s="8" />            
+          </weapons>
+          <capacity title="RANKED ATTACKS">Friendly Faction models can ignore this model when determining LOS.</capacity>
+          <capacity title="SUPRESSING FIRE (ORDER)">This order can be issued only if two or more models in this unit in formation are able to forfeit their actions. Each model in this unit in formation must forfeit its action. Other than the Standard Bearer, those models that do are participants. After all models in this unit have completed their normal movement, place an AOE completely within 14" of all participants, with its center point in LOS of all participants, ignoring intervening models. The size of the AOE is based on the number of participants. If there are 2–4, the AOE is 3". If there are 5–7, the AOE is 4". If there are 8 or more, the AOE is 5". When a model enters or ends its activation within the AOE, it suffers a POW 10 damage roll. Suppressing Fire lasts for one round or until all participants have been destroyed or removed from play.</capacity>
+        </unit>
+        <unit id="KU18" name="Kayazy Eliminators" full_name="Kayazy Eliminators" qualification="Khador Ally Unit" fa="2" base_cost="3" full_cost="-" baseCount="2" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="7" str="5" mat="7" rat="4" def="15" arm="11" cmd="9" hitpoints="5" stealth="true" />
+          <weapons>
+            <melee_weapon name="Assassin Blade " pow="4" count="2" p_plus_s="9">
+              <capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="ACROBATICS">This model can advance through other models if it has enough movement to move completely past their bases. This model cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="DUELIST">This models gains +2 DEF against melee attack rolls.</capacity>
+          <capacity title="GANG">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+          <capacity title="SIDE STEP">When this model hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved. This model cannot be targeted by free strikes during this movement.</capacity>
+        </unit>
+        <unit id="KU19" name="Greylord Outriders" full_name="Greylord Outriders" qualification="Khador Light Cavalry Unit" fa="1" base_cost="6" full_cost="9" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="9" str="5" mat="5" rat="4" def="13" arm="15" cmd="9" hitpoints="5" immunity_frost="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Rune Axe" pow="5" p_plus_s="10" magical="true" />
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="SNOW-WREATHED">This model always has concealment.</capacity>
+          <capacity title="MAGIC ABILITY [6]" />
+          <capacity title="● FROSTBITE (★ATTACK)">Frostbite is a RNG SP 8 magic attack. Models hit suffer a POW 12 cold damage roll.</capacity>
+          <capacity title="● WINTER'S WIND (★ACTION)">RNG 5. Target friendly Faction model with Immunity: Cold. When an enemy model without Immunity: Cold ends its activation within 2" of the target model, the enemy model becomes stationary for one round. Winter's Wind lasts for one round.</capacity>
+        </unit>
+      </units>
+      <solos>
+        <solo id="KS01" name="Manhunter" full_name="Manhunter" qualification="Khador Solo" fa="2" cost="2" completed="true">
+          <basestats name="MANHUNTER" spd="6" str="8" mat="8" rat="4" def="14" arm="14" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Axe" pow="3" count="2" p_plus_s="11" weapon_master="true" />
+          </weapons>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+        </solo>
+        <solo id="KS02" name="Man-O-War Kovnik" full_name="Man-O-War Kovnik" qualification="Khador Solo" fa="2" cost="3" completed="true">
+          <basestats name="KOVNIK" spd="4" str="9" mat="8" rat="6" def="11" arm="18" cmd="9" hitpoints="8" fearless="true" commander="true" jack_marshal="true" />
+          <weapons>
+            <ranged_weapon name="Cannon Shot" rng="8" rof="1" aoe="-" pow="14" />
+			<melee_weapon name="Axe Cannon" pow="6" p_plus_s="15" weapon_master="true" />            
+          </weapons>
+          <capacity title="DRIVE: BOOSTED ATTACK">This model can attempt to drive each warjack under its control in its command range. To drive a warjack, this model must make a command check at any time during its activation. If it passes, the attack rolls for the warjack's initial attacks are boosted during that activation. If it fails, the warjack does not benefit from 'Jack Marshal this turn.</capacity>
+          <capacity title="FIELD OFFICER [SHOCKTROOPER OR DEMOLITION CORPS]">If this model is included in an army, you can include one additional Man-O-War Shocktrooper or Man-O-War Demolition Corps unit over that unit's FA.</capacity>
+          <capacity title="POWER ATTACK SLAM">This model can make slam power attacks.</capacity>
+        </solo>
+        <solo id="KS03" name="Kovnik Jozef Grigorovich" full_name="Kovnik Jozef Grigorovich" qualification="Khador Winter Guard Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="GRIGOROVICH" spd="6" str="8" mat="7" rat="6" def="12" arm="14" cmd="9" hitpoints="5" commander="true" />
+          <weapons>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Saber" pow="4" p_plus_s="12" />            
+          </weapons>
+          <capacity title="PATRIOTIC SPEECHES">During this model's activation, it can make one of the following speeches. When it does, choose a friendly Winter Guard unit. The speech affects this model and will affect the unit if it is in this model's command range at the time this model made the speech.</capacity>
+          <capacity title="● BEAR'S STRENGTH">Affected models gain +3 STR for one turn.</capacity>
+          <capacity title="● COURAGE OF OUR FOREFATHERS">Affected models gain Fearless and Tough for one round.</capacity>
+          <capacity title="● FOR THE MOTHERLAND">Affected models' attack rolls are boosted this turn.</capacity>
+          <capacity title="SACRIFICIAL PAWN [WINTER GUARD]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Winter Guard model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+        </solo>
+        <solo id="KS04" name="Man-O-War Drakhun" full_name="Man-O-War Drakhun" qualification="Khador Dragoon Solo" fa="1" cost="4" dragoon="true" dismount_option="true" dismount_cost="5" completed="true">
+          <basestats name="DRAKHUN" spd="7" str="9" mat="8" rat="6" def="11" arm="19" cmd="9" hitpoints="10" fearless="true" />
+          <weapons>
+            <ranged_weapon name="Shield Cannon" rng="6" rof="1" aoe="-" pow="14" />
+			<melee_weapon name="Annihilator Blade" pow="5" p_plus_s="14" reach="true" weapon_master="true" />            
+            <mount_weapon name="Mount" pow="14">              
+                <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>              
+            </mount_weapon>
+          </weapons>
+          <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+          <capacity title="COUNTER CHARGE">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+          <capacity title="DRAGOON">While mounted, this model has base SPD 7 and base ARM 19. While dismounted, it has base SPD 4 and base ARM 17, and loses Combat Rider, Counter Charge, and Steady.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+          <model id="KS04_dismount" name="Drakhun (Dismounted)" full_name="Drakhun (Dismounted)">
+            <basestats name="DRAKHUN (DISMOUNTED)" spd="4" str="9" mat="8" rat="6" def="11" arm="17" cmd="9" hitpoints="8" fearless="true" />
+            <weapons>
+              <ranged_weapon name="Shield Cannon" rng="6" rof="1" aoe="-" pow="14" />
+			  <melee_weapon name="Annihilator Blade" pow="5" p_plus_s="14" reach="true" weapon_master="true" />              
+            </weapons>
+          </model>
+        </solo>
+        <solo id="KS05" name="Fenris" full_name="Fenris" qualification="Khador Dragoon Character Solo" fa="C" cost="5" dragoon="true" completed="true">
+          <basestats name="FENRIS" spd="8" str="7" mat="8" rat="4" def="13" arm="16" cmd="8" hitpoints="10" abomination="true" fearless="true" tough="true" />
+          <weapons>
+            <melee_weapon name="Fellblade " pow="6" count="2" p_plus_s="13" magical="true" reach="true" weapon_master="true" />
+            <mount_weapon name="Mount" pow="12" />
+          </weapons>
+          <capacity title="BERSERK">When this model destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</capacity>
+          <capacity title="DRAGOON">While mounted, this model has base SPD 8 and base ARM 16. While dismounted, it has base SPD 6 and base ARM 14</capacity>
+          <capacity title="LEADERSHIP [DOOM REAVERS]">While in this model's command range, friendly Doom Reaver models gain Silence.</capacity>
+          <capacity title="SILENCE">This models does not have to make Berserk attacks.</capacity>
+          <capacity title="SPELL WARD">This model cannot be targeted by spells.</capacity>
+          <model id="KS05_dismount" name="Fenris (Dismounted)" full_name="Fenris (Dismounted)">
+            <basestats name="FENRIS (DISMOUNTED)" spd="6" str="7" mat="8" rat="4" def="13" arm="14" cmd="8" hitpoints="5" abomination="true" fearless="true" tough="true" />
+            <weapons>
+              <melee_weapon name="Fellblade" pow="6" count="2" p_plus_s="13" magical="true" reach="true" weapon_master="true" />
+            </weapons>
+          </model>
+        </solo>
+        <solo id="KS06" name="Koldun Lord" full_name="Koldun Lord" qualification="Khador Greylord Solo" fa="1" cost="2" completed="true">
+          <basestats name="KOLDUN LORD" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="9" hitpoints="5" commander="true" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Rune Axe" pow="5" p_plus_s="10" magical="true" />
+          </weapons>
+          <capacity title="BATTLE WIZARD">Once per turn, when this model destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved it can make one Magic Ability special attack or special action.</capacity>
+          <capacity title="ELITE CADRE [GREYLORD TERNIONS]">Friendly Greylord Ternion units gain Battle Wizard.</capacity>
+          <capacity title="IRON WALL">This model gains +2 ARM for each warjack it controls B2B with it. When this model is directly hit by an enemy ranged or magic attack, you can choose to have one of those non-incorporeal warjacks to be directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="● FROSTBITE (★ATTACK)">Frostbite is a RNG SP 8 magic attack. Models hit suffer a POW 12 cold damage roll.</capacity>
+          <capacity title="● ICE CAGE (★ATTACK)">Ice Cage is a RNG 10 magic attack. A model hit suffers a cumulative –2 DEF for one turn unless it has Immunity: Cold. When a model without Immunity: Cold is hit with three or more Ice Cage attacks the same turn, it becomes stationary for one round.</capacity>
+          <capacity title="● POWER BOOSTER (★ACTION)">RNG 5. Target friendly Faction warjack. If the target warjack is in range and has no focus points, it gains 1 focus point. If the warjack is Disrupted, it is no longer Disrupted.</capacity>
+        </solo>
+        <solo id="KS07" name="Uhlan Kovnik Markhov" full_name="Uhlan Kovnik Markhov" qualification="Khador Iron Fang Cavalry Character Solo" fa="C" cost="4" completed="true">
+          <basestats name="MARKHOV" spd="8" str="6" mat="8" rat="4" def="13" arm="18" cmd="9" hitpoints="10" fearless="true" commander="true" />
+          <weapons>
+            <melee_weapon name="Concussion Lance" pow="10" p_plus_s="16">
+              <capacity title="LANCE">This weapon can be used only to make charge attacks. When this model charges, this weapon gains Reach until the charge is resolved.</capacity>
+              <capacity title="WARHEAD">Center a 4" AOE on a model directly hit by this attack. Models in the AOE are hit and suffer a POW 10 blast damage roll. This damage is not considered to have been caused by a melee attack. On a critical hit, models in the AOE are knocked down. This model is not affected by Warhead.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Short Spear" pow="4" p_plus_s="10">
+              <capacity title="CLOSE COMBAT">This model cannot make an initial attack with this weapon during an activation it charged at least 3".</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12">              
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>              
+            </mount_weapon>
+          </weapons>
+          <capacity title="COMBAT RIDER">During a combat action it did not make a charge attack, this model can make one melee attack with its Mount.</capacity>
+          <capacity title="ELITE CADRE [IRON FANG UHLANS]">Friendly Iron Fang Uhlan units gain Practiced Maneuvers. (A model with Practiced Maneuvers can ignore other models in its unit when determining LOS and can advance through other models in its unit if it has enough movement to move completely past them.)</capacity>
+          <capacity title="INSPIRATION [IRON FANG UHLANS]">Friendly Iron Fang Uhlan models/units in this model's command range never flee and immediately rally.</capacity>
+          <capacity title="PRECISION STRIKE">When this model damages a warjack or warbeast with a melee attack, choose which column or branch suffers the damage.</capacity>
+        </solo>
+        <solo id="KS08" name="War Dog" full_name="War Dog" qualification="Khador Solo" fa="1" cost="1" warcaster_attachment="true" completed="true">
+          <basestats name="WAR DOG" spd="7" str="7" mat="6" rat="1" def="13" arm="14" cmd="6" hitpoints="5" tough="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="4" p_plus_s="11" />
+          </weapons>
+          <capacity title="ATTACHED">Before the start of the game, attach this model to a friendly Faction warcaster for the rest of the game. Each Faction warcaster can have only one model attached to it.</capacity>
+          <capacity title="COUNTER CHARGE">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+          <capacity title="GUARD DOG">While this model is within 3" of its warcaster and is not knocked down or stationary, its warcaster cannot be targeted by free strikes and gains +2 DEF against melee attack rolls, and models attacking the warcaster do not gain back strike bonuses.</capacity>
+          <capacity title="HUNTER">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="RETURN">Immediately after resolving a charge attack, this model can make a full advance toward its warcaster. This model cannot be targeted by free strikes during this movement.</capacity>
+        </solo>
+        <solo id="KS09" name="Yuri the Axe" full_name="Yuri the Axe" qualification="Khador Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="YURI" spd="6" str="8" mat="8" rat="4" def="14" arm="14" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Great Axe" pow="5" p_plus_s="13" weapon_master="true">
+              <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="ELITE CADRE [KOSSITE WOODSMEN AND MANHUNTERS]">Friendly Kossite Woodsmen and Manhunters gain Treewalker.</capacity>
+          <capacity title="TREEWALKER">This model ignores forests when determining LOS. While in a forest, this model gains +2 DEF against melee attacks rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
+        </solo>
+        <solo id="KS10" name="Widowmaker Marksman" full_name="Widowmaker Marksman" qualification="Khador Solo" fa="1" cost="2" completed="true">
+          <basestats name="MARKSMAN" spd="6" str="5" mat="4" rat="8" def="14" arm="11" cmd="9" hitpoints="5" advance_deployment="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <ranged_weapon name="Vanar Liberator" rng="14" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Sword" pow="3" p_plus_s="8" />            
+          </weapons>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="LEADERSHIP [WIDOWMAKERS]">While in this model's command range, friendly Widowmaker models gain Swift Hunter. (When a model with Swift Hunter destroys an enemy model with a normal ranged attack, immediately after the attack is resolved it can advance up to 2".)</capacity>
+          <capacity title="SNIPER">When damaging a warjack or warbeast with a ranged attack, choose which column or branch suffers damage. Instead of rolling damage on a ranged attack, this model can inflict 1 damage point. A model that participates in a combined ranged attack loses Sniper until the attack is resolved.</capacity>
+          <capacity title="SWIFT HUNTER">When this model destroys an enemy model with a normal ranged attack, immediately after the attack is resolved it can advance up to 2".</capacity>
+        </solo>
+        <solo id="KA07" name="Koldun Kapitan Valachev" full_name="Koldun Kapitan Valachev" qualification="Khador Character Unit Attachment" fa="C" cost="2" completed="true">
+          <basestats name="VALACHEV" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="9" hitpoints="5" officer="true" />
+          <weapons>
+            <melee_weapon name="Saber" pow="4" p_plus_s="9" magical="true" />
+          </weapons>
+          <capacity title="ATTACHMENT [SMALL- OR MEDIUM-BASED MERCENARY]">This attachment can be added to a Small- or Medium-Based Mercenary unit</capacity>
+          <capacity title="GREYLORD">This model is a Greylord model.</capacity>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="● DISBINDING (★ACTION)">Enemy upkeep spells on this model and/or its unit immediately expire.</capacity>
+          <capacity title="● FROSTBITE (★ATTACK)">Frostbite is a RNG SP 8 magic attack. Models hit suffer a POW 12 cold damage roll.</capacity>
+          <capacity title="● ZEPHYR (★ACTION)">Models in this unit that are in formation can immediately advance up to 3". They cannot be targeted by free strikes during this movement.</capacity>
+          <capacity title="RANKING OFFICER">This model is a Ranking Officer. While the model is in play, models in its unit are Khador models instead of Mercenary models.</capacity>
+        </solo>
+        <solo id="KS11" name="Iron Fang Kovnik" full_name="Iron Fang Kovnik" qualification="Khador Solo" fa="2" cost="2" completed="true">
+          <basestats name="KOVNIK" spd="6" str="7" mat="7" rat="4" def="13" arm="15" cmd="10" hitpoints="5" commander="true" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Great Axe" pow="5" p_plus_s="12" reach="true" weapon_master="true" />
+          </weapons>
+          <capacity title="NO SLEEPING ON THE JOB [IRON FANG]">This model and friendly Iron Fang models in its command range cannot be knocked down.</capacity>
+          <capacity title="SHIELD MARCH (★ACTION)">RNG 5. Target friendly Faction unit. If the unit is in range, when it receives the Shield Wall order, the models in the unit gain +2" movement that activation. Shield March lasts for one turn.</capacity>
+          <capacity title="UNYIELDING">While engaging an enemy model, this model gains +2 ARM.</capacity>
+        </solo>
+        <solo id="KS12" name="Kovnik Andrei Malakov" full_name="Kovnik Andrei Malakov" qualification="Khador Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="MALAKOV" spd="6" str="6" mat="6" rat="4" def="14" arm="13" cmd="8" hitpoints="5" journeyman_warcaster="true" focus="4" fearless="true" />
+          <weapons>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Mechanika Blade" pow="5" p_plus_s="11" magical="true" />            
+          </weapons>
+          <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+		  <spell name="REDLINE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup gains +2 STR and SPD and can run, charge, or male power attack slams or tramples without spending focus. When it ends its activation, it suffers d3 damage points.</spell>
+		  <capacity title="JOURNEYMAN WARCASTER">This model is not a warcaster but has the following warcaster special rules: Battlegroup Commander, Control Area, Focus Manipulation, Power Field, and Spellcaster.</capacity>
+          <capacity title="SUCKER!">If this model is directly hit by an enemy ranged attack, choose a friendly living non-incorporeal warrior model within 2" of it to be directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+        </solo>
+        <solo id="KA09" name="Black Dragon Officer &amp; Standard" full_name="Black Dragon Officer &amp; Standard" qualification="Khador Iron Fang Pikemen Unit Attachment" fa="2" cost="2" unit_attachment="true" completed="true">
+          <basestats name="OFFICER" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="10" hitpoints="5" cma="true" officer="true" />
+          <weapons>
+            <melee_weapon name="Blasting Pike" pow="7" p_plus_s="13" reach="true">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="TACTICS: PRECISION STRIKE">Models in this unit gain Precision Strike. (When a model with Precision Strike damages a warjack or warbeast with a melee attack, choose which column or branch suffers the damage.)</capacity>
+          <capacity title="IRON ZEAL">Once per game during its unit's activation, this model can use Iron Zeal. For one round, while in formation, models in this unit gain +4 ARM and cannot become stationary or be knocked down.</capacity>
+          <model id="black_dragon_standard" name="Standard" full_name="Standard">
+            <basestats name="STANDARD BEARER" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" standard_bearer="true" />
+            <capacity title="GRANTED: FEARLESS">While this model is in play, models in its unit gain Fearless.</capacity>
+          </model>
+		  <restricted_to id="KU03" />
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pp_copyright">Circle Orboros, Cygnar, Khador, Legion of Everblight, Mercenaries, Minions, Protectorate of Menoth, Retribution of Scyrah, Skorne, Trollbloods sont des marques déposées de Privateer Press, Inc. Marques utilisées sans permission. Cette application est non-officielle et n\'est pas supportée par Privateer Press.</string>
+    
+    <string name="abomination">Abomination</string>
+    <string name="advance_deployment">Déploiment avancé</string>
+    <string name="arc_node">Arc Node</string>
+    <string name="cra">Attaque à distance combinée</string>
+    <string name="cma">Attaque de mêlée combinée</string>
+    <string name="commander">Commander</string>
+    <string name="construct">Construct</string>
+    <string name="eyeless">Vision aveugle</string>
+    <string name="fearless">Fearless</string>
+    <string name="gunfighter">Gunfighter</string>
+    <string name="incorporeal">Incorporel</string>
+    <string name="jack_marshal">\'Jack Marshal</string>
+    <string name="officer">Officier</string>
+    <string name="pathfinder">Eclaireur</string>
+    <string name="standard_bearer">Standard Bearer</string>
+    <string name="stealth">Stealth</string>
+    <string name="terror">Terreur</string>
+    <string name="tough">Robuste</string>
+    <string name="undead">Mort-vivant</string>
+    <string name="immunity_fire">Immunité : Feu</string>
+    <string name="immunity_corrosion">Immunité : Corrosion</string>
+    <string name="immunity_electricity">Immunité : Electricité</string>
+    <string name="immunity_frost">Immunité : Froid</string>
+    <string name="no_weapon">Pas d\'arme</string>
+    
+    <string name="magical">Arme magique</string>
+    <string name="reach">Reach</string>
+    <string name="open_fist">Open Fist</string>
+    <string name="chain_weapon">Chain Weapon</string>
+    <string name="shield">Shield (+2ARM)</string>
+    <string name="buckler">Buckler (+1ARM)</string>
+    <string name="fire">Fire Damage</string>
+    <string name="continuous_fire">Continuous Fire</string>
+    <string name="corrosion">Corrosion</string>
+    <string name="continuous_corrosion">Continuous Corrosion</string>
+    <string name="weapon_master">Weapon Master</string>
+    <string name="critical_fire">Critical Fire</string>
+    <string name="critical_corrosion">Critical Corrosion</string>
+    <string name="frost">Cold Damage</string>
+    <string name="electricity">Electricity Damage</string>
+    
+    
+    <!-- start screen -->
+    <string name="hello">Hello</string>
+    <string name="app_name">WH Army Creator</string>
+    <string name="app_description">Une applicationd pour Warmachine/Hordes</string>
+    <string name="build_army">Créer armée</string>
+    <string name="load_army">Charger une armée</string>
+    <string name="card_library">Cartes</string>
+    <string name="preferences">Preferences</string>
+    <string name="launch_battle">Batailles</string>
+    <string name="import_data">Importer données</string>
+    <string name="battle_results">Résultats</string>
+    <string name="my_collection">Ma collection</string>
+    <string name="version">Version</string>
+    <string name="donate">Donner</string>
+    
+    <string name="empty"></string>
+
+    <!-- donation -->
+    <string name="small_donation">Petit don</string>
+    <string name="medium_donation">Don moyen</string>
+    <string name="big_donation">Gros don</string>
+    <string name="donation_notice">Un don est votre choix. Cette application est gratuite, vous pouvez donner sans contrepartie : vous n\'achetez rien avec cet argent, à l\'exception de ma gratitude. Ce don ne débloque aucune fonctionalité et ne supprime pas la publicité (et ne fait pas revenir ta femme). Le don est une récompense pour le développeur qui a fait saigner ses doigts sur le clavier ; si vous êtes généreux, cet argent sera bien dépensé (bière, putes, saladier de coke et gurines &#8230;)!</string>
+    <string name="in_app_billing_failure">Echec de contact du composant Google Play billing services</string>
+    <string name="in_app_billing_not_available">Google Play billing service non disponible</string>
+    <string name="thank_you">Don réussi, merci de votre support!</string>
+    <string name="like_whac">Tu aimes WHAC?</string>
+    <string name="would_donate">As tu pensé à filer du pognon?</string>
+    <string name="yes_donate">Ouais, prends mon fric!</string>
+    <string name="no_thanks">Non merci, plus tard peut-être</string>
+    
+    <!-- import files -->
+    <string name="import_files">Importer&#8230;</string>
+    <string name="files_imported">Fichiers importés</string>
+    
+    <string name="choose_faction">Choisir la faction</string>
+    <string name="choose_tier">Choisir le tier</string>
+    <string name="choose_contract">Choisir le contrat</string>
+    <string name="choose_warcaster">Choisir le caster</string>
+    <string name="choose_player2">Choisir la 2ème armée</string>
+    <string name="field_promotion">Promotion</string>
+    
+    
+    <string name="faction_icon">faction icon</string>
+    <string name="title">Example title</string>
+    <string name="description">Example description</string>
+    
+    
+	<!-- caracs -->    
+    <string name="carac_spd">MVT</string>
+    <string name="carac_str">FOR</string>
+    <string name="carac_mat">ACC</string>
+    <string name="carac_rat">ATD</string>
+    <string name="carac_def">DEF</string>
+    <string name="carac_arm">ARM</string>
+    <string name="carac_foc">FOC</string>
+    <string name="carac_cmd">CMD</string>
+    
+    <string name="carac_pow">PUI</string>
+    <string name="carac_p_plus_s">P+F</string>
+    <string name="carac_range">POR</string>
+    <string name="carac_rof">ROF</string>
+    <string name="carac_aoe">ADE</string>
+    
+    <string name="feat">FEAT</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut</string>
+    
+    <string name="unit_name">Unité</string>
+    <string name="field_allowance">FA</string>
+    <string name="base_cost">Coût de base</string>
+    <string name="full_cost">Coût complet</string>
+    
+   	<string name="casters">Casters</string>
+	<string name="units">Unités</string>
+	<string name="solos">Solos</string>
+	<string name="battle_engines">Machines de bataille</string>
+    <string name="objective">Objectifs</string>
+	
+	<string name="example">example</string>
+    
+    
+    <string name="selection_choices">Entrées possibles</string>
+    <string name="selected_army">Armée selectionnée</string>
+    <string name="choose_army">Choose army composition</string>
+    <string name="tier">Tier</string>
+    <string name="tier_level">Niveau de tier</string>
+    <string name="contract_info">Info contrat</string>
+    
+    <string name="no_entry_to_attach">Aucune entrée pour attacher ce modèle</string>
+    <string name="add_unit">Ajout unité : </string>
+    <string name="models">modèles</string>
+    <string name="min">Min. : </string>
+    <string name="max">Max. : </string>
+    
+    <string name="min_size">Min. size</string>
+    <string name="max_size">Max. size</string>
+    
+    <string name="exit_create_army">Vous allez quitter cette page</string>
+    <string name="exit_create_army_confirm">L\'armée n\'a pas été sauvée? Les modifications seront perdues. Quitter?</string>
+    
+    <string name="plus">+</string>
+    <string name="moins">-</string>
+    
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    
+    <string name="edit_army">Editer armées</string>
+    <string name="delete">Supprimer</string>
+    <string name="import_">Importer</string>
+    <string name="duplicate">Dupliquer</string>
+    <string name="rename">Renommer</string>
+    
+    
+    <!-- generic -->
+	<string name="ok">OK</string>    
+    <string name="copy">Copier</string>
+    <string name="export">Exporter</string>
+    <string name="exit">Sortir</string>
+    <string name="cancel">Annuler</string>
+    <string name="more">Plus</string>
+    <string name="clear">Vider</string>
+    <string name="save">Sauver</string>
+    <string name="save_as">Sauver comme</string>
+    <string name="collapse">Réduire</string>
+    <string name="choose_filename">Choisir nom</string>
+    <string name="apply">Appliquer</string>
+    <string name="commit">Valider</string>
+    <string name="heal">Soigner</string>
+    <string name="repair">Réparer</string>
+    <string name="repair_force_field">Répar. ch. de force</string>
+    <string name="search">Rechercher</string>
+    
+    
+    
+    <!-- mini collection -->
+    <string name="owned">Possédé</string>
+    <string name="painted">Peint</string>
+    <string name="in_my_collection">Dans ma collection</string>
+    
+    
+    <string name="entry_title">Modèle</string>
+    <string name="entry_fa">FA : 2/2 5/8PC</string>
+    <string name="entry_cost">8PC</string>
+    
+    
+    <!-- dice launcher -->
+    <string name="dice_stat">Statistiques</string>
+    <string-array name="dice_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+    <string-array name="dice_discard">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+    <string-array name="discard_method">
+        <item>Le plus bas</item>
+        <item>Le plus haut</item>
+    </string-array>
+    
+    <!-- army selection settings -->
+    <string name="choose_army_list">Choix de la liste</string>
+    <string name="choose_army_settings">Choix d\'options pour cette liste</string>
+    <string name="caster_count">Nombre de casters</string>
+    <string name="army_size">Taille d\'armée</string>
+    <string name="army_selection_settings">Réglages</string>
+    <string name="none">Aucun</string>
+    <string name="should_attach">Doit être attaché à &#8230;</string>
+    
+    <string-array name="caster_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+	<string-array name="army_size">
+        <item>15</item>
+        <item>25</item>
+        <item>35</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+    </string-array>
+    
+	<string-array name="use_tiers">
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>	
+
+	<string-array name="use_specialists">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>	
+	
+	<!-- victory conditions & battle results -->
+	<string name="savebattle">Sauver résultat</string>
+	<string name="winner">Gagnant</string>
+	<string name="player2name">2ème joueur</string>
+	<string name="unknown">Inconnu</string>
+	<string name="useClock">Horloge</string>
+	<string name="scenario">Scenario</string>
+	<string name="victoryCondition">Condition de victoire</string>
+	<string name="notes">Notes</string>
+	<string name="datePlayed">Joué le</string>
+	
+	<string name="myArmy">Armée jouée</string>
+	<string name="opponentArmy">Armée opposée</string>
+  
+    <string name="no_results">Aucun résultat enregistré. Pensez à enregistrer les résultats en fin de bataille (menu \"Terminer batailler\")</string>
+	
+	<string name="sort_win">Trier par victoire</string>
+    <string name="sort_date">Trier par  date</string>
+    <string name="sort_opponent">Trier par adversaire</string>
+    <string name="export_file">Exporter fichier</string>
+
+    
+	
+	<string-array name="winner_option">
+        <item>Moi</item>
+        <item>L\'autre type</item>
+    </string-array>
+    
+	<string-array name="use_clock_option">
+        <item>Pas d\'horloge</item>
+        <item>Horloge simple</item>
+        <item>Death clock</item>
+    </string-array>
+    
+    
+    <string-array name="scenario_option">
+        <item>SR2015-1. Destruction</item>
+        <item>SR2015-2. Two fronts</item>
+        <item>SR2015-3. Close Quarters</item>
+        <item>SR2015-4. Fire support</item>
+        <item>SR2015-5. Incoming</item>
+        <item>SR2015-6. Incursion</item>
+        <item>SR2015-7. Outflank</item>
+        <item>SR2015-8. Recon</item>
+        <item>SR2014-1. Destruction</item>
+        <item>SR2014-2. Supply and demand</item>
+        <item>SR2014-3. Balance of power</item>
+        <item>SR2014-4. Process of elimination</item>
+        <item>SR2014-5. Close quarters</item>
+        <item>SR2014-6. Two fronts</item>
+        <item>SR2014-7. Incoming</item>
+        <item>SR2014-8. Rally point</item>
+        <item>SR2014-9. Incursion</item>
+        <item>SR2014-10. Outflank</item>
+        <item>SR2014-11. Into the breach</item>
+        <item>SR2014-12. Fire support</item>
+        <item>Other</item>
+    </string-array>
+	
+ 	<string-array name="victory_option">
+        <item>Assassinat</item>
+        <item>Horloge</item>
+        <item>Scenario</item>
+        <item>Forfait</item>
+    </string-array>
+	
+	
+	<!--  preferences -->
+	<string-array name="card_access_method">
+        <item>simple click</item>
+        <item>long click</item>
+    </string-array>
+
+	<string-array name="card_access_method_values">
+        <item>simple</item>
+        <item>long</item>
+    </string-array>
+	
+			
+	<string name="pref_timer_group">Configuration Horloge</string>
+	<string name="pref_use_timer">Use timer by default</string>
+	<string name="pref_key_timer_minutes_summary">Default number of minutes on the clock = !replace!</string>
+	<string name="pref_key_timer_minutes">Number of minutes per player</string>
+	
+	<string name="pref_list_building_group">List building settings</string>
+	<string name="pref_list_building_army_size">Army default size</string>
+	<string name="pref_list_building_caster_count">Default caster count</string>
+	<string name="pref_list_building_use_specialists">Use specialists</string>
+	
+	<string name="pref_list_building_army_size_summary">Default size is !replace! points</string>
+	<string name="pref_list_building_caster_count_summary">Default caster(s) count is !replace!</string>
+	<string name="pref_list_building_use_specialists_summary">Use specialist = !replace!</string>
+	
+	
+	<string name="pref_list_ergonomy">Ergonomy</string>
+	<string name="pref_list_view_card_click_summary">Access card via single click</string>
+	<string name="pref_list_view_card_fullscreen_summary">Always show card full-screen</string>
+	<string name="pref_list_exit_silently_summary">Always exit silently (no confirmation asked)</string>
+	
+
+	
+    <!--  DeviceListActivity -->
+    <string name="bt_search">Rechercher appareil</string>
+    <string name="bt_discovery_on">Me rendre visible</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect with another device</string>
+    <string name="discoverable">Make me discoverable</string>
+	
+    <!-- export army list -->
+    <string name="export_list">Exporter la liste</string>
+    <string name="export_mail">Envoyer par mail</string>
+    <string name="sendmail">Envoi&#8230;</string>
+    
+	
+    <string name="askDeleteFolder">Cela va supprimer le répertoire et tout son contenu :</string>
+    <string name="confirmDeleteFolder">Supprimer le répertoire?</string>
+    
+    <!-- choose battle -->
+    <string name="startresumeBattle">Démarrer/reprendre bataille</string>
+    <string name="createbattlefrom">Créer depuis liste&#8230;</string>
+    <string name="resumebattle">Reprendre la bataille</string>
+    <string name="askDeleteBattle">Vous allez supprimer la bataille : </string>
+    <string name="confirmdeletebattle">Supprimer la bataille?</string>
+    <string name="creatingbattlefromlist">Créer bataille depuis liste&#8230;</string>
+    <string name="askDeleteList">Vous allez supprimer la liste :</string> 
+    <string name="confirmDeleteList">Supprimer la liste?</string>
+    <string name="noExistingArmy">Aucune liste d\'armée.</string>
+    <string name="noExistingBattle">Aucune bataille.</string>
+    
+    
+    <!-- battle activity -->
+    <string name="battle_exists">Une bataille existe déjà pour cettel liste</string>
+    <string name="recreate_battle">Recréer la bataille de zéro, ou recharger l\'existante?</string>
+    <string name="erase_recreate">Nettoyer et recréer</string>
+    <string name="reuse">Réutiliser</string>
+    <string name="exit_battle_title">Sortir?</string>
+    <string name="exit_battle_confirm">La bataille sera sauvée. Sortir?</string>
+    <string name="player1">Joueur 1</string>
+    <string name="player2">Joueur 2</string>
+    <string name="chronotab">Chrono</string>
+    
+    
+    <!-- dice -->
+    <string name="dice_title">Calcul de stats</string>
+    <string name="launch">Lancer</string>
+    <string name="discard">Ôter</string>
+    <string name="target">Cible</string>
+    <string name="calculate">Calculer</string>
+    <string name="hit_chance">Chance de touche</string>
+    <string name="crit_chance">Chance de critique</string>
+    <string name="lowest">Le plus bas</string>
+    <string name="biggest">Le plus haut</string>
+    
+    
+        <!-- chrono config -->
+    <string name="chrono_title">Choisir la durée initiale du chrono</string>
+    
+    
+    <!-- battle activity menu -->
+    <string name="add_2nd_player">Ajouter 2ème armée</string>
+    <string name="chrono">Configuration du chrono</string>
+    <string name="end_battle">Terminer batailler</string>
+    <string name="battle_bluetooth">Connecter bluetooth</string>
+
+    <!-- battle planner -->
+    <string-array name="battle_actions">
+        <item>Move and action</item>
+        <item>Run</item>
+        <item>Charge</item>
+    </string-array>
+    
+    <string-array name="power_actions">
+        <item>SLAM</item>
+        <item>TRAMPLE</item>
+        <item>THROW</item>
+        <item>PUSH</item>
+        <item>HEADBUTT</item>
+        <item>LOCK</item>
+    </string-array>    
+        <!-- steamroller -->
+    <string name="steamroller">Steamroller</string>
+    <string name="scenariiLibrary">Scénarios Steamroller</string>
+    
+    <!-- card library -->
+    <string name="search_library">Rechercher dans la librairie</string>
+    <string name="card_complete">Données de carte complétées</string>
+    <string name="choose_card">Choix de la carte</string>
+    <string name="faction">Faction</string>
+    <string name="type">Type</string>
+    
+    <!-- save dialog -->
+    <string name="choose_save_destination">Choisir la destination</string>
+    
+        <!-- search_label -->
+    <string name="search_label">Rechercher</string>
+    <string name="search_hint">Rechercher</string>
+    
+    <string name="loading_data">Chargement&#8230;</string>
+    <string name="no_previous_battle">no previous battle</string>
+    <string name="no_previous_army">no previous army</string>
+    
+    <string name="exit_the_application">Vous aller quitter.</string>
+    <string name="deletion_failed">Suppression échouée</string>
+    <string name="sending_army_list_">Envoi liste d\'armée&#8230;</string>
+    <string name="receiving_army_list_">Réception liste d\'armée&#8230;</string>
+    <string name="received_army_list">Armée reçue&#8230;</string>
+    <string name="bluetooth_disconnection">Bluetooth déconnecté!</string>
+    <string name="apply_damages_to">"Saisir dommages pour "</string>
+    <string name="battle_stats_exported_on_sd_card">Statistiques exportées sur la carte SD.</string>
+    <string name="send_mail">Envoi mail&#8230;</string>
+    <string name="delete_the_battle_result">Vous allez supprimer ce résultat.</string>
+    <string name="confirm_delete_result">Supprimer résultat?</string>
+    <string name="_models">" modèles"</string>
+    <string name="import_how_to">Manuel d\'import</string>
+    <string name="starting_import_process_please_wait">Démarrage de l\'import. Patientez</string>
+    <string name="import_successfull">Import réussi</string>
+    <string name="import_failed_make_sure_the_source_file_is_correct">Import échoué - vérifiez le fichier.</string>
+    <string name="you_are_about_to_delete_the_file">Vous allez supprimer le fichier</string>
+    <string name="delete_file">Supprimer fichier?</string>
+    <string name="_models_">" modèles ("</string>
+    <string name="choose_unit_size">Choisir la taille de l\'unité</string>    
+    <string name="warcaster">Warcasters</string>
+    <string name="warlock">Warlocks</string>
+    <string name="warjacks">Warjacks</string>
+    <string name="warbeasts">Warbeasts</string>
+    <string name="unit_attachments">Soutiens d\'unité</string>
+    <string name="weapon_attachments">Attachement d\'arme</string>
+    <string name="colossals">Colossaux</string>
+    <string name="gargantuans">Gargants</string>
+    <string name="other">Autre</string>
+    <string name="mercenaries">Mercenaires</string>
+    
+    <string name="p1_time">"temps P1 = "</string>
+    <string name="p2_time">"temps P2 = "</string>
+    <string name="paused">en pause&#8230;</string>
+    
+    <!-- steamroller -->
+    <string name="choose_this_scenario">Choisir ce scénario</string>
+    <string name="special_rules">Règles spéciales</string>
+    <string name="victory_condition">Conditions de victoire</string>
+    <string name="tactical_tips">Conseils tactiques</string>
+    <string name="no_entries_selected">Aucune entrée sélectionnée</string>
+    
+    <string name="prompt">>_</string>
+    
+    <!-- spells on cards -->
+    <string name="spells">SORTS</string>
+    <string name="cost">COUT</string>
+    <string name="rng">POR</string>
+    <string name="aoe">ADE</string>
+    <string name="pow">PUI</string>
+    <string name="up">ENT</string>
+    <string name="off">OFF</string>
+    
+    <!-- display tier & contracts -->
+    <string name="model_restrictions">Restrictions</string>
+    <string name="requirements">Requis</string>
+    <string name="benefit">Benefice</string>
+    <string name="contract_restrictions">Restrictions du contrat</string>
+    <string name="repair_1">Réparer 1</string>
+    <string name="tier_level_attained">"Tiers atteint au niveau : "</string>
+    
+    <string name="help">Aide</string>
+    
+	
+</resources>

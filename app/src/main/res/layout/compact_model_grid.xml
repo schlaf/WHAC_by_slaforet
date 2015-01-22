@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/texture_beige"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <include
+        android:id="@+id/basestats"
+        android:layout_height="wrap_content"
+        layout="@layout/compact_base_stat_grid" />
+
+    <!-- armes -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" android:baselineAligned="false">
+
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:contentDescription="@string/empty"
+	            android:src="@drawable/focus_6_icon" />
+
+        <LinearLayout
+            android:id="@+id/layout_weapons"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/weapon1"
+                android:layout_height="wrap_content"
+                layout="@layout/compact_melee_weapon" />
+
+            <include
+                android:id="@+id/weapon2"
+                android:layout_height="wrap_content"
+                layout="@layout/compact_ranged_weapon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- damage grid -->
+
+</LinearLayout>

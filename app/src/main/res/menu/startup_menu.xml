@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <item android:id="@+id/menu_army_list"
+          android:showAsAction="ifRoom"
+          android:icon="@drawable/edit_list_icon"
+          android:title="Army selection" />
+    
+    <item android:id="@+id/menu_battle"
+         android:showAsAction="ifRoom"
+        android:icon="@drawable/battle_icon"
+          android:title="Launch battle" /> 
+          
+    
+    <item android:id="@+id/menu_prefs"
+        android:showAsAction="ifRoom"
+          android:icon="@drawable/ic_menu_preferences"
+          android:title="Settings" />
+</menu>

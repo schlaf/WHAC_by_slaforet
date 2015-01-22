@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_zone"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >
+
+    <!-- 
+        <fragment
+            android:id="@+id/cardPaneFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.schlaf.steam.activities.card.ViewCardFragment" >
+        </fragment>
+         -->
+        
+</LinearLayout>

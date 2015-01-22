@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="warmachine.xsd">
+  <armies>
+    <army faction="faction_objectives" name="objectives">
+      <solos>
+        <solo id="objective_2014_standard_ammunition_cache" name="Ammunition Cache" full_name="Ammunition Cache" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Ammunition Cache" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+          <weapons />
+          <capacity title="Firepower">While this objective is not contested by an enemy model, the ranged weapons of friendly models with Light Artillery within 4" of this model gain boosted damage rolls.</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Objective">This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+        </solo>
+        <solo id="objective_2014_standard_critical_asset" name="Critical Asset" full_name="Critical Asset" cost="0" qualification="Steamroller Objective" fa="1"  completed="true">
+          <basestats name="Critical Asset" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+          <weapons />
+          <capacity title="Asset protection">If this model is disabled, you can choose to have a non-disabled friendly model you own within 4" to be destroyed. If another model is destroyed as a result of Asset protection remove 1 damage from this model.</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Inexorable">This model cannot be placed, is immune to continuous effects, and cannot be chosen as a Prey target.</capacity>
+          <capacity title="Objective">This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+        </solo>
+        <solo id="objective_2014_standard_effigy" name="Effigy" full_name="Effigy" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Effigy" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+          <weapons />
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Objective">This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+          <capacity title="Valor">While this objective is not contested by an enemy model, friendly faction solos within 4" of this model gain Inspiration[Faction] for one round. (Friendly Faction models/units in this model's command range never flee and immediately rally.)</capacity>
+        </solo>
+        <solo id="objective_2014_standard_monolith" name="Monolith" full_name="Monolith" cost="0" qualification="Steamroller Objective" fa="2" completed="true">
+          <basestats name="Monolith" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+          <weapons />
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Inexorable">This model cannot be placed, is immune to continuous effects, and cannot be chosen as a Prey target.</capacity>
+          <capacity title="Linked">When another Monolith is damaged this model cannot be damaged for one turn.</capacity>
+          <capacity title="Objective">This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+        </solo>
+        <solo id="objective_2014_standard_supply_cache" name="Supply Cache" full_name="Supply Cache" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Supply Cache" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+          <weapons />
+          <capacity title="Fuel">While this objective is not contested by an enemy model, friendly models beginning their activation within 4" of this model can run or charge without being forced or spending focus.</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Objective">This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+          <capacity title="Priority">Enemy warcasters/warlocks cannot dominate while this objective is within their control area.</capacity>
+        </solo>
+      </solos>
+    </army>
+    <army faction="faction_objectives_sr2015" name="objectives SR 2015">
+      <solos>
+        <solo id="objective_2015_arcane_wonder" name="Arcane Wonder" full_name="Arcane Wonder" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Arcane Wonder" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" construct="true" />
+          <weapons />
+          <capacity title="Wondrous power">While within 4" of this model, friendly models gain Empowered. (Once per turn when a model with Empowered casts an upkeep spell, reduce the COST of the spell by 1.)</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+          <capacity title="Plasma Nimbus">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers a POW 10 electrical damage roll unless this model was destroyed or removed from play by the attack.</capacity>
+        </solo>
+        <solo id="objective_2015_armory" name="Armory" full_name="Armory" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Armory" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+          <weapons />
+          <capacity title="Asset Protection">If this model is disabled, you can choose a non-disabled friendly model that you own within 4" to be destroyed. If another model is destroyed as a result of Asset Protection, remove 1 damage point from this model.</capacity>
+          <capacity title="Firepower">While within 4" of this model, friendly models with light artillery gain boosted ranged attack damage rolls.</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+        </solo>
+        <solo id="objective_2015_bunker" name="Bunker" full_name="Bunker" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Bunker" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+          <weapons />
+          <capacity title="Girded">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Impervious Flesh">When this model is hit by a ranged attack, the attacker rolls one less damage die.</capacity>
+          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+        </solo>
+        <solo id="objective_2015_effigy" name="Effigy of Valor" full_name="Effigy of Valor" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Effigy" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+          <weapons />
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+          <capacity title="Obstruct">This model provides cover as if it were an obstruction.</capacity>
+          <capacity title="Valor">Friendly models/units within 4" of this model cannot flee and immediately rally. Additionally, friendly models/units that begin their activation within 4" of this model gain Fearless for one round.</capacity>
+        </solo>
+        <solo id="objective_2015_fuelcache" name="Fuel Cache" full_name="Fuel Cache" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Fuel Cache" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+          <weapons />
+          <capacity title="Fuel">Friendly models beginning their activation within 4" of this model can run or charge without spending focus or being forced.</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="It Burns!">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers the Fire continuous effect unless this model was destroyed or removed from play by the attack.</capacity>
+          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+        </solo>
+        <solo id="objective_2015_stockpile" name="Stockpile" full_name="Stockpile" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
+          <basestats name="Stockpile" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+          <weapons />
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Lash">This model and friendly warrior models B2B with it cannot be knocked down.</capacity>
+          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+          <capacity title="Up and at'em">After resolving continuous effects during your Maintenance Phase, friendly knocked down models within 4" of this model stand up.</capacity>
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>
+
+

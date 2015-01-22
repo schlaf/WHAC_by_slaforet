@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="warmachine.xsd">
+  <armies>
+    <army faction="faction_cryx" name="cryx">
+      <warcasters>
+          <!--
+        <warcaster id="Cw01" name="Iron Lich Asphyxious" full_name="Iron Lich Asphyxious" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Iron Lich Asphyxious" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster> -->
+        <warcaster id="Cw01" 
+				    name="Asphyxious1" 
+				    generation="P" 			     
+					full_name="Iron Lich Asphyxious" 
+					qualification="cryx warcaster"
+					focus="7" 
+					warjack_points="6" 
+					fa="C"  >
+					<basestats name="Iron Lich Asphyxious" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+					<weapons>
+					</weapons>
+					<feat title=""><![CDATA[
+]]>    		
+					</feat>
+					<full_text><![CDATA[
+]]>                 		
+	           		</full_text>
+				</warcaster>
+        <warcaster id="Cx01" name="Asphyxious2" full_name="Lich Lord Asphyxious" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Lich Lord Asphyxious" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Cz01" name="Asphyxious3" full_name="Asphyxious the Hellbringer &amp; Vociferon" generation="EE" qualification="warcaster" focus="6" warjack_points="4" fa="C">
+          <basestats name="Asphyxious the Hellbringer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+          <model id="Vociferon" full_name="Vociferon" name="Vociferon" qualification="cryx skarlock thrall character solo">
+            <basestats name="Vociferon" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </warcaster>
+<!-- ************************************************** -->
+<!-- ***************** warwitch deneghra ************************* -->
+<!-- ************************************************************* -->
+				<warcaster id="Cw02" 
+				    name="Deneghra1" 
+				    generation="P" 			     
+					full_name="Warwitch Deneghra" 
+					qualification="cryx warcaster"
+					focus="7" 
+					warjack_points="5" 
+					fa="C"  >
+					<basestats name="Deneghra" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+					<weapons>					
+					</weapons>
+					<feat title=""><![CDATA[
+]]>    		
+					</feat>
+				</warcaster>
+        <warcaster id="Cx02" name="Deneghra2" full_name="Wraith Witch Deneghra" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Wraith Witch Deneghra" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Cw03" name="Skarre1" full_name="Pirate Queen Skarre" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Pirate Queen Skarre" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Cx03" name="Skarre2" full_name="Skarre, Queen of the Broken Coast" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Skarre, Queen of the Broken Coast" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="CW04" name="Terminus" full_name="Terminus" generation="P" qualification="warcaster" focus="6" warjack_points="4" fa="C">
+          <basestats name="Terminus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Cw05" name="Goreshade1" full_name="Goreshade the Bastard" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Goreshade the Bastard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Cx05" name="Goreshade2" full_name="Goreshade the Cursed" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Goreshade the Cursed" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Cz05" name="Goreshade3" full_name="Goreshade, Lord of Ruin" generation="EE" qualification="warcaster" focus="7" warjack_points="5" fa="C">
+          <basestats name="Goreshade the Cursed" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat />
+        </warcaster>
+        
+        <warcaster id="CW06" name="Witch Coven" full_name="Witch Coven" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Helleana" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+          <feat />
+          <model id="Morgaen" full_name="Morgaen" name="Morgaen" qualification="">
+            <basestats name="Deryliss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          </model>
+          <model id="deryliss" full_name="Selena" name="Selena" qualification="">
+            <basestats name="Selena" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          </model>
+        </warcaster>
+        <warcaster id="CW07" name="Mortenebra" full_name="Mortenebra" generation="P" qualification="warcaster" focus="6" warjack_points="4" fa="C">
+          <basestats name="Mortenebra" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat />
+          <model id="deryliss" full_name="Deryliss" name="Deryliss" qualification="cryx skarlock thrall character solo">
+            <basestats name="Deryliss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </warcaster>
+        <warcaster id="CW08" name="Venethrax" full_name="Venethrax" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Venethrax" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="CW09" name="Scaverous" full_name="Scaverous" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Scaverous" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="CW10" name="Sturgis" full_name="Sturgis the Corrupted" generation="P" qualification="Cryx Epic Warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Sturgis" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="CJ01" name="Deathripper" full_name="Deathripper"
+					qualification="CRYX BONEJACK" fa="U" cost="4"
+					damage_grid="xxxxxxxxxxxxxx..xx......HHCAAMHCCMMM">
+					<basestats name="Deathripper" spd="0" str="0" mat="0" rat="0"
+						def="0" arm="0" cmd="0"  />
+					<weapons>
+					</weapons>
+				</warjack>		
+        <warjack id="CJ02" name="Defiler" full_name="Defiler"
+					qualification="CRYX BONEJACK" fa="U" cost="5"
+					damage_grid="xxxxxxxxxxxxxx..xx......HHCAAMHCCMMM">
+					<basestats name="Defiler" spd="0" str="0" mat="0" rat="0"
+						def="0" arm="0" cmd="0"  />
+					<weapons>
+					</weapons>
+				</warjack>		
+        <warjack id="CJ03" name="Nightwretch" full_name="Nightwretch" damage_grid="xxxxxxxxxxxxxx..xx......HHCAAMHCCMMM" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="Nightwretch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ04" name="Stalker" full_name="Stalker" damage_grid="xxxxxxxxxxxxx.xx.x.L..R.LLMCRRxMMCCx" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="Stalker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ05" name="Helldiver" full_name="Helldiver" damage_grid="xxxxxxxxxxxxx....x......HCCCCMHHHMMM" cost="3" qualification="Light Warjack" fa="U">
+          <basestats name="Helldiver" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ06" name="Cankerworm" full_name="Cankerworm" damage_grid="xxxxxxxxxxxx............HCCCCMHHHMMM" cost="5" qualification="Light Character Warjack" fa="C">
+          <basestats name="Cankerworm" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ07" name="Slayer" full_name="Slayer"
+					qualification="CRYX HELLJACK" fa="U" cost="6"
+					damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" >
+					<basestats name="Slayer" spd="0" str="0" mat="0" rat="0"
+						def="0" arm="0" cmd="0"  />
+					<weapons>
+					</weapons>
+				</warjack>
+        <warjack id="CJ08" name="Reaper" full_name="Reaper" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="7" qualification="Heavy Warjack" fa="U">
+          <basestats name="Reaper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ09" name="Seether" full_name="Seether" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Seether" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ10" name="Leviathan" full_name="Leviathan" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Leviathan" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ11" name="Harrower" full_name="Harrower" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Warjack" fa="U">
+          <basestats name="Harrower" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ12" name="Deathjack" full_name="Deathjack" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="12" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Deathjack" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ13" name="Nightmare" full_name="Nightmare" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Nightmare" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ14" name="Corruptor" full_name="Corruptor" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="Corruptor" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ15" name="Ripjaw" full_name="Ripjaw" damage_grid="xxxxxxxxxxxxxx..xx......HHCAAMHCCMMM" cost="5" qualification="Light Warjack" fa="U">
+          <basestats name="Ripjaw" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ16" name="Malice" full_name="Malice" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Malice" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ17" name="Scavenger" full_name="Scavenger" damage_grid="xxxxxxxxxxxxx.xx.x......HCCCCMxHHMMx" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="Scavenger" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ18" name="Desecrator" full_name="Desecrator" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Desecrator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ19" name="Erebus" full_name="Erebus" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Erebus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ21" name="Inflictor" full_name="Inflictor" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="Inflictor" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+      </warjacks>
+      <colossals>
+        <colossal id="CJ20" name="Kraken" full_name="Kraken" qualification="CRYX COLOSSAL" fa="2" cost="19" damage_grid_left="xxxx..xxx.......SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx...xxxSS....CSRR..CCCCRRMMMMCR" >
+          <basestats name="Kraken" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="CE01" name="Wraith Engine" full_name="Wraith Engine" qualification="CRYX BATTLE ENGINE" fa="2" cost="9" >
+          <basestats name="Wraith Engine" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons>
+          </weapons>
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="CU01" name="Bane Thralls" full_name="Bane Thralls" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="3" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="CA04" name="Bane Thrall Officer &amp; Standard" full_name="Bane Thrall Officer &amp; Standard" fa="1" cost="3" qualification="Unit attachment">
+            <model id="Bane Thrall Officer">
+              <basestats name="Bane Thrall Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Bane Thrall Standard">
+              <basestats name="Bane Thrall Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="CU02" name="Bile Thralls" full_name="Bile Thralls" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="3">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="CU03" name="Mechanithralls" full_name="Mechanithralls" base_cost="3" baseCount="6" full_cost="5" fullCount="10" qualification="Unit" fa="3" has_weapon_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <weapon_attachment id="CA02" name="Brute Thrall" full_name="Brute Thrall" fa="3" cost="1" qualification="Weapon attachment" max_wa="3">
+            <model id="Brute Thrall">
+              <basestats name="Brute Thrall" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="CU04" name="Satyxis Raiders" full_name="Satyxis Raiders" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="CA03" name="Satyxis Raider Sea Witch" full_name="Satyxis Raider Sea Witch" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Satyxis Raider Sea Witch">
+              <basestats name="Satyxis Raider Sea Witch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="CU05" name="Revenant Crew of the Atramentous" full_name="Revenant Crew of the Atramentous" base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Unit" fa="2" has_weapon_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <weapon_attachment id="CA06" name="Revenant Crew Riflemen" full_name="Revenant Crew Riflemen" fa="2" cost="1" qualification="Weapon attachment" max_wa="3">
+            <model id="Riflemen">
+              <basestats name="Riflemen" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="CU06" name="Bane Knights" full_name="Bane Knights" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="3">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="CU07" name="Black Ogrun Boarding Party" full_name="Black Ogrun Boarding Party" base_cost="4" baseCount="3" full_cost="6" fullCount="5" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="CU08" name="Soulhunters" full_name="Soulhunters" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+        <unit id="CU09" name="Blackbane's Ghost Raiders" full_name="Blackbane's Ghost Raiders" base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Character Unit" fa="C">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <model id="Blackbane">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </unit>
+        <unit id="CU10" name="Bloodgorgers" full_name="Bloodgorgers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="CU11" name="Revenant Cannon Crew" full_name="Revenant Cannon Crew" base_cost="3" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="CU12" name="The Withershadow Combine" full_name="The Withershadow Combine" base_cost="5" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+          <basestats name="Maelovus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+          <weapons />
+          <model id="Admonia">
+            <basestats name="Admonia" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+          <model id="Tremulus">
+            <basestats name="Tremulus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </unit>
+        <unit id="CU13" name="Cephalyx Mind Slaver &amp; Drudges" full_name="Cephalyx Mind Slaver &amp; Drudges" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2">
+          <basestats name="Mind Slaver" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <model id="Mind Slaver">
+            <basestats name="Drudges" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          </model>
+        </unit>
+        <unit id="CU14" name="Cephalyx Overlords" full_name="Cephalyx Overlords" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="1">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+        <unit id="CU15" name="Necrosurgeon &amp; Stitch Thralls" full_name="Necrosurgeon &amp; Stitch Thralls" base_cost="2" baseCount="4" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="CU16" name="Satyxis Blood Witches" full_name="Satyxis Blood Witches" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="CA05" name="Satyxis Blood Hag" full_name="Satyxis Blood Hag" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Satyxis Blood Hag">
+              <basestats name="Satyxis Blood Hag" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="CU17" name="Bane Riders" full_name="Bane Riders" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+          <weapons />
+        </unit>
+        
+      </units>
+      <solos>
+        <solo id="CS01" name="Skarlock Thrall" full_name="Skarlock Thrall" cost="2" qualification="Solo" fa="1" warcaster_attachment="true">
+          <basestats name="Skarlock Thrall" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="CS02" name="Bloat Thrall" full_name="Bloat Thrall" cost="2" qualification="Solo" fa="2">
+          <basestats name="Bloat Thrall" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </solo>
+        <solo id="CS03" name="Necrotech" full_name="Necrotech" cost="1" qualification="Solo" fa="3">
+          <basestats name="Necrotech" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="CS04" name="Scrap Thrall" full_name="Scrap Thrall" cost="1" qualification="Solo" fa="3">
+          <basestats name="Scrap Thrall" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </solo>
+        <solo id="CS05" name="Machine Wraith" full_name="Machine Wraith" cost="1" qualification="Solo" fa="3">
+          <basestats name="Machine Wraith" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </solo>
+        <solo id="CS06" name="Pistol Wraith" full_name="Pistol Wraith" cost="3" qualification="Solo" fa="2">
+          <basestats name="Pistol Wraith" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="CS07" name="Bane Lord Tartarus" full_name="Bane Lord Tartarus" cost="4" qualification="Character Solo" fa="C">
+          <basestats name="Bane Lord Tartarus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </solo>
+        <solo id="CS08" name="Captain Rengrave" full_name="Captain Rengrave" cost="2" qualification="Character Solo" fa="C">
+          <basestats name="Captain Rengrave" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="CS09" name="Darragh Wrathe" full_name="Darragh Wrathe" cost="4" qualification="Character Solo" fa="C">
+          <basestats name="Darragh Wrathe" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+          <weapons />
+        </solo>
+        <solo id="CS10" name="General Gerlak Slaughterborn" full_name="General Gerlak Slaughterborn" cost="3" qualification="Character Solo" fa="C">
+          <basestats name="General Gerlak Slaughterborn" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </solo>
+        <solo id="CS11" name="Warwitch Siren" full_name="Warwitch Siren" cost="2" qualification="Solo" fa="2">
+          <basestats name="Warwitch Siren" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="CS12" name="Satyxis Raider Captain" full_name="Satyxis Raider Captain" cost="2" qualification="Solo" fa="2">
+          <basestats name="Satyxis Raider Captain" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="CS13" name="Iron Lich Overseer" full_name="Iron Lich Overseer" cost="3" qualification="Solo" fa="2">
+          <basestats name="Iron Lich Overseer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" jack_marshal="true"/>
+          <weapons />
+        </solo>
+        <solo id="CS14" name="Aiakos" full_name="Aiakos, Scourge of meredius" cost="3" qualification="Solo" fa="C">
+          <basestats name="Aiakos" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" journeyman_warcaster="true" focus="4"/>
+          <weapons />
+        </solo>
+        <solo id="CS15" name="Skarlock Commander" full_name="Skarlock Commander" cost="1" qualification="Unit Attachment" fa="2" unit_attachment="true">
+          <basestats name="Skarlock Commander" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+          <weapons />
+          <restricted_to id="CU02"></restricted_to>
+          <restricted_to id="CU03"></restricted_to>
+        </solo>
+        
+      </solos>
+    </army>
+  </armies>
+</ruleset>
+
+

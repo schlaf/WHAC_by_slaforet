@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentDamage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_keyboard_key_fulltrans_normal"
+        android:gravity="center"
+        android:minHeight="@dimen/component_standard_size"
+        android:padding="0dp"
+        android:text="@string/example"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</FrameLayout>

@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tiers name="Magnus1 - Most Wanted" casterId="Mw01" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="Mw01" />
+        <entry id="MJ01" />
+        <entry id="MJ02" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ11" />
+        <entry id="MJ12" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ18" />
+        <entry id="PU13_mercs" />
+        <!-- idrians -->
+        <entry id="PA03_mercs" />
+        <!-- idrians UA-->
+        <entry id="MU08" />
+        <entry id="MU15" />
+        <entry id="MU18" />
+        <entry id="MU01" />
+        <entry id="MU04" />
+        <entry id="YU02_mercs" />
+        <!-- long gunners -->
+        <entry id="YA07_mercs" />
+        <!-- long gunners attachment-->
+        <entry id="YU05_mercs" />
+        <!--  trencher -->
+        <entry id="YA03_mercs" />
+        <!--  trencher UA-->
+        <entry id="YA04_mercs" />
+        <!--  trencher WA-->
+        <entry id="MS03" />
+        <entry id="MS06" />
+        <entry id="MS15" />
+        <entry id="IS06_mercs" />
+        <!-- saxon -->
+        <entry id="MS16" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="MJ01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(MU08 MU15 MU18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU08" />
+          <entry id="MU15" />
+          <entry id="MU18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(MJ01 MJ02 MJ03 MJ04 MJ09 MJ10 MJ11 MJ12 MJ13 MJ16 MJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MJ01" />
+          <entry id="MJ02" />
+          <entry id="MJ03" />
+          <entry id="MJ04" />
+          <entry id="MJ09" />
+          <entry id="MJ10" />
+          <entry id="MJ11" />
+          <entry id="MJ12" />
+          <entry id="MJ13" />
+          <entry id="MJ16" />
+          <entry id="MJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(MJ01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MJ01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Magnus2 - Magnus' Agenda" casterId="Mx01" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="Mx01" />
+        <entry id="MJ01" />
+        <entry id="MJ02" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ11" />
+        <entry id="MJ12" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ18" />
+        <entry id="PU13_mercs" />
+        <entry id="PA03_mercs" />
+        <entry id="MU08" />
+        <entry id="MU15" />
+        <entry id="MU18" />
+        <entry id="MU01" />
+        <entry id="MU04" />
+        <entry id="YU02_mercs" />
+        <!-- long gunners -->
+        <entry id="YA07_mercs" />
+        <!-- long gunners attachment-->
+        <entry id="YU05_mercs" />
+        <!--  trencher -->
+        <entry id="YA03_mercs" />
+        <!--  trencher UA-->
+        <entry id="YA04_mercs" />
+        <!--  trencher WA-->
+        <entry id="MS03" />
+        <entry id="MS06" />
+        <entry id="MS15" />
+        <entry id="IS06_mercs" />
+        <entry id="MS16" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="MJ09" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  MU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(PU13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU13_mercs" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(MJ09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MJ09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Magnus2 - Bad Seeds (NQ36)" casterId="Mx01" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="Mx01" />
+        <entry id="MJ01" />
+        <entry id="MJ02" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ16" />
+        <entry id="MJ11" />
+        <entry id="YJ01_mercs" />
+        <entry id="YJ03_mercs" />
+        <entry id="YJ07_mercs" />
+        <entry id="YU08_mercs" />
+        <entry id="YA05_mercs" />
+        <entry id="YU13_mercs" />
+        <entry id="MS06" />
+        <entry id="MS15" />
+        <entry id="IS06_mercs" />
+        <entry id="YU05_mercs" />
+        <entry id="YA03_mercs" />
+        <entry id="YA04_mercs" />
+        <entry id="YU06_mercs" />
+        <entry id="YU07_mercs" />
+        <entry id="YU14_mercs" />
+        <entry id="YA08_mercs" />
+        <entry id="YS08_mercs" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  YU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU13_mercs" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect/>
+        <freeModel>
+          <entry id="MS06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  MS15|3(MJ01 MJ02 MJ09 MJ10 MJ16 MJ11 YJ01 YJ03 Yj07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MS15" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MJ01" />
+          <entry id="MJ02" />
+          <entry id="MJ09" />
+          <entry id="MJ10" />
+          <entry id="MJ16" />
+          <entry id="MJ11" />
+          <entry id="YJ01_mercs" />
+          <entry id="YJ03_mercs" />
+          <entry id="YJ07_mercs" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect/>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  IS06 Yu08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IS06_mercs" />
+          <entry id="YU08_mercs" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect/>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Gorten - The Hammerfall Irregulars" casterId="MW02" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW02" />
+        <entry id="MJ05" />
+        <entry id="MJ06" />
+        <entry id="MJ07" />
+        <entry id="MJ08" />
+        <entry id="MJ14" />
+        <entry id="MJ15" />
+        <entry id="MU02" />
+        <entry id="MU06" />
+        <entry id="MA03" />
+        <entry id="MU07" />
+        <entry id="MU17" />
+        <entry id="MU19" />
+        <entry id="MU20" />
+        <entry id="IW01_mercs" />
+        <entry id="Lug_mercs" />
+        <entry id="MS05" />
+        <entry id="MS12" />
+        <entry id="MS17" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="MU06" />
+        <alterFA bonus="1" entryId="MS05">
+          <forEach>
+            <!-- MU06-U MS05-+1-MU02 MS05-+1-MU06 MS05-+1-MU07 MS05-+1-MU17 MS05-+1-MU20 -->
+            <entry id="MU02" />
+            <entry id="MU06" />
+            <entry id="MU07" />
+            <entry id="MU17" />
+            <entry id="MU20" />
+          </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2MU06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="MA03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have in battlegroup  4(MJ05 MJ06 MJ07 MJ08 MJ14 MJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="4">
+          <entry id="MJ05" />
+          <entry id="MJ06" />
+          <entry id="MJ07" />
+          <entry id="MJ08" />
+          <entry id="MJ14" />
+          <entry id="MJ15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  4(MU02 MU06 MU07 MU17 MU19 MU20)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="MU02" />
+          <entry id="MU06" />
+          <entry id="MU07" />
+          <entry id="MU17" />
+          <entry id="MU19" />
+          <entry id="MU20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Durgen - Shock and Awe" casterId="MW03" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW03" />
+        <entry id="MJ07" />
+        <entry id="MJ08" />
+        <entry id="MJ14" />
+        <entry id="MJ15" />
+        <entry id="MU02" />
+        <entry id="MU06" />
+        <entry id="MA03" />
+        <entry id="MU07" />
+        <entry id="MU17" />
+        <entry id="MU19" />
+        <entry id="MS05" />
+        <entry id="IS03_mercs" />
+        <entry id="MS17" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="MU17" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2MU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  MU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(MJ07 MJ08 MJ14 MJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MJ07" />
+          <entry id="MJ08" />
+          <entry id="MJ14" />
+          <entry id="MJ15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Ashlynn - Viva la resistance" casterId="MW04" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW04" />
+        <entry id="MJ02" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ11" />
+        <entry id="MJ12" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ18" />
+        <entry id="YU12_mercs" />
+        <entry id="YA06_mercs" />
+        <entry id="MU03" />
+        <entry id="MU16" />
+        <entry id="YU01_mercs" />
+        <entry id="YA01_mercs" />
+        <entry id="MS14" />
+        <entry id="MS03" />
+        <entry id="MS18" />
+        <entry id="MS21" />
+        <entry id="MS04" />
+        <entry id="MS20" />
+        <entry id="MS19" />
+        <entry id="YS02_mercs" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  MS14 MS19-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MS14" />
+          <entry id="MS19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(MJ03)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MJ03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YU01_mercs)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU01_mercs"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YA01_mercs" />
+        </freeModel>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Fiona - Devil to Pay" casterId="MW05" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW05" />
+        <entry id="MJ02" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ11" />
+        <entry id="MJ12" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ18" />
+        <entry id="MU12" />
+        <entry id="MU13" />
+        <entry id="MA01" />
+        <entry id="MA02" />
+        <entry id="MU04" />
+        <entry id="MS10" />
+        <entry id="MS06" />
+        <entry id="MS22" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2MU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  4(MU12 MU13 MU04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="MU12" />
+          <entry id="MU13" />
+          <entry id="MU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(MJ04 MJ12 MJ13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MJ04" />
+          <entry id="MJ12" />
+          <entry id="MJ13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Bartolo - Rough Seas" casterId="MW06" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW06" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ10" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ18" />
+        <entry id="MU12" />
+        <entry id="MU13" />
+        <entry id="MA01" />
+        <entry id="MA02" />
+        <entry id="MU14" />
+        <entry id="MS07" />
+        <entry id="MS09" />
+        <entry id="MS10" />
+        <entry id="MS13" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="MU14" />
+        <alterFA bonus="1" entryId="MU14" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2MU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  MS13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MS13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(MJ10 MJ13 MJ16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MJ10" />
+          <entry id="MJ13" />
+          <entry id="MJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Shae - A Pirate's Life" casterId="MW07" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW07" />
+        <entry id="MJ02" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ11" />
+        <entry id="MJ12" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ18" />
+        <entry id="MU10" />
+        <entry id="MU11" />
+        <entry id="MU12" />
+        <entry id="MU13" />
+        <entry id="MA01" />
+        <entry id="MA02" />
+        <entry id="MU14" />
+        <entry id="MS08" />
+        <entry id="MS09" />
+        <entry id="MS10" />
+        <entry id="MS11" />
+        <entry id="MS12" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="MS08" />
+        <alterCost bonus="1" entryId="MS09" />
+        <alterCost bonus="1" entryId="MS10" />
+        <alterCost bonus="1" entryId="MS11" />
+        <alterCost bonus="1" entryId="MS12" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  MA01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MA01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  MU10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MU10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(MJ02 MJ03 MJ04 MJ09 MJ10 MJ11 MJ12 MJ13 MJ16 MJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MJ02" />
+          <entry id="MJ03" />
+          <entry id="MJ04" />
+          <entry id="MJ09" />
+          <entry id="MJ10" />
+          <entry id="MJ11" />
+          <entry id="MJ12" />
+          <entry id="MJ13" />
+          <entry id="MJ16" />
+          <entry id="MJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="MacBain - Soldiers of Fortune" casterId="MW08" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW08" />
+        <entry id="MJ02" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ11" />
+        <entry id="MJ12" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ18" />
+        <entry id="MJ05" />
+        <entry id="MJ06" />
+        <entry id="MJ07" />
+        <entry id="MJ08" />
+        <entry id="MJ14" />
+        <entry id="MJ15" />
+        <entry id="MU08" />
+        <entry id="MU15" />
+        <entry id="MU18" />
+        <entry id="MU09" />
+        <entry id="MU03" />
+        <entry id="MU04" />
+        <entry id="MU16" />
+        <entry id="IS01_mercs" />
+        <entry id="MS03" />
+        <entry id="MS06" />
+        <entry id="MS15" />
+        <entry id="MS04" />
+        <entry id="MS20" />
+        <entry id="MS16" />
+        <entry id="MS19" />
+        <entry id="MS17" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="MU09" />
+        <alterCost bonus="1" entryId="MU03" />
+        <alterCost bonus="1" entryId="MU04" />
+        <alterCost bonus="1" entryId="MU16" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2MU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  4(IS01 MS03 MS06 MS15 MS04 MS20 MS16 MS19 MS17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="IS01_mercs" />
+          <entry id="MS03" />
+          <entry id="MS06" />
+          <entry id="MS15" />
+          <entry id="MS04" />
+          <entry id="MS20" />
+          <entry id="MS16" />
+          <entry id="MS19" />
+          <entry id="MS17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(MJ11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Damiano - Free Company" casterId="MW09" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW09" />
+        <entry id="MJ02" />
+        <entry id="MJ03" />
+        <entry id="MJ04" />
+        <entry id="MJ09" />
+        <entry id="MJ10" />
+        <entry id="MJ11" />
+        <entry id="MJ12" />
+        <entry id="MJ13" />
+        <entry id="MJ16" />
+        <entry id="MJ17" />
+        <entry id="MJ18" />
+        <entry id="MU08" />
+        <entry id="MU15" />
+        <entry id="MU18" />
+        <entry id="MS16" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="MU15" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3(MU08 MU15 MU18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MU08" />
+          <entry id="MU15" />
+          <entry id="MU18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  MS16-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MS16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  MJ17-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Ossrum - State of War" casterId="MW10" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW10" />
+        <entry id="MJ05" />
+        <entry id="MJ06" />
+        <entry id="MJ07" />
+        <entry id="MJ08" />
+        <entry id="MJ14" />
+        <entry id="MJ15" />
+        <entry id="MJ19" />
+        <entry id="MU02" />
+        <entry id="MU06" />
+        <entry id="MU07" />
+        <entry id="MU17" />
+        <entry id="MU20" />
+        <entry id="MA03" />
+        <entry id="MU19" />
+        <entry id="MS05" />
+        <entry id="MS12" />
+        <entry id="MS17" />
+        <entry id="IW01_mercs" />
+        <entry id="Lug_mercs" />
+      </only>
+      <benefits>
+        <ingameeffect>One unit in this army gains Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(MU02 MU06 MU17 MU19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU02" />
+          <entry id="MU06" />
+          <entry id="MU17" />
+          <entry id="MU19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For every two units in the army, place one trench template anywhere completely within 20" of the back edge of Ossrum' s deployment zone after terrain has been placed but before either pJayer deploys his army. Trench templates cannot be placed within 3" of a terrain feature but can be placed within 3" of each other.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(MS05 MS12 MS17 IW01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MS05" />
+          <entry id="MS12" />
+          <entry id="MS17" />
+          <entry id="IW01_mercs" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Ossrum's upkeep spells. These spells and their targets must be declared before either player sets up models. Ossrum does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(MJ05 MJ06 MJ07 MJ08 MJ14 MJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MJ05" />
+          <entry id="MJ06" />
+          <entry id="MJ07" />
+          <entry id="MJ08" />
+          <entry id="MJ14" />
+          <entry id="MJ15" />
+          <entry id="MJ19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  
+  <!--  Will_of_Darkness  -->
+    <tiers name="Exulon - Will of Darkness" casterId="MW11" faction="faction_mercs">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Mercenary non-character monstrosities</models>
+          </type>
+          <type type="UNITS">
+              <models>Cephalyx units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Cephalyx solos</models>
+          </type>
+      </availableModels>        
+        <level number="1">
+          <only>
+              <!-- casters -->
+              <entry id="MW11" />
+              <!-- monstruosities -->
+              <entry id="MM01" />
+              <entry id="MM02" />
+              <entry id="MM03" />
+              
+              <!-- units -->
+              <entry id="CU13_mercs"/>
+              <entry id="CU14_mercs"/>
+              <entry id="CU15_mercs"/>
+              
+              <!-- solos & UA -->
+              <entry id="MS28"/>
+              <entry id="MS27"/>
+              
+              <!-- non cephalyx units -->
+              <entry id="MU09"/>
+              <entry id="MU04"/>
+              <entry id="MU05"/>
+              <entry id="MU16"/>
+              <entry id="MU01"/>
+              <entry id="MU06"/>
+              <entry id="MU02"/>
+              <entry id="MU17"/>
+              <entry id="MU07"/>
+              <entry id="MU11"/>
+              <entry id="MU19"/>
+              <entry id="MU12"/>
+              <entry id="MU03"/>
+              <entry id="MU13"/>
+              <entry id="MU14"/>
+              <entry id="MU08"/>
+              <entry id="MU18"/>
+              <entry id="MU20"/>
+              
+          </only>
+          <benefits>
+              <ingameeffect label="">Additionally, the army can include up to one non-Cephalyx Mercenary unit if that unit includes a Cephalyx Dominator UA.</ingameeffect>
+              <alterFA entryId="CU14_mercs" bonus="512"/>
+          </benefits>
+        </level>
+        <level number="2">
+            <must_have>
+                <entrygroup minNumber="1">
+                    <entry id="CU13_mercs"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Cephalyx Mind Slaver &amp; Drudge units gain Ambush. (You can choose not to deploy a unit with Ambush at the start of the game. If it is not deployed normally, you can put it into play at the end of any of your Control Phases after your first turn. When you do, choose any table edge except the back of your opponent’s deployment zone. Place the unit with Ambush within 3" of the chosen table edge.)</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <must_have>
+                <entrygroup minNumber="4">
+                  <entry id="CU13_mercs"/>
+                  <entry id="CU14_mercs"/>
+                  <entry id="CU15_mercs"/>                    
+                  <entry id="MU09"/>
+                  <entry id="MU04"/>
+                  <entry id="MU05"/>
+                  <entry id="MU16"/>
+                  <entry id="MU01"/>
+                  <entry id="MU06"/>
+                  <entry id="MU02"/>
+                  <entry id="MU17"/>
+                  <entry id="MU07"/>
+                  <entry id="MU11"/>
+                  <entry id="MU19"/>
+                  <entry id="MU12"/>
+                  <entry id="MU03"/>
+                  <entry id="MU13"/>
+                  <entry id="MU14"/>
+                  <entry id="MU08"/>
+                  <entry id="MU18"/>
+                  <entry id="MU20"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <!-- 4+ units = 1 agitator free -->
+                <ingameeffect></ingameeffect>
+                <freeModel>
+                    <entry id="MS27"/>
+                </freeModel>
+            </benefits>
+        </level>
+        <level number="4">
+            <must_have>
+                <entrygroup minNumber="2">
+                  <entry id="CU14_mercs"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <!-- 1 more dominator, 1 more merc unit available -->
+                <ingameeffect>The army can include up to one additional non-Cephalyx Mercenary unit if that unit includes a Cephalyx Dominator UA.</ingameeffect>
+                <alterFA entryId="MS28" bonus="1"></alterFA>
+            </benefits>
+        </level>
+    </tiers>     
+  
+</tierslist>

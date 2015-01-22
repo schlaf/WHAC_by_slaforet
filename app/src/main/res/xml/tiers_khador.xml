@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+
+"KJ01" name="Destroyer"
+"KJ02" name="Juggernaut"
+"KJ03" name="Marauder"
+"KJ04" name="Berserker"
+"KJ05" name="Devastator"
+"KJ06" name="Kodiak"
+"KJ07" name="Behemoth" character
+"KJ08" name="Spriggan"
+"KJ09" name="Beast-09" character
+"KJ10" name="Drago" character
+"KJ11" name="Decimator"
+"KJ12" name="Torch" character
+"KJ13" name="Demolisher"
+"KJ14" name="Black Ivan" character
+"KJ16" name="Grolar"
+
+"KJ15" name="Conquest"
+
+
+ -->
+
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="Sorscha1 - Mechanized Infantry" casterId="Kw02" faction="faction_khador">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Beast 09</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Widowmakers, Winter Guard units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Widowmaker Marksmen, Winter Guard solos</models>
+            </type>
+      </availableModels>
+      
+    <level number="1">
+      <only>
+        <entry id="Kw02" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ09" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU05" />
+        <entry id="KU06" />
+        <entry id="KA02" />
+        <entry id="KA03" />
+        <entry id="KU17" />
+        <entry id="KU09" />
+        <entry id="KU13" />
+        <entry id="KS10" />
+        <entry id="KS03" />
+      </only>
+      <benefits>
+        <ingameeffect>Up to one heavy warjack gains Advance Move for each Battle Mechanik unit in the army.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3(KU06 KU17 KU09 KU13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KU06" />
+          <entry id="KU17" />
+          <entry id="KU09" />
+          <entry id="KU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect/>
+        <freeModel>
+          <entry id="KS03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  KJ09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KJ09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ09 KJ11 KJ13 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ08" />
+          <entry id="KJ09" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ15" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Sorscha2 - 5th Border Legion" casterId="Kx02" faction="faction_khador">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Beast 09</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Widowmakers, Man-o-war units, Winter Guard units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Manhunters, Widowmaker Marksmen, Man-o-war solos, Winter Guard solos</models>
+            </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="Kx02" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ09" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU05" />
+        <entry id="KU04" />
+        <entry id="KU12" />
+        <entry id="KU16" />
+        <entry id="KU06" />
+        <entry id="KA02" />
+        <entry id="KA03" />
+        <entry id="KU17" />
+        <entry id="KU09" />
+        <entry id="KU13" />
+        <entry id="KS01" />
+        <entry id="KS02" />
+        <entry id="KS03" />
+        <entry id="KS04" />
+        <entry id="KS10" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KJ06" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2KU06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For every two units in the army, place one 4" AOE forest anywhere completely within 20" of the back edge of Sorcha's deployment zone after terrain has been placed but before either player deploys his army. Forests cannot be placed within 3" of another terrain feature.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(KU04 KU12 KU16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU04" />
+          <entry id="KU12" />
+          <entry id="KU16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Man-o-war units gain Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2KJ06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Model/units in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Sorscha2 - Full Assault (NQ43)" casterId="Kx02" faction="faction_khador">
+      
+<availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks with ranged attacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Winter Guard units, Iron Fang Ulhans</models>
+            </type>
+            <type type="SOLOS">
+                <models>Manhunters, Widowmaker Marksmen</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Gun Carriage</models>
+            </type>
+      </availableModels>            
+    <level number="1">
+      <only>
+        <entry id="Kx02" />
+        <entry id="KJ01" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16"/>
+        <entry id="KU01" />
+        <entry id="KU06" />
+        <entry id="KU09" />
+        <entry id="KU13" />
+        <entry id="KU17" />
+        <entry id="KU11" />
+        <entry id="KA02" />
+        <entry id="KA03" />
+        <entry id="KA08" />
+        <entry id="KE01" />
+        <entry id="KS01" />
+        <entry id="KS10" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="KU09" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have in battlegroup  KJ15-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KJ15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KJ01" />
+        <alterCost bonus="1" entryId="KJ08" />
+        <alterCost bonus="1" entryId="KJ11" />
+        <alterCost bonus="1" entryId="KJ13" />
+        <alterCost bonus="1" entryId="KJ15" />
+        <alterCost bonus="1" entryId="KJ16" />
+        
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(KU09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Mortars can make ranged attacks after making a full advance during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(KJ01 KJ08 KJ11 KJ13 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ01" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ15" />
+          <entry id="KJ16"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Each warjack is allocated a free focus point in your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Butcher1 - Heart of Darkness" casterId="Kw01" faction="faction_khador">
+<availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Kossite Woodsmen, Widowmakers, Man-o-war units, Winter Guard infantry</models>
+            </type>
+            <type type="SOLOS">
+                <models>Manhunters, War dog, Widowmaker Marksmen, Yuri the Axe, Man-o-War solos</models>
+            </type>
+      </availableModels>                  
+    <level number="1">
+      <only>
+        <entry id="Kw01" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU08" />
+        <entry id="KU05" />
+        <entry id="KU04" />
+        <entry id="KU12" />
+        <entry id="KU16" />
+        <entry id="KU06" />
+        <entry id="KA02" />
+        <entry id="KA03" />
+        <entry id="KS01" />
+        <entry id="KS08" />
+        <entry id="KS10" />
+        <entry id="KS09" />
+        <entry id="KS02" />
+        <entry id="KS04" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="KS01">
+            <forEach>
+                <entry id="KU08" />
+                <entry id="KU05" />
+                <entry id="KU04" />
+                <entry id="KU12" />
+                <entry id="KU16" />
+                <entry id="KU06" />
+            </forEach>
+        </alterFA>
+        <alterCost entryId="KU04" bonus="1"/>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(KU04 KU12 KU16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU04" />
+          <entry id="KU12" />
+          <entry id="KU16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Man-o-war units gain +2SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  4(KS01 KS08 KS10 KS09 KS02 KS04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="KS01" />
+          <entry id="KS08" />
+          <entry id="KS10" />
+          <entry id="KS09" />
+          <entry id="KS02" />
+          <entry id="KS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You can redeploy solos after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(KJ02 KJ03 KJ04 KJ05 KJ06)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warjacks in the Butcher's battlegroup without ranged weapons gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Butcher1 - Claws of the Dragon (NQ41)" casterId="Kw01" faction="faction_khador">
+  <!-- 
+  WAR JACKS: Khador non-character warjacks without ranged weapons.
+UNITS: Battle Mechaniks, Iron Fang units
+SOLOS: Iron Fang solos, Manhunter, War Dog
+
+TIER1
+Requirements: The army can include only the models listed above.
+Benefit: Iron Fang Pikemen units with Black Dragon Officer & Standard unit attachments gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.) Additionally increase the FA of Iron Fang Pikemen units by 1.
+TIER 2
+Requirements: The army includes a War Dog.
+Benefit: You gain +1 on your starting game roll.
+TIER 3
+Requirements: The army includes two or more Iron Fang Pikemen units.
+Benefit: Add a Black Dragon Officer & Standard unit attachment to one Iron Fang Pikemen unit free of cost This unit attachment ignores FA restrictions.
+TIER 4
+Requirements: The Butcher's battlegroup includes two or more warjacks.
+Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)
+   -->
+    <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks without ranged weapons.</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Iron Fang units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Iron Fang solos, Manhunter, War Dog</models>
+            </type>
+      </availableModels>       
+    <level number="1">
+      <only>
+        <entry id="Kw01" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KU01" />
+        <entry id="KU03" />
+        <entry id="KU11" />
+        <entry id="KA01" />
+        <entry id="KA09" />
+        <entry id="KS01" />
+        <entry id="KS08" />
+        <entry id="KJ02" />
+        <entry id="KU14" />
+        <entry id="KS07" />
+        <entry id="KS11"/>
+      </only>
+      <benefits>
+        <ingameeffect>Iron Fang Pikemen units with Black Dragon Officer &amp; Standard unit attachments gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+        <alterFA bonus="1" entryId="KU03" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  KS08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting game roll.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(KU03)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="KA09" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(KJ02 KJ03 KJ04 KJ05 KJ06)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models in the Butcher's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Butcher2 - Mad Dogs of War" casterId="Kx01" faction="faction_khador">
+      
+    <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Doom Reavers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Manhunters, War dog, Fenris, Yuri the Axe, Doom Reavers solos</models>
+            </type>
+      </availableModels>                     
+    <level number="1">
+      <only>
+        <entry id="Kx01" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU02" />
+        <entry id="KA06" />
+        <entry id="KS01" />
+        <entry id="KS08" />
+        <entry id="KS09" />
+        <entry id="KS05" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="512" entryId="KU02" />
+        <alterFA bonus="512" entryId="KA06" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3(KU02)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KU02" />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  KS05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ15" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Zoktavir's base FOCUS at the start of the game and during your first turn is automatically 7. Do not roll for Arcane Dementia.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Vladimir1 - War Host" casterId="Kw03" faction="faction_khador">
+<availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Drago</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Greylord units, Iron Fang units</models>
+            </type>
+            <type type="SOLOS">
+                <models>War dog, Greylord solos</models>
+            </type>
+      </availableModels>        
+    <level number="1">
+      <only>
+        <entry id="Kw03" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        
+        <entry id="KJ10" />
+        
+                
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU07" />
+        <entry id="KU03" />
+        <entry id="KA01" />
+        <entry id="KA09" />
+        <entry id="KU11" />
+        <entry id="KU14" />
+        <entry id="KU19" />
+        <entry id="KS08" />
+        <entry id="KS06" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KJ04" />
+        <alterFA entryId="KS06" bonus="1">
+            <forEach>
+                <entry id="KU07"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2KU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Iron Fang Pikeman units gain +2SPD during your first turn of the game. </ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3KS06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="4">
+      <benefits>
+        <ingameeffect>If the only warjacks in Vladimir's battlegroup are Berserkers and/or Drago, warjacks in Vladimir's battlegroup gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Vladimir2 - Blood of Heroes" casterId="Kx03" faction="faction_khador">
+<availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Drago</models>
+            </type>
+            <type type="UNITS">
+                <models>Kossite Woodsmen, Widowmakers, Iron Fang units</models>
+            </type>
+            <type type="SOLOS">
+                <models>War dog, Iron Fang solos</models>
+            </type>
+      </availableModels>         
+    <level number="1">
+      <only>
+        <entry id="Kx03" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ10" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU08" />
+        <entry id="KU05" />
+        <entry id="KU03" />
+        <entry id="KA01" />
+        <entry id="KA09" />
+        <entry id="KU11" />
+        <entry id="KU14" />
+        <entry id="KS07" />
+        <entry id="KS08" />
+        <entry id="KS11"/>
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterCost entryId="KU11" bonus="1"/>
+        <alterFA bonus="1" entryId="KU11" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  KU14-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>The Great Bears of Gallowswood gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have in battlegroup  KJ10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KJ10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Vladimir's upkeep spells. These spells and their targets must be declared before either player sets up models. Vladimir does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  KS07 AND KU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KS07" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Vladimir3 - Charge of the Horselord" casterId="Kz03" faction="faction_khador">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Drago</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Khador Cavalry units</models>
+            </type>
+            <type type="SOLOS">
+                <models>War Dog, Khador cavalry solos</models>
+            </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="Kz03" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KJ10" />
+        <entry id="KE01" />
+        <entry id="KU01" />
+        <entry id="KU11" />
+        <entry id="KU19" />
+        <entry id="KS08" />
+        <entry id="KS05" />
+        <entry id="KS04" />
+        <entry id="KS06" />
+        <entry id="KS07" />
+        <entry id="KA08" />
+      </only>
+      <benefits>
+        <ingameeffect >Increase the FA of non-character cavalry solos, units, and battle engines by 1.</ingameeffect>
+        <alterFA bonus="1" entryId="KU11" />
+        <alterFA bonus="1" entryId="KU19" />
+        <alterFA bonus="1" entryId="KS04" />
+        <alterFA bonus="1" entryId="KE01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(KU11 KU19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU11" />
+          <entry id="KU19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Warjacks in this army gain +2 SPD during y our first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(KS05 KS04 KS06 KS07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KS05" />
+          <entry id="KS04" />
+          <entry id="KS07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You gain + 1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  KJ10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KJ10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Reduce the cost of warjacks in this army by 1.</ingameeffect>
+        <alterCost bonus="1" entryId="KJ01" />
+        <alterCost bonus="1" entryId="KJ02" />
+        <alterCost bonus="1" entryId="KJ03" />
+        <alterCost bonus="1" entryId="KJ04" />
+        <alterCost bonus="1" entryId="KJ05" />
+        <alterCost bonus="1" entryId="KJ06" />
+        <alterCost bonus="1" entryId="KJ08" />
+        <alterCost bonus="1" entryId="KJ11" />
+        <alterCost bonus="1" entryId="KJ13" />
+        <alterCost bonus="1" entryId="KJ10" />
+        <alterCost bonus="1" entryId="KJ15" />
+        <alterCost bonus="1" entryId="KJ16" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Irusk1 - Advance Assault Force" casterId="Kw04" faction="faction_khador">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Behemoth</models>
+            </type>
+            <type type="UNITS">
+                <models>Assault Kommandos, Battle Mechaniks, Iron Fang units, Man-O-War units</models>
+            </type>
+            <type type="SOLOS">
+                <models>War Dog, Iron Fang solos, Man-O-War solos</models>
+            </type>
+      </availableModels>        
+    <level number="1">
+      <only>
+        <entry id="Kw04" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ07" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU10" />
+        <entry id="KA05" />
+        <entry id="KU03" />
+        <entry id="KA01" />
+        <entry id="KA09" />
+        <entry id="KU11" />
+        <entry id="KU14" />
+        <entry id="KU04" />
+        <entry id="KU12" />
+        <entry id="KU16" />
+        <entry id="KS02" />
+        <entry id="KS04" />
+        <entry id="KS07" />
+        <entry id="KS08" />
+        <entry id="KS11"/>
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KJ05" />
+        <alterCost bonus="1" entryId="KJ08" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2KU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(KU04 KU12 KU16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU04" />
+          <entry id="KU12" />
+          <entry id="KU16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Man-O-War units gain Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ07 KJ08 KJ11 KJ13 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ07" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ15" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Irusk2 - The Art of War" casterId="Kx04" faction="faction_khador">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Behemoth</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Widowmakers, Kayazi units, Winter Guard units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Widowmaker Marksmen, Kayazi solos, Winter Guard solos</models>
+            </type>
+      </availableModels>          
+    <level number="1">
+      <only>
+        <entry id="Kx04" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ07" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU05" />
+        <entry id="KU06" />
+        <entry id="KA02" />
+        <entry id="KA03" />
+        <entry id="KU17" />
+        <entry id="KU09" />
+        <entry id="KU13" />
+        <entry id="KU15" />
+        <entry id="KU18" />
+        <entry id="KA04" />
+        <entry id="KS03" />
+        <entry id="KS10" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="KU15" />
+        <alterFA bonus="1" entryId="KU09">
+          <forEach>
+            <entry id="KU06"/>
+            <entry id="KU17"/>
+          </forEach>
+        </alterFA>
+        <alterFA bonus="1" entryId="KU13">
+          <forEach>
+            <entry id="KU06"/>
+            <entry id="KU17"/>
+          </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2KU06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="KA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2KU15-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Kayazi models/units gain Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  KJ07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KJ07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Each warjack in Irusk's battlegroup is automatically allocated 1 focus point at the start of your first control phase. This focus is in addition to any points Irusk allocates.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Irusk2 - Heavy Armor Battalion (NQ39)" casterId="Kx04" faction="faction_khador">
+     <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks with one or more Open Fist, Khador character warjacks with one or more Open Fist</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Light Artillery units, Iron Fang units, Man-O-War units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Iron Fang solos, Man-O-War solos</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+            </type>
+      </availableModels>       
+    <level number="1">
+      <only>
+        <entry id="Kx04" />
+        <entry id="KJ02" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ07" />
+        <entry id="KJ09" />
+        <entry id="KJ12" />
+        <entry id="KJ13" />
+        <entry id="KJ14" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KE01" />
+        <entry id="KU01" />
+        <entry id="KU03" />
+        <entry id="KU04" />
+        <entry id="KU09" />
+        <entry id="KU11" />
+        <entry id="KU12" />
+        <entry id="KU13" />
+        <entry id="KU16" />
+        <entry id="KA01" />
+        <entry id="KA09" />
+        <entry id="KA08" />
+        <entry id="KS02" />
+        <entry id="KS04" />
+        <entry id="KS11"/>
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="KU01" />
+        <alterFA bonus="1" entryId="KA08" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(KU01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Battle Mechanik unit, place one trench template anywhere within 20" of the back edge of Irusk's deployment zone after terrain has been placed but before either player deploys his or her army. Trench templates cannot be placed within 3" of a terrain feature but can be placed within 3" of each other.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  KE01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KE01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KE01" />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(KJ02 KJ05 KJ06 KJ07 KJ09 KJ12 KJ13 KJ14 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ02" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ07" />
+          <entry id="KJ09" />
+          <entry id="KJ12" />
+          <entry id="KJ13" />
+          <entry id="KJ14" />
+          <entry id="KJ15" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Karchev - Iron Curtain" casterId="KW05" faction="faction_khador">
+     <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Behemoth</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Greylord units, Man-O-War units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Greylord solos, Man-O-War solos</models>
+            </type>
+      </availableModels>            
+    <level number="1">
+      <only>
+        <entry id="KW05" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ07" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16"/>
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU07" />
+        <entry id="KU04" />
+        <entry id="KU12" />
+        <entry id="KU16" />
+        <entry id="KU19" />
+        <entry id="KS02" />
+        <entry id="KS04" />
+        <entry id="KS06" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="512" entryId="KU07" />
+        <alterFA bonus="1" entryId="KS06">
+          <forEach>
+            <entry id="KU07"/>
+          </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(KU04 KU12 KU16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU04" />
+          <entry id="KU12" />
+          <entry id="KU16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Man-0-War units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1KU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Greylord Ternion unit, place up to one 3" AOE cloud effects in play after terrain has been placed but before either player deploys his army. AOEs must be placed within 20" of the back edge of Karchev's deployment zone and remain in play for one round. They cannot be placed within 3" of a terrain feature. These cloud effects leave play after the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ07 KJ08 KJ11 KJ13 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ07" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ15" />
+          <entry id="KJ16"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KJ01" />
+        <alterCost bonus="1" entryId="KJ02" />
+        <alterCost bonus="1" entryId="KJ03" />
+        <alterCost bonus="1" entryId="KJ04" />
+        <alterCost bonus="1" entryId="KJ05" />
+        <alterCost bonus="1" entryId="KJ06" />
+        <alterCost bonus="1" entryId="KJ07" />
+        <alterCost bonus="1" entryId="KJ08" />
+        <alterCost bonus="1" entryId="KJ11" />
+        <alterCost bonus="1" entryId="KJ13" />
+        <alterCost bonus="1" entryId="KJ15" />
+        <alterCost bonus="1" entryId="KJ16" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Old Witch - The Invisible Army" casterId="KW07" faction="faction_khador">
+     <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Greylord Ternions, Kossite Woodsmen, Widowmakers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Manhunters, Widowmaker Marksmen, Yuri the Axe</models>
+            </type>
+      </availableModels>       
+  
+    <level number="1">
+      <only>
+        <entry id="KW07" />
+        <entry id="Scrapjack" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU07" />
+        <entry id="KU08" />
+        <entry id="KU05" />
+        <entry id="KS01" />
+        <entry id="KS09" />
+        <entry id="KS10" />
+      </only>
+      <benefits>
+        <ingameeffect>Models/units in the army gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2KU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="KS09" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2KU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by the Old Witch's upkeep spells. These spells and their targets must be declared before either player sets up models. The Old Witch does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models/units in the army gain Pathfinder during your first turn of the game. For each heavy warjack in the Old Witch's battlegroup, place one 4" AOE forest anywhere completely within 20" of the back edge of her deployment zone after terrain has been placed but before either player deploys his army. Forests cannot be placed within 3" of another terrain feature.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Zerkova - Wolves of the Winter" casterId="KW06" faction="faction_khador">
+     <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Doom Manhunters, Fenris, Reavers, Greylord units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Manhunters, Fenris, Doom Reavers solos, Greylord solos</models>
+            </type>
+      </availableModels>       
+  
+    <level number="1">
+      <only>
+        <entry id="KW06" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU01" />
+        <entry id="KU19" />
+        <entry id="KA08" />
+        <entry id="KU02" />
+        <entry id="KA06" />
+        <entry id="KU07" />
+        <entry id="KS01" />
+        <entry id="KS05" />
+        <entry id="KS06" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="512" entryId="KU07" />
+        <alterFA bonus="512" entryId="KS06" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2KU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="KA06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2KS06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Koldun Lord solos and the warjacks marshal gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ15" />
+          <entry id="KJ16"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models in Zerkova's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Zerkova - Hunting Wolves (NQ34)" casterId="KW06" faction="faction_khador">
+     <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks with ranged weapons, Marauders</models>
+            </type>
+            <type type="UNITS">
+                <models>Greylord units, Kayazy units, Widowmaker units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Gorman di Wulfe, Greylord solos, Kayazy solos, Widowmaker solos</models>
+            </type>
+      </availableModels>         
+    <level number="1">
+      <only>
+        <entry id="KW06" />
+        <entry id="KJ01" />
+        <entry id="KJ03" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="MJ03_forKW06" />
+        <entry id="KU07" />
+        <entry id="KU15" />
+        <entry id="KU18" />
+        <entry id="KU19" />
+        <entry id="KA04" />
+        <entry id="KU05" />
+        <entry id="MS03" />
+        <entry id="KS06" />
+        <entry id="KS10" />
+      </only>
+      <benefits>
+        <ingameeffect>Zerkova’s battlegroup can include Vanguard light warjacks. These warjacks are considered to be friendly Khador warjacks.</ingameeffect>
+        <alterFA bonus="1" entryId="KU07" />
+        <alterFA bonus="1" entryId="KU15" />
+        <alterFA bonus="1" entryId="KA04" />
+        <alterFA bonus="1" entryId="KU18" />
+        <alterFA bonus="1" entryId="KU19" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  MS03 1(KU07 KU19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MS03" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KU07" />
+          <entry id="KU19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Greylord unit in the army, place one 3" AOE cloud effect anywhere completely within 20" of the back edge of Zerkova’s deployment zone after both players have finished deploying their armies but before the first player takes his first turn. These cloud effects leave play after the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  KU15-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KU15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(KJ01 KJ03 KJ08 KJ11 KJ13 MJ03 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KJ01" />
+          <entry id="KJ03" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="MJ03_forKW06" />
+          <entry id="KJ15" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KJ01" />
+        <alterCost bonus="1" entryId="KJ03" />
+        <alterCost bonus="1" entryId="KJ04" />
+        <alterCost bonus="1" entryId="KJ08" />
+        <alterCost bonus="1" entryId="KJ11" />
+        <alterCost bonus="1" entryId="KJ13" />
+        <alterCost bonus="1" entryId="MJ03_forKW06" />
+        <alterCost bonus="1" entryId="KJ15" />
+        <alterCost bonus="1" entryId="KJ16" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Strakhov - Black Operations" casterId="KW08" faction="faction_khador">
+     <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Assault Kommandos, Kayazy Assassins, Kossite Woodsmen, Widowmakers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Manhunters, War Dog, Widowmaker Marksmen</models>
+            </type>
+      </availableModels>           
+    <level number="1">
+      <only>
+        <entry id="KW08" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ12" />
+        <entry id="KJ13" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU10" />
+        <entry id="KA05" />
+        <entry id="KU15" />
+        <entry id="KA04" />
+        <entry id="KU05" />
+        <entry id="KU08" />
+        <entry id="KS01" />
+        <entry id="KS08" />
+        <entry id="KS10" />
+      </only>
+      <benefits>
+        <ingameeffect>Assault Kommando units gain Advance Deployment</ingameeffect>
+        <alterFA bonus="512" entryId="KU10" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2KU10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Assault Kommando unit, place one trench template anywhere within 20" of the back edge of Strakhov's deployment zone after terrain has been placed but before either player deploys his or her army. Trench templates cannot be placed within 3" of a terrain feature but can be placed within 3" of each other.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  4(KU10 KU15 KU05 KU08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="KU10" />
+          <entry id="KU15" />
+          <entry id="KU05" />
+          <entry id="KU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="KS01" />
+          <entry id="KS10" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ12 KJ13 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ12" />
+          <entry id="KJ13" />
+          <entry id="KJ15" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by the Strakhov's upkeep spells. These spells and their targets must be declared before either player sets up models. Strakhov does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Harkevich - Wolf Pack" casterId="KW09" faction="faction_khador">
+     <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks, Black Ivan</models>
+            </type>
+            <type type="UNITS">
+                <models>Battle Mechaniks, Man-O-War units, Winter Guard units</models>
+            </type>
+            <type type="SOLOS">
+                <models>War Dog, Man-O-War solos, Widowmaker Marksmen, Winter Guard solos</models>
+            </type>
+      </availableModels>           
+  
+    <level number="1">
+      <only>
+        <entry id="KW09" />
+        <entry id="KJ01" />
+        <entry id="KJ02" />
+        <entry id="KJ03" />
+        <entry id="KJ04" />
+        <entry id="KJ05" />
+        <entry id="KJ06" />
+        <entry id="KJ08" />
+        <entry id="KJ11" />
+        <entry id="KJ13" />
+        <entry id="KJ14" />
+        <entry id="KJ15" />
+        <entry id="KJ16" />
+        <entry id="KU01" />
+        <entry id="KA08" />
+        <entry id="KU04" />
+        <entry id="KU12" />
+        <entry id="KU16" />
+        <entry id="KU06" />
+        <entry id="KA02" />
+        <entry id="KA03" />
+        <entry id="KU09" />
+        <entry id="KU13" />
+        <entry id="KU17" />
+        <entry id="KS08" />
+        <entry id="KS02" />
+        <entry id="KS04" />
+        <entry id="KS10" />
+        <entry id="KS03" />
+      </only>
+      <benefits>
+        <ingameeffect >You gain + 1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have in battlegroup  KJ14-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="KJ14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by the Harkevich's upkeep spells. These spells and their targets must be declared before either player sets up models. Harkevich does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(KU09 KU13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="KU09" />
+          <entry id="KU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each warjacks in Harkevich's battlegroup, place one heavy wreck marker anywhere within 20" of the back edge of Strakhov's deployment zone after terrain has been placed but before either player deploys his or her army. Wreck markers cannot be placed within 3" of a terrain feature or another wreck marker.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ14 KJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="KJ01" />
+          <entry id="KJ02" />
+          <entry id="KJ03" />
+          <entry id="KJ04" />
+          <entry id="KJ05" />
+          <entry id="KJ06" />
+          <entry id="KJ08" />
+          <entry id="KJ11" />
+          <entry id="KJ13" />
+          <entry id="KJ14" />
+          <entry id="KJ15" />
+          <entry id="KJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="KJ01" />
+        <alterCost bonus="1" entryId="KJ08" />
+        <alterCost bonus="1" entryId="KJ11" />
+        <alterCost bonus="1" entryId="KJ13" />
+        <alterCost bonus="1" entryId="KJ14" />
+        <alterCost bonus="1" entryId="KJ15" />
+        <alterCost bonus="1" entryId="KJ16" />
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

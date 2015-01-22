@@ -1,0 +1,2120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="warmachine.xsd">
+	<armies>
+
+		
+		
+		<army faction="faction_mercs" name="Mercenaries">
+		    <warcasters>
+			    <warcaster id="MW04" name="Ashlynn D'Elyse" generation="P" full_name="Ashlynn D'Elyse" qualification="MERCENARY PRIVATEER THAMARITE WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Ashlynn D'Elyse" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cygnar" />
+			    	<works_for id="faction_menoth" />
+			    </warcaster>
+			    
+			    <warcaster id="MW06" name="Captain Bartolo Montador " generation="P" full_name="Captain Bartolo Montador " qualification="MERCENARY PRIVATEER THAMARITE WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Constance Blaize" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cryx" />
+			    	<works_for id="faction_cygnar" />
+			    	<works_for id="faction_khador" />
+			    	<works_for id="faction_menoth" />
+			    </warcaster>
+			    
+			    <warcaster id="MW09" name="Captain Damiano " generation="P" full_name="Captain Damiano" qualification="MERCENARY PRIVATEER THAMARITE WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Constance Blaize" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cryx" />
+			    	<works_for id="faction_cygnar" />
+			    	<works_for id="faction_khador" />
+			    	<works_for id="faction_menoth" />
+			    </warcaster>
+			    
+			    
+			    <warcaster id="MW07" name="Captain Phinneus Shae " generation="P" full_name="Captain Phinneus Shae " qualification="MERCENARY PRIVATEER THAMARITE WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Constance Blaize" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cygnar" />
+			    </warcaster>
+			    
+			    <warcaster id="YX09_merc" name="Constance Blaize(merc)" generation="P" full_name="Constance Blaize" qualification="MERCENARY PRIVATEER THAMARITE WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Constance Blaize" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cygnar" />
+			    </warcaster>
+			    
+			    <warcaster id="MW08" name="Drake McBain" generation="P" full_name="Drake McBain" qualification="MERCENARY WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Drake McBain" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cryx" />
+			    	<works_for id="faction_cygnar" />
+			    	<works_for id="faction_khador" />
+			    	<works_for id="faction_menoth" />
+			    </warcaster>
+			    
+			    <warcaster id="MW03" name="Durgen Madhammer" generation="P" full_name="Durgen Madhammer" qualification="MERCENARY WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Durgen Madhammer" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cygnar" />
+			    	<works_for id="faction_khador" />
+			    	<works_for id="faction_menoth" />
+			    </warcaster>
+			    
+			    <warcaster id="MW05" name="Fiona The Black" generation="P" full_name="Fiona The Black" qualification="MERCENARY PRIVATEER THAMARITE WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Drake McBain" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+			    	<works_for id="faction_cryx" />
+			    	<works_for id="faction_cygnar" />
+			    	<works_for id="faction_khador" />
+			    </warcaster>
+			    
+			    
+			    <warcaster id="MW10" name="General Ossrum " generation="P" full_name="General Ossrum" qualification="MERCENARY PRIVATEER THAMARITE WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="Constance Blaize" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence">Text</feat>
+					<full_text></full_text>
+					<spell name="Basic spell" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+						something				    
+			    	</spell>
+					<works_for id="faction_khador" />
+					<works_for id="faction_cygnar" />
+			    </warcaster>
+			    
+			    
+			    <warcaster id="MW02" name="Gorten Grundback" generation="P" full_name="Gorten Grundback" qualification="MERCENARY RHULIC WARCASTER" focus="6" warjack_points="6" fa="C">
+					<basestats name="gorten" spd="6" str="5" mat="4" rat="4" def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING" hitpoints="16" pathfinder="true" />
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+						<melee_weapon name="SOLACE" pow="8" p_plus_s="14" magical="true">
+						    <capacity title="Chain Weapon">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+						</melee_weapon>
+					</weapons>
+					<feat title="Penitence"><![CDATA[
+Faction models are damaged by an enemy attack while in Vindictus' control area, immediately after the attack is resolved the attacker suffers 1 damage point. Penitence lasts for one round.
+]]>    		
+					</feat>
+						<full_text></full_text>
+					<spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">
+	Target friendly Faction model/unit gains +2DEF and ARM.				    
+				    </spell>
+					<works_for id="faction_khador" />
+					<works_for id="faction_cygnar" />
+				</warcaster>
+				
+				<warcaster id="Mw01" name="Magnus the Traitor" generation="P"
+					full_name="Magnus the Traitor" qualification="MERCENARY WARCASTER"
+					focus="6" warjack_points="6" fa="C">
+					<basestats name="Magnus" spd="6" str="5" mat="4" rat="4"
+						def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="16" pathfinder="true"/>
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8"
+							p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+						<melee_weapon name="SOLACE" pow="8"
+							p_plus_s="14" magical="true">
+						    <capacity title="Chain Weapon">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+						</melee_weapon>
+											</weapons>
+					<feat title="Penitence"><![CDATA[
+Faction models are damaged by an enemy attack while in Vindictus' control area, immediately after the attack is resolved the attacker suffers 1 damage point. Penitence lasts for one round.
+]]>    		
+				</feat>
+					<full_text>
+<![CDATA[
+<B>TACTICAL TIPS</B><br>
+Death toll : The added Grunt can activate norrnally this turn. <br>
+SACRIFICIAL LAMB : A warjack cannot exceed normal focus allocation limits as a result of Sacrificial Lamb.
+]]>                 		
+           		</full_text>
+				<spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow ="-" up="YES" off="NO">
+Target friendly Faction model/unit gains +2DEF and ARM.				    
+			    </spell>
+				<spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow ="12" up="NO" off="YES">
+Immolation causes fire damage. On a critical hit, the model hit suffer the Fire continuous effect				    
+			    </spell>
+				<spell name="RIFT" cost="3" rng="8" aoe="4" pow ="13" up="NO" off="YES">
+The AOE is rough terrain and remains in play for one round.				    
+			    </spell>
+				<spell name="SACRIFICIAL LAMB" cost="1" rng="CTRL" aoe="-" pow ="-" up="NO" off="NO">
+Remove one friendly living Faction model in this model's control area from play to allocate l focus point to each warjack in this model's battlegroup that is currently in its control area. Sacrificial Lamb can be cast only once per turn.				    
+			    </spell>
+				<spell name="TRUE PATH" cost="3" rng="SELF" aoe="CTRL" pow ="-" up="NO" off="NO">
+Friendly Faction warrior models/units beginning their activations in the model's control area gain +2" movement and Pathfinder during their activations. True Path lasts for one turn.
+			    </spell>
+									
+				<capacity title="Death Toll [Holy Zealot]" type="">
+When this model destroys a living enemy model with a melee attack, after the attack is resolved you can add one grunt to a friendly Holy Zealot unit in this model's command range. The Grunt must be placed in formation and within 3" of this model. The destroyed model is removed from play but does not provide a soul or corpse token           		</capacity>
+				<capacity title="Sacrificial Pawn [Holy Zealot]" type="">
+When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Holy Zealot model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects           		
+				</capacity>
+				<works_for id="faction_menoth"/>
+				<works_for id="faction_khador"/>
+				<works_for id="faction_cryx"/>
+				</warcaster>		        
+
+			    <warcaster id="Mx01" name="Magnus the Warlord " generation="E"
+					full_name="Magnus the Warlord " qualification="MERCENARY WARCASTER"
+					focus="6" warjack_points="6" fa="C">
+					<basestats name="Magnus" spd="6" str="5" mat="4" rat="4"
+						def="15" arm="16" cmd="10" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="16" pathfinder="true"/>
+					<weapons>
+						<melee_weapon name="LAWGIVER" pow="8"
+							p_plus_s="14" magical="true">
+						    <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a models ARM or DEF</capacity>
+						</melee_weapon>
+						<melee_weapon name="SOLACE" pow="8"
+							p_plus_s="14" magical="true">
+						    <capacity title="Chain Weapon">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+						</melee_weapon>
+											</weapons>
+					<feat title="Penitence"><![CDATA[
+Faction models are damaged by an enemy attack while in Vindictus' control area, immediately after the attack is resolved the attacker suffers 1 damage point. Penitence lasts for one round.
+]]>    		
+				</feat>
+					<full_text>
+<![CDATA[
+<B>TACTICAL TIPS</B><br>
+Death toll : The added Grunt can activate norrnally this turn. <br>
+SACRIFICIAL LAMB : A warjack cannot exceed normal focus allocation limits as a result of Sacrificial Lamb.
+]]>                 		
+           		</full_text>
+				<spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow ="-" up="YES" off="NO">
+Target friendly Faction model/unit gains +2DEF and ARM.				    
+			    </spell>
+				<spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow ="12" up="NO" off="YES">
+Immolation causes fire damage. On a critical hit, the model hit suffer the Fire continuous effect				    
+			    </spell>
+				<spell name="RIFT" cost="3" rng="8" aoe="4" pow ="13" up="NO" off="YES">
+The AOE is rough terrain and remains in play for one round.				    
+			    </spell>
+				<spell name="SACRIFICIAL LAMB" cost="1" rng="CTRL" aoe="-" pow ="-" up="NO" off="NO">
+Remove one friendly living Faction model in this model's control area from play to allocate l focus point to each warjack in this model's battlegroup that is currently in its control area. Sacrificial Lamb can be cast only once per turn.				    
+			    </spell>
+				<spell name="TRUE PATH" cost="3" rng="SELF" aoe="CTRL" pow ="-" up="NO" off="NO">
+Friendly Faction warrior models/units beginning their activations in the model's control area gain +2" movement and Pathfinder during their activations. True Path lasts for one turn.
+			    </spell>
+									
+				<capacity title="Death Toll [Holy Zealot]" type="">
+When this model destroys a living enemy model with a melee attack, after the attack is resolved you can add one grunt to a friendly Holy Zealot unit in this model's command range. The Grunt must be placed in formation and within 3" of this model. The destroyed model is removed from play but does not provide a soul or corpse token           		</capacity>
+				<capacity title="Sacrificial Pawn [Holy Zealot]" type="">
+When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Holy Zealot model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects           		
+				</capacity>
+				<works_for id="faction_menoth"/>
+				<works_for id="faction_khador"/>
+				<works_for id="faction_cryx"/>
+			</warcaster>
+			    
+				
+<warcaster  id="YX09" name="Constance Blaize" full_name="Constance Blaize" generation="P" qualification="warcaster" focus="6" warjack_points="-6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat></feat>
+	
+</warcaster>	            
+			    
+				
+				
+		    </warcasters>
+		    <warjacks>
+		        
+		        
+
+				<warjack id="MJ04" name="Buccaneer" full_name="Buccaneer"
+					qualification="MERCENARY HEAVY WARJACK" fa="U" cost="3"
+					damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4"
+						def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+
+				
+				<warjack id="MJ12" name="Freebooter" full_name="Freebooter" qualification="MERCENARY HEAVY WARJACK" fa="U" cost="6" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+
+				<warjack  id="YJ17_mercs" name="Gallant(merc)" full_name="Gallant" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+					<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+					<weapons></weapons>
+					<full_text></full_text>
+				</warjack>
+				
+				
+				<warjack id="MJ15" name="Ghordson Avalancher" full_name="Ghordson Avalancher" qualification="MERCENARY HEAVY WARJACK" fa="U" cost="9" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW10"/>
+					<restricted_to id="MW02"/>
+					<restricted_to id="MW03"/>
+					<restricted_to id="ua_hammerfallHSGC"/>
+					<restricted_to id="MS17"/>
+				</warjack>
+				
+				<warjack id="MJ14" name="Ghordson Basher" full_name="Ghordson Basher" qualification="MERCENARY HEAVY WARJACK" fa="U" cost="7" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW10"/>
+					<restricted_to id="MW02"/>
+					<restricted_to id="MW03"/>
+					<restricted_to id="ua_hammerfallHSGC"/>
+					<restricted_to id="MS17"/>
+				</warjack>
+				
+				<warjack id="MJ07" name="Ghordson Driller" full_name="Ghordson Driller" qualification="MERCENARY HEAVY WARJACK" fa="U" cost="6" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW10"/>
+					<restricted_to id="MW02"/>
+					<restricted_to id="MW03"/>
+					<restricted_to id="ua_hammerfallHSGC"/>
+					<restricted_to id="MS17"/>
+				</warjack>
+				
+				<warjack id="MJ05" name="Grundback Blaster" full_name="Grundback Blaster"
+					qualification="MERCENARY HEAVY WARJACK" fa="U" cost="3"
+					damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4"
+						def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW10"/>
+					<restricted_to id="MW02"/>
+					<restricted_to id="MW03"/>
+					<restricted_to id="ua_hammerfallHSGC"/>
+					<restricted_to id="MS17"/>
+				</warjack>
+
+				<warjack id="MJ06" name="Grundback Gunner" full_name="Grundback Gunner"
+					qualification="MERCENARY HEAVY WARJACK" fa="U" cost="3"
+					damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4"
+						def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW10"/>
+					<restricted_to id="MW02"/>
+					<restricted_to id="MW03"/>
+					<restricted_to id="ua_hammerfallHSGC"/>
+					<restricted_to id="MS17"/>
+				</warjack>
+
+
+				<warjack id="MJ09" name="Mangler" full_name="Mangler" qualification="MERCENARY HEAVY WARJACK" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+				
+				<warjack id="MJ13" name="Mariner" full_name="Mariner"
+					qualification="MERCENARY HEAVY WARJACK" fa="U" cost="8"
+					damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4"
+						def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+
+
+				
+				<warjack id="MJ10" name="Mule " full_name="Mule " qualification="MERCENARY HEAVY WARJACK" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Blaster" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+				
+				
+				<warjack id="MJ11" name="Nomad" full_name="Nomad"
+					qualification="MERCENARY HEAVY WARJACK" fa="U" cost="6"
+					damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4"
+						def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+
+				
+				<warjack id="MJ01" name="Renegade" full_name="Renegade" qualification="MERCENARY LIGHT WARJACK" fa="2" cost="6" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Renegade" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="Mw01" />
+					<restricted_to id="Mx01" />
+				</warjack>
+				
+				<warjack id="MJ17" name="Rocinante" full_name="Rocinante" qualification="MERCENARY HEAVY WARJACK" fa="C" cost="9" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+				
+				<warjack id="MJ16" name="Rover" full_name="Rover" qualification="MERCENARY HEAVY WARJACK" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+				
+				<warjack id="MJ02" name="Talon" full_name="Talon" qualification="MERCENARY HEAVY WARJACK" fa="U" cost="4" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+
+				
+				<warjack id="MJ03" name="Vanguard" full_name="Vanguard" qualification="MERCENARY LIGHT WARJACK" fa="U" cost="5" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Vanguard" spd="4" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+					<restricted_to id="MU03"/>					
+					<restricted_to id="MS09"/>
+					<restricted_to id="MS20"/>
+				</warjack>
+				
+				<warjack id="MJ08" name="Wrougthammer Rockram" full_name="Wrougthammer Rockram"
+					qualification="MERCENARY HEAVY WARJACK" fa="U" cost="8"
+					damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+					<basestats name="Mangler" spd="4" str="11" mat="6" rat="4"
+						def="10" arm="18" cmd="0" baseSize="LARGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="flail" pow="6" p_plus_s="17" reach="true">
+							<capacity title="Chain weapon">
+            		        ignore shiedls
+	            		    </capacity>
+	            		    <capacity title="Tresher(*Attack)">
+            		        tresher
+	            		    </capacity>
+						</melee_weapon>
+						<melee_weapon name="spiked fist" pow="2" shield="true">
+						</melee_weapon>
+					</weapons>
+					<restricted_to id="MW10"/>
+					<restricted_to id="MW02"/>
+					<restricted_to id="MW03"/>
+					<restricted_to id="ua_hammerfallHSGC"/>
+					<restricted_to id="MS17"/>
+				</warjack>
+				
+		    </warjacks>
+
+		    
+		    <warbeasts>
+<warbeast  id="Lug_merc" name="Lug" full_name="Lug" damage_spiral="8-11-8" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<restricted_to id="IW01_merc"/>
+</warbeast>		        
+<warbeast  id="Skarath_merc" name="Skarath" full_name="Skarath" damage_spiral="7-9-9" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<restricted_to id="IW02_merc"/>
+</warbeast>		        
+<warbeast  id="Brine_merc" name="Brine" full_name="Brine" damage_spiral="5-12-9" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<restricted_to id="IW03_merc"/>
+</warbeast>		        
+<warbeast  id="Snapjaw_merc" name="Snapjaw" full_name="Snapjaw" damage_spiral="5-14-8" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<restricted_to id="IW04_merc"/>
+</warbeast>		        
+		    </warbeasts>
+		    
+		    
+		    <colossals>
+				<colossal id="MJ18" name="Galleon" full_name="Galleon"
+					qualification="PROTECTORATE COLOSSAL" fa="1" cost="18"
+					damage_grid_left="xxxxx.xxx.......SS..LLSCLLCCCCLCMMMM"
+					damage_grid_right=".xxxxx...xxxSS....CSRR..CCCCRRMMMMCR">
+					<basestats name="Galleon" spd="4" str="17" mat="6"
+						rat="5" def="8" arm="19" cmd="0" baseSize="HUGE" livingStatus="CONSTRUCT" />
+					<weapons>
+						<melee_weapon name="BLAZING STAR" pow="5" p_plus_s="16" >
+						    <capacity title="CHAIN WEAPON">This attack ignores shields and Shield Wall.</capacity>
+		                    <capacity title="TRESHER" type="*Attack">
+		                        When making a Thresher attack, this model makes one normal melee attack with this weapon. Compare the total rolled to the DEF of each model in this model's LOS and this weapon's melee range. If the attack roll equals or exceeds a model's DEF, that model is directly hit.
+		                    </capacity>
+						    </melee_weapon>
+						<ranged_weapon name="FLAME BELCHER" rng="8" rof="1"
+							aoe="4" pow="14" fire="true" continuous_fire="true" />
+					</weapons>
+					<full_text><![CDATA[
+                    ]]></full_text>
+                    <restricted_to id="MW04"/>
+					<restricted_to id="MW06"/>
+					<restricted_to id="MW09"/>
+					<restricted_to id="MW07"/>
+					<restricted_to id="YX09_merc"/>
+					<restricted_to id="MW08"/>
+					<restricted_to id="MW05"/>
+					<restricted_to id="Mw01"/>
+					<restricted_to id="Mx01"/>
+				</colossal>
+			</colossals>		    
+		    
+            <units>
+				                
+				
+				
+				<unit id="MU09" name="Alexia Ciannor &amp; Risen " full_name="Alexia Ciannor &amp; Risen "
+					qualification="MERCENARY UNIT" fa="C" base_cost="5"
+					full_cost="-" baseCount="10" fullCount="-" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Alexia" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" hitpoints="5"/>
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<model id="Risen" full_name="Risen" qualification="Undead grunts">
+					    <basestats name="Risen" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" undead="true"/>
+					</model>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>
+				</unit>		
+				
+				<unit  id="YU01_mercs" name="Arcane Tempest Gun Mages(merc)" full_name="Arcane Tempest Gun Mages" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification=" Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and Grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<unit_attachment id="YA01_mercs" name="Arcane Tempest Gun Mage Officer" full_name="Arcane Tempest Gun Mage Officer" qualification="cygnar unit attachment" fa="1" cost="2">
+	    <model id="officer" name="Officer" full_name="Officer">
+			<basestats name="Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT" hitpoints="5" jack_marshal="true" officer="true"/>	        
+	    </model>
+	</unit_attachment>
+</unit>
+				
+				<unit id="Cephalyx_Overlords" name="Cephalyx Overlords " full_name="Cephalyx Overlords "
+					qualification="MERCENARY UNIT" fa="2" base_cost="5"
+					full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_cryx"/>
+				</unit>
+				
+				<unit id="Cephalyx_Slaver" name="Cephalyx Slaver &amp; Drudges" full_name="Cephalyx Slaver &amp; Drudges "
+					qualification="MERCENARY UNIT" fa="2" base_cost="5"
+					full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_cryx"/>
+				</unit>
+				
+				<unit id="MU04" name="Croe's Cutthroats " full_name="Croe's Cutthroats "
+					qualification="MERCENARY UNIT" fa="C" base_cost="7"
+					full_cost="10" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+				</unit>
+				
+				<unit id="MU05" name="Cylena Raefyll and Nyss Hunters" full_name="Cylena Raefyll and Nyss Hunters"
+					qualification="MERCENARY UNIT" fa="C" base_cost="7"
+					full_cost="10" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_retribution" />
+				</unit>
+				
+				<unit id="MU16" name="Dannon Blythe &amp; Bull " full_name="Dannon Blythe &amp; Bull "
+					qualification="MERCENARY UNIT" fa="C" base_cost="4"
+					full_cost="-" baseCount="6" fullCount="-" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>
+				</unit>                
+				
+				<unit id="MU01" name="Greygore Boomhowler &amp; Company" full_name="Greygore Boomhowler &amp; Company"
+					qualification="MERCENARY UNIT" fa="C" base_cost="6"
+					full_cost="9" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Greygore" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" hitpoints="8"/>
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<model id="grunts" name="grunts" full_name="Grunts">
+					    <basestats name="Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					</model>
+										<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+
+				</unit>                				
+				
+				<unit id="MU06" name="Hammerfall High Shield Gun Corp" full_name="Hammerfall High Shield Gun Corp"
+					qualification="MERCENARY UNIT" fa="2" base_cost="5"
+					full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					
+					<unit_attachment id="MA03"
+						name="Hammerfall Officer &amp; Standard" full_name="Hammerfall Officer and Standard"
+						qualification="PROTECTORATE ALLY UNIT ATTACHMENT" fa="1" cost="3">
+						<model id="ua_hammerfallHSGC_officer" name="Officer" full_name="Officer">
+							<basestats name="Officer" spd="6" str="6" mat="7"
+								rat="6" def="13" arm="12" cmd="9" baseSize="SMALL" livingStatus="LIVING"
+								officer="true" jack_marshal="true"
+								hitpoints="5" />
+							<weapons>
+								<melee_weapon name="KOPIS" pow="4" p_plus_s="10"
+									count="2" />
+								<ranged_weapon name="MILITARY RIFLE" rng="10" rof="1"
+									aoe="-" pow="11" />
+							</weapons>
+							<full_text><![CDATA[]]></full_text>
+							<capacity title="ASSAULT and BATTERY" type="Order">Before their normal movement, affected models can make one ranged attack, after which they must charge or run. The ranged attack is made before declaring a charge target.</capacity>
+							<capacity title="CAMOUFLAGE" >This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+						</model>
+						<model id="ua_hammerfallHSGC_standard" name="Guide" full_name="Guide">
+							<basestats name="Guide" spd="6" str="6" mat="6" rat="5"
+								def="13" arm="12" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+								pathfinder="true" advance_deployment="true" cra="true"
+								hitpoints="5" />
+							<weapons>
+								<melee_weapon name="KOPIS" pow="4" p_plus_s="10" />
+								<ranged_weapon name="MILITARY RIFLE" rng="10" rof="1"
+									aoe="-" pow="11" />
+							</weapons>
+							<full_text><![CDATA[]]></full_text>
+							<capacity title="CAMOUFLAGE" >See above.</capacity>
+							<capacity title="GO TO GROUND" >Once per game during its unit's activation while in formation, this model can use Go To Ground. Models in this unit in formation gain cover, do not suffer blast damage, and do not block LOS for one round or until they move, are placed, or are engaged.</capacity> 
+							<capacity title="HUNTSMAN" > After deployment but before the first player's turn, select an enemy model/unit to be this unit's prey. While this model is in play, models in this unit beginning their activation within 10'' of the prey gain +2 SPD. While this model is in play, models in this unit gain +2 to attack and damage rolls against the prey. When the prey is destroyed or removed from play, select another model/unit as the prey.</capacity>
+						</model>
+					</unit_attachment>
+					
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>
+					
+					<!-- UA is jack marshall -->
+					
+				</unit>                
+				
+				<unit id="MU02" name="Herne &amp; Jonne " full_name="Herne &amp; Jonne"
+					qualification="MERCENARY UNIT" fa="C" base_cost="3"
+					full_cost="-" baseCount="2" fullCount="-" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>
+				</unit>                
+				
+				<unit id="MU17" name="Horgenhold Artillery Corps" full_name="Horgenhold Artillery Corps "
+					qualification="MERCENARY UNIT" fa="2" base_cost="5"
+					full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_cygnar"/>
+				</unit>                
+				
+				<unit id="MU07" name="Horgenhold Forge Guard" full_name="Horgenhold Forge Guard"
+					qualification="MERCENARY UNIT" fa="2" base_cost="5"
+					full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_cygnar"/>
+				</unit>                
+				
+				<unit  id="KU15_merc" name="Kayazy Assassins" full_name="Kayazy Assassins" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<unit_attachment id="KA04_merc" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss" qualification="khador ally unit attachment"  fa="1" cost="2">
+		<model id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss" >
+		    <basestats name="Underboss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT" hitpoints="5"/>
+		</model>	    
+	</unit_attachment>
+</unit>
+<unit  id="KU18_merc" name="Kayazy Eliminators" full_name="Kayazy Eliminators" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="Leader" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT" hitpoints="5"/>
+	<weapons></weapons>
+	<full_text></full_text>
+<model  id="Eliminator B">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT" hitpoints="5"/>
+</model>
+</unit>
+				<!-- 
+				<unit id="Kayazy_Assassins" name="Kayazy Assassins" full_name="Kayazy Assassins "
+					qualification="MERCENARY UNIT" fa="2" base_cost="5"
+					full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_khador"/>
+				</unit>                
+				
+				<unit id="Kayazy_Eliminators" name="Kayazy Eliminators" full_name="Kayazy Eliminators "
+					qualification="MERCENARY UNIT" fa="2" base_cost="3"
+					full_cost="-" baseCount="2" fullCount="-" has_unit_attachment="false"
+					has_weapon_attachment="false">
+					<basestats name="Leader and Grunts" spd="5" str="4" mat="4"
+						rat="5" def="12" arm="11" cmd="7" baseSize="SMALL" livingStatus="LIVING" />
+					<weapons>
+						<melee_weapon name="Sword" pow="3" p_plus_s="7"/>
+						<ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+						    <capacity title="Inaccurate">This model suffers -4 to attack rolls with this Weapon.</capacity>
+						</ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Rocket volley">Instead of making ranged attacks separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3-5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models participate in the attack, it has base AOE 5" and base POW 16.</capacity>
+					<works_for id="faction_khador"/>
+				</unit>
+				 -->
+				
+				
+				<unit id="MU11" name="Lady Aiyana and Master Holt" full_name="Lady Aiyana and Master Holt" qualification="Mercenary Privateer Character Unit" fa="C" base_cost="4" full_cost="-" baseCount="2" fullCount="-" has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Lady Aiyana" spd="6" str="4" mat="4" rat="4" def="15" arm="11" cmd="9" baseSize="SMALL" livingStatus="LIVING" officer="true" hitpoints="5" />
+					<weapons>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Magic Ability" type="*Action">8</capacity>
+					<capacity title="Kiss of Lyliss" type="*Action">
+Kiss of Lyliss is a RNG 10 magic attack. For one round, when a model/unit hit by Kiss of
+Lyliss suffers a damage roll add +2 to the roll           		</capacity>
+					<capacity title="Ayislaʼs Veil" type="*Action">
+This model gains Stealth ICON. While Holt is B2B with her, he also gains Stealth. Ayislaʼs
+Veil lasts for one round.           		
+				</capacity>
+					<capacity title="Lurynsarʼs Touch" type="*Action">
+RNG CMD. Target friendly model/unit. If the model/unit is in range, its weapons gain Magical Weapon ICON for one turn.
+				</capacity>
+															
+					<model id="MASTER HOLT">
+						<basestats name="Master Holt" spd="6" str="5" mat="5" rat="8" def="15" arm="11" cmd="8" baseSize="SMALL" livingStatus="LIVING" gunfighter="true" hitpoints="5" />
+						<weapons>
+							<melee_weapon name="Gun Blades" pow="3" p_plus_s="8" count="2" />
+							<ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" count="2" />
+						</weapons>
+					<capacity title="quick draw" type="">when an ennemy attack targets A et holt, can make a ranged attack</capacity>
+					</model>
+					<works_for id="faction_menoth" />
+					<works_for id="faction_khador" />
+					<works_for id="faction_retribution" />
+				</unit>                
+				
+				<unit  id="YU02_mercs" name="Long Gunner Infantry" full_name="Long Gunner Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification=" Unit" fa="2" has_unit_attachment="true">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT"/>
+	<weapons></weapons>
+	<full_text></full_text>
+		<unit_attachment id="YA07_mercs" name="Long Gunner Infantry Officer &amp; Standard" full_name="Long Gunner Infantry Officer &amp; Standard" fa="1" cost="2">
+	    <model id="officer" name="Officer" full_name="Officer">
+			<basestats name="Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT" hitpoints="5" officer="true"/>	        
+	    </model>
+	    <model id="standard" name="Standard bearer" full_name="Standard bearer">
+			<basestats name="Standard bearer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="MEDIUM" livingStatus="CONSTRUCT" standard_bearer="true"/>	        
+	    </model>
+	</unit_attachment>
+	
+</unit>
+				
+				
+				<unit id="MU19" name="Ogrun Assault Corps " full_name="Ogrun Assault Corps "
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_cygnar"/>
+				</unit>  				
+				
+				<unit id="YU12_mercs" name="Precursor Knights" full_name="Precursor Knights"
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="true" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<unit_attachment id="YA06_mercs" name="Precursor Knight Officer &amp; Standard" full_name="Precursor Knight Officer &amp; Standard"
+						qualification="CYGNAR ALLY UNIT ATTACHMENT" fa="1" cost="2">
+						<model id="YA06_mercs_officer" name="Officer" full_name="Officer">
+							<basestats name="Officer" spd="6" str="6" mat="7"
+								rat="6" def="13" arm="12" cmd="9" baseSize="SMALL" livingStatus="LIVING"
+								officer="true" hitpoints="5" />
+							<weapons>
+								<melee_weapon name="KOPIS" pow="4" p_plus_s="10"
+									count="2" />
+								<ranged_weapon name="MILITARY RIFLE" rng="10" rof="1"
+									aoe="-" pow="11" />
+							</weapons>
+							<full_text><![CDATA[]]></full_text>
+							<capacity title="ASSAULT and BATTERY" type="Order">Before their normal movement, affected models can make one ranged attack, after which they must charge or run. The ranged attack is made before declaring a charge target.</capacity>
+							<capacity title="CAMOUFLAGE" >This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+						</model>
+						<model id="YA06_mercs_standard" name="Standar" full_name="Guide">
+							<basestats name="Guide" spd="6" str="6" mat="6" rat="5"
+								def="13" arm="12" cmd="8" baseSize="SMALL" livingStatus="LIVING"/>
+							<weapons>
+								<melee_weapon name="KOPIS" pow="4" p_plus_s="10" />
+								<ranged_weapon name="MILITARY RIFLE" rng="10" rof="1"
+									aoe="-" pow="11" />
+							</weapons>
+							<full_text><![CDATA[]]></full_text>
+							<capacity title="CAMOUFLAGE" >See above.</capacity>
+							<capacity title="GO TO GROUND" >Once per game during its unit's activation while in formation, this model can use Go To Ground. Models in this unit in formation gain cover, do not suffer blast damage, and do not block LOS for one round or until they move, are placed, or are engaged.</capacity> 
+							<capacity title="HUNTSMAN" > After deployment but before the first player's turn, select an enemy model/unit to be this unit's prey. While this model is in play, models in this unit beginning their activation within 10'' of the prey gain +2 SPD. While this model is in play, models in this unit gain +2 to attack and damage rolls against the prey. When the prey is destroyed or removed from play, select another model/unit as the prey.</capacity>
+						</model>
+					</unit_attachment>
+				</unit>  				
+
+				<unit id="MU12" name="Press Gangers" full_name="Press Gangers"
+					qualification="Mercenary Steelhead Unit" fa="2"
+					base_cost="4" full_cost="6" baseCount="6" fullCount="10"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+				</unit>  				
+								
+
+				<unit id="MU03" name="Sam McHorne &amp; the Devil Dogs" full_name="Sam McHorne &amp; the Devil Dogs"
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" jack_marshal="true"/>
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_cygnar"/>
+				</unit>  				
+								
+								
+				<unit id="MU13" name="Sea Dog Crew" full_name="Sea Dog Crew"
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="true" has_weapon_attachment="true">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					
+					<unit_attachment id="MA01"
+						name="Mr. Walls, Sea Dog Crew Quartermaster" full_name="Mr. Walls, Sea Dog Crew Quartermaster"
+						qualification="PROTECTORATE ALLY UNIT ATTACHMENT" fa="1" cost="3">
+						<model id="MA01" name="Mr. Walls" full_name="Officer">
+							<basestats name="Officer" spd="6" str="6" mat="7"
+								rat="6" def="13" arm="12" cmd="9" baseSize="SMALL" livingStatus="LIVING"
+								officer="true" 
+								hitpoints="5" />
+							<weapons>
+								<melee_weapon name="KOPIS" pow="4" p_plus_s="10"
+									count="2" />
+								<ranged_weapon name="MILITARY RIFLE" rng="10" rof="1"
+									aoe="-" pow="11" />
+							</weapons>
+							<full_text><![CDATA[]]></full_text>
+							<capacity title="ASSAULT and BATTERY" type="Order">Before their normal movement, affected models can make one ranged attack, after which they must charge or run. The ranged attack is made before declaring a charge target.</capacity>
+							<capacity title="CAMOUFLAGE" >This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+						</model>
+					</unit_attachment>		
+					<weapon_attachment id="MA02" name="Sea Dog Crew Riflemen" full_name="Sea Dog Crew Riflemen" qualification="pirate WA" fa="3" cost="1" max_wa="3">
+					    <model id="MA02">
+					        <basestats name="Officer" spd="6" str="6" mat="7"
+								rat="6" def="13" arm="12" cmd="9" baseSize="SMALL" livingStatus="LIVING" />
+					    </model>
+					</weapon_attachment>			
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+				</unit>  				
+								
+
+				<unit id="MU14" name="Sea Dog Deck Gun Crew" full_name="Sea Dog Deck Gun Crew"
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+				</unit>  				
+								
+
+				<unit id="MU08" name="Steelhead Halberdiers" full_name="Steelhead Halberdiers"
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+				</unit>
+				
+				
+				<unit id="MU15" name="Steelhead Heavy Cavalry" full_name="Steelhead Heavy Cavalry" qualification="Mercenary Steelhead Unit" fa="C" base_cost="4" full_cost="-" baseCount="2" fullCount="-" has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4" rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth" />
+					<works_for id="faction_khador" />
+					<works_for id="faction_cryx" />
+					<works_for id="faction_cygnar" />
+				</unit>  				
+								
+
+				<unit id="MU18" name="Steelhead Riflemen" full_name="Steelhead Riflemen"
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+				</unit>  				
+						
+				<unit id="MU10" name="The Commodore Cannon &amp; Crew" full_name="The Commodore Cannon &amp; Crew"
+					qualification="Mercenary Steelhead Unit" fa="C"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+				</unit>
+				  
+<unit  id="YU05_mercs" name="Trencher Infantry" full_name="Trencher Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true" has_weapon_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="YA03_mercs" name="Trencher Infantry Officer &amp; Sniper" full_name="Trencher Infantry Officer &amp; Sniper" fa="1" cost="3" qualification="Unit attachment">
+<model  id="Trencher Infantry Officer">
+	<basestats name="Trencher Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5" jack_marshal="true"/>
+</model>
+<model  id="Trencher Infantry Sniper">
+	<basestats name="Trencher Infantry Sniper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+<weapon_attachment  id="YA04_mercs" name="Trencher Infantry Grenadier" full_name="Trencher Infantry Grenadier" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+<model  id="Trencher Infantry Grenadier">
+	<basestats name="Trencher Infantry Grenadier" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</weapon_attachment>
+
+</unit>				
+				
+				<unit id="MU52" name="Tactical Arcanist Corps" full_name="Tactical Arcanist Corps"
+					qualification="Mercenary Steelhead Unit" fa="2"
+					base_cost="4" full_cost="-" baseCount="2" fullCount="-"
+					has_unit_attachment="false" has_weapon_attachment="false">
+					<basestats name="Leader &amp; Grunts" spd="8" str="4" mat="4"
+						rat="4" def="15" arm="11" cmd="9" baseSize="LARGE" livingStatus="LIVING" hitpoints="5" />
+					<weapons>
+					    <melee_weapon name="Cavalry Axe" pow="5" p_plus_s="13"></melee_weapon>
+					    <ranged_weapon name="Blunderbuss" rng="10" pow="11" aoe="-" rof="1"></ranged_weapon>
+					    <mount_weapon name="Mount" pow="10"></mount_weapon>
+					</weapons>
+					<full_text><![CDATA[]]></full_text>
+					<capacity title="Assault" type=""> Remember that gun with a range 5" less than the charge? This is where it shines. Every time you charge, you'll get to shoot your target after moving but before melee attacks.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+				</unit>  					
+								
+<unit  id="Yu08" name="Sword Knights" full_name="Sword Knights" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="Ya05" name="Sword Knight Officer &amp; Standard" full_name="Sword Knight Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+<model  id="Sword Knight Officer">
+	<basestats name="Sword Knight Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5" jack_marshal="true"/>
+</model>
+<model  id="Sword Knight Standard">
+	<basestats name="Sword Knight Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+</unit>
+
+
+        <unit id="PU13_mercs" name="Idrian Skirmishers" full_name="Idrian Skirmishers" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="PA03_mercs" name="Idrian Skirmishers Chieftain &amp; Guide" full_name="Idrian Skirmishers Chieftain &amp; Guide" fa="1" cost="3" qualification="Unit attachment">
+            <model id="Idrian Skirmisher Chieftain">
+              <basestats name="Idrian Skirmisher Chieftain" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Idrian Skirmisher Guide">
+              <basestats name="Idrian Skirmisher Guide" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+
+			</units>
+            <solos>
+				
+
+				<solo id="MS24" name="Alexia, Mistress of the Witchfire" full_name="Alexia, Mistress of the Witchfire"
+					qualification=" character solo" fa="C" cost="4">
+					<basestats name="" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+				</solo>				
+
+				<solo id="IS01_merc" name="Alten Ashley, Monster Hunter" full_name="Alten Ashley, Monster Hunter"
+					qualification=" character solo" fa="C" cost="2">
+					<basestats name="" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+																
+				<solo id="MS14" name="Anastasia Di Bray" full_name="Anastasia Di Bray"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+
+				<solo id="MS07" name="Bloody Bradigan" full_name="Bloody Bradigan"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+								
+				<solo id="MS08" name="Bosun Grogspar" full_name="Bosun Grogspar"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+						
+				<solo  id="IW01_merc" name="Brun Cragback &amp; Lug" full_name="Brun Cragback &amp; Lug" cost="9" qualification="Character Solo" fa="C" companionId="Lug_merc">
+					<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="SMALL" livingStatus="LIVING"  hitpoints="8" lesser_warlock="true" />
+					<weapons></weapons>
+					<full_text></full_text>
+				</solo>						
+
+				<solo  id="IW02_merc" name="Dahlia Hallyr &amp; Skarath" full_name="Dahlia Hallyr &amp; Skarath" cost="9" qualification="Character Solo" fa="C" companionId="Skarath_merc">
+					<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="SMALL" livingStatus="LIVING"  hitpoints="8" lesser_warlock="true"/>
+					<weapons></weapons>
+					<full_text></full_text>
+					<works_for id="faction_retribution" />
+				</solo>
+								
+				<solo id="MS09" name="Dirty Meg" full_name="Dirty Meg"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true" jack_marshal="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+
+				<solo id="MS10" name="Doc Killingsworth" full_name="Doc Killingsworth"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+								
+				<solo id="MS01e" name="Eiryss, Angel of the Retribution" full_name="Eiryss, Angel of the Retribution"
+					qualification="Kell Bailoch character solo" fa="C" cost="3">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>	
+					<works_for id="faction_retribution" />				
+				</solo>				
+												
+
+				<solo id="MS01" name="Eiryss, Mage Hunter of Ios" full_name="Eiryss, Mage Hunter of Ios"
+					qualification="Kell Bailoch character solo" fa="C" cost="3">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>	
+					<works_for id="faction_retribution" />				
+				</solo>				
+												
+				
+				<solo id="MS11" name="First Mate Hawk" full_name="First Mate Hawk"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+				
+				<solo id="IS12_merc" name="Gobber Tinker" full_name="Gobber Tinker"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+				
+				<solo id="MS03" name="Gorman DiWulfe, Rogue Alchemist" full_name="Gorman DiWulfe, Rogue Alchemist"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+												
+				
+				<solo id="IS03_merc" name="Gudrun the Wanderer" full_name="Gudrun the Wanderer"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+				
+				<solo id="MS18" name="Harlan Versh" full_name="Harlan Versh"
+					qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8"
+						def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING"
+						hitpoints="5" advance_deployment="true" pathfinder="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_cygnar"/>					
+				</solo>				
+							
+				
+				<solo id="MS06" name="Kell Bailoch" full_name="Kell Bailoch" qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Kell Bailoch" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+				
+				<solo id="IS04_merc" name="Lanyssa Ryssyll" full_name="Lanyssa Ryssyll" qualification="Kell Bailoch character solo" fa="C" cost="2">
+					<basestats name="Lanyssa Ryssyll" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_retribution" />
+				</solo>
+				
+				<solo id="MS12" name="Lord Rockbottom" full_name="Lord Rockbottom" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Lord Rockbottom" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+				
+				<solo id="MS21" name="Madelyn Corbeau" full_name="Madelyn Corbeau" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Madelyn Corbeau" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>
+					<works_for id="faction_retribution" />					
+				</solo>
+								
+				<solo id="MS13" name="Master Gunner Dougal MacNaile" full_name="Master Gunner Dougal MacNaile" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Dougal MacNaile" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+								
+				<solo id="MS05" name="Ogrun Bokur" full_name="Ogrun Bokur" qualification=" character solo" fa="2" cost="3">
+					<basestats name="Ogrun Bokur" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+				</solo>
+								
+				<solo id="MS15" name="Orin Midwinter" full_name="Orin Midwinter" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Orin Midwinter" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+								
+				<solo id="MS22" name="Ragman" full_name="Ragman" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Ragman" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+				</solo>
+								
+				<solo id="MS02" name="Reinholdt, Gobber Speculator" full_name="Reinholdt, Gobber Speculator" qualification=" character solo" fa="C" cost="1">
+					<basestats name="Reinholdt" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+				</solo>
+							
+				<solo  id="IW03_merc" name="Rorsh &amp; Brine" full_name="Rorsh &amp; Brine" cost="9" qualification="Character Solo" fa="C"  companionId="Brine_merc">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="SMALL" livingStatus="LIVING"  hitpoints="8" lesser_warlock="true"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<works_for id="faction_cryx"/>
+	<works_for id="faction_cygnar"/>
+	<works_for id="faction_khador"/>
+	<works_for id="faction_menoth"/>
+</solo>
+				
+					
+				<solo id="MS20" name="Rutger Shaw" full_name="Rutger Shaw" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Rutger Shaw" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" 
+					    baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" 
+					    pathfinder="true" jack_marshal="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+								
+				<solo id="MS04" name="Rhupert Carvolo" full_name="Rhupert Carvolo" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Rhupert Carvolo" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+								
+				<solo id="IS06_merc" name="Saxon Orrik" full_name="Saxon Orrik" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Saxon Orrik" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+								
+				<solo id="MS16" name="Stannis Brocker" full_name="Stannis Brocker" qualification=" character solo" fa="C" cost="4">
+					<basestats name="Stannis Brocker" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cryx"/>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+								
+				<solo id="MS23" name="Sylys Wyshnalyrr" full_name="Sylys Wyshnalyrr" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Sylys Wyshnalyrr" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+					<works_for id="faction_retribution" />
+				</solo>
+								
+				<solo id="MS19" name="Taryn di la Rovissi" full_name="Taryn di la Rovissi" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Taryn di la Rovissi" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" />
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_menoth"/>					
+				</solo>
+								
+				<solo id="MS17" name="Thor Steinhammer" full_name="Thor Steinhammer" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Thor Steinhammer" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" jack_marshal="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+					<works_for id="faction_khador"/>
+				</solo>
+				
+				<solo id="IS05_merc" name="Viktor Pendrake" full_name="Viktor Pendrake" qualification=" character solo" fa="C" cost="2">
+					<basestats name="Viktor Pendrake" spd="5" str="5" mat="5" rat="8" def="14" arm="13" cmd="8" baseSize="SMALL" livingStatus="LIVING" hitpoints="5" advance_deployment="true" pathfinder="true" jack_marshal="true"/>
+
+					<weapons>
+					    <melee_weapon name="sword" pow="3" p_plus_s="8"></melee_weapon>
+					    <ranged_weapon name="Silence" magical="true" rng="12" pow="11" aoe="-" rof="1">
+					        <capacity title="dual fire">if not move, shoot twice</capacity>
+					    </ranged_weapon>
+					</weapons>
+					<full_text><![CDATA[
+					]]></full_text>
+					<capacity title="Prowl" type=""> Gains stealth as long as in any sort of concealment.</capacity>
+					<works_for id="faction_cygnar"/>
+				</solo>				
+
+				<solo  id="IW04_merc" name="Wrong Eye &amp; Snapjaw" full_name="Wrong Eye &amp; Snapjaw" cost="9" qualification="Character Solo" fa="C" companionId="Snapjaw_merc">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" baseSize="SMALL" livingStatus="LIVING"  hitpoints="8" lesser_warlock="true"/>
+	<weapons></weapons>
+	<full_text></full_text>
+	<works_for id="faction_cryx"/>
+</solo>
+				
+								
+            </solos>
+        </army>
+
+</armies>
+	
+		    
+</ruleset>

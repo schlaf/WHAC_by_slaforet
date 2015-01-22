@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:scrollbars="vertical" >
+    
+    <!--
+         <com.schlaf.steam.activities.chrono.CountDownView
+             android:id="@+id/damageGridView1"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_gravity="center_horizontal"
+             android:layout_margin="2dp"
+             android:layout_weight="1" />
+         
+         <com.schlaf.steam.activities.chrono.CountDownView
+             android:id="@+id/damageGridView1"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_gravity="center_horizontal"
+             android:layout_margin="2dp"
+             android:layout_weight="1" />
+
+     <com.schlaf.steam.activities.damages.WarjackDamageGridView
+                        android:id="@+id/damageGridView1"
+                        android:layout_width="480dp"
+                        android:layout_height="360dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="2dp"
+                        android:layout_weight="0" />
+     
+     
+      <com.schlaf.steam.activities.damages.MyrmidonDamageGridView
+                        android:id="@+id/damageGridView1"
+                        android:layout_width="480dp"
+                        android:layout_height="360dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="2dp"
+                        
+                        android:layout_weight="0" />
+                        -->
+      <!--
+     <com.schlaf.steam.activities.damages.DamageLineView
+                        android:id="@+id/damageGridView1"
+                        android:layout_width="480dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="2dp"
+                        android:layout_weight="0" />
+      
+                    <com.schlaf.steam.activities.damages.DamageUnitView
+                        android:id="@+id/damageGridView1"
+                        android:layout_width="480dp"
+                        android:layout_height="360dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="2dp"
+                        android:layout_weight="0" />
+                         -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:src="@drawable/gradient_background_caster" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:src="@drawable/gradient_background_jackbeast" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:src="@drawable/gradient_background_unit" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:src="@drawable/gradient_background_solo" />
+
+    <!-- 
+    <com.schlaf.steam.activities.damages.DamageUnitView
+        android:id="@+id/damageGridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp"
+        android:layout_weight="0" />
+
+    
+    <com.schlaf.steam.activities.damages.MyrmidonDamageGridView
+        android:id="@+id/myrmidonDamageGridView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.schlaf.steam.activities.damages.MyrmidonDamageGridView
+        android:id="@+id/myrmidonDamageGridView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+         -->
+
+    <!-- <ImageButton
+        android:id="@+id/ImageButton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/unselected_action_background"
+        android:src="@drawable/action_move_melee" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selected_action_background"
+        android:src="@drawable/action_move_shoot" />
+
+    <ImageButton
+        android:id="@+id/ImageButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/unselected_action_background"
+        android:src="@drawable/action_slam" /> -->
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="ToggleButton" />
+
+    <com.schlaf.steam.activities.damages.DamageUnitView
+        android:id="@+id/damageUnitView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

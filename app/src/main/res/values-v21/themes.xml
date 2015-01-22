@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WhacTheme" parent="@android:style/Theme.Material">
+    </style>
+    
+    <style name="WhacTheme.Medium">
+        <item name="font_medium">@style/FontStyle.Medium</item>
+    </style>
+    
+</resources>

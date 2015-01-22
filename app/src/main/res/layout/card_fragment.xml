@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardFragmentBaseLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <!-- manchette -->
+
+    <include
+        android:id="@+id/card_manchette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/card_manchette" />
+
+    <!-- cards -->
+
+    <LinearLayout
+        android:id="@+id/cardFragmentBaseContainer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <!-- scrollview contains card content -->
+
+        <ScrollView
+            android:id="@+id/firstCardScrollView"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:id="@+id/uniqueCardContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                    <!-- title of card -->
+
+                    <include
+                        android:id="@+id/cardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/card_title_layout" />
+
+                    <!-- models -->
+
+                    <include
+                        android:id="@+id/modelgrid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        layout="@layout/model_grid" />
+                    
+                    <!--  put here feat, spells, ... if one row only -->
+                    
+                <include
+                    android:id="@+id/featView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    layout="@layout/feat" />
+
+                <!-- spells -->
+				<include
+                    android:id="@+id/spellView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    layout="@layout/spells" />
+
+                <!-- other -->
+
+                <include
+                    android:id="@+id/otherView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    layout="@layout/card_detail_text"
+                    android:paddingTop="5dp" />
+                    
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/secondCardScrollView"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:paddingLeft="5dp"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:id="@+id/secondCardBaseLayoutTwoRows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- feat -->
+
+                <include
+                    android:id="@+id/featView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/feat"
+                    android:paddingBottom="5dp" />
+
+                <!-- spells -->
+				<include
+                    android:id="@+id/spellView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    layout="@layout/spells" />
+
+                <!-- other -->
+
+                <include
+                    android:id="@+id/otherView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    layout="@layout/card_detail_text"
+                    android:paddingLeft="5dip" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

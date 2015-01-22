@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/spacerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/empty"
+        android:src="@drawable/empty"
+        android:text="@+id/def_arm_label" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spacerImage"
+        android:text="Leader &amp; grunts"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="@dimen/textview_small_height"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDefArm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@id/tvTitle"
+        android:text="def 12 / arm 18"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="@dimen/textview_small_height"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutUnitDamages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+</RelativeLayout>

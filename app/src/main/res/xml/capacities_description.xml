@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<capacities>
+<data title="Abomination: This model is a terrifying entity. Models and
+units – friendly and enemy – within 3” of this model must pass
+a command check or flee"/>
+<data title="Advance Deployment: Place this model after normal deploy-
+ment up to 6” beyond the established deployment zone"/>
+<data title="Arc Node: This model is a channeler"/>
+<data title="Combined Melee Attack: This model can participate in com-
+bined melee attacks with other models in its unit"/>
+<data title="Combined Ranged Attack: This model can participate in
+combined ranged attacks with other models in its unit"/>
+<data title="Commander: This model is a commander. A friendly Faction
+model or unit in this model’s command range can replace its
+current CMD with the current CMD of the commander when
+making command checks. Models with the Commander advan-
+tage should not be confused with Unit Commanders that lead
+individual units. All warcaster models have this advantage"/>
+<data title="Construct: This model is not a living model and never flees"/>
+<data title="All warjacks have this advantage"/>
+<data title="Eyeless Sight: This model ignores Camouflage, cloud effects,
+forests, and Stealth when determining line of site or making
+attacks"/>
+<data title="Fearless: This model never flees. All warcaster models have
+this advantage"/>
+<data title="Gunfighter: This model is a gunfighter. The gunfighter has a
+melee range of 1/2” and can make ranged attacks targeting mod-
+els in its melee range"/>
+<data title="Incorporeal: This model can move through rough terrain and
+obstacles without penalty. It can move through obstructions
+and other models if it has enough movement to move com-
+pletely past them. Other models, including slammed, pushed,
+or thrown models, can move through this model without effect
+if they have enough movement to move completely past it"/>
+<data title="This model does not count as an intervening model. This
+model suffers damage and effects only from magical weapons,
+magic attacks, animi, spells, and feats and is immune to con-
+tinuous effects. This model cannot be moved by a slam. When
+this model makes a melee or ranged attack, before the attack
+roll is made it loses Incorporeal for one round"/>
+<data title="‘Jack Marshal: This model is a ‘jack marshal . If this advan-
+tage is on a unit, only the Unit Commander of this unit is a
+‘jack marshal"/>
+<data title="Officer: This model is an officer. The officer is the Unit Com-
+mander of its unit. This model is not a grunt"/>
+<data title="Pathfinder: This model ignores movement penalties from
+rough terrain when it advances and can charge and make slam
+and trample power attacks across obstacles"/>
+<data title="Standard Bearer: This model is a standard bearer"/>
+<data title="WEAPON QUALITIES
+Buckler: This weapon has an integral buckler that gives the model a
+cumulative +1 ARM bonus. A model does not gain this bonus while
+the weapon system with the buckler is crippled or being held in a
+weapon lock or when resolving damage that originates in its back arc"/>
+<data title="Continuous Effect: Corrosion: A model hit by this attack suffers the
+corrosion continuous effect"/>
+<data title="Continuous Effect: Fire: A model hit by this attack suffers the fire
+continuous effect"/>
+<data title="Critical Corrosion: On a critical hit, the model hit by this attack suf-
+fers the corrosion continuous effect"/>
+<data title="Critical Fire: On a critical hit, the model hit by this attack suffers the
+fire continuous effect"/>
+<data title="Damage Type: Cold: This weapon causes cold damage"/>
+<data title="Damage Type: Corrosion: This weapon causes corrosion damage"/>
+<data title="Damage Type: Electricity: This weapon causes electrical damage"/>
+<data title="Damage Type: Fire: This weapon causes fire damage"/>
+<data title="Magical Weapon: This weapon is a magical weapon"/>
+<data title="Open Fist: This weapon is an open fist. A warjack’s open fist enables
+it to make certain power attacks. A warjack with an open fist can
+make arm lock, headlock, and throw power attacks; warjacks with two
+Open Fists can also perform a double-hand throw power attack. A
+warjack with a crippled open fist cannot use it to make power attacks"/>
+<data title="Reach: This weapon as a 2” melee range"/>
+<data title="Shield: This weapon is a shield that gives the model a cumulative +2
+ARM bonus. A model does not gain this bonus while the weapon sys-
+tem with the shield is crippled or being held in a weapon lock or when
+resolving damage that originates in its back arc"/>
+<data title="Weapon Master: When attacking with this weapon, add an additional
+die to its damage rolls"/>
+<data title="IMMUNITIES
+Cold: This model does not suffer cold damage"/>
+<data title="Corrosion: This model does not suffer corrosion damage and is im-
+mune to the corrosion continuous effect"/>
+<data title="Electricity: This model does not suffer electrical damage"/>
+<data title="Fire: This model does not suffer fire damage and is immune to the
+fire continuous effect"/>
+<data title="KNOCKED DOWN
+A knocked down model must forfeit its movement or action to stand up. A
+model that has been knocked down on its turn cannot stand up until its
+next activation"/>
+<data title="Stealth: Ranged and magic attacks declared against this
+Knocked down models cannot move, make actions, make attacks,
+model when the point of origin of the attack is greater than 5”
+cast spells, use animi, use feats, channel spells, or give orders"/>
+<data title="away automatically miss. If this model is greater than 5” away
+from a model, it does not count as an intervening model to
+Knocked down models have no melee range and cannot engage or be
+that model"/>
+<data title="engaged, block LOS, and are not intervening models"/>
+<data title="Terror: This model is a terrifying entity. Enemy model/units
+Knocked down models cannot be locked or moved by a slam"/>
+<data title="in the melee range of this model or with the model in their
+Knocked down models are DEF 5 and automatically hit by melee
+melee range must pass a command check or flee"/>
+<data title="attacks"/>
+<data title="Tough: When this model is disabled, roll a d6. On a 5 or 6,
+STATIONARY MODELS
+this model regains one wound, is no longer disabled, and is
+Stationary models cannot activate"/>
+<data title="knocked down"/>
+<data title="Stationary models cannot advance, make actions, make attacks, cast
+Undead: This model is not a living model and never flees"/>
+<data title="spells, use animi, use feats, or give orders"/>
+<data title="Stationary models have no melee range and cannot engage or be
+engaged"/>
+</capacities>

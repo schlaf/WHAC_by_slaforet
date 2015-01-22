@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/entryName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit name"
+            android:textSize="@dimen/textview_large_height" />
+
+        <TextView
+            android:id="@+id/entryDetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="10 models [8PC]"
+            android:textSize="@dimen/textview_small_height" />
+
+</LinearLayout>

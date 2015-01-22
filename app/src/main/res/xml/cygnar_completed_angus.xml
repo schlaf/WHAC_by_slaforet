@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="warmachine.xsd">
+  <armies>
+    <army faction="faction_cygnar" name="cygnar">
+      <warcasters>
+        <warcaster id="Yw01" name="Haley1" full_name="Captain Victoria Haley" generation="P" qualification="Cygnar Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+          <basestats name="Haley" spd="6" str="5" mat="6" rat="5" def="16" arm="14" cmd="8" hitpoints="15" />
+          <weapons>
+            <melee_weapon name="Vortex Spear" pow="6" p_plus_s="11" magical="true" reach="true">
+              <capacity title="SET DEFENSE">A model in this model front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" magical="false" />
+          </weapons>
+          <feat title="Blitz"><![CDATA[Friendly Faction models beginning their activations in Haley's control area can make one additional attack that activation this turn regardless of weapon's ROF.]]></feat>
+          <spell name="ARCANE BOLT" cost="2" rng="12" aoe="-" pow="11" up="NO" off="YES">Magical bolts of energy streak toward the target model.</spell>
+          <spell name="ARCANE SHIELD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 ARM.</spell>
+          <spell name="CHAIN LIGHTNING" cost="3" rng="10" aoe="-" pow="10" up="NO" off="YES">A model hit by Chain Lightning suffers a POW 10 electrical damage roll, and lightning arcs from that model to d6 consecutive additionnal models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</spell>
+          <spell name="DEADEYE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains an additional die on each model's first ranged attack roll this turn.</spell>
+          <spell name="SCRAMBLE" cost="3" rng="10" aoe="-" pow="-" up="NO" off="YES">Target enemy warjack immediately advances its current SPD in inches in a direction determined by the deviation template. During this movement, it moves through models with smaller bases if it has enough movement to move completely past their bases. Models it moves through are knocked down. The warjack is knocked down if it contacts an obstacle, an obstruction, or a model with a base equal to or larger than its own. A warjack can be affected by Scramble only once per turn.</spell>
+          <spell name="TEMPORAL BARRIER" cost="4" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, enemy models suffer 2 DEF. Enemy models beginning their activation in this model's control area cannot run or charge. Temporal Barrier lasts for one round.</spell>
+          <capacity title="ARCANE VORTEX" type="">This model can immediately negate any spell that targets it or a model within 3" of it by spending 1 focus point before the RNG of the spell is measured. The negated spell does not take effect, but its COST remains spent.</capacity>
+        </warcaster>
+        <warcaster id="Yx01" name="Haley2" full_name="Major Victoria Haley" generation="E" qualification="Cygnar Epic Warcaster" focus="8" warjack_points="5" fa="C"  completed="true">
+          <basestats name="Haley" spd="6" str="6" mat="6" rat="5" def="16" arm="14" cmd="8" hitpoints="15" />
+          <weapons>
+            <melee_weapon name="Echo" pow="7" p_plus_s="13" magical="true" reach="true">
+              <capacity title="SET DEFENSE">A model in this model front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" magical="false" />
+          </weapons>
+          <feat title="Temporal Shift"><![CDATA[During your opponent's next Activation Phase, enemy models/units activating while in Haley's control area forfeit either their movement or their action during their activations, as their controller chooses. Affected models/units activate at the start of their controller's next Activation Phase in the order you choose. Temporal Shift lasts for one round.]]></feat>
+          <spell name="ARCANE BOLT" cost="2" rng="12" aoe="-" pow="11" up="NO" off="YES">Magical bolts of energy streak toward the target model.</spell>
+          <spell name="DEADEYE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains an additional die on each model's first ranged attack roll this turn.</spell>
+          <spell name="DECELERATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly models gain +2 DEF and ARM against ranged attacks. Deceleration lasts for one round.</spell>
+          <spell name="DOMINATION" cost="3" rng="8" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-character warjack that has a functional cortex. You can make a full advance with the warjack and can then make one normal attack, then Domination expires. Domination can be cast only once per turn.</spell>
+          <spell name="TELEKINESIS" cost="2" rng="8" aoe="-" pow="-" up="NO" off="*">Place target model completely within 2" of its current location. When Telekinesis targets an enemy model, it is an offensive spell and requires a magic attack roll. A model can be affected by Telekinesis only once per turn.</spell>
+          <spell name="TEMPORAL ACCELERATION" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">During its activation this turn, target friendly Faction model gains +2" movement and can make one additional attack regardless of a weapon's ROF. Temporal Acceleration can be cast only once per turn.</spell>
+          <spell name="TIME BOMB" cost="4" rng="10" aoe="4" pow="14" up="NO" off="YES">A model hit by Time Bomb suffers 2 SPD and DEF for one round.</spell>
+          <capacity title="REPLICATION" type="">When an enemy model in this model's control area spends focus points to cast an offensive spell, this model can cast that spell on your next turn as if it were one of its own spells. This model can upkeep replicated spells.</capacity>
+          <capacity title="WARJACK BOND (EPIC HALEY)" type="">One non-character warjack in Haley's battlegroup can begin the game bonded to her. If this warjack begins its activation in Haley's control area, it gains +2" movement that activation.</capacity>
+        </warcaster>
+        <warcaster id="Yw02" name="Stryker1" full_name="Commander Coleman Stryker" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Stryker" spd="6" str="6" mat="7" rat="6" def="16" arm="15" cmd="9" hitpoints="17" />
+          <weapons>
+            <melee_weapon name="Quicksilver" pow="7" p_plus_s="13" magical="true" reach="false">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Disruptor Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Invincibility"><![CDATA[While in Stryker's control area, friendly Faction models gain +5 ARM for one round.]]></feat>
+          <spell name="ARCANE BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">A magical energy blast radiates from a single point to strike all models in the AOE.</spell>
+          <spell name="ARCANE BOLT" cost="2" rng="12" aoe="-" pow="11" up="NO" off="YES">Magical bolts of energy streak toward the target model.</spell>
+          <spell name="ARCANE SHIELD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 ARM.</spell>
+          <spell name="BLUR" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 DEF against ranged and magic attack rolls.</spell>
+          <spell name="EARTHQUAKE" cost="3" rng="10" aoe="5" pow="-" up="NO" off="YES">Models hit by Earthquake are knocked down.</spell>
+          <spell name="SNIPE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model's/unit's ranged weapons gain +4 RNG.</spell>
+        </warcaster>
+        <warcaster id="Yx02" name="Stryker2" full_name="Lord Commander Stryker" generation="E" qualification="Cygnar Epic Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Stryker" spd="6" str="7" mat="7" rat="6" def="16" arm="16" cmd="10" hitpoints="17" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Quicksilver MKII" pow="8" p_plus_s="15" magical="true" reach="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Magnum" rng="10" rof="2" aoe="-" pow="12" magical="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Rolling Thunder"><![CDATA[After all friendly models have completed their activations this turn, friendly Faction models/units currently in Stryker's control area can advance up to 3" and then can make one normal melee attack. When resolving these attacks, affected models can spend focus points to boost attack and damage rolls at 1 focus point per boost.]]></feat>
+          <spell name="DEFLECTION" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models gain +2 ARM against ranged and magic attack damage rolls. Deflection lasts for one round.</spell>
+          <spell name="LIGHTNING STORM" cost="3" rng="8" aoe="3" pow="10" up="NO" off="YES">Models hit suffer a POW 10 electrical damage roll. The AOE remains in play for one round. Models entering or ending their activations in the AOE suffer a POW 10 electrical damage roll.</spell>
+          <spell name="POSITIVE CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction warjack gains +2 to melee attack and melee damage rolls. While within 3" of the affected warjack, friendly Faction models gain +2 on melee attack and melee damage rolls. Positive Charge lasts for one turn.</spell>
+          <spell name="REBUKE" cost="2" rng="10" aoe="-" pow="-" up="NO" off="YES">Target enemy model/unit cannot give orders, receive orders, or make special attacks for one round.</spell>
+          <spell name="VELOCITY" cost="*" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model can spend up to 3 focus points to advance up to 2" immediately for each focus point spent. Velocity can be cast only once per turn.</spell>
+          <capacity title="ELITE CADRE [STORMBLADE INFANTRY]" type="">Before the start of the game, after both players have deployed, friendly Stormblade Infantry models can make a full advance.</capacity>
+          <capacity title="OVERLOAD" type="">Once per activation, you can roll one to three dice. This model gains a STR bonus equal to the total of that roll. Then roll the same dice again. This model suffers damage equal to the total of that roll. This bonus expires at the end of this model's activation.</capacity>
+          <capacity title="WARJACK BOND (EPIC STRYKER)" type="">One non-character warjack in Stryker's battlegroup can begin the game bonded to him. The bonded warjack gains an additional die on its first melee attack roll during its activation each turn.</capacity>
+        </warcaster>
+        <warcaster id="Yz02" name="Stryker3" full_name="Lord General Coleman Stryker" generation="E" qualification="Cygnar Epic Cavalry Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="Stryker" spd="8" str="6" mat="7" rat="6" def="15" arm="16" cmd="10" hitpoints="18" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Quicksilver MKIII" pow="8" p_plus_s="14" magical="true" reach="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="10">
+                <capacity title="THUNDEROUS IMPACT">After resolving this model's impact attacks, if one or more impact attack rolls hit an enemy model, lightning arcs from this model to d3 consecutive models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring these model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</capacity>
+            </mount_weapon>
+            <ranged_weapon name="Quicksilver Blast" rng="8" rof="1" aoe="-" pow="14" magical="true" electricity="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Lightning Charge"><![CDATA[When a friendly Faction model  makes a mount attack or a charge attack, while within Stryker's control area, the attack automatically hits and gains an additional die on the damage roll. Lightning Charge lasts for one round.]]></feat>
+          <spell name="ARCANE BOLT" cost="2" rng="12" aoe="-" pow="11" up="NO" off="YES">Magical bolts of energy streak toward the target model.</spell>
+          <spell name="CHAIN BLAST" cost="3" rng="10" aoe="3" pow="12" up="NO" off="YES">After determining the point of impact for this attack, roll deviation for an additional 3" AOE from that point. Models in that AOE are hit and suffer a POW 6 blast damage roll</spell>
+          <spell name="ESCORT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Warjacks in this model's battlegroup beginning their activations in its control area gain +2" movement. This model gains +2 ARM while one or more warjacks in its battlegroup are within 3" of it.</spell>
+          <spell name="FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 to melee damage rolls but suffers -1 DEF.</spell>
+          <spell name="IRON AGGRESSION" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack can run, charge, or make slam or trample power attacks without spending focus and gains boosted melee attack rolls.</spell>
+          <capacity title="ELITE CADRE [STORM LANCES]" type="">Friendly Storm Lances models gain Reform. (After all models in a unit with Reform have completed their actions, each can advance up to 3".)</capacity>
+          <capacity title="FIELD MARSHALL [ASSAULT]">Models in this model's battlegroup gain Assault. (As part of a charge, after moving but before making its charge attack, a model with Assault can make one ranged attack targeting the model charged unless they were in melee with each other at the start of the affected model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model must still make the ranged attack before its activation ends.)</capacity>
+          <capacity title="PLASMA NIMBUS">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers a POW 10 electrical damage roll unless this model was destroyed or removed from play by the attack</capacity>
+        </warcaster>        
+        <warcaster id="Yw03" name="Caine1" full_name="Lieutenant Allister Caine" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Caine" spd="7" str="5" mat="4" rat="8" def="17" arm="13" cmd="8" hitpoints="15" />
+          <weapons>
+            <melee_weapon name="Sword" pow="3" p_plus_s="8" magical="false" reach="false" />
+            <ranged_weapon name="Spellstorm Pistol" rng="12" rof="2" aoe="-" pow="12" magical="true" count="2" />
+          </weapons>
+          <feat title="Maelstrom"><![CDATA[When resolving Maelstrom, Caine has no back arc and his front arc extends to 360. Caine makes a normal Spellstorm Pistol attack against every enemy model currently in his control area, ignoring intervening models. Caine cannot use Maelstrom while he is in melee.]]></feat>
+          <spell name="BLUR" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 DEF against ranged and magic attack rolls.</spell>
+          <spell name="DEADEYE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains an additional die on each model's first ranged attack roll this turn.</spell>
+          <spell name="SNIPE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model's/unit's ranged weapons gain +4 RNG.</spell>
+          <spell name="TELEPORT" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Place this model anywhere completely within 8" of its current location, then its activation ends.</spell>
+          <spell name="THUNDER STRIKE" cost="4" rng="8" aoe="-" pow="14" up="NO" off="NO">Instead of suffering a normal damage roll, a non-incorporeal model hit by Thunder Strike is slammed d6" directly away from the spell's point of origin regardless of its base size and suffers a POW 14 damage roll. Collateral damage from this slam is POW 14.</spell>
+          <capacity title="RANGE AMPLIFIER" type="">When this model casts a spell and is the point of origin for the spell, the spell gains +5 RNG.</capacity>
+        </warcaster>
+        <warcaster id="Yx03" name="Caine2" full_name="Captain Allister Caine" generation="E" qualification="Cygnar Epic Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="Caine" spd="7" str="5" mat="4" rat="9" def="17" arm="13" cmd="8" hitpoints="15" gunfighter="true" />
+          <weapons>
+            <ranged_weapon name="Spellstorm Pistol" rng="12" rof="∞" aoe="-" pow="12" magical="true" count="2" />
+          </weapons>
+          <feat title="Overkill"><![CDATA[After resolving each ranged attack that hits an enemy model, Caine gains a cumulative +1 to his Spellstorm Pistol damage rolls. When a model is boxed by a Spellstorm Pistol attack, center a 3" AOE on it and remove it that model from play. Models in the AOE are hit and suffer an unboostable POW 10 blast damage roll. Overkill expires at the end of Caine's activation.]]></feat>
+          <spell name="ARCANE BOLT" cost="2" rng="12" aoe="-" pow="11" up="NO" off="YES">Magical bolts of energy streak toward the target model.</spell>
+          <spell name="BLUR" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 DEF against ranged and magic attack rolls.</spell>
+          <spell name="GATE CRASHER" cost="3" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Place this model anywhere completely within 8" of its current location. After casting Gate Crasher, it cannot advance this activation. For the rest of this activation, this model's ranged attacks must target models in its melee range. Gate Crasher can be cast only once per activation.</spell>
+          <spell name="HEIGHTENED REFLEXES" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit cannot be knocked down or made stationary.</spell>
+          <spell name="MAGIC BULLET" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">If target friendly Faction model's next normal ranged attack directly hits, after resolving the attack choose a model within 4" of the model hit. The chosen model suffers an unboostable POW 12 magic damage roll. The point of origin for this damage is the model hit. After resolving this damage roll, Magic Bullet expires. Magic Bullet lasts for one turn.</spell>
+          <spell name="TRUE SHOT" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">This model ignores concealment, Camouflage, and Stealth.</spell>
+          <capacity title="ELITE CADRE [ARCANE TEMPEST]" type="">Friendly Arcane Tempest models gain Gunfighter.</capacity>
+          <capacity title="RANGE AMPLIFIER" type="">When this model casts a spell and is the point of origin for the spell, the spell gains +5 RNG.</capacity>
+        </warcaster>
+        <warcaster id="Yw04" name="Nemo1" full_name="Commander Adept Nemo" generation="P" qualification="Cygnar Warcaster" focus="7" warjack_points="6" fa="C"  completed="true">
+          <basestats name="Nemo" spd="5" str="5" mat="5" rat="5" def="14" arm="14" cmd="8" hitpoints="14" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Lightning Rod" pow="7" p_plus_s="12" magical="true" reach="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Ball Lightning" rng="10" rof="1" aoe="3" pow="14" magical="true" electricity="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Electrical Storm"><![CDATA[Enemy warjacks and warbeasts currently in Nemo's control area suffer a POW 14 electrical damage roll ICON. Warjacks damaged by Electrical Storm suffer Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)]]></feat>
+          <spell name="CHAIN LIGHTNING" cost="3" rng="10" aoe="-" pow="10" up="NO" off="YES">A model hit by Chain Lightning suffers a POW 10 electrical damage roll, and lightning arcs from that model to d6 consecutive additionnal models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</spell>
+          <spell name="DEFLECTION" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models gain +2 ARM against ranged and magic attack damage rolls. Deflection lasts for one round.</spell>
+          <spell name="DISRUPTION FIELD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack gains +2 STR, and its melee weapons gain Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</spell>
+          <spell name="ELECTRIFY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">If target friendly model is hit by a melee attack, after the attack is resolved the attacker is pushed d3" directly away from the affected model and suffers an unboostable POW 14 electrical damage roll, then Electrify expires.</spell>
+          <spell name="LOCOMOTION" cost="*" rng="6" aoe="-" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Locomotion. Target warjack in this model's battlegroup immediately advances up to 1" for each focus point spent. A warjack can be targeted by Locomotion only once per turn.</spell>
+          <spell name="VOLTAIC SNARE" cost="3" rng="8" aoe="*" pow="-" up="NO" off="YES">Target warjack cannot advance and suffers 4 DEF. A warjack beginning an advance within 3" of the model hit cannot run or charge and can advance only directly toward it. Voltaic Snare lasts for one round. Voltaic Snare can be cast only once per turn.</spell>
+          <capacity title="ARCANE ACCUMULATOR" type="">When another model casts a spell in this model's control area, this model gains one power token, up to a maximum of three. During your Control Phase, after this model replenishes its focus but before it allocates focus, replace each power token with 1 focus point.</capacity>
+          <capacity title="OVERPOWER" type="">During your Control Phase, after this model replenishes its focus but before it allocates focus, this model can spend focus to increase its control area for one round at 1 focus point for each 1" increase.</capacity>
+          <capacity title="SUPERCHARGE" type="">During your Control Phase, this model can allocate up to 5 focus points to one warjack in its battlegroup that is in its control area.</capacity>
+        </warcaster>
+        <warcaster id="Yx04" name="Nemo2" full_name="General Adept Nemo" generation="E" qualification="Cygnar Epic Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
+          <basestats name="Nemo" spd="5" str="5" mat="5" rat="5" def="14" arm="16" cmd="9" hitpoints="14" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Fulger" pow="7" p_plus_s="12" magical="true" reach="true">
+              <capacity title="POWERFUL ATTACK">When attacking with this weapon, this model can spend 1 focus point to boost all attack and damage rolls for the attack.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Galvanic Bolt" rng="10" rof="1" aoe="-" pow="13" magical="true" electricity="true">
+              <capacity title="TRACTOR FIELD">When a warjack is hit by this attack it cannot advance and suffers 4 DEF. Warjacks beginning an advance within 3" of a warjack hit cannot run or charge and can advance only directly toward it. Tractor Field lasts for one round.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="High Voltage"><![CDATA[Each warjack in Nemo's battlegroup currently in his control area is allocated up to 3 focus points.]]></feat>
+          <spell name="ELECTRICAL BLAST" cost="3" rng="8" aoe="3" pow="13" up="NO" off="YES">Electrical Blast causes electrical damage. Warjacks damaged by Electrical Blast suffer Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</spell>
+          <spell name="ENERGIZER" cost="*" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.</spell>
+          <spell name="FAIL SAFE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack gains +2 ARM and does not suffer the effects of crippled systems.</spell>
+          <spell name="FORCE FIELD" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">This model does not suffer blast or collateral damage and cannot be knocked down. When an enemy AOE ranged attack deviates from a point in this model's control area, after the deviation distance is rolled you choose the deviation direction.</spell>
+          <spell name="LIGHTNING SHROUD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup gains +2 STR and its melee weapons gain Electro Leap. (When a model is hit by a weapon with Electro Leap, you can choose to have lightning arc the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.)</spell>
+          <spell name="POLARITY SHIELD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit cannot be targeted by a charge made by a model in its front arc.</spell>
+          <capacity title="ELITE CADRE [STORMSMITH STORMCALLERS]" type="">Friendly Stormsmith Stormcallers have Stormcall [9] and gain +2 to Stormcall damage rolls.</capacity>
+          <capacity title="FOCUS MATRIX" type="">This model can allocate focus points during its activation. Once per turn during its activation, you can remove focus points from warjacks in this model's battlegroup that are in its control area and give those focus points to this model. This model cannot have more focus points than its FOCUS as a result of Focus Matrix.</capacity>
+        </warcaster>
+        <warcaster id="Yz04" name="Nemo3" full_name="Artificer General Nemo &amp; Storm Chaser Adept Finch" generation="EE" qualification="Cygnar Epic Warcaster &amp; Character Solo" focus="7" warjack_points="3" fa="C" completed="true">
+          <basestats name="Nemo" spd="5" str="5" mat="5" rat="6" def="14" arm="16" cmd="9" hitpoints="14" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Tempest Accumulator" pow="7" p_plus_s="12" magical="true" reach="true">
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Lightning Strike" rng="CTRL" rof="1" aoe="-" pow="10" magical="false" electricity="true">
+              <capacity title="LIGHTNING GENERATOR">When a model is hit with this weapon, lightning arcs from that model to d3 consecutive additionnal models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <feat title="Eye of the Storm"><![CDATA[While in Nemo's control area, friendly models gain an additionnal die on electrical damage rolls. Eye of the storm lasts for one turn.]]></feat>
+          <spell name="CHAIN LIGHTNING" cost="3" rng="10" aoe="-" pow="10" up="NO" off="YES">A model hit by Chain Lightning suffers a POW 10 electrical damage roll, and lightning arcs from that model to d6 consecutive additionnal models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</spell>
+          <spell name="ELECTRIFY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">If target friendly model is hit by a melee attack, after the attack is resolved the attacker is pushed d3" directly away from the affected model and suffers an unboostable POW 14 electrical damage roll, then Electrify expires.</spell>
+          <spell name="FAIL SAFE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack gains +2 ARM and does not suffer the effects of crippled systems.</spell>
+          <spell name="FORCE HAMMER" cost="4" rng="10" aoe="-" pow="12" up="NO" off="YES">Instead of suffering a normal damage roll, a non-incorporeal model Force Hammer hits is slammed d6" directly away from the spell's point of origin regardless of its base size and suffers a POW 12 damage roll. Collateral damage from this slma is POW 12.</spell>
+          <spell name="LIGHTNING SHROUD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup gains +2 STR and its melee weapons gain Electro Leap. (When a model is hit by a weapon with Electro Leap, you can choose to have lightning arc the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.)</spell>
+          <capacity title="OVERPOWER" type="">During your Control Phase, after this model replenishes its focus but before it allocates focus, this model can spend focus to increase its control area for one round at 1 focus point for each 1" increase.</capacity>
+          <capacity title="LIGHTNING FIELD" type="">When lightning arcs as a result of an attack made by a friendly model in this model's control area, ignore models with Immunity : Electricity when determining which model the lightning arcs to.</capacity>
+          <model id="Storm Chaser Adept Caitlin Finch" full_name="Storm Chaser Adept Caitlin Finch" qualification="cygnar solo">
+            <basestats name="Finch" spd="6" str="5" mat="5" rat="5" def="14" arm="12" cmd="8" hitpoints="5" immunity_electricity="true" />
+            <weapons>
+              <melee_weapon name="Tuning Fork" pow="5" p_plus_s="10" magical="false" reach="true">
+                <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+              </melee_weapon>
+              <ranged_weapon name="Electrical Bolt" rng="10" rof="1" aoe="-" pow="10" magical="false" electricity="true">
+                <capacity title="ELECTRO LEAP">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              </ranged_weapon>
+            </weapons>
+            <capacity title="ATTACHED TO [ARTIFICER GENERAL NEMO]">This model is attached to Artificer General Nemo for the rest of the game. Each warcaster can have only one model attached to it.</capacity>
+            <capacity title="COMPANION [ARTIFICER GENERAL NEMO]">This model is included in any army that includes Artificer General Nemo. If Artificer General Nemo is destroyed or removed from play, remove this model from play. This model is part of Artificer General Nemo's battlegroup.</capacity>
+            <capacity title="ARCANE ASSIST" type="">If its warcaster is in this model's command range during your Control Phase, the warcaster can upkeep one spell without spending focus.</capacity>
+            <capacity title="ARCANTRIK TUNING" type="">When this model's warcaster allocates 1 or more focus points to a warjack in this model's command range, the warjack is allocated 1 additional focus point.</capacity>
+          </model>
+        </warcaster>
+        <warcaster id="YW05" name="Brisbane" full_name="Major Markus 'Siege' Brisbane" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="Siege" spd="5" str="7" mat="6" rat="6" def="14" arm="17" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Havoc" pow="7" p_plus_s="14" magical="true" reach="false">
+              <capacity title="CRITICAL SMITE">On a critical hit, this model can slam the model hit instead of rolling damage normally. The model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model's STR plus the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Rocket Cannon" rng="14" rof="1" aoe="-" pow="14" magical="false">
+              <capacity title="GROUND POUNDER" type="*Attack">Place a 4" AOE anywhere completely within this weapon's RNG. The center point of the AOE must be in this model's front arc. This model makes one ranged attack with this weapon against each model in the AOE. When making a Ground Pounder special attack, this model ignores concealment, elevation, and Stealth. This model cannot gain the aiming bonus on Ground Pounder attack rolls. Models hit suffer a POW 12 ranged attack damage roll. Ground Pounder attack rolls do not suffer the target in melee attack roll penalty, and a missed Ground Pounder attack roll is not rerolled against another model.</capacity> <!-- errata 12-2013 -->
+            </ranged_weapon>
+          </weapons>
+          <feat title="Breach"><![CDATA[The next time each enemy model suffers a damage roll while in Siege's control area, halve its base ARM when calculating damage. Breach lasts for one turn.]]></feat><!-- errata 12-2013 -->
+          <spell name="EXPLOSIVO" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">When target friendly model makes a normal attack with a ranged weapon, the weapon gains Magical Weapon. If the weapon was AOE - it becomes AOE 3. An affected model cannot participate in a combined ranged attack. Models in the AOE other than the model that was directly hit suffer blast damage rolls but do not suffer any other effects of the attack. Explosivo expires immediately after resolving the target model's next ranged attack. Explosivo lasts for one turn.</spell>
+          <spell name="FORCE HAMMER" cost="4" rng="10" aoe="-" pow="12" up="NO" off="YES">Instead of suffering a normal damage roll, a non-incorporeal model Force Hammer hits is slammed d6" directly away from the spell's point of origin regardless of its base size and suffers a POW 12 damage roll. Collateral damage from this slma is POW 12.</spell>
+          <spell name="FOX HOLE" cost="2" rng="CTRL" aoe="5" pow="12" up="YES" off="NO">Place a 5" AOE anywhere completely in this model's control area. Models completely in the AOE have cover and do not suffer blast damage. When drawing LOS to a model not completely within the AOE, ignore intervening models completely within the AOE.</spell>
+          <spell name="MAGE SIGHT" cost="2" rng="CTRL" aoe="5" pow="12" up="YES" off="NO">Place a 5" AOE completely in this model's control area. While a model is within the AOE, models in this model's battlegroup ignore forests and cloud effects when drawing LOS to it and ignore Stealth when attacking it.</spell>
+          <spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+        </warcaster>
+        <warcaster id="YW06" name="Kraye" full_name="Captain Jeremiah Kraye" generation="P" qualification="Cygnar Cavalry Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Kraye" spd="8" str="6" mat="6" rat="6" def="14" arm="17" cmd="8" hitpoints="18" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Bitter End" pow="7" p_plus_s="13" magical="true" reach="false" />
+            <ranged_weapon name="Radcliffe Carbine" rng="13" rof="2" aoe="-" pow="11" magical="false" />
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <feat title="Horsepower"><![CDATA[Friendly knocked down Faction warjacks currently in Kraye's control area immediately stand up. Friendly Faction warjacks currently in his control area can immediately turn to face any direction. Affected warjacks can charge without spending focus. Affected charging models gain +2" movement. Melee attack rolls made by affected warjacks are boosted. Horsepower lasts for one turn.]]></feat>
+          <spell name="ARCANE BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">A magical energy blast radiates from a single point to strike all models in the AOE.</spell>
+          <spell name="EASY RIDER" cost="3" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Friendly Faction models beginning their activations in this model's control area gain Pathfinder. Easy Rider lasts for one turn.</spell>
+          <spell name="FULL TILT" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup doubles its base SPD during its normal movement but cannot make ranged attacks.</spell>
+          <spell name="GUIDED FIRE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, models in its battlegroup gain boosted ranged attack rolls for one turn.</spell>
+          <spell name="MAGE SIGHT" cost="2" rng="CTRL" aoe="5" pow="12" up="YES" off="NO">Place a 5" AOE completely in this model's control area. While a model is within the AOE, models in this model's battlegroup ignore forests and cloud effects when drawing LOS to it and ignore Stealth when attacking it.</spell>
+          <spell name="PURSUIT" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">If target enemy model/unit advances during its normal movement, immediately after ending this movement one model in this model's battlegroup that is in its control area can make a full advance.</spell> <!-- errata may 2014 -->
+          <capacity title="IRON HORSE" type="">Heavy warjacks in this model's battlegroup gain Cavalry model rules. Light warjacks in this model's battlegroup also gain Light Cavalry model rules and can run without spending focus. When a heavy warjack makes an impact attack, that attack has a base POW equal to its STR. The melee range of impact attacks is 1/2".</capacity>
+          <capacity title="PARRY" type="">This model cannot be targeted by free strikes.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+        </warcaster>
+        <warcaster id="YW07" name="Darius" full_name="Captain E. Dominic Darius &amp; Halfjacks" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="Darius" spd="5" str="8" mat="6" rat="5" def="13" arm="18" cmd="8" hitpoints="22" />
+          <weapons>
+            <melee_weapon name="Quake Hammer" pow="7" p_plus_s="15" magical="false" reach="false">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+              <capacity title="TREMOR" type="*Attack">Tremor affects every model within 2" of this model and does not require a target. Make one melee attack roll. If the roll equals or exceeds the DEF of an affected model, it is knocked down. This attack roll cannot be rerolled. This model can make a Tremor special attack if it charges.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Wrench" pow="3" p_plus_s="11" magical="false" reach="false" />
+            <ranged_weapon name="Steam Cannon" rng="12" rof="1" aoe="4" pow="13" magical="false" />
+          </weapons>
+          <feat title="Pit Stop"><![CDATA[Darius and the Halfjacks in his battlegroup currently in his control area can each completely repair one friendly Faction warjack with which he or it is B2B. Remove all damage from those warjacks.]]></feat>
+          <spell name="ARCANTRIK BOLT" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A warjack damaged by this attack becomes stationary for one round.</spell>
+          <spell name="FORTIFY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup gains +2 ARM. The affected model and any friendly model B2B with it cannot be knocked down, pushed, or slammed.</spell>
+          <spell name="FULL THROTTLE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Warjacks in this model's battlegroup beginning their activations in its control area can run, charge, or make slam or trample power attacks without spending focus that activation. While in this model's control area, models in its battlegroup gain boosted melee attack rolls. Full Throttle lasts for one turn.</spell>
+          <spell name="JACKHAMMER" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target model in this model's battlegroup immediately makes one normal melee attack.</spell>
+          <capacity title="Activate Halfjack">At the end of your Control Phase, you can put one Halfjack into play within 1" of this model if there are fewer than three Halfjacks in play in Darius' battlegroup.</capacity>
+          <capacity title="Crane" type="*Action">Knocked down friendly models within 2" of this model immediately stand up and can activate normally this turn. Additionally, you can choose one friendly model within 2" of this model and place that model anywhere within 1" of its current location.</capacity>
+          <capacity title="Detonate">After resolving continuous effects during your Maintenance Phase, you can detonate any number of friendly mine markers anywhere on the table. Center a 4" AOE template on each detonated mine and remove the mine marker from the table. Models in the AOE are hit and suffer an unboostable POW 14 blast damage roll.</capacity>
+          <capacity title="Repair [9]" type="*Action">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjacks damage grid.</capacity>
+          <model id="Halfjack" full_name="Halfjack" qualification="cygnar solo">
+            <basestats name="Halfjack" spd="6" str="2" mat="3" rat="1" def="14" arm="14" cmd="0" construct="true" />
+            <capacity title="BODGE" type="*Action">This model performs minor repairs to one damaged friendly Faction warjack with which it is B2B. Remove 1 damage point from the warjack.</capacity>
+            <capacity title="COMPANION [Captain E. Dominic Darius]">This model is included in any army that includes Captain E. Dominic Darius. If Captain E. Dominic Darius is destroyed or removed from play, remove this model from play. Place all three Halfjacks in play at the start of the game.</capacity>
+            <capacity title="PRIME MINE" type="*Action">Replace this model with a mine marker. You can have up to three mine markers in play at a time.</capacity>
+          </model>
+        </warcaster>
+        <warcaster id="YW08" name="Kara Sloan" full_name="Captain Kara Sloan" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Sloan" spd="6" str="5" mat="5" rat="8" def="16" arm="14" cmd="8" hitpoints="16" />
+          <weapons>
+            <melee_weapon name="Sword" pow="3" p_plus_s="8" magical="false" reach="false" />
+            <ranged_weapon name="Spitfire" rng="14" rof="1" aoe="-" pow="12" magical="true" weapon_master="true" />
+          </weapons>
+          <feat title="Firing Squad"><![CDATA[While in Sloan's control area, friendly Faction models gain boosted ranged attack rolls. When a model in Sloan's battlegroup that is in her control area hits an enemy model with a normal ranged attack during its activation, immediately after that attack is resolved one other model in Sloan's battlegroup that is in her control area can makene normal ranged attack. A model can make only one Firing Squad attack. Firing Squad lasts for one turn.]]></feat><!-- errata 12-2013 -->
+          <spell name="ARCANE BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">A magical energy blast radiates from a single point to strike all models in the AOE.</spell>
+          <spell name="DEADEYE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains an additional die on each model's first ranged attack roll this turn.</spell>
+          <spell name="DUST TO DUST" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When a warrior model is boxed by Dust to Dust, center a 3" AOE cloud effect on it, then remove the model from play. the AOE remains in play for one round.</spell>
+          <spell name="FIRE GROUP" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, the ranged weapons of models in this model battlegroup gain +2 RNG. Fire Group lasts for one turn.</spell>
+          <spell name="REFUGE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When target friendly Faction model hits an enemy model with an attack during its activation, immediately after its combat action ends, the affected model can make a full advance. It cannot be targeted by free strikes during this movement.</spell>
+          <spell name="RETURN FIRE" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">When target friendly Faction model is targeted by an enemy ranged attack, after the attack is resolved the affected model can make one normal melee or ranged attack, then Return Fire expires. Return Fire lasts for one round.</spell>
+          <capacity title="ARCANE PRECISION">If this model forfeits its movement during its activation to gain the iaming bonus, it ignores Stealth that activation.</capacity>
+        </warcaster>
+        <warcaster id="YW09" name="Constance Blaize" full_name="Constance Blaize, Knight of the Prophet" generation="P" qualification="Cygnar Morrowan Ally Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Blaize" spd="6" str="6" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="16" />
+          <weapons>
+            <melee_weapon name="Sun Spear" pow="7" p_plus_s="13" magical="true" reach="true">
+              <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Divine Intervention"><![CDATA[Blaize gains one soul token for each friendly living Faction warrior model destroyed by an enemy attack or collateral damage of an enemy attack in her control area for one round. While in her control area friendly living Faction warrior models gain +1 ARM for each soul token on Blaize. When Blaize replenishes her focus during your next Control Phase, replace each soul token on her with 1 focus point, then Divine Intervention expires.]]></feat>
+          <spell name="BANISHING WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Enemy upkeep spells on target friendly model/unit expire. Affected models cannot be targeted by enemy spells or animi.</spell>
+          <spell name="CRUSADER'S CALL" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction models beginning a charge while in this model's control area this turn gain +2" movement.</spell>
+          <spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This models immediately makes one normal melee attack with one of its melee weapon against each enemy model in its LOS that is in the weapon's melee range. These attacks are simultaneous.</spell>
+          <spell name="SUNBURST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">Models boxed by Sunburst are removed from play. Blast damage affects only enemy models.</spell>
+          <spell name="TRANSFERENCE" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, friendly Faction non-warcaster warrior models can spend 1 focus point on this model to boost a melee attack or a melee damage roll during their activations.</spell>
+          <capacity title="ANIMOSITY [THAMARITE OR UNDEAD]" type="">This model cannot be included in an army that includes one or more models of the listed type.</capacity>
+          <capacity title="INSPIRATION [MORROWAN]" type="">Friendly Morrowan models/ units in this models command range never flee and immediately rally.</capacity>
+          <capacity title="FLANK [NON-WARCASTER MORROWAN]" type="">When this model makes a melee attack against an enemy model within a melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
+        </warcaster>
+        <warcaster id="YW10" name="Sturgis" full_name="Commander Dalin Sturgis" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Sturgis" spd="6" str="6" mat="7" rat="5" def="16" arm="15" cmd="8" hitpoints="18" />
+          <weapons>
+              <melee_weapon p_plus_s="13" pow="7" name="Blade (Left)" magical="true" reach="true">
+                  <capacity title="Feedback">If this weapon damages a warjack that is part of a battlegroup, its controller suffers 1 damage point.</capacity>
+                  <capacity title="Chain Attack: Flash"> If this model hits the same target with both its initial melee attacks, after resolving the attacks you can immediately place this model anywhere completely within 3̋" of its current location.</capacity>
+              </melee_weapon>
+              <melee_weapon p_plus_s="13" pow="7" name="Blade (Right)" magical="true" reach="true">
+                  <capacity title="Electro Leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              </melee_weapon>
+              <ranged_weapon pow="12" aoe="-" rng="12" rof="1" name="Hand Cannon"></ranged_weapon>
+          </weapons>
+          <feat title="Dead on Arrival">Enemy non-warlock, non-warcaster models in Sturgis' control area are pushed 3" directly toward Sturgis in the order you choose. Then enemy models within 3" of Sturgis suffer a POW 12 magical damage roll. For each model destroyed by Dead on Arrival, you can allocate 1 focus point to a warjack in Sturgis' battlegroup in his control area.</feat>
+          
+          <spell name="ARCANE SHIELD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 ARM.</spell>
+          <spell name="CONVECTION" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">When Convection destroys a living enemy model, allocate 1 focus point to a warjack in this model's battlegroup that is in its control area.</spell>
+          <spell name="LIGHTNING STORM" cost="3" rng="8" aoe="3" pow="10" up="NO" off="YES">Models hit suffer a POW 10 electrical damage roll. The AOE remains in play for one round. Models entering or ending their activations in the AOE suffer a POW 10 electrical damage roll.</spell>
+          <spell name="SNIPE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model's/unit's ranged weapons gain +4 RNG.</spell>
+          <spell name="TELEPORT" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Place this model anywhere completely within 8" of its current location, then its activation ends.</spell>
+          
+          
+          <capacity title="Relentless Charge">This model gains Pathfinder during activations it charges.</capacity>
+          <capacity title="Reversal">When a model misses this model with a charge or a power attack, the attacking model is knocked down.</capacity>
+          <capacity title="Snap Strike">This model can make one additional attack with each melee weapon for each focus point spent to make additional attacks.</capacity>
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="YJ01" name="Charger" full_name="Charger" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Cygnar Light warjack" fa="U" completed="true">
+          <basestats name="Charger" spd="6" str="8" mat="6" rat="6" def="13" arm="16" cmd="0" />
+          <weapons>
+            <melee_weapon p_plus_s="12" pow="4" name="Battle Hammer" location="R" />
+            <ranged_weapon rng="12" name="Dual cannon" aoe="-" pow="12" rof="2" location="L">
+              <capacity title="Powerful attack">When attacking with this weapon, this model can spend 1 focus point to boost attack and damage rolls for the attack.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="YJ02" name="Lancer" full_name="Lancer" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="6" qualification="Cygnar Light warjack" fa="U"  completed="true">
+          <basestats name="Lancer" spd="6" str="8" mat="6" rat="6" def="13" arm="16" cmd="0" arc_node="true" />
+          <weapons>
+            <melee_weapon p_plus_s="12" pow="4" name="War spear" location="R" reach="true">
+              <capacity title="Set Defense">a model in this model's front arc suffer -2 on charge, slam power attack, and impact rolls against this model.</capacity>
+            </melee_weapon>
+            <melee_weapon p_plus_s="9" pow="1" name="Shock shield" location="L" shield="true">
+              <capacity title="Cortex damage">When a warjack is hit by this weapon, it suffers 1 damage point to its first available Cortex system box.</capacity>
+              <capacity title="Shock Field">If a warjack in this model's front arc hits it with a melee attack, immediately after the attack is resolved the attacker suffers 1 damage point to its first available Cortex system box. This model loses Shock Field while this weapon system is crippled or locked.</capacity>
+            </melee_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="YJ15" name="Firefly" full_name="Firefly" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="5" qualification="Cygnar Light warjack" fa="U"  completed="true">
+          <basestats name="Lancer" spd="6" str="8" mat="6" rat="6" def="13" arm="16" cmd="0" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon p_plus_s="13" pow="5" name="Electro glaive" location="R" reach="true" />
+            <ranged_weapon rng="10" rof="1" aoe="-" pow="10" name="Storm blaster" location="L" electricity="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Conductor">When a friendly Stormsmith Stormcaller makes a Surge or Triangulation Stormcall, this model is considered to be another friendly Stormsmith Stormcaller.</capacity>
+        </warjack>
+        <warjack id="YJ03" name="Sentinel" full_name="Sentinel" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Cygnar Light warjack" fa="U"  completed="true">
+          <basestats name="Sentinel" spd="6" str="8" mat="6" rat="6" def="13" arm="16" cmd="0" />
+          <weapons>
+            <melee_weapon p_plus_s="11" pow="4" name="Assault shield" location="L" shield="true" />
+            <ranged_weapon rng="10" name="Chain gun" location="R" aoe="-" pow="10" rof="1">
+              <capacity title="Strafe [D6]" type="*Attack">Make D6 ranged attacks targeting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more atacks than the primary target. Strafe counts as one attacks for ROF.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Shield Guard">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity> <!-- errata 12-2013 -->
+        </warjack>
+        <warjack id="YJ04" name="Hunter" full_name="Hunter" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="6" qualification="Cygnar Light Warjack" fa="U"  completed="true">
+          <basestats name="Hunter" spd="6" str="7" mat="6" rat="7" def="14" arm="15" cmd="0" advance_deployment="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon p_plus_s="11" pow="4" name="Battle Axe" location="R" />
+            <ranged_weapon rng="14" name="Long Arm" aoe="-" pow="6" rof="1" location="L">
+              <capacity title="Armor piercing">When calculating damage from this weapon, halve the base ARM stats of models hit that have medium or larger bases. This weapon gains +2 to damage rolls against models with small bases.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Extended control range">When checking to see if this model is in its controller's control area, double the area.</capacity><!-- errata 12-2013 -->
+          <capacity title="Parry">This model cannot be targeted by free strikes.</capacity>
+        </warjack>
+        <warjack id="YJ05" name="Grenadier" full_name="Grenadier" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="5" qualification="Cygnar Light warjack" fa="U"  completed="true">
+          <basestats name="Grenadier" spd="6" str="7" mat="6" rat="6" def="14" arm="15" cmd="0" advance_deployment="true" />
+          <weapons>
+            <melee_weapon p_plus_s="12" pow="5" name="Mattock" location="R" />
+            <ranged_weapon rng="10" name="Grenade Launcher" aoe="3" pow="12" rof="1" location="L">
+              <capacity title="Arcing fire">When attacking with this weapon, this model can ignore interening models except those within 1" of the target.</capacity>
+              <capacity title="Manual Reload">This model can make one additional Grenade Launcher ranged attack during its combat action for each Trencher model B2B with it, up to a maximum of two additional attacks. These additional attacks do not count against the Grenade Launcher's ROF.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+        </warjack>
+        <warjack id="YJ18" name="Minuteman" full_name="Minuteman" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="5" qualification="Cygnar Light warjack" fa="U" completed="true">
+          <basestats name="Minuteman" spd="6" str="7" mat="6" rat="6" def="14" arm="15" cmd="0" advance_deployment="true" />
+          <weapons>
+            <melee_weapon p_plus_s="9" pow="2" name="Open fist" location="R" open_fist="true" />
+            <melee_weapon p_plus_s="9" pow="2" name="Open fist" location="L" open_fist="true" />
+            <ranged_weapon rng="4" name="Slug Gun" aoe="-" pow="14" rof="1" location="R" />
+            <ranged_weapon rng="4" name="Slug Gun" aoe="-" pow="14" rof="1" location="L" />
+          </weapons>
+          <capacity title="Flak Field">This model can use Flak Field once per turn at any time during its activation but cannot interrupts its normal movement to do so. When this model uses Flak Field, models B2B with it suffers an unboostable POW 12 blast damage roll and other models wihtin 2" of it suffers an unboostable POW 6 blast damage roll.</capacity>
+          <capacity title="Bounding Leap">Once per activation, after making a full advance but before performing an action, this model can spend one focus point to be placed completely within 5" of tis current location. Any effects that prevent charging also prevent this model from using Bounding Leap.</capacity>
+        </warjack>
+        <warjack id="YJ06" name="Thorn" full_name="Thorn" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="8" qualification="Cygnar Light Character Warjack" fa="C" completed="true">
+          <basestats name="Thorn" spd="6" str="8" mat="7" rat="6" def="13" arm="16" cmd="0" arc_node="true" />
+          <weapons>
+            <melee_weapon p_plus_s="13" pow="5" name="Disruption spear" location="R" reach="true">
+              <capacity title="Set Defense">a model in this model's front arc suffer -2 on charge, slam power attack, and impact rolls against this model.</capacity>
+              <capacity title="DISRUPTION">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </melee_weapon>
+            <melee_weapon p_plus_s="9" pow="1" name="Shock shield" location="L" shield="true">
+              <capacity title="Cortex damage">When a warjack is hit by this weapon, it suffers 1 damage point to its first available Cortex system box.</capacity>
+              <capacity title="Shock Field">If a warjack in this model's front arc hits it with a melee attack, immediately after the attack is resolved the attacker suffers 1 damage point to its first available Cortex system box. This model loses Shock Field while this weapon system is crippled or locked.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="AFFINITY [HALEY]">While Thorn is engaged, Haley can channel spells through it as if it were not engaged.</capacity>
+          <capacity title="IMPRINT: DISENGAGE">During its activation, this model can spend 1 focus point to use Disengage. For one round, when this model is missed by an enemy melee attack anytime other than when it is advancing, this model can move up to 2". During this movement, it cannot be targeted by free strikes.</capacity>
+          <capacity title="REACTION DRIVE">Once per turn, immediately after this model's controller channels a spell through it, this model can advance 3".</capacity>
+        </warjack>
+        <warjack id="YJ09" name="Centurion" full_name="Centurion" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Heavy Warjack" fa="U" completed="true">
+          <basestats name="Centurion" spd="4" str="12" mat="6" rat="4" def="11" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Piston spear" location="R" p_plus_s="18" pow="6" reach="true">
+              <capacity title="critical sustained attack">On a critical hit during this model's activation, attacks made with this weapon against the model critically hit by weapon automatically hit it. If this model attacks another model with this activation, attacks against the last model critically hit with this weapon no longer automatically hit it.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Magno shield" location="L" p_plus_s="13" pow="1" shield="true" />
+          </weapons>
+          <capacity title="polarity field" type="*Action">For one round, this model cannot be charged by a model beginning the charge in this model's front arc.</capacity>
+        </warjack>
+        <warjack id="YJ07" name="Defender" full_name="Defender" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Heavy warjack" fa="U" completed="true">
+          <basestats name="Defender" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Shock hammer" location="R" p_plus_s="16" pow="5">
+              <capacity title="cortex damage">When a warjack is hit by weapon, it suffer 1 damage point to its available Cortex system box.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Heavy barrel" location="L" rng="16" rof="1" aoe="-" pow="15" />
+          </weapons>
+        </warjack>
+        <warjack id="YJ08" name="Ironclad" full_name="Ironclad" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="7" qualification="Cygnar Heavy warjack" fa="U" completed="true">
+          <basestats name="Ironclad" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Quake hammer" location="L" p_plus_s="18" pow="7">
+              <capacity title="Critical Knockdown">On a critical hit, the model hit is knocked down.</capacity>
+              <capacity title="Tremor" type="*Attack">Tremor affects every model within 2" of this model and does not require a target. Make one melee attack roll. If the roll equals or exceeds the DEF of an affected model, it is knocked down. This attack roll cannot be rerolled. This model can make a Tremor speial attack if it charges.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Open fist" location="R" p_plus_s="14" pow="3" open_fist="true" />
+          </weapons>
+        </warjack>
+        <warjack id="YJ10" name="Stormclad" full_name="Stormclad" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="10" qualification="Cygnar Heavy Warjack" fa="U" completed="true">
+          <basestats name="Stormclad" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Generator Blade" location="R" p_plus_s="19" pow="8" reach="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Open fist" location="R" p_plus_s="14" pow="3" open_fist="true" buckler="true" />
+            <ranged_weapon name="Generator Blast" location="R" rng="8" rof="1" aoe="-" pow="14" electricity="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Storm Accumulator">When this model begins its activation within 3" of one or more friendly Stormblade Infantry models, it is allocated 1 focus point.</capacity>
+        </warjack>
+        <warjack id="YJ11" name="Thunderhead" full_name="Thunderhead" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="12" qualification="Cygnar Heavy Character Warjack" fa="C" completed="true">
+          <basestats name="Thunderhead" spd="5" str="11" mat="7" rat="6" def="12" arm="19" cmd="0" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Shock fist" location="R" p_plus_s="16" pow="5" open_fist="true">
+              <capacity title="SUSTAINED ATTACK">During this models activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+              <capacity title="Critical Disruption">On a critical hit on a warjack, it suffers Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+            </melee_weapon>
+            <melee_weapon name="Shock fist" location="L" p_plus_s="16" pow="5" open_fist="true">
+              <capacity title="SUSTAINED ATTACK">See above.</capacity>
+              <capacity title="Critical Disruption">See above.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Lightning Coil" rng="10" rof="3" aoe="-" pow="14" electricity="true">
+              <capacity title="SUSTAINED ATTACK">During this models activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+              <capacity title="Critical Disruption">On a critical hit on a warjack, it suffers Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+              <capacity title="Energy Pulse" type="*Attack">Models within 6" of this model are hit and suffer a POW 12 electrical damage roll. Energy Pulse does not require a target.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="YJ12" name="Hammersmith" full_name="Hammersmith" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Cygnar heavy warjack" fa="U" completed="true">
+          <basestats name="Hammersmith" spd="4" str="12" mat="6" rat="4" def="11" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Hammer" location="R" p_plus_s="17" pow="5">
+              <capacity title="Beat back">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+            </melee_weapon>
+            <melee_weapon name="Hammer" location="L" p_plus_s="17" pow="5">
+              <capacity title="Beat back">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Chain attack: smite">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additionnal melee attack against that model. If the additional attack hits, the target is slammed d6" directly away fom this model. the POW of slam dammage roll is egal to the STR of this model + the POW of this weapon. The POW of collateral damage is equal to the STR of this model.</capacity>
+        </warjack>
+        <warjack id="YJ13" name="Ol' Rowdy" full_name="Ol' Rowdy" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Character Heavy warjack" fa="C" completed="true">
+          <basestats name="Ol' Rowdy" spd="5" str="11" mat="8" rat="6" def="12" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Quake hammer" location="L" p_plus_s="18" pow="7">
+              <capacity title="Critical Knockdown">On a critical hit, the model hit is knocked down.</capacity>
+              <capacity title="Tremor" type="*Attack">Tremor affects every model within 2" of this model and does not require a target. Make one melee attack roll. If the roll equals or exceeds the DEF of an affected model, it is knocked down. This attack roll cannot be rerolled. This model can make a Tremor speial attack if it charges.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Open fist" location="R" p_plus_s="14" pow="3" open_fist="true" buckler="true" />
+          </weapons>
+          <capacity title="Affinity [Styker]">While B2B with Rowdy, Stryker gains +2 DEF against melee attack rolls and cannot be knocked down. While B2B with Stryker, Rowdy does not move when slammed.</capacity>
+          <capacity title="Counter charge">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+          <capacity title="Aggressive">This model can run or charge without spending focus or being forced.</capacity>
+        </warjack>
+        <warjack id="YJ14" name="Cyclone" full_name="Cyclone" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Heavy warjack" fa="U" completed="true">
+          <basestats name="Cyclone" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Open fist" location="L" p_plus_s="14" pow="3" open_fist="true" />
+            <melee_weapon name="Open fist" location="R" p_plus_s="14" pow="3" open_fist="true" />
+            <ranged_weapon name="Metal storm" location="L" rng="10" rof="1" aoe="-" pow="12">
+              <capacity title="Dual covering fire" type="*Action">Place two 3" AOEs anywhere completely within this weapon's RNG, centered on points in this model's LOS, ignoring intervening model. Place one less AOE for each crippled arm on this model. A model entering or ending its activation in the AOEs suffer a damage roll with POW equal to POW of this weapon. The AOEs remain in play for one round. If this model is destroyed or removed from play, immediately remove the AOEs from play.</capacity>
+              <capacity title="Rapid fire (d3)">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Metal storm" location="R" rng="10" rof="1" aoe="-" pow="12">
+              <capacity title="Dual covering fire" type="*Action">See above.</capacity>
+              <capacity title="Rapid fire (d3)">See above.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="YJ16" name="Triumph" full_name="Triumph" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="11" qualification="Cygnar Heavy Character Warjack" fa="C"  completed="true">
+          <basestats name="Triumph" spd="5" str="11" mat="7" rat="7" def="12" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Assault shield" location="R" p_plus_s="16" pow="5" shield="true" />
+            <ranged_weapon name="Heavy barrel" location="L" rng="16" rof="1" aoe="-" pow="15">
+              <capacity title="Blaster">when this model makes an attack with this weapon, before the attack roll it can spend 1 focus point to give the attack a 3" AOE.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Special Issue [Siege]">This model can be included in Siege's theme forces. It can be also bonded to Siege.</capacity>
+          <capacity title="Arcane Precision">If this model forfeits its movement during its activation to gain the iaming bonus, it ignores Stealth that activation.</capacity>
+        </warjack>
+        <warjack id="YJ17" name="Gallant" full_name="Gallant" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Ally Morrowan Heavy Character Warjack" fa="C" completed="true">
+          <basestats name="Gallant" spd="5" str="11" mat="7" rat="6" def="13" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Lasting Light" location="L" p_plus_s="17" pow="6" reach="true" magical="true">
+              <capacity title="Critical Knockdown">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Open fist" location="R" p_plus_s="14" pow="3" open_fist="true" buckler="true" />
+          </weapons>
+          <capacity title="Shield Guard">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity><!-- errata 12-2013 -->
+          <capacity title="Accumulator [Morrowan]">When this model begins its activation within 3" of one or more friendly Morrowan models, it is allocated 1 focus point.</capacity>
+          <capacity title="Affinity [Blaize]">While in Blaize's control area this model's melee weapons gain Purgation. (Weapons with Purgation gain an additional die on attack and damage roll made against models with an enemy upkeep spell on them.</capacity>
+        </warjack>
+        <warjack id="YJ19" name="Avenger" full_name="Avenger" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Heavy warjack" fa="U"  completed="true">
+          <basestats name="Avenger" spd="4" str="12" mat="6" rat="4" def="11" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Stun blade" location="R" p_plus_s="18" pow="6">
+              <capacity title="cortex damage">A warjack hit by this attack suffers the Stall continuous effect. While a warjack is suffering Stall, its base DEF becomes 7 and it cannot run or charge.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Seismic cannon" location="L" rng="10" rof="1" aoe="4" pow="14">
+              <capacity title="Quake">On a direct hit against an enemy model, all models hit are knocked down.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="YJ21" name="Reliant" full_name="Reliant" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Cygnar Heavy warjack" fa="U"  completed="true">
+          <basestats name="Reliant" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" immunity_electricity="true"/>
+          <weapons>
+            <melee_weapon name="Pulse Hammer" location="R" p_plus_s="17" pow="6">
+              <capacity title="Critical Thunderclap">On a critical hit against an enemy model, center a 4" AOE on the model directly hit. Models in the AOE without Immunity:Electricity become Stationary for one round.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Stormbringer" location="L" rng="12" rof="1" aoe="3" pow="13" electricity="true">
+              <capacity title="Electro Field">The AOE remains in play for one round. Models entering or ending their activations in the AOE suffer a POW 10 electrical damage roll.</capacity>
+            </ranged_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="YJ22" name="Dynamo" full_name="Dynamo" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="10" qualification="Cygnar Character Heavy Warjack" fa="C" completed="true">
+          <basestats name="Dynamo" spd="5" str="11" mat="7" rat="6" def="12" arm="18" cmd="0" immunity_electricity="true"/>
+          <weapons>
+              <melee_weapon name="Battle Spear" location="R" p_plus_s="16" pow="5" reach="true">
+                  <capacity title="Set Defense">
+                      a model in this model's front arc suffer -2 on charge, slam power attack, and impact rolls against this model.
+                  </capacity>
+              </melee_weapon>
+              <ranged_weapon name="Firestorm Cannon" location="L" rng="10" rof="1" aoe="-" pow="12" electricity="true">
+                  <capacity title="MULTI-FIRE (★ATTACK)">
+                      Make an attack with this weapon. On a hit, after resolving the attack this model can immediately make one additional attack with this weapon targeting the last model hit or another model within 2" of the last model hit, ignoring ROF. This model can make up to four attacks during its activation as a result of Multi-Fire.
+                  </capacity>
+              </ranged_weapon>
+          </weapons>
+          <capacity title="Chain Reaction">Each time this model hits an enemy model with a melee or ranged attack during its activation, it gains a cumulative +1 to each of its subsequent damage rolls against that model that activation.</capacity>
+          <capacity title="Insulated Frame">Friendly models B2B with this model gain Immunity: Electricity.</capacity>
+          <capacity title="Affinity [Nemo]">While in Nemo's control area, Dynamo can reroll missed attack rolls with Damage Type: Electricity. Attack rolls can be rerolled only once as a result of this affinity.</capacity>'
+          <capacity title="Special Issue [Nemo]">This model can be included in Nemo's theme forces. It can be also bonded to Nemo.</capacity>
+        </warjack>
+      </warjacks>
+      <colossals>
+        <colossal id="YJ20" name="Stormwall" full_name="Stormwall &amp; Lightning Pod" damage_grid_left="xxxxx.xxx.......SS.LLLSCLLCCCCLCMMMM" damage_grid_right=".xxxxx...xxxSS....CSRRR.CCCCRRMMMMCR" cost="19" qualification="Cygnar Colossal" fa="2" completed="true">
+          <basestats name="Stormwall" spd="5" str="17" mat="6" rat="6" def="10" arm="19" cmd="0" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Voltaic fist" location="L" p_plus_s="20" pow="3" open_fist="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Voltaic fist" location="R" p_plus_s="20" pow="3" open_fist="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Metal storm" location="L" rng="10" rof="1" aoe="-" pow="12">
+              <capacity title="Covering fire">Instead of making attacks with this weapon during this model's activation, place a 3" AOE anywhere completely within this weapon's RNG. The center point of the AOE must be in this model's LOS, ignoring intervening models. This model cannot place an AOE for this weapon while it is crippled. A model entering or ending its activation in the AOE suffers a damage roll with POW equal to the POW of this weapon. The AOE remains in play for one round. If this model is destroyed or removed from play, immediately remove the AOE from play.</capacity>
+              <capacity title="Rapid fire (d3)">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Metal storm" location="R" rng="10" rof="1" aoe="-" pow="12">
+              <capacity title="Covering fire">See above.</capacity>
+              <capacity title="Rapid fire (d3)">See above.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Big gun" location="L" rng="14" rof="1" aoe="-" pow="15" />
+            <ranged_weapon name="Big gun" location="R" rng="14" rof="1" aoe="-" pow="15" />
+          </weapons>
+          <capacity title="Activate Lightning Pod">Once per activation, after its normal movement, this model can place one Lightning Pod anywhere completely within 10" of this model if there are fewer than three Lightning Pods placed currently in play. At the time a Lightning Pod is placed, enemy models whose bases are intersected by a line drawn between the center of the Lightning Pod and the center of this model suffer a POW 10 electrical damage roll. Warjacks damaged by a Lightning Pod damage roll suffer Disruption. The S boxes of this model's damage grid represent its Lightning Pod system. While its Lightning Pod system is crippled, this model cannot use Activate Lightning Pod.(A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+          <model id="Lightning Pod" full_name="Lightning Pod" qualification="cygnar solo">
+            <basestats name="Lightning Pod" spd="0" str="0" mat="0" rat="0" def="5" arm="15" cmd="0" construct="true" immunity_electricity="true" />
+            <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends to 360. It has no melee range, cannot engage, and its automatically hits by melee attacks.</capacity>
+            <capacity title="Conductor">When a friendly Stormsmith Stormcaller makes a Surge or Triangulation Stormcall, this model is considered to be another friendly Stormsmith Stormcaller.</capacity>
+          </model>
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="YE01" name="Storm Strider" full_name="Storm Strider" qualification="Cygnar Battle Engine" fa="2" cost="9" completed="true">
+          <basestats name="Storm Strider" spd="5" str="10" mat="5" rat="6" def="10" arm="18" cmd="10" immunity_electricity="true" construct="true" gunfighter="true" hitpoints="22" />
+          <weapons>
+            <ranged_weapon name="Lightning Cannon" rng="14" rof="1" aoe="-" pow="15" electricity="true" count="2">
+              <capacity title="Lightning Generator">When a model is hit with this weapon, lightning arcs from that model to d3 consecutive additionnal models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</capacity>
+              <capacity title="Critical Disruption">On a critical hit on a warjack, it suffers Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Repulsor Field">When this model is hit with a melee attack, after the attack is resolved the attacking model is pushed 1" directly away from this model.</capacity>
+          <capacity title="Superconduction">When a friendly model attacks with a ranged weapon with Damage Type : Electricity, it gains +2 to attacks rolls against enemy models wihtin 5" of this model.</capacity>
+          <capacity title="Circular Vision">This model's front arc extends to 360.</capacity>
+          <capacity title="Kinetic Accumulator">When this model is hit by a melee or ranged attack made by an enemy model, it gains one power token, up to a maximum of three. During it activation, this model can spend power tokens to boost attack or damage rolls at one token per boost.</capacity>
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="YU01" name="Arcane Tempest Gun Mage Pistoleers" full_name="Arcane Tempest Gun Mage Pistoleers" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification="Cygnar Unit" fa="2" has_unit_attachment="true" completed="true"> <!-- errata may 2014 -->
+          <basestats name="Leader and grunts" spd="6" str="4" mat="5" rat="7" def="15" arm="11" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Magelock Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true" />
+            <melee_weapon name="Sword" pow="3" p_plus_s="7" magical="false" reach="false" />
+          </weapons>
+          <capacity title="Arcane Inferno" type="Order">Models that received this order can participate in a combined ranged attack this activation. The unit commander must be the primary attacker. When resolving this attack, the AOE of the unit commander's ranged weapon is 3". Do not choose an attack type for this attack. A unit can make only one Arcane Inferno attack per activation.</capacity>
+          <capacity title="Attack type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+          <capacity title="● Critical Brutal Damage">On a critical hit, gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+          <capacity title="● Snipe">This attack gains +4 RNG.</capacity>
+          <capacity title="● Thunderbolt">Enemy models hit are pushed d3" directly away from the attacking model. On a critical hit, the enemy model is knocked down after being pushed.</capacity>
+          <unit_attachment id="YA01" name="Arcane Tempest Gun Mage Officer" full_name="Arcane Tempest Gun Mage Officer" fa="1" cost="2" qualification="Cygnar Unit attachment"  completed="true"> <!-- errata may 2014 -->
+            <model id="Arcane Tempest Gun Mage Officer">
+              <basestats name="Officer" spd="6" str="4" mat="5" rat="8" def="15" arm="11" cmd="9" hitpoints="5" jack_marshal="true" officer="true" />
+              <weapons>
+                <ranged_weapon name="Magelock Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true" />
+                <melee_weapon name="Sword" pow="3" p_plus_s="7" magical="false" reach="false" />
+              </weapons>
+              <capacity title="Attachment [Arcane Tempest Gun Mage Pistoleers]">This attachment can be added to an Arcane Tempest Gun Mage Pistoleers unit.</capacity>
+              <capacity title="Attack type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+              <capacity title="● Critical Brutal Damage">On a critical hit, gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+              <capacity title="● Snipe">This attack gains +4 RNG.</capacity>
+              <capacity title="● Thunderbolt">Enemy models hit are pushed d3" directly away from the attacking model. On a critical hit, the enemy model is knocked down after being pushed.</capacity>
+              <capacity title="Rune shot">When a warjack controlled by this model makes a normal ranged attack during its activation, you can choose one attack type available to this unit to apply to the attack.</capacity>
+              <capacity title="TACTICS: True Sight">Models in this unit gain True Sight. (A model with True Sight ignores concealment, Camouflage, and Stealth.)</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU02" name="Long Gunner Infantry" full_name="Long Gunner Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Cygnar Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and grunts" spd="5" str="4" mat="4" rat="5" def="13" arm="12" cmd="8" cma="true" />
+          <weapons>
+            <ranged_weapon name="Repeating Long Gun" rng="14" rof="2" aoe="-" pow="10" magical="true" />
+            <melee_weapon name="Sword" pow="3" p_plus_s="7" magical="false" reach="false" />
+          </weapons>
+          <capacity title="Dual shot">When this model forfeits its movement to gain the aiming bonus it can also make one additional ranged attack this activation.</capacity>
+          <unit_attachment id="YA07" name="Long Gunner Infantry Officer &amp; Standard" full_name="Long Gunner Infantry Officer &amp; Standard" fa="1" cost="2" qualification="Cygnar Unit attachment"  completed="true">
+            <model id="Long Gunner Infantry Officer">
+              <basestats name="Officer" spd="5" str="4" mat="5" rat="6" def="13" arm="12" cmd="8" hitpoints="5" officer="true" cma="true" />
+              <weapons>
+                <ranged_weapon name="Repeating Long Gun" rng="14" rof="2" aoe="-" pow="10" />
+                <melee_weapon name="Sword" pow="3" p_plus_s="7" magical="false" reach="false" />
+              </weapons>
+              <capacity title="Dual shot">When this model forfeits its movement to gain the aiming bonus it can also make one additional ranged attack this activation.</capacity>
+              <capacity title="Suppressing Fire" type="Order">This order can be issued only if two or more models in this unit in formation are able to forfeit their actions. Each model in this unit in formation must forfeit its action. Other than the Standard Bearer, those models that do are participants. After all models in this unit have completed their normal movement, place an AOE completely within 14" of all participants, with its center point in the LOS of all participants, ignoring intervening models. The size of the AOE is based on the number of participants. If there are 2-4, the AOE is 3". If there are 5-7, the AOE is 4". If there are 8 or more, the AOE is 5". When a model enters or ends its activation within the AOE, it suffers a POW 10 damage roll. Suppressing Fire lasts for one round or until all participants have been destroyed or removed from play.</capacity><!-- errata 12-2013 -->
+              <capacity title="Tactics: Ranked Attacks">Models in this unit gain Ranked Attacks. (Friendly Faction models can ignore models with Ranked Attacks when determining LOS.)</capacity>
+            </model>
+            <model id="Long Gunner Infantry Standard">
+              <basestats name="Standard Bearer" spd="5" str="4" mat="4" rat="5" def="13" arm="12" cmd="8" hitpoints="0" standard_bearer="true" />
+              <weapons>
+                <melee_weapon name="Sword" pow="3" p_plus_s="7" magical="false" reach="false" /><!-- errata 12-2013 -->
+              </weapons>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU03" name="Field Mechaniks" full_name="Field Mechaniks" base_cost="2" baseCount="3" full_cost="3" fullCount="6" qualification="Cygnar Unit" fa="3"  completed="true">
+          <basestats name="Crew chief" spd="5" str="4" mat="3" rat="4" def="12" arm="11" cmd="7" jack_marshal="true" officer="true" />
+          <weapons>
+            <melee_weapon name="Monkey Wrench" pow="2" p_plus_s="6" />
+            <ranged_weapon name="Rivet gun" rng="4" rof="1" aoe="-" pow="10" />
+          </weapons>
+          <capacity title="Iron Sentinel">While B2B with a friendly Faction warjack, this model gains +2 DEF and ARM and cannot be knocked down.</capacity>
+          <capacity title="Repair [9]" type="*Action">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjacks damage grid.</capacity>
+          <model id="field_mechaniks_gobber_grunts" name="Gobber grunts" full_name="Gobber grunts">
+            <basestats name="Gobber grunts" spd="6" str="4" mat="2" rat="2" def="14" arm="9" cmd="4" />
+            <weapons>
+              <melee_weapon name="Monkey Wrench" pow="2" p_plus_s="6" />
+            </weapons>
+            <capacity title="Assist Repair" type="*Action">This model can make this special action only when B2B with a friendly Faction warjack. When this model makes an Assist Repair special action, choose another model in this unit with the Repair ability also B2B with that warjack. The chosen model gains a cumulative +1 to its Repair skill on its next Repair skill check to repair that warjack this activation. If it passes the Repair check, remove 1 additional damage point from the warjack for each model that used Assist Repair on the chosen model.</capacity>
+            <capacity title="Repair [6]" type="*Action">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjacks damage grid.</capacity>
+          </model>
+        </unit>
+        <unit id="YU04" name="Stormblade Infantry" full_name="Stormblade Infantry" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Cygnar Storm Knight Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and grunts" spd="5" str="6" mat="7" rat="5" def="12" arm="15" cmd="9" cma="true" immunity_electricity="true" />
+          <weapons>
+            <ranged_weapon name="Storm glaive" rng="4" rof="1" aoe="-" pow="12" electricity="true" />
+            <melee_weapon name="Storm glaive" pow="7" p_plus_s="13" />
+          </weapons>
+          <capacity title="Electrical Arc">The Leader and models in this unit within 5" of it gain +2 RNG to ranged attacks and +2 to melee and ranged attack damage rolls.</capacity>
+          <unit_attachment id="YA02" name="Stormblade Infantry Officer &amp; Standard" full_name="Stormblade Infantry Officer &amp; Standard" fa="1" cost="3" qualification="Cygnar Unit attachment"  completed="true">
+            <model id="Stormblade Infantry Officer">
+              <basestats name="Stormblade Infantry Officer" spd="5" str="6" mat="8" rat="6" def="12" arm="15" cmd="10" cma="true" immunity_electricity="true" hitpoints="5" jack_marshal="true" officer="true" />
+              <weapons>
+                <ranged_weapon name="Storm glaive" rng="4" rof="1" aoe="-" pow="12" electricity="true" />
+                <melee_weapon name="Storm glaive" pow="7" p_plus_s="13" />
+              </weapons>
+              <capacity title="Assault" type="Order">Affected models must charge or run. As part of a charge, after moving but before making its charge attack, an affected model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of the affected model's activation. Models that received this order cannot make combined ranged attacks this activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, the affected model must still make the ranged attack before its activation ends.</capacity>
+            </model>
+            <model id="Stormblade Infantry Standard">
+              <basestats name="Standard Bearer" spd="5" str="6" mat="7" rat="5" def="12" arm="15" cmd="9" cma="true" immunity_electricity="true" hitpoints="0" standard_bearer="true" />
+              <weapons>
+                <ranged_weapon name="Storm glaive" rng="4" rof="1" aoe="-" pow="12" electricity="true" />
+                <melee_weapon name="Storm glaive" pow="7" p_plus_s="13" />
+              </weapons>
+              <capacity title="Storm's Eye">While this model is in formation, when a model in its unit directly hits a model with a ranged attack the ranged weapon used in the attack becomes AOE 3".</capacity>
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="YA09" name="Stormblade Infantry Storm Gunner" full_name="Stormblade Infantry Storm Gunner" fa="2" cost="1" qualification="Cygnar Weapon attachment" max_wa="3"  completed="true">
+            <model id="Storm Gunner">
+              <basestats name="Storm Gunner" spd="5" str="6" mat="7" rat="5" def="12" arm="15" cmd="9" cma="true" immunity_electricity="true" hitpoints="0" />
+              <weapons>
+                <ranged_weapon name="Storm thrower" rng="10" rof="1" aoe="-" pow="12" electricity="true">
+                  <capacity title="Electrical current">If this attack directly hits a model during this unit's activation, ranged attacks against that model made by models in this unit later this activation automatically hit it.</capacity>
+                </ranged_weapon>
+                <melee_weapon name="Electrical blast" pow="7" p_plus_s="13" />
+              </weapons>
+              <capacity title="Take up">If this model is destroyed or removed from play, you can choose a grunt in this unit within 1" of this model to take its place. Effects on this model expire, and it gains the effects on the chosen Grunt. Remove the Grunt from the table instead of this model. This model has the same number of unmarked damagge boxes as the chosen Grunt.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="YU05" name="Trencher Infantry" full_name="Trencher Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Cygnar Unit" fa="2" has_unit_attachment="true" has_weapon_attachment="true"  completed="true">
+          <basestats name="Leader and grunts" spd="6" str="6" mat="6" rat="5" def="13" arm="13" cmd="9" cra="true" advance_deployment="true" />
+          <weapons>
+            <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+            <melee_weapon name="Bayonet" pow="3" p_plus_s="9" />
+          </weapons>
+          <capacity title="Assault" type="Order">Affected models must charge or run. As part of a charge, after moving but before making its charge attack, an affected model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of the affected model's activation. Models that received this order cannot make combined ranged attacks this activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, the affected model must still make the ranged attack before its activation ends.</capacity>
+          <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <capacity title="Smoke bombs" type="*Action">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+          <unit_attachment id="YA03" name="Trencher Infantry Officer &amp; Sniper" full_name="Trencher Infantry Officer &amp; Sniper" fa="1" cost="3" qualification="Cygnar Unit attachment"  completed="true">
+            <model id="Trencher Infantry Officer">
+              <basestats name="Officer" spd="6" str="6" mat="7" rat="6" def="13" arm="13" cmd="9" cra="true" advance_deployment="true" hitpoints="5" officer="true" jack_marshal="true" />
+              <weapons>
+                <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+                <melee_weapon name="Bayonet" pow="3" p_plus_s="9" />
+              </weapons>
+              <capacity title="Cautious Advance" type="Order">Each model in the unit that received this order must make a full advance as its normal movement, perform the Dig In special action, then can perform a combat action as its action.</capacity>
+              <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+              <capacity title="Smoke bombs" type="*Action">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+            </model>
+            <model id="Trencher Infantry Sniper">
+              <basestats name="Sniper" spd="6" str="6" mat="6" rat="7" def="13" arm="13" cmd="9" cra="true" advance_deployment="true" hitpoints="0" />
+              <weapons>
+                <ranged_weapon name="Scoped Rifle" rng="14" rof="1" aoe="-" pow="11" />
+              </weapons>
+              <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+              <capacity title="Smoke bombs" type="*Action">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+              <capacity title="Sniper">When damaging a warjack or warbeast with a ranged attack, choose which column or branch suffers damage. Instead of rolling damage on a ranged attack, this model can inflict 1 damage point. A model that participates in a combined ranged attack loses Sniper until the attack is resolved.</capacity>
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="YA04" name="Trencher Infantry Grenadier" full_name="Trencher Infantry Grenadier" fa="2" cost="1" qualification="Cygnar Weapon attachment" max_wa="3"  completed="true">
+            <model id="Trencher Infantry Grenadier">
+              <basestats name="Trencher" spd="6" str="6" mat="6" rat="5" def="13" arm="13" cmd="9" cra="true" advance_deployment="true" hitpoints="0" />
+              <weapons>
+                <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11">
+                  <capacity title="Rifle Grenade" type="*Action">Make a ranged attack with this weapon with AOE 3". When making a Rifle Grenade special attack, this model cannot participate in a combined ranged attack.</capacity>
+                </ranged_weapon>
+                <melee_weapon name="Bayonet" pow="3" p_plus_s="9" />
+              </weapons>
+              <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+              <capacity title="Smoke bombs" type="*Action">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+              <capacity title="Take up">If this model is destroyed or removed from play, you can choose a grunt in this unit within 1" of this model to take its place. Effects on this model expire, and it gains the effects on the chosen Grunt. Remove the Grunt from the table instead of this model. This model has the same number of unmarked damagge boxes as the chosen Grunt.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="YU06" name="Trencher Chaingun Crew" full_name="Trencher Chaingun Crew" base_cost="2" baseCount="2" full_cost="-" fullCount="-" qualification="Cygnar Weapon Crew Unit" fa="2" completed="true">
+          <basestats name="Leader" spd="4" str="6" mat="6" rat="5" def="13" arm="13" cmd="9" advance_deployment="true" />
+          <weapons>
+            <ranged_weapon name="Chain gun" rng="10" rof="1" aoe="-" pow="11">
+              <capacity title="Covering fire" type="*Action">Place a 3" AOE anywhere completely within this weapon's RNG, centered on points in this model's LOS, ignoring intervening model. A model entering or ending its activation in the AOE suffer a damage roll with POW equal to POW of this weapon. The AOE remains in play for one round. If this model is destroyed or removed from play, immediately remove the AOE from play.</capacity>
+              <capacity title="Light Artillery">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="Strafe [D3]" type="*Attack">Make D3 ranged attacks targeting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more atacks than the primary target. Strafe counts as one attacks for ROF.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Trench knife" pow="3" p_plus_s="9" />
+          </weapons>
+          <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <model id="trencher_chaingun_grunts" name="Trencher Chaingun grunts" full_name="Trencher Chaingun grunts">
+            <basestats name="Grunts" spd="4" str="6" mat="6" rat="5" def="13" arm="13" cmd="9" advance_deployment="true" />
+            <weapons>
+              <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+              <melee_weapon name="Trench knife" pow="3" p_plus_s="9" />
+            </weapons>
+            <capacity title="Ammo Feeder">If B2B with the Leader, the Grunt can forfeit its action to use Ammo Feeder. This activation, if the Leader makes a Strafe special attack, it makes +3 attacks.</capacity>
+            <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          </model>
+        </unit>
+        <unit id="YU07" name="Trencher Cannon Crew" full_name="Trencher Cannon Crew" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Cygnar Weapon Crew Unit" fa="2" completed="true">
+          <basestats name="Leader" spd="4" str="6" mat="6" rat="5" def="13" arm="13" cmd="9" advance_deployment="true" />
+          <weapons>
+            <ranged_weapon name="Cannon" rng="15" rof="1" aoe="3" pow="13">
+              <capacity title="Light Artillery">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="Range Finder">While B2B with one or more grunts in this unit, the leader gains +2 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Trench knife" pow="3" p_plus_s="9" />
+          </weapons>
+          <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <model id="trencher_cannon_grunts" name="Trencher Cannon grunts" full_name="Trencher Cannon grunts">
+            <basestats name="Grunts" spd="4" str="6" mat="6" rat="5" def="13" arm="13" cmd="9" advance_deployment="true" />
+            <weapons>
+              <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+              <melee_weapon name="Trench knife" pow="3" p_plus_s="9" />
+            </weapons>
+            <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          </model>
+        </unit>
+        <unit id="YU08" name="Sword Knights" full_name="Sword Knights" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Cygnar Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and grunts" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Battle blade" pow="4" p_plus_s="10" />
+          </weapons>
+          <capacity title="Defensive Line">While this model is B2B with one or more models in its unit, it gains +2 ARM.</capacity>
+          <capacity title="Flank [Faction Warjack]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
+          <capacity title="Penetrating Strike">After hitting a warjack or warbeast with this model's melee attack, you can choose to have it suffer 1 damage point instead of a normal damage roll.</capacity>
+          <unit_attachment id="YA05" name="Sword Knight Officer &amp; Standard" full_name="Sword Knight Officer &amp; Standard" fa="1" cost="2" qualification="Cygnar Unit attachment" completed="true" >
+            <model id="Officer">
+              <basestats name="Sword Knight Officer" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="9" hitpoints="5" jack_marshal="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Battle blade" pow="4" p_plus_s="10" />
+              </weapons>
+              <capacity title="Defensive Line">While this model is B2B with one or more models in its unit, it gains +2 ARM.</capacity>
+              <capacity title="Drive : Pronto">This model can attempt to Drive each warjack under its control in its command range. To Drive a warjack, this model must make a command check at any time during its activation. If the check succeeds, the warjack immediately makes a full advance. If the check fails, the warjack does not benefit from 'Jack Marshal this turn.</capacity>
+              <capacity title="Flank [Faction Warjack]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
+              <capacity title="GRANTED: Practiced Maneuvers">While this model is in play, models in its unit gain Practiced Maneuvers. (A model with Practiced Maneuvers can ignore other models in its unit when determining LOS and can advance through other models in its unit if it has enough movement to move completely past them.)</capacity>
+              <capacity title="Penetrating Strike">After hitting a warjack or warbeast with this model's melee attack, you can choose to have it suffer 1 damage point instead of a normal damage roll.</capacity>
+              <capacity title="Tactics: Precision Strike">Models in this unit gain Precision Strike. (When a model with Precision Strike damages a warjack or warbeast with a melee attack, choose which column or branch suffers the damage.)</capacity>
+            </model>
+            <model id="Sword Knight Standard">
+              <basestats name="Standard Bearer" spd="6" str="6" mat="6" rat="4" def="13" arm="14" cmd="9" hitpoints="0" standard_bearer="true" />
+              <capacity title="Defensive Line">While this model is B2B with one or more models in its unit, it gains +2 ARM.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU09" name="Stormguard" full_name="Stormguard" base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Cygnar Storm Knight Unit" fa="2" completed="true">
+          <basestats name="Leader and grunts" spd="5" str="6" mat="7" rat="5" def="12" arm="15" cmd="9" cma="true" immunity_electricity="true" gunfighter="true" />
+          <weapons>
+            <melee_weapon name="Voltaic Halberd" pow="6" p_plus_s="12" reach="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              <capacity title="Set Defense">A model in this model front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Electrical Discharge">After all models in this unit have completed their actions, its Leader can make one ranged attack. The attack has base RNG 10, AOE 3, and POW 6. It gains +1 POW for each model in this unit that hit an enemy model with a melee attack this activation. Damage from this attack is electrical.</capacity>
+          <capacity title="Ranked Attacks">Friendly Faction models can ignore this model when determining LOS.</capacity>
+        </unit>
+        <unit id="YU10" name="Storm Lances" full_name="Storm Lances" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Cygnar Storm Knight Cavalry Unit" fa="1"  completed="true">
+          <basestats name="Leader and grunts" spd="8" str="6" mat="7" rat="5" def="12" arm="17" cmd="9" immunity_electricity="true" hitpoints="5" />
+          <weapons>
+            <ranged_weapon name="Electrical bolt" rng="8" rof="1" aoe="-" pow="12" electricity="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Electro Lance" pow="7" p_plus_s="13" reach="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              <capacity title="Brutal charge">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="Assault" type="Order">Affected models must charge or run. As part of a charge, after moving but before making its charge attack, an affected model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of the affected model's activation. Models that received this order cannot make combined ranged attacks this activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, the affected model must still make the ranged attack before its activation ends.</capacity>
+        </unit>
+        <unit id="YU11" name="Black 13th Gun Mage Strike Team" full_name="Black 13th Gun Mage Strike Team" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Cygnar Arcane Tempest Character Unit" fa="C" completed="true">
+          <basestats name="Lynch" spd="6" str="4" mat="5" rat="8" def="15" arm="11" cmd="9" hitpoints="5" gunfighter="true" officer="true" />
+          <weapons>
+            <ranged_weapon name="Magelock Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true" />
+          </weapons>
+          <capacity title="Attack type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+          <capacity title="● Black Penny">This attack ignores the firing into melee penalty.</capacity>
+          <capacity title="● Brutal Damage">Gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+          <capacity title="● Fire Beacon">This attack becomes AOE 5 and POW  for this attack. While a model is within the AOE, it loses Camouflage and Stealth, and other models can ignore cloud effects when determining LOS to it. The AOE lasts for one turn.</capacity>
+          <capacity title="● Snipe">This attack gains +4 RNG.</capacity>
+          <capacity title="True Sight">This model ignores concealment, Camouflage, and Stealth.</capacity>
+          <model id="Ryan">
+            <basestats name="Ryan" spd="6" str="4" mat="5" rat="8" def="15" arm="11" cmd="9" hitpoints="5" gunfighter="true" />
+            <weapons>
+              <ranged_weapon name="Magelock Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true" count="2">
+                <capacity title="Mage Storm" type="*Attack">Make a ranged attack with this weapon with AOE 4. Models hit suffer a POW 12 magical damage roll. The AOE is a cloud effect that remains in play for one round. Models entering or ending their activation in the AOE suffer a POW 12 magical damage roll. This model does not suffer damage from Mage Storm.</capacity>
+              </ranged_weapon>
+            </weapons>
+            <capacity title="Attack type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+            <capacity title="● Black Penny">This attack ignores the firing into melee penalty.</capacity>
+            <capacity title="● Brutal Damage">Gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+            <capacity title="● Snipe">This attack gains +4 RNG.</capacity>
+          </model>
+          <model id="Watts">
+            <basestats name="Watts" spd="6" str="4" mat="5" rat="8" def="15" arm="11" cmd="9" hitpoints="5" gunfighter="true" />
+            <weapons>
+              <ranged_weapon name="Magelock Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true" />
+            </weapons>
+            <capacity title="Attack type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+            <capacity title="● Black Penny">This attack ignores the firing into melee penalty.</capacity>
+            <capacity title="● Brutal Damage">Gain an additional die on this weapon's damage roll against the model directly hit.</capacity>
+            <capacity title="● Snipe">This attack gains +4 RNG.</capacity>
+            <capacity title="GRANTED: Prowl">While this model is in play, models in its unit gain Prowl. (Models with Prowl gain Stealth ICON while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.)</capacity>
+          </model>
+        </unit>
+        <unit id="YU12" name="Precursor Knights" full_name="Precursor Knights" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Cygnar Morrowan Ally Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and grunts" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="9" />
+          <weapons>
+            <melee_weapon name="Blessed Mace" pow="6" p_plus_s="12" magical="true">
+              <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Animosity [Thamarite or Undead]">This model cannot be included in an army that includes one or more models of the listed type.</capacity>
+          <capacity title="Shield Wall" type="Order">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
+          <capacity title="Spell Ward">This model cannot be targeted by spells.</capacity>
+          <unit_attachment id="YA06" name="Precursor Knight Officer &amp; Standard" full_name="Precursor Knight Officer &amp; Standard" fa="1" cost="2" qualification="Cygnar Unit attachment" completed="true">
+            <model id="Precursor Knight Officer">
+              <basestats name="Officer" spd="6" str="6" mat="8" rat="4" def="13" arm="14" cmd="9" hitpoints="5" officer="true" />
+              <weapons>
+                <melee_weapon name="Blessed Mace" pow="6" p_plus_s="12" magical="true">
+                  <capacity title="Blessed">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="Morrow's Name">Once per game during its unit's activation, this model can use Morrow's Name. Models in this unit in formation gain an additional die on melee damage rolls this activation.</capacity>
+              <capacity title="TACTICS: Ranked Attacks">Models in this unit gain Ranked Attacks.(Friendly Faction models can ignore models with Ranked Attacks when determining LOS.)</capacity>
+              <capacity title="Heal" type="*Action">Choose a friendly living model B2B with this model. That model heals d3 damage points.</capacity>
+              <capacity title="Spell Ward">This model cannot be targeted by spells.</capacity>
+            </model>
+            <model id="Precursor Knight Standard">
+              <basestats name="Standard Bearer" spd="6" str="6" mat="7" rat="4" def="13" arm="14" cmd="9" hitpoints="0" standard_bearer="true" />
+              <capacity title="Spell Ward">This model cannot be targeted by spells.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU13" name="Rangers" full_name="Rangers" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Cygnar Unit" fa="2" completed="true">
+          <basestats name="Leader and grunts" spd="7" str="5" mat="6" rat="6" def="14" arm="11" cmd="8" advance_deployment="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+            <melee_weapon name="Knife" pow="2" p_plus_s="7" />
+          </weapons>
+          <capacity title="Camouflage">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="Mark Target">Other friendly Faction models gain +2 to ranged attack rolls against enemy models within 5" of this model and in its LOS.</capacity>
+          <capacity title="Prowl">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+        </unit>
+        <unit id="YU14" name="Trencher Commandos" full_name="Trencher Commandos" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Cygnar Unit" fa="2" has_weapon_attachment="true" completed="true">
+          <basestats name="Leader and grunts" spd="6" str="6" mat="7" rat="5" def="13" arm="13" cmd="9" advance_deployment="true" stealth="true" />
+          <weapons>
+            <ranged_weapon name="Grenade" rng="6" rof="1" aoe="3" pow="12">
+              <capacity title="Cumbersome">If this model attacks with this weapon during its activation, it cannot attack with another ranged weapon that activation. If this model attacked with another ranged weapon this activation, it cannot attack with this weapon.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Carbine" rng="10" rof="1" aoe="-" pow="10" />
+            <melee_weapon name="Trench knife" pow="3" p_plus_s="9" />
+          </weapons>
+          <capacity title="Anatomical Precision">When this models melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+          <weapon_attachment id="YA08" name="Trencher Commandos Scattergunner" full_name="Trencher Commandos Scattergunner" fa="2" cost="1" qualification="Cygnar Weapon attachment" max_wa="3"  completed="true">
+            <model id="Trencher Commandos Scattergunner">
+              <basestats name="Trencher Commandos Scattergunner" spd="6" str="6" mat="7" rat="5" def="13" arm="13" cmd="9" hitpoints="0" advance_deployment="true" stealth="true" />
+              <weapons>
+                <ranged_weapon name="Scatter gun" rng="SP8" rof="1" aoe="-" pow="12" />
+                <melee_weapon name="Trench knife" pow="3" p_plus_s="9" />
+              </weapons>
+              <capacity title="Anatomical Precision">When this models melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+              <capacity title="Take up">If this model is destroyed or removed from play, you can choose a grunt in this unit within 1" of this model to take its place. Effects on this model expire, and it gains the effects on the chosen Grunt. Remove the Grunt from the table instead of this model. This model has the same number of unmarked damagge boxes as the chosen Grunt.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="YU15" name="Stormsmith Storm Tower" full_name="Stormsmith Storm Tower" fa="2" base_cost="2" baseCount="2" full_cost="-" fullCount="-" qualification="Cygnar Weapon Crew Unit" completed="true">
+          <basestats name="Leader" spd="4" str="4" mat="5" rat="5" def="13" arm="14" cmd="7" immunity_electricity="true" />
+          <weapons>
+            <ranged_weapon name="Storm tower" rng="14" rof="1" aoe="-" pow="14" electricity="true">
+              <capacity title="Lightning Generator">When a model is hit with this weapon, lightning arcs from that model to d3 consecutive additionnal models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</capacity>
+              <capacity title="Range Finder">While B2B with one or more grunts in this unit, the leader gains +2 to attack rolls with this weapon.</capacity>
+              <capacity title="Critical Disruption">On a critical hit on a warjack, it suffers Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+              <capacity title="Light Artillery">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Sword" pow="3" p_plus_s="7" />
+          </weapons>
+        </unit>
+        <unit id="YU16" name="Tempest Blazers" full_name="Tempest Blazers" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="Cygnar Arcane Tempest Light Cavalry Unit" fa="1" completed="true">
+          <basestats name="Leader and grunts" spd="9" str="4" mat="5" rat="7" def="15" arm="13" cmd="8" hitpoints="5" pathfinder="true" gunfighter="true" />
+          <weapons>
+            <ranged_weapon name="Magelock Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true" />
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="Attack type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+          <capacity title="● Brutal Damage">Gain an additional die on this weapon's damage roll.</capacity>
+          <capacity title="● Blessed">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+          <capacity title="● Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+        </unit>
+		<unit  id="YU17" name="Silver Line Stormguard" full_name="Silver Line Stormguard" base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Cygnar Storm Knight Unit" fa="2" completed="true">
+			<basestats name="Leader and grunts" spd="5" str="6" mat="7" rat="5" def="12" arm="15" cmd="9" cma="true" immunity_electricity="true" gunfighter="true"/>
+			<weapons>
+			    <melee_weapon p_plus_s="12" pow="6" name="Thunder Halberd" reach="true">
+			        <capacity title="Critical Knockdown"> On a critical hit, the model hit is knocked down.</capacity>
+			    </melee_weapon>
+			</weapons>
+			<capacity title="Electromagnetic discharge">After all models in this unit have completed their actions, its Leader can make one ranged attack. The attack has base RNG 6, AOE 5 and POW -. It gains +1 RNG for each model in this unit that hit an enemy model with a melee attack this activation. Models hit suffer +2 damage from electrical damage rolls for one round.</capacity>
+			<capacity title="Polarity Wall">While this model is B2B with one or mode models in its unit, it cannot be charged by a model beginning the charge in the model's front ard.</capacity>
+			<capacity title="Ranked attacks">Friendly Faction models can ignore this model when determining LOS.</capacity>
+		</unit>
+        
+      </units>
+      <solos>
+        <solo id="YS01" name="Journeyman Warcaster" full_name="Journeyman Warcaster" cost="3" qualification="Cygnar Solo" fa="1"  completed="true">
+          <basestats name="Journeyman Warcaster" spd="6" str="5" mat="5" rat="4" def="14" arm="14" cmd="7" hitpoints="5" journeyman_warcaster="true" fearless="true" focus="3" />
+          <weapons>
+            <melee_weapon name="Mechanika Blade" pow="5" p_plus_s="10" magical="true" />
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" magical="false" />
+          </weapons>
+          <spell name="ARCANE BOLT" cost="2" rng="12" aoe="-" pow="11" up="NO" off="YES">Magical bolts of energy streak toward the target model.</spell>
+          <spell name="ARCANE SHIELD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 ARM.</spell>
+        </solo>
+        <solo id="YS02" name="Gun Mage Captain Adept" full_name="Gun Mage Captain Adept" cost="2" qualification="Cygnar Arcane Tempest Solo" fa="2"  completed="true">
+          <basestats name="Captain" spd="6" str="4" mat="5" rat="8" def="15" arm="11" cmd="9" hitpoints="5" commander="true" />
+          <weapons>
+            <ranged_weapon name="Magelock Pistol" rng="10" rof="1" aoe="-" pow="10" magical="true" />
+            <melee_weapon name="Sword" pow="3" p_plus_s="7" magical="false" reach="false" />
+          </weapons>
+          <capacity title="Attack type">Each time this model makes a normal ranged attack, choose one of the following abilities:</capacity>
+          <capacity title="● Brutal Damage">Gain an additional die on this weapon's damage roll.</capacity>
+          <capacity title="● Phantom Seeker">This model ignores LOS when making ranged attacks. This model ignores concealment and cover when resolving ranged attacks.</capacity>
+          <capacity title="● Snipe">This attack gains +4 RNG.</capacity>
+          <capacity title="Arcane Precision">If this model forfeits its movement during its activation to gain the iaming bonus, it ignores Stealth that activation.</capacity>
+        </solo>
+        <solo id="YS03" name="Stormsmith Stormcaller" full_name="Stormsmith Stormcaller" cost="1" qualification="Cygnar Solo" fa="3"  completed="true">
+          <basestats name="Stormsmith" spd="6" str="4" mat="5" rat="4" def="13" arm="11" cmd="7" immunity_electricity="true" />
+          <weapons>
+            <melee_weapon name="Rod" pow="3" p_plus_s="7" reach="true" />
+          </weapons>
+          <capacity title="Stormcall [8] ">This model can make one of the following stormcalls. Warjacks affected by a stormcall suffer Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+          <capacity title="● Single Strike" type="*Action">RNG 10. Target model. This model makes a skill check. If it passes and the target model is in range, the target model suffers a POW 10 electrical damage roll.</capacity>
+          <capacity title="● Surge" type="*Action">If there is not another friendly Stormsmith Stormcaller within 20" of this model when it makes this special action, nothing happens. Otherwise, this model can target up to two models whose bases are intersected by any line drawn between the bases of the two Stormsmith Stormcallers. This model makes a skill check for each model targeted. If it passes, that model suffers a POW 10 electrical damage roll. Models can be targeted only once per Surge special action.</capacity>
+          <capacity title="● Triangulation" type="*Action">If this model and two other friendly Stormsmith Stormcallers are not all within 20" of each other when this model makes this special action, nothing happens. Otherwise, this model can target up to three models whose bases are within the triangular area between all three Stormsmith Stormcallers. This model makes a skill check for each model targeted. If it passes, that model suffers a POW 10 electrical damage roll. Models can be targeted only once per Triangulation special action.</capacity>
+        </solo>
+        <solo id="YS04" name="Captain Maxwell Finn" full_name="Captain Maxwell Finn" cost="3" qualification="Cygnar Trencher Character Solo" fa="C"  completed="true">
+          <basestats name="Finn" spd="6" str="6" mat="8" rat="7" def="14" arm="14" cmd="10" hitpoints="5" advance_deployment="true" tough="true" fearless="true" commander="true" />
+          <weapons>
+            <ranged_weapon name="Mini-Slugger" rng="10" rof="1" aoe="-" pow="11">
+              <capacity title="Rapid fire (d3)">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Trench knife" pow="3" p_plus_s="9">
+              <capacity title="Tresher" type="*Attack">This model makes one melee attack with this weapon against each model in its LOS and this weapons melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Anatomical Precision">When this models melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+          <capacity title="Smoke bombs" type="*Action">Place a 3" AOE cloud effect in play. Its center point must be within 1" of this model. This AOE remains in play for one round.</capacity>
+          <capacity title="Sprint">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+          <capacity title="Desperate Pace [Trencher]" type="*Action">RNG CMD. Target Friendly Trencher unit. If the Trencher unit is in range, it gains +2" movement during its activation this turn.</capacity>
+          <capacity title="Veteran Leader [Trencher]">Friendly Trencher trooper models gain +2 to attack rolls while this model is in their LOS.</capacity>
+        </solo>
+        <solo id="YS05" name="Major Katherine Laddermore" full_name="Major Katherine Laddermore" cost="5" qualification="Cygnar Storm Knight Character Dragoon Solo" fa="C"  completed="true">
+          <basestats name="Laddermore" spd="8" str="6" mat="8" rat="7" def="13" arm="17" cmd="9" immunity_electricity="true" hitpoints="10" fearless="true" commander="true" />
+          <weapons>
+            <ranged_weapon name="Voltaic Accelerator" rng="8" rof="1" aoe="-" pow="12" electricity="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              <capacity title="Power up">This model gains +2 to damage rolls with this weapon during activations it ends its normal movement at least 1" from where it began its activation.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Voltaic Lance" pow="7" p_plus_s="13" reach="true">
+              <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              <capacity title="Brutal charge">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="Assault" type="Order">Affected models must charge or run. As part of a charge, after moving but before making its charge attack, an affected model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of the affected model's activation. Models that received this order cannot make combined ranged attacks this activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, the affected model must still make the ranged attack before its activation ends.</capacity>
+          <capacity title="Dragoon">While mounted, this model has base SPD 8 and base ARM 17. While dismounted, it has base SPD 6 and base ARM 15 and loses Assault, Electro Charger and the Voltaic Accelerator loses Power Up.</capacity>
+          <capacity title="Electro Charger [Storm Lances]">While within 5" of this model, friendly Storm Lances models gain +2 to their ranged attack and ranged damage rolls.</capacity>
+          <model id="Laddermore_dismount" full_name="Major Katherine Laddermore (dismounted)" name="Major Katherine Laddermore (dismounted)">
+            <basestats name="Laddermore dismounted" spd="6" str="6" mat="8" rat="7" def="13" arm="15" cmd="9" immunity_electricity="true" hitpoints="5" fearless="true" commander="true" />
+            <weapons>
+              <ranged_weapon name="Voltaic Accelerator" rng="8" rof="1" aoe="-" pow="12" electricity="true">
+                <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              </ranged_weapon>
+              <melee_weapon name="Voltaic Lance" pow="7" p_plus_s="13" reach="true">
+                <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+                <capacity title="Brutal charge">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+              </melee_weapon>
+            </weapons>
+          </model>
+        </solo>
+        <solo id="YS06" name="Squire" full_name="Squire" cost="2" qualification="Cygnar Solo" fa="1" warcaster_attachment="true"  completed="true">
+          <basestats name="Squire" spd="6" str="3" mat="4" rat="1" def="14" arm="14" cmd="0" hitpoints="5" construct="true" />
+          <weapons />
+          <capacity title="Arcane Realignment">While this model's warcaster is within 5" of it, that warcaster can reroll one failed magic attack roll each turn.</capacity>
+          <capacity title="Arcane Repeater">While this model's warcaster is within 5" of it, that warcaster's control area is extended 2".</capacity>
+          <capacity title="Attached">Before the start of the game, attach this model to a friendly Faction warcaster for the rest of the game. Each warcaster can have only one model attached to it.</capacity>
+          <capacity title="Reserve Accumulator">During your Control Phase, after replenishing focus, if this model is within 5" of its controlling warcaster, you can mark one unmarked accumulator circle on this model's card to give 1 focus point to its warcaster.</capacity>
+        </solo>
+        <solo id="YS07" name="Captain Arlan Strangewayes" full_name="Captain Arlan Strangewayes" cost="2" qualification="Cygnar Character Solo" fa="C" completed="true">
+          <basestats name="Strangewayes" spd="5" str="7" mat="5" rat="5" def="12" arm="16" cmd="8" hitpoints="5" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Fixer" pow="5" p_plus_s="12" />
+            <ranged_weapon name="Voltaic Gauntlet" rng="SP8" rof="1" aoe="-" pow="10">
+              <capacity title="Disruption">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <capacity title="Magic Ability" />
+          <capacity title="● Evasive Action" type="*Action">RNG 5. Target friendly Faction warjack. If the warjack is in range, it gains Evasive for one round. (A model with Evasive cannot be targeted by free strikes. It can advance up to 2" immediately after an enemy ranged attack that missed it is resolved unless it was missed while advancing.)</capacity>
+          <capacity title="● Power Booster" type="*Action">RNG 5. Target friendly Faction warjack. If the target warjack is in range and has no focus points, it gains 1 focus point. If the warjack is Disrupted, it is no longer Disrupted.</capacity>
+          <capacity title="Repair [10]" type="*Action">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjacks damage grid.</capacity>
+        </solo>
+        <solo id="YS08" name="Trencher Master Gunner" full_name="Trencher Master Gunner" cost="2" qualification="Cygnar Trencher Solo" fa="2" completed="true">
+          <basestats name="Trencher Master Gunner" spd="6" str="6" mat="6" rat="6" def="13" arm="13" cmd="9" hitpoints="5" advance_deployment="true" commander="true" />
+          <weapons>
+            <ranged_weapon name="Scatter gun" rng="SP8" rof="1" aoe="-" pow="12" />
+            <melee_weapon name="Trench knife" pow="3" p_plus_s="9" />
+          </weapons>
+          <capacity title="Artillerist" type="*Action">Choose a friendly Faction model. While in this model's command range, the chosen model gains +2 to AOE ranged attack rolls. When the chosen model AOE ranged attack deviate, you can reroll the direction and/or distance of deviation. Each roll can be rerolled only once as a result of Artillerist. Artillerist lasts for one turn.</capacity>
+          <capacity title="Close fire" type="*Action">RNG CMD. Target friendly Faction model. If the model is in range, friendly models do not suffers ranged blast damage from its attacks this turn.</capacity>
+          <capacity title="Dig in" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+        </solo>
+        <solo id="YS09" name="Archduke Alain Runewood" full_name="Archduke Alain Runewood, Lord of Fharin" cost="3" qualification="Cygnar Character Solo" fa="C" completed="true">
+          <basestats name="Runewood" spd="6" str="6" mat="7" rat="6" def="13" arm="14" cmd="10" hitpoints="5" jack_marshal="true" fearless="true" commander="true" />
+          <weapons>
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" magical="false" />
+            <melee_weapon name="Vindicator" pow="6" p_plus_s="12" magical="true" weapon_master="true" />
+          </weapons>
+          <capacity title="Battle Plan">During this model's activation, it can use one of the following plans. A friendly Faction model/unit can be affected by only one plan each turn.</capacity>
+          <capacity title="● Overcome">RNG 5. Target friendly Faction warrior model/unit. If the model/unit is in range, it gains Pathfinder for one turn.</capacity>
+          <capacity title="● Path to victory">RNG 5. Target friendly Faction warrior model/unit. If the model/unit is in range, it gains Fearless and +2 to charge attacks rolls for one round.</capacity>
+          <capacity title="● Reveille">Knocked down friendly Faction models in this model's command range immediately stand up. Models that were knocked down this turn are not affected by Reveille.</capacity>
+          <capacity title="Elite Cadre [Sword Knights]">Friendly Sword Knights units gain Reform. (After all models in a unit with Reform have completed their actions, each can advance up to 3".)</capacity>
+          <capacity title="Sacrificial pawn [Faction Warjack]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Faction warjack model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+        </solo>
+        <solo id="YA10" name="Jonas Murdoch" full_name="Captain Jonas Murdoch" cost="2" qualification="Cygnar Character Unit Attachment" fa="C" mercenary_attachment="true"  completed="true">
+          <basestats name="Murdoch" spd="6" str="6" mat="7" rat="6" def="13" arm="17" cmd="9" hitpoints="5" officer="true" tough="true"/>
+          <weapons>
+              <ranged_weapon pow="10" aoe="-" rng="10" rof="1" name="Carbine"></ranged_weapon>
+              <melee_weapon p_plus_s="9" pow="3" name="Trench Knife"></melee_weapon>
+          </weapons>
+          <capacity title="Attachment [Small or Medium-Based Mercenary]">This attachment can be added to Small or Medium-Based Mercenary unit.</capacity>
+          <capacity title="Assault" type="Order">Affected models must run or charge. As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+          <capacity title="Go to Ground">Once per game while in formation during its unit's activation, this model can use to Go to Ground. For one round, or until they move, are placed or ar engaged, models in this unit in formation gain cover, do not suffer blast damage, and do not block LOS.</capacity>
+          <capacity title="Ranking Officer">This model is a Ranking Officer. While this model is in play, models in its unit are Protectorate models instead of Mercenary models.</capacity>
+          <capacity title="Trencher">This model is a Trencher model.</capacity>
+        </solo>
+        <solo id="YA11" name="Lieutenant Allison Jakes" full_name="Lieutenant Allison Jakes" cost="3" qualification="Cygnar Character Solo" fa="C" completed="true">
+          <basestats name="Jakes" spd="6" str="5" mat="6" rat="5" def="15" arm="13" cmd="7" hitpoints="5" journeyman_warcaster="true" focus="4" fearless="true" />
+          <weapons>
+            <melee_weapon name="Mechanika Blade" pow="5" p_plus_s="10" magical="true" />
+            <melee_weapon name="Duelling Dagger" pow="2" p_plus_s="7" magical="true" />
+            <ranged_weapon name="Hand Cannon" rng="12" rof="1" aoe="-" pow="12" magical="false" />
+          </weapons>
+          <spell name="ENERGIZER" cost="*" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.</spell>
+          <spell name="SIDEKICK" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup cannot be knocked down, pushed, placed, or moved by a slam and gains +2 DEF. While this model is B2B with target model, it cannot be knocked down, pushed, placed, or moved by a slam and gains +2 DEF.</spell>
+          <capacity title="Journeyman Warcaster">This model is not a warcaster but has the following warcaster special rules: Battlegroup Commander, Control Area, Focus Manipulation, Power Field, and Spellcaster.</capacity>
+          <capacity title="Parry" type="">This model cannot be targeted by free strikes.</capacity>
+          <capacity title="Sprint">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+        </solo>
+        <solo  id="YS10" name="Stormblade Captain" full_name="Stormblade Captain" cost="2" qualification="Cygnar Storm Knight Solo" fa="2" completed="true">
+			<basestats name="Captain" spd="5" str="6" mat="8" rat="6" def="12" arm="16" cmd="10"  hitpoints="5" immunity_electricity="true" jack_marshal="true" commander="true"/>
+			<weapons>
+			    <ranged_weapon rng="8" name="Nexus Blast" aoe="-" pow="14" rof="1" electricity="true"></ranged_weapon>
+			    <melee_weapon p_plus_s="13" pow="7" name="Nexus Blade" reach="true" weapon_master="true"></melee_weapon>
+			</weapons>
+			<capacity title="Tactician [Storm Knight]">While in this model's commande range, Friendly Storm Knight models ignore other Friendly Storm Knight models when determining LOS. Friendly Storm Knight models can advance trough other Friendly Storm Knight models in this model's commande if they have enough movement to move completely past them.</capacity>
+			<capacity title="Leadership [Storm Knights]">Friendly Storm Knight models activating while in this model's command range gain Relentless Charge that activation.</capacity>
+			<capacity title="Quick Work">When this model destroys one or more enemy models with a melee attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack. Attacks gained from Quick Work do not count against a weapon's ROF.</capacity>
+			<capacity title="Relentless Charge">This model gains Pathfinder during activations it charges.</capacity>
+		</solo>
+        
+      </solos>
+    </army>
+  </armies>
+</ruleset>
+

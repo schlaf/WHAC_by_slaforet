@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="Rahn - Charge of the Battle Mages" casterId="RW01" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Houseguard units, House Shyeel Battle Mage Units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcanist solos, House Shyeel Battle Mage Magister solos</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+
+      <level number="1">
+      <only>
+        <entry id="RW01" />
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ07" />
+        <entry id="RJ08" />
+        <entry id="RJ09" />
+        <entry id="RJ10" />
+        <entry id="RJ11" />
+        <entry id="RJ13" />
+        <entry id="RU03" />
+        <entry id="RU04" />
+        <entry id="RU07" />
+        <entry id="RU09" />
+        <entry id="RA04" />
+        <entry id="RA05" />
+        <entry id="RA06" />
+        <entry id="RS01" />
+        <entry id="RS04" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="512" entryId="RU03" />
+        <alterFA bonus="1" entryId="RS04">
+            <forEach>
+                <entry id="RU03"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(RJ04 RJ05 RJ06 RJ07 RJ09 RJ10 RJ11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RJ04" />
+          <entry id="RJ05" />
+          <entry id="RJ06" />
+          <entry id="RJ07" />
+          <entry id="RJ09" />
+          <entry id="RJ10" />
+          <entry id="RJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <freeModel>
+          <entry id="RS01" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3RS04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="RS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>House Shyeel Battle Mage units and House Shyeel Battle Mage Magister solos in the army gainAdvance Move. Models with Advance Move can make a full advance after both players have deployed but before the first player's first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  4RU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="RU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Friendly models/units can begin the game affected by Rahn's upkeep spells. These spells and their targets must be declared before either player sets up models. Rahn does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Rahn - Fires From On High" casterId="RW01" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Non-character Retribution warjacks with Field Dependent, Discordia</models>
+          </type>
+          <type type="UNITS">
+              <models>House Shyeel units, Houseguard units, Stormfall Archers</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcanist Solos, House Shyeel solos, Eiryss, Angel of Retribution, Sylys Wyshnalyrr, the Seeker.</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+
+    <level number="1">
+      <only>
+        <!-- Rahn -->
+        <entry id="RW01" />
+        <!-- Non-character Retribution warjacks with Field Dependent, Discordia.-->
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ07" />
+        <entry id="RJ08" />
+        <entry id="RJ13" />
+        <!-- House Shyeel units, Houseguard units, Stormfall Archers.-->
+        <entry id="RU03" />
+        <entry id="RU04" />
+        <entry id="RU07" />
+        <entry id="RU08" />
+        <entry id="RU09" />
+        <entry id="RA04" />
+        <entry id="RA05" />
+        <entry id="RA06" />
+        
+        <!-- Arcanist Solos, House Shyeel solos, Eiryss, Angel of Retribution, Sylys Wyshnalyrr, the Seeker.-->
+        <entry id="RS01" />
+        <entry id="RS04" />
+        <entry id="RS11" />
+        <entry id="MS01e" />
+        <entry id="MS23" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="1" entryId="RU03" />
+        <alterFA bonus="1" entryId="RS04" />
+        <alterFA bonus="1" entryId="RS11" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  RJ13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RJ13" />          
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Heavy warjacks and colossals gain +2SPD during your first turn of the game.</ingameeffect>        
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1RU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Stormfall Archers gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2 or more solos with Magic Ability.-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RS04" />
+          <entry id="RS11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterCost bonus="1" entryId="RJ01" />
+        <alterCost bonus="1" entryId="RJ06" />
+      </benefits>
+    </level>
+  </tiers>  
+  <tiers name="Vyros - Legions of the Dawn" casterId="Rw02" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Dawnguard units, Stormfall Archer units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcanist solos, Dawnguard solos</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+    <level number="1">
+      <only>
+        <entry id="Rw02" />
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ08" />
+        <entry id="RJ09" />
+        <entry id="RJ10" />
+        <entry id="RJ11" />
+        <entry id="RJ13" />
+        <entry id="RU01" />
+        <entry id="RU02" />
+        <entry id="RU06" />
+        <entry id="RU08" />
+        <entry id="RA01" />
+        <entry id="RA02" />
+        <entry id="RA04" />
+        <entry id="RS01" />
+        <entry id="RS02" />
+        <entry id="RS08" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="512" entryId="RU01" />
+        <alterFA bonus="512" entryId="RU02" />
+        <alterFA bonus="1" entryId="RS02">
+            <forEach>
+                <entry id="RU01"/>
+                <entry id="RU02"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2RU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <freeModel>
+          <entry id="RA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  RU06 RS08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RU06" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">You gain +1 on your starting game roll.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(RJ04 RJ05 RJ06 RJ09 RJ10 RJ11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RJ04" />
+          <entry id="RJ05" />
+          <entry id="RJ06" />
+          <entry id="RJ09" />
+          <entry id="RJ10" />
+          <entry id="RJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Your deployment is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Vyros - Dawn's Talon (NQ#35)" casterId="Rw02" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character warjacks with Field Dependant</models>
+          </type>
+          <type type="UNITS">
+              <models>Small-based Dawnguard units, Houseguard units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcanist solos, Dawnguard solos, Houseguard solos</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+
+    <level number="1">
+      <only>
+        <entry id="Rw02" />
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ08" />
+        <entry id="RJ13" />
+        <entry id="RU01" />
+        <entry id="RA01" />
+        <entry id="RU02" />
+        <entry id="RA02" />
+        <entry id="RU04" />
+        <entry id="RA06" />
+        <entry id="RU07" />
+        <entry id="RA05" />
+        <entry id="RA04" />
+        <entry id="RU09" />
+        <entry id="RS01" />
+        <entry id="RS02" />
+        <entry id="RS08" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="1" entryId="RU01" />
+        <alterFA bonus="1" entryId="RU02" />
+        <alterFA bonus="1" entryId="RS08" />
+        <alterFA bonus="1" entryId="RS02" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have in battlegroup  2(RJ04 RJ05 RJ06 RJ09 RJ10 RJ11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RJ04" />
+          <entry id="RJ05" />
+          <entry id="RJ06" />
+          <entry id="RJ09" />
+          <entry id="RJ10" />
+          <entry id="RJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterCost bonus="1" entryId="RJ04" />
+        <alterCost bonus="1" entryId="RJ05" />
+        <alterCost bonus="1" entryId="RJ06" />
+        <alterCost bonus="1" entryId="RJ09" />
+        <alterCost bonus="1" entryId="RJ10" />
+        <alterCost bonus="1" entryId="RJ11" />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(RU01 RU02 RU04 RU07 RU09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RU01" />
+          <entry id="RU02" />
+          <entry id="RU04" />
+          <entry id="RU07" />
+          <entry id="RU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">For every two units in the army, one heavy warjack in Vyros’ battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.).</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  4(RJ01 RJ02 RJ03 RJ04 RJ05 RJ06 RJ08 RJ09 RJ10 RJ11 RJ13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="RJ01" />
+          <entry id="RJ02" />
+          <entry id="RJ03" />
+          <entry id="RJ04" />
+          <entry id="RJ05" />
+          <entry id="RJ06" />
+          <entry id="RJ08" />
+          <entry id="RJ09" />
+          <entry id="RJ10" />
+          <entry id="RJ11" />
+          <entry id="RJ13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Each warjack in Vyros’ battlegroup is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Vyros allocates.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Vyros2 - Guardians of the gate" casterId="Rx02" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character warjacks with Field Dependant</models>
+          </type>
+          <type type="UNITS">
+              <models>Dawnguard units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcanist solos, Dawnguard solos</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+
+    <level number="1">
+      <only>
+        <entry id="Rx02" />
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ08" />
+        <entry id="RJ13" />
+        <entry id="RU01" />
+        <entry id="RU02" />
+        <entry id="RU06" />
+        <entry id="RA01" />
+        <entry id="RA02" />
+        <entry id="RA04" />
+        <entry id="RS01" />
+        <entry id="RS02" />
+        <entry id="RS08" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="512" entryId="RU06" />
+        <alterCost bonus="1" entryId="RU06" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  RU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Dawnguard Sentinel units gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  RS08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" >Dawnguard Destor units and solos gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  1(RJ04 RJ05 RJ06 RJ09 RJ10 RJ11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RJ04" />
+          <entry id="RJ05" />
+          <entry id="RJ06" />
+          <entry id="RJ09" />
+          <entry id="RJ10" />
+          <entry id="RJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+          <ingameeffect label="empty">During your first Control Phase of the game, your Warjacks are each allocated 1 focus point.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Garryth - Assassins" casterId="RW03" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Mage Hunter units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Mage Hunter Assassin solos, Nayl</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+    <level number="1">
+      <only>
+        <entry id="RW03" />
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ08" />
+        <entry id="RJ09" />
+        <entry id="RJ10" />
+        <entry id="RJ11" />
+        <entry id="RJ13" />
+        <entry id="RJ15" /> <!-- special issue Moros -->
+        <entry id="RU05" />
+        <entry id="RA03" />
+        <entry id="RA04" />
+        <entry id="RS05" />
+        <entry id="RS07" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="512" entryId="RU05" />
+        <alterFA bonus="1" entryId="RS05">
+            <forEach>
+                <entry id="RU05"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3RS05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="RS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">You gain +1 on your starting game roll.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3RU05-RA04-->
+      <must_have>
+        <!-- must have 3 MHSF + 3 soulless -->
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="RU05" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="RA04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <freeModel>
+          <entry id="RS07" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <only>
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ08" />
+        <entry id="RJ15" /> <!-- special issue Moros -->
+      </only>
+      <benefits>
+        <ingameeffect label="empty">Models in Garryth's battlegroup gain Advance Deployement.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Kaelyssa - Shadows of Retribution" casterId="RW04" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Mage Hunter units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcanist solos, Ghost Sniper solos, Mage Hunter solos</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+
+    <level number="1">
+      <only>
+        <entry id="RW04" />
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ08" />
+        <entry id="RJ09" />
+        <entry id="RJ10" />
+        <entry id="RJ11" />
+        <entry id="RJ13" />
+        <entry id="RU05" />
+        <entry id="RA03" />
+        <entry id="RA04" />
+        <entry id="MS01" />
+        <entry id="RS01" />
+        <entry id="RS03" />
+        <entry id="RS05" />
+        <entry id="RS06" />
+        <entry id="RS07" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="512" entryId="RU05" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2RU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <freeModel>
+          <entry id="RA03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  4(RS05 RS06 MS01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="RS05" />
+          <entry id="RS06" />
+          <entry id="MS01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">You can redeploy any one Mage Hunter model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(RJ01 RJ02 RJ03 RJ04 RJ05 RJ06 RJ08 RJ09 RJ10 RJ11 RJ13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="RJ01" />
+          <entry id="RJ02" />
+          <entry id="RJ03" />
+          <entry id="RJ04" />
+          <entry id="RJ05" />
+          <entry id="RJ06" />
+          <entry id="RJ08" />
+          <entry id="RJ09" />
+          <entry id="RJ10" />
+          <entry id="RJ11" />
+          <entry id="RJ13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Your deployment is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Ravyn - Will of the Nine Voices" casterId="RW05" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Dawnguard Invictor units, Mage Hunter units, Stormfall Archer units </models>
+          </type>
+          <type type="SOLOS">
+              <models>Mage Hunter solos, Fane Knight Skyreth Issyen</models>
+          </type>
+          <!-- <type type="BATTLE_ENGINES">
+              <models>Gun Carriage</models>
+          </type> -->
+      </availableModels>
+
+    <level number="1">
+      <only>
+        <entry id="RW05" />
+        <entry id="RJ01" />
+        <entry id="RJ02" />
+        <entry id="RJ03" />
+        <entry id="RJ04" />
+        <entry id="RJ05" />
+        <entry id="RJ06" />
+        <entry id="RJ08" />
+        <entry id="RJ09" />
+        <entry id="RJ10" />
+        <entry id="RJ11" />
+        <entry id="RJ13" />
+        <entry id="RU01" />
+        <entry id="RA01" />
+        <entry id="RU08" />
+        <entry id="RA04" />
+        <entry id="RU05" />
+        <entry id="RA03" />
+        <entry id="RS05" />
+        <entry id="RS06" />
+        <entry id="RS07" />
+        <entry id="RS10" />
+        <entry id="MS01" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" />
+        <alterFA bonus="512" entryId="RU05" />
+        <alterFA bonus="512" entryId="RA03" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3RU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="RU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <freeModel>
+          <entry id="MS01" />
+          <entry id="RS05" />
+          <entry id="RS06" />
+          <entry id="RS07" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  RS06 RS10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RS06" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RS10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">You gain +1 on your starting game roll.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2RJ06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RJ06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Each warjack in Ravyn's battlegroup is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Ravyn allocates.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Ossyan - The Hour of War" casterId="RW06" faction="faction_retribution">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Retribution non-character myrmidons without force field damage boxes, Hypnos</models>
+          </type>
+          <type type="UNITS">
+              <models>Stormfall Archers, Houseguard units, House Vyre units </models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcanist, Ghost Sniper, Sylys Wyshnalyrr</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Arcantrik Force Generator</models>
+          </type>
+      </availableModels>
+
+    <level number="1">
+      <only>
+        <entry id="RW06" />
+        <entry id="RJ09" />
+        <entry id="RJ10" />
+        <entry id="RJ11" />
+        <entry id="RJ12" />
+        <entry id="RU08" />
+        <entry id="RU04" />
+        <entry id="RA06" />
+        <entry id="RU07" />
+        <entry id="RA05" />
+        <entry id="RA04" />
+        <entry id="RU09" />
+        <entry id="RS01" />
+        <entry id="RS03" />
+        <entry id="MS23" />
+        <entry id="RE01" />
+      </only>
+      <benefits>
+        <ingameeffect label="empty" >You gain + 1 on your starting roll for the game.</ingameeffect>
+        <alterFA bonus="1" entryId="RS01">
+            <forEach>
+                <entry id="RJ09" />
+                <entry id="RJ10" />
+                <entry id="RJ11" />
+                <entry id="RJ12" />
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2RU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty" />
+        <freeModel>
+          <entry id="RA06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(RS01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="RS01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">For each Arcanist solo in the army, one myrmidon in Ossyan's battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  RJ12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="RJ12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="empty">Friendly models/units can begin the game affected by Ossyan's upkeep spells. These spells and their targets must be declared before either player sets up models. Ossyan does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

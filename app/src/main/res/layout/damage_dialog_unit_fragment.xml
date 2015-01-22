@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <com.schlaf.steam.activities.damages.DamageUnitView
+            android:id="@+id/damageGridView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <ListView
+            android:id="@+id/listViewDamages"
+            android:layout_width="@dimen/component_standard_size"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+
+        </ListView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ll2_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/damage_buttons_living" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:icon="@drawable/ic_lock_idle_alarm"
+        android:key="pref_key_timer_setting"
+        android:title="@string/pref_timer_group" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="pref_use_timer"
+            android:summary=""
+            android:title="@string/pref_use_timer" />
+
+        <EditTextPreference
+            android:defaultValue="60"
+            android:key="pref_key_timer_minutes"
+            android:summary="@string/pref_key_timer_minutes_summary"
+            android:title="@string/pref_key_timer_minutes" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_list_building_setting"
+        android:title="@string/pref_list_building_group" >
+        <ListPreference
+            android:defaultValue="35"
+            android:entries="@array/army_size"
+            android:entryValues="@array/army_size"
+            android:key="pref_list_building_army_size"
+            android:summary="@string/pref_list_building_army_size_summary"
+            android:title="@string/pref_list_building_army_size" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/caster_count"
+            android:entryValues="@array/caster_count"
+            android:key="pref_list_building_caster_count"
+            android:summary="@string/pref_list_building_caster_count_summary"
+            android:title="@string/pref_list_building_caster_count" />
+        <!-- 
+        <ListPreference
+            android:defaultValue="false"
+            android:entries="@array/use_specialists"
+            android:entryValues="@array/use_specialists"
+            android:key="pref_list_building_use_specialists"
+            android:summary="@string/pref_list_building_use_specialists_summary"
+            android:title="@string/pref_list_building_use_specialists" />
+             -->
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_list_ergonomy"
+        android:title="@string/pref_list_ergonomy" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="true"
+            android:key="pref_list_view_card_single_click"
+            android:summary=""
+            android:title="@string/pref_list_view_card_click_summary" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="pref_list_view_card_fullscreen"
+            android:summary=""
+            android:title="@string/pref_list_view_card_fullscreen_summary" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="pref_list_exit_silently"
+            android:summary=""
+            android:title="@string/pref_list_exit_silently_summary" />
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

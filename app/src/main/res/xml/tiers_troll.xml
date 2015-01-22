@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tiers name="Madrak - War Party" casterId="Tw01" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tw01" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TB15" />
+        <entry id="TB16" />
+        <entry id="TU02" />
+        <entry id="TA03" />
+        <entry id="TU01" />
+        <entry id="TA01" />
+        <entry id="TA02" />
+        <entry id="TU04" />
+        <entry id="TU07" />
+        <entry id="TA04" />
+        <entry id="TU10" />
+        <entry id="TA06" />
+        <entry id="TS01" />
+        <entry id="TS02" />
+        <entry id="TS03" />
+        <entry id="TS06" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="TU01" />
+        <alterFA bonus="1" entryId="TA01" />
+        <alterFA bonus="1" entryId="TA02" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2TU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="TA01" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2TU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  TB03 TB05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TB03" />
+          <entry id="TB05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Madrak - End Times" casterId="Tx01" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tx01" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TB15" />
+        <entry id="TB16" />
+        <entry id="TU01" />
+        <entry id="TA01" />
+        <entry id="TA02" />
+        <entry id="TU08" />
+        <entry id="TU06" />
+        <entry id="TA05" />
+        <entry id="TU07" />
+        <entry id="TA04" />
+        <entry id="TS04" />
+        <entry id="TS06" />
+        <entry id="TS03" />
+        <entry id="TS05" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="TU08" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2TU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="TA04" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  TS05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(TB07 TB08 TB09 TB11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TB07" />
+          <entry id="TB08" />
+          <entry id="TB09" />
+          <entry id="TB11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Hoarluk - Runes of War" casterId="Tw02" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tw02" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB10" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TB16" />
+        <entry id="TU02" />
+        <entry id="TA03" />
+        <entry id="TU09" />
+        <entry id="TS02" />
+        <entry id="TS06" />
+        <entry id="TS03" />
+        <entry id="TS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="TU09" />
+        <alterCost bonus="1" entryId="TU09" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  TS08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2TU09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(TB07 TB08 TB09 TB10 TB11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TB07" />
+          <entry id="TB08" />
+          <entry id="TB09" />
+          <entry id="TB10" />
+          <entry id="TB11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Hoarluk - Unbridled Fury" casterId="Tx02" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tx02" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB10" />
+        <entry id="TB11" />
+        <entry id="TU06" />
+        <entry id="TA05" />
+        <entry id="TU11" />
+        <entry id="TS07" />
+        <entry id="TS06" />
+        <entry id="TS03" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="TS03" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(TU06 TU11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU06" />
+          <entry id="TU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(TS03)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TS03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  TB10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TB10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TB07" />
+        <alterCost bonus="1" entryId="TB08" />
+        <alterCost bonus="1" entryId="TB09" />
+        <alterCost bonus="1" entryId="TB10" />
+        <alterCost bonus="1" entryId="TB11" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Grissel - Blood of Bragg" casterId="Tw03" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tw03" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TB15" />
+        <entry id="TU02" />
+        <entry id="TA03" />
+        <entry id="TU01" />
+        <entry id="TA01" />
+        <entry id="TA02" />
+        <entry id="TU10" />
+        <entry id="TA06" />
+        <entry id="TU05" />
+        <entry id="TU12" />
+        <entry id="TU03" />
+        <entry id="TU04" />
+        <entry id="TS04" />
+        <entry id="TS01" />
+        <entry id="IS01_minion" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TS01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2TU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(TU03 TU04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU03" />
+          <entry id="TU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(TB01 TB02 TB03 TB04 TB05 TB06 TB12 TB14 TB15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TB01" />
+          <entry id="TB02" />
+          <entry id="TB03" />
+          <entry id="TB04" />
+          <entry id="TB05" />
+          <entry id="TB06" />
+          <entry id="TB12" />
+          <entry id="TB14" />
+          <entry id="TB15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Grissel - Blockade Runners" casterId="Tx03" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tx03" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB07" />
+        <entry id="TB11" />
+        <entry id="TB08" />
+        <entry id="TU01" />
+        <entry id="TA01" />
+        <entry id="TA02" />
+        <entry id="TU04" />
+        <entry id="TU08" />
+        <entry id="TU13" />
+        <entry id="TS05" />
+        <entry id="TS03" />
+        <entry id="TE01" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TU08" />
+        <alterCost bonus="1" entryId="TS05" />
+        <alterCost bonus="1" entryId="TE01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  TS05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  TU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(TB03 TB04 TB05 TB07 TB11 TB08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TB03" />
+          <entry id="TB04" />
+          <entry id="TB05" />
+          <entry id="TB07" />
+          <entry id="TB11" />
+          <entry id="TB08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Grim Angus - Headhunters" casterId="Tw04" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tw04" />
+        <entry id="TB16" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TU11" />
+        <entry id="TU03" />
+        <entry id="TU04" />
+        <entry id="MU16_minion" />
+        <entry id="TS07" />
+        <entry id="IS01_minion" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="TU11" />
+        <alterFA bonus="1" entryId="TS07" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  MU16-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MU16_minion" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(TU11 TU03 TU04 MU16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU11" />
+          <entry id="TU03" />
+          <entry id="TU04" />
+          <entry id="MU16_minion" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(TB01 TB02 TB05 TB06 TB07 TB11 TB12 TB14 TB16)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TB01" />
+          <entry id="TB02" />
+          <entry id="TB05" />
+          <entry id="TB06" />
+          <entry id="TB07" />
+          <entry id="TB11" />
+          <entry id="TB12" />
+          <entry id="TB14" />
+          <entry id="TB16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Grim - Hunting Party" casterId="Tx04" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="Tx04" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TB15" />
+        <entry id="TB16" />
+        <entry id="TU04" />
+        <entry id="TU05" />
+        <entry id="TU11" />
+        <entry id="TU12" />
+        <entry id="TS01" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TU05" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2TU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(TB01 TB02 TB03 TB04 TB05 TB06 TB12 TB14 TB15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TB01" />
+          <entry id="TB02" />
+          <entry id="TB03" />
+          <entry id="TB04" />
+          <entry id="TB05" />
+          <entry id="TB06" />
+          <entry id="TB12" />
+          <entry id="TB14" />
+          <entry id="TB15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  1TU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Borka - Drunk and Disorderly" casterId="TW05" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="TW05" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB11" />
+        <entry id="TB13" />
+        <entry id="TU08" />
+        <entry id="TU07" />
+        <entry id="TA04" />
+        <entry id="TU06" />
+        <entry id="TA05" />
+        <entry id="TU11" />
+        <entry id="TS01" />
+        <entry id="TS02" />
+        <entry id="TS04" />
+        <entry id="TS07" />
+        <entry id="TS03" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  TU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  TA05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TA05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2TB06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TB06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TB06" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Borka - Family Reunion (NQ38)" casterId="TW05" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="TW05" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB13" />
+        <entry id="TB14" />
+        <entry id="TB16" />
+        <entry id="TU02" />
+        <entry id="TA03" />
+        <entry id="TU06" />
+        <entry id="TA05" />
+        <entry id="TU12" />
+        <entry id="TS04" />
+        <entry id="TS02" />
+        <entry id="TE01" />
+        <entry id="MU01_minion" />
+        <entry id="IS03_minion" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="TU12" />
+        <alterFA bonus="1" entryId="TU06" />
+        <alterFA bonus="1" entryId="TS04" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(TS04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  TS02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TS02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(TU12 TU06)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TU12" />
+          <entry id="TU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TU06" />
+        <alterCost bonus="1" entryId="TU12" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Calandra - Children of Dhunia" casterId="TW06" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="TW06" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB12" />
+        <entry id="TB09" />
+        <entry id="TB14" />
+        <entry id="TB15" />
+        <entry id="TU02" />
+        <entry id="TA03" />
+        <entry id="TU01" />
+        <entry id="TA01" />
+        <entry id="TA02" />
+        <entry id="TU10" />
+        <entry id="TA06" />
+        <entry id="TU11" />
+        <entry id="TU03" />
+        <entry id="TU04" />
+        <entry id="TS01" />
+        <entry id="TS02" />
+        <entry id="TS06" />
+        <entry id="TS03" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(TS01 TS02 TS06)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TS01" />
+          <entry id="TS02" />
+          <entry id="TS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1(TU03 TU04 TU11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TU03" />
+          <entry id="TU04" />
+          <entry id="TU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2TB09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TB09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TB09" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Gunnbjorn - The Big Bang" casterId="TW07" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="TW07" />
+        <entry id="TB04" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TB16" />
+        <entry id="TU03" />
+        <entry id="TU04" />
+        <entry id="TU05" />
+        <entry id="TU10" />
+        <entry id="TA06" />
+        <entry id="TU11" />
+        <entry id="TU12" />
+        <entry id="TU13" />
+        <entry id="TS03" />
+        <entry id="TS01" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="TB07" />
+        <alterCost bonus="1" entryId="TB11" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(TU4 TU05 TU10 TU11 TU12 TU13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU04" />
+          <entry id="TU05" />
+          <entry id="TU10" />
+          <entry id="TU11" />
+          <entry id="TU12" />
+          <entry id="TU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2TU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(TB07 TB11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TB07" />
+          <entry id="TB11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Jarl Skuld - Highwaymen" casterId="TW08" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="TW08" />
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB03" />
+        <entry id="TB04" />
+        <entry id="TB05" />
+        <entry id="TB06" />
+        <entry id="TB07" />
+        <entry id="TB08" />
+        <entry id="TB09" />
+        <entry id="TB11" />
+        <entry id="TB12" />
+        <entry id="TB14" />
+        <entry id="TB15" />
+        <entry id="TB16" />
+        <entry id="TU01" />
+        <entry id="TA01" />
+        <entry id="TA02" />
+        <entry id="TU04" />
+        <entry id="TU10" />
+        <entry id="TA06" />
+        <entry id="TU13" />
+        <entry id="TS02" />
+        <entry id="TS07" />
+        <entry id="TS03" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2TU10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="TU10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="TA06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(TU01 TU04 TU10 TU13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TU01" />
+          <entry id="TU04" />
+          <entry id="TU10" />
+          <entry id="TU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(TB01 TB02 TB03 TB04 TB05 TB06 TB12 TB14 TB15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="TB01" />
+          <entry id="TB02" />
+          <entry id="TB03" />
+          <entry id="TB04" />
+          <entry id="TB05" />
+          <entry id="TB06" />
+          <entry id="TB12" />
+          <entry id="TB14" />
+          <entry id="TB15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  
+    <tiers name="Calandra Truthsayer - Evolutionary Elementalism" casterId="TW06" faction="faction_trollblood">
+    <level number="1">
+      <only>
+        <entry id="TW06" />
+        <!-- pyre, slag, storm, winter, mountain king -->
+        <entry id="TB01" />
+        <entry id="TB02" />
+        <entry id="TB06" />
+        <entry id="TB14" />
+        <entry id="TB16" />
+        <!-- krielstone bearer, runeshapers, warders -->
+        <entry id="TU02" />
+        <entry id="TA03" />
+        <entry id="TU09" />
+        <entry id="TU14" />
+        <!-- runeshaper solo (=janissa), whelps, runebearer -->
+        <entry id="TS03" />
+        <entry id="TS06" />
+        <entry id="TS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost entryId="TB01" bonus="1"/>
+        <alterCost entryId="TB02" bonus="1"/>
+        <alterCost entryId="TB06" bonus="1"/>
+        <alterCost entryId="TB14" bonus="1"/>
+        <alterCost entryId="TB16" bonus="1"/>
+        
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1 krielstone bearer unit -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>The Krielstone Bearer &amp; Stone Scribes unit leader begins the game with 1 fury point for each Runeshaper unit or solo in the army. (If the number exceeds the maximum of the Fury Vault ability, additional fury points are lost.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(TU01 TU04 TU10 TU13)-->
+      <must_have>
+          <entrygroup inBattlegroupOnly="true" minNumber="3">
+              <entry id="TB01"/>
+              <entry id="TB02"/>
+              <entry id="TB06"/>
+              <entry id="TB14"/>
+          </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>(The warbeast must be different) Light Warbeasts in Calandra's battlegroup gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(TB01 TB02 TB03 TB04 TB05 TB06 TB12 TB14 TB15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="TB16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>At the start of your first turn, choose one warbeast in Calandra's battlegroup. All models in the army are affected by that warbeast's animus.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

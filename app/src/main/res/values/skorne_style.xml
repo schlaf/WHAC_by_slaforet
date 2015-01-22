@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="skorne" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/Silver</item>
+        <item name="android:shadowColor">@color/OrangeRed</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+</resources>

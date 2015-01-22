@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+       <!-- faction icon -->
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:contentDescription="@string/faction_icon"
+        android:src="@drawable/trolls" >
+
+    </ImageView>
+
+    <!-- faction name -->
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="-24dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/faction_icon"
+        android:src="@drawable/menoth" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/faction_icon"
+        android:src="@drawable/trolls" >
+    </ImageView>
+    
+    <!-- faction name -->
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/player2Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hudson"
+            android:textSize="@dimen/textview_large_height" />
+
+        <TextView
+            android:id="@+id/army_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="machin vs. bidule"
+            android:textSize="@dimen/textview_small_height" />
+
+        <TextView
+            android:id="@+id/battleDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/victoryStatusImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/victory" />
+
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/empty"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_menu_delete" />
+</LinearLayout>

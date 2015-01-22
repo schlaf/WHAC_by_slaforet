@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+         <Button
+             android:id="@+id/button_small_donate"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:onClick="purchaseSmall"
+             android:text="@string/small_donation" />
+
+        <Button
+            android:id="@+id/button_medium_donate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="purchaseMedium"
+            android:text="@string/medium_donation" />
+
+        <Button
+            android:id="@+id/button_big_donate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="purchaseBig"
+            android:text="@string/big_donation" />
+        
+        
+        <!--
+        <Button
+            android:id="@+id/button_edit_army"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="editArmy"
+            android:text="@string/edit_army" />
+        -->
+
+        <!--
+        <Button
+            android:id="@+id/button_launch_chrono"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="chrono"
+            android:text="Chrono" />
+                    -->
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/donation_notice"
+            android:textSize="@dimen/textview_small_height" />
+
+    </LinearLayout>
+
+</ScrollView>

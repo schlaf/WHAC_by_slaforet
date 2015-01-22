@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/army_list_selected"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:groupIndicator="@drawable/empty" >
+
+        
+        
+        <!-- android:groupIndicator="@drawable/empty" -->
+
+
+        <!-- android:groupIndicator="@drawable/selected_entry_group_indicator" -->
+    </ExpandableListView>
+    
+    <TextView android:id="@android:id/empty"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="@string/no_entries_selected"/>
+
+</LinearLayout>

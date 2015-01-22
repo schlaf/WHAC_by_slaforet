@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<factions>
+<faction id="faction_cryx" name="cryx" full_name="Cryx" system="WARMACHINE"></faction>
+<faction id="faction_cygnar" name="cygnar" full_name="Cygnar" system="WARMACHINE"></faction>
+<faction id="faction_cyriss" name="cyriss" full_name="Convergence of Cyriss" system="WARMACHINE"></faction>
+<faction id="faction_khador" name="khador" full_name="Khador" system="WARMACHINE"></faction>
+<faction id="faction_menoth" name="menoth" full_name="Protectorate of Menoth" system="WARMACHINE"></faction>
+<faction id="faction_mercs" name="mercs" full_name="Mercenaries" system="WARMACHINE"></faction>
+<faction id="faction_retribution" name="retribution" full_name="Retribution of Scyrah" system="WARMACHINE"></faction>
+<faction id="faction_trollblood" name="trollblood" full_name="Trollbloods" system="HORDES"></faction>
+<faction id="faction_everblight" name="everblight" full_name="Legion of Everblight" system="HORDES"></faction>
+<faction id="faction_orboros" name="ouroboros" full_name="Circle Orboros" system="HORDES"></faction>
+<faction id="faction_skorne" name="skorne" full_name="Skorne" system="HORDES"></faction>
+<faction id="faction_minions" name="minions" full_name="Minions" system="HORDES"></faction>
+<faction id="faction_objectives" name="objectives" full_name="Steamroller 2014 objectives" system="NONE"></faction>
+<faction id="faction_objectives_sr2015" name="objectives SR 2015" full_name="Steamroller 2015 objectives" system="NONE"></faction>
+</factions>

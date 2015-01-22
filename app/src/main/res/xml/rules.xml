@@ -1,0 +1,42 @@
+<rules>
+    <!-- Man-o-war Kovnik +1 man-o-war -->
+	<alterFA bonus="1" entryId="KU12" onlyIfPresent="KS02" />
+	<alterFA bonus="1" entryId="KU04" onlyIfPresent="KS02" />
+	
+	<!-- Dougal MacNaile, sea dog deck gun -->
+	<alterFA bonus="1" entryId="MU14" onlyIfPresent="MS13" />
+	 
+	<!-- Horgle Ironstrike has pyre and slag trolls -->
+	<alterCost entryId="TB01" bonus="1" onlyIfAttachedTo="TS11"/>
+	<alterCost entryId="TB02" bonus="1" onlyIfAttachedTo="TS11"/>
+	
+	<!-- una and griffons -->
+	<alterCost entryId="OB13" bonus="1" onlyIfAttachedTo="OS09"/>
+	<alterCost entryId="OB16" bonus="1" onlyIfAttachedTo="OS09"/>
+	<alterCost entryId="OB19" bonus="1" onlyIfAttachedTo="OS09"/>
+	
+    <alterFA bonus="1" entryId="KU12" onlyIfPresent="KS02" />
+    
+    <!-- cephalyx can have only ONE merc unit with a dominator, so add a negative FA to make each unit FA:0 
+    (and in the java code, THE unit with dominator gets FA:1 restored) -->
+    <alterFA bonus="-1" entryId="MU09" onlyIfPresent="MS28"/>
+    <alterFA bonus="-1" entryId="MU04" onlyIfPresent="MS28"/>
+    <alterFA bonus="-1" entryId="MU05" onlyIfPresent="MS28"/>
+    <alterFA bonus="-1" entryId="MU16" onlyIfPresent="MS28"/>
+    <alterFA bonus="-1" entryId="MU01" onlyIfPresent="MS28"/>
+    <alterFA bonus="-2" entryId="MU06" onlyIfPresent="MS28"/>
+    <alterFA bonus="-1" entryId="MU02" onlyIfPresent="MS28"/>
+    <alterFA bonus="-2" entryId="MU17" onlyIfPresent="MS28"/>
+    <alterFA bonus="-2" entryId="MU07" onlyIfPresent="MS28"/>
+    <alterFA bonus="-1" entryId="MU11" onlyIfPresent="MS28"/>
+    <alterFA bonus="-2" entryId="MU19" onlyIfPresent="MS28"/>
+    <alterFA bonus="-2" entryId="MU12" onlyIfPresent="MS28"/>
+    <alterFA bonus="-1" entryId="MU03" onlyIfPresent="MS28"/>
+    <alterFA bonus="-512" entryId="MU13" onlyIfPresent="MS28"/>
+    <alterFA bonus="-2" entryId="MU14" onlyIfPresent="MS28"/>
+    <alterFA bonus="-3" entryId="MU08" onlyIfPresent="MS28"/>
+    <alterFA bonus="-3" entryId="MU18" onlyIfPresent="MS28"/>
+    <alterFA bonus="-2" entryId="MU20" onlyIfPresent="MS28"/>
+  
+  
+</rules>

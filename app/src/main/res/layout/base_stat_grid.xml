@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lightUI"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="0dip" >
+    
+    <TableRow
+        android:id="@+id/tableRow0"
+        style="@style/lightUI.header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/carac_name"
+            style="@style/lightUI.header.title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/hello" >
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/model_title_linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewCarac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/incorporeal_icon" />
+        </LinearLayout>
+    </TableRow>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/gradient_line_blue" >
+
+    </FrameLayout>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        style="@style/lightUI.mainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="1dp" >
+
+        <TextView
+            android:id="@+id/carac_spd"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/carac_spd" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/carac_str"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/carac_str" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/carac_mat"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/carac_mat" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/carac_rat"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/carac_rat" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/carac_def"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/carac_def" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/carac_arm"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/carac_arm" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/carac_cmd"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/carac_cmd" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        style="@style/lightUI.mainValues"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+         >
+
+        <TextView
+            android:id="@+id/carac_spd_value"
+            style="@style/lightUI.mainValues.text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_2"/>
+
+        <TextView
+            android:id="@+id/carac_str_value"
+            style="@style/lightUI.mainValues.text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_2" />
+
+        <TextView
+            android:id="@+id/carac_mat_value"
+            style="@style/lightUI.mainValues.text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_2" />
+
+        <TextView
+            android:id="@+id/carac_rat_value"
+            style="@style/lightUI.mainValues.text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_2" />
+
+        <TextView
+            android:id="@+id/carac_def_value"
+            style="@style/lightUI.mainValues.text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_2" />
+
+        <TextView
+            android:id="@+id/carac_arm_value"
+            style="@style/lightUI.mainValues.text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_2"
+            />
+
+        <TextView
+            android:id="@+id/carac_cmd_value"
+            style="@style/lightUI.mainValues.text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_2" />
+
+    </TableRow>
+
+</TableLayout>

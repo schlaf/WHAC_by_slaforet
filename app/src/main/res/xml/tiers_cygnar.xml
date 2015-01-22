@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="Haley1 - The Dead Line" casterId="Yw01" faction="faction_cygnar">
+
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks with ranged weapons, Thorn</models>
+          </type>
+          <type type="UNITS">
+              <models>Long Gunner Infantry, Field Mechaniks, Sword Knights, Precursor Knights</models>
+          </type>
+          <type type="SOLOS">
+              <models>Gun Mage Captain Adept, Journeyman Warcaster</models>
+          </type>
+      </availableModels>            
+
+  
+    <level number="1">
+      <only>
+        
+        <entry id="Yw01" />
+        <!-- cygnar non character warjacks with ranged weapons + Lancers + Thorn-->
+        <entry id="YJ01" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ10" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ02" />
+        <entry id="YJ06" />
+        <entry id="YJ21" /> <!-- reliant -->
+        <!-- mechanicks, long gunner, precursor, sword knights-->
+        <entry id="YU03" />
+        <entry id="YU02" />
+        <entry id="YA07" />
+        <entry id="YU12" />
+        <entry id="YA06" />
+        <entry id="YU08" />
+        <entry id="YA05" />
+        <!-- journeyman, Gun mage captain adept-->
+        <entry id="YS02" />
+        <entry id="YS01" />
+      </only>
+      <benefits>
+        <ingameeffect ></ingameeffect>
+        <alterCost bonus="1" entryId="YU02" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YA07" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have jackmarshalled  1(YJ01 YJ03 YJ04 YJ05 YJ07 YJ10 YJ14 YJ15 YJ18 YJ19 YJ02 YJ21)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="true" minNumber="1">
+          <entry id="YJ01" />
+          <entry id="YJ03" />
+          <entry id="YJ04" />
+          <entry id="YJ05" />
+          <entry id="YJ07" />
+          <entry id="YJ10" />
+          <entry id="YJ14" />
+          <entry id="YJ15" />
+          <entry id="YJ18" />
+          <entry id="YJ19" />
+          <entry id="YJ02" />
+          <entry id="YJ21"/>
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >'Jack Marshaled warjacks and the units that control them gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2YJ04 (hunter)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Models/units in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Haley2 - Gravediggers" casterId="Yx01" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks with ranged weapons, Lancers, Thorn</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Trencher units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Trencher solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yx01" />
+        <!-- cygnar non character warjacks with ranged weapons + Lancers + Thorn-->
+        <entry id="YJ01" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ10" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ02" />
+        <entry id="YJ06" />
+        <entry id="YJ21"/> <!-- reliant -->
+        <!-- field mechaniks, trencher units -->
+        <entry id="YU03" />
+        <entry id="YU05" />
+        <entry id="YA03" />
+        <entry id="YA04" />
+        <entry id="YU06" />
+        <entry id="YU07" />
+        <entry id="YU14" />
+        <entry id="YA08" />
+        <!-- trencher solos -->
+        <entry id="YS04" />
+        <entry id="YS08" />
+      </only>
+      <benefits>
+        <ingameeffect >You can redeploy one Trencher model/unit after both players have deployed but before the first player first turn. The redeployed models must be placed on the table in a location they could have been deployed initially</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  YS04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(YU05 YU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU05" />
+          <entry id="YU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >For each trencher commando or Trencher Infantry unit, place on trench template anywhere completely within 20" of the back edge of Haley's deployment zone after terrain has been placed but before either player deploys his army. Trench templates cannot be placed within 3" of a terrain feature but can be placed within 3" of each other.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YJ07 YJ10 YJ14 YJ19 YJ21)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ07" />
+          <entry id="YJ10" />
+          <entry id="YJ14" />
+          <entry id="YJ19" />
+          <entry id="YJ21"/> <!-- reliant -->
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Haley2 - Storm Bringers (NQ37)" casterId="Yx01" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Warjacks with Damage type Electricity or weapons with Electro Leap, Thorn.</models>
+          </type>
+          <type type="UNITS">
+              <models>Stormblade units, Arcane Tempest units, Field Mechanic units, Stormsmith Storm Tower</models>
+          </type>
+          <type type="SOLOS">
+              <models>Stormcaller, Arcane Tempest solos, Arlan Strangewayes, Stormblade solos</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Storm Strider</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yx01" />
+        <!-- Warjacks with damage type Electricity or Electro-Leap, Thorn -->
+        <entry id="YJ11" />
+        <entry id="YJ15" />
+        <entry id="YJ10" />
+        <entry id="YJ06" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <!--  Stormblade units, Arcane Tempest units, Field Mechanic units, Stormsmith --> 
+        <entry id="YU04" />
+        <entry id="YA02" />
+        <entry id="YA09" />
+        <entry id="YU01" />
+        <entry id="YA01" />
+        <entry id="YU11" />
+        <entry id="YU03" />
+        <entry id="YU15" />
+        <entry id="YU16" />
+        <!-- Stormcallers, Arcane Tempest solos, Arlen Strangeways, Stormblade solos -->
+        <entry id="YS03" />
+        <entry id="YS02" />
+        <entry id="YS07" />
+        <entry id="YS10"/> <!-- add stormblade captain -->
+        <!-- Storm Strider -->
+        <entry id="YE01" />
+      </only>
+      <benefits>
+        <ingameeffect>For each Field Mechanik unit in the army 1 Storm Strider gains Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  YU15 YS03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU15" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YS03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="YS03" />
+        <freeModel>
+          <!--  one stormcaller free for each stormtower -->
+          <entry id="YS03" />
+          <forEach>
+            <entry id="YU15" />
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  YJ06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warjacks in Haley’s battle group is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Haley allocates.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2YE01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YE01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Storm Striders begin the game with 3 power tokens.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Stryker1 - Combined Arms" casterId="Yw02" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks, Ol' Rowdy</models>
+          </type>
+          <type type="UNITS">
+              <models>Long Gunner Infantry, Field Mechaniks, Stormblade Infantry, Trencher Infantry</models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman Warcasters, Stormblade solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yw02" />
+        <!-- cygnar non-character warjack + ol'rowdy -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ13" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- reliant -->
+        <!-- mechaniks, long gunner, trencher, stormblade -->
+        <entry id="YU03" />
+        <entry id="YU02" /> <!-- long gunner + UA -->
+        <entry id="YA07" />
+        <entry id="YU05" /> <!-- trencher + UA  + WA-->
+        <entry id="YA03" />
+        <entry id="YA04" />
+        <entry id="YU06"/> <!-- trencher chaingun crew -->
+        <entry id="YU07"/> <!-- trencher cannon crew -->
+        <entry id="YU14"/> <!-- trencher commandos + UA-->
+        <entry id="YA08"/>
+        <entry id="YU04" /> <!-- stormblade + UA + WA -->
+        <entry id="YA02" />
+        <entry id="YA09" />
+        <!-- journeyman, stormblade solos -->
+        <entry id="YS01" />
+        <entry id="YA11"/> <!-- allison jakes -->
+        <entry id="YS10"/> <!-- Stormblade Captain -->
+      </only>
+      <benefits>
+        <ingameeffect >Up to one heavy warjack gains Advance Move for each Field Mechanik unit in the army.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  YJ13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(YU02)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YA07" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YJ02)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Stryker's upkeep spells. These spells and their targets must be declared before either player sets up models. Stryker does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Stryker2 - Charge of the Storm Brigade" casterId="Yx02" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks, Thunderhead, Ol' Rowdy</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Storm Knight units, Stormsmith Storm Towers</models>
+          </type>
+          <type type="SOLOS">
+              <models>Squire, Storm Knight solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yx02" />
+        <!-- cygnar non-char warjacks, ol'rowdy, thunderhead -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ13" />
+        <entry id="YJ11" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21"/> <!-- reliant -->
+        <entry id="YU03" />
+        <entry id="YU10" />
+        <entry id="YU04" />
+        <entry id="YA02" />
+        <entry id="YA09" />
+        <entry id="YU09" />
+        <entry id="YU15" />
+        <entry id="YS06" />
+        <entry id="YS05" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="YU10" />
+        <alterCost entryId="YJ10" bonus="1"/> <!-- stormclad -->
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YU04 stormblade infantry -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  /> <!-- free stormblade attachment -->
+        <freeModel>
+          <entry id="YA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  YS05--> <!-- laddermore -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Place Major Katherine Laddermore and Storm Lance units after normal deployment. These models are placed at the same time as your models with Advance Deployment (if any). These models must be place within you normal deployment zone.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2YJ10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ10" /> <!-- 2+ stormclad -->
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Stryker3 - Riders on the Storm" casterId="Yz02" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks and colossal with SPD 5 or greater, Ol' Rowdy</models>
+          </type>
+          <type type="UNITS">
+              <models>Cygnar cavalry units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Storm Knight solos, Arcane Tempest solos</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Storm Strider</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yz02" />
+        <!-- Cygnar noncharacter heavy and colossal warjacks with SPD 5 or greater, Ol' Rowdy -->
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ10" />
+        <entry id="YJ13" />
+        <entry id="YJ14" />
+        <entry id="YJ20" />
+
+        <!-- Cygnar cavalry units -->
+        <entry id="YU10" />
+        <entry id="YU16" />
+
+        <!-- Storm Knight solos, Arcane Tempest solos -->
+        <entry id="YS05" />
+        <entry id="YS02" />
+        <entry id="YS10" />
+        
+        <!-- Storm Strider  -->
+        <entry id="YE01" />
+      </only>
+      <benefits>
+        <ingameeffect >Increase the FA of Storm Lances by 1.</ingameeffect>
+        <alterFA bonus="1" entryId="YU10" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- The army includes Katherine Laddermore -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Models/units in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- The army includes two or more warjacks-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ07" />
+          <entry id="YJ08" />
+          <entry id="YJ10" />
+          <entry id="YJ13" />
+          <entry id="YJ14" />
+          <entry id="YJ20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  >Warjacks gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- The army includes two or more cavalry units.-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU10" />
+          <entry id="YU16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Reduce the point cost of cavalry units by 1.</ingameeffect>
+        <alterCost entryId="YU10" bonus="1"/>
+        <alterCost entryId="YU16" bonus="1"/>
+      </benefits>
+    </level>
+  </tiers>  
+  <tiers name="Caine1 - Sons of the Tempest" casterId="Yw03" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks with ranged weapons, Lancers</models>
+          </type>
+          <type type="UNITS">
+              <models>Arcane Tempest units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcane Tempest solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yw03" />
+        <!-- non-char jacks with ranged + lancers -->
+        <entry id="YJ01" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ10" />
+        <!--  <entry id="YJ12"/> removed cause no ranged weapon  -->
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21"/> <!-- reliant -->
+        <entry id="YJ02" />
+        <!-- arcane tempest units -->
+        <entry id="YU01" />
+        <entry id="YA01" />
+        <entry id="YU11" />
+        <entry id="YU16" />
+        <!-- arcane tempest solos -->
+        <entry id="YS02" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="YU01" />
+        <!-- gun mage FA becomes U -->
+        <alterCost entryId="YU01" bonus="1" />
+        <!-- gun mage cost 1 less -->
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YA01" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(YJ01 YJ03 YJ04 YJ05 YJ07 YJ10 YJ12 YJ14 YJ15 YJ18 YJ19 YJ20 YJ02)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="YJ01" />
+          <entry id="YJ03" />
+          <entry id="YJ04" />
+          <entry id="YJ05" />
+          <entry id="YJ07" />
+          <entry id="YJ10" />
+          <!--  <entry id="YJ12"/>  -->
+          <entry id="YJ14" />
+          <entry id="YJ15" />
+          <entry id="YJ18" />
+          <entry id="YJ19" />
+          <entry id="YJ20" />
+          <entry id="YJ02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  YU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Caine and Arcane Tempest models/units gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Caine2 - The Huntsman" casterId="Yx03" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character light warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Arcane Tempest units, Rangers</models>
+          </type>
+          <type type="SOLOS">
+              <models>Arcane Tempest solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yx03" />
+        <!-- non-char light jacks -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <!-- arcane tempest units, rangers -->
+        <entry id="YU01" />
+        <entry id="YA01" />
+        <entry id="YU11" />
+        <entry id="YU13" />
+        <entry id="YU16" />
+        <!-- arcane tempest solo -->
+        <entry id="YS02" />
+      </only>
+      <benefits>
+        <ingameeffect>You can redeploy one model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YS02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  YU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2YJ02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Caine's upkeep spells. These spells and their targets must be declared before either player sets up models. Caine does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Caine2 - The Street Sweepers (NQ34)" casterId="Yx03" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks with SPD 6 or more</models>
+          </type>
+          <type type="UNITS">
+              <models>Trencher Commandos, Trencher Infantry </models>
+          </type>
+          <type type="SOLOS">
+              <models>Non-character Trencher solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yx03" />
+        <!-- Cygnar non-character warjacks with SPD 6 or more -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <!-- Trencher Commandos, Trencher Infantry -->
+        <entry id="YU05" />
+        <entry id="YA03" />
+        <entry id="YA04" />
+        <entry id="YU14" />
+        <entry id="YA08" />
+        <!-- Non-character Trencher solos -->
+        <entry id="YS04" />
+        <entry id="YS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  YU14-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+      <!--  For each Trencher Commando unit fielded you get a free Scattergunner weapon
+attachment and the FA for Scattergunners is increased. -->
+        <ingameeffect>Warjacks controlled by Trencher 'Jack Marshals gain Advance Move.</ingameeffect>
+        <alterFA bonus="1" entryId="YA08">
+        <forEach>
+          <entry id="YU14"/>
+        </forEach>
+        </alterFA>
+        <freeModel > 
+          <entry id="YA08" />
+          <forEach>
+            <entry id="YU14"/>
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(YU05 YU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU05" />
+          <entry id="YU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For every two Trenchers units, place one wall template anywhere within 20" of the back edge of Caine's deployment zone after terrain has been placed but before either player deploys his army. Walls cannot be placed within 3" of another terrain feature, including another wall template. The walls are linear obstacles that grant cover.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(YJ01 YJ02 YJ03 YJ04 YJ05 YJ15 YJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="YJ01" />
+          <entry id="YJ02" />
+          <entry id="YJ03" />
+          <entry id="YJ04" />
+          <entry id="YJ05" />
+          <entry id="YJ15" />
+          <entry id="YJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models in this army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Nemo1 - Eye of the Storm" casterId="Yw04" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks, Thunderhead</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Stormknight units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman Warcaster, Squire, Stormknight solos, Stormsmith solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yw04" />
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ11" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+        <entry id="YU03" />
+        <!-- field mecha, storm knights -->
+        <entry id="YU10" />
+        <entry id="YU04" />
+        <entry id="YA02" />
+        <entry id="YA09" />
+        <entry id="YU09" />
+        <!-- journeyman, squire, storm knight solos, stormsmith solos -->
+        <entry id="YS01" />
+        <entry id="YS06" />
+        <entry id="YS05" />
+        <entry id="YS03" />
+        <entry id="YS10" /> <!-- add stormblade captain -->
+      </only>
+      <benefits>
+        <ingameeffect >If the army includes a Journeyman Warcaster, the Journeyman Warcaster and any warjack it controls gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(YJ01 YJ02 YJ03 YJ04 YJ05 YJ15 YJ18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ01" />
+          <entry id="YJ02" />
+          <entry id="YJ03" />
+          <entry id="YJ04" />
+          <entry id="YJ05" />
+          <entry id="YJ15" />
+          <entry id="YJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(YU04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  YJ11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>During your first turn of the game, models in Nemo's battlegroup gain +2 SPD.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Nemo2 - The Weathermen" casterId="Yx04" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks, Thunderhead</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Stormguards, Stormsmith units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman Warcaster, Squire, Stormith solos</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yx04" />
+        <!-- non-char jacks, thunderHead -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ11" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+        <entry id="YU03" />
+        <entry id="YU09" />
+        <entry id="YU15" />
+        <entry id="YS01" />
+        <entry id="YS06" />
+        <entry id="YS03" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="YS03">
+          <forEach>
+            <entry id="YJ07" />
+            <entry id="YJ08" />
+            <entry id="YJ09" />
+            <entry id="YJ10" />
+            <entry id="YJ12" />
+            <entry id="YJ14" />
+            <entry id="YJ11" />
+            <entry id="YJ19" />
+            <entry id="YJ21" />
+            <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+          </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YJ15-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Firefly warjacks gain Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2YU09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YU15" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YJ07 YJ08 YJ09 YJ10 YJ11 YJ12 YJ14 YJ19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ07" />
+          <entry id="YJ08" />
+          <entry id="YJ09" />
+          <entry id="YJ10" />
+          <entry id="YJ11" />
+          <entry id="YJ12" />
+          <entry id="YJ14" />
+          <entry id="YJ19" />
+          <entry id="YJ21" /> <!-- add reliant -->
+          <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Nemo's upkeep spells. These spells and their targets must be declared before either player sets up models. Nemo does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Nemo3 - Lightning War" casterId="Yz04" faction="faction_cygnar">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Lancers, Cygnar non-character warjacks with Immunity:Electricity, Thunderhead</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Cygnar units with Immunity:Electricity </models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman Warcaster, Cygnar solos with Immunity: Electricity</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Storm Strider</models>
+          </type>
+      </availableModels>             
+    <level number="1">
+      <only>
+        <entry id="Yz04" />
+        <entry id="YJ02" />
+        <entry id="YJ10" />
+        <entry id="YJ11" />
+        <entry id="YJ15" />
+        <entry id="YJ20" />
+        <entry id="YE01" />
+        <entry id="YU03" />
+        <entry id="YU04" />
+        <entry id="YU09" />
+        <entry id="YU10" />
+        <entry id="YU15" />
+        <entry id="YU17" />
+        <entry id="YJ21"/> <!-- add reliant -->
+        <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+        <!-- add silverline stormguard -->
+        <entry id="YA02" />
+        <entry id="YA09" />
+        <entry id="YS01" />
+        <entry id="YS03" />
+        <entry id="YS05" />
+        <entry id="YS07" />
+        <entry id="YS10" />
+      </only>
+      <benefits>
+        <ingameeffect >Reduce the point cost of Stormguard units by 1.</ingameeffect>
+        <alterCost bonus="1" entryId="YU09" />
+        <alterCost bonus="1" entryId="YU17" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  YJ20-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >After deployment but before the start of the game, you can place any number of your Stormwalls' Lightning Pods anywhere within 20" of the rear edge of your deployment zone.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(YU03 YU04 YU09 YU10 YU15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU03" />
+          <entry id="YU04" />
+          <entry id="YU09" />
+          <entry id="YU10" />
+          <entry id="YU15" />
+          <entry id="YU17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  YJ11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >During your first Control Phase of the game, warjacks in Nemo's battlegroup are each allocated 1 focus point.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Siege - The Big Guns" casterId="YW05" faction="faction_cygnar">
+        <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Rangers, Trencher units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman Warcaster, Trencher solos</models>
+          </type>
+      </availableModels>           
+    <level number="1">
+      <only>
+        <entry id="YW05" />
+        <!-- non char warjacks -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ16" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /><!-- add reliant -->
+        <!--  field mecha, rangers, trencher units -->
+        <entry id="YU03" />
+        <entry id="YU13" />
+        <entry id="YU05" />
+        <entry id="YA03" />
+        <entry id="YA04" />
+        <entry id="YU06" />
+        <entry id="YU07" />
+        <entry id="YU14" />
+        <entry id="YA08" />
+        <!-- journeyman, trencher solo -->
+        <entry id="YS01" />
+        <entry id="YS04" />
+        <entry id="YS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost entryId="YU14" bonus="1"/>
+        <alterCost entryId="YU05" bonus="1"/>
+        <alterFA bonus="1" entryId="YU06">
+          <forEach>
+          <entry id="YU14"/>
+          <entry id="YU05"/>
+          </forEach>
+        </alterFA>
+        <alterFA bonus="1" entryId="YU07">
+          <forEach>
+          <entry id="YU14"/>
+          <entry id="YU05"/>
+          </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3(YU06 YU07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="YU06" />
+          <entry id="YU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YS08" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(YU05 YU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU05" />
+          <entry id="YU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each trencher commando or Trencher Infantry unit, place on trench template anywhere completely within 20" of the back edge of Siege's deployment zone after terrain has been placed but before either player deploys his army. Trench templates cannot be placed within 3" of a terrain feature but can be placed within 3" of each other.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YJ07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Heavy warjacks in the army gain Advance Move</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Siege - Trial by Fire" casterId="YW05" faction="faction_cygnar">
+  
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Cygnar non-character warjacks, Triumph</models>
+            </type>
+            <type type="UNITS">
+                <models>Gun mage units, Long gunners, Field Mechanics</models>
+            </type>
+            <type type="SOLOS">
+                <models>Allison Jakes, Journeyman Warcasters, Squire, Arlan Strangeways</models>
+            </type>
+      </availableModels>  
+  
+    <level number="1">
+      <only>
+        <entry id="YW05" />
+        <!-- non char warjacks -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YJ16" /> <!-- triumph -->
+        <!--  Gun Mage Units, Long Gunners, Field Mechanics -->
+        <entry id="YU01" />
+        <entry id="YA01" />
+        <entry id="YU11" />
+        <entry id="YU02" />
+        <entry id="YA07" />
+        <entry id="YU03" />
+        <!-- Allison Jakes, Journeyman Warcaster, Squire, Arlan Strangeways -->
+        <entry id="YA11" />
+        <entry id="YS01" />
+        <entry id="YS06" />
+        <entry id="YS07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="YS01"/>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3(YU06 YU07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YS01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>On the first turn, allocate one focus to each warjack in a battlegroup</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!--  Triumph in Siege's BG -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ16" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Gain a free trench template per battlegroup</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Arlan and at least one unit of Field Mechaniks -->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YS07" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Lower the PC of warjacks within a battlegroup by 1</ingameeffect>
+        <alterCost entryId="YJ01" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ02" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ03" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ04" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ05" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ07" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ08" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ09" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ10" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ12" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ14" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ15" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ18" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ19" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ20" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ21" bonus="1" onlyIfAttachedTo="YA11"/>
+        
+        <alterCost entryId="YJ01" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ02" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ03" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ04" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ05" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ07" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ08" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ09" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ10" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ12" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ14" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ15" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ18" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ19" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ20" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ21" bonus="1" onlyIfAttachedTo="YS01"/>
+        
+        
+        <alterCost entryId="YJ01" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ02" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ03" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ04" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ05" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ07" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ08" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ09" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ10" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ12" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ14" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ15" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ18" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ19" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ20" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ21" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ16" bonus="1" onlyIfAttachedTo="YW05"/>
+      </benefits>
+    </level>
+  </tiers>  
+  <tiers name="Kraye - Mobile Strike Force" casterId="YW06" faction="faction_cygnar">
+        <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Rangers, Cygnar Light Cavalry units, Black 13th Gun Mage Strike Team</models>
+          </type>
+          <type type="SOLOS">
+              <models>Gun Mage Captain Adept, Cygnar Light Cavalry solos, Ranger solos</models>
+          </type>
+      </availableModels>           
+    <level number="1">
+      <only>
+        <entry id="YW06" />
+        <!-- non char jacks -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <!-- field mecha, ranger, light cavalry, black 13 -->
+        <entry id="YU03" />
+        <entry id="YU13" />
+        <entry id="YU11" />
+        <entry id="YU16" />
+        <!-- gun mage captain, light cav solo, ranger solos -->
+        <entry id="YS02" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="YU13" />
+        <alterCost entryId="YU13" bonus="1"/>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YJ04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2YU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Ranger unit, place one wall template or one 4" AOE forest anywhere completely within 20" of the back edge of Kraye's deployment zone after terrain has been placed but before either player deploys his army. Wall templates and forest cannot be placed within 3" of a terrain feature but can be placed within 3" of each other. Wall templates are linear obstacles that grant cover.
+        </ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YJ07 YJ08 YJ09 YJ10 YJ12 YJ14 YJ19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ07" />
+          <entry id="YJ08" />
+          <entry id="YJ09" />
+          <entry id="YJ10" />
+          <entry id="YJ12" />
+          <entry id="YJ14" />
+          <entry id="YJ19" />
+          <entry id="YJ21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Heavy warjacks in Kraye's battlegroup gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Darius - Wrecking Crew" casterId="YW07" faction="faction_cygnar">
+        <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks, Thunderhead</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Sword Knights</models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman warcaster, Squire, Captain Arlan Strangeways</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Storm Strider</models>
+          </type>
+      </availableModels>           
+    <level number="1">
+      <only>
+        <entry id="YW07" />
+         <!-- non-char jacks, thunderHead -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ11" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <!-- field mecha, sword knights -->
+        <entry id="YU03" />
+        <entry id="YU08" />
+        <entry id="YA05" />
+        <!-- journeyman, squire, strangeways -->
+        <entry id="YS01" />
+        <entry id="YS06" />
+        <entry id="YS07" />
+      </only>
+      <benefits>
+        <ingameeffect >Models in Darius' battlegroup gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YA05" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <only><!-- remove light jacks -->
+        <entry id="YW07" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ11" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YU03" />
+        <entry id="YU08" />
+        <entry id="YA05" />
+        <entry id="YS01" />
+        <entry id="YS06" />
+        <entry id="YS07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="YJ07" />
+        <alterCost bonus="1" entryId="YJ08" />
+        <alterCost bonus="1" entryId="YJ09" />
+        <alterCost bonus="1" entryId="YJ10" />
+        <alterCost bonus="1" entryId="YJ12" />
+        <alterCost bonus="1" entryId="YJ14" />
+        <alterCost bonus="1" entryId="YJ11" />
+        <alterCost bonus="1" entryId="YJ19" />
+        <alterCost bonus="1" entryId="YJ21" /> <!-- add reliant -->
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  YJ11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Darius - Field Tests (NQ43)" casterId="YW07" faction="faction_cygnar">
+        <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Rangers, Stormblades, Stormsmith units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Squire, Stormblade solos or Stormsmith solos.</models>
+          </type>
+      </availableModels>           
+    <level number="1">
+      <only>
+        <entry id="YW07" />
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ20" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YU03" />
+        <entry id="YU04" />
+        <entry id="YU13" />
+        <entry id="YU15" />
+        <entry id="YA02" />
+        <entry id="YS06" />
+        <entry id="YS03" />
+        <entry id="YA09" />
+      </only>
+      <benefits>
+        <ingameeffect>During your first turn, when a Stormwall uses Activate Lightning Pod, you can place up to three Lightning Pods instead of placing one.</ingameeffect>        
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  YU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Halfjacks in the army gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have in battlegroup  YJ20-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YS03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YJ09 YJ12 YJ19 YJ20)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ09" />
+          <entry id="YJ12" />
+          <entry id="YJ19" />
+          <entry id="YJ20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warjacks with base ARM 19 gain +2 SPD during your first turn of the game</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Kara Sloan - Gunslingers" casterId="YW08" faction="faction_cygnar">
+        <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks with ranged weapons</models>
+          </type>
+          <type type="UNITS">
+              <models>Arcane Tempest Gun Mage Pistoleers, Long Gunner Infantry, Field Mechaniks, Rangers</models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman Warcaster</models>
+          </type>
+      </availableModels>           
+    <level number="1">
+      <only>
+        <entry id="YW08" />
+        <!-- non char jacks with ranged weapons -->
+        <entry id="YJ01" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ10" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" /> <!-- add reliant -->
+        <!-- arcane tempest gun mages, field mecha, long gunner, rangers -->
+        <entry id="YJ02" />
+        <entry id="YU01" />
+        <entry id="YA01" />
+        <entry id="YU03" />
+        <entry id="YU02" />
+        <entry id="YA07" />
+        <entry id="YU13" />
+        <!-- journeyman -->
+        <entry id="YS01" />
+      </only>
+      <benefits>
+        <ingameeffect>Models in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Long Gunner Infantry units gain Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  YU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You can redeploy models in Sloan's battlegroup after both players have deployed but before the first player first turn. The redeployed models must be placed on the table in a location they could have been deployed initially</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(YJ07 YJ10 YJ12 YJ14 YJ19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YJ07" />
+          <entry id="YJ10" />
+          <entry id="YJ12" />
+          <entry id="YJ14" />
+          <entry id="YJ19" />
+          <entry id="YJ21" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="YJ07" />
+        <alterCost bonus="1" entryId="YJ08" />
+        <alterCost bonus="1" entryId="YJ09" />
+        <alterCost bonus="1" entryId="YJ10" />
+        <alterCost bonus="1" entryId="YJ12" />
+        <alterCost bonus="1" entryId="YJ14" />
+        <alterCost bonus="1" entryId="YJ19" />
+        <alterCost bonus="1" entryId="YJ21" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Constance Blaize - Knights of the Prophet" casterId="YW09" faction="faction_cygnar">
+        <availableModels>
+          <type type="WARJACKS">
+              <models>Cygnar non-character warjacks, Gallant</models>
+          </type>
+          <type type="UNITS">
+              <models>Field Mechaniks, Sword Knights, Morrowan units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Journeyman warcaster, Archduke Alain Runewood, Morrowan solos</models>
+          </type>
+      </availableModels>           
+    <level number="1">
+      <only>
+        <entry id="YW09" />
+        <!-- non character jacks + gallant -->
+        <entry id="YJ01" />
+        <entry id="YJ02" />
+        <entry id="YJ03" />
+        <entry id="YJ04" />
+        <entry id="YJ05" />
+        <entry id="YJ07" />
+        <entry id="YJ08" />
+        <entry id="YJ09" />
+        <entry id="YJ10" />
+        <entry id="YJ12" />
+        <entry id="YJ14" />
+        <entry id="YJ15" />
+        <entry id="YJ17" />
+        <entry id="YJ18" />
+        <entry id="YJ19" />
+        <entry id="YJ20" />
+        <entry id="YJ21" />
+        <!-- Sword Knights, Field Mechaniks, Morrowan Units -->
+        <entry id="YU03" />
+        <entry id="YU08" />
+        <entry id="YA05" />
+        <entry id="YU12" />
+        <entry id="YA06" />
+        <!-- Journeyman Warcaster, Alain Runewood, Morrowan Solos -->
+        <entry id="YS01" />
+        <entry id="YS09" />
+        <entry id="MS18" />
+      </only>
+      <benefits>
+        <ingameeffect>Additionaly, Harlan Versh, Illuminated One, gains Advance Deployment.</ingameeffect>
+        <alterFA bonus="512" entryId="YU12" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2YU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="YU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="YA06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  YS09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YS09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Precursor Knight and Sword Knigth units gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  YJ17-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="YJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Heavy warjacks in Constance Blaize's battlegroup without ranged weapons gain Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

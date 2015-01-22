@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<!-- 
+
+id="OB01" name="Argus"
+id="OB02" name="Gorax"
+id="OB03" name="Woldwatcher"
+id="OB04" name="Woldwyrd"
+id="OB05" name="Gnarlhorn Satyr"
+id="OB06" name="Megalith"
+id="OB07" name="Pureblood Warpwolf"
+id="OB08" name="Shadowhorn Satyr" 
+id="OB09" name="Feral Warpwolf"
+id="OB10" name="Woldwarden"
+id="OB11" name="Warpwolf Stalker"
+id="OB12" name="Woldguardian"
+id="OB13" name="Scarsfell Griffon"
+id="OB14" name="Ghetorix"
+id="OB15" name="Winter Argus" 
+id="OB16" name="Razorwing Griffon" 
+id="OB17" name="Rip Horn Satyr"
+id="OB18" name="Woldwrath"
+id="Laris" name="Laris"
+id="OB19" name="Rotterhorn Griffon"
+id="OB20" name="Argus Moonhound"
+id="OB21" name="Brennos the Elderhorn"
+
+
+ -->    
+    
+<tiers name="Kaya - The Wild Hunt" casterId="Ow01" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Living Circle non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Reeves of Orboros, Tharn Bloodtrackers, Tharn Wolf Riders, Wolves of Orboros</models>
+            </type>
+            <type type="SOLOS">
+                <models>Druid Wilder, Reeve Hunter, War Wolf, Wolf Lord Morraig</models>
+            </type>
+      </availableModels>
+    <level number="1">
+      <only>
+        <entry id="Ow01" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB05" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB11" />
+        <entry id="OB13" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB17" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU04" />
+        <entry id="OA05" />
+        <entry id="OU07" />
+        <entry id="OA07" />
+        <entry id="OU06" />
+        <entry id="OU08" />
+        <entry id="OA03" />
+        <entry id="OS06" />
+        <entry id="OS07" />
+        <entry id="OS05" />
+        <entry id="OS04" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="OU04" />
+        <alterFA entryId="OS05" bonus="1">
+            <forEach><entry id="OU04"/></forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OS04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>One Wolves of Orboros unit gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  OU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Reeves of Orboros unit in the army, place one 4" AOE forest template anywhere completely within 20" of the back edge of Kaya's deployment zone after  his army. Forest templates cannot be placed within 3" of another terrain feature, including other forest templates.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OB05 OB07 OB08 OB09 OB11 OB17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB05" />
+          <entry id="OB07" />
+          <entry id="OB08" />
+          <entry id="OB09" />
+          <entry id="OB11" />
+          <entry id="OB17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Kaya - Call of the Wild" casterId="Ox01" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Living Circle non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Reeves of Orboros, Tharn Bloodtrackers, Tharn Wolf Riders, Wolves of Orboros</models>
+            </type>
+            <type type="SOLOS">
+                <models>Druid Wilder, Reeve Hunter, War Wolf, Wolf Lord Morraig</models>
+            </type>
+      </availableModels>
+      
+    <level number="1">
+      <only>
+        <entry id="Ox01" />
+        <entry id="Laris" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB05" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB11" />
+        <entry id="OB13" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB17" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OU11" />
+        <entry id="OS06" />
+        <entry id="OS05" />
+        <entry id="OA08" />
+      </only>
+      <benefits>
+        <ingameeffect>Heavy warbeasts in Kaya's battlegroup gain Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warpbom Skinwalkers gain Advance Move.(Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  OU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Benefit: You gain +1 on your starting game roll.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OB05 OB07 OB08 OB09 OB11 OB17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB05" />
+          <entry id="OB07" />
+          <entry id="OB08" />
+          <entry id="OB09" />
+          <entry id="OB11" />
+          <entry id="OB17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="OB05" />
+        <alterCost bonus="1" entryId="OB07" />
+        <alterCost bonus="1" entryId="OB08" />
+        <alterCost bonus="1" entryId="OB09" />
+        <alterCost bonus="1" entryId="OB11" />
+        <alterCost bonus="1" entryId="OB17" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Krueger - Storm Front" casterId="Ow02" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Shifting Stones, Wolves of Orboros</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blackclad Wayfarer, Druid Wilder, Wolf Lord Morraig</models>
+            </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="Ow02" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB05" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB10" />
+        <entry id="OB11" />
+        <entry id="OB12" />
+        <entry id="OB13" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB17" />
+        <entry id="OB18" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OU08" />
+        <entry id="OA03" />
+        <entry id="OS01" />
+        <entry id="OS06" />
+        <entry id="OS04" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="OU01" />
+        <alterFA bonus="512" entryId="OA01" />
+        <alterFA entryId="OS01" bonus="1">
+            <forEach><entry id="OU01"/></forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OS04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +l on your starting game roll.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2OU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="OU01" />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OB05 OB07 OB08 OB09 OB10 OB11 OB12 OB17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB05" />
+          <entry id="OB07" />
+          <entry id="OB08" />
+          <entry id="OB09" />
+          <entry id="OB10" />
+          <entry id="OB11" />
+          <entry id="OB12" />
+          <entry id="OB17" />
+          <entry id="OB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warbeasts in Krueger's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Krueger - The Devourer's Host" casterId="Ox02" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Living Circle non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Tharn Ravagers, Warpborn Skinwalkers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Tham Ravager solos, Lord of the Feast</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Ox02" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB05" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB11" />
+        <entry id="OB13" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB17" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU03" />
+        <entry id="OA02" />
+        <entry id="OA06" />
+        <entry id="OU11" />
+        <entry id="OS03" />
+        <entry id="OS02" />
+        <entry id="OA08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="OU03" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OS02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Tharn Ravager units and the Lord of the Feast each begin the game with one corpse token.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2OU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Tharn Ravager models/units gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OB07 OB09 OB11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB07" />
+          <entry id="OB09" />
+          <entry id="OB11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Warpwolves in Krueger's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Krueger - Wake of Destruction (NQ38)" casterId="Ox02" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle construct non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Druid Stoneward &amp; Woldstalkers, Shifting Stones</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blackclad Wayfarer, Gallows Groves, Lord of the Feast</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Ox02" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB06" />
+        <entry id="OB10" />
+        <entry id="OB12" />
+        <entry id="OB18" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU02" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OS01" />
+        <entry id="OS02" />
+        <entry id="OS08" />
+        <entry id="MS01_minion" />
+      </only>
+      <benefits>
+        <ingameeffect>For each Shifting Stone unit in the army, one warbeast gains Advance Deployment. Additionally, this army can include Eiryss, Mage Hunter of Ios as a Minion.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(OU01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="OA01" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  OS01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Blackclad Wayfarer, you can redeploy one model/unit after both players have deployed but before the first player’s first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OB05 OB07 OB08 OB09 OB10 OB11 OB12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB05" />
+          <entry id="OB07" />
+          <entry id="OB08" />
+          <entry id="OB09" />
+          <entry id="OB10" />
+          <entry id="OB11" />
+          <entry id="OB12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Baldur - Rock of Orboros" casterId="Ow03" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle construct non-character warbeasts, Megalith</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Druid Stoneward &amp; Woldstalkers, Sentry Stones &amp; Mannikins, Shifting Stones</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blackclad Wayfarer, Druid Wilder</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Ow03" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB06" />
+        <entry id="OB10" />
+        <entry id="OB12" />
+        <entry id="OB18" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU02" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OU10" />
+        <entry id="OS01" />
+        <entry id="OS06" />
+      </only>
+      <benefits>
+        <ingameeffect>Sentry Stone &amp; Mannikin units can be placed up to 20" from the back edge of Baldur's deployment zone.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OU09 OU10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU09" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU10" />
+        </entrygroup>
+        </must_have>
+      <benefits>
+        <ingameeffect>Up to one warbeast in Baldur's battlegroup gains Advance Deployment for each Shifting Stone or Sentry Stone &amp; Mannikin unit in the army.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2OU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Druid Stoneward &amp; Woldstalker units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  OB06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OB06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="OB06" />
+        <alterCost bonus="1" entryId="OB10" />
+        <alterCost bonus="1" entryId="OB12" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Baldur - Hour of Reckoning" casterId="Ox03" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character construct warbeasts, Megalith</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Shifting Stones</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blackclad Wayfarer, Gallows Grove, Lord of the Feast</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                Celestial Fulcrum
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Ox03" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB06" />
+        <entry id="OB10" />
+        <entry id="OB12" />
+        <entry id="OB18" />
+        <entry id="OB21" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OS01" />
+        <entry id="OS08" />
+        <entry id="OS02" />
+        <entry id="OE01" />
+      </only>
+      <benefits>
+        <ingameeffect>Shifting Stones units and Gallows Grove solos in the army can be placed up to 20" from the back edge of Baldur's deployment zone.</ingameeffect>          
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each Druids of Orboros unit in the army, one Celestial Fulcrum battle engine gains Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  OB06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OB06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Heavy Warbeasts in Baldur's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OB03 OB04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB03" />
+          <entry id="OB04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="OB03" />
+        <alterCost bonus="1" entryId="OB04" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Morvahna - Harvest of Blood" casterId="Ow04" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character light warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Tharn Bloodtrackers, Tham Bloodweavers, Tharn Wolf Riders, Shifting Stones</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blackclad Wayfarer, Druid Wilder, War Wolfes</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Ow04" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB13" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU07" />
+        <entry id="OA07" />
+        <entry id="OU05" />
+        <entry id="OU06" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OS01" />
+        <entry id="OS06" />
+        <entry id="OS05" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="2" entryId="OU07" />
+        <alterFA bonus="1" entryId="OU05" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="OA07" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2OU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/ units can begin the game affected by Morvahna's upkeep spells. These spells and their targets must be declared before either player sets up models. Morvahna does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  OU06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Morvahna - Seasons of Fate" casterId="Ox04" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Tharn units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Druid Wilder, Gallows Grove, Blackclad solos, Tharn solos</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                Celestial Fulcrum
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Ox04" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB05" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB10" />
+        <entry id="OB11" />
+        <entry id="OB12" />
+        <entry id="OB13" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB17" />
+        <entry id="OB18" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU03" />
+        <entry id="OA02" />
+        <entry id="OA06" />
+        <entry id="OA07" />
+        <entry id="OU05" />
+        <entry id="OU06" />
+        <entry id="OU07" />
+        <entry id="OU12" />
+        <entry id="OS06" />
+        <entry id="OS08" />
+        <entry id="OS01" />
+        <entry id="OS03" />
+        <entry id="OE01" />
+      </only>
+      <benefits>
+        <ingameeffect>You can redeploy models/ units with Prey after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(OB01 OB02 OB05 OB07 OB08 OB09 OB11 OB13 OB15 OB16 OB17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB01" />
+          <entry id="OB02" />
+          <entry id="OB05" />
+          <entry id="OB07" />
+          <entry id="OB08" />
+          <entry id="OB09" />
+          <entry id="OB11" />
+          <entry id="OB13" />
+          <entry id="OB15" />
+          <entry id="OB16" />
+          <entry id="OB17" />
+          <entry id="OB19" />
+          <entry id="OB20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1OS06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/ units can begin the game affected by Morvahna's upkeep spells. These spells and their targets must be declared before either player sets up models. Morvahna does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OU03 OU05 OU06 OU07 OU12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU03" />
+          <entry id="OU05" />
+          <entry id="OU06" />
+          <entry id="OU07" />
+          <entry id="OU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="OA07" />
+        <alterCost bonus="1" entryId="OA06" />
+        <alterCost bonus="1" entryId="OA02" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Kromac - Heart Eaters" casterId="OW05" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character living warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Tharn units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Tharn solos, Lord of the Feast</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="OW05" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB05" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB11" />
+        <entry id="OB13" />
+        <entry id="OB14" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB17" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU03" />
+        <entry id="OA02" />
+        <entry id="OA06" />
+        <entry id="OU05" />
+        <entry id="OU06" />
+        <entry id="OU07" />
+        <entry id="OU12" />
+        <entry id="OA07" />
+        <entry id="OS02" />
+        <entry id="OS03" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="OU03" />
+        <alterFA bonus="512" entryId="OA06" />
+        <alterFA bonus="512" entryId="OA02" />
+        <alterFA entryId="OS03" bonus="1">
+            <forEach>
+                <entry id="OU03"/>
+                <entry id="OU05"/>
+                <entry id="OU06"/>
+                <entry id="OU07"/>
+                <entry id="OU12"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2OU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="OA06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2OS03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OS03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For every two solos in the army, one heavy warbeast in Kromac's battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  OS02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models in Kromac's battlegroup gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Mohsar - Sandstorm" casterId="OW06" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Druid Stoneward &amp; Woldstalkers, Reeves of Orboros, Sentry Stone &amp; Mannikins, Shifting Stones, Druid units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blackclad Wayfarer, Reeve Hunters, War Wolves, Lord of the Feast</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="OW06" />
+        <entry id="OB01" />
+        <entry id="OB02" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB05" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB10" />
+        <entry id="OB11" />
+        <entry id="OB12" />
+        <entry id="OB13" />
+        <entry id="OB15" />
+        <entry id="OB16" />
+        <entry id="OB17" />
+        <entry id="OB18" />
+        <entry id="OB19" />
+        <entry id="OB20" />
+        <entry id="OU02" />
+        <entry id="OU04" />
+        <entry id="OA05" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OU10" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OS01" />
+        <entry id="OS07" />
+        <entry id="OS05" />
+        <entry id="OS02" />
+      </only>
+      <benefits>
+        <ingameeffect>Models in Mohsar's battlegroup gain Apparition during your first turn of the game. (During your Control Phase, place models with Apparition anywhere completely within 2" of their current locations. If this affects a unit, only models in formation can be placed.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  OU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Druid Stoneward &amp; Woldstalker units can be redeployed after both players have deployed but before the first player first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2OU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="OA01" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(OB05 OB07 OB08 OB09 OB10 OB11 OB12 OB17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB05" />
+          <entry id="OB07" />
+          <entry id="OB08" />
+          <entry id="OB09" />
+          <entry id="OB10" />
+          <entry id="OB11" />
+          <entry id="OB12" />
+          <entry id="OB17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For each heavy warbeast in Mohsar's battlegroup, place one 3" AOE anywhere completely within 20" of the back edge of Mohsar's deployment zone after terrain has been placed but before either player deploys his army. The AOEs are obstructions that block LOS and provide cover. They are structures with ARM 18 that leave play if they suffer 1 or more damage points.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Cassius - Widower's Wood" casterId="OW07" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle construct warbeasts, Circle heavy warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Reeves of Orboros, Sentry Stones &amp; Mannikins, Shifting Stones, Warpbom Skinwalkers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Feralgeist, Reeve Hunters, War Wolves, Lord of the Feast</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="OW07" />
+        <entry id="OB03" />
+        <entry id="OB04" />
+        <entry id="OB05" />
+        <entry id="OB06" />
+        <entry id="OB07" />
+        <entry id="OB08" />
+        <entry id="OB09" />
+        <entry id="OB10" />
+        <entry id="OB11" />
+        <entry id="OB12" />
+        <entry id="OB14" />
+        <entry id="OB18" />
+        <entry id="OB17" />
+        <entry id="OB21" />
+        <entry id="OA08" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU04" />
+        <entry id="OA05" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OU10" />
+        <entry id="OU11" />
+        <entry id="IS02" />
+        <entry id="OS07" />
+        <entry id="OS05" />
+        <entry id="OS02" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="OU11" />
+        <alterFA bonus="1" entryId="OS05">
+            <forEach>
+                <entry id="OU01"/>
+                <entry id="OU04"/>
+                <entry id="OU09"/>
+                <entry id="OU10"/>
+                <entry id="OU11"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2OU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  OS02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Wurmwood begins the game with three soul tokens.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  OB11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OB11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Models/units in this army gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Cassius - Giants of Stone (NQ44)" casterId="OW07" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Griffon warbeasts, Wold Guardian, Woldwarden, Woldwrath</models>
+            </type>
+            <type type="UNITS">
+                <models>Druids of Orboros, Shifting Stones, Tharn Bloodweavers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blackclad Wayfarer, Gallows Grove</models>
+            </type>
+      </availableModels>      
+      
+      
+      
+    <level number="1">
+      <only>
+        <entry id="OW07" />
+        <entry id="OB10" />
+        <entry id="OB12" />
+        <entry id="OB13" />
+        <entry id="OB16" />
+        <entry id="OB18" />
+        <entry id="OB19" />
+        <entry id="OU01" />
+        <entry id="OA01" />
+        <entry id="OU09" />
+        <entry id="OA04" />
+        <entry id="OU05" />
+        <entry id="OS01" />
+        <entry id="OS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="OS08" />
+          <forEach>
+            <entry id="OB10" />
+            <entry id="OB12" />
+            <entry id="OB13" />
+            <entry id="OB16" />
+            <entry id="OB18" />
+            <entry id="OB19" />
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2OB18-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Models in your army gain Spell Ward during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  1OS01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Blackclad Wayfarer solos gain Ambush. (You can choose not to deploy models with Ambush at the start of the game. If it is not deployed normally, you can put a model with Ambush into play at the end of any of your Control Phases after your first turn. When you do, choose any table edge except the back of your opponent’s deployment zone. Place the model with Ambush within 3" of the chosen table edge.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  1OB13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OB13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Grayle - Claw &amp; Fang" casterId="OW08" faction="faction_orboros">
+      <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character Argus and Warpwolf warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Wolfes of Orboros, Reeves of Orboros, Skinwalker units</models>
+            </type>
+            <type type="SOLOS">
+                <models>War Wolfes, Wolfes of Orboros solos, Reeves of Orboros solos, Wolf Lord Morraig</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="OW08" />
+        <entry id="OB01" />
+        <entry id="OB15" />
+        <entry id="OB07" />
+        <entry id="OB09" />
+        <entry id="OB11" />
+        <entry id="OB20" />
+        <entry id="OU08" />
+        <entry id="OA03" />
+        <entry id="OU04" />
+        <entry id="OA05" />
+        <entry id="OU11" />
+        <entry id="OS05" />
+        <entry id="OS07" />
+        <entry id="OS04" />
+        <entry id="OA08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="OU08" />
+        <alterFA bonus="512" entryId="OU04" />
+        <alterFA bonus="512" entryId="OA03" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(OU08 OU04 OU11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="OU08" />
+          <entry id="OU04" />
+          <entry id="OU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="OS05"/>
+          <forEach>
+              <entry id="OU08"/>
+              <entry id="OU04"/>
+              <entry id="OU11"/>
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  OS04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="OS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>One Reeves of Orboros unit gains Advance Deployement.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(OB01 OB15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="OB01" />
+          <entry id="OB15" />
+          <entry id="OB20" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

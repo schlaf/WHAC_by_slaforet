@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    style="@style/lightUI"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:orientation="vertical"
+    tools:ignore="DuplicateIds" >
+
+    <TableLayout
+        android:id="@+id/spellTable"
+        style="@style/lightUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            style="@style/lightUI.header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/lightUI.mainValues.text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/spells" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/cost" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/rng" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/aoe" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/pow" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/up" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/off" />
+        </TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/gradient_line_blue" >
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/toRemove1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/spell_line_carac" />
+
+        <include
+            android:id="@+id/toRemove2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/spell_line_text" />
+    </TableLayout>
+
+</RelativeLayout>

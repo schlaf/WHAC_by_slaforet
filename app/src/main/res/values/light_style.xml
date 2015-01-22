@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+<style name="FontStyle">
+</style>
+
+<style name="FontStyle.Small">
+    <item name="font_small">14sp</item>
+    <item name="font_medium">16sp</item>
+    <item name="font_large">18sp</item>
+    <item name="font_xlarge">20sp</item>
+</style>
+
+<style name="FontStyle.Medium">
+    <item name="font_small">18sp</item>
+    <item name="font_medium">20sp</item>
+    <item name="font_large">22sp</item>
+    <item name="font_xlarge">24sp</item>
+</style>
+
+<style name="FontStyle.Large">
+    <item name="font_small">26sp</item>
+    <item name="font_medium">28sp</item>
+    <item name="font_large">30sp</item>
+    <item name="font_xlarge">32sp</item>
+</style>    
+    
+    
+    
+  <style name="lightUI">
+     <item name="android:textColor">@color/White</item>
+     <!-- <item name="android:background">@color/AndroidBlue</item> -->
+  </style>
+
+  <style name="lightUI.title">
+    <!-- <item name="android:background">@color/Black</item> -->
+    <item name="android:textSize">@dimen/textview_large_height</item>
+  </style>
+  
+  <style name="lightUI.subtitle">
+    <!-- <item name="android:background">@color/Black</item> -->
+    <item name="android:textSize">@dimen/textview_standard_height</item>
+  </style>
+  
+  <style name="lightUI.main">
+    <!-- <item name="android:background">@color/Black</item>  -->
+    <item name="android:textColor">@color/White</item>
+    <item name="android:textSize">@dimen/textview_small_height</item>
+  </style>
+  
+  <style name="lightUI.header">
+      <!-- <item name="android:background">@color/Black</item>  -->
+  </style>
+  
+  <style name="lightUI.header.title">
+    <item name="android:textSize">@dimen/textview_large_height</item>
+  </style>
+  
+  <style name="lightUI.header.titleSmall">
+    <item name="android:textSize">@dimen/textview_small_height</item>
+  </style>
+  
+  <style name="lightUI.spell">
+    <!-- <item name="android:background">@color/Black</item>  -->
+    <item name="android:textColor">@color/White</item>
+  </style>
+  
+  <style name="lightUI.spell.caracs">
+    <item name="android:textSize">@dimen/textview_small_height</item>
+  </style>
+  
+  <style name="lightUI.spell.caracs.dialog">
+    <item name="android:textSize">@dimen/textview_standard_height</item>
+  </style>
+  
+  <style name="lightUI.spell.description">
+    <item name="android:textSize">@dimen/textview_small_height</item>
+  </style>
+  
+  <style name="lightUI.spell.description.dialog">
+    <item name="android:textSize">@dimen/textview_standard_height</item>
+  </style>
+  
+  <style name="lightUI.mainTitle">
+    <!-- <item name="android:background">@color/Black</item>  -->
+    <item name="android:textColor">@color/LightGrey</item>
+    <item name="android:textSize">@dimen/textview_small_height</item>
+  </style>
+  
+  <style name="lightUI.mainValues">
+    <item name="android:textColor">@color/White</item>
+  </style>
+  
+  <style name="lightUI.mainValues.text">
+    <item name="android:textSize">@dimen/textview_standard_height</item>
+  </style>
+  
+  <style name="lightUI.mainValues.paragraphe">
+    <item name="android:textSize">@dimen/textview_small_height</item>
+  </style>
+  
+  <style name="lightUI.footer">
+      <item name="android:background">@color/DarkGray</item>
+  </style>
+  
+  
+  
+  
+  <style name="heavyUI">
+      <item name="android:textColor">@color/White</item>
+      <item name="android:background">@drawable/texture_card_title</item>
+  </style>
+</resources>

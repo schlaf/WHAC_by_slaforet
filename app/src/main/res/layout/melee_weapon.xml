@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    style="@style/lightUI"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="5dp"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_weapon_name"
+        style="@style/lightUI.header.title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/hello" />
+
+    <LinearLayout
+        android:id="@+id/weapon_title_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/text_weapon_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/magical_weapon_icon" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shield_icon" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_weapon_name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/melee_weapon_icon" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/text_weapon_name"
+        android:background="@drawable/gradient_line_green" >
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        style="@style/lightUI.mainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_weapon_name"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/imageView1" >
+
+        <LinearLayout
+            android:id="@+id/lineWeaponTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <TextView
+                android:id="@+id/carac_pow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/carac_pow" />
+
+            <TextView
+                android:id="@+id/carac_p_plus_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/carac_p_plus_s" />
+        </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineWeaponTitle"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/carac_pow_value"
+                style="@style/lightUI.header.title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/example"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/carac_p_plus_s_value"
+                style="@style/lightUI.header.title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/example"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/weaponCapacitiesText"
+        style="@style/lightUI.spell.description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/RelativeLayout2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageView1"
+        android:layout_alignEnd="@id/imageView1"
+        android:layout_alignRight="@id/imageView1"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginRight="2dp"
+        android:shadowColor="@color/Black"
+        android:shadowRadius="3"
+        android:text="L"
+        android:textColor="@color/White"
+        android:textColorHint="@color/Black"
+        android:textSize="@dimen/textview_standard_height"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageView1"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@id/imageView1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-2dp"
+        android:shadowColor="@color/Black"
+        android:shadowRadius="3"
+        android:text="x2"
+        android:textColor="@color/White"
+        android:textColorHint="@color/Black"
+        android:textSize="@dimen/textview_standard_height"
+        android:textStyle="bold" />
+
+</RelativeLayout>

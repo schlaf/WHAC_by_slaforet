@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- manchette -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_manchette"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zoomer_inside_background"
+    android:fadingEdgeLength="5dp"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/card_shorttitle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="@string/example"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black" />
+
+    <ImageButton
+        android:id="@+id/removeViewButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/empty"
+        android:onClick="removeViewCardFragment"
+        android:contentDescription="Close"
+        android:src="@drawable/btn_shrink" />
+
+    <ImageButton
+        android:id="@+id/expandViewButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/empty"
+        android:contentDescription="Fullscreen"
+        android:onClick="viewModelDetailInNewActivity"
+        android:src="@drawable/btn_expand" />
+
+</LinearLayout>

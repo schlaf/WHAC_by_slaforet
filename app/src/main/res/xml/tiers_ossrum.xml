@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="Ossrum - State of War" casterId="MW10" faction="faction_mercs">
+    <level number="1">
+      <only>
+        <entry id="MW10" />
+        <entry id="MJ05" />
+        <entry id="MJ06" />
+        <entry id="MJ07" />
+        <entry id="MJ08" />
+        <entry id="MJ14" />
+        <entry id="MJ15" />
+        <entry id="MJ19" />
+        <entry id="MU02" />
+        <entry id="MU06" />
+        <entry id="MU07" />
+        <entry id="MU17" />
+        <entry id="MU20" />
+        <entry id="MA03" />
+        <entry id="MU19" />
+        <entry id="MS05" />
+        <entry id="MS12" />
+        <entry id="MS17" />
+        <entry id="IW01_mercs" />
+        <entry id="Lug_mercs" />
+      </only>
+      <benefits>
+        <ingameeffect>One unit in this army gains Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(MU02 MU06 MU17 MU19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MU02" />
+          <entry id="MU06" />
+          <entry id="MU17" />
+          <entry id="MU19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>For every two units in the army, place one trench template anywhere completely within 20" of the back edge of Ossrum' s deployment zone after terrain has been placed but before either pJayer deploys his army. Trench templates cannot be placed within 3" of a terrain feature but can be placed within 3" of each other.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(MS05 MS12 MS17 IW01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="MS05" />
+          <entry id="MS12" />
+          <entry id="MS17" />
+          <entry id="IW01_mercs" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Friendly models/units can begin the game affected by Ossrum's upkeep spells. These spells and their targets must be declared before either player sets up models. Ossrum does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(MJ05 MJ06 MJ07 MJ08 MJ14 MJ15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="MJ05" />
+          <entry id="MJ06" />
+          <entry id="MJ07" />
+          <entry id="MJ08" />
+          <entry id="MJ14" />
+          <entry id="MJ15" />
+          <entry id="MJ19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableRow4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:paddingBottom="1dp">
+
+    <TextView
+        android:id="@+id/spellDescription"
+        style="@style/lightUI.spell.description.dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:gravity="left"
+        android:text="Target model next activation is a charge at +3 SPD pathfinder" />
+
+</TableRow>

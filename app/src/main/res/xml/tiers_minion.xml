@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="Dr. Arkadius - Mad Science" casterId="IW08" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW08" />
+        <entry id="IB01" />
+        <entry id="IB02" />
+        <entry id="IB06" />
+        <entry id="IB09" />
+        <entry id="IU02" />
+        <entry id="IU03" />
+        <entry id="IU06" />
+        <entry id="IU07" />
+        <entry id="IW03_minion" />
+        <entry id="Brine_minion" />
+        <entry id="IS10" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="IB02" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  IU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  IU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3IB02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="IB02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+    <tiers
+        name="Dr. Arkadius - Nature of the Beast (NQ56)"
+        casterId="IW08"
+        faction="faction_minions" >
+        <level number="1" >
+            <only>
+                <entry id="IW08" />
+                <entry id="IB01" />
+                <entry id="IB02" />
+                <entry id="IB06" />
+                <entry id="IB09" />
+                <entry id="IU02" />
+                <entry id="IU07" />
+                <entry id="OB02_minion_arkadius" />
+                <entry id="IS10" />
+            </only>
+
+            <benefits>
+                <ingameeffect>
+Gorax in the army gain Shield Guard.
+                </ingameeffect>
+            </benefits>
+        </level>
+        <level number="2" >
+
+            <!-- Must have  IS10 -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="false"
+                    jackMarshalledOnly="false"
+                    minNumber="1" >
+                    <entry id="IS10" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+Your deployment zone is extended 2" forward.
+                </ingameeffect>
+            </benefits>
+        </level>
+        <level number="3" >
+
+            <!-- Must have at least 5(warbeasts) in battlegroup -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="true"
+                    jackMarshalledOnly="false"
+                    minNumber="5" >
+                    <entry id="IB01" />
+                    <entry id="IB02" />
+                    <entry id="IB06" />
+                    <entry id="IB09" />
+                    <entry id="OB02_minion_arkadius" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+                </ingameeffect>
+
+                <freeModel>
+
+                    <!-- one Razor Boar free for each Gun Boar, Road Hog, and War Hog -->
+                    <entry id="IB09" />
+
+                    <forEach>
+                        <entry id="IB01" />
+                        <entry id="IB02" />
+                        <entry id="IB06" />
+                    </forEach>
+                </freeModel>
+            </benefits>
+        </level>
+        <level number="4" >
+
+            <!-- Arkadius’ battlegroup includes two or more Gorax.  OB02_minion -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="true"
+                    jackMarshalledOnly="false"
+                    minNumber="2" >
+                    <entry id="OB02_minion_arkadius" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+Warbeasts in the army can run without being forced during the first round of the game.
+                </ingameeffect>
+            </benefits>
+        </level>
+    </tiers>  
+  
+  <tiers name="Lord Carver - The Golden Horde" casterId="IW05" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW05" />
+        <entry id="IB01" />
+        <entry id="IB02" />
+        <entry id="IB09" />
+        <entry id="IB06" />
+        <entry id="IU02" />
+        <entry id="IU03" />
+        <entry id="IU06" />
+        <entry id="IU07" />
+        <entry id="IW03_minion" />
+        <entry id="Brine_minion" />
+        <entry id="IS10" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="IU03" />
+        <alterFA bonus="1" entryId="IU02" />
+        <alterFA bonus="1" entryId="IU06" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  IW03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IW03_minion" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="Models gain Pathfinder during the first turn. Rorsh &amp; Brine get cheaper Warbeasts." />
+        <alterCost bonus="1" entryId="IB01" />
+        <alterCost bonus="2" entryId="IB02" />
+        <alterCost bonus="2" entryId="IB06" />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2IU03-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="IU03" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="IU03" />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(IB01 IB02 IB06 IB09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="IB01" />
+          <entry id="IB02" />
+          <entry id="IB06" />
+          <entry id="IB09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect label="  Carver's battle group gains a before game movement bonus." />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Calaban - Bad Religion" casterId="IW07" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW07" />
+        <entry id="IB03" />
+        <entry id="IB04" />
+        <entry id="IB05" />
+        <entry id="IB07" />
+        <entry id="IB08" />
+        <entry id="IU01" />
+        <entry id="IU02" />
+        <entry id="IU04" />
+        <entry id="IU08" />
+        <entry id="IS02" />
+        <entry id="IS09" />
+        <entry id="IS11" />
+        <entry id="IW04_minion" />
+        <entry id="Snapjaw_minion" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  IU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  IW04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IW04_minion" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="2" entryId="IB03" onlyIfAttachedTo="IW04_minion" />
+        <alterCost bonus="1" entryId="IB04" onlyIfAttachedTo="IW04_minion"  />
+        <alterCost bonus="2" entryId="IB05" onlyIfAttachedTo="IW04_minion"  />
+        <alterCost bonus="1" entryId="IB07" onlyIfAttachedTo="IW04_minion"  />
+        <alterCost bonus="2" entryId="IB08" onlyIfAttachedTo="IW04_minion"  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  4(IB03 IB04 IB05 IB07 IB08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="4">
+          <entry id="IB03" />
+          <entry id="IB04" />
+          <entry id="IB05" />
+          <entry id="IB07" />
+          <entry id="IB08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Bloody Barnabas - Apex Predators" casterId="IW06" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW06" />
+        <entry id="IB03" />
+        <entry id="IB04" />
+        <entry id="IB05" />
+        <entry id="IB07" />
+        <entry id="IB08" />
+        <entry id="IU01" />
+        <entry id="IU04" />
+        <entry id="IU08" />
+        <entry id="IS09" />
+        <entry id="IS11" />
+        <entry id="IW04_minion" />
+        <entry id="Snapjaw_minion" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="IU04" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  IU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2Iu04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="IU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(IB03 IB05 IB08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="IB03" />
+          <entry id="IB05" />
+          <entry id="IB08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="IB08" />
+        <alterCost bonus="1" entryId="IB03" />
+        <alterCost bonus="1" entryId="IB05" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Maelok - The Walking Death" casterId="IW09" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW09" />
+        <entry id="IB03" />
+        <entry id="IB04" />
+        <entry id="IB05" />
+        <entry id="IB07" />
+        <entry id="IB08" />
+        <entry id="IU01" />
+        <entry id="IU04" />
+        <entry id="IS11" />
+        <entry id="IS02" />
+        <entry id="IW04_minion" />
+        <entry id="Snapjaw_minion" />
+        <entry id="IU08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="IS11" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(IU04 IU01 IU08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="IU04" />
+          <entry id="IU01" />
+          <entry id="IU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2IS11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="IS11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3IB07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="IB07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Sturm und Drang - Split Decision" casterId="IW10" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW10" />
+        <entry id="IB01" />
+        <entry id="IB02" />
+        <entry id="IB06" />
+        <entry id="IB09" />
+        <entry id="IU02" />
+        <entry id="IU03" />
+        <entry id="IU06" />
+        <entry id="IU07" />
+        <entry id="IW03_minion" />
+        <entry id="Brine_minion" />
+        <entry id="IS10" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  IS10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IS10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  IU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2IB06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="IB06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="IB06" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Midas - Butcher's Block" casterId="IW11" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW11" />
+        <entry id="IB01" />
+        <entry id="IB02" />
+        <entry id="IB06" />
+        <entry id="IB07_midas" />
+        <!--  sure? -->
+        <entry id="IB09" />
+        <entry id="IU02" />
+        <entry id="IU03" />
+        <entry id="IU06" />
+        <entry id="IU07" />
+        <entry id="IW03_minion" />
+        <entry id="Brine_minion" />
+        <entry id="IS10" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="IU02" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1IU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  IU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  4(IB01 IB02 IB06 IB09 IB07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="4">
+          <entry id="IB01" />
+          <entry id="IB02" />
+          <entry id="IB06" />
+          <entry id="IB09" />
+          <entry id="IB07_midas" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Rask - Watery Graves" casterId="IW12" faction="faction_minions">
+    <level number="1">
+      <only>
+        <entry id="IW12" />
+        <entry id="IB03" />
+        <entry id="IB04" />
+        <entry id="IB05" />
+        <entry id="IB07" />
+        <entry id="IB08" />
+        <entry id="IU01" />
+        <entry id="IU08" />
+        <entry id="IS11" />
+        <entry id="IS07" />
+        <entry id="IS09" />
+        <entry id="IS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="IU01" />
+        <alterFA bonus="1" entryId="IU08" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  IS07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IS07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(IU08 IU01)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="IU08" />
+          <entry id="IU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="IS09" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(IB03 IB04 IB05 IB07 IB08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="IB03" />
+          <entry id="IB04" />
+          <entry id="IB05" />
+          <entry id="IB07" />
+          <entry id="IB08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+    <tiers
+        name="Jaga-Jaga, The Death Charmer - VooDoo Dolls"
+        casterId="IW14"
+        faction="faction_minions" >
+
+        <!--
+<availableModels>
+   <type type="WARBEASTS">
+      <models>Minion Gatorman non-character warbeasts</models>
+   </type>
+   <type type="UNITS">
+      <models>Bog Trog units, Gatorman units</models>
+   </type>
+   <type type="SOLOS">
+      <models>Feralgeists, Thrullgs, Bog Trog solos, Croak solos, Gatorman solos, Wrong Eye and Snapjaw</models>
+   </type>
+   <type type="BATTLE_ENGINES">
+      <models>Sacral Vault</models>
+   </type>
+</availableModels>
+        -->
+        <level number="1" >
+            <only>
+
+                <!-- Warbeasts: Minion Gatorman non-character warbeasts -->
+                <entry id="IW14" />
+ <!-- Jaga -->
+                <entry id="IB03" />
+ <!-- Wrastler -->
+                <entry id="IB04" />
+ <!-- Snapper -->
+                <entry id="IB05" />
+ <!-- Spitter -->
+                <entry id="IB07" />
+ <!-- Boneswarm -->
+                <entry id="IB08" />
+ <!-- Swamp Horror -->
+                <!-- Units: Bog Trog units, Gatorman units -->
+                <entry id="IU01" />
+ <!-- Ambushers -->
+                <entry id="IU04" />
+ <!-- Posse -->
+                <entry id="IU08" />
+ <!-- Shamblers -->
+                <!-- Solos: Feralgeists, Thrullgs, Bog Trog solos, Croak solos, Gatorman solos, Wrong Eye & Snapjaw -->
+                <entry id="IS09" />
+ <!-- CroakHunter -->
+                <entry id="IS11" />
+ <!-- GWD -->
+                <entry id="IS02" />
+ <!-- Feralgeists -->
+                <entry id="IS08" />
+ <!-- Thrullgs -->
+                <entry id="IW04_minion" />
+ <!-- WrongEye -->
+                <entry id="Snapjaw_minion" />
+ <!-- SnapJaw -->
+                <!-- Battle Engines: Sacral Vault -->
+                <entry id="IE01" />
+            </only>
+
+            <benefits>
+ <!-- Description: Reduce the point cost of Sacral Vaults by 1. -->
+                <!-- Description: -->
+                <!-- <ingameeffect></ingameeffect> -->
+                <alterCost
+                    bonus="1"
+                    entryId="IE01" />
+            </benefits>
+        </level>
+        <level number="2" >
+
+            <!-- Must have  3(IB07 IU08 IS02) -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="false"
+                    jackMarshalledOnly="false"
+                    minNumber="3" >
+                    <entry id="IB07" />
+                    <entry id="IU08" />
+                    <entry id="IS02" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+Undead models gain Advance Move. (Before the
+start of the game but after both players have deployed, a
+model with Advance Move can make a full advance.)
+                </ingameeffect>
+            </benefits>
+        </level>
+        <level number="3" >
+
+            <!-- Must have  2(IU08 IS11) -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="false"
+                    jackMarshalledOnly="false"
+                    minNumber="2" >
+                    <entry id="IU08" />
+                    <entry id="IS11" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+Friendly models/units can begin the game affected
+by Jaga-Jaga’s upkeep spells. These spells and their targets
+must be declared before either player sets up models. Jaga-
+Jaga does not pay fury to upkeep these spells during your
+first turn.
+                </ingameeffect>
+            </benefits>
+        </level>
+        <level number="4" >
+
+            <!-- Must have  1(IE01) -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="false"
+                    jackMarshalledOnly="false"
+                    minNumber="1" >
+                    <entry id="IE01" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+Your deployment zone is extended 2" forward.
+                </ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
+    <tiers
+        name="Helga The Conqueror - Curtain Call"
+        casterId="IW13"
+        faction="faction_minions" >
+
+        <!--
+<availableModels>
+   <type type="WARBEASTS">
+      <models>Minion Farrow noncharacter warbeasts</models>
+   </type>
+   <type type="UNITS">
+      <models>Farrow units</models>
+   </type>
+   <type type="SOLOS">
+      <models>Efaarit Scouts, Farrow solos, Gudrun the Wanderer, Rorsh & Brine</models>
+   </type>
+   <type type="BATTLE_ENGINES">
+      <models>Meat Thresher</models>
+   </type>
+</availableModels>
+        -->
+        <level number="1" >
+            <only>
+
+                <!-- Warbeasts: Minion Farrow noncharacter warbeasts -->
+                <entry id="IW13" />
+ <!-- Helga -->
+                <entry id="IB01" />
+ <!-- GunBoar -->
+                <entry id="IB02" />
+ <!-- WarHog -->
+                <entry id="IB09" />
+ <!-- RazorBoar -->
+                <entry id="IB06" />
+ <!-- RoadHog -->
+                <!-- Units: Farrow units -->
+                <entry id="IU02" />
+ <!-- Bone Grinders -->
+                <entry id="IU03" />
+ <!-- Brigands -->
+                <entry id="IU06" />
+ <!-- Razorback -->
+                <entry id="IU07" />
+ <!-- Slaughterhousers -->
+                <!-- Solos: Efaarit Scouts, Farrow solos, Gudrun the Wanderer, Rorsh & Brine -->
+                <entry id="IW03_minion" />
+ <!-- Rorsh -->
+                <entry id="Brine_minion" />
+ <!-- Brine -->
+                <entry id="IS03_minion" />
+ <!-- Gundrun -->
+                <entry id="IS13" />
+ <!-- Maximus -->
+                <entry id="IS14" />
+ <!-- Efaarit -->
+                <!-- Battle Engines: Meat Thresher -->
+                <entry id="IE02" />
+            </only>
+
+            <benefits>
+                <alterCost
+                    bonus="1"
+                    entryId="IE02" />
+            </benefits>
+        </level>
+        <level number="2" >
+
+            <!-- Must have  IS13 -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="false"
+                    jackMarshalledOnly="false"
+                    minNumber="1" >
+                    <entry id="IS13" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+Maximus and Farrow Slaughterhouser units gain Advance Deployment.
+                </ingameeffect>
+            </benefits>
+        </level>
+        <level number="3" >
+
+            <!-- Must have  2(IB02 IB06) -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="true"
+                    jackMarshalledOnly="false"
+                    minNumber="2" >
+                    <entry id="IB02" />
+                    <entry id="IB06" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+Your deployment zone is extended 2" forward.
+                </ingameeffect>
+            </benefits>
+        </level>
+        <level number="4" >
+
+            <!-- Must have  1(IE02) -->
+            <must_have>
+                <entrygroup
+                    inBattlegroupOnly="false"
+                    jackMarshalledOnly="false"
+                    minNumber="1" >
+                    <entry id="IE02" />
+                </entrygroup>
+            </must_have>
+
+            <benefits>
+                <ingameeffect>
+You gain +1 on your starting roll for the game.
+                </ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
+
+</tierslist>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.schlaf.steam"
+    android:versionCode="27"
+    android:versionName="1.5.3" >
+    
+<!--
+1.0.3 - 
+on small-screen, special menu bar to show more buttons on create army page
+correct mercenary tier + contracts + minions tiers
+correct re-create battle from scratch + chrono initialization
+correct zerkova (appears twice) + UA-kovnik is not jack-marshal
+add xhdpi resources for high-density devices
+
+1.0.4
+save battle result
+see battle results, order results, save notes
+export battle results as CSV file
+
+1.0.5
+added ranking officer
+added forgotten cygnar entries (murdoch, storm strider)
+change clock icon (stop stealing graphism from internet, it's bad!)
+
+1.0.7
+added bluetooth support
+corrected ordering in list creation
+corrected "FA:U" bonus in tiers
+enhanced display of battle entries (ordering, def/arm)
+corrected spinner "popup keyboard" bug
+
+1.0.8
+better card display
+better spinner for damages
+save prefs for card library
+correct WA ordering in battle mode
+include entries from battlegroup boxes
+journeyman can now have focus stat and spell list
+ranking officers are now listed under unit attachments
+
+
+1.0.9
+add visual indication of model with complete card (from imported files) and models owned (in collection) in list building mode. 
+various corrections in tier, including "FA:U" bonus, "for each" bonus, "jack marshaled compulsory models"...
+added some missing entries : black dragons, iron fang kovnik, silverline stormguard, new cygnar captain, flame bringers, brand new journeymen, ...
+added copyright notice to make sure no endorsement to Privateer
+corrected layout of collection for large screens
+corrected casters name for sorting and epic versions
+export you armylist by mail and copy/paste option (for android 3+ only)
+french translation
+
+1.1
+added some missing entries
+various small visual corrections
+some corrections on list selection with tier
+handling of some special mercenary units (like Zerkova vanguard, ...)
+spanish translation
+
+1.2
+donation screen
+better damage handling for units & multiPV
+export au même format que forward kommander
+correction bug d'export armée par mail
+divers tier : skarre Ships in the night, midas, hoarluck
+gestion lesser warlock (beast mistress)
+gestion companion (ajout auto)
+améliorations icones weapon master + officer
+FA 3 pour spell martyr
+gastonne crosse + discount vanguard
+
+1.3
+use folders to save army lists (not just everything crowded in one place, be organized!)
+complete redesign of cards (follow Android Holo Theme instead of pseudo-skeuomorphism)
+click on card part to display specific info in bigger font (feat, spell, ... )
+complete redesign of weapon/model icons
+corrected searforge contract and some buggy tiers
+tactical arcanists now in 4-stars and highborn contracts
+lanyssa ryssil removed from 4-stars contract
+eyriss angel of retribution in 4-stars & highborn
+haley Storm Bringers now has access to free stormsmithes
+bethayne now has belphagor as companion
+added new model entries (issyria, goreshade3, butcher3, sturgis cryx et cygnar, striker3, reznik2, raluk, flame bringers, bane riders, imperatus, skarlock commander)
+Orin as minion for skorne and orboros (and correcting tiers according)
+eyriss available in krueger Wake of Destruction tier 
+better navigation when creating army (scrolling right/left with "swipe" on the drawer)
+corrected HTML format when mailing an army list
+removed card data from battlegroup boxes
+
+1.4
+bluetooth 2-player mode
+new solos (lesser warlocks) + orboros beasts
+redesign of damage dialog screen
+add repair/heal button
+suppress obsolete compatibility library (actionbarsherlock, numberpicker)
+handling lesser warlocks (with restriction & cost bonus for specific beasts)
+import tiers files (same function as import army data)
+new tier options (altered jack marshall)
+new tier requirement & benefits display
+SR2014 scenario + artefacts (display scenario card, special rules, add objective cards in army)
+dice stats screen
+full-text search in battle mode
+better display for create army screen
+
+1.4.1
+correction tiers cygnar, UA gun mage en merco, ajout des beasts et jacks en contrats mercenaires
+correction mise en pause et bluetooth.
+
+1.4.2
+correction page donation + correction pagetransformer
+
+1.4.3
+sécurisation échanges bluetooth
+ajout cephalyx (entrées + tiers)
+gestion des contrats
+correction bug coût export liste d'armée
+traduction française complète
+singletons rattachés à l'application pour stabilité
+
+1.4.4
+correction bug suppression de liste
+sauvegarde/restauration du tier/contrat
+sr2014 rules and cards in french
+add testament : reliquary guard tier
+add calandra : evolutionary elementalism tier
+add deneghra : body and soul tier
+correct collection model type labelling
+corrected/completed vindictus tier
+missing reflex servitors
+eradicator point value
+corrected SR2014 destruction map
+menoth theme forces can use the indictor
+
+
+
+1.5
+tier display : refactor display of required models
+
+added Houseguard Thane
+added exulon theme force
+added Siege - Trial of fire
+corrected Kreoss2 - Crusaders of Sul.
+corrected Xerxis - Fist of Halaak.
+asphy1, 2 & 3 tiers
+deneghra - witching hour
+deneghra2 - Shadow Play (free machine wraith not yet functional)
+Goreshade2 - Heresy of Shadows
+Scaverous - Funeral Rites
+Skarre1 - Shore Leave
+Skarre2 - Merchants of Death
+Skarre1 - Ships in the Night (NQ37)
+Mortenebra - Infernal Machines  
+Terminus - The Ghost Fleet
+Venethrax - The Dragon Slayers
+Witch Coven - Auguries of War
+
+corrected Vladimir - War host (koldun lord FA)
+Vladimir2 - Blood of Heroes
+Vladimir3 - Charge of the Horselord
+Irusk1 - Advance Assault Force
+Irusk2 - The Art of War
+
+
+1.5.1
+card list bug when faulty file in dir
+added exigence entries : 
+* troll : fire eaters, highwaymen, Wanderheart
+* orboros : bradigus, Brennos the Elderhorn, Death Wolves, 
+* skorne : Scarab Pack, Aradus Soldier, Aradus Sentinel, Praetorian Keltarii
+* everblight : wasps, zuriel, Strider Blightblades
+* minions : Efaarit Scouts, Maximus, Meat Thresher, Sacral Vault
+added beasts restrictions (bradigus)
+
+1.5.2
+Corrected crash when adding a merc 'jack marshall or lesser warlock to non-merc faction
+Corrected free models not counting "O" when reloading list
+Correcting tier free models : applying "free model" on previously selected models when unlocking the level 
+(ie. saeryn : the fourth nephilim must directly be free when unlocking tier4, no more need to take an extra one)
+Adding theme force from Exigence for minions (Helga, Jaga)
+Adding theme force : Dr. Arkadius - Nature of the Beast (NQ56) (including Gorax Guest Star)
+Adding theme force : Rahn - Fires From On High
+
+1.5.3
+Corrected bug preventing the addition of models in list building on Android 2.x 
+Corrected cost points for models whose count was altered by theme forces when reloading armies
+
+
+ -->    
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="20" />
+
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true"  android:xlargeScreens="true" android:anyDensity="true" android:resizeable="true"/>
+    
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    
+
+    <application
+        android:name=".SteamPunkRosterApplication"
+        android:allowBackup="true"
+        android:description="@string/app_description"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_launcher"
+        android:theme="@style/WhacTheme"
+         >
+        
+        <meta-data 
+      android:name="android.app.default_searchable" 
+      android:value=".activities.search.SearchableActivity)" /> 
+        
+        <activity
+            android:name=".activities.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/WhacTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        
+		        <data android:scheme="http" />
+    			<data android:host="*" />
+    			<data android:mimeType="text/plain" />
+    			<data android:pathPattern=".*\\.txt" />
+    		</intent-filter>
+    		<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:scheme="http" />
+    			<data android:host="*" />
+    			<data android:mimeType="text/plain" />
+    		</intent-filter>
+    		<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <action android:name="android.intent.action.EDIT" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:scheme="file" />
+		        <data android:mimeType="text/plain" />
+		        <data android:pathPattern=".*\\.txt" />
+		        <data android:host="*" />
+		    </intent-filter>
+    		<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <action android:name="android.intent.action.EDIT" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <data android:scheme="file" />
+		        <data android:mimeType="text/plain"/>
+		        <data android:pathPattern=".*\\.txt" />
+		        <data android:host="*" />
+		    </intent-filter>
+    				    
+		    <!-- 
+    		<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+	    		<data android:scheme="file" />
+			    <data android:host="*" />
+			    <data android:pathPattern=".*\\.whac" />
+    		</intent-filter>
+    		 -->
+        </activity><activity android:name=".activities.search.SearchableActivity"
+            android:launchMode="singleTop"  android:theme="@style/WhacTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        
+        <activity android:name=".activities.card.ViewCardActivity" >
+        </activity>
+        <activity
+            android:name=".activities.selectlist.PopulateArmyListActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:theme="@style/WhacTheme" >
+        <meta-data android:name="android.support.UI_OPTIONS"
+                   android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name=".activities.selectlist.ChooseUnitSizeActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.selectlist.ChooseAttachActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.damages.AddDamageActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.ChooseArmyListDialog"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity android:name=".activities.managelists.ManageArmyListsActivity" >
+        </activity>
+        <activity
+            android:name=".activities.managelists.EditArmyListActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.selectlist.ChooseDeleteActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.selectlist.ChooseDetachActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.selectlist.ChooseDismountOptionActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.battle.BattleActivity"
+            android:launchMode="singleTop"  
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:theme="@style/WhacTheme" >
+        <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        <meta-data android:name="android.support.UI_OPTIONS"
+                   android:value="splitActionBarWhenNarrow" />
+        
+        </activity>
+        <activity
+            android:name=".activities.chrono.ChronoActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.preferences.PreferenceActivity"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.battleselection.BattleSelector"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity
+            android:name=".activities.importation.ImportSelector"
+            android:theme="@style/WhacTheme" >
+        </activity>
+        <activity android:name=".activities.battleresult.BattleResultsActivity" android:theme="@style/WhacTheme" android:uiOptions="splitActionBarWhenNarrow"></activity>
+        <activity android:name=".activities.battleresult.ViewBattleResultActivity" android:theme="@style/WhacTheme"></activity>
+        <activity android:name=".activities.card.CardLibraryActivity" android:theme="@style/WhacTheme"></activity>
+        <activity android:theme="@style/WhacTheme" android:name=".activities.collection.MyCollectionActivity"></activity>
+        <activity android:name=".activities.donation.DonationActivity" android:theme="@style/WhacTheme"></activity>
+        <activity android:theme="@style/WhacTheme" android:name=".activities.battleplanner.BattlePlanerActivity"></activity>
+        
+        <activity android:theme="@style/WhacTheme" android:name="com.schlaf.steam.tier.DisplayTierInfo"/>
+        
+        <activity android:theme="@style/WhacTheme" android:name=".activities.steamroller.ScenarioLibraryActivity"/>
+        <activity android:name=".activities.bluetooth.EnableBluetoothActivity"></activity>
+        <activity android:theme="@style/WhacTheme" android:name=".activities.bluetooth.DiscoverDevicesActivity"></activity>
+        <service android:name=".activities.bluetooth.CommunicationService"></service>
+        <provider android:name=".activities.search.SearchSuggestionProvider" android:authorities="com.schlaf.search.provider"></provider>
+    </application>
+
+</manifest>

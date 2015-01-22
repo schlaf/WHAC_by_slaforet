@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1" >
+
+        <com.schlaf.steam.activities.damages.WarjackDamageGridView
+            android:id="@+id/damageGridView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/component_standard_size" />
+
+        <ListView
+            android:id="@+id/listViewDamages"
+            android:layout_width="@dimen/component_standard_size"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+
+        </ListView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ll2_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        layout="@layout/damage_buttons_jack" />
+
+</LinearLayout>

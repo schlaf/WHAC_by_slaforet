@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        <TextView android:id="@+id/unit_name"
+        	android:text=""
+        	android:layout_height="fill_parent"
+        	android:layout_width="wrap_content"
+        	android:width="200dip"
+        />
+        <TextView android:id="@+id/field_allowance"
+	        android:text=""
+	        android:layout_height="fill_parent"
+	        android:layout_width="wrap_content"
+	        android:width="100dip"
+	    />
+	    <TextView android:id="@+id/base_cost"
+	        android:text=""
+	        android:layout_height="fill_parent"
+	        android:layout_width="wrap_content"
+	        android:width="100dip"
+	    />
+	    <TextView android:id="@+id/full_cost"
+	        android:text=""
+	        android:layout_height="fill_parent"
+	        android:layout_width="wrap_content"
+	        android:width="100dip"
+	    />
+</LinearLayout>

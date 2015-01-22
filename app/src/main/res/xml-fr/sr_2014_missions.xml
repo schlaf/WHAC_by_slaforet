@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<missions>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>1</number>
+	<name>Destruction</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie..&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans la zone.</victory>
+	<specialRules>Marquer une zone (rectangle 12 pouces x 6 pouces ) et placer deux objectifs Critical Asset en conformité avec le diagramme. L'objectif du côté du joueur 1 est un modèle de Faction ami pour le joueur 1 et vice-versa. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit : .&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif)&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt; Zone: Contrôle = 1 CP, Domination = 2 CP&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_destruction</map>
+	<objective>objective_2014_standard_critical_asset</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>2</number>
+	<name>Supply and Demand</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans la zone.</victory>
+	<specialRules>Marquer une zone (cercle de diamètre 12") et placer deux objectifs Supply Cache en conformité avec le diagramme. L'objectif du côté du joueur 1 est un modèle de Faction ami pour le joueur 1 et vice-versa. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Zone: Contrôle = 1 CP, Domination = 2 CP &lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif)&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_supply_and_demand</map>
+	<objective>objective_2014_standard_supply_cache</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>3</number>
+	<name>Balance of Power</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans la zone.</victory>
+	<specialRules>Marquer une zone (rectangle 12 pouces x 6 pouces) et placer deux drapeaux en conformité avec le diagramme. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;Drapeau ami : Domination = L'opposant perd 1 CP avant que les joueurs ne marquent ce tour-ci (minimum 0) &lt;/li&gt;&lt;li&gt;Zone: Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;li&gt;Drapeau ennemi: Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_balance_of_power</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>4</number>
+	<name>Process of Elimination</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans chaque zone.</victory>
+	<specialRules>Marquer 2 zones (rectangles de 12 pouces x 6 pouces) et placer deux objectifs Monolith en conformité avec le diagramme. Les objectifs Monolith sont ennemis pour tous les autres modèles. Seul le joueur qui détruit / retire du jeu un Monolith gagne un point de contrôle. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif) &lt;/li&gt;&lt;li&gt;Zone: Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_process_of_elimination</map>
+	<objective>objective_2014_standard_monolith</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>5</number>
+	<name>Close Quarters </name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans les 4" du drapeau ennemi.</victory>
+	<specialRules>Placer deux drapeaux en conformité avec le diagramme. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit : &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;Drapeau ami : Domination = 1 CP &lt;/li&gt;&lt;li&gt;Drapeau ennemi : Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_close_quarters</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>6</number>
+	<name>Two Fronts</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans la zone ennemie.</victory>
+	<specialRules>Marquer 2 zones (rectangles de 12 pouces x 6 pouces) et placer 2 objectifs Supply Cache en conformité avec le diagramme. L'objectif du côté du joueur 1 est un modèle de Faction ami pour le joueur 1 et vice-versa. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;Zone amie : Domination = 1 CP &lt;/li&gt;&lt;li&gt;Zone ennemie : Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;li&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_two_fronts</map>
+	<objective>objective_2014_standard_supply_cache</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>7</number>
+	<name>Incoming</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans la zone ennemie.</victory>
+	<specialRules>Marquer 2 zones (rectangles de 12 pouces x 6 pouces) et placer 2 objectifs Ammunition Cache en conformité avec le diagramme. L'objectif du côté du joueur 1 est un modèle de Faction ami pour le joueur 1 et vice-versa. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;Zone amie : Domination = 1 CP &lt;/li&gt;&lt;li&gt;Zone ennemie : Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;li&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_incoming</map>
+	<objective>objective_2014_standard_ammunition_cache</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>8</number>
+	<name>Rally Point</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans la zone ennemie.</victory>
+	<specialRules>Marquer 2 zones (cercle de 12" de diamètre) and placer 2 objectifs Effigy en conformité avec le diagramme. L'objectif du côté du joueur 1 est un modèle de Faction ami pour le joueur 1 et vice-versa. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;Zone amie : Domination = 1 CP &lt;/li&gt;&lt;li&gt;Zone ennemie : Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;li&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_rally_point</map>
+	<objective>objective_2014_standard_effigy</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>9</number>
+	<name>Incursion</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans les 4" de chaque drapeau.</victory>
+	<specialRules>Placer 3 drapeaux en conformité avec le diagramme. A la fin du premier tour du 2ème joueur, retirer aléatoirement un drapeau non-central de la table. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;Drapeau extérieur : Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;li&gt;Drapeau central : Contrôle = 1 CP, Domination = 1 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_incursion</map>
+	<objective>NA</objective>	
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>10</number>
+	<name>Outflank</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans chaque zone.</victory>
+	<specialRules>Marquer 2 zones (cercle de 12" de diamètre) en conformité avec le diagramme. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;Zone: Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_outflank</map>
+	<objective>NA</objective>	
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>11</number>
+	<name>Into the Breach</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans la zone et dans les 4" du drapeau</victory>
+	<specialRules>Marquer 1 zone (cercle de 12" de diamètre) et placer un drapeau et 2 objetifs Effigy en conformité avec le diagramme. L'objectif du côté du joueur 1 est un modèle de Faction ami pour le joueur 1 et vice-versa. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;Zone : Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;li&gt;Drapeau : Domination = 1 CP &lt;/li&gt;&lt;li&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_into_the_breach</map>
+	<objective>objective_2014_standard_effigy</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>sr2014</type>
+	<number>12</number>
+	<name>Fire Support</name>
+	<victory>&lt;p&gt;Le premier joueur à avoir au moins 5 points de contrôle et plus de points de contrôle que son adverse gagne immédiatement la partie.&lt;p&gt;Si le temps expire avant qu'un joueur gagne au scénario ou à l'assassinat, déterminer le vainqueur comme dans le manuel de référence. Pour le 3ème tiebreaker, doubler les points d'armée dans les 4" de chaque drapeau.</victory>
+	<specialRules>Placer 2 drapeaux et 2 objectifs Ammunition Cache en conformité avec le diagramme. L'objectif du côté du joueur 1 est un modèle de Faction ami pour le joueur 1 et vice-versa. A partir du 2ème tour du 2ème joueur, à la fin de chaque tour de joueur un joueur gagne les points de contrôle (CP) comme suit :&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;Flag: Contrôle = 1 CP, Domination = 2 CP &lt;/li&gt;&lt;li&gt;Objectif ennemi : Détruit / Retiré du jeu = 1 CP (un par objectif) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Les objectifs ennemis contestent les drapeaux dans les 4".&lt;p&gt;Seul le joueur actif marque quand plusieurs joueurs dominent la même zone ou drapeau.</tacticalTips>
+	<map>maps_2014_standard_fire_support</map>
+	<objective>objective_2014_standard_ammunition_cache</objective>
+</mission>
+</missions>

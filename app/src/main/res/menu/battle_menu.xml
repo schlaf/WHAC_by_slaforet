@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+
+    <!-- 
+    <item
+        android:id="@+id/menu_battle_planner"
+        android:icon="@drawable/brain"
+        android:showAsAction="always"
+        android:title="@string/battle_planner"/>
+         -->
+    
+    <item android:id="@+id/menu_search"
+          android:title="@string/search"
+          android:icon="@android:drawable/ic_menu_search"
+          yourapp:showAsAction="ifRoom"
+          />
+    
+    <item
+        android:id="@+id/menu_card_reference"
+        android:icon="@drawable/stat_card"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/search_library"/>
+    
+    <item
+        android:id="@+id/menu_steamroller"
+        android:icon="@drawable/sr2014"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/steamroller"/>
+    
+    <item
+        android:id="@+id/menu_dice"
+        android:icon="@drawable/dice"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/dice_stat"/>
+    
+    <item
+        android:id="@+id/menu_add_army"
+        android:icon="@drawable/add_user"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/add_2nd_player"/>
+    
+    <item
+        android:id="@+id/menu_chrono"
+        android:icon="@drawable/clock"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/chrono"/>
+    
+    <item
+        android:id="@+id/menu_end"
+        android:icon="@drawable/end"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/end_battle"/>
+    
+    <item android:id="@+id/startBlueTooth"
+          android:icon="@drawable/bluetooth_init"
+          android:title="@string/battle_bluetooth"
+          android:showAsAction="ifRoom" />
+    
+</menu>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<missions>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>1</number>
+	<name>Destruction</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the zone.</victory>
+	<specialRules>Mark a zone (12 inch x 6 inch rectangle) and place two Critical Asset objectives in accordance with the diagram below. The objective on Player 1's side of the table is a friendly Faction model to Player 1 and vice versa. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective)&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt; Zone: Control = 1 CP, Dominate = 2 CP&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>maps_2014_standard_destruction</map>
+	<objective>objective_2014_standard_critical_asset</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>2</number>
+	<name>Supply and Demand</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the zone</victory>
+	<specialRules>Mark a zone (12 inch_diameter circle) and place two Supply Cache objectives in accordance with the diagram below. The objective on Player 1's side of the table is a friendly Faction model to Player 1 and vice versa. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Zone: Control = 1 CP, Dominate = 2 CP &lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective)&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>maps_2014_standard_supply_and_demand</map>
+	<objective>objective_2014_standard_supply_cache</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>3</number>
+	<name>Balance of Power</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the zone.</victory>
+	<specialRules>Mark a zone (12 inch x 6 inch rectangle) and place two flags in accordance with the diagram below. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;Friendly Flag: Dominate = Opponent loses 1 CP before players score CPs this turn (minimum = 0) &lt;/li&gt;&lt;li&gt;Zone: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;li&gt;Enemy Flag: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>maps_2014_standard_balance_of_power</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>4</number>
+	<name>Process of Elimination</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within each zone</victory>
+	<specialRules>Mark two zones (12 inch x 6 inch rectangles) and place two Monolith objectives in accordance with the diagram below. The Monolith objectives are enemy models to all other models. Only the player who destroys/removes from play a Monolith earns 1 control point. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;Objective: Destroyed/Removed from Play = 1 CP (once per objective) &lt;/li&gt;&lt;li&gt;Zone: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag. </tacticalTips>
+	<map>maps_2014_standard_process_of_elimination</map>
+	<objective>objective_2014_standard_monolith</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>5</number>
+	<name>Close Quarters </name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within 4 inches of the enemy flag.</victory>
+	<specialRules>Place two flags in accordance with the diagram below. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows: &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;Friendly Flag: Dominate = 1 CP &lt;/li&gt;&lt;li&gt;Enemy Flag: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>maps_2014_standard_close_quarters</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>6</number>
+	<name>Two Fronts</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the enemy zone</victory>
+	<specialRules>Mark two zones (12 inch x 6 inch rectangles) and place two Supply Cache objectives in accordance with the diagram below. The objective on Player 1's side of the table is a friendly Faction model to Player 1 and vice versa. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;Friendly Zone: Dominate = 1 CP &lt;/li&gt;&lt;li&gt;Enemy Zone: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;li&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag</tacticalTips>
+	<map>maps_2014_standard_two_fronts</map>
+	<objective>objective_2014_standard_supply_cache</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>7</number>
+	<name>Incoming</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the enemy zone.</victory>
+	<specialRules>Mark two zones (12 inch x 6 inch rectangles) and place two Ammunition Cache objectives in accordance with the diagram below. The objective on Player 1's side of the table is a friendly Faction model to Player 1 and vice versa. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows&lt;ul&gt;&lt;li&gt;Friendly Zone: Dominate = 1 CP &lt;/li&gt;&lt;li&gt;Enemy Zone: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;li&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>maps_2014_standard_incoming</map>
+	<objective>objective_2014_standard_ammunition_cache</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>8</number>
+	<name>Rally Point</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the enemy zone</victory>
+	<specialRules>Mark two zones (12 inch_diameter circle) and place two Effigy objectives in accordance with the diagram below. The objective on Player 1's side of the table is a friendly Faction model to Player 1 and vice versa. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;Friendly Zone: Dominate = 1 CP &lt;/li&gt;&lt;li&gt;Enemy Zone: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;li&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag. </tacticalTips>
+	<map>maps_2014_standard_rally_point</map>
+	<objective>objective_2014_standard_effigy</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>9</number>
+	<name>Incursion</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within 4 inches of each flag</victory>
+	<specialRules>Place three flags in accordance with the diagram below. At the end of the second player's first turn, randomly remove a non_center flag from the table. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;Outer Flag: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;li&gt;Center Flag: Control = 1 CP, Dominate = 1 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>maps_2014_standard_incursion</map>
+	<objective>NA</objective>	
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>10</number>
+	<name>Outflank</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within each zone.</victory>
+	<specialRules>Mark two zones (12 inch_diameter circle) in accordance with the diagram below. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;Zone: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag</tacticalTips>
+	<map>maps_2014_standard_outflank</map>
+	<objective>NA</objective>	
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>11</number>
+	<name>Into the Breach</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the zone and within 4 inches of the flag.</victory>
+	<specialRules>Mark a zone (12 inch_diameter circle) and place a flag and two Effigy objectives in accordance with the diagram below. The objective on Player 1's side of the table is a friendly Faction model to Player 1 and vice versa. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;Zone: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;li&gt;Flag: Dominate = 1 CP &lt;/li&gt;&lt;li&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>maps_2014_standard_into_the_breach</map>
+	<objective>objective_2014_standard_effigy</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2014</type>
+	<number>12</number>
+	<name>Fire Support</name>
+	<victory>&lt;p&gt;The first player to earn at least 5 control points and have more control points than the opponent immediately wins the game.&lt;p&gt;If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within 4 inches of each flag.</victory>
+	<specialRules>Place two flags and two Ammunition Cache objectives in accordance with the diagram below. The objective on Player 1's side of the table is a friendly Faction model to Player 1 and vice versa. Starting on the second player's second turn, at the end of each player's turn a player earns control points (CP) as follows:&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Artifice&lt;/strong&gt;: Kill Box&lt;/li&gt;&lt;li&gt;Flag: Control = 1 CP, Dominate = 2 CP &lt;/li&gt;&lt;li&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective) &lt;/li&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Enemy objectives contest flags within 4 inches.&lt;p&gt;Only the active player scores when multiple players dominate the same zone or flag</tacticalTips>
+	<map>maps_2014_standard_fire_support</map>
+	<objective>objective_2014_standard_ammunition_cache</objective>
+</mission>
+</missions>

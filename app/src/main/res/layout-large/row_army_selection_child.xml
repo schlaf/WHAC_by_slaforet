@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fond_degrade"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/model_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:minHeight="36dp"
+            android:text="@string/entry_title"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="@dimen/textview_standard_height"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dp" >
+
+            <TextView
+                android:id="@+id/entry_cost"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:text="@string/entry_cost"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textSize="@dimen/textview_standard_height"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageContentComplete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/stat_card"
+                android:contentDescription="@string/card_complete" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageCollection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/collection" />
+
+                <TextView
+                    android:id="@+id/tfcollectionowned"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/imageCollection"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/_3"
+                    android:textColor="@color/LightGreen" />
+
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/entry_fa"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/entry_fa"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textSize="@dimen/textview_standard_height"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/addEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/empty"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_input_add" />
+
+</LinearLayout>

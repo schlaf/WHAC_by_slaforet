@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+    
+    <!-- 
+    
+    
+"PJ01" name="Redeemer"
+"PJ02" name="Repenter"    
+"PJ03" name="Revenger"
+"PJ04" name="Devout"
+"PJ05" name="Dervish"
+"PJ06" name="Blessing of Vengeance" character
+"PJ07" name="Crusader"
+"PJ08" name="Vanquisher"
+"PJ09" name="Guardian"
+"PJ10" name="Reckoner"
+"PJ11" name="Avatar of Menoth" character
+"PJ12" name="Castigator"
+"PJ13" name="Fire of Salvation" character
+"PJ14" name="Templar"
+"PJ15" name="Vigilant"
+"PJ16" name="Scourge of Heresy" character
+"PJ17" name="Sanctifier"    
+"PJ18" name="Blood of Martyrs" character
+"PJ19" name="Judicator"
+"PJ20" name="Indictor"
+    
+    non-character warjacks
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />    
+        <entry id="PJ20" />
+    
+ -->    
+    
+  <tiers name="Kreoss1 - Interdiction Strike Force" casterId="Pw01" faction="faction_menoth">
+
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks, Fire of salvation</models>
+            </type>
+            <type type="UNITS">
+                <models>Choirs of Menoth, Exemplar units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Vassal Mechaniks, Exemplar solos</models>
+            </type>
+      </availableModels>
+      
+      
+      <level number="1">
+      <only>
+        <entry id="Pw01" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ13" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PJ20"/>
+        <entry id="PU01" />
+        <entry id="PU04" />
+        <entry id="PU09" />
+        <entry id="PA04" />
+        <entry id="PU11" />
+        <entry id="PU10" />
+        <entry id="PU14" />
+        <entry id="PS02" />
+        <entry id="PS11" />
+        <entry id="PS12" />
+        <entry id="PS09" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="PU10" />
+        <alterCost bonus="1" entryId="PU10" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  PS09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PS09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Place High Exemplar Gravus and Exemplar Venger units after normal deployment. These models are placed at the same time as your models with Advanced Deployment (if any). These models must be placed in your normal deployment zone.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2PU09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Model/units in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(PJ03 PJ09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PJ03" />
+          <entry id="PJ09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>
+            Friendly models/units can begin the game affected by Kreoss' upkeep spells. These spells and their target must be declared before either player sets up models. Kreoss does not pay focus to upkeep these spells during your first turn.
+        </ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Kreoss2 - Crusaders of Sul" casterId="Px01" faction="faction_menoth">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks, Fire of salvation</models>
+            </type>
+            <type type="UNITS">
+                <models>Deliverer Sunburst Crews, Exemplar units, Flameguard units, Visgoth Rhoven &amp; Honor guard</models>
+            </type>
+            <type type="SOLOS">
+                <models>Vassal Mechaniks, Exemplar Solos</models>
+            </type>
+      </availableModels>
+      
+    <level number="1">
+      <only>
+        <entry id="Px01" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ13" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PJ20" />
+        <entry id="PU06" />
+        <entry id="PU04" />
+        <entry id="PU09" />
+        <entry id="PA04" />
+        <entry id="PU11" />
+        <entry id="PU10" />
+        <entry id="PU14" />
+        <entry id="PU15"/> 
+        <entry id="PU05" />
+        <entry id="PA02" />
+        <entry id="PU07" />
+        <entry id="PA06" />
+        <entry id="PU08" />
+        <entry id="PU12" />
+        <entry id="PS02" />
+        <entry id="PS11" />
+        <entry id="PS12" />
+        <entry id="PS09" />
+        <entry id="PS14"/>
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="512" entryId="PU04" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Knight Exemplar units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  4(PU04 PU09 PU11 PU10 PU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="PU04" />
+          <entry id="PU09" />
+          <entry id="PU11" />
+          <entry id="PU10" />
+          <entry id="PU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="PS02" />
+          <entry id="PS11" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  PJ13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PJ13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Kreoss3 - Revelations of the Creator" casterId="Pz01" faction="faction_menoth">
+      <availableModels>
+          <type type="WARJACKS">
+              <models>Protectorate non-character warjacks, Fire of Salvation</models>
+          </type>
+          <type type="UNITS">
+              <models>Choir of Menoth, Exemplar units, Protectorate Cavalry units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Reclaimers, Exemplar solos, Vassal solos</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Vessel of Judgment</models>
+          </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Pz01" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ13" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PJ20" />
+        <entry id="PE01" />
+        <entry id="PU01" />
+        <entry id="PU04" />
+        <entry id="PU09" />
+        <entry id="PU10" />
+        <entry id="PU11" />
+        <entry id="PU14" />
+        <entry id="PU15"/> <!-- add flame bringer -->
+        <entry id="PA04" />
+        <entry id="PS09" />
+        <entry id="PS11" />
+        <entry id="PS05" />
+        <entry id="PS12" />
+        <entry id="PS02" />
+        <entry id="PS11" />
+        <entry id="PS10" />
+      </only>
+      <benefits>
+        <ingameeffect >Increase the FA of non-character cavalry units and solos by 1.</ingameeffect>
+        <alterFA bonus="1" entryId="PU10" />
+        <alterFA bonus="1" entryId="PU15" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  PU10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PU10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect>You gain + 1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  PJ13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PJ13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Reduce the point cost of heavy warjacks without ranged weapons by 1.</ingameeffect>
+        <alterCost bonus="1" entryId="PJ07" />
+        <alterCost bonus="1" entryId="PJ12" />
+        <alterCost bonus="1" entryId="PJ09" />
+        <alterCost bonus="1" entryId="PJ17" />
+        <alterCost bonus="1" entryId="PJ14" />
+        <alterCost bonus="1" entryId="PJ13" />
+        <alterCost bonus="1" entryId="PJ20" />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  PU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >For each Choir of Menoth unit in the army, one heavy warjack in the army gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Reclaimer1 - The Flames of Reclamation" casterId="Pw02" faction="faction_menoth">
+      
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks, Avatar of Menoth</models>
+            </type>
+            <type type="UNITS">
+                <models>Flameguard Cleansers, Holy Zealots, Deliverers units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Reclaimers, Vassal solos</models>
+            </type>
+      </availableModels>      
+    <level number="1">
+      <only>
+        <entry id="Pw02" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ11" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU07" />
+        <entry id="PA06" />
+        <entry id="PU03" />
+        <entry id="PA01" />
+        <entry id="PU02" />
+        <entry id="PU06" />
+        <entry id="PS05" />
+        <entry id="PS10" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="PS05">
+          <forEach>
+            <entry id="PU03" />
+            <entry id="PU02" />
+            <entry id="PU06" />
+            <entry id="PU07" />
+          </forEach>
+        </alterFA>
+        <alterCost entryId="PJ12" bonus="1" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  3PS05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Reclaimer solos each begin with one soul token</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2PU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Flameguard cleanser units gain Advance Move</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  2(PJ07 PJ08 PJ09 PJ10 PJ12 PJ14 PJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PJ07" />
+          <entry id="PJ08" />
+          <entry id="PJ09" />
+          <entry id="PJ10" />
+          <entry id="PJ12" />
+          <entry id="PJ14" />
+          <entry id="PJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >For each heavy warjack, place one 3" AOE cloud
+effect anywhere completely within 20" of the back edge of
+High Rec1aimer's deployment zone after both players have
+finished deploying their armies but before the first player
+takes his first turn. These cloud effects leave play after the
+first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Reclaimer2 - Sands of Fate" casterId="Px02" faction="faction_menoth">
+      
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks, Avatar of Menoth</models>
+            </type>
+            <type type="UNITS">
+                <models>Exemplar Errants, Holy Zealots, Idrian Skirmichers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Exemplar Errant Senechals, Reclaimers, Vassals of Menoth, Idrian solos</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Px02" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ11" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU09" />
+        <entry id="PA04" />
+        <entry id="PU03" />
+        <entry id="PA01" />
+        <entry id="PU13" />
+        <entry id="PA03" />
+        <entry id="PS11" />
+        <entry id="PS05" />
+        <entry id="PS10" />
+      </only>
+      <benefits>
+        <ingameeffect >Holy zealots units gains Advance Deployment.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You gain +1 on your starting roll for the game</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2PU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="PU13" />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  PJ11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Models/units gains Incorporeal during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Severius1 - Legions of Faith" casterId="Pw03" faction="faction_menoth">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks, Blessing of Vengeance</models>
+            </type>
+            <type type="UNITS">
+                <models>Choirs of Menoth, Holy Zealots, Temple Flameguard, Deliverers units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Hierophant, Wracks, Exemplar solos, Vassal solos</models>
+            </type>
+      </availableModels>      
+      
+    <level number="1">
+      <only>
+        <entry id="Pw03" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ06" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU03" />
+        <entry id="PA01" />
+        <entry id="PU05" />
+        <entry id="PA02" />
+        <entry id="PU02" />
+        <entry id="PU06" />
+        <entry id="PS08" />
+        <entry id="PS03" />
+        <entry id="PS02" />
+        <entry id="PS09" />
+        <entry id="PS11" />
+        <entry id="PS10" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="PA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2PS12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PS12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  PJ06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PJ06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Severius2 - The Northern Crusade" casterId="Px03" faction="faction_menoth">
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks, Avatar of Menoth, Blessing of Vengeance</models>
+            </type>
+            <type type="UNITS">
+                <models>Choirs of Menoth, Temple Flameguard, Exemplar units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Hierophant, Wracks, Exemplar solos, Vassal solos, Covenant of Menoth</models>
+            </type>
+      </availableModels>            
+    <level number="1">
+      <only>
+        <entry id="Px03" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ06" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ11" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU05" />
+        <entry id="PA02" />
+        <entry id="PU04" />
+        <entry id="PU09" />
+        <entry id="PA04" />
+        <entry id="PU11" />
+        <entry id="PU10" />
+        <entry id="PU14" />
+        <entry id="PS08" />
+        <entry id="PS03" />
+        <entry id="PS02" />
+        <entry id="PS09" />
+        <entry id="PS11" />
+        <entry id="PS10" />
+        <entry id="PS12" />
+        <entry id="PS04" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="PJ07" />
+        <alterCost bonus="1" entryId="PJ14" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  PS04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(PU11 PU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU11" />
+          <entry id="PU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(PJ07 PJ08 PJ09 PJ10 PJ12 PJ14 PJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PJ07" />
+          <entry id="PJ08" />
+          <entry id="PJ09" />
+          <entry id="PJ10" />
+          <entry id="PJ12" />
+          <entry id="PJ14" />
+          <entry id="PJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Feora1 - New Model Army" casterId="Pw04" faction="faction_menoth">
+      
+      <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Choirs of Menoth, Flameguard units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Vassal Mechaniks, Flameguard Solos</models>
+            </type>
+      </availableModels>      
+            
+    <level number="1">
+      <only>
+        <entry id="Pw04" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU08" />
+        <entry id="PU05" />
+        <entry id="PA02" />
+        <entry id="PU07" />
+        <entry id="PA06" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="U" entryId="PU08" />
+        <alterFA bonus="U" entryId="PU05" />
+        <alterFA bonus="U" entryId="PU07" />
+        <alterCost entryId="PJ09" bonus="1" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(PU05)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Temple Flameguard units gain Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2PU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You gain +1 on your starting roll for the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(PJ02 PJ12 PJ08 PJ19)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PJ02" />
+          <entry id="PJ12" />
+          <entry id="PJ08" />
+          <entry id="PJ19" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >For each warjack in Feora's battlegroup with the Continuous Effect: Fire weapon quality, place one wall
+template anywhere completely within 20" of the back edge of Feora's deployment zone after terrain has been placed
+but before either player deploys his army. When a model enters or ends its activation in the wall area, it suffers an
+unboostable POW 12 fire damage roll and the Fire continuous effect. Models within the wall template gain concealment. These wall templates leave play after the first
+round of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Feora2 - Defenders of the Temple" casterId="Px04" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="Px04" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU05" />
+        <entry id="PA02" />
+        <entry id="PU07" />
+        <entry id="PA06" />
+        <entry id="PU08" />
+        <entry id="PU12" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="U" entryId="PU05" />
+        <alterFA bonus="U" entryId="PU07" />
+        <alterFA bonus="U" entryId="PU08" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="PA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  PU07 PU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PU07" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Flameguard units gain +2 SPD during your first turn of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  PU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2" forward</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Amon - Wanderers of the Faith" casterId="PW05" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="PW05" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU03" />
+        <entry id="PA01" />
+        <entry id="PU13" />
+        <entry id="PA03" />
+        <entry id="PS03" />
+        <entry id="PS05" />
+        <entry id="PS07" />
+        <entry id="PS10" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="PU13" />
+        <alterFA bonus="1" entryId="PS07" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="PA03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3PS07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PS07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="4">
+      <only>
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ15" />
+      </only>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Harbinger - Army of the Righteous" casterId="PW06" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="PW06" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ11" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU03" />
+        <entry id="PA01" />
+        <entry id="PU05" />
+        <entry id="PA02" />
+        <entry id="PS08" />
+        <entry id="PS01" />
+        <entry id="PS06" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="1" entryId="PS01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  PJ11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PJ11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  PS06-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have in battlegroup  3(PJ07 PJ09 PJ12 PJ14 PJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PJ07" />
+          <entry id="PJ09" />
+          <entry id="PJ12" />
+          <entry id="PJ14" />
+          <entry id="PJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="PJ07" />
+        <alterCost bonus="1" entryId="PJ09" />
+        <alterCost bonus="1" entryId="PJ11" />
+        <alterCost bonus="1" entryId="PJ12" />
+        <alterCost bonus="1" entryId="PJ14" />
+        <alterCost bonus="1" entryId="PJ17" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Reznik - Judgment of Fire" casterId="PW07" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="PW07" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ16" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU07" />
+        <entry id="PA06" />
+        <entry id="PU14" />
+        <entry id="PS05" />
+        <entry id="PS08" />
+        <entry id="PS03" />
+        <entry id="PS10" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterCost bonus="1" entryId="PJ10" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU07-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(PU01 PU07 PU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PU01" />
+          <entry id="PU07" />
+          <entry id="PU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="PS03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(PJ07 PJ08 PJ09 PJ10 PJ12 PJ14 PJ16 PJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PJ07" />
+          <entry id="PJ08" />
+          <entry id="PJ09" />
+          <entry id="PJ10" />
+          <entry id="PJ12" />
+          <entry id="PJ14" />
+          <entry id="PJ16" />
+          <entry id="PJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Reznik - Knocking on Heavens Door (NQ35)" casterId="PW07" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="PW07" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ16" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU07" />
+        <entry id="PA06" />
+        <entry id="PU02" />
+        <entry id="PU06" />
+        <entry id="MU08" />
+        <entry id="PA05" />
+        <entry id="MU15" />
+        <entry id="MU18" />
+        <entry id="PS10" />
+        <entry id="PS12" />
+        <entry id="PS03" />
+        <entry id="MS06" />
+        <entry id="MS16" />
+        <entry id="PE01" />
+      </only>
+      <benefits>
+        <ingameeffect >Deliverer Sunburst Crews gain Advance Deployment</ingameeffect>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1(MU08 MU18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="MU08" />
+          <entry id="MU18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="PA05" />
+          <forEach>
+            <entry id="MU08" />
+            <entry id="MU18" />
+          </forEach>
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(PS10 PS12)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PS10" />
+          <entry id="PS12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Friendly models/units can begin the game affected by Reznik's upkeep spells.
+These spells and their targets must be declared before either players sets up models.
+Reznik does not pay focus to upkeep these spells during your first turn</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(PJ07 PJ08 PJ09 PJ10 PJ12 PJ14 PJ16 PJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PJ07" />
+          <entry id="PJ08" />
+          <entry id="PJ09" />
+          <entry id="PJ10" />
+          <entry id="PJ12" />
+          <entry id="PJ14" />
+          <entry id="PJ16" />
+          <entry id="PJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2" forward</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Vindictus - Missionaries of War" casterId="PW08" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="PW08" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+        <entry id="PU01" />
+        <entry id="PU09" />
+        <entry id="PA04" />
+        <entry id="PU03" />
+        <entry id="PA01" />
+        <entry id="PS07" />
+        <entry id="PS11" />
+        <entry id="PS08" />
+        <entry id="PS05" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+        <freeModel>
+          <entry id="PA04" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <only>
+        <entry id="PW08" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PU01" />
+        <entry id="PU09" />
+        <entry id="PA04" />
+        <entry id="PU03" />
+        <entry id="PA01" />
+        <entry id="PS07" />
+        <entry id="PS11" />
+        <entry id="PS08" />
+        <entry id="PS05" />
+        <entry id="PS12" />
+      </only>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(PJ10 PJ12 PJ17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="PJ10" />
+          <entry id="PJ12" />
+          <entry id="PJ17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Thyra - Black Widows" casterId="PW09" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="PW09" />
+        <entry id="PJ05" />
+        <entry id="PJ04" />
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ15" />
+        <entry id="PJ12" />
+        <entry id="PJ10" />
+        <entry id="PJ17" />
+        <entry id="PJ18" />
+        <entry id="PU01" />
+        <entry id="PU08" />
+        <entry id="PU15" />
+        <entry id="PS13" />
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA bonus="512" entryId="PU08" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >For each Daughter of the Flames unit in the army, one warjack in Thyra's battlegroup gains Advance Move.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  PS13-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PS13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Models in the army gain Stealth during the first round of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  PJ18-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PJ18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Warjacks in Thyra's battlegroup are each allocated 1 focus at the start of you first Control Phase of the game.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  
+  <tiers name="Reclaimer2 - Reliquary Guard" casterId="Px02" faction="faction_menoth">
+    <level number="1">
+      <only>
+        <entry id="Px02" />
+        
+        <!-- non character warjacks -->
+        <entry id="PJ01" />
+        <entry id="PJ02" />
+        <entry id="PJ03" />
+        <entry id="PJ04" />
+        <entry id="PJ05" />
+        <entry id="PJ07" />
+        <entry id="PJ08" />
+        <entry id="PJ09" />
+        <entry id="PJ10" />
+        <entry id="PJ12" />
+        <entry id="PJ14" />
+        <entry id="PJ15" />
+        <entry id="PJ17" />
+        <entry id="PJ19" />
+
+         <!-- choirs, bastions, vengers, knights exemplar -->
+        <entry id="PU01" />
+        <entry id="PU04" />
+        <entry id="PU10" />
+        <entry id="PU11" />
+        
+        <!-- bastion senechal, KE senechal, paladin, reclaimer, vassal -->
+        <entry id="PS01" />
+        <entry id="PS02" />
+        <entry id="PS05" />
+        <entry id="PS06" />
+        <entry id="PS10" />
+        <entry id="PS12" />
+        <entry id="PS14" />
+        
+        <!-- vessel of judgment -->
+        <entry id="PE01" />
+        
+      </only>
+      <benefits>
+        <ingameeffect />
+        <alterFA entryId="PS01" bonus="1">
+            <forEach>
+                <entry id="PJ07"/>
+                <entry id="PJ08"/>
+                <entry id="PJ09"/>
+                <entry id="PJ10"/>
+                <entry id="PJ12"/>
+                <entry id="PJ14"/>
+                <entry id="PJ17"/>
+                <entry id="PJ19"/>
+            </forEach>
+        </alterFA>
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2PU04 (2 knight exemplar)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="PU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect ></ingameeffect>
+        <alterCost entryId="PU04" bonus="1"/>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  PS06 (vilmon)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PS06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >You can redeploy Paladin solos after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  PJ18-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="PE01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Your deployment zone is extended 2" forward.</ingameeffect>
+      </benefits>
+    </level>
+  </tiers>
+  
+</tierslist>

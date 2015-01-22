@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- faction icon -->
+
+    <!-- faction name -->
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/army_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="@dimen/textview_standard_height" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@color/White" >
+
+    </FrameLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/numberOwned"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1"
+            android:textSize="@dimen/textview_large_height" />
+
+        <Button
+            android:id="@+id/buttonmore_owned"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@id/numberOwned"
+            android:background="@android:color/transparent"
+            android:minWidth="48dp"
+            android:text="+"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/buttonless_owned"
+            android:background="@android:color/transparent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@id/numberOwned"
+            android:layout_below="@id/buttonmore_owned"
+            android:textColor="@color/White" 
+            android:text="-" />
+
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:background="@color/White" >
+
+    </FrameLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/numberPainted"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="1"
+            android:textSize="@dimen/textview_large_height" />
+
+        <Button
+            android:id="@+id/buttonmore_painted"
+            android:background="@android:color/transparent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@id/numberPainted"
+            android:textColor="@color/White" 
+            android:text="+" />
+
+        <Button
+            android:id="@+id/buttonless_painted"
+            android:background="@android:color/transparent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@id/numberPainted"
+            android:layout_below="@id/buttonmore_painted"
+            android:textColor="@color/White" 
+            android:text="-" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

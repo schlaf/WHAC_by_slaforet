@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:id="@+id/resultsListFragment"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.schlaf.steam.activities.battleresult.BattleResultsListFragment"
+        android:tag="BattleResultsListFragment" >
+    </fragment>
+    
+            <FrameLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/White" >
+
+        </FrameLayout>
+    
+    
+    <FrameLayout
+            android:id="@+id/resultDetail_zone"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+	>
+
+
+    </FrameLayout>
+    <!--
+    <fragment
+        android:id="@+id/resultDetailFragment"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        class="com.schlaf.steam.activities.battleresult.BattleResultDetailFragment"
+        android:tag="BattleResultDetailFragment" >
+    </fragment>
+    -->
+
+
+</LinearLayout>

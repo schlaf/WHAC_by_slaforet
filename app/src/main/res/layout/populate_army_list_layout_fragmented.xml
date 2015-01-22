@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.example.android.common.view.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/blueLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sliding_tabs"
+        android:background="@color/AndroidBlue" >
+
+    </FrameLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/blueLine" >
+
+        <!-- 
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pagerTab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" 
+            android:background="#33b5e5"
+        android:textColor="#fff"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+        </android.support.v4.view.PagerTitleStrip> 
+        
+        
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagerTab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" >
+        </android.support.v4.view.PagerTabStrip> --> 
+    </android.support.v4.view.ViewPager> 
+
+    <ImageView
+        android:id="@+id/tier_level_icon"
+        android:layout_width="@dimen/component_standard_size"
+        android:layout_height="@dimen/component_standard_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/tier_level"
+        android:onClick="displayTierInfo"
+        android:src="@drawable/tier_level_2" />
+    
+    <ImageView
+        android:id="@+id/contract_icon"
+        android:layout_width="@dimen/component_standard_size"
+        android:layout_height="@dimen/component_standard_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/contract_info"
+        android:onClick="displayContractInfo"
+        android:src="@drawable/sceau" />
+
+</RelativeLayout>
+<!--
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="70"
+        android:inAnimation="@anim/push_left_in"
+        android:outAnimation="@anim/push_left_out" >
+
+        <RelativeLayout
+            android:id="@+id/selection_zone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:scaleType="center">
+
+            <fragment
+                android:id="@+id/leftPaneFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                class="com.schlaf.steam.activities.selectlist.SelectionArmyFragment"
+                android:tag="SelectionArmyFragment" >
+            </fragment>
+
+            <ImageButton
+                android:id="@+id/toRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:background="@drawable/empty"
+                android:onClick="toSelectedArmy"
+                android:src="@drawable/drawer_r" >
+
+            </ImageButton>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/selected_zone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:scaleType="center" >
+            <fragment
+                android:id="@+id/rightPaneFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                class="com.schlaf.steam.activities.selectlist.SelectedArmyFragment"
+                android:tag="SelectedArmyFragment" >
+            </fragment>
+            
+            <ImageButton
+                android:id="@+id/toLeftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:background="@drawable/empty"
+                android:onClick="toSelectionArmy"
+                android:src="@drawable/drawer_l" >
+            </ImageButton>
+            
+        </RelativeLayout>
+    </ViewSwitcher> -->

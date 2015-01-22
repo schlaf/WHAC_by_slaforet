@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+ 
+    <item android:id="@+id/menu_sort_winner"
+          yourapp:showAsAction="ifRoom"
+          android:icon="@drawable/sort_winner"
+          android:title="@string/sort_win" />
+    
+    <item android:id="@+id/menu_sort_date"
+         yourapp:showAsAction="ifRoom"
+        android:icon="@drawable/sort_date"
+          android:title="@string/sort_date" /> 
+          
+    
+    <item android:id="@+id/menu_sort_player"
+        yourapp:showAsAction="ifRoom"
+          android:icon="@drawable/sort_player"
+          android:title="@string/sort_opponent" />
+    
+    <item android:id="@+id/menu_export_stats"
+        yourapp:showAsAction="ifRoom"
+          android:icon="@drawable/export"
+          android:title="@string/export_file" />
+    
+    <item android:id="@+id/menu_export_by_mail"
+        yourapp:showAsAction="ifRoom"
+          android:icon="@drawable/ic_dialog_email"
+          android:title="@string/export_mail" />
+
+</menu>

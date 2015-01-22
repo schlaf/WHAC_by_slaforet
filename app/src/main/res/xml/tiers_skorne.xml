@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tiers name="Morghoul - Big Game Hunters" casterId="Sw01" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="Sw01" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB11" />
+        <entry id="SB14" />
+        <entry id="SU02" />
+        <entry id="SU01" />
+        <entry id="SU05" />
+        <entry id="SS03" />
+        <entry id="SS07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="SU05" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2SU02-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2SU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="SB06" />
+        <alterCost bonus="1" entryId="SB07" />
+        <alterCost bonus="1" entryId="SB08" />
+        <alterCost bonus="1" entryId="SB11" />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(SB06 SB07 SB08 SB11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SB06" />
+          <entry id="SB07" />
+          <entry id="SB08" />
+          <entry id="SB11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Morghoul - Imperial Executioners" casterId="Sx01" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="Sx01" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SU01" />
+        <entry id="SU05" />
+        <entry id="SS03" />
+        <entry id="SS07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="SU01" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2SU01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="SS03" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <only>
+        <entry id="Sx01" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB09" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SU01" />
+        <entry id="SU05" />
+        <entry id="SS03" />
+        <entry id="SS07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  4(SB01 SB02 SB03 SB04 SB05 SB09 SB12 SB14 SB15 SB17 SB18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="SB01" />
+          <entry id="SB02" />
+          <entry id="SB03" />
+          <entry id="SB04" />
+          <entry id="SB05" />
+          <entry id="SB09" />
+          <entry id="SB12" />
+          <entry id="SB14" />
+          <entry id="SB15" />
+          <entry id="SB17" />
+          <entry id="SB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Makeda - Army of the Western Reaches" casterId="Sw02" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="Sw02" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB10" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SU03" />
+        <entry id="SA03" />
+        <entry id="SU05" />
+        <entry id="SU09" />
+        <entry id="SU06" />
+        <entry id="SU07" />
+        <entry id="SU08" />
+        <entry id="SA01" />
+        <entry id="SU10" />
+        <entry id="SU11" />
+        <entry id="SA02" />
+        <entry id="SU13" />
+        <entry id="SU14" />
+        <entry id="IS06_minion" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="SU08" />
+        <alterFA bonus="1" entryId="SU11" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2SU11-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="SA02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  SU09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SU09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(SB01 SB02 SB03 SB10 SB14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SB01" />
+          <entry id="SB02" />
+          <entry id="SB03" />
+          <entry id="SB10" />
+          <entry id="SB14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Makeda - Imperishable Dominion" casterId="Sx02" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="Sx02" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB10" />
+        <entry id="SB14" />
+        <entry id="SU05" />
+        <entry id="SU09" />
+        <entry id="SU06" />
+        <entry id="SU07" />
+        <entry id="SU08" />
+        <entry id="SA01" />
+        <entry id="SS02" />
+        <entry id="SS09" />
+        <entry id="SS04" />
+        <entry id="SS08" />
+        <entry id="SS05" />
+        <entry id="MS15_minion" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="SU06" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2SU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="SA01" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  SS05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SS05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  SB10-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SB10" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Makeda3 - Armageddon" casterId="Sz02" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="Sz02" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SE01" />
+        <entry id="SU05" />
+        <entry id="SU02" />
+        <entry id="SU03" />
+        <entry id="SU15" />
+        <entry id="SA03" />
+        <entry id="SU07" />
+        <entry id="SU08" />
+        <entry id="SA01" />
+        <entry id="SS02" />
+        <entry id="SS09" />
+        <entry id="SS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  SS08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Aptimus Marketh and Ancestral Guardian solos start the game with a soul token</ingameeffect>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(SB01 SB02 SB03 SB04 SB05 SB06 SB07 SB08 SB09 SB11 SB12 SB14 SB15 SB17 SB18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="SB01" />
+          <entry id="SB02" />
+          <entry id="SB03" />
+          <entry id="SB04" />
+          <entry id="SB05" />
+          <entry id="SB06" />
+          <entry id="SB07" />
+          <entry id="SB08" />
+          <entry id="SB09" />
+          <entry id="SB11" />
+          <entry id="SB12" />
+          <entry id="SB14" />
+          <entry id="SB15" />
+          <entry id="SB17" />
+          <entry id="SB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect >Gain +1 to the roll at the start of the game.</ingameeffect>
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  SB18-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="2" entryId="SE01" />
+        <alterCost bonus="2" entryId="SB18" />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Hexeris - Kingdom of Shadow" casterId="Sw03" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="Sw03" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SU05" />
+        <entry id="SU02" />
+        <entry id="SU03" />
+        <entry id="SA03" />
+        <entry id="SU06" />
+        <entry id="SU07" />
+        <entry id="SU08" />
+        <entry id="SU15" />
+        <entry id="SA01" />
+        <entry id="SS01" />
+        <entry id="SS06" />
+        <entry id="SS02" />
+        <entry id="SS09" />
+        <entry id="SS04" />
+        <entry id="SS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2SU08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  SS08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(SU02 SU03 SU15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU02" />
+          <entry id="SU03" />
+          <entry id="SU15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="epic Hexeris - Practical Magic" casterId="Sx03" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="Sx03" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SU05" />
+        <entry id="SU06" />
+        <entry id="SU07" />
+        <entry id="SU08" />
+        <entry id="SA01" />
+        <entry id="SU10" />
+        <entry id="SU11" />
+        <entry id="SA02" />
+        <entry id="SU13" />
+        <entry id="SU14" />
+        <entry id="SS01" />
+        <entry id="SS06" />
+        <entry id="SS02" />
+        <entry id="SS09" />
+        <entry id="SS04" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  4(SS02 SS09)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+          <entry id="SS02" />
+          <entry id="SS09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="SS02" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(SU05 SU06 SU07 SU08 SU10 SU11 SU12 SU13 SU14)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU05" />
+          <entry id="SU06" />
+          <entry id="SU07" />
+          <entry id="SU08" />
+          <entry id="SU10" />
+          <entry id="SU11" />
+          <entry id="SU12" />
+          <entry id="SU13" />
+          <entry id="SU14" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(SB01 SB02 SB03 SB04 SB05 SB06 SB07 SB08 SB09 SB11 SB12 SB14 SB15 SB17 SB18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="SB01" />
+          <entry id="SB02" />
+          <entry id="SB03" />
+          <entry id="SB04" />
+          <entry id="SB05" />
+          <entry id="SB06" />
+          <entry id="SB07" />
+          <entry id="SB08" />
+          <entry id="SB09" />
+          <entry id="SB11" />
+          <entry id="SB12" />
+          <entry id="SB14" />
+          <entry id="SB15" />
+          <entry id="SB17" />
+          <entry id="SB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Xerxis - The fist of Halaak" casterId="SW04" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="SW04" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB10" />
+        <entry id="SB11" />
+        <entry id="SB13" />
+        <entry id="SB15" />
+        <entry id="SU05" />
+        <entry id="SU09" />
+        <entry id="SU02" />
+        <entry id="SU03" />
+        <entry id="SA03" />
+        <entry id="SU10" />
+        <entry id="SU11" />
+        <entry id="SA02" />
+        <entry id="SU13" />
+        <entry id="SU14" />
+        <entry id="SU15" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="512" entryId="SU02" />
+        <alterFA bonus="512" entryId="SU03" />
+        <alterFA bonus="512" entryId="SU15" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(SU02 SU03 SU15)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU02" />
+          <entry id="SU03" />
+          <entry id="SU15" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <alterCost bonus="1" entryId="SU02" />
+        <alterCost bonus="1" entryId="SU03" />
+        <alterCost bonus="1" entryId="SU15" />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(SU10 SU13)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU10" />
+          <entry id="SU13" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  SB08-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SB08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Xerxis - The Abyssal Cohort (NQ39)" casterId="SW04" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="SW04" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB13" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SU03" />
+        <entry id="SU05" />
+        <entry id="SU07" />
+        <entry id="SU09" />
+        <entry id="SS02" />
+        <entry id="SS04" />
+        <entry id="SS08" />
+        <entry id="SS09" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(SU07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2(SS02 SS04)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SS02" />
+          <entry id="SS04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2(SB06)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SB06" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Zaal - Immortal Host" casterId="SW05" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="SW05" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SU04" />
+        <entry id="SU06" />
+        <entry id="SU07" />
+        <entry id="SU08" />
+        <entry id="SA01" />
+        <entry id="SS02" />
+        <entry id="SS09" />
+        <entry id="SS04" />
+        <entry id="SS08" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="SU04" />
+        <alterFA bonus="1" entryId="SS02" />
+        <alterFA bonus="1" entryId="SS04" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  SS09-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SS09" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  3(SS04 SS08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="SS04" />
+          <entry id="SS08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  2SU04-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU04" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Mordikaar - Legions of the Abyss" casterId="SW06" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="SW06" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB09" />
+        <entry id="SB11" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB16" />
+        <entry id="SB17" />
+        <entry id="SB18" />
+        <entry id="SU12" />
+        <entry id="SU07" />
+        <entry id="SU08" />
+        <entry id="SA01" />
+        <entry id="SS01" />
+        <entry id="SS06" />
+        <entry id="IS02" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2(SU12 SU07 SU08)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU12" />
+          <entry id="SU07" />
+          <entry id="SU08" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+        <freeModel>
+          <entry id="SS06" />
+        </freeModel>
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  5(SS06 IS02)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="5">
+          <entry id="SS06" />
+          <entry id="IS02" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(SB01 SB02 SB03 SB04 SB05 SB06 SB07 SB08 SB09 SB11 SB12 SB14 SB15 SB16 SB17 SB18)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="SB01" />
+          <entry id="SB02" />
+          <entry id="SB03" />
+          <entry id="SB04" />
+          <entry id="SB05" />
+          <entry id="SB06" />
+          <entry id="SB07" />
+          <entry id="SB08" />
+          <entry id="SB09" />
+          <entry id="SB11" />
+          <entry id="SB12" />
+          <entry id="SB14" />
+          <entry id="SB15" />
+          <entry id="SB16" />
+          <entry id="SB17" />
+          <entry id="SB18" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Rasheth - Chain Gang" casterId="SW07" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="SW07" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB06" />
+        <entry id="SB07" />
+        <entry id="SB08" />
+        <entry id="SB11" />
+        <entry id="SU02" />
+        <entry id="SU05" />
+        <entry id="SU12" />
+        <entry id="SU10" />
+        <entry id="SU11" />
+        <entry id="SA02" />
+        <entry id="SU13" />
+        <entry id="SU14" />
+        <entry id="IU01" />
+        <entry id="IU02" />
+        <entry id="IU03" />
+        <entry id="IU04" />
+        <entry id="IU05" />
+        <entry id="IU06" />
+        <entry id="IU07" />
+        <entry id="SS01" />
+        <entry id="SS07" />
+      </only>
+      <benefits>
+        <ingameeffect >Add Agonizer FA for each titan included.</ingameeffect>
+        <alterFA entryId="SS01" bonus="1">
+          <forEach>
+            <entry id="SB06" />
+            <entry id="SB07" />
+            <entry id="SB08" />
+            <entry id="SB11" />
+          </forEach>
+        </alterFA>
+        <alterCost bonus="1" entryId="SB06" />
+        <alterCost bonus="1" entryId="SB07" />
+        <alterCost bonus="1" entryId="SB08" />
+        <alterCost bonus="1" entryId="SB11" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  1SS07|1(IU01 IU02 IU03 IU04 IU05 IU06 IU07)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="SS07" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+          <entry id="IU01" />
+          <entry id="IU02" />
+          <entry id="IU03" />
+          <entry id="IU04" />
+          <entry id="IU05" />
+          <entry id="IU06" />
+          <entry id="IU07" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2SS01-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SS01" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(SB06 SB07 SB08 SB11)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="SB06" />
+          <entry id="SB07" />
+          <entry id="SB08" />
+          <entry id="SB11" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+  <tiers name="Naaresh - No Pain, No Gain" casterId="SW08" faction="faction_skorne">
+    <level number="1">
+      <only>
+        <entry id="SW08" />
+        <entry id="SB01" />
+        <entry id="SB02" />
+        <entry id="SB03" />
+        <entry id="SB04" />
+        <entry id="SB05" />
+        <entry id="SB09" />
+        <entry id="SB12" />
+        <entry id="SB14" />
+        <entry id="SB15" />
+        <entry id="SB17" />
+        <entry id="SU01" />
+        <entry id="SU05" />
+        <entry id="SU12" />
+        <entry id="SS01" />
+        <entry id="SS03" />
+        <entry id="SS07" />
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterFA bonus="1" entryId="SU05" />
+        <alterFA bonus="1" entryId="SU12" />
+      </benefits>
+    </level>
+    <level number="2">
+      <!-- Must have  2SU12-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU12" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="3">
+      <!-- Must have  2SU05-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+          <entry id="SU05" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+    <level number="4">
+      <!-- Must have  3(SB01 SB02 SB03 SB04 SB05 SB09 SB12 SB14 SB15 SB17)-->
+      <must_have>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+          <entry id="SB01" />
+          <entry id="SB02" />
+          <entry id="SB03" />
+          <entry id="SB04" />
+          <entry id="SB05" />
+          <entry id="SB09" />
+          <entry id="SB12" />
+          <entry id="SB14" />
+          <entry id="SB15" />
+          <entry id="SB17" />
+        </entrygroup>
+      </must_have>
+      <benefits>
+        <ingameeffect  />
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

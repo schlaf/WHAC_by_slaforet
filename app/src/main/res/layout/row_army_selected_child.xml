@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fond_degrade"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="true">
+
+	<ImageView 
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/empty"
+        android:contentDescription="@string/empty"
+        android:text="@+id/def_arm_label"
+        >
+    </ImageView>    
+    
+	<ImageView android:id="@+id/childImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/s_icon"
+        android:contentDescription="@string/empty"
+        android:text="@+id/def_arm_label"
+        >
+    </ImageView>	
+    
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/entry_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_cost"
+                android:textSize="@dimen/textview_standard_height"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textStyle="normal" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/empty"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_menu_delete" />
+
+</LinearLayout>

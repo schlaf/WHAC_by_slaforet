@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="warmachine.xsd">
+	<armies>
+	    
+	    
+	    
+<army name="Minions" faction="faction_minions">
+    
+    <warlocks>
+<warlock  id="IW05" name="Lord Carver" full_name="Lord Carver" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</warlock>
+<warlock  id="IW06" name="Bloody Barnabas" full_name="Bloody Barnabas" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</warlock>
+<warlock  id="IW07" name="Calaban, the Gravewalker" full_name="Calaban, the Gravewalker" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</warlock>
+<warlock  id="IW08" name="Dr. Arkadius" full_name="Dr. Arkadius" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_skorne" />
+</warlock>
+<warlock  id="IW09" name="Maelok, the Dreadbound" full_name="Maelok, the Dreadbound" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</warlock>
+<warlock  id="IW10" name="Sturm und Drang" full_name="Sturm und Drang" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</warlock>
+<warlock  id="IW11" name="Midas" full_name="Midas" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</warlock>
+<warlock  id="IW12" name="Rask" full_name="Rask" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+	<weapons></weapons>
+	<feat title=""></feat>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</warlock>        
+<warlock id="IW13" name="Helga the Conqueror" generation="P" full_name="Helga the Conqueror" qualification="Minion Farrow Warlock" fury="6" warbeast_points="6" fa="C">
+      <basestats name="HELGA" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+      <weapons>
+      </weapons>
+      <feat title=""></feat>
+      <works_for id="faction_orboros" />
+      <works_for id="faction_everblight" />
+      <works_for id="faction_trollblood" />
+      <works_for id="faction_skorne" />
+</warlock>
+<warlock id="IW14" name="Jaga-Jaga, The Death Charmer" generation="P" full_name="Jaga-Jaga, The Death Charmer" qualification="Minion Gatorman Warlock" fury="7" warbeast_points="5" fa="C">
+      <basestats name="JAGA-JAGA" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+      <weapons>           
+      </weapons>
+      <feat title=""></feat>
+      <works_for id="faction_orboros" />
+      <works_for id="faction_everblight" />
+      <works_for id="faction_trollblood" />
+      <works_for id="faction_skorne" />
+</warlock>
+</warlocks>
+    
+<warjacks>
+        <warjack id="MJ04_minion" name="Buccaneer" full_name="Buccaneer" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="3" qualification="Mercenary Light Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+		  <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ12_minion" name="Freebooter" full_name="Freebooter" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="6" qualification="Mercenary Heavy Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ09_minion" name="Mangler" full_name="Mangler" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Mercenary Heavy Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+  <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ13_minion" name="Mariner" full_name="Mariner" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Mercenary Heavy Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ10_minion" name="Mule" full_name="Mule" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Mercenary Heavy Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+  <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ11_minion" name="Nomad" full_name="Nomad" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="6" qualification="Mercenary Heavy Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+  <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ17_minion" name="Rocinante" full_name="Rocinante" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Mercenary Heavy Character Warjack" fa="C" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+    <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ16_minion" name="Rover" full_name="Rover" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Mercenary Heavy Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+    <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ02_minion" name="Talon" full_name="Talon" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Mercenary Light Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+    <restricted_to id="MS26_minion" />
+        </warjack>
+
+        <warjack id="MJ03_minion" name="Vanguard" full_name="Vanguard" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="5" qualification="Mercenary Light Warjack" fa="U" completed="true">
+          <basestats name="Model" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons/>
+    <restricted_to id="MS26_minion" />
+        </warjack>
+  </warjacks>          
+    
+<warbeasts>
+    <warbeast  id="IB01" name="Gun Boar" full_name="Gun Boar" damage_spiral="6-10-6" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW08"/>
+	<restricted_to id="IW10"/>
+	<restricted_to id="IW11"/>
+	<restricted_to id="IW05"/>
+		  <restricted_to id="IW13" />
+	<restricted_to id="IW03_minion"/>
+</warbeast>
+<warbeast  id="IB02" name="War Hog" full_name="War Hog" damage_spiral="9-12-7" fury="0" threshold="0" cost="8" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW08"/>
+	<restricted_to id="IW10"/>
+	<restricted_to id="IW11"/>
+	<restricted_to id="IW05"/>
+		  <restricted_to id="IW13" />
+	<restricted_to id="IW03_minion"/>
+</warbeast>
+
+<warbeast  id="IB03" name="Blackhide Wrastler" full_name="Blackhide Wrastler" damage_spiral="5-14-8" fury="0" threshold="0" cost="9" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW06"/>
+	<restricted_to id="IW07"/>
+	<restricted_to id="IW09"/>
+	<restricted_to id="IW12"/>
+	<restricted_to id="IW14" />
+	<restricted_to id="IW04_minion"/>
+</warbeast>
+<warbeast  id="IB04" name="Bull Snapper" full_name="Bull Snapper" damage_spiral="4-7-5" fury="0" threshold="0" cost="3" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW06"/>
+	<restricted_to id="IW07"/>
+	<restricted_to id="IW09"/>
+	<restricted_to id="IW12"/>
+		  <restricted_to id="IW14" />
+	<restricted_to id="IW04_minion"/>
+</warbeast>
+<warbeast  id="IB05" name="Ironback Spitter" full_name="Ironback Spitter" damage_spiral="7-11-9" fury="0" threshold="0" cost="8" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW06"/>
+	<restricted_to id="IW07"/>
+	<restricted_to id="IW09"/>
+	<restricted_to id="IW12"/>
+		  <restricted_to id="IW14" />
+	<restricted_to id="IW04_minion"/>
+</warbeast>
+<warbeast  id="IB06" name="Road Hog" full_name="Road Hog" damage_spiral="9-12-9" fury="0" threshold="0" cost="9" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW08"/>
+	<restricted_to id="IW10"/>
+	<restricted_to id="IW11"/>
+	<restricted_to id="IW05"/>
+		  <restricted_to id="IW13" />
+	<restricted_to id="IW03_minion"/>
+</warbeast>
+<warbeast  id="IB07" name="Bone Swarm" full_name="Bone Swarm" damage_spiral="5-7-6" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW06"/>
+	<restricted_to id="IW07"/>
+	<restricted_to id="IW09"/>
+	<restricted_to id="IW12"/>
+		  <restricted_to id="IW14" />
+</warbeast>
+
+<warbeast  id="IB07_midas" name="Bone Swarm" full_name="Bone Swarm (Midas Tier only)" damage_spiral="5-7-6" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
+  <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+  <weapons></weapons>
+  <restricted_to id="IW11"/>
+  <only_in_tier id="Midas - Butcher's Block"></only_in_tier>
+</warbeast>
+
+
+<warbeast  id="IB08" name="Swamp Horror" full_name="Swamp Horror" damage_spiral="8-11-8" fury="0" threshold="0" cost="8" qualification="Heavy Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW06"/>
+	<restricted_to id="IW07"/>
+	<restricted_to id="IW09"/>
+	<restricted_to id="IW12"/>
+		  <restricted_to id="IW14" />
+	<restricted_to id="IW04_minion"/>
+</warbeast>
+<warbeast  id="IB09" name="Razor Boar" full_name="Razor Boar" damage_spiral="4-6-4" fury="0" threshold="0" cost="2" qualification="Light Warbeast" fa="U">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW08"/>
+	<restricted_to id="IW10"/>
+	<restricted_to id="IW11"/>
+	<restricted_to id="IW05"/>
+		  <restricted_to id="IW13" />
+	<restricted_to id="IW03_minion"/>
+</warbeast>
+
+
+<warbeast  id="Lug_minion" name="Lug" full_name="Lug" damage_spiral="8-11-8" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW01_minion"/>
+</warbeast>		        
+<warbeast  id="Skarath_minion" name="Skarath" full_name="Skarath" damage_spiral="7-9-9" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW02_minion"/>
+</warbeast>		        
+<warbeast  id="Brine_minion" name="Brine" full_name="Brine" damage_spiral="5-12-9" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW03_minion"/>
+</warbeast>		        
+<warbeast  id="Snapjaw_minion" name="Snapjaw" full_name="Snapjaw" damage_spiral="5-14-8" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<restricted_to id="IW04_minion"/>
+</warbeast>		        
+
+<warbeast  id="OB02_minion_arkadius" name="Gorax(Arkadius)" full_name="Gorax(Arkadius)" damage_spiral="7-8-7" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
+    <basestats name="Gorax" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+    <weapons />
+	<restricted_to id="IW08"/>
+	<only_in_tier id="Dr. Arkadius - Nature of the Beast (NQ56)"></only_in_tier>
+</warbeast>		        
+
+
+</warbeasts>    
+
+<battleEngines>
+  <battleEngine id="IE01" name="Meat Thresher" full_name="Meat Thresher" qualification="Minion Farrow Battle Engine" fa="2" cost="9">
+    <basestats name="THRESHER" spd="6" str="12" mat="6" rat="5" def="10" arm="19" cmd="10" hitpoints="22" construct="true" />
+    <weapons/>
+    <works_for id="faction_skorne" />
+    <works_for id="faction_trollblood" /> 
+  </battleEngine>
+  <battleEngine id="IE02" name="Sacral Vault" full_name="Sacral Vault" qualification="Minion Gatorman Battle Engine" fa="2" cost="9">
+    <basestats name="SACRAL VAULT" spd="4" str="10" mat="-" rat="5" def="9" arm="20" cmd="10" hitpoints="20" construct="true" eyeless_sight="true" gunfighter="true" />
+    <weapons/>
+    <works_for id="faction_orboros" />
+    <works_for id="faction_everblight" /> 
+  </battleEngine>
+</battleEngines>
+
+<units>
+<unit  id="IU01" name="Bog Trog Ambushers" full_name="Bog Trog Ambushers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+<unit  id="IU02" name="Farrow Bone Grinders" full_name="Farrow Bone Grinders" base_cost="2" baseCount="4" full_cost="3" fullCount="6" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+<unit  id="IU03" name="Farrow Brigands" full_name="Farrow Brigands" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+<unit  id="IU04" name="Gatormen Posse" full_name="Gatormen Posse" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+<unit  id="IU05" name="Swamp Gobber Bellows Crew" full_name="Swamp Gobber Bellows Crew" base_cost="1" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="1">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+<unit  id="IU06" name="Farrow Razorback Crew" full_name="Farrow Razorback Crew" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+<unit  id="IU07" name="Farrow Slaughterhousers" full_name="Farrow Slaughterhousers" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+<unit  id="IU08" name="Gatorman Bokor and Bog Trog Shamblers" full_name="Gatorman Bokor and Bog Trog Shamblers" base_cost="6" baseCount="10" full_cost="-" fullCount="-" qualification="Unit" fa="1">
+	<basestats name="Bokor" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+<model  id="Shamblers">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+</model>
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</unit>
+
+        <unit id="MU05_minion" name="Cylena Raefyll &amp; Nyss Hunters" full_name="Cylena Raefyll &amp; Nyss Hunters" base_cost="7" baseCount="6" full_cost="10" fullCount="10" qualification="Character Unit" fa="C">
+          <basestats name="Cylena" spd="7" str="5" mat="7" rat="7" def="15" arm="11" cmd="9" hitpoints="5" officer="true" pathfinder="true"/>
+          <weapons>
+              <ranged_weapon pow="10" aoe="-" rng="12" rof="1" name="Nyss Bow"></ranged_weapon>
+              <melee_weapon p_plus_s="9" pow="4" name="Nyss Claymore" weapon_master="true"></melee_weapon>
+          </weapons>
+          <capacity title="Mercenaries">This model will work for Cryx, Cygnar, Khador and the Retribution.</capacity>
+          <capacity title="Minions">This model will work for Circle and Trollbloods.</capacity>
+          <capacity title="Animosity [Blighted]">This model cannot be included in an army that includes one or more models of the listed type.</capacity>
+          <capacity title="Granted: Combined Ranged Attack">While this model is in play, models in its unit gain Combined Ranged Attack.</capacity>
+          <capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack,</capacity>
+          <model id="nyss">
+            <basestats name="Grunt" spd="7" str="5" mat="6" rat="6" def="15" arm="11" cmd="8" pathfinder="true"/>
+            <weapons>
+              <ranged_weapon pow="10" aoe="-" rng="12" rof="1" name="Nyss Bow"></ranged_weapon>
+              <melee_weapon p_plus_s="9" pow="4" name="Nyss Claymore" weapon_master="true"></melee_weapon>
+          	</weapons>
+          	<capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack,</capacity>
+          </model>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+          	
+        </unit>
+
+        <unit id="MU16_minion" name="Dannon Blythe &amp; Bull" full_name="Dannon Blythe &amp; Bull" base_cost="4" baseCount="2" full_cost="-" fullCount="-" qualification="Minion Character Unit" fa="C" >
+          <basestats name="Blythe" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+          <weapons>
+          </weapons>
+         
+          <model id="Bull">
+            <basestats name="Bull" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+            <weapons>
+            </weapons>
+          </model>
+          <works_for id="faction_trollblood" />
+          
+        </unit>        
+
+<unit id="MU01_minion" name="Greygore Boomhowler &amp; Co." full_name="Greygore Boomhowler &amp; Co." base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Minion Character Unit" fa="C" >
+          <basestats name="Boomhowler" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8"/>
+          <weapons>
+          </weapons>
+          <model id="grunts" name="Grunts" full_name="Grunts">
+            <basestats name="Grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+	          <weapons>
+	          </weapons>
+          </model>
+          <works_for id="faction_trollblood" />
+        </unit>				
+				
+</units>
+<solos>
+    <solo  id="IS01_minion" name="Alten Ashley, Monster Hunter" full_name="Alten Ashley, Monster Hunter" cost="2" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_trollblood" />
+</solo>
+<solo  id="IS02" name="Feralgeist" full_name="Feralgeist" cost="1" qualification="Solo" fa="3">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS03_minion" name="Gudrun the Wanderer" full_name="Gudrun the Wanderer" cost="3" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS04_minion" name="Lanyssa Ryssyll, Nyss Sorceress" full_name="Lanyssa Ryssyll, Nyss Sorceress" cost="2" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_trollblood" />
+</solo>
+<solo  id="IS05_minion" name="Professor Victor Pendrake" full_name="Professor Victor Pendrake" cost="2" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_trollblood" />
+</solo>
+<solo  id="IS06_minion" name="Saxon Orrik" full_name="Saxon Orrik" cost="2" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS07" name="Totem Hunter" full_name="Totem Hunter" cost="3" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS08" name="Thrullg" full_name="Thrullg" cost="3" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS09" name="Croak Hunter" full_name="Croak Hunter" cost="2" qualification="Solo" fa="3">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS10" name="Targ" full_name="Targ" cost="2" qualification="Character Solo" fa="C">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS11" name="Gatorman Witch Doctor" full_name="Gatorman Witch Doctor" cost="3" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IS12_minion" name="Goblin Tinker" full_name="Goblin Tinker" cost="1" qualification="Solo" fa="2">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+
+<solo id="MS15_minion" name="Orin Midwinter, Rogue Inquisitor" full_name="Orin Midwinter, Rogue Inquisitor" cost="2" qualification="Character Solo" fa="C">
+          <basestats name="Orin Midwinter, Rogue Inquisitor" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <works_for id="faction_skorne" />
+        </solo>
+
+<solo id="MS01_minion" name="Eiryss" full_name="Eiryss" cost="3" qualification="Character Solo" fa="C">
+          <basestats name="Eiryss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <works_for id="faction_orboros" />
+          <only_in_tier id="epic Krueger - Wake of Destruction (NQ38)"/>
+        </solo>
+
+<solo id="MS26_minion" name="Moorclaw" full_name="Raluk Moorclaw, The Ironmonger" fa="C" cost="2" qualification="Mercenary Minion Trollkin Character Solo">
+ <basestats name="Moorclaw" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+<weapons>
+ </weapons>
+ <works_for id="faction_trollblood"/>
+ </solo>
+
+<!-- lesser warlocks -->
+
+<solo  id="IW01_minion" name="Brun Cragback &amp; Lug" full_name="Brun Cragback &amp; Lug" cost="9" qualification="Character Solo" fa="C" companionId="Lug_minion">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8" lesser_warlock="true"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_trollblood" />
+</solo>
+<solo  id="IW02_minion" name="Dahlia Hallyr &amp; Skarath" full_name="Dahlia Hallyr &amp; Skarath" cost="9" qualification="Character Solo" fa="C" companionId="Skarath_minion">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8" lesser_warlock="true"/>
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_trollblood" />
+</solo>
+<solo  id="IW03_minion" name="Rorsh &amp; Brine" full_name="Rorsh &amp; Brine" cost="9" qualification="Character Solo" fa="C" companionId="Brine_minion">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8" lesser_warlock="true" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+</solo>
+<solo  id="IW04_minion" name="Wrong Eye &amp; Snapjaw" full_name="Wrong Eye &amp; Snapjaw" cost="9" qualification="Character Solo" fa="C" companionId="Snapjaw_minion">
+	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8" lesser_warlock="true" />
+	<weapons></weapons>
+	
+	<works_for id="faction_orboros" />
+	<works_for id="faction_everblight" />
+	<works_for id="faction_trollblood" />
+	<works_for id="faction_skorne" />
+	
+</solo>
+
+
+<solo id="IS13" name="Efaarit Scouts" full_name="Efaarit Scouts" qualification="Minion Light Cavalry Solo" fa="2" cost="3">
+  <basestats name="EFAARIT SCOUTS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"  />
+  <weapons/>
+  <works_for id="faction_orboros" />
+  <works_for id="faction_skorne" />
+  <works_for id="faction_trollblood" />          
+</solo>
+
+<solo id="IS14" name="Maximus" full_name="Maximus" qualification="Minion Farrow Character Solo" fa="C" cost="2">
+  <basestats name="MAXIMUS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8"/>
+  <weapons/>
+  <works_for id="faction_orboros" />
+  <works_for id="faction_everblight" />
+  <works_for id="faction_skorne" />
+  <works_for id="faction_trollblood" />          
+</solo>
+
+</solos>
+</army>
+		
+
+</armies>
+	
+		    
+</ruleset>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    style="@style/lightUI"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:orientation="vertical"
+    tools:ignore="DuplicateIds" >
+
+    <TableLayout
+        android:id="@+id/spellTable"
+        style="@style/lightUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            style="@style/lightUI.header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/lightUI.mainValues.text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="SPELL" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="COST" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="RNG" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="AOE" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="POW" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="UP" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lightUI.header.titleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="OFF" />
+        </TableRow>
+
+        <include
+            android:id="@+id/toRemove1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/spell_line_carac" />
+
+        <include
+            android:id="@+id/toRemove2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/spell_line_text" />
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/spellTable"
+        android:background="@color/Black" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Used by : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewSpellUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</RelativeLayout>

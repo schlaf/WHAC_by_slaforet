@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+  <tiers name="General rules" casterId="" faction="none">
+    <level number="1">
+      <only>
+      </only>
+      <benefits>
+        <ingameeffect  />
+        <alterCost entryId="CJ01" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ02" bonus="1" onlyIfAttachedTo="CS13"/>
+        <alterCost entryId="CJ03" bonus="1" onlyIfAttachedTo="CS13"/>
+      </benefits>
+    </level>
+  </tiers>
+</tierslist>

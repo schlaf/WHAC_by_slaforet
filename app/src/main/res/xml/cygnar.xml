@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="warmachine.xsd">
+  <armies>
+    <army faction="faction_cygnar" name="cygnar">
+      <warcasters>
+        <warcaster id="Yw01" name="Haley1" full_name="Captain Victoria Haley" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yx01" name="Haley2" full_name="Major Victoria Haley" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yw02" name="Stryker1" full_name="Commander Coleman Stryker" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title="" />
+        </warcaster>
+        <warcaster id="Yx02" name="Stryker2" full_name="Lord Commander Stryker" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yz02" name="Stryker3" full_name="Lord General Coleman Stryker" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yw03" name="Caine1" full_name="Lieutenant Allister Caine" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Allister Caine" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yx03" name="Caine2" full_name="Captain Allister Caine" generation="E" qualification="epic warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Allister Caine" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yw04" name="Nemo1" full_name="Commander Adept Nemo" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yx04" name="Nemo2" full_name="General Adept Nemo" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="Yz04" name="Nemo3" full_name="Artificer General Nemo &amp; Storm Chaser Adept Finch" generation="EE" qualification="warcaster" focus="6" warjack_points="3" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+          <weapons />
+          <feat />
+          <model id="Finch" full_name="Finch" qualification="cygnar solo">
+            <basestats name="Finch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </warcaster>
+        <warcaster id="YW05" name="Siege" full_name="Major Markus 'Siege' Brisbane" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="YW06" name="Kraye" full_name="Captain Jeremiah Kraye" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="YW07" name="Darius" full_name="Captain E. Dominic Darius &amp; Halfjacks" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="22" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="YW08" name="Kara Sloan" full_name="Captain Kara Sloan" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="YW09" name="Constance Blaize" full_name="Constance Blaize, Knight of the Prophet" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat />
+        </warcaster>
+        <warcaster id="YW10" name="Sturgis" full_name="Commander Dalin Sturgis" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Sturgis" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title="" />
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="YJ01" name="Charger" full_name="Charger" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Cygnar Light warjack" fa="U">
+          <basestats name="Charger" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ02" name="Lancer" full_name="Lancer" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="6" qualification="Cygnar Light warjack" fa="U">
+          <basestats name="Lancer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ03" name="Sentinel" full_name="Sentinel" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ04" name="Hunter" full_name="Hunter" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="6" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ05" name="Grenadier" full_name="Grenadier" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="5" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ06" name="Thorn" full_name="Thorn" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="8" qualification="Light Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ07" name="Defender" full_name="Defender" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ08" name="Ironclad" full_name="Ironclad" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="7" qualification="Cygnar Heavy warjack" fa="U">
+          <basestats name="Ironclad" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ09" name="Centurion" full_name="Centurion" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ10" name="Stormclad" full_name="Stormclad" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ11" name="Thunderhead" full_name="Thunderhead" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="12" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ12" name="Hammersmith" full_name="Hammersmith" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ13" name="Ol' Rowdy" full_name="Ol' Rowdy" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ14" name="Cyclone" full_name="Cyclone" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ15" name="Firefly" full_name="Firefly" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="5" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ16" name="Triumph" full_name="Triumph" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="11" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ17" name="Gallant" full_name="Gallant" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ18" name="Minuteman" full_name="Minuteman" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="5" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ19" name="Avenger" full_name="Avenger" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="YJ21" name="Reliant" full_name="Reliant" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="8" qualification="Cygnar Heavy warjack" fa="U">
+          <basestats name="Reliant" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="YJ22" name="Dynamo" full_name="Dynamo" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="10" qualification="Cygnar Character Heavy Warjack" fa="C">
+          <basestats name="Dynamo" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        
+      </warjacks>
+      <colossals>
+        <colossal id="YJ20" name="Stormwall" full_name="Stormwall" damage_grid_left="xxxxx.xxx.......SS.LLLSCLLCCCCLCMMMM" damage_grid_right=".xxxxx...xxxSS....CSRRR.CCCCRRMMMMCR" cost="19" qualification="Heavy Warjack" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="YE01" cost="9" fa="2" name="Storm Strider" full_name="Storm Strider" qualification="Cygnar Battle Engine">
+          <basestats name="Storm Strider" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="22" />
+          <weapons />
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="YU01" name="Arcane Tempest Gun Mages" full_name="Arcane Tempest Gun Mages" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="YA01" name="Arcane Tempest Gun Mage Officer" full_name="Arcane Tempest Gun Mage Officer" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Arcane Tempest Gun Mage Officer">
+              <basestats name="Arcane Tempest Gun Mage Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" jack_marshal="true" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU02" name="Long Gunner Infantry" full_name="Long Gunner Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="YA07" name="Long Gunner Infantry Officer &amp; Standard" full_name="Long Gunner Infantry Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Long Gunner Infantry Officer">
+              <basestats name="Long Gunner Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Long Gunner Infantry Standard">
+              <basestats name="Long Gunner Infantry Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU03" name="Field Mechaniks" full_name="Field Mechaniks" base_cost="2" baseCount="3" full_cost="3" fullCount="6" qualification="Unit" fa="3">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" jack_marshal="true" />
+          <weapons />
+        </unit>
+        <unit id="YU04" name="Stormblade Infantry" full_name="Stormblade Infantry" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="YA02" name="Stormblade Infantry Officer &amp; Standard" full_name="Stormblade Infantry Officer &amp; Standard" fa="1" cost="3" qualification="Unit attachment">
+            <model id="Stormblade Infantry Officer">
+              <basestats name="Stormblade Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" jack_marshal="true" />
+            </model>
+            <model id="Stormblade Infantry Standard">
+              <basestats name="Stormblade Infantry Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="YA09" name="Stormblade Infantry Storm Gunner" full_name="Stormblade Infantry Storm Gunner" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+            <model id="Storm Gunner">
+              <basestats name="Storm Gunner" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="YU05" name="Trencher Infantry" full_name="Trencher Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true" has_weapon_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="YA03" name="Trencher Infantry Officer &amp; Sniper" full_name="Trencher Infantry Officer &amp; Sniper" fa="1" cost="3" qualification="Unit attachment">
+            <model id="Trencher Infantry Officer">
+              <basestats name="Trencher Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" jack_marshal="true" />
+            </model>
+            <model id="Trencher Infantry Sniper">
+              <basestats name="Trencher Infantry Sniper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="YA04" name="Trencher Infantry Grenadier" full_name="Trencher Infantry Grenadier" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+            <model id="Trencher Infantry Grenadier">
+              <basestats name="Trencher Infantry Grenadier" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="YU06" name="Trencher Chaingun Crew" full_name="Trencher Chaingun Crew" base_cost="2" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="YU07" name="Trencher Cannon Crew" full_name="Trencher Cannon Crew" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="YU08" name="Sword Knights" full_name="Sword Knights" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="YA05" name="Sword Knight Officer &amp; Standard" full_name="Sword Knight Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Sword Knight Officer">
+              <basestats name="Sword Knight Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" jack_marshal="true" />
+            </model>
+            <model id="Sword Knight Standard">
+              <basestats name="Sword Knight Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU09" name="Stormguard" full_name="Stormguard" base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="YU10" name="Storm Lances" full_name="Storm Lances" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+        <unit id="YU11" name="Black 13th Gun Mage Strike Team" full_name="Black 13th Gun Mage Strike Team" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+          <basestats name="Lynch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <model id="Ryan">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+          <model id="Watts">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </unit>
+        <unit id="YU12" name="Precursor Knights" full_name="Precursor Knights" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="YA06" name="Precursor Knight Officer &amp; Standard" full_name="Precursor Knight Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Precursor Knight Officer">
+              <basestats name="Precursor Knight Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Precursor Knight Standard">
+              <basestats name="Precursor Knight Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="YU13" name="Rangers" full_name="Rangers" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="YU14" name="Trencher Commandos" full_name="Trencher Commandos" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_weapon_attachment="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <weapon_attachment id="YA08" name="Trencher Commandos Scattergunner" full_name="Trencher Commandos Scattergunner" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+            <model id="Trencher Commandos Scattergunner">
+              <basestats name="Trencher Commandos Scattergunner" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="YU15" name="Storm Tower" full_name="Storm Tower" fa="2" base_cost="2" baseCount="2" full_cost="-" fullCount="-" qualification="Unit">
+          <basestats name="Storm Tower" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="YU16" name="Tempest Blazers" full_name="Tempest Blazers" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+        <unit id="YU17" name="Silver Line Stormguard" full_name="Silver Line Stormguard" base_cost="6" baseCount="6" full_cost="9" fullCount="10" qualification="Cygnar Storm Knight Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+      </units>
+      <solos>
+        <solo id="YS01" name="Journeyman Warcaster" full_name="Journeyman Warcaster" cost="3" qualification="Solo" fa="1">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" journeyman_warcaster="true" />
+          <weapons />
+        </solo>
+        <solo id="YS02" name="Gun Mage Captain Adept" full_name="Gun Mage Captain Adept" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="YS03" name="Stormsmith Stormcaller" full_name="Stormsmith Stormcaller" cost="1" qualification="Solo" fa="3">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </solo>
+        <solo id="YS04" name="Captain Maxwell Finn" full_name="Captain Maxwell Finn" cost="3" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="YS05" name="Major Katherine Laddermore" full_name="Major Katherine Laddermore" cost="5" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+          <weapons />
+        </solo>
+        <solo id="YS06" name="Squire" full_name="Squire" cost="2" qualification="Solo" fa="1" warcaster_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="YS07" name="Captain Arlan Strangewayes" full_name="Captain Arlan Strangewayes" cost="2" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" jack_marshal="true" />
+          <weapons />
+        </solo>
+        <solo id="YS08" name="Trencher Master Gunner" full_name="Trencher Master Gunner" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="YS09" name="Archduke Alain Runewood" full_name="Archduke Alain Runewood" cost="3" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="YA10" name="Captain Jonas Murdoch" full_name="Captain Jonas Murdoch" cost="2" qualification="Character Solo" fa="C" mercenary_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="YS10" name="Stormblade Captain" full_name="Stormblade Captain" cost="2" qualification="Cygnar Storm Knight Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="YA11" name="Lieutenant Allison Jakes" full_name="Lieutenant Allison Jakes" cost="3" qualification="Cygnar Character Solo" fa="C">
+          <basestats name="Jakes" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" journeyman_warcaster="true" focus="4" />
+          <weapons>
+          </weapons>
+        </solo>
+        
+        
+      </solos>
+    </army>
+  </armies>
+</ruleset>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:scrollbars="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.schlaf.steam.activities.damages.DamageLineView
+                android:id="@+id/damageLineForceField"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_below="@id/damageLineForceField" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <com.schlaf.steam.activities.damages.WarjackDamageGridView
+                        android:id="@+id/damageGridViewLeft"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1" />
+
+                    <com.schlaf.steam.activities.damages.WarjackDamageGridView
+                        android:id="@+id/damageGridViewRight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listViewDamages"
+            android:layout_width="@dimen/component_standard_size"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:minHeight="120dp" >
+
+        </ListView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ll2_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        layout="@layout/damage_buttons_myrmidon" />
+    
+<!--     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" >
+
+       <Button
+            android:id="@+id/buttonHeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/heal"
+            android:drawableLeft="@drawable/repair" />
+       
+       <Button
+            android:id="@+id/buttonHealForceField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/heal"
+            android:drawableLeft="@drawable/repair_force_field" />
+        
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cancel"
+            android:drawableLeft="@drawable/cancel" />
+
+        <Button
+            android:id="@+id/buttonApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/apply"
+            android:drawableLeft="@drawable/apply"/>
+
+        <Button
+            android:id="@+id/buttonCommit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/commit"
+            android:drawableLeft="@drawable/apply"
+            android:drawableRight="@drawable/save_exit"
+            android:text="@string/empty" />
+    </LinearLayout> -->
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textview_large_height">22sp</dimen>
+    <dimen name="textview_standard_height">18sp</dimen>
+    <dimen name="textview_small_height">14sp</dimen>
+    <dimen name="textview_width">150dp</dimen>
+    <dimen name="ball_radius">30dp</dimen>
+    <dimen name="font_size">16sp</dimen>
+    <dimen name="button_size">32sp</dimen>
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="arrow_switch_size">44dp</dimen>
+    
+    <dimen name="short_divider_size">2dp</dimen>
+    <dimen name="component_standard_size">72dp</dimen>
+    <dimen name="unit_damages_line_height">72dp</dimen>
+</resources>
