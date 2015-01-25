@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ruleset xsi:noNamespaceSchemaLocation="warmachine.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ruleset xmlns="http://www.whac.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
     <army faction="faction_trollblood" name="Trollbloods">
       <warlocks>
@@ -477,23 +479,24 @@
           <capacity title="SNACKING">When this model boxes a living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play.</capacity>
           <capacity title="WHELP SHEDDING">When this model suffers damage from an enemy attack anytime except during its activation, immediately after the attack has been resolved you can place a Troll Whelp model into play B2B with this model. Do not place a Whelp in play if there is not room for its base.</capacity>
         </warbeast>
-				<warbeast id="TB17" name="Dozer &amp; Smigg" full_name="Dozer &amp; Smigg" qualification="Trollblood Dire Troll Character Heavy Warbeast" fa="C" cost="9" fury="4" threshold="10" damage_spiral="9-10-9" completed="true">
-         <basestats name="DOZER &amp; SMIGG" spd="5" str="12" mat="5" rat="6" def="12" arm="19" cmd="6" gunfighter="true" />
-         <weapons>
-           <ranged_weapon name="Bombard" rng="14" rof="1" aoe="3" pow="14" location="-" />			
-              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
-			  <capacity title="INACCURATE">This model suffers –4 to attack rolls with this weapon.</capacity>
-           <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="L" />
-           <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="R" />            
-         </weapons>
-         <animus name="BANK SHOT" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains +2 to AOE ranged attack rolls. When the target model's AOE ranged attacks deviate, you can reroll the direction and/or distance of deviation. Each roll can be rerolled only once as a result of Bank Shot. Bank Shot lasts for one turn.</animus>
-		 <capacity title="AFFINITY [GUNNBJORN]">While Dozer &amp; Smigg is in Gunnbjorn's control area, it gains boosted blast damage rolls.</capacity>
-		 <capacity title="REGENERATION [D3]">This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.</capacity>
-		 <capacity title="SNACKING">When this model boxes a living model with a melee attack, this model can heal d3 damage points. If this model heals, the boxed model is removed from play.</capacity>
-		 <capacity title="SPECIAL ISSUE [GUNNBJORN)">This model can be included in Gunnbjorn's theme forces. It can also be bonded to Gunnbjorn.</capacity>
-		 <capacity title="VETERAN LEADER [DIRE TROLL BLITZER]">Friendly Dire Troll Blitzer warbeasts gain +2 to attack rolls while this model is in their LOS.</capacity>
-		 <capacity title="VIRTUOSO">This model can make melee and ranged attacks during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
-       </warbeast>
+	    <warbeast id="TB17" name="Dozer &amp; Smigg" full_name="Dozer &amp; Smigg" qualification="Trollblood Dire Troll Character Heavy Warbeast" fa="C" cost="9" fury="4" threshold="10" damage_spiral="9-10-9" completed="true">
+            <basestats name="DOZER &amp; SMIGG" spd="5" str="12" mat="5" rat="6" def="12" arm="19" cmd="6" gunfighter="true" />
+            <weapons>
+                <ranged_weapon name="Bombard" rng="14" rof="1" aoe="3" pow="14" location="-">
+                    <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+                    <capacity title="INACCURATE">This model suffers –4 to attack rolls with this weapon.</capacity>
+                </ranged_weapon>
+                <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="R" />
+                <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="R" />
+            </weapons>
+            <capacity title="AFFINITY [GUNNBJORN]">While Dozer &amp; Smigg is in Gunnbjorn's control area, it gains boosted blast damage rolls.</capacity>
+            <capacity title="REGENERATION [D3]">This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.</capacity>
+            <capacity title="SNACKING">When this model boxes a living model with a melee attack, this model can heal d3 damage points. If this model heals, the boxed model is removed from play.</capacity>
+            <capacity title="SPECIAL ISSUE [GUNNBJORN)">This model can be included in Gunnbjorn's theme forces. It can also be bonded to Gunnbjorn.</capacity>
+            <capacity title="VETERAN LEADER [DIRE TROLL BLITZER]">Friendly Dire Troll Blitzer warbeasts gain +2 to attack rolls while this model is in their LOS.</capacity>
+            <capacity title="VIRTUOSO">This model can make melee and ranged attacks during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+
+	    </warbeast>
       </warbeasts>
       <battleEngines>
         <battleEngine id="TE01" name="Trollkin War Wagon" full_name="Trollkin War Wagon" qualification="Trollblood Cavalry Battle Engine" fa="2" cost="9" completed="true">
