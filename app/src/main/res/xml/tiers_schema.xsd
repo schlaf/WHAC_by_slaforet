@@ -1,134 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsd:schema attributeFormDefault="unqualified"
-	elementFormDefault="qualified" version="1.0"
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<xsd:element name="tierslist" type="tierslistType" />
-	<xsd:complexType name="tierslistType">
-		<xsd:sequence>
-			<xsd:element name="tiers" type="tiersType" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	</xsd:complexType>
-	<xsd:complexType name="tiersType">
-		<xsd:sequence>
-            <xsd:element name="availableModels" type="availableModelsType" maxOccurs="1"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.whactiers.com" xmlns="http://www.whactiers.com" elementFormDefault="qualified">
+	<xs:element name="tierslist" type="tierslistType" />
+	<xs:complexType name="tierslistType">
+		<xs:sequence>
+			<xs:element name="tiers" type="tiersType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="tiersType">
+		<xs:sequence>
+            <xs:element name="availableModels" type="availableModelsType" maxOccurs="1"
         minOccurs="0" />
-			<xsd:element maxOccurs="unbounded" name="level" type="levelType" />
-		</xsd:sequence>
-		<xsd:attribute name="name" type="xsd:string" use="required" />
-		<xsd:attribute name="faction" type="xsd:string" use="required" />
-		<xsd:attribute name="casterId" type="xsd:string" use="required" />
-	</xsd:complexType>
-	<xsd:complexType name="levelType">
-		<xsd:sequence>
-			<xsd:element name="only" type="onlyType" maxOccurs="1"
+			<xs:element maxOccurs="unbounded" name="level" type="levelType" />
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="faction" type="xs:string" use="required" />
+		<xs:attribute name="casterId" type="xs:string" use="required" />
+	</xs:complexType>
+	<xs:complexType name="levelType">
+		<xs:sequence>
+			<xs:element name="only" type="onlyType" maxOccurs="1"
 				minOccurs="0" />
-			<xsd:element name="must_have" type="mustHaveType"
+			<xs:element name="must_have" type="mustHaveType"
 				maxOccurs="1" minOccurs="0" />
-			<xsd:element name="benefits" type="benefitsType" />
-		</xsd:sequence>
-		<xsd:attribute name="number" type="xsd:int" />
-	</xsd:complexType>
-	<xsd:complexType name="benefitsType">
-      <xsd:choice maxOccurs="unbounded">
-			<xsd:element name="ingameeffect" type="xsd:string" />
-			<xsd:element maxOccurs="unbounded" name="alterFA" type="alterFAType"
+			<xs:element name="benefits" type="benefitsType" />
+		</xs:sequence>
+		<xs:attribute name="number" type="xs:int" />
+	</xs:complexType>
+	<xs:complexType name="benefitsType">
+      <xs:choice maxOccurs="unbounded">
+			<xs:element name="ingameeffect" type="xs:string" />
+			<xs:element maxOccurs="unbounded" name="alterFA" type="alterFAType"
 				minOccurs="0" />
-			<xsd:element maxOccurs="unbounded" name="alterCost" type="alterCostType"
+			<xs:element maxOccurs="unbounded" name="alterCost" type="alterCostType"
 				minOccurs="0" />
-			<xsd:element maxOccurs="unbounded" name="freeModel" type="freeModelType"
+			<xs:element maxOccurs="unbounded" name="freeModel" type="freeModelType"
 				minOccurs="0" />
-            <xsd:element maxOccurs="unbounded" name="alterMarshal" type="alterMarshalType"
+            <xs:element maxOccurs="unbounded" name="alterMarshal" type="alterMarshalType"
                 minOccurs="0" />
-        </xsd:choice>
-	</xsd:complexType>
-	<xsd:complexType name="alterCostType">
-	  <xsd:attribute name="bonus" type="xsd:int" use="required" />
-      <xsd:attribute name="entryId" type="xsd:string" use="required" />
-      <xsd:attribute name="onlyIfAttachedTo" type="xsd:string" use="optional" />
+        </xs:choice>
+	</xs:complexType>
+	<xs:complexType name="alterCostType">
+	  <xs:attribute name="bonus" type="xs:int" use="required" />
+      <xs:attribute name="entryId" type="xs:string" use="required" />
+      <xs:attribute name="onlyIfAttachedTo" type="xs:string" use="optional" />
       <!-- apply the cost bonus only if this model in attached to the models whose entry is noted -->
-	</xsd:complexType>
-  <xsd:complexType name="alterMarshalType">
-    <xsd:attribute name="bonus" type="xsd:int" use="required" />
-      <xsd:attribute name="entryId" type="xsd:string" use="required" />
-  </xsd:complexType>
-	<xsd:complexType name="freeModelType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="entry" type="entryType"
+	</xs:complexType>
+  <xs:complexType name="alterMarshalType">
+    <xs:attribute name="bonus" type="xs:int" use="required" />
+      <xs:attribute name="entryId" type="xs:string" use="required" />
+  </xs:complexType>
+	<xs:complexType name="freeModelType">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="entry" type="entryType"
 				minOccurs="1" />
-			<xsd:element name="forEach" type="forEachType" maxOccurs="1" minOccurs="0" />
-		</xsd:sequence>
-	</xsd:complexType>
-	<xsd:complexType name="alterFAType">
-		<xsd:sequence>
-			<xsd:element name="forEach" type="forEachType" maxOccurs="1" minOccurs="0" />
-		</xsd:sequence>
-		<xsd:attribute name="bonus" type="faAlterationType" use="required" />
-		<xsd:attribute name="entryId" type="xsd:string" use="required" />
+			<xs:element name="forEach" type="forEachType" maxOccurs="1" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="alterFAType">
+		<xs:sequence>
+			<xs:element name="forEach" type="forEachType" maxOccurs="1" minOccurs="0" />
+		</xs:sequence>
+		<xs:attribute name="bonus" type="faAlterationType" use="required" />
+		<xs:attribute name="entryId" type="xs:string" use="required" />
 		
-	</xsd:complexType>
+	</xs:complexType>
   
-    <xsd:simpleType name="modelType">
-      <xsd:restriction base="xsd:string">
-        <xsd:enumeration value="WARJACKS"></xsd:enumeration>
-        <xsd:enumeration value="WARBEASTS"></xsd:enumeration>
-        <xsd:enumeration value="UNITS"></xsd:enumeration>
-        <xsd:enumeration value="SOLOS"></xsd:enumeration>
-        <xsd:enumeration value="BATTLE_ENGINES"></xsd:enumeration>
-      </xsd:restriction>
-    </xsd:simpleType>
+    <xs:simpleType name="modelType">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="WARJACKS"></xs:enumeration>
+        <xs:enumeration value="WARBEASTS"></xs:enumeration>
+        <xs:enumeration value="UNITS"></xs:enumeration>
+        <xs:enumeration value="SOLOS"></xs:enumeration>
+        <xs:enumeration value="BATTLE_ENGINES"></xs:enumeration>
+      </xs:restriction>
+    </xs:simpleType>
   
-	<xsd:simpleType name="faAlterationType">
-		<xsd:restriction base="xsd:string">
-			<xsd:enumeration value="1"></xsd:enumeration>
-			<xsd:enumeration value="2"></xsd:enumeration>
-			<xsd:enumeration value="3"></xsd:enumeration>
-            <xsd:enumeration value="512"></xsd:enumeration>
-			<xsd:enumeration value="U"></xsd:enumeration>
-		</xsd:restriction>
-	</xsd:simpleType>
+	<xs:simpleType name="faAlterationType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"></xs:enumeration>
+			<xs:enumeration value="2"></xs:enumeration>
+			<xs:enumeration value="3"></xs:enumeration>
+            <xs:enumeration value="512"></xs:enumeration>
+			<xs:enumeration value="U"></xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
 
-  <xsd:complexType name="availableModelsType">
-    <xsd:sequence>
-      <xsd:element maxOccurs="unbounded" name="type" type="availableModelSubType"
+  <xs:complexType name="availableModelsType">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="type" type="availableModelSubType"
         minOccurs="0" />
-    </xsd:sequence>
+    </xs:sequence>
     
-  </xsd:complexType>
+  </xs:complexType>
   
-  <xsd:complexType name="availableModelSubType">
-    <xsd:sequence>
-      <xsd:element name="models" type="xsd:string"  minOccurs="1"/>
-    </xsd:sequence>
-    <xsd:attribute name="type" type="modelType" use="required"/>
-  </xsd:complexType>
+  <xs:complexType name="availableModelSubType">
+    <xs:sequence>
+      <xs:element name="models" type="xs:string"  minOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="modelType" use="required"/>
+  </xs:complexType>
 	
-	<xsd:complexType name="onlyType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="entry" type="entryType"
+	<xs:complexType name="onlyType">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="entry" type="entryType"
 				minOccurs="0" />
-		</xsd:sequence>
-	</xsd:complexType>
-	<xsd:complexType name="forEachType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="entry" type="entryType"
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="forEachType">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="entry" type="entryType"
 				minOccurs="0" />
-		</xsd:sequence>
-	</xsd:complexType>
+		</xs:sequence>
+	</xs:complexType>
 	
-	<xsd:complexType name="mustHaveType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="entrygroup"
-				type="entrygroupType" minOccurs="0" />    </xsd:sequence>
-	</xsd:complexType>
-	<xsd:complexType name="entrygroupType">
-		<xsd:sequence>
-			<xsd:element maxOccurs="unbounded" name="entry" type="entryType" />
-		</xsd:sequence>
-		<xsd:attribute name="minNumber" type="xsd:int" use="required" />
-		<xsd:attribute name="inBattlegroupOnly" type="xsd:boolean" />
-		<xsd:attribute name="jackMarshalledOnly" type="xsd:boolean" />
-	</xsd:complexType>
-	<xsd:complexType name="entryType">
-		<xsd:attribute name="id" type="xsd:string" use="required" />
-	</xsd:complexType>
-</xsd:schema>
+	<xs:complexType name="mustHaveType">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="entrygroup"
+				type="entrygroupType" minOccurs="0" />
+    </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="entrygroupType">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="entry" type="entryType" />
+		</xs:sequence>
+		<xs:attribute name="minNumber" type="xs:int" use="required" />
+		<xs:attribute name="inBattlegroupOnly" type="xs:boolean" />
+		<xs:attribute name="jackMarshalledOnly" type="xs:boolean" />
+	</xs:complexType>
+	<xs:complexType name="entryType">
+		<xs:attribute name="id" type="xs:string" use="required" />
+	</xs:complexType>
+</xs:schema>
