@@ -313,7 +313,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 	public void onArmyListSelected(ArmyListDescriptor army) {
 		String path = army.getFilePath();
 
-		StorageManager.loadArmyList(getApplicationContext(), path,
+		StorageManager.loadArmyList(path,
 				SelectionModelSingleton.getInstance());
 
 		// open populate list activity

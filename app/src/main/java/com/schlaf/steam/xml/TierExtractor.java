@@ -147,13 +147,8 @@ public class TierExtractor {
 		
 		for (File importFile : files) {
 			
-			String extension = "";
+            String extension = StorageManager.extractFileExtension(importFile);
 
-			int i = importFile.getName().lastIndexOf('.');
-			if (i >= 0) {
-			    extension = importFile.getName().substring(i+1);
-			}
-			
 			if (StorageManager.TIER_EXTENSION.equalsIgnoreCase(extension)) {
 				FileInputStream fis;
 				try {

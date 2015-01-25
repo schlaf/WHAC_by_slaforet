@@ -308,13 +308,9 @@ public class XmlExtractor {
 		
 		
 		for (File importFile : files) {
-			
-			String extension = "";
-			int i = importFile.getName().lastIndexOf('.');
-			if (i >= 0) {
-			    extension = importFile.getName().substring(i+1);
-			}
-			
+
+            String extension = StorageManager.extractFileExtension(importFile);
+
 			if (StorageManager.WHAC_EXTENSION.equalsIgnoreCase(extension)) {
 				FileInputStream fis;
 				try {

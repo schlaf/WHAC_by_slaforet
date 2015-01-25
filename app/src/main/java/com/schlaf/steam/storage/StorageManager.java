@@ -79,7 +79,9 @@ public class StorageManager {
 	private static final String TAG = "StorageManager";
 
 	public static final String WHAC_EXTENSION = "WHAC";
+    public static final String WHAC_EXTENSION_XML = "WHAC.XML";
 	public static final String TIER_EXTENSION = "TIER";
+    public static final String TIER_EXTENSION_XML = "TIER.XML";
 	
 	/**
 	 * directory for imported data files
@@ -606,12 +608,11 @@ public class StorageManager {
 	}		
 	/**
 	 * load army list given by file-name into singleton
-	 * @param applicationContext
-	 * @param army_name
+	 * @param armyFilePath
 	 * @param singleton
 	 * @return
 	 */
-	public static boolean loadArmyList(Context applicationContext, String armyFilePath, SelectionModelSingleton singleton) {
+	public static boolean loadArmyList(String armyFilePath, SelectionModelSingleton singleton) {
 		FileInputStream fis = null;
 		// ObjectInputStream is = null;
 
@@ -684,7 +685,7 @@ public class StorageManager {
 	/**
 	 * load army list given by file-name into singleton
 	 * @param applicationContext
-	 * @param armyName
+	 * @param armyPath
 	 * @param singleton
 	 * @return
 	 */
@@ -987,16 +988,20 @@ public class StorageManager {
 		if (files != null) {
 			for (File file : files) {
 				
-				String extension = "";
+//				String extension = "";
 
-				int i = file.getName().lastIndexOf('.');
-				if (i >= 0) {
-				    extension = file.getName().substring(i+1);
-				}
-				
-				if (WHAC_EXTENSION.equalsIgnoreCase(extension)) {
-					result.add(file);	
-				}
+                if ( file.getName().toUpperCase().endsWith(WHAC_EXTENSION) || file.getName().toUpperCase().endsWith(WHAC_EXTENSION_XML)) {
+                    result.add(file);
+                }
+
+//				int i = file.getName().lastIndexOf('.');
+//				if (i >= 0) {
+//				    extension = file.getName().substring(i+1);
+//				}
+//
+//				if (WHAC_EXTENSION.equalsIgnoreCase(extension)) {
+//					result.add(file);
+//				}
 				
 			}
 		}
@@ -1026,17 +1031,23 @@ public class StorageManager {
 		ArrayList<File> result = new ArrayList<File>();
 		if (files != null) {
 			for (File file : files) {
-				
-				String extension = "";
 
-				int i = file.getName().lastIndexOf('.');
-				if (i >= 0) {
-				    extension = file.getName().substring(i+1);
-				}
-				
-				if (TIER_EXTENSION.equalsIgnoreCase(extension)) {
-					result.add(file);	
-				}
+
+                if ( file.getName().toUpperCase().endsWith(TIER_EXTENSION) || file.getName().toUpperCase().endsWith(TIER_EXTENSION_XML)) {
+                    result.add(file);
+                }
+
+//
+//                String extension = "";
+//
+//				int i = file.getName().lastIndexOf('.');
+//				if (i >= 0) {
+//				    extension = file.getName().substring(i+1);
+//				}
+//
+//				if (TIER_EXTENSION.equalsIgnoreCase(extension)) {
+//					result.add(file);
+//				}
 				
 			}
 		}
@@ -1642,5 +1653,29 @@ public class StorageManager {
 		
 		
 	}
-	
+
+    /**
+     * renvoie l'extension WHAC_EXTENSION ou TIER_EXTENSION ou "" selon le type de fichier
+     * @param file
+     * @return
+     */
+    public static String extractFileExtension(File file) {
+
+        if (file.getName().toUpperCase().endsWith(WHAC_EXTENSION) || file.getName().toUpperCase().endsWith(WHAC_EXTENSION_XML)) {
+            return WHAC_EXTENSION;
+        }
+
+        if (file.getName().toUpperCase().endsWith(StorageManager.TIER_EXTENSION) || file.getName().toUpperCase().endsWith(TIER_EXTENSION_XML)) {
+            return TIER_EXTENSION;
+        }
+
+//		// extract file extension
+//		String extension = "";
+//		int i = file.getName().lastIndexOf('.');
+//		if (i >= 0) {
+//			extension = file.getName().substring(i+1);
+//		}
+        return "";
+    }
+
 }

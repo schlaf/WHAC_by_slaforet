@@ -153,7 +153,7 @@ public class ImportSelector extends ActionBarActivity implements ImportFileListe
 		Resources res = getResources();
 
 
-		String extension = extractFileExtension(file);
+		String extension = StorageManager.extractFileExtension(file);
 
 		if (StorageManager.WHAC_EXTENSION.equalsIgnoreCase(extension)) {
 			XmlExtractor extractor = new XmlExtractor(res,
@@ -218,15 +218,7 @@ public class ImportSelector extends ActionBarActivity implements ImportFileListe
 	}
 
 
-	private String extractFileExtension(File file) {
-		// extract file extension
-		String extension = "";
-		int i = file.getName().lastIndexOf('.');
-		if (i >= 0) {
-			extension = file.getName().substring(i+1);
-		}
-		return extension;
-	}
+
 
 	@Override
 	public void onImportedFileDeleted(final File file) {
