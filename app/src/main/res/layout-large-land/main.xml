@@ -55,7 +55,7 @@
                 android:id="@+id/button_scenario_library"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/sr2014"
+                android:drawableLeft="@drawable/steamroller"
                 android:onClick="scenarioLibrary"
                 android:text="@string/steamroller" />
 

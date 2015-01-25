@@ -76,7 +76,7 @@
             android:layout_alignParentLeft="false"
             android:layout_below="@id/button_launch_battle"
             android:layout_toRightOf="@id/centerItem"
-            android:drawableLeft="@drawable/sr2014"
+            android:drawableLeft="@drawable/steamroller"
             android:onClick="scenarioLibrary"
             android:text="@string/steamroller" />
 
