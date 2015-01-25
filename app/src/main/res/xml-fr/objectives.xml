@@ -1,93 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="warmachine.xsd">
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xml/warmachine.xsd">
   <armies>
-    <army faction="faction_objectives" name="objectives">
+    <army name="objectives" faction="faction_objectives">
       <solos>
-        <solo id="objective_2014_standard_ammunition_cache" name="Ammunition Cache" full_name="Ammunition Cache" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Cache de munitions" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+        <solo name="Ammunition Cache" completed="true" cost="0" fa="1" full_name="Ammunition Cache" id="objective_2014_standard_ammunition_cache" qualification="Steamroller Objective">
+          <basestats name="Cache de munitions" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />
           <capacity title="Puissance de feu">Tant que cet objectif n'est pas contesté par un modèle ennemi, les armes à distance des modèles amis ayant Artillerie Légère dans les 4" de ce modèle gagnent les jets de dégâts boostés.</capacity>
           <capacity title="Immobile">Ce modèle n'a ni mouvement ni action et ne peut être mis KO ou déplacé. Son arc avant s'étend sur 360°. Il n'a pas de zone de mêlée, ne peut engager, et est automatiquement touché par les attaques de mêlée.</capacity>
           <capacity title="Objectif">Ce modèle ne peut être ciblé ou endommagé avant le second tour du second joueur. Un objectif ne peut être engagé.</capacity>
         </solo>
-        <solo id="objective_2014_standard_critical_asset" name="Critical Asset" full_name="Critical Asset" cost="0" qualification="Steamroller Objective" fa="1"  completed="true">
-          <basestats name="Ressource critique" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+        <solo name="Critical Asset" completed="true" cost="0" fa="1" full_name="Critical Asset" id="objective_2014_standard_critical_asset"  qualification="Steamroller Objective">
+          <basestats name="Ressource critique" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />
           <capacity title="Protection des ressources">Si ce modèle est mis hors de combat, vous pouvez choisir de détruire un modèle ami non hors de combat dans les 4". Si un autre modèle est détruit comme résultat de Protection des ressources, retirer 1 point de dommage de ce modèle.</capacity>
           <capacity title="Immobile">Ce modèle n'a ni mouvement ni action et ne peut être mis KO ou déplacé. Son arc avant s'étend sur 360°. Il n'a pas de zone de mêlée, ne peut engager, et est automatiquement touché par les attaques de mêlée.</capacity>
           <capacity title="Inexorable">Ce modèle ne peut être placé, est immunisé aux effets continus, et ne peut pas être choisie comme cible de Proie.</capacity>
           <capacity title="Objectif">Ce modèle ne peut être ciblé ou endommagé avant le second tour du second joueur. Un objectif ne peut être engagé.</capacity>
         </solo>
-        <solo id="objective_2014_standard_effigy" name="Effigy" full_name="Effigy" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Effigie" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+        <solo name="Effigy" completed="true" cost="0" fa="1" full_name="Effigy" id="objective_2014_standard_effigy" qualification="Steamroller Objective">
+          <basestats name="Effigie" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />
           <capacity title="Immobile">Ce modèle n'a ni mouvement ni action et ne peut être mis KO ou déplacé. Son arc avant s'étend sur 360°. Il n'a pas de zone de mêlée, ne peut engager, et est automatiquement touché par les attaques de mêlée.</capacity>
           <capacity title="Objectif">Ce modèle ne peut être ciblé ou endommagé avant le second tour du second joueur. Un objectif ne peut être engagé.</capacity>
           <capacity title="Valeur">Tant que cet objectif n'est pas contesté par un modèle ennemi, les solos amis de faction dans les 4" de ce modèle gagnent Inspiration[Faction] pour un round. (Les modèles/unités de faction ami dans la zone de commandement de ce modèle ne fuient jamais et se rallient automatiquement.)</capacity>
         </solo>
-        <solo id="objective_2014_standard_monolith" name="Monolith" full_name="Monolith" cost="0" qualification="Steamroller Objective" fa="2" completed="true">
-          <basestats name="Monolithe" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+        <solo name="Monolith" completed="true" cost="0" fa="2" full_name="Monolith" id="objective_2014_standard_monolith" qualification="Steamroller Objective">
+          <basestats name="Monolithe" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />
           <capacity title="Immobile">Ce modèle n'a ni mouvement ni action et ne peut être mis KO ou déplacé. Son arc avant s'étend sur 360°. Il n'a pas de zone de mêlée, ne peut engager, et est automatiquement touché par les attaques de mêlée.</capacity>
           <capacity title="Inexorable">Ce modèle ne peut être placé, est immunisé aux effets continus, et ne peut pas être choisie comme cible de Proie.</capacity>
           <capacity title="Lié">Quand un autre Monolithe est endommagé, ce modèle ne peut être endommagé pour un tour.</capacity>
           <capacity title="Objectif">Ce modèle ne peut être ciblé ou endommagé avant le second tour du second joueur. Un objectif ne peut être engagé.</capacity>
         </solo>
-        <solo id="objective_2014_standard_supply_cache" name="Supply Cache" full_name="Supply Cache" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Cache à provisions" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" />
+      </solos>
+    </army>
+      <army name="objectives SR 2015" faction="faction_objectives_sr2015">
+          <solos>
+        <solo name="CACHE À PROVISIONS" completed="true" cost="0" fa="1" full_name="CACHE À PROVISIONS" id="objective_2014_standard_supply_cache" qualification="Steamroller Objective">
+          <basestats name="CACHE À PROVISIONS" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />
           <capacity title="Carburant">Tant que cet objectif n'est pas contesté par un modèle ennemi, les modèles amis commençant leur activation dans les 4" de ce modèle peuvent courir ou charger sans être forcé ou dépenser de focus.</capacity>
           <capacity title="Immobile">Ce modèle n'a ni mouvement ni action et ne peut être mis KO ou déplacé. Son arc avant s'étend sur 360°. Il n'a pas de zone de mêlée, ne peut engager, et est automatiquement touché par les attaques de mêlée.</capacity>
           <capacity title="Objectif">Ce modèle ne peut être ciblé ou endommagé avant le second tour du second joueur. Un objectif ne peut être engagé.</capacity>
           <capacity title="Priorité">Les warcasters/warlocks ennemis ne peuvent dominer tant que cet objectif est dans leur zone de contrôle.</capacity>
         </solo>
-        <solo id="objective_2015_arcane_wonder" name="Arcane Wonder" full_name="Arcane Wonder" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Arcane Wonder" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15" construct="true" />
+        <solo name="MERVEILLE ARCANIQUE" completed="true" cost="0" fa="1" full_name="MERVEILLE ARCANIQUE" id="objective_2015_arcane_wonder" qualification="Steamroller Objective">
+          <basestats name="MERVEILLE ARCANIQUE" arm="18" cmd="0" construct="true" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />
-          <capacity title="Wondrous power">While within 4" of this model, friendly models gain Empowered. (Once per turn when a model with Empowered casts an upkeep spell, reduce the COST of the spell by 1.)</capacity>
-          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
-          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
-          <capacity title="Plasma Nimbus">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers a POW 10 electrical damage roll unless this model was destroyed or removed from play by the attack.</capacity>
+          <capacity title="POUVOIR PHÉNOMÉNAL">Tant qu’elles se situent dans un rayon de 4” autour de cette figurine, les figurines amies gagnent Intensifié. (Une fois par tour, lorsqu’une figurine dotée d’Intensifié lance un sort à entretien, réduisez le COÛT du sort de 1.)</capacity>
+            <capacity title="Immobile">Cette figurine n’a ni mouvement, ni action et ne peut être ni mise KO, ni déplacée. Son arc avant s’étend à 360°. Elle n’a pas de portée de corps-à-corps et ne peut pas engager. Elle est automatiquement touchée par les attaques de corps-à-corps.</capacity>
+            <capacity title="Objectif">Cette figurine ne peut pas être placée, ne peut pas relayer de sorts et ne peut pas être choisie comme Proie. Cette figurine ne peut pas être prise pour cible ni subir de dégâts avant le deuxième tour du second joueur. Un objectif ne peut pas être engagé.</capacity>
+            <capacity title="HALO DE PLASMA">Si cette figurine est touchée par une attaque de corps-à-corps, immédiatement après la résolution de l’attaque la figurine attaquante subit un jet de dégâts électriques de PUI 10 à moins que cette figurine n’ait été détruite ou retirée du jeu par l’attaque.</capacity>
         </solo>
-        <solo id="objective_2015_armory" name="Armory" full_name="Armory" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Armory" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+        <solo name="DEPOT DE MUNITIONS" completed="true" cost="0" fa="1" full_name="DEPOT DE MUNITIONS" id="objective_2015_armory" qualification="Steamroller Objective">
+          <basestats name="DEPOT DE MUNITIONS" arm="18" cmd="0" construct="true" def="5" hitpoints="15" mat="0" rat="0" spd="0"  str="0" />
           <weapons />
-          <capacity title="Asset Protection">If this model is disabled, you can choose a non-disabled friendly model that you own within 4" to be destroyed. If another model is destroyed as a result of Asset Protection, remove 1 damage point from this model.</capacity>
-          <capacity title="Firepower">While within 4" of this model, friendly models with light artillery gain boosted ranged attack damage rolls.</capacity>
-          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
-          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+            <capacity title="Immobile">Cette figurine n’a ni mouvement, ni action et ne peut être ni mise KO, ni déplacée. Son arc avant s’étend à 360°. Elle n’a pas de portée de corps-à-corps et ne peut pas engager. Elle est automatiquement touchée par les attaques de corps-à-corps.</capacity>
+            <capacity title="Objectif">Cette figurine ne peut pas être placée, ne peut pas relayer de sorts et ne peut pas être choisie comme Proie. Cette figurine ne peut pas être prise pour cible ni subir de dégâts avant le deuxième tour du second joueur. Un objectif ne peut pas être engagé.</capacity>
+          <capacity title="PROTECTION DE L’ATOUT">Si cette figurine est mise hors de combat, vous pouvez choisir de détruire une figurine amie vous appartenant,n’étant pas hors de combat et située dans un rayon de 4” autour de cette figurine. Si une autre figurine est détruite dans le cadre de Protection de l’Atout, retirez 1 point de dégâts de cette figurine.</capacity>
+          <capacity title="PUISSANCE DE FEU">Les figurines amies dotées d’Artillerie légère gagnent des jets de dégâts boostés pour leurs attaques à distance tant qu’elles se situent dans un rayon de 4” autour de cette figurine.</capacity>
         </solo>
-        <solo id="objective_2015_bunker" name="Bunker" full_name="Bunker" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Bunker" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+        <solo name="BUNKER" completed="true" cost="0" fa="1" full_name="BUNKER" id="objective_2015_bunker" qualification="Steamroller Objective">
+          <basestats name="BUNKER" arm="18" cmd="0" construct="true" def="5" hitpoints="15" mat="0" rat="0" spd="0"  str="0" />
           <weapons />
-          <capacity title="Girded">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
-          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
-          <capacity title="Impervious Flesh">When this model is hit by a ranged attack, the attacker rolls one less damage die.</capacity>
-          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+          <capacity title="ARMURÉ">Cette figurine ne subit pas les dégâts d’explosion. Les figurines amies SàS avec elle ne subissent pas les dégâts d’explosion.</capacity>
+          <capacity title="CHAIR INSENSIBLE">Lorsque cette figurine est touchée par une attaque à distance, l’attaquant lance un dé de dégâts de moins.</capacity>
+          <capacity title="Immobile">Cette figurine n’a ni mouvement, ni action et ne peut être ni mise KO, ni déplacée. Son arc avant s’étend à 360°. Elle n’a pas de portée de corps-à-corps et ne peut pas engager. Elle est automatiquement touchée par les attaques de corps-à-corps.</capacity>
+          <capacity title="Objectif">Cette figurine ne peut pas être placée, ne peut pas relayer de sorts et ne peut pas être choisie comme Proie. Cette figurine ne peut pas être prise pour cible ni subir de dégâts avant le deuxième tour du second joueur. Un objectif ne peut pas être engagé.</capacity>
         </solo>
-        <solo id="objective_2015_effigy" name="Effigy of Valor" full_name="Effigy of Valor" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Effigy" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+        <solo name="SYMBOLE DU COURAGE" completed="true" cost="0" fa="1" full_name="SYMBOLE DU COURAGE" id="objective_2015_effigy" qualification="Steamroller Objective">
+          <basestats name="SYMBOLE DU COURAGE" arm="18" cmd="0" construct="true" def="5" hitpoints="15" mat="0" rat="0" spd="0"  str="0" />
           <weapons />
-          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
-          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
-          <capacity title="Obstruct">This model provides cover as if it were an obstruction.</capacity>
-          <capacity title="Valor">Friendly models/units within 4" of this model cannot flee and immediately rally. Additionally, friendly models/units that begin their activation within 4" of this model gain Fearless for one round.</capacity>
+          <capacity title="BLOQUANT">Cette figurine confère le couvert comme s’il s’agissait d’une obstruction.</capacity>
+          <capacity title="Immobile">Cette figurine n’a ni mouvement, ni action et ne peut être ni mise KO, ni déplacée. Son arc avant s’étend à 360°. Elle n’a pas de portée de corps-à-corps et ne peut pas engager. Elle est automatiquement touchée par les attaques de corps-à-corps.</capacity>
+          <capacity title="Objectif">Cette figurine ne peut pas être placée, ne peut pas relayer de sorts et ne peut pas être choisie comme Proie. Cette figurine ne peut pas être prise pour cible ni subir de dégâts avant le deuxième tour du second joueur. Un objectif ne peut pas être engagé.</capacity>
+          <capacity title="VAILLANCE">Les figurines/unités amies situées dans un rayon de 4” autour de cette figurine ne peuvent pas fuir et se rallient immédiatement. De plus, les figurines/unités amies qui commencent leur activation dans un rayon de 4” autour de cette figurine gagnent Sans Peur pendant un round.</capacity>
         </solo>
-        <solo id="objective_2015_fuelcache" name="Fuel Cache" full_name="Fuel Cache" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Fuel Cache" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+        <solo name="CACHE D’APPROVISIONNEMENT" completed="true" cost="0" fa="1" full_name="CACHE D’APPROVISIONNEMENT" id="objective_2015_fuelcache" qualification="Steamroller Objective">
+          <basestats name="CACHE D’APPROVISIONNEMENT" arm="18" cmd="0" construct="true" def="5" hitpoints="15" mat="0" rat="0" spd="0"  str="0" />
           <weapons />
-          <capacity title="Fuel">Friendly models beginning their activation within 4" of this model can run or charge without spending focus or being forced.</capacity>
-          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
-          <capacity title="It Burns!">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers the Fire continuous effect unless this model was destroyed or removed from play by the attack.</capacity>
-          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
+          <capacity title="APPROVISIONNEMENT">Les figurines amies qui commencent leur activation dans un rayon de 4" autour de cette figurine peuvent courir ou charger sans dépenser de focus ou être forcées.</capacity>
+            <capacity title="ÇA BRÛLE !">Si cette figurine est touchée par une attaque de corps-à-corps, immédiatement après la résolution de l’attaque la figurine attaquante subit l’effet continu de Feu à moins que cette figurine n’ait été détruite ou retirée du jeu par l’attaque.</capacity>
+            <capacity title="Immobile">Cette figurine n’a ni mouvement, ni action et ne peut être ni mise KO, ni déplacée. Son arc avant s’étend à 360°. Elle n’a pas de portée de corps-à-corps et ne peut pas engager. Elle est automatiquement touchée par les attaques de corps-à-corps.</capacity>
+            <capacity title="Objectif">Cette figurine ne peut pas être placée, ne peut pas relayer de sorts et ne peut pas être choisie comme Proie. Cette figurine ne peut pas être prise pour cible ni subir de dégâts avant le deuxième tour du second joueur. Un objectif ne peut pas être engagé.</capacity>
         </solo>
-        <solo id="objective_2015_stockpile" name="Stockpile" full_name="Stockpile" cost="0" qualification="Steamroller Objective" fa="1" completed="true">
-          <basestats name="Stockpile" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="0" hitpoints="15"  construct="true" />
+        <solo name="RESERVES" completed="true" cost="0" fa="1" full_name="RESERVES" id="objective_2015_stockpile" qualification="Steamroller Objective">
+          <basestats name="RESERVES" arm="18" cmd="0" construct="true" def="5" hitpoints="15" mat="0" rat="0" spd="0"  str="0" />
           <weapons />
-          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extends 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
-          <capacity title="Lash">This model and friendly warrior models B2B with it cannot be knocked down.</capacity>
-          <capacity title="Objective">This model cannot be placed, cannot channel spells, and cannot be chosen as a Prey target. This model cannot be targeted or damaged until the second player's second turn. An objective cannot be engaged.</capacity>
-          <capacity title="Up and at'em">After resolving continuous effects during your Maintenance Phase, friendly knocked down models within 4" of this model stand up.</capacity>
+            <capacity title="ARRIMAGE">Cette figurine et les figurines de guerrier amies SàS avec elle ne peuvent pas être mises au tapis.</capacity>
+            <capacity title="BRANLE-BAS DE COMBAT">Après la résolution des effets continus pendant votre phase de maintenance, les figurines amies KO situées dans un rayon de 4” autour de cette figurine se relèvent.</capacity>
+          <capacity title="Immobile">Cette figurine n’a ni mouvement, ni action et ne peut être ni mise KO, ni déplacée. Son arc avant s’étend à 360°. Elle n’a pas de portée de corps-à-corps et ne peut pas engager. Elle est automatiquement touchée par les attaques de corps-à-corps.</capacity>
+          <capacity title="Objectif">Cette figurine ne peut pas être placée, ne peut pas relayer de sorts et ne peut pas être choisie comme Proie. Cette figurine ne peut pas être prise pour cible ni subir de dégâts avant le deuxième tour du second joueur. Un objectif ne peut pas être engagé.</capacity>
         </solo>
      </solos>
     </army>
