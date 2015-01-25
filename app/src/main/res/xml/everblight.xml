@@ -53,6 +53,11 @@
           <weapons />
           <feat title="" />
         </warlock>
+        <warlock id="Ex06" name="Absylonia2" generation="E" full_name="Absylonia, Daughter of Everblight" qualification="Legion Epic Blighted Nyss Warlock" fury="6" warbeast_points="5" fa="C" completed="false">
+            <basestats name="ABSYLONIA" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
+            <weapons />
+            <feat title="" />
+        </warlock>
         <warlock id="EW07" name="Bethayne" full_name="Bethayne" generation="E" qualification="warlock" fury="6" warbeast_points="3" fa="C" companionId="EB20">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
           <weapons />
