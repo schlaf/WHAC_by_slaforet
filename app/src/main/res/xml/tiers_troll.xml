@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
+
 <tiers name="Madrak - War Party" casterId="Tw01" faction="faction_trollblood">
+    <availableModels>
+        <type type="WARBEASTS">
+            <models>Trollblood Non-character warbeasts</models>
+        </type>
+        <type type="UNITS">
+            <models>Krielstone Bearer &amp; Stone Scribes, Kriel Warriors, Pyg Bushwhackers, Scattergunners, Trollkin Fennblades</models>
+        </type>
+        <type type="SOLOS">
+            <models>Fell Caller Hero, Stone Scribe Chronicler, Trollkin Runebearer, Troll Whelps</models>
+        </type>
+    </availableModels>
+
     <level number="1">
       <only>
         <entry id="Tw01" />
@@ -35,9 +50,9 @@
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="TU01" />
-        <alterFA bonus="1" entryId="TA01" />
-        <alterFA bonus="1" entryId="TA02" />
+        <alterFA bonus="512" entryId="TU01" />
+        <alterFA bonus="512" entryId="TA01" />
+        <alterFA bonus="512" entryId="TA02" />
       </benefits>
     </level>
     <level number="2">
@@ -62,23 +77,37 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  TB03 TB05-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
           <entry id="TB03" />
-          <entry id="TB05" />
         </entrygroup>
+          <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+              <entry id="TB05" />
+          </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in Madrak's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="epic Madrak - End Times" casterId="Tx01" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood Non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Kriel Warriors, Long Riders, Trollkin Champions, Trollkin Fennblades</models>
+          </type>
+          <type type="SOLOS">
+              <models>Troll kin Champion Hero, Trollkin Runebearer, Troll Whelps, Long Rider solos</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="Tx01" />
@@ -136,7 +165,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Place Long Rider models after normal deployment. These models are placed at the same time as your models with Advance Deployment (if any). These models must be placed within your normal deployment zone.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -150,11 +179,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Heavy warbeasts in Madrak's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Hoarluk - Runes of War" casterId="Tw02" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood Non-character warbeasts, Mulg the Ancient</models>
+          </type>
+          <type type="UNITS">
+              <models>Krielstone Bearer &amp; Stone Scribes, Trollkin Runeshapers</models>
+          </type>
+          <type type="SOLOS">
+              <models>Stone Scribe Chronicler,Trollkin Runebearer, Troll Whelps, Janissa Stonetide</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Tw02" />
@@ -194,7 +234,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect >The Krielstone Bearer &amp; Stone Scribe unit Leader begins the game with 1 fury point for each Runeshaper unit or solo in the army. (If the number of fury points exceeds the maximum of the Fury Vault ability, additional fury points are lost.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -205,7 +245,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For every two Trollkin Runeshaper units in the army place one wall template anywhere completely within 20" of the back edge of Doomshaper's deployment zone after terrain has been placed but before either player deploys his army. The wall is a linear obstacle that grants cover. Wall templates cannot be placed within 3" of another terrain feature including another wall template.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -220,11 +260,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="epic Hoarluk - Unbridled Fury" casterId="Tx02" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood Non-character warbeasts, Mulg the Ancient</models>
+          </type>
+          <type type="UNITS">
+              <models>Trollkin Scouts, Trollkin Champions</models>
+          </type>
+          <type type="SOLOS">
+              <models>Trollkin Skinner, Trollkin Runebearer, Troll Whelps</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Tx02" />
@@ -242,7 +293,15 @@
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="TS03" />
+        <alterFA bonus="1" entryId="TS03">
+            <forEach>
+                <entry id="TB07" />
+                <entry id="TB08" />
+                <entry id="TB09" />
+                <entry id="TB10" />
+                <entry id="TB11" />
+            </forEach>
+        </alterFA>
       </benefits>
     </level>
     <level number="2">
@@ -254,7 +313,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -265,7 +324,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Heavy warbeasts gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -286,6 +345,17 @@
     </level>
   </tiers>
   <tiers name="Grissel - Blood of Bragg" casterId="Tw03" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood Non-character light warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Krielstone Bearer &amp; Stone Scribes, Kriel Warriors, Scattergunners, Thumper Crew, Trollkin Sluggers, Pyg units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Fell Caller Hero, Troll Whelps, Alten Ashley</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Tw03" />
@@ -314,7 +384,7 @@
         <entry id="IS01_minion" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Additionnaly, up to one warbeast in Bloodsong' battlegroup gains Advance Move for each Fell Caller Hero in the army.(Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
         <alterCost bonus="1" entryId="TS01" />
       </benefits>
     </level>
@@ -326,7 +396,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>All Kriel Warrior units can be affected by Bloodsong's fell call Hoof It during your first tum of the game. Bloodsong can still make a fell call that turn normally.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -338,7 +408,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Pyg units can be redeployed after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -357,11 +427,25 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="epic Grissel - Blockade Runners" casterId="Tx03" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Troll Axer, Troll Bouncer, Troll Impaler, Dire Troll Blitzer, Dire Troll Bomber, Dire Troll Mauler</models>
+          </type>
+          <type type="UNITS">
+              <models>Kriel Warriors, Pyg Bushwhackers, Trollkin Long Riders, Sons of Bragg</models>
+          </type>
+          <type type="SOLOS">
+              <models>Troll Whelps, Horthol Long Rider Hero</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Trollkin War Wagons</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Tx03" />
@@ -396,7 +480,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain + 1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -407,7 +491,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>One Medium-based unit gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -423,11 +507,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Warbeasts in Grissel's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Grim Angus - Headhunters" casterId="Tw04" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood non-character warbeasts with ranged weapons</models>
+          </type>
+          <type type="UNITS">
+              <models>Trollkin Scouts, Pyg units, Dannon Blythe &amp; Bull</models>
+          </type>
+          <type type="SOLOS">
+              <models>Trollkin Skinner, Alten Ashley</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="Tw04" />
@@ -449,8 +545,14 @@
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="TU11" />
-        <alterFA bonus="1" entryId="TS07" />
+        <alterFA bonus="512" entryId="TU11" />
+        <alterFA bonus="1" entryId="TS07">
+            <forEach>
+                <entry id="TU11" />
+                <entry id="TU03" />
+                <entry id="TU04" />
+            </forEach>
+        </alterFA>
       </benefits>
     </level>
     <level number="2">
@@ -461,7 +563,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Dannon Blythe &amp; Bull gain Advance Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -475,13 +577,13 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For every two units in the army, place one 4" AOE forest template anywhere completely within 20" of the back edge of Grim's deployment zone after terrain has been placed but before either player deploys his army. Forest templates cannot be placed within 3" of another terrain feature including other forest templates.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  3(TB01 TB02 TB05 TB06 TB07 TB11 TB12 TB14 TB16)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="TB01" />
           <entry id="TB02" />
           <entry id="TB05" />
@@ -494,11 +596,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect >Models in Grim's battlegroup gain Prowl during the first round of the game. (Models with Prowl gain Stealth while within terrain that provides concealment, or the AOE of a cloud effect.)</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="epic Grim - Hunting Party" casterId="Tx04" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Pyg Bushwhackers, Thumper Crews, Trollkin Highwaymen, Trollkin Scouts, Trollkin Sluggers</models>
+          </type>
+          <type type="SOLOS">
+              <models>Fell Caller solos</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Tx04" />
@@ -525,6 +638,13 @@
       <benefits>
         <ingameeffect  />
         <alterCost bonus="1" entryId="TU05" />
+          <alterFA bonus="1" entryId="TU05">
+              <forEach>
+                  <entry id="TU04" />
+                  <entry id="TU11" />
+                  <entry id="TU12" />
+              </forEach>
+          </alterFA>
       </benefits>
     </level>
     <level number="2">
@@ -535,7 +655,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Trollkin Scout units gain Ambush. (You can choose not to deploy a unit with Ambush at the start of the game. If it is not deployed normally, you can put it into play at the end of any of your Control Phases after your first turn. When you do, choose any table edge except the back of your opponent's deployment zone. Place the models in the unit within 3" of the chosen table edge.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -554,7 +674,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Light warbeasts gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -565,11 +685,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Borka - Drunk and Disorderly" casterId="TW05" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Troll Axer, Troll Bouncer, Troll Impaler, Winter Troll, non-character Dire Trolls</models>
+          </type>
+          <type type="UNITS">
+              <models>Long Riders, Trollkin Champions, Trollkin Fennbladcs, Trollkin Scouts</models>
+          </type>
+          <type type="SOLOS">
+              <models>Fell Caller Hero, Stone Scribe Chronicler, Trollkin Champion Hero, Trollkin Skinner, Troll Whelps</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="TW05" />
@@ -595,7 +727,7 @@
         <entry id="TS03" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models/units gain Pathfinder during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -606,7 +738,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Up to one warbeast gain Advance Deployment for each Trollkin scout unit in the army.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -617,13 +749,13 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game .</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  2TB06-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="TB06" />
         </entrygroup>
       </must_have>
@@ -634,6 +766,21 @@
     </level>
   </tiers>
   <tiers name="Borka - Family Reunion (NQ38)" casterId="TW05" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood non-character warbeasts with one or more melee weapons with Open Fist</models>
+          </type>
+          <type type="UNITS">
+              <models>Krielstone Bearer &amp; Stone Scribes, Trollkin Champions, Trollkin Sluggers</models>
+          </type>
+          <type type="SOLOS">
+              <models>Trollkin Champion solos, Stone Scribe Chronicler</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Trollkin War Wagons</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="TW05" />
@@ -660,7 +807,7 @@
         <entry id="IS03_minion" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Additionally, this army can include Greygore Boomhowler &amp; Co. and Gudrun the Wanderer. These models are considered to be friendly Trollblood models.</ingameeffect>
         <alterFA bonus="1" entryId="TU12" />
         <alterFA bonus="1" entryId="TU06" />
         <alterFA bonus="1" entryId="TS04" />
@@ -674,7 +821,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect >For each Trollkin Champion Hero in the army, one unit in the army gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -685,7 +832,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>The army gains Tale of Mist during the first round of the game. (Models with Tale of Mist gain concealment and Feign Death. A model with Feign Death cannot be targeted by ranged or magic attacks while knocked down.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -704,6 +851,18 @@
     </level>
   </tiers>
   <tiers name="Calandra - Children of Dhunia" casterId="TW06" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood non-character light warbeasts, Earthborn Dire Trolls</models>
+          </type>
+          <type type="UNITS">
+              <models>Krielstone Bearer &amp; Stone Scribes, Kriel Warriors, Trollkin Scattergunners, Trollkin Scouts, Pyg units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Fell Caller Hero, Stone Scribe Chronicler, Trollkin Runebearer, Troll Whelps</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="TW06" />
@@ -733,7 +892,7 @@
         <entry id="TS03" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -746,7 +905,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For every two solos in the army, one Trollkin unit gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -759,13 +918,13 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Up to one warbeast gains Advance Deployment for each Trollkin Scout or Pyg unit in the army.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  2TB09-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="TB09" />
         </entrygroup>
       </must_have>
@@ -776,7 +935,20 @@
     </level>
   </tiers>
   <tiers name="Gunnbjorn - The Big Bang" casterId="TW07" faction="faction_trollblood">
-    <level number="1">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Troll Bouncer, Trollblood non-character warbeasts with ranged weapons</models>
+          </type>
+          <type type="UNITS">
+              <models>Trollblood units with ranged weapons</models>
+          </type>
+          <type type="SOLOS">
+              <models>Troll Whelps, Trollblood solos with ranged weapons</models>
+          </type>
+      </availableModels>
+
+
+      <level number="1">
       <only>
         <entry id="TW07" />
         <entry id="TB04" />
@@ -797,8 +969,10 @@
         <entry id="TU11" />
         <entry id="TU12" />
         <entry id="TU13" />
+        <entry id="TU15" />
         <entry id="TS03" />
         <entry id="TS01" />
+        <entry id="TS12" />
       </only>
       <benefits>
         <ingameeffect  />
@@ -816,10 +990,11 @@
           <entry id="TU11" />
           <entry id="TU12" />
           <entry id="TU13" />
+          <entry id="TU15" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For every two units in the army, place one trench template anywhere completely within 20" of the back edge of Gunnbjorn's deployment zone after terrain has been placed but before either player deploys his army. Trench templates cannot be placed within 3" of another terrain feature but can be placed within 3" of each other.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -830,23 +1005,34 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Thumper Crew units gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  3(TB07 TB11)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="TB07" />
           <entry id="TB11" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in Gunnbjorn's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Jarl Skuld - Highwaymen" casterId="TW08" faction="faction_trollblood">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Trollblood non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Kriel Warriors, Pyg Bushwhackers, Scattergunners, Sons of Bragg</models>
+          </type>
+          <type type="SOLOS">
+              <models>Stone Scribe Chronicler, Trollkin Skinner, Troll Whelps</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="TW08" />
@@ -876,7 +1062,7 @@
         <entry id="TS03" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game. Additionally Kriel Warriors units in the army gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -923,12 +1109,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models/units gain Pathfinder during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   
     <tiers name="Calandra Truthsayer - Evolutionary Elementalism" casterId="TW06" faction="faction_trollblood">
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Pyre Trolls, Slag Trolls, Storm Trolls, Winter Trolls, Mountain Kings</models>
+            </type>
+            <type type="UNITS">
+                <models>Krielstone Bearer &amp; Stone Scribes, Trollkin Runeshapers, Trollkin Warders</models>
+            </type>
+            <type type="SOLOS">
+                <models>Runeshaper solos, Troll Whelps, Trollkin Runebearer</models>
+            </type>
+        </availableModels>
     <level number="1">
       <only>
         <entry id="TW06" />
@@ -980,7 +1177,7 @@
           </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect>(The warbeast must be different) Light Warbeasts in Calandra's battlegroup gain Advance Deployment</ingameeffect>
+        <ingameeffect>(The warbeasts must be different) Light Warbeasts in Calandra's battlegroup gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="4">
