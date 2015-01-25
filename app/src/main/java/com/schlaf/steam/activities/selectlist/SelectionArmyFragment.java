@@ -36,12 +36,10 @@ public class SelectionArmyFragment extends Fragment {
 			Bundle savedInstanceState) {
 		
 		Log.d("SelectionArmyFragment", "SelectionArmyFragment.onCreateView");
-		
-		View view = inflater.inflate(R.layout.alt_army_selection_fragment,
+
+        return inflater.inflate(R.layout.alt_army_selection_fragment,
 				container, false);
 
-
-		return view;
 	}
 
 	@Override
@@ -153,14 +151,17 @@ public class SelectionArmyFragment extends Fragment {
 //		selectionAdapter.notifyDataSetChanged();
 		
 	}
+
+    public void notifyGroupRecalculate() {
+        if (adapter != null) {
+            adapter.resetGroups();
+        }
+    }
 	
 	public void notifyDataSetChanged() {
 		if (adapter != null) {
 			adapter.notifyDataSetChanged();
 		}
-		
-		
-
 	}
 	
 	/**

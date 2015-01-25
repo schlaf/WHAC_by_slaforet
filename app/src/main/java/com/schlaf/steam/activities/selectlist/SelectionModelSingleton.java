@@ -2272,6 +2272,7 @@ public class SelectionModelSingleton {
 		
 		this.currentTiers = currentTiers;
 		recomposeSelectionList();
+        checkAndAlterSelectionList();
 	}
 
 	public Contract getCurrentContract() {

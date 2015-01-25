@@ -84,11 +84,7 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
         
     }	
 	
-	public void recomputeSelectionEntries() {
-		// notifyItemChanged(int position);	
-	}
-	
-	
+
 	/**
 	 * à partir de la liste des models, extrait les groupes disponibles
 	 * (filtrage beast/jacks, units, ...)
@@ -149,17 +145,19 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
 					}
 				} else {
 					// not allowed, but maybe already selected?
-					if (model.isSelected()) {
+					if (model.isSelected() && ! model.isObjective()) {
 						model.setAlteredFA(0);
 						if (model.isMercenaryOrMinion()) {
 							sortedModels.get(groupMercOrMinions).add(model);
-						} else if (model.isObjective()) {
-							sortedModels.get(groupObjectives).add(model);
 						} else {
 							sortedModels.get(groupNormal).add(model);	
 						}
 					}
-				}
+                    // objectives always allowed!
+                    if (model.isObjective()) {
+                        sortedModels.get(groupObjectives).add(model);
+                    }
+                }
 			} else if (SelectionModelSingleton.getInstance().getCurrentContract() != null) {
 				// if contract, do not add models that are not allowed
 				if (SelectionModelSingleton.getInstance().getCurrentContract().isAllowedModel(model.getId())) {
@@ -168,17 +166,19 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
 					}
 				} else {
 					// not allowed, but maybe already selected?
-					if (model.isSelected()) {
+					if (model.isSelected() && ! model.isObjective()) {
 						model.setAlteredFA(0);
 						if (model.isMercenaryOrMinion()) {
 							sortedModels.get(groupMercOrMinions).add(model);
-						} else if (model.isObjective()) {
-							sortedModels.get(groupObjectives).add(model);
 						} else {
 							sortedModels.get(groupNormal).add(model);	
 						}
 					}
-				}
+                    // objectives always allowed!
+                    if (model.isObjective()) {
+                        sortedModels.get(groupObjectives).add(model);
+                    }
+                }
 			} else {
 				if (model.isMercenaryOrMinion()) {
 					if (model.isVisible()) {
@@ -319,6 +319,15 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
 		notifyItemRangeInserted(1, selectionEntries.size());
 		
 	}
+
+    /**
+     * force recalculation of all groups
+     */
+    public void resetGroups() {
+        modeSelectGroup = true;
+        createGroupsFromModels();
+        notifyDataSetChanged();
+    }
 
 	public void backToGroups(SelectionGroup oldGroupSelected) {
 		

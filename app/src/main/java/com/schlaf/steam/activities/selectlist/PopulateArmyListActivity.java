@@ -157,9 +157,9 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle item selection
 		switch (item.getItemId()) {
-		case R.id.menu_collapse:
-			collapseSelection();
-			return true;
+//		case R.id.menu_collapse:
+//			collapseSelection();
+//			return true;
 		case R.id.menu_save:
 			saveArmy();
 			return true;
@@ -296,6 +296,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 									.setCurrentTiers(tiers.get(which - 1));
 						}
 
+                        notifyMaybeGroupChange();
 						notifyArmyChange();
 					}
 				});
@@ -349,10 +350,10 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	}
 
 	/**
-	 * return available tiers labels
+	 * return available contract labels
 	 * 
-	 * @param tiers
-	 * @return
+	 * @param  contracts
+	 * @return String[]
 	 */
 	private String[] getContractLabels(List<Contract> contracts) {
 		ArrayList<String> result = new ArrayList<String>();
@@ -695,7 +696,17 @@ public class PopulateArmyListActivity extends ActionBarActivity
 		}
 	}
 
-	/**
+    public void notifyMaybeGroupChange() {
+        int selectionIndex = mTabsAdapter.getTabIndexForId(SelectionArmyFragment.ID);
+
+        if (selectionIndex != -1) {
+            SelectionArmyFragment selectionfragment = (SelectionArmyFragment) mTabsAdapter.getItem(selectionIndex);
+            selectionfragment.notifyGroupRecalculate();
+        }
+    }
+
+
+    /**
 	 * notifie les couches graphique de la modification de sélection
 	 */
 	public void notifyArmyChange() {
@@ -710,6 +721,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 		if (selectionIndex != -1) {
 			SelectionArmyFragment selectionfragment = (SelectionArmyFragment) mTabsAdapter.getItem(selectionIndex);
 			selectionfragment.notifyDataSetChanged();
+
 		}
 		if (selectedIndex != -1) {
 			SelectedArmyFragment selectedfragment = (SelectedArmyFragment) mTabsAdapter.getItem(selectedIndex);
@@ -798,7 +810,6 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	/**
 	 * update display of title zone to notify of the tier level attained.
 	 * 
-	 * @param titleLayout
 	 */
 	private void displayTierLevel() {
 		ImageView tierLevelIcon = (ImageView) findViewById(R.id.tier_level_icon);

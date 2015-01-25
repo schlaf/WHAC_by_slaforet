@@ -77,14 +77,14 @@ public class Faction implements Serializable, Comparable<Faction> {
 	
 	
 	public List<SelectionEntry> getAvailableModelsOfFaction() {
-		return getAvailableModels(false);
+		return getAvailableModels(false, false);
 	}
 	
 	public List<SelectionEntry> getAvailableModels() {
-		return getAvailableModels(true);
+		return getAvailableModels(true, true);
 	}
 	
-	public List<SelectionEntry> getAvailableModels(boolean includeMercs) {
+	public List<SelectionEntry> getAvailableModels(boolean includeMercs, boolean includeObjectives) {
 		
 		List<SelectionEntry> models = new ArrayList<SelectionEntry>(units.size() + casters.size() + warlocks.size() + jacks.size() + beasts.size() + battleEngines.size() + solos.size() + 15);
 		for (Unit unit : units.values()) {
@@ -145,7 +145,7 @@ public class Faction implements Serializable, Comparable<Faction> {
 			}
 		}
 		
-		if (true) {
+		if (includeObjectives) {
 			models.addAll(getAvailableObjectives());
 		}
 		
