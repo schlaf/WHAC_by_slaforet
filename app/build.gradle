@@ -1,15 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        test {
+            keyAlias 'schlaf'
+            keyPassword 'braiN134'
+            storeFile file('/home/seb/seb/my_keystore')
+            storePassword 'braiN134'
+        }
+    }
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
-
     defaultConfig {
-        applicationId "com.schlaf.steam.whac"
+        applicationId 'com.schlaf.steam'
         minSdkVersion 7
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 28
+        versionName '1.5.4'
+        signingConfig signingConfigs.test
     }
     buildTypes {
         release {
@@ -17,13 +25,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:support-v4:21.0.3"
-    compile "com.android.support:appcompat-v7:21.0.3"
-    compile "com.android.support:recyclerview-v7:21.0.3"
-
-
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
 }
