@@ -59,24 +59,20 @@
                          -->
 
     <ImageView
-        android:id="@+id/imageView1"
         android:layout_width="20dp"
         android:layout_height="fill_parent"
         android:src="@drawable/gradient_background_caster" />
 
     <ImageView
-        android:id="@+id/imageView1"
         android:layout_width="20dp"
         android:layout_height="fill_parent"
         android:src="@drawable/gradient_background_jackbeast" />
 
     <ImageView
-        android:id="@+id/imageView1"
         android:layout_width="20dp"
         android:layout_height="fill_parent"
         android:src="@drawable/gradient_background_unit" />
     <ImageView
-        android:id="@+id/imageView1"
         android:layout_width="20dp"
         android:layout_height="fill_parent"
         android:src="@drawable/gradient_background_solo" />

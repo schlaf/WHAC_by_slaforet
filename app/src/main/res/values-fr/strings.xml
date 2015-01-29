@@ -516,6 +516,10 @@
     <string name="tier_level_attained">"Tiers atteint au niveau : "</string>
     
     <string name="help">Aide</string>
-    
-	
+    <string name="add_entry_message">Vous allez ajouter cette carte à votre liste</string>
+    <string name="add_entry_title">Insérer un modèle dans la bataille</string>
+    <string name="battle_planner">Préparer votre plan de bataille</string>
+    <string name="long_press_to_add">Appui long pour ajouter cette carte</string>
+
+
 </resources>

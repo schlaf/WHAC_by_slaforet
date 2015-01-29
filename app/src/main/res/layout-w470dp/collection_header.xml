@@ -31,7 +31,6 @@
     </FrameLayout>
     
     <TextView
-        android:id="@+id/army_title"
         android:layout_width="96dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -47,7 +46,6 @@
     </FrameLayout>
     
      <TextView
-         android:id="@+id/army_title"
          android:layout_width="96dp"
          android:layout_height="wrap_content"
          android:gravity="center_horizontal"
