@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schlaf.steam"
-    android:versionCode="27"
-    android:versionName="1.5.3" >
+    android:versionCode="28"
+    android:versionName="1.5.4" >
     
 <!--
 1.0.3 - 
@@ -177,11 +177,20 @@ Correcting tier free models : applying "free model" on previously selected model
 (ie. saeryn : the fourth nephilim must directly be free when unlocking tier4, no more need to take an extra one)
 Adding theme force from Exigence for minions (Helga, Jaga)
 Adding theme force : Dr. Arkadius - Nature of the Beast (NQ56) (including Gorax Guest Star)
-Adding theme force : Rahn - Fires From On High
-
+Adding theme force : Rahn - Fires From On Hig
 1.5.3
 Corrected bug preventing the addition of models in list building on Android 2.x 
 Corrected cost points for models whose count was altered by theme forces when reloading armies
+
+1.5.4
+SteamRoller 2015 new scenario and objectives
+Add SR2015 objective to army list
+Corrected Karchev bug in battle mode
+Added Dynamo and Moros and corrected theme forces to include them
+Completed Orboros, Everblight, Skorne and Trollblood theme forces
+Completed Minions, Mercs and Retribution theme forces
+Allow importing files with .whac.xml extension (due to navigator appending .xml on download)
+Corrected boneswarm for WrongEye
 
 
  -->    
@@ -304,15 +313,7 @@ Corrected cost points for models whose count was altered by theme forces when re
             android:theme="@style/WhacTheme" >
         </activity>
         <activity
-            android:name=".activities.selectlist.ChooseAttachActivity"
-            android:theme="@style/WhacTheme" >
-        </activity>
-        <activity
             android:name=".activities.damages.AddDamageActivity"
-            android:theme="@style/WhacTheme" >
-        </activity>
-        <activity
-            android:name=".activities.ChooseArmyListDialog"
             android:theme="@style/WhacTheme" >
         </activity>
         <activity android:name=".activities.managelists.ManageArmyListsActivity" >
@@ -372,8 +373,7 @@ Corrected cost points for models whose count was altered by theme forces when re
         <activity android:name=".activities.card.CardLibraryActivity" android:theme="@style/WhacTheme"></activity>
         <activity android:theme="@style/WhacTheme" android:name=".activities.collection.MyCollectionActivity"></activity>
         <activity android:name=".activities.donation.DonationActivity" android:theme="@style/WhacTheme"></activity>
-        <activity android:theme="@style/WhacTheme" android:name=".activities.battleplanner.BattlePlanerActivity"></activity>
-        
+
         <activity android:theme="@style/WhacTheme" android:name="com.schlaf.steam.tier.DisplayTierInfo"/>
         
         <activity android:theme="@style/WhacTheme" android:name=".activities.steamroller.ScenarioLibraryActivity"/>
