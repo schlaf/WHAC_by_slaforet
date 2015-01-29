@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
   <tiers name="Dr. Arkadius - Mad Science" casterId="IW08" faction="faction_minions">
+    <availableModels>
+        <type type="WARBEASTS">
+            <models>Minion Farrow non-character warbeasts</models>
+        </type>
+        <type type="UNITS">
+            <models>Farrow units</models>
+        </type>
+        <type type="SOLOS">
+            <models>Farrow solos, Rorsh &amp; Brine</models>
+        </type>
+    </availableModels>
+      
     <level number="1">
       <only>
         <entry id="IW08" />
@@ -29,7 +43,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You can redeploy one model/unit for each Farrow Bone Grinder unit in the army after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -40,18 +54,18 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  3IB02-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="IB02" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Warbeasts in the army gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -59,6 +73,17 @@
         name="Dr. Arkadius - Nature of the Beast (NQ56)"
         casterId="IW08"
         faction="faction_minions" >
+    <availableModels>
+        <type type="WARBEASTS">
+            <models>Minion Farrow non-character warbeasts</models>
+        </type>
+        <type type="UNITS">
+            <models>Farrow Bone Grinders, Farrow Slaughterhousers</models>
+        </type>
+        <type type="SOLOS">
+            <models>Targ</models>
+        </type>
+    </availableModels>    
         <level number="1" >
             <only>
                 <entry id="IW08" />
@@ -73,8 +98,7 @@
             </only>
 
             <benefits>
-                <ingameeffect>
-Gorax in the army gain Shield Guard.
+                <ingameeffect>This army can include Gorax Light Warbeast. This warbeast is considered to be a friendly Farrow warbeast instead of a Orboros unit. Additionally, Gorax in the army gain Shield Guard.
                 </ingameeffect>
             </benefits>
         </level>
@@ -150,6 +174,17 @@ Warbeasts in the army can run without being forced during the first round of the
     </tiers>  
   
   <tiers name="Lord Carver - The Golden Horde" casterId="IW05" faction="faction_minions">
+    <availableModels>
+        <type type="WARBEASTS">
+            <models>Minion Farrow non-character warbeasts</models>
+        </type>
+        <type type="UNITS">
+            <models>Farrow units</models>
+        </type>
+        <type type="SOLOS">
+            <models>Farrow solos, Rorsh &amp; Brine</models>
+        </type>
+    </availableModels>      
     <level number="1">
       <only>
         <entry id="IW05" />
@@ -166,10 +201,8 @@ Warbeasts in the army can run without being forced during the first round of the
         <entry id="IS10" />
       </only>
       <benefits>
-        <ingameeffect  />
-        <alterFA bonus="1" entryId="IU03" />
-        <alterFA bonus="1" entryId="IU02" />
-        <alterFA bonus="1" entryId="IU06" />
+        <ingameeffect>One Farrow Brigand or Farrow Razorback Crew unit gains Advance Deployment</ingameeffect>
+        <alterFA bonus="512" entryId="IU03" />
       </benefits>
     </level>
     <level number="2">
@@ -180,10 +213,10 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="Models gain Pathfinder during the first turn. Rorsh &amp; Brine get cheaper Warbeasts." />
-        <alterCost bonus="1" entryId="IB01" />
-        <alterCost bonus="2" entryId="IB02" />
-        <alterCost bonus="2" entryId="IB06" />
+        <ingameeffect>Model/units in this army gain Pathfinder during your first tum of the game.</ingameeffect>
+        <alterCost bonus="1" entryId="IB01" onlyIfAttachedTo="IW03_minion"/>
+        <alterCost bonus="2" entryId="IB02" onlyIfAttachedTo="IW03_minion" />
+        <alterCost bonus="2" entryId="IB06" onlyIfAttachedTo="IW03_minion" />
       </benefits>
     </level>
     <level number="3">
@@ -209,12 +242,23 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="  Carver's battle group gains a before game movement bonus." />
+        <ingameeffect>Models in Carver's battlegroup gains gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Calaban - Bad Religion" casterId="IW07" faction="faction_minions">
-    <level number="1">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Minion Gatorman non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Bog Trog Ambushers, Farrow Bone Grinders, Gatorman units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Croak Hunters, Feralgeists, Gatorman solos, Wrong Eye &amp; Snapjaw</models>
+          </type>
+      </availableModels>
+      <level number="1">
       <only>
         <entry id="IW07" />
         <entry id="IB03" />
@@ -233,7 +277,7 @@ Warbeasts in the army can run without being forced during the first round of the
         <entry id="Snapjaw_minion" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect >Models/units in this army gain Stealth during the first round of the game</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -244,7 +288,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Feralgeist solos in this army gain Advance Move (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -255,7 +299,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Wrong Eye and warbeasts in his battlegroup gain Advance Deployment.</ingameeffect>
         <alterCost bonus="2" entryId="IB03" onlyIfAttachedTo="IW04_minion" />
         <alterCost bonus="1" entryId="IB04" onlyIfAttachedTo="IW04_minion"  />
         <alterCost bonus="2" entryId="IB05" onlyIfAttachedTo="IW04_minion"  />
@@ -275,11 +319,22 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Bloody Barnabas - Apex Predators" casterId="IW06" faction="faction_minions">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Minion Gatorman non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Bog Trog Ambushers, Gatorman units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Croak Hunters, Gatorman solos, Wrong Eye &amp; Snapjaw</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="IW06" />
@@ -298,7 +353,7 @@ Warbeasts in the army can run without being forced during the first round of the
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="IU04" />
+        <alterFA bonus="512" entryId="IU04" />
       </benefits>
     </level>
     <level number="2">
@@ -309,7 +364,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -320,7 +375,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For every two Gatorman Posse units in the army, place one 3" AOE anywhere completely within 20" of the back edge of Barnabas' deployment zone after terrain has been placed but before either player deploys his army. The AOE is shallow water terrain. These AOEs cannot be placed within 3 of another terrain feature.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -334,13 +389,24 @@ Warbeasts in the army can run without being forced during the first round of the
       </must_have>
       <benefits>
         <ingameeffect  />
-        <alterCost bonus="1" entryId="IB08" />
-        <alterCost bonus="1" entryId="IB03" />
-        <alterCost bonus="1" entryId="IB05" />
+        <alterCost bonus="1" entryId="IB08" onlyIfAttachedTo="IW06"/>
+        <alterCost bonus="1" entryId="IB03" onlyIfAttachedTo="IW06" />
+        <alterCost bonus="1" entryId="IB05" onlyIfAttachedTo="IW06" />
       </benefits>
     </level>
   </tiers>
   <tiers name="Maelok - The Walking Death" casterId="IW09" faction="faction_minions">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Minion Gatorman non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Minion units with Amphibious, Minion units with Undead</models>
+          </type>
+          <type type="SOLOS">
+              <models>Gatorman Witch Doctor, Minion solos with Undead, Wrong Eye &amp; Snapjaw</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="IW09" />
@@ -360,6 +426,12 @@ Warbeasts in the army can run without being forced during the first round of the
       <benefits>
         <ingameeffect  />
         <alterCost bonus="1" entryId="IS11" />
+          <alterFA bonus="1" entryId="IS11">
+              <forEach>
+                  <entry id="IU01" />
+                  <entry id="IU04" />
+              </forEach>
+          </alterFA>
       </benefits>
     </level>
     <level number="2">
@@ -372,7 +444,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models/units in the army gain Incorporeal during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -383,7 +455,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Up to one model with Undead gain Advance Move for each Gatorman Witch Doctor solo in the army. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -394,11 +466,23 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Boneswarm warbeasts in this army each begin the game with one corpse token.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Sturm und Drang - Split Decision" casterId="IW10" faction="faction_minions">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Minion Farrow non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Farrow units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Farrow solos, Rorsh &amp; Brine</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="IW10" />
@@ -415,7 +499,11 @@ Warbeasts in the army can run without being forced during the first round of the
         <entry id="IS10" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>
+Before determining which player deploys first at the start of the game declare wether Sturm or Drang will be dominant during
+            the first round of the game. If Drang is dominant, warbeasts in this army gain +2 SPD during your first turn of the game. If
+            Sturm is dominant friendly models/units can begin the game affected by Sturm's upkeep spells. These spells and their targets must be declared before either player sets up models. Sturm does not pay fury to upkeep these spells during your first turn.
+        </ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -426,7 +514,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -437,7 +525,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Farrow Slaughterhouser units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -454,6 +542,17 @@ Warbeasts in the army can run without being forced during the first round of the
     </level>
   </tiers>
   <tiers name="Midas - Butcher's Block" casterId="IW11" faction="faction_minions">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Minion Farrow non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Farrow units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Farrow solos, Rorsh &amp; Brine</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="IW11" />
@@ -472,7 +571,7 @@ Warbeasts in the army can run without being forced during the first round of the
         <entry id="IS10" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Midas' battlegroup can include Boneswarm warbeasts.</ingameeffect>
         <alterFA bonus="1" entryId="IU02" />
       </benefits>
     </level>
@@ -484,7 +583,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For each Farrow Bone Grinder unit in the army, one warbeast in Midas' battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -495,7 +594,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For each Slaughterhouser unit in the army, one Boneswarm warbeast begins the game with three corpse tokens.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -510,11 +609,22 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Add one Farrow non-character warbeast to Midas' battlegroup. The warbeast begins the game destroyed.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Rask - Watery Graves" casterId="IW12" faction="faction_minions">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Minion Gatorman non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Gatorman Bokor &amp; Bog Trog, Swamp Shamblers, Bog Trog units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Thrullg, Minion solos with Amphibious, Totem Hunter</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="IW12" />
@@ -532,7 +642,7 @@ Warbeasts in the army can run without being forced during the first round of the
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="IU01" />
+        <alterFA bonus="2" entryId="IU01" />
         <alterFA bonus="1" entryId="IU08" />
       </benefits>
     </level>
@@ -544,7 +654,8 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Solos in the army gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)
+        </ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -556,7 +667,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For every two units in the army, add a Croak Hunter solo to the army free of cost.</ingameeffect>
         <freeModel>
           <entry id="IS09" />
         </freeModel>
@@ -574,7 +685,7 @@ Warbeasts in the army can run without being forced during the first round of the
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -583,7 +694,6 @@ Warbeasts in the army can run without being forced during the first round of the
         casterId="IW14"
         faction="faction_minions" >
 
-        <!--
 <availableModels>
    <type type="WARBEASTS">
       <models>Minion Gatorman non-character warbeasts</models>
@@ -592,13 +702,12 @@ Warbeasts in the army can run without being forced during the first round of the
       <models>Bog Trog units, Gatorman units</models>
    </type>
    <type type="SOLOS">
-      <models>Feralgeists, Thrullgs, Bog Trog solos, Croak solos, Gatorman solos, Wrong Eye and Snapjaw</models>
+      <models>Feralgeists, Thrullgs, Bog Trog solos, Croak solos, Gatorman solos, Wrong Eye &amp; Snapjaw</models>
    </type>
    <type type="BATTLE_ENGINES">
       <models>Sacral Vault</models>
    </type>
 </availableModels>
-        -->
         <level number="1" >
             <only>
 
@@ -663,11 +772,7 @@ Warbeasts in the army can run without being forced during the first round of the
             </must_have>
 
             <benefits>
-                <ingameeffect>
-Undead models gain Advance Move. (Before the
-start of the game but after both players have deployed, a
-model with Advance Move can make a full advance.)
-                </ingameeffect>
+                <ingameeffect>Undead models gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
             </benefits>
         </level>
         <level number="3" >
@@ -684,13 +789,7 @@ model with Advance Move can make a full advance.)
             </must_have>
 
             <benefits>
-                <ingameeffect>
-Friendly models/units can begin the game affected
-by Jaga-Jaga’s upkeep spells. These spells and their targets
-must be declared before either player sets up models. Jaga-
-Jaga does not pay fury to upkeep these spells during your
-first turn.
-                </ingameeffect>
+                <ingameeffect> Friendly models/units can begin the game affected by Jaga-Jaga’s upkeep spells. These spells and their targets must be declared before either player sets up models. Jaga-Jaga does not pay fury to upkeep these spells during your first turn.</ingameeffect>
             </benefits>
         </level>
         <level number="4" >
@@ -706,9 +805,7 @@ first turn.
             </must_have>
 
             <benefits>
-                <ingameeffect>
-Your deployment zone is extended 2" forward.
-                </ingameeffect>
+                <ingameeffect> Your deployment zone is extended 2" forward.</ingameeffect>
             </benefits>
         </level>
     </tiers>
@@ -717,22 +814,20 @@ Your deployment zone is extended 2" forward.
         casterId="IW13"
         faction="faction_minions" >
 
-        <!--
 <availableModels>
    <type type="WARBEASTS">
-      <models>Minion Farrow noncharacter warbeasts</models>
+      <models>Minion Farrow non-character warbeasts</models>
    </type>
    <type type="UNITS">
       <models>Farrow units</models>
    </type>
    <type type="SOLOS">
-      <models>Efaarit Scouts, Farrow solos, Gudrun the Wanderer, Rorsh & Brine</models>
+      <models>Efaarit Scouts, Farrow solos, Gudrun the Wanderer, Rorsh &amp; Brine</models>
    </type>
    <type type="BATTLE_ENGINES">
       <models>Meat Thresher</models>
    </type>
 </availableModels>
-        -->
         <level number="1" >
             <only>
 
@@ -790,9 +885,7 @@ Your deployment zone is extended 2" forward.
             </must_have>
 
             <benefits>
-                <ingameeffect>
-Maximus and Farrow Slaughterhouser units gain Advance Deployment.
-                </ingameeffect>
+                <ingameeffect> Maximus and Farrow Slaughterhouser units gain Advance Deployment.</ingameeffect>
             </benefits>
         </level>
         <level number="3" >
@@ -827,9 +920,7 @@ Your deployment zone is extended 2" forward.
             </must_have>
 
             <benefits>
-                <ingameeffect>
-You gain +1 on your starting roll for the game.
-                </ingameeffect>
+                <ingameeffect> You gain +1 on your starting roll for the game.</ingameeffect>
             </benefits>
         </level>
     </tiers>

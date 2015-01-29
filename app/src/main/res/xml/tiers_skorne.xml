@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
 <tiers name="Morghoul - Big Game Hunters" casterId="Sw01" faction="faction_skorne">
+    <availableModels>
+        <type type="WARBEASTS">
+            <models>Skorne non-character Cyclops and Titan warbeasts</models>
+        </type>
+        <type type="UNITS">
+            <models>Cataphract Arcuarii, Paingiver units</models>
+        </type>
+        <type type="SOLOS">
+            <models>Paingiver solos</models>
+        </type>
+    </availableModels>
     <level number="1">
       <only>
         <entry id="Sw01" />
@@ -19,8 +32,8 @@
         <entry id="SS07" />
       </only>
       <benefits>
-        <ingameeffect  />
-        <alterFA bonus="1" entryId="SU05" />
+        <ingameeffect>Additionally, models in this army gain Pathfinder during your first turn of the game.</ingameeffect>
+        <alterFA bonus="512" entryId="SU05" />
       </benefits>
     </level>
     <level number="2">
@@ -31,7 +44,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Cataphract Arcuarii units gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -60,11 +73,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="epic Morghoul - Imperial Executioners" casterId="Sx01" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Paingiver solos</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="Sx01" />
@@ -83,14 +108,17 @@
         <entry id="SB15" />
         <entry id="SB17" />
         <entry id="SB18" />
+        <entry id="SB19" />
+        <entry id="SB20" />
+        <entry id="SB21" />
         <entry id="SU01" />
         <entry id="SU05" />
         <entry id="SS03" />
         <entry id="SS07" />
       </only>
       <benefits>
-        <ingameeffect  />
-        <alterFA bonus="1" entryId="SU01" />
+        <ingameeffect>Additionally, you gain +1 on your starting roll for the game.</ingameeffect>
+        <alterFA bonus="512" entryId="SU01" />
       </benefits>
     </level>
     <level number="2">
@@ -101,7 +129,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect/>
         <freeModel>
           <entry id="SS03" />
         </freeModel>
@@ -120,13 +148,14 @@
         <entry id="SB14" />
         <entry id="SB15" />
         <entry id="SB17" />
+        <entry id="SB19" />
         <entry id="SU01" />
         <entry id="SU05" />
         <entry id="SS03" />
         <entry id="SS07" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models/units in the army gain Stealth during the first round of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -147,11 +176,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For each Paingiver Bloodrunner Master Tormentor solo in the army, one warbeast in Morghoul's battlegroup gains Advance Deployment</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Makeda - Army of the Western Reaches" casterId="Sw02" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts, Molik Karn</models>
+          </type>
+          <type type="UNITS">
+              <models>Cataphract Cetrati, Paingiver Beast Handlers, Tyrant Commander &amp; Standard Bearer, Praetorian units, Venator units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Cataphract solos, Praetorian solos, Saxon Orrik</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Sw02" />
@@ -171,6 +211,9 @@
         <entry id="SB15" />
         <entry id="SB17" />
         <entry id="SB18" />
+        <entry id="SB19" />
+        <entry id="SB20" />
+        <entry id="SB21" />
         <entry id="SU03" />
         <entry id="SA03" />
         <entry id="SU05" />
@@ -178,6 +221,7 @@
         <entry id="SU06" />
         <entry id="SU07" />
         <entry id="SU08" />
+          <entry id="SU16" />
         <entry id="SA01" />
         <entry id="SU10" />
         <entry id="SU11" />
@@ -188,8 +232,8 @@
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="SU08" />
-        <alterFA bonus="1" entryId="SU11" />
+        <alterFA bonus="512" entryId="SU08" />
+        <alterFA bonus="512" entryId="SU11" />
       </benefits>
     </level>
     <level number="2">
@@ -214,7 +258,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Tyrant Commander &amp; Standard Bearer and Cataphract units in the army gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -229,11 +273,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="epic Makeda - Imperishable Dominion" casterId="Sx02" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character Cyclops warbeasts, Molik Karn</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver Beast Handlers, Tyrant Commander &amp; Standard Bearer, Praetorian units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Ancestral Guardian solos, Extoller solos, Praetorian solos, Orin Midwinter, Tyrant Rhadeim</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="Sx02" />
@@ -247,6 +303,7 @@
         <entry id="SU06" />
         <entry id="SU07" />
         <entry id="SU08" />
+          <entry id="SU16" />
         <entry id="SA01" />
         <entry id="SS02" />
         <entry id="SS09" />
@@ -282,7 +339,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Place Tyrant Rhadeim and Praetorian Ferox units after normal deployment. These models are placed at the same time as your models with Advance Deployment (if any). These models must be placed within your normal deployment zone.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -293,11 +350,25 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Heavy warbeasts in Makeda's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Makeda3 - Armageddon" casterId="Sz02" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver Beast Handlers, Cataphract units, small-based Praetorian units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Ancestral Guardian solos, Aptimus Marketh</models>
+          </type>
+          <type type="BATTLE_ENGINES">
+              <models>Siege Animantarax</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Sz02" />
@@ -316,6 +387,9 @@
         <entry id="SB15" />
         <entry id="SB17" />
         <entry id="SB18" />
+        <entry id="SB19" />
+        <entry id="SB20" />
+        <entry id="SB21" />
         <entry id="SE01" />
         <entry id="SU05" />
         <entry id="SU02" />
@@ -325,12 +399,13 @@
         <entry id="SU07" />
         <entry id="SU08" />
         <entry id="SA01" />
+        <entry id="SU16" />
         <entry id="SS02" />
         <entry id="SS09" />
         <entry id="SS08" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Makeda &amp; the Exalted Court gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -341,7 +416,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect >Aptimus Marketh and Ancestral Guardian solos start the game with a soul token</ingameeffect>
+        <ingameeffect>Aptimus Marketh and Ancestral Guardian solos each begin the game with one soul token.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -363,10 +438,13 @@
           <entry id="SB15" />
           <entry id="SB17" />
           <entry id="SB18" />
+            <entry id="SB19" />
+            <entry id="SB20" />
+            <entry id="SB21" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect >Gain +1 to the roll at the start of the game.</ingameeffect>
+        <ingameeffect >You gain + 1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -384,6 +462,17 @@
     </level>
   </tiers>
   <tiers name="Hexeris - Kingdom of Shadow" casterId="Sw03" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver Beast Handlers, Cataphract units, Praetorian units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Agonizer, Void Spirits, Ancestral Guardian solos, Cataphract solos, Extoller solos</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="Sw03" />
@@ -402,6 +491,9 @@
         <entry id="SB15" />
         <entry id="SB17" />
         <entry id="SB18" />
+          <entry id="SB19" />
+          <entry id="SB20" />
+          <entry id="SB21" />
         <entry id="SU05" />
         <entry id="SU02" />
         <entry id="SU03" />
@@ -410,7 +502,8 @@
         <entry id="SU07" />
         <entry id="SU08" />
         <entry id="SU15" />
-        <entry id="SA01" />
+          <entry id="SU16" />
+          <entry id="SA01" />
         <entry id="SS01" />
         <entry id="SS06" />
         <entry id="SS02" />
@@ -419,7 +512,7 @@
         <entry id="SS08" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Friendly models/units can begin the game affected by Hexeris' upkeep spells. These spells and their targets must be declared before either player sets up models. Hexeris does not pay fury to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -430,7 +523,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Praetorian Swordsmen units gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -441,7 +534,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Ancestral Guardian solos in the army gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -454,11 +547,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="epic Hexeris - Practical Magic" casterId="Sx03" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver Beast Handlers, Praetorian units, Venator units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Agonizer, Void Spirits, Ancestral Guardian solos, Extoller solos</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="Sx03" />
@@ -477,6 +582,9 @@
         <entry id="SB15" />
         <entry id="SB17" />
         <entry id="SB18" />
+          <entry id="SB19" />
+          <entry id="SB20" />
+          <entry id="SB21" />
         <entry id="SU05" />
         <entry id="SU06" />
         <entry id="SU07" />
@@ -487,20 +595,21 @@
         <entry id="SA02" />
         <entry id="SU13" />
         <entry id="SU14" />
-        <entry id="SS01" />
+          <entry id="SU16" />
+          <entry id="SS01" />
         <entry id="SS06" />
         <entry id="SS02" />
         <entry id="SS09" />
         <entry id="SS04" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For each Extoller solo in the army, one warbeast in Hexeris' battlegroup can use its animus during its activation without being forced. The warbeast cannot be forced to used its animus again that activation.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
       <!-- Must have  4(SS02 SS09)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
           <entry id="SS02" />
           <entry id="SS09" />
         </entrygroup>
@@ -509,6 +618,7 @@
         <ingameeffect  />
         <freeModel>
           <entry id="SS02" />
+          <entry id="SS09" />
         </freeModel>
       </benefits>
     </level>
@@ -525,10 +635,11 @@
           <entry id="SU12" />
           <entry id="SU13" />
           <entry id="SU14" />
+          <entry id="SU16" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -550,14 +661,28 @@
           <entry id="SB15" />
           <entry id="SB17" />
           <entry id="SB18" />
+            <entry id="SB19" />
+            <entry id="SB20" />
+            <entry id="SB21" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>The warbeast bonded to Hexeris gains Advance Deployment.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Xerxis - The fist of Halaak" casterId="SW04" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character heavy warbeasts, Molik Karn</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver Beast Handlers, Tyrant Commander &amp; Standard Bearers, Cataphract units, Venator units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Cataphract solos</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="SW04" />
@@ -613,7 +738,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Venator weapon crews gain Advance Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -624,11 +749,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Titans in Xerxis' battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Xerxis - The Abyssal Cohort (NQ39)" casterId="SW04" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver Beast Handlers, Skorne units with Shield Wall (Order), Tyrant Commander &amp; Standard Bearer</models>
+          </type>
+          <type type="SOLOS">
+              <models>Ancestral Guardians, Extoller solos</models>
+          </type>
+      </availableModels>
+
     <level number="1">
       <only>
         <entry id="SW04" />
@@ -648,6 +785,9 @@
         <entry id="SB15" />
         <entry id="SB17" />
         <entry id="SB18" />
+          <entry id="SB19" />
+          <entry id="SB20" />
+          <entry id="SB21" />
         <entry id="SU03" />
         <entry id="SU05" />
         <entry id="SU07" />
@@ -658,7 +798,7 @@
         <entry id="SS09" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Add up to three Venator Reiver models to any unit with Shield Wall (Order) for 1 point per model. These models are considered to be weapon attachments. These Reiver models do gain the benefits of Shield Wall.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -669,7 +809,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Praetorian Karax units can be deployed anywhere within 20" of the rear table edge of your deployment zone but cannot advance during your first turn.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -681,22 +821,36 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Friendly models/units can begin the game affected by Xerxis’ upkeep spells. These spells and their targets must be declared before either player sets up models. Xerxis does not pay fury to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  2(SB06)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="SB06" />
         </entrygroup>
       </must_have>
       <benefits>
         <ingameeffect  />
+          <alterCost bonus="1" entryId="SB06" onlyIfAttachedTo="SW04"/>
+          <alterCost bonus="1" entryId="SB07" onlyIfAttachedTo="SW04"/>
+          <alterCost bonus="1" entryId="SB08" onlyIfAttachedTo="SW04"/>
       </benefits>
     </level>
   </tiers>
   <tiers name="Zaal - Immortal Host" casterId="SW05" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Immortals, Praetorian units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Ancestral Guardian solos, Extoller solos</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="SW05" />
@@ -715,10 +869,14 @@
         <entry id="SB15" />
         <entry id="SB17" />
         <entry id="SB18" />
+          <entry id="SB19" />
+          <entry id="SB20" />
+          <entry id="SB21" />
         <entry id="SU04" />
         <entry id="SU06" />
         <entry id="SU07" />
         <entry id="SU08" />
+          <entry id="SU16" />
         <entry id="SA01" />
         <entry id="SS02" />
         <entry id="SS09" />
@@ -727,9 +885,25 @@
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="SU04" />
-        <alterFA bonus="1" entryId="SS02" />
-        <alterFA bonus="1" entryId="SS04" />
+        <alterFA bonus="512" entryId="SU04" />
+        <alterFA bonus="1" entryId="SS02">
+            <forEach>
+                <entry id="SU04"/>
+                <entry id="SU06" />
+                <entry id="SU07" />
+                <entry id="SU08" />
+                <entry id="SU16" />
+            </forEach>
+        </alterFA>
+        <alterFA bonus="1" entryId="SS04">
+            <forEach>
+                <entry id="SU04"/>
+                <entry id="SU06" />
+                <entry id="SU07" />
+                <entry id="SU08" />
+                <entry id="SU16" />
+            </forEach>
+        </alterFA>
       </benefits>
     </level>
     <level number="2">
@@ -740,7 +914,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Ancestral Guardian solos in this army gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -752,7 +926,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Extollers in this army each begin with three soul tokens.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -763,11 +937,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>The Kovaas can begin the game in play.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Mordikaar - Legions of the Abyss" casterId="SW06" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Nihilators, Praetorian Karax, Praetorian Swordsmen</models>
+          </type>
+          <type type="SOLOS">
+              <models>Agonizer, Feralgeists, Void Spirits</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="SW06" />
@@ -787,6 +972,9 @@
         <entry id="SB16" />
         <entry id="SB17" />
         <entry id="SB18" />
+          <entry id="SB19" />
+          <entry id="SB20" />
+          <entry id="SB21" />
         <entry id="SU12" />
         <entry id="SU07" />
         <entry id="SU08" />
@@ -796,7 +984,7 @@
         <entry id="IS02" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in this army gain Incorporeal during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -809,7 +997,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For every two units, add one Void Spirit solo to the army free of cost. These solos ignore FA restrictions.</ingameeffect>
         <freeModel>
           <entry id="SS06" />
         </freeModel>
@@ -824,7 +1012,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Solos with Incorporeal gain Advance Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -847,14 +1035,28 @@
           <entry id="SB16" />
           <entry id="SB17" />
           <entry id="SB18" />
+            <entry id="SB19" />
+            <entry id="SB20" />
+            <entry id="SB21" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Rasheth - Chain Gang" casterId="SW07" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character Basilisk and Titan warbeasts</models>
+          </type>
+          <type type="UNITS">
+              <models>Cataphract Arcuarii, Paingiver Beast Handlers, Nihilators, Venator units, Minion units that will work for the Skorne</models>
+          </type>
+          <type type="SOLOS">
+              <models>Agonizer, Paingiver Task Master</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="SW07" />
@@ -883,7 +1085,7 @@
         <entry id="SS07" />
       </only>
       <benefits>
-        <ingameeffect >Add Agonizer FA for each titan included.</ingameeffect>
+        <ingameeffect/>
         <alterFA entryId="SS01" bonus="1">
           <forEach>
             <entry id="SB06" />
@@ -915,7 +1117,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>One Minion unit gains +2 SPD during your first turn of the game for each Paingiver Task Master solo included .</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -926,7 +1128,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Agonizer solos each begin the game with 3 fury points</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -940,11 +1142,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Naaresh - No Pain, No Gain" casterId="SW08" faction="faction_skorne">
+      <availableModels>
+          <type type="WARBEASTS">
+              <models>Skorne non-character warbeasts with SPD 5 or higher</models>
+          </type>
+          <type type="UNITS">
+              <models>Paingiver units, Nihilators units</models>
+          </type>
+          <type type="SOLOS">
+              <models>Agonizer, Nihilator solos, Paingiver solos</models>
+          </type>
+      </availableModels>
     <level number="1">
       <only>
         <entry id="SW08" />
@@ -967,8 +1180,8 @@
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="SU05" />
-        <alterFA bonus="1" entryId="SU12" />
+        <alterFA bonus="512" entryId="SU05" />
+        <alterFA bonus="512" entryId="SU12" />
       </benefits>
     </level>
     <level number="2">
@@ -979,7 +1192,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Nihilator units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -990,7 +1203,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Friendly models/units can begin the game affected by Naaresh' upkeep spells. These spells and their targets must be declared before either player sets up models. Naaresh does not pay fury to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -1010,7 +1223,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in Naaresh's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>

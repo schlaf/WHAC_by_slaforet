@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
 <tiers name="Magnus1 - Most Wanted" casterId="Mw01" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Idrian Skirmishers, Steelhead units, Greygore Boomhowler &amp; Co., Croe's Cutthroats</models>
+        </type>
+        <type type="SOLOS">
+            <models>Gorman di Wulfe, Kell Bailoch, Orin Midwinter, Saxon Orrik, Steelhead solos</models>
+        </type>
+    </availableModels>
     <level number="1">
       <only>
         <entry id="Mw01" />
@@ -42,7 +55,7 @@
         <entry id="MS16" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Additionally, this army can include one Cygnar Long Gunner Infantry unit or one Cygnar Trencher Infantry unit. This unit is considered to be a friendly Mercenary unit instead of a Cygnar unit and can include attachments.</ingameeffect>
         <alterCost bonus="1" entryId="MJ01" />
       </benefits>
     </level>
@@ -56,13 +69,13 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Small-based Steelhead units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
       <!-- Must have  3(MJ01 MJ02 MJ03 MJ04 MJ09 MJ10 MJ11 MJ12 MJ13 MJ16 MJ18)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="MJ01" />
           <entry id="MJ02" />
           <entry id="MJ03" />
@@ -77,22 +90,33 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For each warjack in Magnus' battlegroup, place one wreck marker of the corresponding size anywhere within 20" of the back edge of Magnus' deployment zone after terrain has been placed but before either player deploys his army. Wreck markers cannot be placed within 3" of a terrain feature.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  2(MJ01)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="MJ01" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in Magnus' battlegroup can begin the game affected by his upkeep spells. These spells and their targets must be declared before either player sets up models.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Magnus2 - Magnus' Agenda" casterId="Mx01" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Idrian Skirmishers, Steelhead units, Greygore Boomhowler &amp; Co., Croe's Cutthroats</models>
+        </type>
+        <type type="SOLOS">
+            <models>Gorman di Wulfe, Kell Bailoch, Orin Midwinter, Saxon Orrik, Steelhead solos</models>
+        </type>
+    </availableModels>      
     <level number="1">
       <only>
         <entry id="Mx01" />
@@ -131,7 +155,7 @@
         <entry id="MS16" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Additionally, this army can include one Cygnar Long Gunner Infantry unit or one Cygnar Trencher Infantry unit. This unit is considered to be a friendly Mercenary unit instead of a Cygnar unit and can include attachments.</ingameeffect>
         <alterCost bonus="1" entryId="MJ09" />
       </benefits>
     </level>
@@ -143,7 +167,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You can redeploy one unit/model after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -154,22 +178,33 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models/units in this army gain Pathfinder during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  2(MJ09)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="MJ09" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Magnus2 - Bad Seeds (NQ36)" casterId="Mx01" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Renegade and Talon light warjacks, Mangler, Mule, Rover, and Nomad heavy warjacks.</models>
+        </type>
+        <type type="UNITS">
+            <models>None</models>
+        </type>
+        <type type="SOLOS">
+            <models>Kell Bailoch, Orin Midwinter, Saxon Orrik</models>
+        </type>
+    </availableModels>            
     <level number="1">
       <only>
         <entry id="Mx01" />
@@ -198,7 +233,7 @@
         <entry id="YS08_mercs" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Magnus’ battlegroup can include Charger and Sentinel light warjacks and up to one Defender heavy warjack. This army can include Sword Knight, Ranger, and Trencher units and Sword Knight, Ranger, and Trencher non-character solos. These models are considered to be friendly Mercenary models instead of Cygnar models and can include attachments.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -221,7 +256,7 @@
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
           <entry id="MS15" />
         </entrygroup>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="MJ01" />
           <entry id="MJ02" />
           <entry id="MJ09" />
@@ -234,7 +269,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect/>
+        <ingameeffect>Warjacks in Magnus’ battlegroup are each allocated one focus point at the start of your first Control Phase of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -242,15 +277,28 @@
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
           <entry id="IS06_mercs" />
+        </entrygroup>
+        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
           <entry id="YU08_mercs" />
         </entrygroup>
-      </must_have>
+        </must_have>
       <benefits>
-        <ingameeffect/>
+        <ingameeffect>Saxon Orrik and one Sword Knight unit without a ’Jack-Marshaled warjack gain Ambush. If these models ambush, they must be placed during the same control phase. (You can choose not to deploy these models at the start of the game. If these models are not deployed normally, you can put them into play at the end of any of your Control Phases after your first turn. When you do, choose any table edge except the back of your opponent’s deployment zone. Place all models within 3˝ of the chosen table edge.)</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Gorten - The Hammerfall Irregulars" casterId="MW02" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary Rhulic non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Rhulic Mercenary units</models>
+        </type>
+        <type type="SOLOS">
+            <models>Rhullic Mercenary solos, Brun &amp; Lug</models>
+        </type>
+    </availableModels>            
     <level number="1">
       <only>
         <entry id="MW02" />
@@ -315,7 +363,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Warjacks in Gorten's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -331,11 +379,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Hammerfall High Shield Gun Corps units gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Durgen - Shock and Awe" casterId="MW03" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary Rhulic non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Rhulic Mercenary units</models>
+        </type>
+        <type type="SOLOS">
+            <models>Ogrun Bokurs, Gudrun the Wanderer, Thor Steinhammer</models>
+        </type>
+    </availableModels>            
+      
     <level number="1">
       <only>
         <entry id="MW03" />
@@ -349,13 +409,19 @@
         <entry id="MU07" />
         <entry id="MU17" />
         <entry id="MU19" />
+        <entry id="MU20" />
         <entry id="MS05" />
         <entry id="IS03_mercs" />
         <entry id="MS17" />
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="MU17" />
+        <alterCost entryId="MJ15" bonus="1"/>
+        <alterFA bonus="1" entryId="MU17">
+            <forEach>
+                <entry id="MU07"/>
+            </forEach>
+        </alterFA>
       </benefits>
     </level>
     <level number="2">
@@ -366,7 +432,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain + 1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -377,7 +443,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Herne &amp; Jonne and Horgenhold Artillery Corps units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect> 
       </benefits>
     </level>
     <level number="4">
@@ -391,11 +457,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Ashlynn - Viva la resistance" casterId="MW04" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Precursor Knights, Captain Sam MacHorne &amp; The Devil Dogs, Dannon Blythe &amp; Bull</models>
+        </type>
+        <type type="SOLOS">
+            <models>Anastasia di Bray, Gorman di Wulfe, Harlan Versh, Madelyn Corbeau, Rhupert Carvolo, Rutger Shaw, Taryn di la Rovissi</models>
+        </type>
+    </availableModels>           
     <level number="1">
       <only>
         <entry id="MW04" />
@@ -425,7 +502,7 @@
         <entry id="YS02_mercs" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>This army can include non-character Cygnar Arcane Tempest Gun Mage units and Cygnar Gun Mage Captain Adept solos. These units are considered to be friendly Mercenary models instead of Cygnar models and can include attachments.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -437,18 +514,18 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect >You can redeploy solos after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
       <!-- Must have  2(MJ03)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="MJ03" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in Ashlynn's battlegroup gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -467,6 +544,18 @@
     </level>
   </tiers>
   <tiers name="Fiona - Devil to Pay" casterId="MW05" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Press Gangers, Sea Dog Crews, Mercenary Thamarite units, Croe's Cutthroats</models>
+        </type>
+        <type type="SOLOS">
+            <models>Mercenary Thamarite solos, Doc Killingsworth, Kell Bailoch</models>
+        </type>
+    </availableModels>           
+      
     <level number="1">
       <only>
         <entry id="MW05" />
@@ -490,7 +579,7 @@
         <entry id="MS22" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>All units in the army are cultists. (Fiona can still gain only 1 focus point from cultists each turn regardless of how many are in her proximity.)</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -501,7 +590,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You can redeploy one model/unit for each Sea Dog Crew unit in the army after both players have deployed but before the first player 's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -514,7 +603,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Friendly models/units can begin the game affected by Fiona's upkeep spells. These spells and their targets must be declared before either player sets up models. Fiona does not pay focus to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -527,11 +616,22 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in Fiona's battlegroup gain Stealth during the first round of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Bartolo - Rough Seas" casterId="MW06" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks with ranged weapons</models>
+        </type>
+        <type type="UNITS">
+            <models>Press Gangers, Sea Dog Deck Guns, Sea Dog Crews</models>
+        </type>
+        <type type="SOLOS">
+            <models>Bloody Bradigan, Dirty Meg, Doc Killingsworth, Master Gunner Dougal MacNaile</models>
+        </type>
+    </availableModels>                 
     <level number="1">
       <only>
         <entry id="MW06" />
@@ -553,8 +653,13 @@
       </only>
       <benefits>
         <ingameeffect  />
-        <alterFA bonus="1" entryId="MU14" />
-        <alterFA bonus="1" entryId="MU14" />
+        <alterFA bonus="1" entryId="MU14">
+            <forEach>
+                <entry id="MU12"/>
+                <entry id="MU13"/>
+            </forEach>
+        </alterFA>
+        <alterCost entryId="MJ13" bonus="1"/>
       </benefits>
     </level>
     <level number="2">
@@ -565,7 +670,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect >Press Ganger units gain Stealth during the first round of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -576,24 +681,36 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Sea Dog Deck Gun units gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  3(MJ10 MJ13 MJ16)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="MJ10" />
           <entry id="MJ13" />
           <entry id="MJ16" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Shae - A Pirate's Life" casterId="MW07" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Sea Dog units, Lady Aiyana &amp; Master Holt</models>
+        </type>
+        <type type="SOLOS">
+            <models>Bosun Grogspar, Dirty Meg, Doc Killingsworth, First Mate Hawk, Lord Rockbottom</models>
+        </type>
+    </availableModels>                 
+      
     <level number="1">
       <only>
         <entry id="MW07" />
@@ -637,7 +754,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models/units in this army gain Pathfinder during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -648,7 +765,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain+ 1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -668,11 +785,23 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in Shae's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="MacBain - Soldiers of Fortune" casterId="MW08" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks</models>
+        </type>
+        <type type="UNITS">
+            <models>Steelhead units, Alexia Ciannor &amp; The Risen, Captain Sam MacHorne &amp; The Devil Dogs, Croe' s Cutthroats, Dannon Blythe &amp; Bull</models>
+        </type>
+        <type type="SOLOS">
+            <models>Alten Ashley, Gorman di Wulfe, Kell Bailoch, Orin Midwinter, Rhupert Carvolo, Rutger Shaw, Stannis Brocker, Taryn di la Rovissi, Thor Steinhammer</models>
+        </type>
+    </availableModels>                 
+      
     <level number="1">
       <only>
         <entry id="MW08" />
@@ -725,7 +854,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain + 1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -744,22 +873,34 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Friendly models/units can begin the game affected by MacBain's upkeep spells. These spells and their targets must be declared before either player sets up models. MacBain does not pay focus to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  2(MJ11)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="MJ11" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Warjacks in MacBain's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Damiano - Free Company" casterId="MW09" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary non-character warjacks, Rocinante</models>
+        </type>
+        <type type="UNITS">
+            <models>Steelhead units</models>
+        </type>
+        <type type="SOLOS">
+            <models>Steelhead solos</models>
+        </type>
+    </availableModels>                 
+      
     <level number="1">
       <only>
         <entry id="MW09" />
@@ -782,6 +923,7 @@
       <benefits>
         <ingameeffect  />
         <alterFA bonus="1" entryId="MU15" />
+        <alterCost bonus="1" entryId="MU15" />
       </benefits>
     </level>
     <level number="2">
@@ -794,7 +936,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Your deployment zone extended 2" forward.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -805,22 +947,33 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Place Stannis Brocker and Steelhead Heavy Cavalry units after normal deployment. These models are placed at the same time as your models with Advance Deployment (if any). These models must be placed within your normal deployment zone.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  MJ17-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
           <entry id="MJ17" />
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Friendly models/units can begin the game affected by Damiano's upkeep spells. These spells and their targets must be declared before either player sets up models. Damiano does not pay focus to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
   </tiers>
   <tiers name="Ossrum - State of War" casterId="MW10" faction="faction_mercs">
+    <availableModels>
+        <type type="WARJACKS">
+            <models>Mercenary Rhulic non-character warjacks, Rocinante</models>
+        </type>
+        <type type="UNITS">
+            <models>Mercenary Rhulic units</models>
+        </type>
+        <type type="SOLOS">
+            <models>Mercenary Rhulic solos</models>
+        </type>
+    </availableModels>              
     <level number="1">
       <only>
         <entry id="MW10" />
@@ -890,7 +1043,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Warjacks in Ossrum' s battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -948,7 +1101,7 @@
               
           </only>
           <benefits>
-              <ingameeffect label="">Additionally, the army can include up to one non-Cephalyx Mercenary unit if that unit includes a Cephalyx Dominator UA.</ingameeffect>
+              <ingameeffect>Additionally, the army can include up to one non-Cephalyx Mercenary unit if that unit includes a Cephalyx Dominator UA.</ingameeffect>
               <alterFA entryId="CU14_mercs" bonus="512"/>
           </benefits>
         </level>

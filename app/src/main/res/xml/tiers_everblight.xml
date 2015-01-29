@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
 <tiers name="Lylyth - Hunter Killers" casterId="Ew01" faction="faction_everblight">
       <availableModels>
           <type type="WARBEASTS">
@@ -1132,7 +1134,7 @@
         <alterCost bonus="1" entryId="EB10" />
         <alterCost bonus="1" entryId="EB11" />
         <alterCost bonus="1" entryId="EB13" />
-        <alterCost bonus="1" entryId="EB15" />
+        <alterCost bonus="1" entryId="EB21" />
       </benefits>
     </level>
   </tiers>

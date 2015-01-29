@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
+
   <tiers name="Rahn - Charge of the Battle Mages" casterId="RW01" faction="faction_retribution">
       <availableModels>
           <type type="WARJACKS">
@@ -42,7 +45,7 @@
         <entry id="RS04" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <alterFA bonus="512" entryId="RU03" />
         <alterFA bonus="1" entryId="RS04">
             <forEach>
@@ -65,7 +68,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <freeModel>
           <entry id="RS01" />
         </freeModel>
@@ -79,7 +82,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect>House Shyeel Battle Mage units and House Shyeel Battle Mage Magister solos in the army gainAdvance Move. Models with Advance Move can make a full advance after both players have deployed but before the first player's first turn.</ingameeffect>
+        <ingameeffect>House Shyeel Battle Mage units and House Shyeel Battle Mage Magister solos in the army gain Advance Move. Models with Advance Move can make a full advance after both players have deployed but before the first player's first turn.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -90,7 +93,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Friendly models/units can begin the game affected by Rahn's upkeep spells. These spells and their targets must be declared before either player sets up models. Rahn does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+        <ingameeffect >Friendly models/units can begin the game affected by Rahn's upkeep spells. These spells and their targets must be declared before either player sets up models. Rahn does not pay focus to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -142,7 +145,7 @@
         <entry id="MS23" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <alterFA bonus="1" entryId="RU03" />
         <alterFA bonus="1" entryId="RS04" />
         <alterFA bonus="1" entryId="RS11" />
@@ -179,7 +182,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <alterCost bonus="1" entryId="RJ01" />
         <alterCost bonus="1" entryId="RJ06" />
       </benefits>
@@ -226,7 +229,7 @@
         <entry id="RS08" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <alterFA bonus="512" entryId="RU01" />
         <alterFA bonus="512" entryId="RU02" />
         <alterFA bonus="1" entryId="RS02">
@@ -245,7 +248,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <freeModel>
           <entry id="RA02" />
         </freeModel>
@@ -262,7 +265,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">You gain +1 on your starting game roll.</ingameeffect>
+        <ingameeffect >You gain +1 on your starting game roll.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -278,7 +281,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Your deployment is extended 2" forward.</ingameeffect>
+        <ingameeffect >Your deployment is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -324,7 +327,7 @@
         <entry id="RS08" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <alterFA bonus="1" entryId="RU01" />
         <alterFA bonus="1" entryId="RU02" />
         <alterFA bonus="1" entryId="RS08" />
@@ -344,7 +347,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <alterCost bonus="1" entryId="RJ04" />
         <alterCost bonus="1" entryId="RJ05" />
         <alterCost bonus="1" entryId="RJ06" />
@@ -365,13 +368,13 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">For every two units in the army, one heavy warjack in Vyros’ battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.).</ingameeffect>
+        <ingameeffect >For every two units in the army, one heavy warjack in Vyros’ battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.).</ingameeffect>
       </benefits>
     </level>
     <level number="4">
       <!-- Must have  4(RJ01 RJ02 RJ03 RJ04 RJ05 RJ06 RJ08 RJ09 RJ10 RJ11 RJ13)-->
       <must_have>
-        <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="4">
+        <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="4">
           <entry id="RJ01" />
           <entry id="RJ02" />
           <entry id="RJ03" />
@@ -386,7 +389,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Each warjack in Vyros’ battlegroup is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Vyros allocates.</ingameeffect>
+        <ingameeffect >Each warjack in Vyros’ battlegroup is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Vyros allocates.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -428,7 +431,7 @@
         <entry id="RS08" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect  />
         <alterFA bonus="512" entryId="RU06" />
         <alterCost bonus="1" entryId="RU06" />
       </benefits>
@@ -441,7 +444,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Dawnguard Sentinel units gain Advance Deployment.</ingameeffect>
+        <ingameeffect >Dawnguard Sentinel units gain Advance Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -452,7 +455,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" >Dawnguard Destor units and solos gain +2 SPD during your first turn of the game.</ingameeffect>
+        <ingameeffect  >Dawnguard Destor units and solos gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -468,7 +471,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-          <ingameeffect label="empty">During your first Control Phase of the game, your Warjacks are each allocated 1 focus point.</ingameeffect>
+          <ingameeffect >During your first Control Phase of the game, your Warjacks are each allocated 1 focus point.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -509,7 +512,7 @@
         <entry id="RS07" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterFA bonus="512" entryId="RU05" />
         <alterFA bonus="1" entryId="RS05">
             <forEach>
@@ -526,7 +529,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">You gain +1 on your starting game roll.</ingameeffect>
+        <ingameeffect >You gain +1 on your starting game roll.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -541,7 +544,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <freeModel>
           <entry id="RS07" />
         </freeModel>
@@ -556,7 +559,7 @@
         <entry id="RJ15" /> <!-- special issue Moros -->
       </only>
       <benefits>
-        <ingameeffect label="empty">Models in Garryth's battlegroup gain Advance Deployement.</ingameeffect>
+        <ingameeffect >Models in Garryth's battlegroup gain Advance Deployment.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -601,7 +604,7 @@
         <entry id="RS07" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterFA bonus="512" entryId="RU05" />
       </benefits>
     </level>
@@ -613,7 +616,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <freeModel>
           <entry id="RA03" />
         </freeModel>
@@ -629,7 +632,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">You can redeploy any one Mage Hunter model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+        <ingameeffect >You can redeploy any one Mage Hunter model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -650,7 +653,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Your deployment is extended 2" forward.</ingameeffect>
+        <ingameeffect >Your deployment is extended 2" forward.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -697,7 +700,7 @@
         <entry id="MS01" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterFA bonus="512" entryId="RU05" />
         <alterFA bonus="512" entryId="RA03" />
       </benefits>
@@ -710,7 +713,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <freeModel>
           <entry id="MS01" />
           <entry id="RS05" />
@@ -730,7 +733,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">You gain +1 on your starting game roll.</ingameeffect>
+        <ingameeffect >You gain +1 on your starting game roll.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -741,7 +744,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Each warjack in Ravyn's battlegroup is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Ravyn allocates.</ingameeffect>
+        <ingameeffect >Each warjack in Ravyn's battlegroup is automatically allocated 1 focus point at the start of your first Control Phase. This focus is in addition to any points Ravyn allocates.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -781,7 +784,7 @@
         <entry id="RE01" />
       </only>
       <benefits>
-        <ingameeffect label="empty" >You gain + 1 on your starting roll for the game.</ingameeffect>
+        <ingameeffect >You gain + 1 on your starting roll for the game.</ingameeffect>
         <alterFA bonus="1" entryId="RS01">
             <forEach>
                 <entry id="RJ09" />
@@ -800,7 +803,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <freeModel>
           <entry id="RA06" />
         </freeModel>
@@ -814,7 +817,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">For each Arcanist solo in the army, one myrmidon in Ossyan's battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+        <ingameeffect >For each Arcanist solo in the army, one myrmidon in Ossyan's battlegroup gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -825,7 +828,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Friendly models/units can begin the game affected by Ossyan's upkeep spells. These spells and their targets must be declared before either player sets up models. Ossyan does not pay focus to upkeep these spells during your first turn.</ingameeffect>
+        <ingameeffect >Friendly models/units can begin the game affected by Ossyan's upkeep spells. These spells and their targets must be declared before either player sets up models. Ossyan does not pay focus to upkeep these spells during your first turn.</ingameeffect>
       </benefits>
     </level>
   </tiers>
