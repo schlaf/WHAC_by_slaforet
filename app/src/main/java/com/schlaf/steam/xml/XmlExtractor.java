@@ -199,13 +199,13 @@ public class XmlExtractor {
 
 	private static final String BUCKLER_ATTRIBUTE = "buckler";
 	
-	int[] XML_FILES = new int[] {R.xml.cygnar_completed_angus, R.xml.khador_v3_1, R.xml.menoth_08_06_14, R.xml.cryx_10_06_14,
-			R.xml.retribution_complete, R.xml.cyriss_completed, R.xml.mercenaries_completed ,
-			R.xml.orboros_09_10_14, R.xml.everblight_09_10_14, R.xml.skorne_09_10_14, R.xml.trollbloods_completed, R.xml.minions_09_10_14, R.xml.objectives};
+//	int[] XML_FILES = new int[] {R.xml.cygnar_completed_angus, R.xml.khador_v3_1, R.xml.menoth_08_06_14, R.xml.cryx_10_06_14,
+//			R.xml.retribution_complete, R.xml.cyriss_completed, R.xml.mercenaries_completed ,
+//			R.xml.orboros_09_10_14, R.xml.everblight_09_10_14, R.xml.skorne_09_10_14, R.xml.trollbloods_completed, R.xml.minions_09_10_14, R.xml.objectives};
 
-//	int[] XML_FILES = new int[] {R.xml.cygnar, R.xml.khador, R.xml.menoth, R.xml.cryx,
-//			R.xml.retribution, R.xml.cyriss, R.xml.mercenaries_corrected,
-//			R.xml.orboros, R.xml.everblight, R.xml.skorne, R.xml.trollbloods, R.xml.minions, R.xml.objectives	};
+	int[] XML_FILES = new int[] {R.xml.cygnar, R.xml.khador, R.xml.menoth, R.xml.cryx,
+			R.xml.retribution, R.xml.cyriss, R.xml.mercenaries_corrected,
+			R.xml.orboros, R.xml.everblight, R.xml.skorne, R.xml.trollbloods, R.xml.minions, R.xml.objectives	};
 
 	/** access to local resources */
 	Resources res;
