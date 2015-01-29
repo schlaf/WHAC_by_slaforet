@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset xmlns="http://www.whac.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
+  <armies>
+    <army faction="faction_minions" name="Minions">
+      <warlocks>
+        <warlock id="IW05" name="Lord Carver, BMMD, Esq. III" generation="P" full_name="Lord Carver, BMMD, Esq. III" qualification="Minion Farrow Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="CARVER" spd="6" str="8" mat="7" rat="6" def="15" arm="17" cmd="9" hitpoints="16" tough="true" />
+          <weapons>
+            <ranged_weapon name="Sawed-off Scattergun" rng="SP6" rof="2" aoe="-" pow="12">
+              <capacity title="BOTH BARRELS (★ATTACK)">This model gains +4 to the damage roll for this attack. This model cannot make additional ranged attacks with this weapon during an activation it makes a Both Barrels attack.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Hand of God" pow="7" p_plus_s="15" magical="true" reach="true" />            
+          </weapons>
+          <feat title="Hog Heaven">While in Carver's control area, friendly Farrow models gain Overtake and an additional die on melee damage rolls. Hog Heaven lasts for one turn. (When a model with Overtake destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved the model can immediately advance up to 1".)</feat>
+          <spell name="BATTEN DOWN THE HATCHES" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, models in its battlegroup cannot be knocked down and gain +3 ARM but suffer –2 DEF. Batten Down the Hatches lasts for one round.</spell>
+          <spell name="MOBILITY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Models in this model's battlegroup currently in its control area gain +2 SPD and Pathfinder for one turn.</spell>
+          <spell name="QUAGMIRE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">While B2B with target friendly Faction model/unit, enemy models suffer –2 DEF and cannot advance except to change facing.</spell>
+          <spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="ELITE CADRE [FARROW BRIGANDS]">Friendly Farrow Brigand models gain Combined Ranged Attack.</capacity>
+          <capacity title="FARROW WARLOCK">This model can have only Minion Farrow warbeasts in its battlegroup.</capacity>
+          <capacity title="INSPIRATION [FARROW]">Friendly Farrow models/units in this model's command range never flee and immediately rally.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+        <warlock id="IW06" name="Bloody Barnabas" generation="P" full_name="Bloody Barnabas" qualification="Minion Gatorman Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="BARNABAS" spd="5" str="9" mat="7" rat="3" def="13" arm="17" cmd="9" hitpoints="16" tough="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="14">
+              <capacity title="CRITICAL CONSUME">On a critical hit, if the attack hit a small-based non-warlock/warcaster model the model hit is removed from play.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Bone Cleaver" pow="5" p_plus_s="14" magical="true" reach="true">
+              <capacity title="BLOOD BOON">Once per activation, immediately after resolving an attack in which it destroyed a living enemy model with this weapon, this model can cast a spell with COST 3 or less without spending fury.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Tail Strike" pow="3" p_plus_s="12" />
+          </weapons>
+          <feat title="Black Tide">Non-amphibious enemy models currently in Barnabas' control area are knocked down.</feat>
+          <spell name="FLESH EATER" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When a living enemy model is boxed by Flesh Eater, it is removed from play and this model or a living warbeast in its battlegroup in its control area heals d3 damage points.</spell>
+          <spell name="IRON FLESH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model/unit gains +3 DEF but suffers –1 SPD.</spell>
+          <spell name="SWAMP PIT" cost="2" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">Place a 5" AOE anywhere completely in this model's control area where it does not touch a model's base. The AOE is shallow water and remains in play for one round. While completely in a Swamp Pit AOE, a model with Amphibious cannot be targeted by ranged attacks.</spell>
+          <spell name="WARPATH" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">When a friendly Faction model in this model's control area destroys one or more enemy models with a melee or ranged attack during its activation, immediately after the attack is resolved, one warbeast in this model's battlegroup that is in its control area can advance up to 3". A warbeast can advance only once per turn as a result of Warpath.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="COUNTER CHARGE">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+          <capacity title="GATORMAN WARLOCK">This model can have only Minion Gatorman warbeasts in its battlegroup.</capacity>
+          <capacity title="UNYIELDING">While engaging an enemy model, this model gains +2 ARM.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+        <warlock id="IW07" name="Calaban, the Grave Walker" generation="P" full_name="Calaban, the Grave Walker" qualification="Minion Gatorman Warlock" fury="7" warbeast_points="6" fa="C" completed="true">
+          <basestats name="CALABAN" spd="6" str="6" mat="5" rat="6" def="14" arm="16" cmd="8" hitpoints="15" />
+          <weapons>
+            <ranged_weapon name="Heart Stopper" rng="10" rof="2" aoe="-" pow="10" magical="true">
+              <capacity title="GRAVE DOOR">When a living enemy model is boxed by this attack, it heals 1 damage point. For the rest of the turn, this model can channel spells through the enemy model if it is in this model's control area and is not engaged. At the end of the turn, the enemy model is destroyed.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Bite" pow="5" p_plus_s="11">
+              <capacity title="SUSTAINED ATTACK">During this model's activation, when it makes an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Carcass" pow="5" p_plus_s="11" magical="true" reach="true">
+              <capacity title="LIFE TRADER">When an attack with this weapon hits, this model can suffer 1 damage point to gain an additional die on the damage roll against the model hit. Life Trader can be used once per attack.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Death Harvest">Each time a friendly model destroys an enemy model while the friendly model is in Calaban's control area, Calaban gains 1 fury point. Immediately after resolving an attack in which a model in Calaban's control area destroys one or more enemy models, Calaban can cast one spell. Calaban can boost attack and damage rolls on spells cast as a result of Death Harvest. Death Harvest lasts for one turn.</feat>
+          <spell name="BONE SHAKER" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">When this spell boxes a living or undead non-warcaster, non-warlock enemy warrior model, you can immediately make a full advance with the enemy model followed by a normal melee attack, then the boxed model is removed from play. The boxed model cannot be targeted by free strikes during this movement.</spell>
+          <spell name="CARNIVORE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack rolls against living models. When an affected model boxes a living model with a melee attack, the boxed model is removed from play and this model heals d3 damage points.</spell>
+          <spell name="HEX BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">Enemy upkeep spells and animi on the model/unit directly hit by Hex Blast immediately expire.</spell>
+          <spell name="OCCULTATION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Stealth.</spell>
+          <spell name="PARASITE" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers –3 ARM and this model gains +1 ARM.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="GATORMAN WARLOCK">This model can have only Minion Gatorman warbeasts in its battlegroup.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+        <warlock id="IW08" name="Dr. Arkadius" generation="P" full_name="Dr. Arkadius" qualification="Minion Warlock" fury="7" warbeast_points="6" fa="C" completed="true">
+          <basestats name="DR. ARKADIUS" spd="6" str="4" mat="5" rat="4" def="15" arm="14" cmd="8" hitpoints="15" />
+          <weapons>
+            <melee_weapon name="Combat Syringe" pow="0" p_plus_s="0" magical="true">
+              <capacity title="AMMO TYPE">Each time this weapon is used to make an attack, choose one of the following abilities:</capacity>
+              <capacity title="● ANESTHESIA">A living model damaged by an attack with this weapon becomes stationary for one round.</capacity>
+              <capacity title="● BRAIN DAMAGE">A model damaged by an attack with this weapon cannot cast spells, upkeep spells, or use an animus for one round.</capacity>
+              <capacity title="● MIND CONTROL SERUM">If an enemy non-warcaster, non-warlock model is damaged by an attack with this weapon, immediately after the attack is resolved take control of the model. You can immediately make a full advance with it followed by a normal melee attack, then Mind Control Serum expires. The enemy model cannot be targeted by free strikes during this movement.</capacity>
+              <capacity title="NEEDLE">Do not make damage rolls to resolve attacks made with this weapon. A living model hit by this weapon automatically suffers 1 damage point. This weapon cannot damage non-living models.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Monster Mayhem">Warbeasts in Arkadius' battlegroup can immediately frenzy. A model can frenzy even if it has already activated this turn and does not affect whether it can activate later this turn.</feat>
+          <spell name="AGGRAVATOR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, friendly warbeasts gain Hyper Aggressive. (When a model with Hyper Aggressive suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.)</spell>
+          <spell name="CRIPPLING GRASP" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers –2 SPD, STR, DEF, and ARM and cannot run or make special attacks.</spell>
+          <spell name="FORCED EVOLUTION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction warbeast gains +2 STR and DEF.</spell>
+          <spell name="PRIMAL SHOCK" cost="2" rng="CTRL" aoe="-" pow="*" up="NO" off="YES">Choose a friendly Faction warbeast in this model's control area. Target an enemy model within 8" of the chosen warbeast and make a magic attack against it. The chosen warbeast is the attack's point of origin. If the enemy model is hit, it suffers a damage roll with a POW equal to the warbeast's base STR.</spell>
+          <spell name="PSYCHO SURGERY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Each model in this model's battlegroup currently in its control area immediately heals d3+1 damage points. This spell can only be cast once per turn.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, and Skorne.</capacity>
+          <capacity title="FARROW WARLOCK">This model can have only Minion Farrow warbeasts in its battlegroup.</capacity>
+          <capacity title="MALTREATMENT">Once per turn during its activation this model can remove 1 fury point from a warbeast in its battlegroup that is in its control area and add 1 fury point to its own current total. The warbeast suffers d3 damage points.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_skorne" />
+        </warlock>
+        <warlock id="IW09" name="Maelok the Dreadbound" generation="P" full_name="Maelok the Dreadbound" qualification="Minion Gatorman Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="MAELOK" spd="5" str="7" mat="6" rat="4" def="14" arm="17" cmd="7" hitpoints="17" terror="true" undead="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" count="0" p_plus_s="12" magical="true">
+              <capacity title="SPIRIT EATER">This model can reave fury points from enemy warbeasts destroyed by this weapon. Other models cannot reave fury points from enemy warbeasts destroyed by this weapon.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Claw " pow="5" count="2" p_plus_s="12" magical="true" />
+          </weapons>
+          <feat title="Spirit World">Friendly Faction models currently in Maelok's control area gain Incorporeal for one turn. While within Maelok's control area, friendly Faction undead models gain +2 ARM. Spirit World lasts for one round.</feat>
+          <spell name="DEATH PACT" cost="2" rng="6" aoe="-" pow="-" off="NO" up="YES">Target friendly Faction model/unit gains + 2 ARM and Undead.</spell>
+          <spell name="MALEDICTION" cost="2" rng="SELF" aoe="*" pow="-" off="*" up="YES">While within 2" of this model, enemy models suffer –2 DEF and ARM.</spell>
+          <spell name="REVIVE" cost="3" rng="CTRL" aoe="-" pow="-" off="NO" up="NO">Return one destroyed friendly Faction Grunt to play with one unmarked damage box. It must be placed in this model's control area in formation and within 3" of another model in its unit.</spell>
+          <spell name="VENOM" cost="2" rng="SP8" aoe="-" pow="10" off="YES" up="NO">Venom causes corrosion damage. Models hit suffer the Corrosion continuous effect.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="CULL SOUL">This model gains one soul token for each living enemy model destroyed within 2" of it. After this model leaches during your next Control Phase, replace each soul token on it with 1 fury point.</capacity>
+          <capacity title="GATORMAN WARLOCK">This model can have only Minion Gatorman warbeasts in its battlegroup.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+        <warlock id="IW10" name="Sturm &amp; Drang" generation="P" full_name="Sturm &amp; Drang" qualification="Minion Farrow Warlock" fury="7" warbeast_points="5" fa="C" completed="true">
+          <basestats name="STURM" spd="5" str="6" mat="5" rat="5" def="14" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+            <ranged_weapon name="Brain Burn" count="0" rng="SP8" rof="1" aoe="" pow="12" magical="true" />
+			<melee_weapon name="Mechano Fist " pow="5" count="2" p_plus_s="11" >
+              <capacity title="CRITICAL PITCH">On a critical hit, instead of rolling damage normally you can choose to have this model throw the model hit. Treat the throw as if this model had hit with and passed the STR check of a throw power attack. The thrown model suffers a damage roll with POW equal to this model's STR plus the POW of the weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <feat title="Psychic Apocalypse">Enemy warbeasts currently in Sturm &amp; Drang's control area have their FURY reduced to 1, and enemy warjacks currently in Sturm &amp; Drang's control area cannot be allocated more than 1 focus. While in Sturm &amp; Drang's control area, enemy models cannot be used to channel spells. Psychic Apocalypse lasts for one round.</feat>
+          <spell name="DEFLECTION (Sturm)" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models gain +2 ARM against ranged and magic attack damage rolls. Deflection lasts for one round.</spell>
+          <spell name="TELEKINESIS (Sturm)" cost="2" rng="8" aoe="-" pow="-" up="NO" off="*">Place target model completely within 2" of its current location. When Telekinesis targets an enemy model, it is an offensive spell and requires a magic attack roll. A model can be affected by Telekinesis only once per turn.</spell>
+          <spell name="VISION (Sturm)" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">The next time target friendly Faction model is directly hit by an attack, it suffers no damage roll from the attack, then Vision expires.</spell>
+          <spell name="WATCHER (Sturm)" cost="3" rng="SELF" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement within 6" of this model, choose a warbeast in this model's battlegroup that is in its control area. That warbeast can immediately make a full advance and then can make one normal melee or ranged attack targeting the enemy model. The attack and damage rolls against that model are boosted. After the attack is resolved, Watcher expires.</spell>
+          <spell name="KILLING GROUND (Drang)" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction models beginning a charge in this model's control area gain Pathfinder. Warbeasts in this model's battlegroup beginning their activations in this model's control area can charge or make slam power attacks against enemy models without being forced. Killing Ground lasts for one turn.</spell>
+          <spell name="OBLITERATION (Drang)" cost="4" rng="10" aoe="4" pow="15" up="NO" off="YES">The force of this attacks blasts apart the earth itself.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="STRUGGLE OF WILLS">At the start of your Maintenance Phase, choose which mind is dominant: Sturm or Drang. Use that mind's stats and rules for one round.</capacity>
+          <capacity title="FARROW WARLOCK">This model can have only Minion Farrow warbeasts in its battlegroup.</capacity>
+          <model id="Drang">
+            <basestats name="DRANG" spd="5" str="10" mat="7" rat="3" def="14" arm="16" cmd="6" />
+            <weapons>
+              <melee_weapon name="Mechano Fist " pow="5" count="2" p_plus_s="15">
+                <capacity title="CRITICAL PITCH">See above.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="FARROW WARLOCK">This model can have only Minion Farrow warbeasts in its battlegroup.</capacity>
+            <capacity title="GOAD">When a warbeast in this model's battlegroup destroys one or more enemy models with a melee attack during its combat action, immediately after the attack is resolved this model can force the warbeast to advance up to 2".</capacity>
+            <capacity title="PACK HUNTERS">Living warbeasts in this model's battlegroup in its control area gain +2 on melee attack rolls.</capacity>
+            <capacity title="SHORTSIGHTED">This model cannot upkeep spells.</capacity>
+            <capacity title="STRUGGLE OF WILLS">See above.</capacity>
+          </model>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+        <warlock id="IW11" name="Midas" generation="P" full_name="Midas" qualification="Minion Farrow Bone Grinder Warlock" fury="6" warbeast_points="5" fa="C" completed="true">
+          <basestats name="MIDAS" spd="5" str="7" mat="6" rat="4" def="14" arm="16" cmd="8" hitpoints="16" />
+          <weapons>
+            <melee_weapon name="Bone Saw" pow="6" count="0" p_plus_s="13" magical="true">
+              <capacity title="SOUL FOOD">Immediately after resolving an attack in which it destroyed an enemy warbeast with this weapon, this model can cast a spell with COST 3 or less or cast the destroyed warbeast's animus as a spell without spending fury.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Pet Cemetery">Midas spends any number of fury points when this feat is used. Return each destroyed warbeast from Midas' battlegroup to play within 3" of him with one unmarked damage box in each aspect. For each fury point spent remove 1 damage point from each model in Midas' battlegroup that is in his control area. Returned warbeasts gain Undead. Returned warbeasts cannot be forced this turn. Returned warbeasts that were destroyed this turn cannot activate the turn they are returned.</feat>
+          <spell name="BAD BLOOD" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">A warlock leaching from target warbeast suffers 1 damage point for each fury leached. The affected warbeast cannot be healed or have damage transferred to it and loses Regeneration.</spell>
+          <spell name="BATTLE LUST" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction warrior model/unit gains Fearless and gains an additional die on melee damage rolls for one round.</spell>
+          <spell name="CALAMITY" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Friendly models gain +2 to attack and damage rolls against target enemy model/unit.</spell>
+          <spell name="HEX BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">Enemy upkeep spells and animi on the model/unit directly hit by Hex Blast immediately expire.</spell>
+          <capacity title="MINION" type="">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="DISMEMBER">When this model hits a warbeast with a melee attack, roll an additional damage die.</capacity>
+          <capacity title="FARROW WARLOCK">This model can have only Minion Farrow warbeasts in its battlegroup.</capacity>
+          <capacity title="BUTCHERY">When a living warbeast is destroyed or removed from play while within this model's control area, place one bone token on this model. Once per turn during this model's activation, you can remove up to three bone tokens from it. This model gains 1 fury point for each bone token removed.</capacity>
+          <capacity title="CURSE [BONE GRINDERS]">RNG CMD. Target enemy model/unit. lf the model/unit is in range, it is cursed. A friendly Bone Grinder model charging a cursed model gains +2" movement. Friendly Bone Grinder models gain +2 to attack rolls against cursed models. Curse can be used once per activation and lasts for one turn.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+        <warlock id="IW12" name="Rask" generation="P" full_name="Rask" qualification="Minion Bog Trog Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="RASK" spd="5" str="7" mat="6" rat="7" def="15" arm="15" cmd="5" hitpoints="15" />
+          <weapons>
+            <ranged_weapon name="Trident Cannon" rng="10" rof="1" aoe="-" pow="12" magical="true">			
+              <capacity title="AMMO TYPE">Each time this weapon is used to make an attack, choose one of the following abilities:</capacity>
+              <capacity title="● ARCANE INTERFERENCE">When this model hits another model with an attack, upkeep spells and animi on the model hit expire and it loses the focus points on it. When this model hits a warjack with an attack, that warjack suffers Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+              <capacity title="● ENERGY SIPHON">When this attack hits an enemy model with 1 or more focus or fury points on it, that model loses 1 focus or fury point and this model gains 1 fury point.</capacity>
+              <capacity title="● PARALYSIS">A living model hit by this weapon has its base DEF reduced to 7 and cannot run or charge. Paralysis lasts for one round.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sacral Blade" pow="4" p_plus_s="11" magical="true" />			
+          </weapons>
+          <feat title="Dark Waters">While in Rask's control area, friendly Faction models cannot be targeted by attacks or charges made by models more than 5" away from them. Dark Waters lasts for one round.</feat>
+          <spell name="ADMONITION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement within 6" of target model in this model’s battlegroup, the affected model can immediately advance up to 3", then Admonition expires. The affected model cannot be targeted by free strikes during this movement.</spell>
+          <spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">During its activation, target friendly model can charge without spending focus or being forced and gains +2" movement and Pathfinder when it charges. Boundless Charge lasts for one turn.</spell>
+          <spell name="FURY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +3 to melee damage rolls but suffers –1 DEF.</spell>
+          <spell name="INHOSPITABLE GROUND" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, enemy models treat open terrain as rough terrain. Inhospitable Ground lasts for one round.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="GATORMAN WARLOCK">This model can have only Minion Gatorman warbeasts in its battlegroup.</capacity>
+          <capacity title="CALL TO SACRIFICE [BOG TROG]">If this model is disabled by an enemy attack, you can choose a non-disabled trooper model of the type indicated in its command range to be destroyed. If another model is destroyed as a result of Call to Sacrifice, this model heals 1 damage point.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+		<warlock id="IW13" name="Helga the Conqueror" generation="P" full_name="Helga the Conqueror" qualification="Minion Farrow Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="HELGA" spd="5" str="7" mat="6" rat="6" def="15" arm="16" cmd="8" hitpoints="16" tough="true" />
+          <weapons>
+            <ranged_weapon name="Shield Cannon" rng="10" rof="1" aoe="-" pow="13" />
+			<melee_weapon name="Hunting Spear" pow="5" p_plus_s="12" reach="true" magical="true">            
+              <capacity title="INFLICT PAIN">When it hits a warbeast with this weapon, this model can place 1 fury point on or remove 1 fury point from the warbeast.</capacity>
+              <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>              
+            </melee_weapon>
+          </weapons>
+          <feat title="Grand Finale">While in Helga's control area, when a friendly Faction model hits an enemy model with a normal melee attack, the enemy model can be slammed d6" directly away from the attacking model. The POW of the slam damage roll is equal to the P+S of the attack. The POW of collateral damage is equal to the STR of the attacking model. Grand Finale lasts for one turn.</feat>
+          <spell name="CYCLONE" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model immediately makes a full advance. It cannot be targeted by free strikes during this movement. At the end of this movement, this model can make one melee attack against each model in its LOS that is in its melee range. Cyclone can be cast only once per turn.</spell>
+          <spell name="DASH" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models cannot be targeted by free strikes. This model and friendly Faction warrior models activating in its control area gain +1 SPD. Dash lasts for one turn.</spell>
+          <spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and ARM.</spell>
+          <spell name="DISTRACTION" cost="2" rng="8" aoe="-" pow="-" up="NO" off="YES">Target enemy warrior model/unit cannot make ranged attacks and suffers –2 DEF and MAT for one round.</spell>
+		  <spell name="MUZZLE" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Muzzle cannot advance toward this model for one round.</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="FARROW WARLOCK">This model can have only Minion Farrow warbeasts in its battlegroup.</capacity>
+          <capacity title="FIELD MARSHAL [GANG FIGHTER]">Models in this model's battlegroup gain Gang Fighter. (When making a melee attack targeting an enemy model in melee range of another friendly Faction warrior model, a model with Gang Fighter gains +2 to melee attack and melee damage rolls.)</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+		<warlock id="IW14" name="Jaga-Jaga, The Death Charmer" generation="P" full_name="Jaga-Jaga, The Death Charmer" qualification="Minion Gatorman Warlock" fury="7" warbeast_points="5" fa="C" completed="true">
+          <basestats name="JAGA-JAGA" spd="6" str="6" mat="6" rat="5" def="14" arm="16" cmd="9" hitpoints="16" />
+          <weapons>           
+			<melee_weapon name="Death Snake" pow="5" p_plus_s="11" reach="true" chain="true">            
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+              <capacity title="POISON">Gain an additional die on this weapon's damage rolls against living models.</capacity>              
+            </melee_weapon>
+          </weapons>
+          <feat title="Legion of Death">When a living or undead enemy non-warlock, non-warcaster warrior model is boxed by an attack while in Jaga-Jaga's control area this turn, you can take control of it. If you do, the model becomes a friendly Faction Undead solo, gains Dark Shroud, heals 1 damage point, and can immediately make a full advance. During this movement, the model cannot be targeted by free strikes. The model cannot activate and is removed from play when Legion of Death expires. Legion of Death lasts for one round. (While in the melee range of a model with Dark Shroud, enemy models suffer –2 ARM.)</feat>
+          <spell name="DEADWEIGHT" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">When Deadweight destroys an enemy living or undead model, choose an enemy model within 2" of the destroyed model. The chosen model must forfeit either its movement or its action during its next activation, as its controller chooses.</spell>
+          <spell name="ESCORT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Warjacks in this model's battlegroup beginning their activations in its control area gain +2" movement. This model gains +2 ARM while one or more warjacks in its battlegroup are within 3" of it.</spell>
+          <spell name="GHOST WALK" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains Ghostly for one turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)</spell>
+          <spell name="GRAVE WIND" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model gains +2 DEF and Poltergeist. (When an enemy model misses the model with Poltergeist with an attack, immediately after the attack is resolved you can choose to push the enemy model d3" directly away from the model with Poltergeist.)</spell>
+		  <spell name="SPELLPIERCER" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While within this model's control area, friendly Faction model/units' weapons gain Magical Weapon and Blessed. Spellpiercer lasts for one round. (When making an attack with a weapon with Blessed, ignore spell effects that add to a model's ARM or DEF.)</spell>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+		  <capacity title="GATORMAN WARLOCK">This model can have only Minion Gatorman warbeasts in its battlegroup.</capacity>          
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </warlock>
+      </warlocks>
+      <warjacks>
+        <warjack id="MJ04_minion" name="Buccaneer" full_name="Buccaneer" qualification="Mercenary Light Warjack" fa="U" cost="3" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="BUCCANEER" spd="6" str="8" mat="6" rat="5" def="13" arm="15" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Net" rng="8" rof="1" aoe="-" pow="-" location="L">
+              <capacity title="KNOCKDOWN">When a model is hit by an attack with this weapon, it is knocked down.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Gaff" pow="2" p_plus_s="10" reach="true" location="R" />            
+          </weapons>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ12_minion" name="Freebooter" full_name="Freebooter" qualification="Mercenary Heavy Warjack" fa="U" cost="6" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="FREEBOOTER" spd="5" str="11" mat="6" rat="5" def="12" arm="17" cmd="0" />
+          <weapons>
+            <melee_weapon name="Clamp" pow="3" p_plus_s="14" open_fist="true" location="R">
+              <capacity title="CHAIN ATTACK: GRAB &amp; SMASH">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make a double-hand throw, head-butt, headlock/weapon lock, push, or throw power attack against that target.</capacity>
+              <capacity title="TRASH">Gain an additional damage die againts knocked down targets.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Clamp" pow="3" p_plus_s="14" open_fist="true" location="L">
+              <capacity title="CHAIN ATTACK: GRAB &amp; SMASH">See above.</capacity>
+              <capacity title="TRASH">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely within deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="JURY-RIGGED [SPD]">At the start of its activation, this model can spend 1 focus point to use Jury-Rigged. This model gains +2 SPD this activation. At the end of its activation, it suffers 1 damage point to its first available Movement system box. This model cannot use Jury-Rigged if its Movement system is crippled. Jury-Rigged can be used only once per activation.</capacity>
+          <capacity title="LASH">This model and friendly warrior models B2B with it cannot be knocked down.</capacity>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ09_minion" name="Mangler" full_name="Mangler" qualification="Mercenary Heavy Warjack" fa="U" cost="8" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="MANGLER" spd="5" str="11" mat="6" rat="4" def="11" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Punching Spike" pow="4" p_plus_s="15" open_fist="true" location="L" />
+            <melee_weapon name="Wrecker" pow="6" p_plus_s="17" reach="true" location="R">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+              <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon’s melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ13_minion" name="Mariner" full_name="Mariner" qualification="Mercenary Heavy Warjack" fa="U" cost="8" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="MARINER" spd="5" str="11" mat="6" rat="5" def="12" arm="17" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Ship Gun" rng="15" rof="1" aoe="3" pow="14" location="L">
+              <capacity title="LOADER">This model must be in B2B with a friendly living Faction warrior model to make an attack with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Anchor" pow="6" p_plus_s="17" location="R">
+              <capacity title="THRESHER (★ATTACK)">This model makes one melee attack with this weapon against each model in its LOS and this weapon’s melee range.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="LASH">This model and friendly warrior models B2B with it cannot be knocked down.</capacity>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ10_minion" name="Mule" full_name="Mule" qualification="Mercenary Heavy Warjack" fa="U" cost="8" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="MULE" spd="5" str="11" mat="6" rat="5" def="10" arm="18" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Steam Lobber" rng="8" rof="1" aoe="4" pow="15" location="L">
+              <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+              <capacity title="CRITICAL DEVASTATION">On a critical hit, instead of suffering a normal damage roll, each model in the AOE is thrown d6" directly away from the attacker regardless of its base size. Roll only once for all of the affected models. Move models farthest from the attacker first. The model directly hit by the attack suffers a POW 15 damage roll. Other models hit by the attack suffer a POW 8 damage roll. The POW of collateral damage is equal to the POW of the damage roll suffered by the thrown model.</capacity>
+              <capacity title="STEAM PRESSURE">This model can forfeit its movement to give this weapon +4 RNG this activation and gain the aiming bonus.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Battle Mace" pow="5" p_plus_s="16" reach="true" location="R" />            
+          </weapons>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ11_minion" name="Nomad" full_name="Nomad" qualification="Mercenary Heavy Warjack" fa="U" cost="6" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="NOMAD" spd="5" str="11" mat="6" rat="5" def="10" arm="18" cmd="0" />
+          <weapons>
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="14" open_fist="true" buckler="true" location="L" />
+            <melee_weapon name="Battle Blade" pow="6" p_plus_s="17" reach="true" location="R" />
+          </weapons>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ17_minion" name="Rocinante" full_name="Rocinante" qualification="Mercenary Heavy Character Warjack" fa="C" cost="9" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="ROCINANTE" spd="5" str="11" mat="7" rat="6" def="10" arm="18" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Cannon" rng="14" rof="1" aoe="3" pow="14" location="L" />
+			<melee_weapon name="Battle Blade" pow="6" p_plus_s="17" reach="true" location="R" />            
+          </weapons>
+          <capacity title="AFFINITY [DAMIANO]">While in Damiano's control area, this model gains Quick Work. (When a model with Quick Work destroys one or more enemy models with a melee attack during its combat action, immediately after the attack is resolved it can make one normal ranged attack. Attacks gained from Quick Work do not count against a weapon's ROF.)</capacity>
+          <capacity title="DEFENSIVE STRIKE">Once per turn, when an enemy model advances into and ends its movement in this model’s melee range, this model can immediately make one normal melee attack against it.</capacity>
+          <capacity title="GUARD DOG">While this model is within 3" of its warcaster or warlock and is not knocked down or stationary, its warcaster cannot be targeted by free strikes and gains +2 DEF against melee attack rolls, and models attacking the warcaster do not gain back strike bonuses.</capacity>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ16_minion" name="Rover" full_name="Rover" qualification="Mercenary Heavy Warjack" fa="U" cost="8" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="ROVER" spd="5" str="11" mat="6" rat="5" def="10" arm="18" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Shield Cannon" rng="10" rof="1" aoe="-" pow="14" location="L" />
+			<melee_weapon name="Shield" pow="1" p_plus_s="12" shield="true" location="L" />
+            <melee_weapon name="Battle Axe" pow="6" p_plus_s="17" location="R" />            
+          </weapons>
+          <capacity title="POINT PLANK">During its activation, this model can make melee attacks with its ranged weapon, with a 1/2" melee range. Do not add this model’s STR to damage rolls made with ranged weapons. Charge attacks made with ranged weapons are not boosted. </capacity>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ02_minion" name="Talon" full_name="Talon" qualification="Mercenary Light Warjack" fa="U" cost="4" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="TALON" spd="6" str="8" mat="6" rat="4" def="12" arm="16" cmd="0" />
+          <weapons>
+            <melee_weapon name="Shield" pow="1" p_plus_s="9" shield="true" location="L" />
+            <melee_weapon name="Stun Lance" pow="4" p_plus_s="12" reach="true" location="R">
+              <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+              <capacity title="STALL">A warjack hit by this attack suffers the Stall continuous effect. While a warjack is suffering Stall, its base DEF becomes 7 and it cannot run or charge.</capacity>
+            </melee_weapon>
+          </weapons>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+        <warjack id="MJ03_minion" name="Vanguard" full_name="Vanguard" qualification="Mercenary Light Warjack" fa="U" cost="5" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="VANGUARD" spd="6" str="9" mat="6" rat="6" def="13" arm="17" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Shield Gun" rng="8" rof="1" aoe="-" pow="12" location="L" />
+			<melee_weapon name="Tower Shield" pow="1" p_plus_s="10" shield="true" location="L" />
+            <melee_weapon name="Guisarme" pow="4" p_plus_s="13" reach="true" location="R">
+              <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact rolls against this model.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model’s activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+          <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model derectly hit instead.This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+          <restricted_to id="MS26_minion" />
+        </warjack>
+      </warjacks>
+      <warbeasts>
+        <warbeast id="IB01" name="Gun Boar" full_name="Gun Boar" qualification="Minion Farrow Light Warbeast" fa="U" cost="5" fury="3" threshold="7" damage_spiral="6-10-6" completed="true">
+          <basestats name="GUN BOAR" spd="5" str="8" mat="5" rat="5" def="12" arm="17" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Big Gun" rng="10" rof="1" aoe="3" pow="13" />
+			<melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="L" />
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="R" />            
+          </weapons>
+          <animus name="COUNTERBLAST" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">When an enemy model advances and ends its movement in this model's command range, this model can make one normal melee or ranged attack targeting that model, then Counterblast expires. Counterblast lasts for one round.</animus>
+          <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>
+          <capacity title="FARROW WARBEAST">This model can be included only in a battlegroup controlled by a Minion Farrow warlock.</capacity>
+          <restricted_to id="IW08" />
+          <restricted_to id="IW10" />
+          <restricted_to id="IW11" />
+          <restricted_to id="IW05" />
+		  <restricted_to id="IW13" />
+          <restricted_to id="IW03_minion" />
+        </warbeast>
+        <warbeast id="IB02" name="War Hog" full_name="War Hog" qualification="Minion Farrow Heavy Warbeast" fa="U" cost="8" fury="4" threshold="8" damage_spiral="9-12-7" completed="true">
+          <basestats name="WAR HOG" spd="4" str="11" mat="6" rat="1" def="12" arm="18" cmd="6" />
+          <weapons>
+            <melee_weapon name="War Cleaver" pow="5" p_plus_s="16" location="L" />
+            <melee_weapon name="War Cleaver" pow="5" p_plus_s="16" location="R" />
+            <melee_weapon name="Gore" pow="4" p_plus_s="15" location="H">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="MASSACRE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model can charge without being forced. When the affected model destroys an enemy model with a charge attack, after the attack is resolved it can advance up to 1" and make an additional melee attack. Massacre lasts for one turn. </animus>
+          <capacity title="AGGRESSION DIAL">This model can be forced during its activation to gain +2 STR for one turn but suffers d3 damage points.</capacity>
+          <capacity title="FARROW WARBEAST">This model can be included only in a battlegroup controlled by a Minion Farrow warlock.</capacity>
+          <restricted_to id="IW08" />
+          <restricted_to id="IW10" />
+          <restricted_to id="IW11" />
+          <restricted_to id="IW05" />
+		  <restricted_to id="IW13" />
+          <restricted_to id="IW03_minion" />
+        </warbeast>
+        <warbeast id="IB03" name="Blackhide Wrastler" full_name="Blackhide Wrastler" qualification="Minion Gatorman Heavy Warbeast" fa="U" cost="9" fury="4" threshold="8" damage_spiral="5-14-8" completed="true">
+          <basestats name="WRASTLER" spd="5" str="12" mat="6" rat="1" def="12" arm="19" cmd="6" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="17" location="H">
+              <capacity title="DEATH ROLL (★ATTACK)">On a hit, before rolling damage you can decide to knock down both this model and the model it hit. If both models are knocked down, this damage roll is boosted.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Claw" pow="2" p_plus_s="14" open_fist="true" location="L" />
+            <melee_weapon name="Claw" pow="2" p_plus_s="14" open_fist="true" location="R" />
+          </weapons>
+          <animus name="RISE" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly knocked down Faction model immediately stands up.</animus>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="MAN EATER">This model can charge living warrior models without being forced.</capacity>
+          <capacity title="WRASTLER">While knocked down, this model can make attacks, has a melee range, can engage other models, can be engaged, and can use its animus.</capacity>
+          <capacity title="SNACKING">When this model boxes a living model with a melee attack, this model can heal d3 damage points. If this model heals, the boxed model is removed from play.</capacity>
+          <restricted_to id="IW06" />
+          <restricted_to id="IW07" />
+          <restricted_to id="IW09" />
+          <restricted_to id="IW12" />
+		  <restricted_to id="IW14" />
+          <restricted_to id="IW04_minion" />
+        </warbeast>
+        <warbeast id="IB04" name="Bull Snapper" full_name="Bull Snapper" qualification="Minion Gatorman Light Warbeast" fa="U" cost="3" fury="3" threshold="7" damage_spiral="4-7-5" completed="true">
+          <basestats name="BULL SNAPPER" spd="6" str="7" mat="5" rat="1" def="13" arm="14" cmd="6" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="12" location="H">
+              <capacity title="SUSTAINED ATTACK">During this model's activation, when it make an attack with this weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="SPINY GROWTH" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains +2 ARM. If a warjack or warbeast hits the affected model with a melee attack, the attacking model suffers d3 damage points immediately after the attack has been resolved unless the affected model was destroyed or removed from play by the attack. Spiny Growth lasts for one round.</animus>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="BLOOD THIRST">When it charges a living model, this model gains +2" movement.</capacity>
+          <capacity title="MAN EATER">This model can charge living warrior models without being forced.</capacity>
+          <capacity title="TORPID">If this model destroys a living enemy model with a normal melee attack, this model's activation ends immediately after the attack is resolved and you can remove 1 fury point from this model.</capacity>
+          <restricted_to id="IW06" />
+          <restricted_to id="IW07" />
+          <restricted_to id="IW09" />
+          <restricted_to id="IW12" />
+		  <restricted_to id="IW14" />
+          <restricted_to id="IW04_minion" />
+        </warbeast>
+        <warbeast id="IB05" name="Ironback Spitter" full_name="Ironback Spitter" qualification="Minion Gatorman Heavy Warbeast" fa="U" cost="8" fury="4" threshold="9" damage_spiral="7-11-9" completed="true">
+          <basestats name="SPITTER" spd="4" str="10" mat="5" rat="5" def="10" arm="18" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Spit Blast" rng="12" rof="1" aoe="3" pow="14" location="H" corrosion="true" continuous_corrosion="true" />
+			<melee_weapon name="Bite" pow="5" p_plus_s="15" location="H" />
+            <melee_weapon name="Claw" pow="3" p_plus_s="13" open_fist="true" location="L" />
+            <melee_weapon name="Claw" pow="3" p_plus_s="13" open_fist="true" location="R" />            
+          </weapons>
+          <animus name="ORNERY" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains Retaliatory Strike. Ornery expires after the affected model makes a Retaliatory Strike attack. Ornery lasts for one round. (When a model with Retaliatory Strike is hit by a melee attack made by an enemy model during your opponent's turn, after the attack is resolved it can immediately make one normal melee attack against that enemy model.)</animus>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="BACK PLATES">When a model hits this model with a free strike attack, immediately after the attack is resolved the attacking model suffers d6 damage points.</capacity>
+          <capacity title="GIRDED">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
+          <restricted_to id="IW06" />
+          <restricted_to id="IW07" />
+          <restricted_to id="IW09" />
+          <restricted_to id="IW12" />
+		  <restricted_to id="IW14" />
+          <restricted_to id="IW04_minion" />
+        </warbeast>
+        <warbeast id="IB06" name="Road Hog" full_name="Road Hog" qualification="Minion Farrow Heavy Warbeast" fa="U" cost="9" fury="4" threshold="8" damage_spiral="9-12-9" completed="true">
+          <basestats name="ROAD HOG" spd="5" str="10" mat="6" rat="5" def="12" arm="18" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Heavy Flamethrower" rng="SP10" pow="12" rof="1" aoe="-" location="L" fire="true" continuous_fire="true" />
+			<melee_weapon name="Mechano-claw" pow="4" p_plus_s="14" open_fist="true" location="R" />
+            <melee_weapon name="Gore" pow="4" p_plus_s="14" location="H">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <animus name="LIGHTNING STRIKE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model gains Sprint. Lightning Strike lasts for one turn. (At the end of its activation, if a model with Sprint destroyed one or more enemy models with melee attacks this activation it can make a full advance.)</animus>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+          <capacity title="FARROW WARBEAST">This model can be included only in a battlegroup controlled by a Minion Farrow warlock.</capacity>
+          <capacity title="FULL BOAR">This model can be forced during its activation to gain +2 SPD and Pathfinder for one turn but suffers d3 damage points.</capacity>
+          <restricted_to id="IW08" />
+          <restricted_to id="IW10" />
+          <restricted_to id="IW11" />
+          <restricted_to id="IW05" />
+		  <restricted_to id="IW13" />
+          <restricted_to id="IW03_minion" />		 
+        </warbeast>
+        <warbeast id="IB07" name="Boneswarm" full_name="Boneswarm" qualification="Minion Gatorman Light Warbeast" fa="U" cost="4" fury="3" threshold="9" damage_spiral="5-7-6" completed="true">
+          <basestats name="BONE SWARM" spd="5" str="8" mat="6" rat="4" def="13" arm="15" cmd="7" terror="true" undead="true" />
+          <weapons>
+            <melee_weapon name="Bone Strike" pow="4" p_plus_s="12" />
+          </weapons>
+          <animus name="SWARM" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model has concealment. Living enemy models suffer –2 to attack rolls while within 2" of this model. Swarm lasts for one round.</animus>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="BONE PICKER">This model gains a corpse token each time it destroys a living or undead enemy model with a melee attack. This model can have up to three corpse tokens at a time. For each corpse token on this model it gains +1 STR and ARM.</capacity>
+          <capacity title="GATORMAN WARBEAST">This model can be included only in a battlegroup controlled by a Minion Gatorman warlock.</capacity>
+          <capacity title="GROSS ANATOMY">During its activation, this model can spend corpse tokens to heal damage. For each corpse token spent, remove d3 damage from this model.</capacity>
+          <restricted_to id="IW06" />
+          <restricted_to id="IW07" />
+          <restricted_to id="IW09" />
+          <restricted_to id="IW12" />
+		  <restricted_to id="IW14" />
+          <restricted_to id="IW04_minion" />
+        </warbeast>
+        <warbeast id="IB08" name="Swamp Horror" full_name="Swamp Horror" qualification="Minion Gatorman Heavy Warbeast" fa="U" cost="8" fury="4" threshold="8" damage_spiral="8-11-8" completed="true">
+          <basestats name="SWAMP HORROR" spd="4" str="10" mat="6" rat="1" def="10" arm="17" cmd="6" />
+          <weapons>
+            <melee_weapon name="Beak" pow="6" p_plus_s="16" location="H">
+              <capacity title="CRITICAL CATASTROPHIC DAMAGE">On a critical hit on a warjack or warbeast, fill in the unmarked damage boxes or circles on the last column or branch damaged.</capacity>
+            </melee_weapon>
+			<melee_weapon name="Tentacles" pow="2" p_plus_s="12" reach="true" open_fist="true">
+              <capacity title="PULL">If this weapon hits an enemy model with an equal or smaller base, immediately after the attack is resolved the hit model can be pushed any distance directly toward this model.</capacity>
+            </melee_weapon>            
+            <melee_weapon name="Tentacles" pow="2" p_plus_s="12" reach="true" open_fist="true">
+              <capacity title="PULL">See above.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Tentacles" pow="2" p_plus_s="12" reach="true" open_fist="true">
+              <capacity title="PULL">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="ELASTICITY" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model's melee weapons gain Reach. Elasticity lasts for one turn.</animus>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="IMPERVIOUS FLESH">When this model is hit by a ranged attack, the attacker rolls one less damage die.</capacity>
+          <capacity title="STEADY">This model cannot be knocked down.</capacity>
+          <restricted_to id="IW06" />
+          <restricted_to id="IW07" />
+          <restricted_to id="IW09" />
+          <restricted_to id="IW12" />
+		  <restricted_to id="IW14" />
+          <restricted_to id="IW04_minion" />
+        </warbeast>
+        <warbeast id="IB09" name="Razor Boar" full_name="Razor Boar" qualification="Minion Farrow Lesser Warbeast" fa="U" cost="2" fury="2" threshold="6" damage_spiral="4-6-4" completed="true">
+          <basestats name="RAZOR BOAR" spd="6" str="6" mat="5" rat="3" def="13" arm="14" cmd="5" />
+          <weapons>
+            <melee_weapon name="Ripping Tusks" pow="4" p_plus_s="10">
+              <capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="VICIOUS" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction warbeast gains Hyper Aggressive for one round. (When a model with Hyper Aggressive suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.)</animus>
+          <capacity title="LESSER WARBEAST">This model cannot make power attacks.</capacity>
+          <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>
+          <restricted_to id="IW08" />
+          <restricted_to id="IW10" />
+          <restricted_to id="IW11" />
+          <restricted_to id="IW05" />
+		  <restricted_to id="IW13" />
+          <restricted_to id="IW03_minion" />		  
+        </warbeast>
+        <warbeast id="Lug_minion" name="Lug" full_name="Lug" qualification="Mercenary Minion Character Heavy Warbeast" fa="C" cost="0" fury="4" threshold="9" damage_spiral="8-11-8" completed="true">
+          <basestats name="LUG" spd="5" str="12" mat="5" rat="1" def="12" arm="18" cmd="6" immunity_frost="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="L">
+              <capacity title="CHAIN ATTACK: GRAB &amp; SMASH">If this model hits the same model with both its initial attacks with this weapon, after resolving the attack it can immediately make a double-handed throw, head-butt, headlock/weapon lock, push, or throw power attack against the target.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="R">
+              <capacity title="CHAIN ATTACK: GRAB &amp; SMASH">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="BEAR HANDS" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">When this model hits an enemy model with a normal melee attack, it can choose to knock down the enemy model or push it 3" directly away. Bear Hands lasts for one turn.</animus>
+          <capacity title="WARBEAST BOND [BRUN CRAGBACK]">This model is bonded to Brun Cragback. While it is within 3" of Cragback and is not stationary, Cragback cannot be targeted by free strikes and gains +2 DEF against melee attacks, and models do not gains back strike bonuses while attacking Cragback.</capacity>
+          <capacity title="FLANK [BRUN CRAGBACK]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
+          <capacity title="COMPANION [BRUN CRAGBACK]">This model is included in any army that includes Brun Cragback. If Brun Cragback is destroyed or removed from play, remove this model from play. This model is part of Cragback's battlegroup.</capacity>
+          <restricted_to id="IW01_minion" />
+        </warbeast>
+        <warbeast id="Skarath_minion" name="Skarath" full_name="Skarath" qualification="Mercenary Minion Tatzylwurm Character Heavy Warbeast" fa="C" cost="0" fury="4" threshold="9" damage_spiral="7-9-9" completed="true">
+          <basestats name="SKARATH" spd="6" str="10" mat="6" rat="5" def="14" arm="16" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Acid Spray" rng="SP10" rof="1" aoe="-" pow="12" location="H" corrosion="true" continuous_corrosion="true" />
+			<melee_weapon name="Bite" pow="6" p_plus_s="16" reach="true" location="H">
+              <capacity title="CRITICAL CONSUME">On a critical hit, if the attack hit a small-based non-warlock/warcaster model the model hit is removed from play.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <animus name="SERPENT STRIKE" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model gains Riposte. Serpent Strike lasts for one round. After the affected model makes a Riposte attack, Serpent Strike expires. (When a model with Riposte is missed by an enemy melee attack, immediately after the attack is resoved it can make one normal melee attack against the attacking model.)</animus>
+          <capacity title="WARBEAST BOND [DAHLIA HALLYR]">This model is bonded to Dahlia Hallyr. When this model frenzies in Hallyr's control range, you choose the frenzy target.</capacity>
+          <capacity title="SERPENTINE">This model cannot make slam or trample power attacks and cannot be knocked down.</capacity>
+          <capacity title="COMPANION [DAHLIA HALLYR]">This model is included in any army that includes Dahlia Hallyr. If Hallyr is destroyed or removed from play, remove this model from play. This model is part of Hallyr's battlegroup.</capacity>
+          <restricted_to id="IW02_minion" />
+        </warbeast>
+        <warbeast id="Brine_minion" name="Brine" full_name="Brine" qualification="Mercenary Minion Farrow Character Heavy Warbeast" fa="C" cost="0" fury="4" threshold="8" damage_spiral="5-12-9" completed="true">
+          <basestats name="BRINE" spd="5" str="11" mat="6" rat="1" def="12" arm="17" cmd="6" />
+          <weapons>
+            <melee_weapon name="Gore" pow="4" p_plus_s="15" location="H">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Claw" pow="3" p_plus_s="14" open_fist="true" location="L" />
+            <melee_weapon name="Claw" pow="3" p_plus_s="14" open_fist="true" location="R" />
+          </weapons>
+          <animus name="PIG FARM" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains an additional die on melee damage rolls against living models. When this model boxes a living model with a melee attack, this model can heal d3 damage points. If this model heals, the boxed model is removed from play. Pig farm lasts for one round.</animus>
+          <capacity title="PIGHEADED">If this model is destroyed by an enemy attack or if Rorsh is destroyed or removed from play by an enemy attack, before this model is removed from the table it can advance up to 3" and make one melee attack. When making this attack it ignore the effects of lost aspects. It cannot be targeted by free strikes during this movement.</capacity>
+          <capacity title="WARBEAST BOND [RORSH]">Brine is bonded to Rorsh. During its activation, this model can charge or make a slam power attack against an enemy model that was damaged by a melee or ranged attack made by Rorsh this turn without being forced.</capacity>
+          <capacity title="PAIN RESPONSE">While damaged this model can charge or make power attacks without being forced.</capacity>
+          <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>
+          <capacity title="COMPANION [RORSH]">This model is included in any army that includes Rorsh. If Rorsh is destroyed or removed from play, remove this model from play. This model is part of Rorsh's battlegroup.</capacity>
+          <restricted_to id="IW03_minion" />
+        </warbeast>
+        <warbeast id="Snapjaw_minion" name="Snapjaw" full_name="Snapjaw" qualification="Mercenary Minion Gatorman Character Heavy Warbeast" fa="C" cost="0" fury="4" threshold="8" damage_spiral="5-14-8" completed="true">
+          <basestats name="SNAPJAW" spd="5" str="11" mat="6" rat="1" def="12" arm="18" cmd="6" />
+          <weapons>
+            <melee_weapon name="Bite" pow="6" p_plus_s="17" location="H" />
+            <melee_weapon name="Tail" pow="3" p_plus_s="14" reach="true">
+              <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="SUBMERGE" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model cannot be targeted by ranged or magic attacks and does not block LOS. Submerge lasts for one round.</animus>
+          <capacity title="MAN EATER">This model can charge living warrior models without being forced.</capacity>
+          <capacity title="WARBEAST BOND [WRONG EYE]">Snapjaw is bonded to Wrong Eye. When Snapjaw boxes a living model with a melee attack in Wrong Eye's control area, the model is removed from play and either Snapjaw or Wrong Eye heals d3 damage points.</capacity>
+          <capacity title="COMPANION [WRONG EYE]">This model is included in any army that includes Wrong Eye. If Wrong Eye is destroyed or removed from play, remove this model from play. This model is part of Wrong Eye's battlegroup.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="BLOOD THIRST">When it charges a living model, this model gains +2" movement.</capacity>
+          <restricted_to id="IW04_minion" />
+        </warbeast>
+		<!-- midas butcher's block -->
+        <warbeast id="IB07_midas" name="Boneswarm (Midas - Butcher's Block)" full_name="Boneswarm (Midas - Butcher's Block)" qualification="Minion Gatorman Light Warbeast" fa="U" cost="4" fury="3" threshold="9" damage_spiral="5-7-6" completed="true">
+          <basestats name="BONE SWARM" spd="5" str="8" mat="6" rat="4" def="13" arm="15" cmd="7" terror="true" undead="true" />
+          <weapons>
+            <melee_weapon name="Bone Strike" pow="4" p_plus_s="12" />
+          </weapons>
+          <animus name="SWARM" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model has concealment. Living enemy models suffer –2 to attack rolls while within 2" of this model. Swarm lasts for one round.</animus>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="BONE PICKER">This model gains a corpse token each time it destroys a living or undead enemy model with a melee attack. This model can have up to three corpse tokens at a time. For each corpse token on this model it gains +1 STR and ARM.</capacity>
+          <capacity title="GATORMAN WARBEAST">This model can be included only in a battlegroup controlled by a Minion Gatorman warlock.</capacity>
+          <capacity title="GROSS ANATOMY">During its activation, this model can spend corpse tokens to heal damage. For each corpse token spent, remove d3 damage from this model.</capacity>
+          <restricted_to id="IW11" />
+		  <only_in_tier id="Midas - Butcher's Block" />
+        </warbeast>
+      </warbeasts>
+      
+      <battleEngines>
+        <battleEngine id="IE01" name="Meat Thresher" full_name="Meat Thresher" qualification="Minion Farrow Battle Engine" fa="2" cost="9" completed="true">
+          <basestats name="THRESHER" spd="6" str="12" mat="6" rat="5" def="10" arm="19" cmd="10" hitpoints="22" construct="true" />
+          <weapons>
+            <ranged_weapon name="Hailer" rng="12" rof="1" aoe="-" pow="12">
+              <capacity title="AUTO FIRE [2D3]">Make 2d3 ranged attacks targeting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more attacks than the primary target. Auto Fire counts as one attack for ROF.</capacity>              
+            </ranged_weapon>
+            <melee_weapon name="Crusher" pow="4" p_plus_s="16">
+              <capacity title="BLOOD REAPER">When this model makes its first melee attack during its activation, it makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+              <capacity title="GRINDING WHEEL">This weapon gains an additional die on attack rolls against small-based models.</capacity>
+              <capacity title="KNOCKDOWN">When a model is hit by an attack with this weapon, it is knocked down.</capacity>
+              <capacity title="TRASH">Gain an additional damage die against knocked down targets.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="MINION">This model will work for Skorne, Trollbloods, and the Thornfall Alliance pact.</capacity>
+          <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity>
+          <capacity title="RIDE-BY ATTACK">This model can make ride-by attacks.</capacity>
+          <capacity title="WEAPON PLATFORM">This model can make melee and ranged attacks in the same activation. When this model makes its initial melee attacks or a power attack, it can also make its initial ranged attacks. This model can make ranged attacks even while in melee.</capacity>
+          <works_for id="faction_skorne" />
+          <works_for id="faction_trollblood" /> 
+        </battleEngine>
+        <battleEngine id="IE02" name="Sacral Vault" full_name="Sacral Vault" qualification="Minion Gatorman Battle Engine" fa="2" cost="9" completed="true">
+          <basestats name="SACRAL VAULT" spd="4" str="10" mat="0" rat="5" def="9" arm="20" cmd="10" hitpoints="20" construct="true" eyelesssight="true" gunfighter="true" />
+          <weapons>
+            <ranged_weapon name="Spectral Fury" rng="12" rof="1" aoe="-" pow="13" magical="true">
+              <capacity title="DEATHLY DOMINATION">When this weapon boxes a living or Undead non-warcaster, non-warlock enemy warrior model, you can immediately spend one soul token to take control of the model and make a full advance with the enemy model followed by a normal melee attack, then the boxed model is removed from play. The boxed model cannot be targeted by free strikes during this movement.</capacity>
+              <capacity title="RAPID FIRE [D3]">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+            </ranged_weapon>            
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Legion, and the Blindwater Congregation pact.</capacity>
+          <capacity title="ARCANE VORTEX">This model can immediately negate any spell that targets it or a model within 3" of it by spending 1 soul token before the RNG of the spell is measured. The negated spell does not take effect, but its COST remains spent.</capacity>
+          <capacity title="CRYPT OF SOULS">At the start of each of your Control Phases, this model gains d3 soul tokens if it does not have any. This model gains one soul token for each living model destroyed in its command range. This model can have up to five soul tokens at a time. During its activation, this model can spend soul tokens to boost attack or damage rolls at one token per boost.</capacity>
+          <capacity title="SOUL SACRIFICE">If this model is in a friendly Faction warlock's control area, the warlock can remove 1 soul token from this model to gain a fury point. Each warlock can do this only once per turn and only during its activation.</capacity>
+          <capacity title="SOULSTORM">While this model has one or more soul tokens, enemy models entering or ending their activations within 2" of it immediately suffer 1 damage point.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" /> 
+        </battleEngine>
+      </battleEngines>      
+      <units>
+        <unit id="IU01" name="Bog Trog Ambushers" full_name="Bog Trog Ambushers" qualification="Minion Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="6" rat="3" def="12" arm="14" cmd="8" cma="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Fish Hook" pow="5" p_plus_s="11" reach="true">
+              <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMBUSH">You can choose not to deploy this unit at the start of the game. If it is not deployed normally, you can put it into play at the end of your Control Phases after your first turn. When you do, choose any table edge except the back of your opponent's deployment zone. Place all models in this unit in formation within 3" of the chosen table edge.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can take attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="IU02" name="Farrow Bone Grinders" full_name="Farrow Bone Grinders" qualification="Minion Unit" fa="2" base_cost="2" full_cost="3" baseCount="4" fullCount="6" completed="true">
+          <basestats name="LEADER" spd="5" str="6" mat="5" rat="4" def="12" arm="14" cmd="8" />
+          <weapons>
+            <melee_weapon name="Knife" pow="3" p_plus_s="9" />
+          </weapons>
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="CONFLUENCE">This model gains a cumulative +1 on magic attack rolls for each other model in this unit that is within 1" of it.</capacity>
+          <capacity title="MAGIC ABILITY [6]" />
+          <capacity title="● ARCANE BOLT (★ATTACK)">Arcane Bolt is a RNG 12, POW 11 magic attack.</capacity>
+          <capacity title="● BONE MAGIC (★ACTION OR ATTACK)">This model casts the animus of one friendly destroyed warbeast as a spell without spending fury points. This model cannot cast an animus with a RNG of SELF. This model must make a special attack to cast an offensive spell. Other spells are cast by making a special action.</capacity>
+          <capacity title="● CRAFT TALISMAN (★ACTION)">Target a friendly warlock within 3" of a model in this unit that is in formation. If the warlock is in range, when he casts a spell and is its point of origin, the spell gains +2 RNG. Spells with RNG SELF, SP, or CTRL are not affected. Craft Talisman lasts for one turn.</capacity>
+          <model id="" name="Grunts" full_name="Grunts">
+            <basestats name="GRUNTS" spd="5" str="6" mat="5" rat="4" def="12" arm="14" cmd="8" />
+            <weapons>
+              <melee_weapon name="Knife" pow="3" p_plus_s="9" />
+            </weapons>
+          </model>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="IU03" name="Farrow Brigands" full_name="Farrow Brigands" qualification="Minion Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="6" rat="5" def="12" arm="14" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Pig Iron" rng="10" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Club" pow="4" p_plus_s="10" />            
+          </weapons>
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="DIG IN (★ACTION)">This model gains cover, does not suffer blast damage, and does not block LOS. This model remains dug in until it moves, is placed, or is engaged. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <capacity title="PRAYERS">The Leader of this unit can recite one of the following prayers each turn anytime during its unit's activation. Each model in this unit gains the benefits listed.</capacity>
+          <capacity title="● HEROIC CALL">Affected models gain Fearless and Tough for one round.</capacity>
+          <capacity title="● HOG WILD">Affected models can make one ranged attack this activation before this unit makes its normal movement. After their normal movement, models in this unit that make combat actions can only make melee attacks this activation.</capacity>
+          <capacity title="● MARCH">Affected models gain Pathfinder for one turn.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="IU04" name="Gatorman Posse" full_name="Gatorman Posse" qualification="Minion Unit" fa="2" base_cost="6" full_cost="9" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="8" mat="7" rat="3" def="12" arm="16" cmd="8" hitpoints="8" fearless="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="13" />
+            <melee_weapon name="Gatorman Weapon" pow="5" p_plus_s="13" reach="true" />
+          </weapons>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="BLOOD THIRST">When it charges a living model, this model gains +2" movement.</capacity>
+          <capacity title="PRAYERS">The leader of this unit can recite one of the following prayers each turn anytime during its unit's activation. Each model in this unit gains the benefits listed.</capacity>
+          <capacity title="● COLD BLOOD">Affected models can reroll misssed attack rolls against living models this turn. Each roll can be rerolled only once as a result of Cold Blood.</capacity>
+          <capacity title="● DIRGE OF MISTS">Affected models gain +1 DEF and Terror for one round.</capacity>
+          <capacity title="● MARCH">Affected models gain Pathfinder for one turn.</capacity>
+          <capacity title="UNYIELDING">While engaging an enemy model, this model gains +2 ARM.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="IU05" name="Swamp Gobber Bellows Crew" full_name="Swamp Gobber Bellows Crew" qualification="Minion Unit" fa="1" base_cost="1" full_cost="-" baseCount="2" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="3" mat="3" rat="3" def="15" arm="11" cmd="7" />
+          <weapons>
+            <melee_weapon name="Hand Weapon" pow="2" p_plus_s="5" />
+          </weapons>
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="CLOUD COVER (ORDER)">Models who received this order must forfeit their actions. After this unit's normal movement, place a 3" AOE cloud effect in play with its center point within 1" of the leader. If the Grunt is B2B with the Leader, place a 5" AOE instead. This AOE remains in play for one round.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="IU06" name="Farrow Razorback Crew" full_name="Farrow Razorback Crew" qualification="Minion Weapon Crew Unit" fa="2" base_cost="3" full_cost="-" baseCount="2" fullCount="-" completed="true">
+          <basestats name="LEADER" spd="4" str="6" mat="6" rat="4" def="12" arm="14" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Razorback" rng="14" rof="1" aoe="3" pow="15">
+              <capacity title="LIGHT ARTILLERY">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="RANGE FINDER">While B2B with one or more grunts in this unit, this model gains +2 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Club" pow="4" p_plus_s="10" />            
+          </weapons>
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="DIG IN (★ACTION)">This model gains cover, does not suffer blast damage, and does not block LOS. This model remains dug in until it moves, is placed, or is engaged. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <model name="Grunt" full_name="Grunt">
+            <basestats name="GRUNT" spd="4" str="6" mat="6" rat="4" def="12" arm="14" cmd="8" />
+            <weapons>
+              <ranged_weapon name="Pig Iron" rng="10" rof="1" aoe="-" pow="12" />
+			  <melee_weapon name="Club" pow="4" p_plus_s="10" />              
+            </weapons>
+            <capacity title="DIG IN (★ACTION)">See above.</capacity>
+          </model>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="IU07" name="Farrow Slaughterhousers" full_name="Farrow Slaughterhousers" qualification="Minion Unit" fa="2" base_cost="6" full_cost="-" baseCount="6" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="7" mat="6" rat="4" def="12" arm="15" cmd="8" fearless="true" tough="true" />
+          <weapons>
+            <melee_weapon name="Pole Cleaver" pow="4" p_plus_s="11" reach="true">
+              <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="FINISHER">This model gains an additional die on damage rolls against damaged models.</capacity>
+          <capacity title="TAKE DOWN">Models disabled by a melee attack made by this model cannot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="IU08" name="Gatorman Bokor and Bog Trog Swamp Shamblers" full_name="Gatorman Bokor and Bog Trog Swamp Shamblers" qualification="Minion Unit" fa="1" base_cost="6" full_cost="-" baseCount="10" fullCount="-" completed="true">
+          <basestats name="BOKOR" spd="5" str="7" mat="6" rat="3" def="12" arm="16" cmd="8" hitpoints="8" fearless="true" officer="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="12" />
+            <melee_weapon name="Tail Strike" pow="3" p_plus_s="10" />
+          </weapons>
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="DEATH MAGIC">This model can remove friendly Swamp Shamblers in its command range from play to make an additional attack or to boost an attack or damage roll for each Swamp Shambler model removed. When this model would suffer damage, you can choose one or more models in this unit that are in this model's command range to suffer any number of those damage points instead, divided as you choose. If you do, this model does not suffer that damage. A model cannot suffer more damage as a result of Death Magic than it has unmarked damage boxes.</capacity>
+          <capacity title="MAGIC ABILITY [6]" />
+          <capacity title="● HAND OF GLORY (★ATTACK)">Hand of Glory is a RNG 3 magic attack. Target enemy model hit becomes stationary for one round.</capacity>
+          <capacity title="RAISE DEAD">When a living model is destroyed in this model's command range, this model gains one corpse token. At the end of your next Control Phase, remove all corpse tokens from this model and add one Swamp Shambler Grunt to this unit for each corpse token removed. Swamp Shambler Grunts must be placed in formation. This unit cannot have more than 20 Swamp Shambler Grunts in play at a time.</capacity>
+          <model id="Shamblers" name="Swamp Shamblers" full_name="Swamp Shamblers">
+            <basestats name="SWAMP SHAMBLER" spd="5" str="6" mat="5" rat="3" def="10" arm="13" cmd="6" cma="true" undead="true" />
+            <weapons>
+              <melee_weapon name="Claws" pow="2" p_plus_s="8" />
+            </weapons>
+            <capacity title="AMPHIBIOUS">See above.</capacity>
+          </model>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </unit>
+        <unit id="MU05_minion" name="Cylena Raefyll &amp; Nyss Hunters" full_name="Cylena Raefyll &amp; Nyss Hunters" qualification="Minion Character Unit" fa="C" base_cost="7" full_cost="10" baseCount="6" fullCount="10" completed="true">
+          <basestats name="CYLENA" spd="7" str="5" mat="7" rat="7" def="15" arm="11" cmd="9" hitpoints="5" officer="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Nyss Bow" rng="12" rof="1" aoe="-" pow="10" />
+			<melee_weapon name="Nyss Claymore" pow="4" p_plus_s="9" weapon_master="true" />            
+          </weapons>
+          <capacity title="MERCENARIES">These models will work for Cryx, Cygnar, Khador, and the Retribution.</capacity>
+          <capacity title="MINIONS">These models will work for Circle and the Trollbloods.</capacity>
+          <capacity title="ANIMOSITY [BLIGHTED]">This model cannot be included in an army that includes one or more models of the listed type.</capacity>
+          <capacity title="GRANTED: COMBINED RANGED ATTACK">While this model is in play, models in its unit gain Combined Ranged Attack.</capacity>
+          <capacity title="HUNTER">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <model id="nyss" name="Grunts" full_name="Grunts">
+            <basestats name="GRUNTS" spd="7" str="5" mat="6" rat="6" def="15" arm="11" cmd="8" pathfinder="true" />
+            <weapons>
+              <ranged_weapon name="Nyss Bow" rng="12" rof="1" aoe="-" pow="10" />
+			  <melee_weapon name="Nyss Claymore" pow="4" p_plus_s="9" weapon_master="true" />              
+            </weapons>
+            <capacity title="HUNTER">See above.</capacity>
+          </model>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+        </unit>
+        <unit id="MU16_minion" name="Dannon Blythe &amp; Bull" full_name="Dannon Blythe &amp; Bull" qualification="Minion Character Unit" fa="C" base_cost="4" full_cost="-" baseCount="2" fullCount="-" completed="true">
+          <basestats name="BLYTHE" spd="6" str="5" mat="6" rat="6" def="15" arm="13" cmd="9" hitpoints="5" gunfighter="true" officer="true" />
+          <weapons>
+            <ranged_weapon name="Pistol" rng="8" rof="1" aoe="-" pow="10" />
+			<melee_weapon name="Sword" pow="3" p_plus_s="8" />            
+          </weapons>
+          <capacity title="MERCENARIES">These models will work for Cygnar, Khador, and the Protectorate.</capacity>
+          <capacity title="MINIONS">These models will work for the Trollbloods.</capacity>
+          <capacity title="HUNTSMAN">After deployment but before the first player's turn, choose an enemy model/unit to be this unit's prey. While this model is in play, each model in its unit beginning its activation within 10" of the prey gains +2" movement that activation. Whike this model is in play, models in its unit gains +2 to attack and damage rolls against the prey. When the prey is destroyed or removed from play, choose another model/unit as the prey.</capacity>
+          <capacity title="TAKE DOWN">Models disabled by a melee attack made by this model cannot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.</capacity>
+          <model id="Bull" name="Bull" full_name="Bull">
+            <basestats name="BULL" spd="6" str="7" mat="6" rat="6" def="13" arm="15" cmd="9" hitpoints="8" tough="true" />
+            <weapons>
+              <ranged_weapon name="Demolisher" rng="10" rof="1" aoe="-" pow="12">
+                <capacity title="BEAT BACK">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1'' directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+                <capacity title="CRITICAL KNOCKDOWN">On a critical hit, the model hit is knocked down.</capacity>
+                <capacity title="RAPID FIRE [D3]">When you decide to make initial attacks with this weapon at the beginning of this model's combat action, roll a d3. The total rolled is the number of initial attacks this model can make with this weapon during the combat action, ignoring ROF.</capacity>
+              </ranged_weapon>
+			  <melee_weapon name="Great Sword" pow="4" p_plus_s="11" reach="true">
+                <capacity title="BACKSWING (★ATTACK)">Make a normal attack with this weapon. After resolving the attack, make one additional attack with this weapon.</capacity>
+              </melee_weapon>              
+            </weapons>
+            <capacity title="TAKE DOWN">See above.</capacity>
+          </model>
+          <works_for id="faction_trollblood" />
+        </unit>
+        <unit id="MU01_minion" name="Greygore Boomhowler &amp; Co." full_name="Greygore Boomhowler &amp; Co." qualification="Minion Character Unit" fa="C" base_cost="6" full_cost="9" baseCount="6" fullCount="10" completed="true">
+          <basestats name="BOOMHOWLER" spd="6" str="7" mat="7" rat="5" def="12" arm="16" cmd="9" hitpoints="8" cma="true" officer="true" tough="true" />
+          <weapons>
+            <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Great Axe" pow="5" p_plus_s="12" />            
+          </weapons>
+          <capacity title="MERCENARIES">These models will work for Cryx, Cygnar, and Khador.</capacity>
+          <capacity title="MINIONS">These models will work for the Trollbloods.</capacity>
+          <capacity title="FELL HOWL">This model can make one of the following fell calls anytime during its unit's activation. A friendly Faction model/unit can be affected by only one fell call each turn.</capacity>
+          <capacity title="● CALL OF DEFIANCE">When a model in this unit that is in formation makes a Tough roll of 4, 5 or 6, it heals 1 damage point and is knocked down. Call of Defiance lasts for one round.</capacity>
+          <capacity title="● CALL TO ACTION">Knocked down models in this unit in formation immediately stand up.</capacity>
+          <capacity title="● RAGE HOWLER">Enemy models/units currently in this model's command range must pass a command check or flee. Warjacks and Warbeasts currently in this model's command range suffer –2 to attack rolls for one round.</capacity>
+          <model id="grunts" name="Grunts" full_name="Grunts">
+            <basestats name="GRUNTS" spd="6" str="7" mat="6" rat="4" def="12" arm="16" cmd="8" cma="true" tough="true" />
+            <weapons>
+              <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			  <melee_weapon name="Great Axe" pow="5" p_plus_s="12" />              
+            </weapons>
+          </model>
+          <works_for id="faction_trollblood" />
+        </unit>
+      </units>
+      <solos>
+        <solo id="IS01_minion" name="Alten Ashley" full_name="Alten Ashley" qualification="Mercenary Minion Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="ALTEN ASHLEY" spd="6" str="6" mat="6" rat="8" def="14" arm="14" cmd="9" hitpoints="5" advance_deployment="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Bucking Jenny" rng="14" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Sword" pow="3" p_plus_s="9" />            
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cygnar, Khador, and the Protectorate.</capacity>
+          <capacity title="MINION">This model will work for Circle and Trollbloods.</capacity>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="MONSTER HUNTER">When this model hits a warbeast with an attack, the warbeast suffers d6 points of damage to a branch of your choice.</capacity>
+          <capacity title="SWIFT HUNTER">When this model destroys an enemy model with a normal ranged attack, immediately after the attack is resolved it can advance up to 2".</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+        </solo>
+        <solo id="IS02" name="Feralgeist" full_name="Feralgeist" qualification="Minion Solo" fa="3" cost="1" completed="true">
+          <basestats name="FERALGEIST" spd="6" str="0" mat="3" rat="0" def="14" arm="11" cmd="8" incorporeal="true" undead="true" />
+          <weapons />
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="SPIRIT BIND">When a living warbeast in this model's command range is destroyed but not removed from play by an attack, this model can bind itself to the beast. If more than one eligible model attempts to bind to the warbeast, the closest model binds to it. If this model binds itself to the warbeast, the warbeast remains on the table and you take control of it. Remove this model from the table. The warbeast's controller can reave fury points on the warbeast and the warbeast is no longer destroyed. Fury points that are not reaved are removed. Any effects, spells, or animi on this model expire when it is removed. The warbeast becomes a friendly Minion, gains Undead, and no longer belongs to a battlegroup. Remove 1 damage point from each of the warbeast's aspects. The warbeast cannot activate the turn Spiritbind is used, cannot be forced or healed, and loses its animus. This model can exit the warbeast during your Maintenance Phase. If it does, place this model completely within 3" of the warbeast, then the warbeast is destroyed. If the warbeast is destroyed or removed from play while this model is bound to it, this model is forced to exit the warbeast.
+              </capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS03_minion" name="Gudrun the Wanderer" full_name="Gudrun the Wanderer" qualification="Mercenary Minion Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="GUDRUN" spd="6" str="9" mat="7" rat="4" def="13" arm="15" cmd="9" hitpoints="8" advance_deployment="true" fearless="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Battle Glaive" pow="6" p_plus_s="15" reach="true" />
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="MERCENARY">This model will work for Cryx, Cygnar, and Khador.</capacity>
+          <capacity title="BERSERK">When this model destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</capacity>
+          <capacity title="BINGE DRINKING">Once per game during its activation, this model can use Binge Drinking. This model is knocked down.</capacity>
+          <capacity title="FEIGN DEATH">This model cannot be targeted by ranged or magic attacks while knocked down.</capacity>
+          <capacity title="HANGOVER">The first time this model is disabled by an enemy attack, it heals all damage and is knocked down.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS04_minion" name="Lanyssa Ryssyll" full_name="Lanyssa Ryssyll" qualification="Mercenary Minion Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="LANYSSA RYSSYL" spd="6" str="5" mat="6" rat="4" def="15" arm="11" cmd="9" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Sorrow" pow="6" p_plus_s="11" magical="true">
+              <capacity title="CRITICAL FREEZE">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cygnar and the Retribution.</capacity>
+          <capacity title="MINION">This model will work for Circle and the Trollbloods.</capacity>
+          <capacity title="ANIMOSITY [LEGION OR BLIGHTED]">This model cannot be included in an army that includes one or more models of the listed type.</capacity>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="● HUNTER'S MARK (★ATTACK)">Hunter's Mark is a RNG 10 magic attack that causes no damage. Friendly models can charge or make a slam power attack against an enemy model hit by Hunter's mark without being forced or spending focus. A friendly model charging an enemy model hit by Hunter's Mark gain +2" of movement. Hunter's Mark lasts for one round. </capacity>
+          <capacity title="● ICE BOLT (★ATTACK)">Ice Bolt is a RNG 10 magic attack. A model hit suffers a POW 12 cold damage roll. On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+          <capacity title="● WINTER STORM (★ACTION)">Enemy models that begin their activation in this model’s command range lose Eyeless Sight, Flight, and Pathfinder during their activations. Winter Storm lasts for one round.</capacity>
+          <capacity title="PROWL">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+          <capacity title="VENDETTA [LEGION OR BLIGHTED]">This model gains boosted attack and damage rolls against Legion or Blighted models.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+        </solo>
+        <solo id="IS05_minion" name="Viktor Pendrake" full_name="Viktor Pendrake" qualification="Cygnar Ally Minion Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="PENDRAKE" spd="6" str="6" mat="6" rat="6" def="14" arm="14" cmd="9" hitpoints="5" fearless="true" pathfinder="true" tough="true" />
+          <weapons>
+            <ranged_weapon name="Chain Bola" rng="8" rof="1" aoe="-" pow="-">
+              <capacity title="CUMBERSOME">If this model attacks with this weapon during its activation, it cannot attack with another ranged weapon that activation. If this model attacked with another ranged weapon this activation, it cannot attack with this weapon.</capacity>
+              <capacity title="KNOCKDOWN">When a model is hit by an attack with this weapon, it is knocked down.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Lucky Bow" rng="12" rof="1" aoe="-" pow="10">
+              <capacity title="LUCK">This model can reroll missed attack rolls with this weapon. Each attack roll can be rerolled only once as a result of Luck.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Orgoth Sword" pow="5" p_plus_s="11" magical="true" />            
+          </weapons>
+          <capacity title="MINION">This model will work for Circle and Trollbloods.</capacity>
+          <capacity title="ANIMOSITY [SAXON ORRIK]">This model cannot be included in an army that includes one or more models of the listed type.</capacity>
+          <capacity title="BEAST LORE (★ACTION)">RNG 3. Target friendly warrior model/unit. If the model/unit is in range, it gains boosted attack rolls against warbeasts this turn.</capacity>
+          <capacity title="DISMEMBER">When this model hits a warbeast with a melee attack, roll an additional damage die.</capacity>
+          <capacity title="DUCK">This model gains +4 DEF against melee and ranged attack rolls made by warbeasts. Warbeasts cannot target this model with free strikes.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+        </solo>
+        <solo id="IS06_minion" name="Saxon Orrik" full_name="Saxon Orrik" qualification="Mercenary Minion Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="ORRIK" spd="6" str="6" mat="7" rat="7" def="15" arm="14" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+			<melee_weapon name="Sword" pow="4" p_plus_s="10" />
+            <melee_weapon name="Skinning Knife" pow="2" p_plus_s="8">
+              <capacity title="INFLICT PAIN">When it hits a warbeast with this weapon, this model can place 1 fury point on or remove 1 fury point from the warbeast.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cryx, Khador, and the Protectorate.</capacity>
+          <capacity title="MINION">This model will work for Circle, Skorne, and Trollbloods.</capacity>
+          <capacity title="BLIND SPOT">When an enemy warbeast misses this model with a melee attack, immediately after the attack is resolved this model can make one normal melee attack against the warbeast.</capacity>
+          <capacity title="DISMEMBER">When this model hits a warbeast with a melee attack, roll an additional damage die.</capacity>
+          <capacity title="RECONNAISSANCE (★ACTION)">RNG 5. Target friendly warrior model/unit. If the model/unit is in range, it gains Pathfinder for one turn.</capacity>
+          <capacity title="TAKE DOWN">Models disabled by a melee attack made by this model cannot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS07" name="Totem Hunter" full_name="Totem Hunter" qualification="Minion Solo" fa="C" cost="3" completed="true">
+          <basestats name="TOTEM HUNTER" spd="7" str="8" mat="8" rat="4" def="14" arm="15" cmd="9" hitpoints="8" fearless="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Kelkax" pow="6" p_plus_s="14" reach="true" />
+            <melee_weapon name="Spiked Buckler" pow="3" p_plus_s="11" />
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="HUNTER">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="JUMP">After using its normal movement to make a full advance but before performing an action, you can place this model anywhere completely within 5" of its current location. Any effects that prevent it from charging also prevent it from using Jump.</capacity>
+          <capacity title="PREY">After deployment but before the first player's turn, choose an enemy model/unit to be this model/unit's prey. This model gains +2 to attack and damage rolls against its prey. When this model begins its activation within 10" of its prey, it gains +2" movement that activation.  When they prey is destroyed or removed from play, choose another model/unit to be the prey.</capacity>
+          <capacity title="SPRINT">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS08" name="Thrullg" full_name="Thrullg" qualification="Minion Solo" fa="2" cost="3" completed="true">
+          <basestats name="THRULLG" spd="6" str="9" mat="7" rat="1" def="13" arm="16" cmd="7" hitpoints="8" advance_deployment="true" fearless="true" />
+          <weapons>
+            <melee_weapon name="Claw " pow="3" count="2" p_plus_s="12" magical="true" />
+            <melee_weapon name="Tentacles" pow="4" p_plus_s="13" magical="true" reach="true" />
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="ARCANE INTERFERENCE">When this model hits another model with an attack, upkeep spells and animi on the model hit expire and it loses the focus points on it. When this model hits a warjack with an attack, that warjack suffers Disruption. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+          <capacity title="ARCANE CONSUMPTION">When an enemy model casts a spell or uses an animus while in this model's command range, after the spell is cast the enemy model suffers 1 damage point and this model heals 1 damage point.</capacity>
+          <capacity title="SPELL WARD">This model cannot be targeted by spells.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS09" name="Croak Hunter" full_name="Croak Hunter" qualification="Minion Solo" fa="3" cost="2" completed="true">
+          <basestats name="HUNTER" spd="6" str="6" mat="6" rat="6" def="13" arm="14" cmd="8" hitpoints="5" advance_deployment="true" immunity_corrosion="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <ranged_weapon name="Thrown Spear" rng="8" rof="1" aoe="-" pow="4">
+              <capacity title="POISON">Gain an additional die on this weapon's damage rolls against living models.</capacity>
+              <capacity title="THROWN">Add this model's STR to the POW of this ranged attack.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Spear" pow="4" p_plus_s="10" reach="true">
+              <capacity title="POISON">See above.</capacity>
+            </melee_weapon>            
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="GANG FIGHTER">When making a melee attack targeting an enemy model in melee range of another friendly Faction warrior model, this model gains +2 to melee attack and melee damage rolls.</capacity>
+          <capacity title="HUNTER">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="VITRIOL">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers the Corrosion continuous effect unless this model was destroyed or removed from play by the attack.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS10" name="Targ" full_name="Targ" qualification="Minion Farrow Character Solo" fa="C" cost="2" warcaster_attachment="true" completed="true">
+          <basestats name="TARG" spd="6" str="7" mat="5" rat="4" def="13" arm="14" cmd="7" hitpoints="5" tough="true" />
+          <weapons>
+            <melee_weapon name="Butcher Knife" pow="3" p_plus_s="10" />
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="ANCILLARY ATTACK (★ACTION)">RNG 5. Target friendly Faction warbeast. If the warbeast is in range, it immediately makes one normal melee or ranged attack. A warbeast can make an Ancillary Attack special action only once per turn.</capacity>
+          <capacity title="ATTACHED">Before the start of the game, attach this model to a friendly Minion warlock for the rest of the game. Each Minion warlock can have only one model attached to it.</capacity>
+          <capacity title="HERDING">While this model is in its warlock's control area, the warlock can force, leach, reave, heal, and transfer damage to the warbeasts in its battlegroup that are in this model's command range. </capacity>
+          <capacity title="MEDICATE (★ACTION)">RNG 3. Target friendly Faction warbeast. If the warbeast is in range, it heals d3 damage points. A warbeast can be affected by Medicate only once per turn.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS11" name="Gatorman Witch Doctor" full_name="Gatorman Witch Doctor" qualification="Minion Gatorman Solo" fa="2" cost="3" completed="true">
+          <basestats name="WITCH DOCTOR" spd="5" str="7" mat="6" rat="3" def="13" arm="16" cmd="8" hitpoints="8" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="12" />
+            <melee_weapon name="Sacral Blade" pow="4" p_plus_s="11" magical="true" />
+          </weapons>
+		  <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+          <capacity title="BEAST MASTER">This model can force friendly Faction warbeasts in its command range as if it were their controlling warlock.</capacity>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="● DOMINATE UNDEAD (★ATTACK)">Dominate Undead is a RNG 10 magic attack. Take control of target enemy non-warcaster, non-warlock undead model hit. You can immediately make a full advance with the undead model followed by a normal melee attack, then Dominate Undead expires. The undead model cannot be targeted by free strikes during this movement.</capacity>
+          <capacity title="● SACRIFICIAL STRIKE (★ACTION)">RNG CMD. Target a model in this model's LOS. If that model is in range, remove one friendly Faction trooper model within 1" of this model from play. The target model suffers a magical damage roll with POW equal to the base ARM of the removed model.</capacity>
+          <capacity title="● ZOMBIFY (★ACTION)">RNG 5. Target friendly non-warcaster, non-warlock warrior model/unit. If the model/unit is in range, it gains Tough and Undead for one round.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS12_minion" name="Gobber Tinker" full_name="Gobber Tinker" qualification="Mercenary Minion Solo" fa="2" cost="1" completed="true">
+          <basestats name="GOBBER TINKER" spd="6" str="4" mat="4" rat="4" def="14" arm="12" cmd="7" hitpoints="5" />
+          <weapons>
+            <ranged_weapon name="Pistol" rng="8" rof="1" aoe="-" pow="10" />
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cygnar and Khador.</capacity>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="REPAIR [8] (★ACTION)">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
+          <capacity title="POINT BLANK">During its activation, this model can make melee attacks with its ranged weapon, with a 1/2" melee range. Do not add this model's STR to damage rolls made with ranged weapons. Charge attacks made with ranged weapons are not boosted.</capacity>
+          <capacity title="MECHANIKALLY ADEPT">This model can attempt to repair friendly non-Faction warjacks and battle engines.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="MS15_minion" name="Orin Midwinter, Rogue Inquisitor" full_name="Orin Midwinter, Rogue Inquisitor" qualification="Mercenary Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="MIDWINTER" spd="6" str="4" mat="6" rat="4" def="14" arm="12" cmd="8" hitpoints="5" />
+          <weapons>
+            <melee_weapon name="Void Staff" pow="5" p_plus_s="9" reach="true">
+              <capacity title="ENERGY VACUUM">When an enemy models casts a spell while within 12" of this model, this model gains one power token. It can have up to three power tokens at a time. During its activation, this model can spend power tokens to gain additional attacks or to boost attacks or damage rolls at one token per attack or boost.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cryx, Khador, and the Protectorate.</capacity>
+          <capacity title="MINION">This model will work for Skorne.</capacity>
+          <capacity title="MAGIC ABILITY [7]" />
+          <capacity title="● ARC LIGHTNING (★ATTACK)">Arc Lightning is a RNG 10 magic attack. A model hit by this spell suffers a POW 10 electrical damage roll, and lightning arcs from it to d3 consecutive additional targets. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</capacity>
+          <capacity title="● NULL MAGIC (★ACTION)">For one round, models cannot cast spells while within 12" of this model.</capacity>
+          <capacity title="● STEALTH (★ACTION)">This model gains Stealth for one round.</capacity>
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="MS01_minion" name="Eiryss, Mage Hunter of Ios" full_name="Eiryss, Mage Hunter of Ios" qualification="Mercenary Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="EIRYSS" spd="7" str="4" mat="6" rat="9" def="16" arm="12" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <ranged_weapon name="Crossbow" rng="12" rof="1" aoe="-" pow="10" />
+			<melee_weapon name="Bayonet" pow="2" p_plus_s="6" />
+            <melee_weapon name="Saber" pow="3" p_plus_s="7" />            
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cygnar, Khador, the Protectorate, and the Retribution.</capacity>
+          <capacity title="ATTACK TYPE">Each time this model makes a normal ranged attack, choose one of the following abilities: </capacity>
+          <capacity title="● DEATH BOLT">Instead of rolling damage, a model hit suffers 3 damage points. When damaging a warjack or warbeast, choose which column or branch suffers the damage.</capacity>
+          <capacity title="● DISRUPTOR BOLT">A model hit loses all focus points. A model hit with the focus manipulation special rule does not replenish focus points next turn. A warjack hit suffers Disruption for one round. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+          <capacity title="● PHANTOM SEEKER">This model ignores LOS when making ranged attacks. This model ignores concealment and cover when resolving ranged attacks.</capacity>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="TECHNOLOGICAL INTOLERANCE">When this model ends its normal movement within 5" of a friendly non-myrmidon warjack, its activation ends immediately.</capacity>
+          <capacity title="RETRIBUTION PARTISAN">When included in a Retribution army, this model is a Retribution model instead of a Mercenary model.</capacity>
+          <works_for id="faction_orboros" />
+        </solo>
+        <solo id="MS26_minion" name="Raluk Moorclaw, the Ironmonger" full_name="Raluk Moorclaw, the Ironmonger" qualification="Mercenary Minion Trollkin Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="MOORCLAW" spd="5" str="7" mat="6" rat="6" def="13" arm="15" cmd="9" hitpoints="8" jack_marshal="true" tough="true" />
+          <weapons>
+            <ranged_weapon name="Slug Gun" rng="4" rof="1" aoe="-" pow="14" />
+			<melee_weapon name="Battle Axe" pow="6" p_plus_s="13" />            
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cryx, Cygnar, and Khador.</capacity>
+          <capacity title="MINION">This model will work for Trollbloods and the Blindwater Congregation or Thornfall Alliance pacts.</capacity>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model must still make the Assault ranged attack before its activation ends.</capacity>
+          <capacity title="DRIVE: HOG WILD">This model can attempt to Drive each warjack under its control in its command range. To Drive a warjack, this model must make a command check at any time during its activation. If it passes, the warjack can make one ranged attack this activation before its normal movement. After its normal movement, the warjack can only make melee attacks that activation. If it fails, the warjack does not benefit from 'Jack Marshal' this turn.</capacity>
+          <capacity title="MECHANIKALLY ADEPT">This model can attempt to repair friendly non-Faction warjacks and battle engines.</capacity>
+          <capacity title="REPAIR [8] (★ACTION)">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
+          <works_for id="faction_trollblood" />
+        </solo>
+        <solo id="IW01_minion" name="Brun Cragback " full_name="Brun Cragback &amp; Lug" qualification="Rhulic Mercenary Minion Character Solo" fa="C" cost="9" companionId="Lug_minion" completed="true">
+          <basestats name="BRUN CRAGBACK" spd="5" str="6" mat="7" rat="5" def="13" arm="15" cmd="9" focus="3" hitpoints="8" fearless="true" immunity_frost="true" lesser_warlock="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Blunderbuss" rng="8" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Axe" pow="4" p_plus_s="10" />            
+          </weapons>
+		  <spell name="STONEHOLD" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">Enemy models roll one less die on attack rolls against this model. This model and friendly models B2B with it cannot be knocked down.</spell>
+          <capacity title="MERCENARIES">These models will work for Searforge Commission.</capacity>
+          <capacity title="MINIONS">These models will work for Circle and Trollbloods.</capacity>
+          <capacity title="LIFEBOND [LUG]">While B2B with Lug, this model can transfer damage to Lug without spending fury.</capacity>
+          <capacity title="LIMITED BATTLEGROUP">The only warbeast that can be in this model's battlegroup is Lug.</capacity>
+          <capacity title="FLANK [LUG]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
+          <capacity title="LESSER WARLOCK">This model is not a warlock but has the following warlock special rules: Battlegroup Commander, Control Area, Damage Transference, Forcing, Fury Manipulation, Healing, and Spellcaster.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+        </solo>
+        <solo id="IW02_minion" name="Dahlia Hallyr " full_name="Dahlia Hallyr &amp; Skarath" qualification="Mercenary Minion Character Solo" fa="C" cost="9" companionId="Skarath_minion" completed="true">
+          <basestats name="DAHLIA HALLYR" spd="6" str="4" mat="5" rat="4" def="16" arm="12" cmd="8" focus="4" hitpoints="8" fearless="true" lesser_warlock="true" />
+          <weapons />
+		  <spell name="HAUNTING MELODY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, living enemy models cannot give or receive orders and cannot make melee or ranged attacks targeting this model.</spell>
+		  <spell name="MISTWALKER" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target model in this model's battlegroup gains Pathfinder and Prowl for one round. (Models with Prowl gain Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.)</spell>
+          <capacity title="MERCENARIES">These models will work for Retribution.</capacity>
+          <capacity title="MINIONS">These models will work for Circle and Trollbloods.</capacity>
+          <capacity title="CHARMER">When a friendly warbeast frenzies in this model's control area, the warbeast can forfeit its activation.</capacity>
+          <capacity title="LESSER WARLOCK">This model is not a warlock but has the following warlock special rules: Battlegroup Commander, Control Area, Damage Transference, Forcing, Fury Manipulation, Healing, and Spellcaster.</capacity>
+          <capacity title="LIMITED BATTLEGROUP">The only warbeast that can be in this model's battlegroup is Skarath.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_trollblood" />
+        </solo>
+        <solo id="IW03_minion" name="Rorsh " full_name="Rorsh &amp; Brine" qualification="Mercenary Minion Farrow Character Solo" fa="C" cost="9" companionId="Brine_minion" completed="true">
+          <basestats name="RORSH" spd="6" str="7" mat="7" rat="5" def="13" arm="16" cmd="8" focus="3" hitpoints="8" fearless="true" lesser_warlock="true" tough="true" />
+          <weapons>
+            <ranged_weapon name="Dynomite" rng="6" rof="1" aoe="4" pow="12" />
+            <ranged_weapon name="Lever Action Pig Iron" rng="10" rof="2" aoe="-" pow="12" />
+			<melee_weapon name="Cleaver" pow="4" p_plus_s="11" />            
+          </weapons>
+		  <spell name="PIGPEN" cost="2" rng="SELF" aoe="*" pow="-" up="YES" off="NO">While within 3" of this model, enemy models treat open terrain as rough terrain.</spell>
+          <capacity title="MERCENARIES">These model will work for Cryx, Cygnar, Khador and the Protectorate.</capacity>
+          <capacity title="MINIONS">These model will work for Circle, Legion, Skorne and Trollbloods.</capacity>
+          <capacity title="DIG IN (★ACTION)">This model gains cover, does not suffer blast damage, and does not block LOS. The model remains dug in until it moves, is placed, or is engaged. The model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <capacity title="DIVERSIONARY TACTIC (★ACTION)">Center a 4" AOE on Rorsh. Models in the AOE other than Rorsh and Brine suffer a POW 6 blast damage roll. After these damage rolls are resolved, Rorsh can make a full advance. If Brine was in the AOE, it can make a full advance as well. They cannot be targeted by free strikes during this movement.</capacity>
+          <capacity title="FARROW WARLOCK">This model can have only Minion Farrow warbeasts in its battlegroup.</capacity>
+          <capacity title="LESSER WARLOCK">This model is not a warlock but has the following warlock special rules: Battlegroup Commander, Control Area, Damage Transference, Forcing, Fury Manipulation, Healing, and Spellcaster</capacity>
+          <capacity title="SOUIE!">If Brine is outside this model's control area during your Control Phase, before your models leach fury Brine can make a full advance directly toward this model.</capacity>
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IW04_minion" name="Wrong Eye " full_name="Wrong Eye &amp; Snapjaw" qualification="Mercenary Minion Gatorman Character Solo" fa="C" cost="9" companionId="Snapjaw_minion" completed="true">
+          <basestats name="WRONG EYE" spd="5" str="8" mat="6" rat="3" def="12" arm="17" cmd="9" focus="4" hitpoints="8" fearless="true" lesser_warlock="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="5" p_plus_s="13">
+              <capacity title="LIFE DRINKER">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Swamp Hook" pow="4" p_plus_s="12" reach="true" />
+          </weapons>
+		  <spell name="INFLUENCE" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-warcaster, non-warlock warrior model. The model immediately makes one normal melee attack, then Influence expires.</spell>
+		  <spell name="VOODOO DOLL" cost="2" rng="8" aoe="-" pow="-" up="NO" off="YES">Choose one of target enemy warbeast's aspects. That aspect suffers the effects of being lost for one round. A warbeast cannot be destroyed as a result of Voodoo Doll.</spell>          
+          <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+		  <capacity title="MERCENARIES">These models will work for Cryx.</capacity>
+          <capacity title="LESSER WARLOCK">This model is not a warlock but has the following warlock special rules: Battlegroup Commander, Control Area, Damage Transference, Forcing, Fury Manipulation, Healing, and Spellcaster.</capacity>
+          <capacity title="GATORMAN WARLOCK">This model can have only Minion Gatorman warbeasts in its battlegroup.</capacity>
+          <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>          
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_trollblood" />
+          <works_for id="faction_skorne" />
+        </solo>
+        <solo id="IS13" name="Efaarit Scouts" full_name="Efaarit Scouts" qualification="Minion Light Cavalry Solo" fa="2" cost="3" completed="true">
+          <basestats name="EFAARIT SCOUTS" spd="8" str="5" mat="6" rat="7" def="14" arm="14" cmd="8" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Heavy Hunting Rifle" rng="12" rof="1" aoe="-" pow="7">
+              <capacity title="ARMOR PIERCING">When calculating damage from this weapon, halve the base ARM stats of models hit that have medium or larger bases. This weapon gains +2 to damage rolls against models with small bases.</capacity>
+            </ranged_weapon>
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Skorne, Trollbloods, and the Thornfall Alliance pact.</capacity>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="SNIPER">When damaging a warjack or warbeast with a ranged attack, choose which column or branch suffers damage. Instead of rolling damage on a ranged attack, this model can inflict 1 damage point. A model that participates in a combined ranged attack loses Sniper until the attack is resolved.</capacity>     
+          <works_for id="faction_orboros" />
+          <works_for id="faction_skorne" />
+          <works_for id="faction_trollblood" />          
+        </solo>
+        <solo id="IS14" name="Maximus" full_name="Maximus" qualification="Minion Farrow Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="MAXIMUS" spd="5" str="7" mat="8" rat="4" def="13" arm="16" cmd="7" hitpoints="8" abomination="true" fearless="true" tough="true" />
+          <weapons>
+            <melee_weapon name="Fellblade" pow="6" p_plus_s="13" magical="true" reach="true" weapon_master="true" />
+          </weapons>
+          <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+          <capacity title="BERSERK">When this model destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</capacity>
+          <capacity title="RELENTLESS CHARGE">This model gains Pathfinder during activations it charges.</capacity>
+          <capacity title="SPELL WARD">This model cannot be targeted by spells.</capacity>
+          <capacity title="UNYIELDING">While engaging an enemy model, this model gains +2 ARM.</capacity>     
+          <works_for id="faction_orboros" />
+          <works_for id="faction_everblight" />
+          <works_for id="faction_skorne" />
+          <works_for id="faction_trollblood" />          
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>
