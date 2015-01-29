@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ruleset xsi:noNamespaceSchemaLocation="warmachine.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ruleset xmlns="http://www.whac.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
     <army faction="faction_skorne" name="Skorne">
       <warlocks>
