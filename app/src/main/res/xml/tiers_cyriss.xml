@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
   <tiers name="Axis - Sustained Attack" casterId="cocW02" faction="faction_cyriss">
       <availableModels>
             <type type="WARJACKS">
@@ -28,7 +30,7 @@
         <entry id="cocA01" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterFA bonus="2" entryId="cocS05" />
       </benefits>
     </level>
@@ -40,7 +42,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterCost bonus="1" entryId="cocS05" />
       </benefits>
     </level>
@@ -54,7 +56,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" >Clockwork Vessels units gain Advanced Deployment.</ingameeffect>
+        <ingameeffect >Clockwork Vessels units gain Advanced Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -66,7 +68,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">For each vector in the battlegroup, place a wreck marker on the table before the game starts.</ingameeffect>
+        <ingameeffect>For each vector in the battlegroup, place a wreck marker on the table before the game starts.</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -106,7 +108,7 @@
         <entry id="cocA01" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterFA bonus="2" entryId="cocU01" />
         <alterFA bonus="2" entryId="cocS06" />
       </benefits>
@@ -119,7 +121,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Clockwork Angel units gain Stealth during the first round of the game.</ingameeffect>
+        <ingameeffect>Clockwork Angel units gain Stealth during the first round of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -130,7 +132,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Steelsoul Protectors gain Advanced Deployment.</ingameeffect>
+        <ingameeffect>Steelsoul Protectors gain Advanced Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -146,7 +148,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Heavy vectors in Aurora’s battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+        <ingameeffect>Heavy vectors in Aurora’s battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
   </tiers>
@@ -185,11 +187,12 @@
         <entry id="cocS02" />
         <entry id="cocS03" />
         <entry id="cocS04" />
+        <entry id="cocS07" />
         <entry id="cocE01" />
         <entry id="cocA01" />
       </only>
       <benefits>
-        <ingameeffect label="empty">Algorithmic Dispersion Optifex models gain Advanced Deployment.</ingameeffect>
+        <ingameeffect>Algorithmic Dispersion Optifex models gain Advanced Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -200,7 +203,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" >Reduce the cost of Syntherion’s spells by 1 during your first turn of the game.</ingameeffect>
+        <ingameeffect >Reduce the cost of Syntherion’s spells by 1 during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -211,7 +214,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">For each Optifex Directive unit in the army, the Corollary begins the game with 1 focus point (to a maximum of 3).</ingameeffect>
+        <ingameeffect>For each Optifex Directive unit in the army, the Corollary begins the game with 1 focus point (to a maximum of 3).</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -232,7 +235,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <freeModel>
           <entry id="cocJ03" />
         </freeModel>
@@ -272,7 +275,7 @@
         <entry id="cocS06" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterFA bonus="1" entryId="cocU04" />
         <alterFA bonus="1" entryId="cocU06" />
         <alterFA bonus="1" entryId="cocU07" />
@@ -286,7 +289,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">You gain +1 on your starting roll for the game.</ingameeffect>
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -298,7 +301,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">One Clockwork Vessel unit without a ranged attack gains Advance Deployment</ingameeffect>
+        <ingameeffect>One Clockwork Vessel unit without a ranged attack gains Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -314,7 +317,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterCost bonus="1" entryId="cocJ06" />
         <alterCost bonus="1" entryId="cocJ08" />
         <alterCost bonus="1" entryId="cocJ10" />
@@ -359,7 +362,7 @@
         <entry id="cocE01" />
       </only>
       <benefits>
-        <ingameeffect label="empty" />
+        <ingameeffect />
         <alterFA bonus="1" entryId="cocS01" />
         <alterFA bonus="1" entryId="cocS03" />
         <alterFA bonus="1" entryId="cocS04" />
@@ -373,7 +376,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Vectors in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+        <ingameeffect>Vectors in the army gain Pathfinder during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -386,7 +389,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">Servitor solos gain Advance Deployment</ingameeffect>
+        <ingameeffect>Servitor solos gain Advance Deployment</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -397,7 +400,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect label="empty">During your first turn, when a Prime Axiom uses Launch Servitor you can place up to three Servitor solos instead of placing one.</ingameeffect>
+        <ingameeffect>During your first turn, when a Prime Axiom uses Launch Servitor you can place up to three Servitor solos instead of placing one.</ingameeffect>
       </benefits>
     </level>
   </tiers>
