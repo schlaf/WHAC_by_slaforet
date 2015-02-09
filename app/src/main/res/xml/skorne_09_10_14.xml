@@ -505,7 +505,7 @@
           <capacity title="CARAPACE">This model gains +4 ARM against free strike damage rolls and ranged attack damage rolls.</capacity>
           <capacity title="STEADY">This model cannot be knocked down.</capacity>      
         </warbeast>
-        <warbeast id="SB21" name="Aradus Sentinel" full_name="Aradus Sentinel" qualification="Skorne Heavy Warbeast" fa="U" cost="9" fury="4" threshold="9" damage_spiral="7-14-8" completed="true">
+        <warbeast id="SB21" name="Aradus Sentinel" full_name="Aradus Sentinel" qualification="Skorne Heavy Warbeast" fa="U" cost="8" fury="4" threshold="9" damage_spiral="7-14-8" completed="true">
           <basestats name="SENTINEL" spd="3" str="11" mat="6" rat="5" def="11" arm="19" cmd="6" advance_deployment="true" pathfinder="true" />
           <weapons>            
             <ranged_weapon name="Venom Blaster" rng="10" rof="1" aoe="3" pow="13">
@@ -806,7 +806,7 @@
         <solo id="SS04" name="Extoller Soulward" full_name="Extoller Soulward" qualification="Skorne Solo" fa="2" cost="2" completed="true">
           <basestats name="SOULWARD" spd="6" str="5" mat="5" rat="5" def="14" arm="12" cmd="8" hitpoints="5" gunfighter="true" />
           <weapons>
-            <ranged_weapon name="Spirit Eye" rng="8" rof="1" aoe="-" pow="3" magical="true">
+            <ranged_weapon name="Spirit Eye" rng="8" rof="1" aoe="-" pow="6" magical="true">
               <capacity title="ANNIHILATING GAZE">When a living model is hit by this attack, add its current STR to the damage roll.</capacity>
               <capacity title="GHOST SHOT">This model ignores LOS when making attacks with this weapon. When resolving attacks with this weapon, ignore concealment and cover.</capacity>
             </ranged_weapon>
