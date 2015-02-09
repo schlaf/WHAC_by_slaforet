@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ruleset xsi:noNamespaceSchemaLocation="warmachine.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
     <army faction="faction_everblight" name="Everblight">
       <warlocks>
@@ -414,7 +416,7 @@
         <warbeast id="EB15" name="Proteus" full_name="Proteus" qualification="Legion Character Heavy Warbeast" fa="C" cost="11" fury="5" threshold="9" damage_spiral="8-12-10" completed="true">
           <basestats name="PROTEUS" spd="6" str="12" mat="6" rat="6" def="11" arm="18" cmd="7" eyelesssight="true" pathfinder="true" />
           <weapons>
-            <ranged_weapon name="Tentacle Lash" rng="6" rof="1" aoe="-" pow="14" location="H" chain="true">
+            <ranged_weapon name="Tentacle Lash" rng="6" rof="1" aoe="-" pow="14" location="H" >
               <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
               <capacity title="DRAG">If this weapon damages an enemy model with an equal or smaller base, immediately after the attack is resolved the damaged model can be pushed any distance directly toward this model. After the damaged model is moved, this model can make one normal melee attack against the model pushed. After resolving this melee attack, this model can make additional melee attacks during its combat action.</capacity>
             </ranged_weapon>
@@ -518,7 +520,7 @@
           <capacity title="SOULLESS">This model does not generate a soul token when it is destroyed.</capacity>
         </warbeast>
         <warbeast id="EB22" name="Blight Wasps" full_name="Blight Wasps" qualification="Legion Warbeast Pack" fa="U" cost="4" fury="0" threshold="8" completed="true" isWarbeastPack="true" nbModelsInPack="4">
-          <basestats name="LEADER &amp; GRUNTS" spd="7" str="4" mat="5" rat="1" def="12" arm="11" cmd="4" eyeless_sight="true" hitpoints="5"  />
+          <basestats name="LEADER &amp; GRUNTS" spd="7" str="4" mat="5" rat="1" def="12" arm="11" cmd="4" eyelesssight="true" hitpoints="5"  />
           <weapons>            
             <melee_weapon name="Stinger" pow="4" p_plus_s="8">
               <capacity title="CRITICAL POISON">On a critical hit, gain an additional die on this weapon's damage rolls against living models.</capacity>
@@ -532,7 +534,7 @@
           <capacity title="SOULLESS">This model does not generate a soul token when it is destroyed.</capacity>     
         </warbeast>       
         <warbeast id="EB23" name="Zuriel" full_name="Zuriel" qualification="Legion Nephilim Character Heavy Warbeast" fa="C" cost="9" fury="4" threshold="10" damage_spiral="10-9-9" completed="true">
-          <basestats name="ZURIEL" spd="6" str="11" mat="7" rat="5" def="12" arm="19" cmd="9" eyeless_sight="true" gunfighter="true" />
+          <basestats name="ZURIEL" spd="6" str="11" mat="7" rat="5" def="12" arm="19" cmd="9" eyelesssight="true" gunfighter="true" />
           <weapons>            
             <ranged_weapon name="Dragon Breath" rng="SP8" rof="2" aoe="-" pow="12" location="H" fire="true" continuous_fire="true" />
             <melee_weapon name="War Blade" pow="5" p_plus_s="16" location="L">
