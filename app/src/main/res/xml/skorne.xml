@@ -150,7 +150,7 @@
           <basestats name="SOLDIER" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons/>            
         </warbeast>
-        <warbeast id="SB21" name="Aradus Sentinel" full_name="Aradus Sentinel" qualification="Skorne Heavy Warbeast" fa="U" cost="9" fury="4" threshold="9" damage_spiral="7-14-8">
+        <warbeast id="SB21" name="Aradus Sentinel" full_name="Aradus Sentinel" qualification="Skorne Heavy Warbeast" fa="U" cost="8" fury="4" threshold="9" damage_spiral="7-14-8">
           <basestats name="SENTINEL" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
           <weapons/>            
         </warbeast>         
