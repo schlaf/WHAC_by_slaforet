@@ -25,7 +25,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:text="@+id/def_arm_label"
+        android:text="@string/faction"
         android:textSize="@dimen/textview_large_height" >
     </TextView>
 

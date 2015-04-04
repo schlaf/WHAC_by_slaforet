@@ -217,7 +217,7 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 		paint.setStyle(Paint.Style.FILL);
 
 		// make the entire canvas white
-		paint.setColor(Color.BLACK);
+		paint.setColor(Color.WHITE);
 		canvas.drawPaint(paint);
 		
 		// centre : 435 / 572
@@ -250,9 +250,9 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 		for (AspectEnum aspect : spiral.getBranches().keySet()) {
 			DamageBranch branch = spiral.getBranches().get(aspect);
 
-			paint.setColor(Color.WHITE);
+			paint.setColor(Color.BLACK);
 			paint.setTextSize((float) h/15);
-			paint.setMaskFilter(filter);
+			// paint.setMaskFilter(filter);
 			if (branch.getAspect() == AspectEnum.BODY) {
 				paint.setTextAlign(Align.RIGHT);
 				canvas.drawText( branch.getAspect().name(), l-10, h - 10, paint);
@@ -263,7 +263,7 @@ public class DamageSpiralView extends DamageBaseView implements ColumnChangeNoti
 				paint.setTextAlign(Align.LEFT);
 				canvas.drawText( branch.getAspect().name(), 10,  h /10 + 10 , paint);
 			}
-			paint.setMaskFilter(null);
+			// paint.setMaskFilter(null);
 			
 			drawBranchesBackground(rayon, centerX, centerY, branch, paint, canvas, maxCircle);
 		}

@@ -110,12 +110,27 @@ public class SelectedUnitMarshall extends SelectedUnit implements JackMarshall {
 		int cost = super.getTotalCost();
 		if (! getJacks().isEmpty()) {
 			for (SelectedWarjack jack : getJacks()) {
-				cost += jack.getCost();
+                if (! jack.isSpecialist()) {
+                    cost += jack.getCost();
+                }
 			}
 		}		
 		return cost;
 	}
-	
+
+    @Override
+    public int getTotalSubSpecialistCost() {
+        int cost = super.getTotalSubSpecialistCost();
+        if (! getJacks().isEmpty()) {
+            for (SelectedWarjack jack : getJacks()) {
+                if (jack.isSpecialist()) {
+                    cost += jack.getCost();
+                }
+            }
+        }
+        return cost;
+    }
+
 	public String getAttachString() {
 		
 		StringBuffer sb = new StringBuffer();
@@ -127,5 +142,16 @@ public class SelectedUnitMarshall extends SelectedUnit implements JackMarshall {
 		}
 		return sb.toString();
 	}
-	
+
+
+    @Override
+    public void setSpecialist(boolean specialist) {
+        super.setSpecialist(specialist);
+        if (specialist) {
+            for (SelectedWarjack jack : getJacks()) {
+                jack.setSpecialist(true);
+            }
+        }
+    }
+
 }

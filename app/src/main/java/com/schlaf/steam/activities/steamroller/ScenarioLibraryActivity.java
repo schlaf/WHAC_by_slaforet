@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 
 import com.schlaf.steam.R;
 import com.schlaf.steam.activities.steamroller.ViewScenarioFragment.ViewScenarioActivityInterface;
+import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.data.Mission;
 
 public class ScenarioLibraryActivity extends ActionBarActivity implements ViewScenarioActivityInterface {
@@ -17,13 +19,28 @@ public class ScenarioLibraryActivity extends ActionBarActivity implements ViewSc
 	public static final int CHOOSE_SCENARIO = 3567;
 	public static final String INTENT_CHOOSE_SCENARIO = "choose_scenario";
 	public static final String SCENARIO_NUMBER = "scenario_number";
+    private static final String TAG =  "ScenarioLibraryActivity";
 
-	boolean returnScenarioNumber = false;
-	
+    boolean returnScenarioNumber = false;
+
+    boolean showScenarioContent = false;
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            Log.e(TAG, "status not clean, exiting");
+            Intent i = getBaseContext().getPackageManager()
+                    .getLaunchIntentForPackage(getBaseContext().getPackageName() );
+            Log.e(TAG, "intent = " + i.toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+            startActivity(i);
+
+            finish();
+            return;
+        }
 
 		setContentView(R.layout.scenariolibrary_fragmented);
 
@@ -85,12 +102,18 @@ public class ScenarioLibraryActivity extends ActionBarActivity implements ViewSc
 
 	@Override
 	public void viewScenario(Mission mission) {
-		
-		
+
+        showScenarioContent = true;
 		
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		
 		if (findViewById(R.id.scenario_zone) != null) {
+
+            if (findViewById(R.id.scenario_zone) != null) {
+                FrameLayout chooseScenarioZone = (FrameLayout) findViewById(R.id.choose_scenario_zone);
+                chooseScenarioZone.setVisibility(View.GONE);
+            }
+
 			// create new fragment
 			FragmentTransaction fragmentTransaction = fragmentManager
 					.beginTransaction();
@@ -110,5 +133,24 @@ public class ScenarioLibraryActivity extends ActionBarActivity implements ViewSc
 		}
 
 	}
-	
+
+    @Override
+    public void onBackPressed() {
+
+        if (showScenarioContent) {
+            // hide scenario details, show list
+            FrameLayout chooseScenarioZone = (FrameLayout) findViewById(R.id.choose_scenario_zone);
+            chooseScenarioZone.setVisibility(View.VISIBLE);
+
+            FrameLayout detailsScenarioZone = (FrameLayout) findViewById(R.id.scenario_zone);
+            detailsScenarioZone.setVisibility(View.GONE);
+            showScenarioContent = false;
+        } else {
+            // close
+            super.onBackPressed();
+        }
+
+
+
+    }
 }

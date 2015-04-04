@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
+  <armies>
+    <army faction="faction_orboros" name="Orboros" version="forum_orboros_001">
+      <warlocks>
+        <!--Kaya Wildborne complete-->
+        <warlock id="Ow01" name="Kaya1" full_name="Kaya the Wildborne" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="Kaya the Wildborne" spd="7" str="5" mat="6" rat="4" def="16" arm="13" cmd="8" hitpoints="16" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Splinter" pow="6" p_plus_s="11" magical="true" reach="true">
+              <capacity title="Critical Knockdown">On a critical hit, the model hit is knocked down.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Wild Mastery">Place up to 3 fury points on each friendly Faction warbeast in Kaya's battlegroup that is in her control area.  She can immeadiately leach fury points from warbeasts in her battlegroup in her control area.</feat>
+          <spell name="Occultation" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Stealth.</spell>
+          <spell name="Soothing Song" cost="1" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">Remove up to 1 fury point from each friendly living Faction warbeast currently in this model's control area.  Soothing Song can only be cast once per turn.</spell>
+          <spell name="Spirit Door" cost="3" rng="Ctrl" aoe="-" pow="-" up="NO" off="NO">Select a model in this model's battlegroup in its control area.  If this model is selected, immediately place it within 2" of another model in its battlegroup that was in the control area at the time the spell was cast.  If another model in this model's battlegroup is selected, immediately place that model within 2" of this model.  A model cannot advance or attack after being placed by Spirit Door this turn.</spell>
+          <spell name="Spirit Fang" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A model damaged by Spirit Fang suffers -2 SPD and DEF for one round.</spell>
+          <capacity title="Pack Hunters">Living warbeasts in this model's battlegroup in its control area gain +2 on melee attack rolls.</capacity>
+        </warlock>
+        <!--Kaya Moonhunter complete-->
+        <warlock id="Ox01" name="Kaya2" full_name="Kaya the Moonhunter &amp; Laris" generation="E" qualification="Circle Epic Warlock" fury="6" warbeast_points="3" fa="C" companionId="Laris" completed="true">
+          <basestats name="Kaya" spd="7" str="6" mat="6" rat="4" def="16" arm="14" cmd="8" hitpoints="16" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Glimmer" pow="5" p_plus_s="11" magical="true" reach="true"></melee_weapon>
+          </weapons>
+          <feat title="Call of the Hunt">Kaya can force warbeasts in her battlegroup even if they are outside her control area.  At the end of the activation of each warbeast in her battlegroup, you can place that warbeast anywhere within 3" of Kaya.  Call of the Hunt lasts for one turn.</feat>
+          <spell name="Dog Pile" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Warbeasts in this model's battlegroup can charge or make slam power attacks against target enemy model without being forced and regardless of LOS.  When a warbeast does, it gains +2 movement and gains Pathfinder while resolving that charge or slam.</spell>
+          <spell name="Forced Evolution" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly living Faction warbeast gains +2 STR and DEF.</spell>
+          <spell name="Muzzle" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Muzzle cannot advance toward this model for one round.</spell>
+          <spell name="Shadow Pack" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">Models in this model's battlegroup gain Stealth while in its control area.</spell>
+          <capacity title="Alpha">Living warbeasts in this model's battlegroup beginning their activations in its control area can run, charge, or make a slam or trample power attack without being forced.</capacity>
+          <capacity title="Flank [faction warbeast]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
+          <capacity title="Unyielding">While engaging an enemy model, this model gains +2 ARM.</capacity>
+        </warlock>
+        <!--Krueger Stormwrath complete-->
+        <warlock id="Ow02" name="Krueger1" full_name="Krueger the Stormwrath" generation="P" qualification="Circle Warlock" fury="7" warbeast_points="5" fa="C" completed="true">
+          <basestats name="Krueger" spd="6" str="5" mat="5" rat="6" def="15" arm="14" cmd="8" hitpoints="16" immunity_electricity="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Lightning" rng="10" rof="1" aoe="-" pow="13" electricity="true" magical="true">
+              <capacity title="Electro Leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model.  The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Lightning Spear" pow="7" p_plus_s="12" magical="true" reach="true">
+              <capacity title="Sustained Attack">During this model's activation, when it makes an attack with the weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Storm Ravager">Place three 3" AOEs anywhere completely in Krueger's control area.  Enemy models in one or more of the AOEs when they are placed suffer a boostable POW 10 electrical damage roll.  During each of your Maintenance Phases, remove one AOE.  An enemy model entering or ending its activation in one or more AOEs suffers an unboostable POW 10 electrical damage roll.</feat>
+          <spell name="Chain Lightning" cost="3" rng="10" aoe="-" pow="10" up="NO" off="YES">A model hit by Chain Lightning suffers a POW 10 electrical damage roll, and lightning arcs from that model to d6 consecutive additional models.  The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model.  Each model the lightning arcs to suffers a POW 10 electrical damage roll.</spell>
+          <spell name="Deflection" cost="2" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models gain +2 ARM against ranged and magic attack damage rolls.  Deflection lasts for one round.</spell>
+          <spell name="Lightning Tendrils" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Immunity: Electricity.  Affected models' melee weapons gain Reach and Electro Leap.  (When a model is hit by a weapon with Electro Leap, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model.  The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.)</spell>
+          <spell name="Skyborne" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">This model gains +2 SPD and DEF anf Flight for one round.  (A model with Flight can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them.  It ignores intervening models when declaring its charge target.)</spell>
+          <spell name="Tornado" cost="4" rng="10" aoe="-" pow="13" up="NO" off="YES">Instead of suffering a normal damage roll, a non-incorporeal model hit by Tornado is thrown d6" directly away from the spell's point of origin regardless of its base size and suffers a POW 13 damage roll.  Collateral damage from this throw is POW 13.</spell>
+        </warlock>
+        <!--Krueger Stormlord complete-->
+        <warlock id="Ox02" name="Krueger2" full_name="Krueger the Stormlord" generation="E" qualification="Circle Epic Warlock" fury="7" warbeast_points="5" fa="C"  completed="true">
+          <basestats name="Krueger" spd="6" str="5" mat="6" rat="6" def="15" arm="15" cmd="9" hitpoints="16" immunity_electricity="true" />
+          <weapons>
+            <ranged_weapon name="Lightning Bolt" rng="10" rof="3" aoe="-" pow="12" electricity="true" magical="true">
+              <capacity title="Sustained Attack">During this model's activation, when it makes an attack with the weapon against the last model hit by the weapon this activation, the attack automatically hits.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Wurmtongue" pow="7" p_plus_s="12" magical="true" reach="true">
+              <capacity title="Disruption">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Hurricane">Enemy models currently in Krueger's control area are puched 3" directly away from Krueger and suffer -2 SPD for one round.  You determine the order models are moved.</feat>
+          <spell name="Gallows" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallows' point of origin.</spell>
+          <spell name="Lightning Storm" cost="3" rng="8" aoe="3" pow="10" up="NO" off="YES">Models hit suffer a POW 10 elecrical damage roll.  The AOE remains in play for one round.  Models entering or ending their activations in the AOE suffer a POW 10 electrical damage roll.</spell>
+          <spell name="Storm Wall" cost="3" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, enemy models suffer -5 RNG on their ranged attacks.  When an enemy AOE ranged attack deviates from a point in this model's control area, after determining the deviation distance, you choose the direction the AOE deviates.  Storm Wall lasts for one round.</spell>
+          <spell name="Telekinesis" cost="2" rng="8" aoe="-" pow="-" up="NO" off="*">Place target model completely within 2" of its current location.  When Telekinesis targets an enemy model, it is an offensive spell and requires a magic attack roll.  A model can be affected by Telekinesis only once per turn.</spell>
+          <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them.  This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="Inspiration [Circle]">Friendly Circle models/units in this model's command range never flee and immediately rally.</capacity>
+        </warlock>
+        <!--Baldur Stonecleaver complete-->
+        <warlock id="Ow03" name="Baldur1" full_name="Baldur the Stonecleaver" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="Baldur the Stonecleaver" spd="5" str="7" mat="7" rat="4" def="14" arm="16" cmd="8" hitpoints="17" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Tritus" pow="7" p_plus_s="14" magical="true" reach="true">
+              <capacity title="Weight of Stone">When a model is damaged by this weapon it suffers -3 SPD and DEF for one round.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Broken Earth">While in Baldur's control area, friendly models gain cover.  While in Baldur's control area, enemy models never have Pathfinder and treat open terrain as rough terrain.  Broken Earth lasts for one round.</feat>
+          <spell name="Earth Spikes" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">When making this attack, ignore cover and the +2 DEF bonus for elevation.  On a critical hit, models hit are knocked down.</spell>
+          <spell name="Rapid Growth" cost="2" rng="Ctrl" aoe="4" pow="-" up="YES" off="NO">Place the AOE completely in this model's control area.  The AOE is a forest that remains in play as long as the upkeep is paid.</spell>
+          <spell name="Solid Ground" cost="2" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">While in this model's control area, friendly models cannot be knocked down and do not suffer blast damage.</spell>
+          <spell name="Stone Skin" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 STR and ARM but suffers -1 SPD and DEF.</spell>
+          <capacity title="Elemental Mastery">Warbeasts in this model's battle group with Construct beginning their activations in this model's control area can charge and make power attacks without being forced.  This model can heal friendly warbeasts in its battlegroup that have Construct.</capacity>
+          <capacity title="Forest Walk">While completely within a forest, this model can forfeit its normal movement to use Forest Walk.  If it does, choose a location completely within this model's control area that is completely within a forest.  Remove this model from the forest and place it in the chosen location.  This model cannot use Forest Walk while knocked down.</capacity>
+        </warlock>
+        <warlock id="Ox03" name="Baldur2" full_name="Baldur the Stonesoul" generation="E" qualification="Circle Epic Warlock" fury="6" warbeast_points="5" fa="C" completed="true">
+          <basestats name="Baldur the Stonesoul" spd="5" str="7" mat="7" rat="4" def="13" arm="17" cmd="8" hitpoints="18" pathfinder="true"/>
+          <weapons>
+              <melee_weapon name="Tritus" pow="7" p_plus_s="14" magical="true" reach="true">
+              <capacity title="Weight of Stone">When a model is damaged by this weapon it suffers -3 SPD and DEF for one round.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Hallowed Ground">Friendly models currently in Baldur's control area gain Roots of the Earth for one round. (A model affected by Roots of the Earth gains +3 ARM, cannot be knocked down, and cannot move or be placed.)</feat>
+          
+          <spell name="CREVASSE" cost="3" rng="8" aoe="-" pow="12" up="NO" off="YES">If Crevasse boxes its original target, you can make a SP6 attack using the boxed model as the attack's point of origin. Models hit suffer a POW 12 magic damage roll. Models boxed by Crevasse are removed from play.</spell>
+          <spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Center a 5" AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll. Each model damaged by Ground Zero is pushed d6" directly away from this model in the order you choose.</spell>
+          <spell name="ROCK WALL" cost="2" rng="CTRL" aoe="WALL" pow="-" up="YES" off="NO">Place a wall template anywhere completely in this model's control area where it does not touch a model's base, an obstruction, or an obstacle. The wall is a linear obstacle that provides cover.</spell>
+          <spell name="ROOTS OF THE EARTH" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains +3 ARM, cannot be knocked down, and cannot move or be placed. Roots of the Earth lasts for one round.</spell>
+          
+          <capacity title="Devourer's Debt">During your Control Phase place one Wurm token on this model. For each Wurm token on this model it gains +1 STR. At the end of each of this model's activations it suffer 1 damage point for each Wurm token on it. This damage cannot be transferred.</capacity>
+          <capacity title="Elemental Mastery">Warbeasts in this model's battle group with Construct beginning their activations in this model's control area can charge and make power attacks without being forced. This model can heal friendly warbeasts in its battlegroup that have Construct.</capacity>
+          <capacity title="Ritual of Renewal" type="*Action">Remove all Wurm tokens from this model.</capacity>
+        </warlock>
+        <!--Morvahna Autumnblade complete-->
+        <warlock id="Ow04" name="Morvahna1" full_name="Morvahna the Autumnblade" generation="P" qualification="Circle Warlock" fury="7" warbeast_points="6" fa="C" completed="true">
+          <basestats name="Morvahna" spd="6" str="5" mat="6" rat="4" def="15" arm="13" cmd="9" hitpoints="14" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Equinox" pow="7" p_plus_s="12" magical="true" reach="true">
+              <capacity title="Harrow">An enemy model damaged by this weapon suffers Harrow for one round.  Once per turn this model can transfer damage from an enemy attack to an enemy model with Harrow.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Seeds of Destruction">When a friendly Faction model destroys a living or undead enemy model with a melee attack while in Morvahna's control area this turn, center a 3" AOE on the destroyed model and remove that model from the table.  The AOE is forrest terrain that remains in play for one round.  Enemy models in the AOE when it is put in play are hit and suffer an unboostable POW 13 blast damage roll.</feat>
+          <spell name="Eruption of Life" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">If this attack destroys a living or undead enemy model, center a 3" AOE on the destroyed model before removing it from the table.  The AOE is forest terrain that remains in play for one round.  Enemy models in the AOE when it is put in play are hit and suffer an unboostable POW 13 blast damage roll.</spell>
+          <spell name="Harvest" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">When a living or undead enemy model is destroyed in this model's control area, this model can gain 1 fury point.  This model's fury point total cannot exceed its FURY as a result of Harvest.</spell>
+          <spell name="Influence" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-warcaster, non-warlock warrior model.  The model immediately makes one normal melee attack, the Influence expires.</spell>
+          <spell name="Regrowth" cost="4" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction unit. During the Control Phase, this model can spend 1 or more fury points. For each fury point spent, you can return one living small-based Grunt to the unit. It must be placed in this model's control area in formation and within 3" of another model in its unit. The Grunt is returned with one unmarked damage box.</spell> <!-- errata may 2014 -->
+          <spell name="Restoration" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM.  When this spell is upkept, this model heals 1 damage point for each friendly model affected by Restoration within 1" of this model.</spell>
+          <capacity title="Sacrificial Pawn [Faction warrior]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Faction warrior model within 3" of this model directly hit instead.  That model is automatically hit and suffers all damage and effects.</capacity>
+        </warlock>
+        <warlock id="Ox04" name="Morvahna2" full_name="Morvahna the Dawnshadow" generation="E" qualification="Circle Light Cavalry Epic Warlock" fury="7" warbeast_points="5" fa="C"  completed="true">
+          <basestats name="Morvahna the Dawnshadow" spd="8" str="5" mat="6" rat="4" def="15" arm="15" cmd="9" hitpoints="16" pathfinder="true"/>
+          <weapons>
+              <melee_weapon p_plus_s="12" pow="7" name="Equinox" magical="true" reach="true">
+                  <capacity title="Life trader">When an attack with this weapon hits, this model can suffer 1 damage point to gain an additional die on the damage roll against the model hit. Life Trader can be used once per attack.</capacity>
+              </melee_weapon>
+              <mount_weapon name="Mount" pow="12">
+                  <capacity title="Ram">When an enemy model is hit by this weapon, it is knocked down and can be pushed 1" directly away from this model. If it is pushed, this model can immediately advance directly toward the pushed model up to the distance that model was moved.</capacity>
+              </mount_weapon>
+          </weapons>
+          <feat title="Blood Sacrifice">Morvahna immediately suffers 1 or more damage points. This damage cannot be transferred. For each damage point she suffers, return one destroyed non-character living friendly Faction warrior model to play completely within her control area. Place returned trooper models in formation with their original units. Units cannot exceed the number of models they had at the start of the game as a result of Blood Sacrifice. Returned models forfeit their actions the turn they return to play.</feat>
+          <spell name="CARNIVORE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack rolls against living enemy models. When an affected model boxes a living enemy model with a melee attack, the boxed model is removed from play and this model heals d3 damage points.</spell>
+          <spell name="DEATH KNELL" cost="4" rng="8" aoe="4" pow="10" up="NO" off="YES">Before dealing damage, count the number of models in the AOE. Add the result to each Death Knell damage roll.</spell>
+          <spell name="FOG OF WAR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Models gain concealment while in this model's control area.</spell>
+          <spell name="PURIFICATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Continuous effects, animi, and upkeep spells in this model's control area immediately expire.</spell>
+          <spell name="SUNDER SPIRIT" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Sunder Spirit loses its animus for one round.</spell>
+          <capacity title="Imperishable Conviction">When a friendly Faction model in its control area is destroyed by an enemy attack, this model heals 1 damage point.</capacity>
+          <capacity title="Scales of Fate"> When a friendly Faction model makes an attack or damage roll during its activation while in this model's control area, this model can suffer d3 damage points to cause that model to reroll that roll. Each roll can be rerolled only once due to Scales of Fate.</capacity>
+        </warlock>
+        <!--Kromac the Ravenous complete-->
+        <warlock id="OW05" name="Kromac" full_name="Kromac the Ravenous" generation="P" qualification="Circle Tharn Warlock" fury="7" warbeast_points="4" fa="C" completed="true">
+          <basestats name="Human Form" spd="6" str="6" mat="6" rat="4" def="15" arm="14" cmd="9" hitpoints="17" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Dusk and Dawn" count="2" pow="5" p_plus_s="11" magical="true" reach="true"></melee_weapon>
+          </weapons>
+          <feat title="Blood Rage">Kromac suffers up to 7 damage points.  For each damage point he suffers, Kromac gains 1 fury point.  Kromac's fury point total cannot exceed his current FURY as a result of Blood Rage.  If Kromac is in human form when this feat is used, he can immediately take beast form; replace his human model with his beast model.  Effects on the replaced model are applied to the beast model.</feat>
+          <spell name="Bestial" cost="3" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, enemy models cannot cast spells or be used to channel spells.  Bestial lasts for one round.</spell>
+          <spell name="Inviolable Resolve" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM and Fearless.</spell>
+          <spell name="Rift" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+          <spell name="Warpath" cost="2" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">When a friendly Faction model in this model's control area destroys one or more enemy models with a melee or ranged attack during its activation, immediately after the attack is resolved, one warbeast in this model's battlegroup that is in its control area can advance up to 3".  A warbeast can advance only once per turn as a result of Warpath.</spell>
+          <spell name="Wild Aggression" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly living warbeast in this model's battlegroup can run, charge, or make slam or trample power attacks without being forced and gains boosted melee attack rolls.</spell>
+          <capacity title="Altered States">At the start of your Maintenance Phase, choose a form for this model to take: human or beast.  If it changes form, replace the model in play with its alternate form.  Effects on the replaced model are applied to the alternate form.  You decide which form this model starts the game in.</capacity>
+          <capacity title="Beast Out">When this model suffers damage from an enemy attack during an opponent's turn while in human form, immediately after the attack is resolved this model can spend 1 fury point to take beast form.  Replace its human model with the beast model.  Effects on the replaced model are applied to the beast model.</capacity>
+          <model id="Kromac">
+            <basestats name="Beast Form" spd="6" str="9" mat="8" rat="4" def="15" arm="17" cmd="3" pathfinder="true" terror="true" />
+            <weapons>
+              <melee_weapon name="Dusk and Dawn" count="2" pow="5" p_plus_s="14" magical="true" reach="true"></melee_weapon>
+            </weapons>
+            <capacity title="Altered States">At the start of your Maintenance Phase, choose a form for this model to take: human or beast.  If it changes form, replace the model in play with its alternate form.  Effects on the replaced model are applied to the alternate form.  You decide which form this model starts the game in.</capacity>
+            <capacity title="Beast Mind">This model cannot upkeep spells and cannot cast non-animus spells.</capacity>
+            <capacity title="Jump">After using its normal movement to make a full advance but before performing an action, you can place this model anywhere completely within 5" of its current location.  Any effects that prevent it from charging also prevent it from using Jump.</capacity>
+          </model>
+        </warlock>
+        <!--Mohsar Desertwalker complete-->
+        <warlock id="OW06" name="Mohsar" full_name="Mohsar the Desertwalker" generation="P" qualification="Circle Warlock" fury="8" warbeast_points="5" fa="C" completed="true">
+          <basestats name="Mohsar" spd="5" str="4" mat="5" rat="6" def="14" arm="14" cmd="8" hitpoints="15" eyelesssight="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Dust Howler" rng="SP8" rof="1" aoe="-" pow="13" magical="true"></ranged_weapon>
+            <melee_weapon name="Witherthorn" pow="6" p_plus_s="10" magical="true" reach="true">
+              <capacity title="Erosion">This model rolls an additional die on this weapon's damage rolls against non-living models.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Disjunction">While in Mohsar's control area enemy models cannot be used to channel spells, cannot leach fury, and cannot have fury leached from them.  Disjunction lasts for one round.</feat>
+          <spell name="Crevasse" cost="3" rng="8" aoe="-" pow="12" up="NO" off="YES">If Crevasse boxes its original target, you can make a SP6 attack using the boxed model as the attack's point of origin.  Models hit suffer a POW 12 magic damage roll.  Models boxed by Crevasse are removed from play.</spell>
+          <spell name="Curse of Shadows" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers -2 ARM and cannot make free strikes.  A model can advance through an affected model if it has enough movement to move completely past its base.</spell>
+          <spell name="Mirage" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains Apparition.  (During your Control Phase, place models with Apparition anywhere completely within 2" of their current locations.  If Mirage affects a unit, only models in formation can be placed.)</spell>
+          <spell name="Pillar of Salt" cost="2" rng="Ctrl" aoe="3" pow="-" up="NO" off="NO">Place a 3" AOE anywhere completely in this model's control area where it does not touch a model's base.  The AOE is an obstruction that blocks LOS and provides cover.  It is a structure with ARM 18 and leaves play if it suffers 1 or more damage points.  The AOE remains in play for one round.</spell>
+          <spell name="Sands of Fate" cost="2" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">Remove a friendly living Faction trooper model in this model's control area from play and replace it with this model.  This model cannot advance this activation after being placed by Sands of Fate.</spell>
+          <spell name="Sunhammer" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">Enemy warbeasts/warjacks that advance more than 1" and end their normal movement in this model's control area suffer d3 damage points.</spell>
+          <capacity title="Circular Vision">This model's front arc extends to 360 degrees.</capacity>
+          <capacity title="Maltreatment">Once per turn during its activation this model can remove one fury point from a warbeast in its battlegroup that is in its control area and add 1 fury point to its own current total. The warbeast suffers d3 damage points.</capacity>
+        </warlock>
+        <!--Cassius Oathkeeper complete-->
+        <warlock id="OW07" name="Cassius" full_name="Cassius the Oathkeeper and Wurmwood, Tree of Fate" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="Cassius" spd="6" str="6" mat="6" rat="4" def="14" arm="16" cmd="8" hitpoints="20" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Genesis" pow="6" p_plus_s="12" magical="true" reach="true">
+              <capacity title="Fertilizer">When a living or undead model is boxed by this weapon, center a 3" AOE on it and then remove the model from play.  The AOE is a forest that remains in play for one round.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Forest of Judgement">Wurmwood, Tree of Fate's command range becomes a forest.  Enemy models that are knocked down while in Wurmwood's command range suffer 1 damage point.  Forest of Judgement lasts for one round.</feat>
+          <spell name="Curse of Shadows" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers -2 ARM and cannot make free strikes.  A model can advance through the affected model if it has enough movement to move completely past its base.</spell>
+          <spell name="Hellmouth" cost="4" rng="8" aoe="*" pow="12" up="NO" off="YES">If this attack misses, nothing happens.  If it hits, before making the damage roll, push the models within 3" of the model hit 3" directly toward it in the order you choose.  Then center a 3" AOE on the model hit.  Models hit suffer a POW 12 damage roll.  Models boxed by Hellmouth are removed from play.</spell>
+          <spell name="Stranglehold" cost="2" rng="10" aoe="-" pow="11" up="NO" off="YES">A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.</spell>
+          <spell name="Unseen Path" cost="2" rng="Ctrl" aoe="-" pow="-" up="NO" off="NO">Unseen Path can be cast only while Wurmwood, Tree of Fate is in this model's control area.  When Unseen Path is cast, immediately place this model within 2" or Wurmwood or place Wurmwood within 2" of this model.  A model cannot advance this turn after being placed by Unseen Path.</spell>
+          <capacity title="Black Roots">This model ignores the firing into melee penalty when making magic attacks against models in Wurmwood's command range.</capacity>
+          <capacity title="Treewalker">This model ignores forests when determining LOS.  While in a forest, this model gains +2 DEF against melee attack rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
+          <model id="Wurmwood" qualification="Circle Character Solo">
+            <basestats name="Wurmwood" spd="0" str="0" mat="0" rat="0" def="5" arm="16" cmd="10" advance_deployment="true" />
+            <capacity title="Altar of Sacrifice">This model gains one soul token for each living model destroyed in its command range.  This model can have up to five soul tokens at a time.  If this model is in Cassius the Oathkeeper's control area at the start of his activation, at that time, Cassius can remove soul tokens from it to put fury on himself at 1 fury point per soul token removed.</capacity>
+            <capacity title="Companion [Cassius the Oathkeeper]">This model is included in any army that includes Cassius the Oathkeeper.  If Cassius is destroyed or removed from play, remove this model from play.  This model is part of Cassius' battlegroup.</capacity>
+            <capacity title="Ghost Shield">This model gains +1 ARM for each soul token currently on it.</capacity>
+            <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved.  Its front arc extends to 360 degrees.  It has no melee range, cannot engage, and is automatically hit my melee attacks.</capacity>
+            <capacity title="Prowl">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+            <capacity title="Sympathetic Link">When this model would suffer damage, you must assign that damage to Cassius the Oathkeeper.  This model does not suffer the damage assigned to Cassius.  This damage can be transfered.</capacity>
+          </model>
+        </warlock>
+        <warlock id="OW08" name="Grayle" full_name="Grayle" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="Grayle" spd="7" str="6" mat="7" rat="4" def="15" arm="16" cmd="9" hitpoints="17" pathfinder="true" stealth="true"/>
+          <weapons>
+              <melee_weapon p_plus_s="10" pow="4" name="Hunting Blades" count="2" magical="true" weapon_master="true"></melee_weapon>
+          </weapons>
+          <feat title="Darkest Night">While in Grayle's control area, friendly Faction models gains Stealth. When a friendly Faction model in Grayle's control area destroys an enemy model with a melee attack during its activation, another friendly Faction model in Grayle's control area can advance up to 3". A model can advance only once as a result of Darkest Night. Darkest Night lasts for one round.</feat>
+
+          <spell name="AWARENESS" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, the front arcs of models in its battlegroup are extended to 360° and when determining LOS those models ignore cloud effects, forests, and intervening models. Awareness lasts for one round.</spell>
+          <spell name="GALLOWS" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallow's point of origin</spell>
+          <spell name="STORM RAGER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model gains +2 STR, MAT and ARM and cannot be targeted by combined ranged attacks or combined melee attacks.</spell>
+          <spell name="WIND BLAST" cost="2" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">Place a 5" AOE anywhere completely in this model's control area. Cloud effects overlapping the AOE expire. Models suffer -3 RAT while within the AOE. The AOE remains in play for one round.</spell>
+          
+          <capacity title="Elite Cadre [Wolves of Orboros]">Friendly Wolf of Orboros models gain Hunter. (A model with Hunter ignores forests, concealment, and cover when determining LOS or making a ranged attack.)</capacity>
+          <capacity title="Side Step">When this model hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved.</capacity>
+          <capacity title="Sprint">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+        </warlock>
+		<warlock id="OW09" name="Bradigus" full_name="Bradigus Thorle the Runecarver" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+          <basestats name="THORLE" spd="5" str="7" mat="6" rat="6" def="14" arm="16" cmd="8" hitpoints="17" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Stone Throw" rng="8" rof="3" aoe="-" pow="13">
+			  <capacity title="BEAT BACK">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+			</ranged_weapon>
+			<melee_weapon name="Stone Strike" pow="6" p_plus_s="13" reach="true">
+              <capacity title="BEAT BACK">See above.</capacity>
+			  <capacity title="CRITICAL SMITE">On a critical hit, this model can slam the model hit instead of rolling damage normally. The model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model's STR plus the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>			  
+            </melee_weapon>
+          </weapons>
+          <feat title="Earthen Tide">Choose a table edge and a distance up to 5". Models in Thorle's battlegroup that are in his control area are pushed the chosen distance directly toward the chosen table edge in the order you choose. At the end of your turn, choose a distance up to 5". Models in Thorle's battlegroup that are in his control area are pushed the chosen distance directly away from the chosen table edge in the order you choose.</feat>
+          <spell name="BATTERING RAM" cost="2" rng="6" aoe="-" pow="12" up="NO" off="YES">When an enemy model is hit by Battering Ram, it can be pushed 3" directly away from the spell's point of origin.</spell>
+          <spell name="MYSTIC WARDS" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Enemy animi and enemy upkeep spells on models in this model's battlegroup that are in its control area immediately expire. While within 5" of a model in this model's battlegroup in its control area, enemy models cannot cast, channel, or upkeep spells. Mystic Wards lasts for one round.</spell>
+          <spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+          <spell name="SYNERGY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in its control area, models in this model's battlegroup gain a +1 cumulative bonus on melee attack and melee damage rolls for each other model in the battlegroup that hit an enemy model with a melee attack this turn while in this model's control area.</spell>
+          <capacity title="EARTH MAGIC">When a warbeast with Construct in this model's battlegroup is forced to use its animus while in this model's control area, reduce the COST of the animus by 1.</capacity>
+		  <capacity title="SHAPE STONE [9] (★ACTION)">This model can attempt repairs on any damaged friendly Faction construct. To attempt repairs, this model must be B2B with the damaged construct and make a skill check. If successful, remove d6 damage points from the construct.</capacity>
+		  <capacity title="STEADY">This model cannot be knocked down.</capacity>
+		  <capacity title="STONE BINDER">Only warbeasts with Construct can be part of this model's battlegroup.</capacity>
+		  <restricted_to id="OB03"/>
+		  <restricted_to id="OB04"/>
+		  <restricted_to id="OB06"/>
+		  <restricted_to id="OB10"/>
+		  <restricted_to id="OB12"/>
+		  <restricted_to id="OB18"/>
+        </warlock>
+      </warlocks>
+      <warbeasts>
+        <!--Argus complete-->
+        <warbeast id="OB01" name="Argus" full_name="Argus" damage_spiral="7-7-7" fury="3" threshold="9" cost="4" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Argus" spd="7" str="8" mat="5" rat="4" def="15" arm="14" cmd="6" />
+          <weapons>
+            <ranged_weapon name="Doppler Bark" location="H" rng="SP6" rof="1" aoe="-" pow="-">
+              <capacity title="Paralysis">A living model hit by this weapon has its base DEF reduced to 7 and cannot run or charge. Paralysis lasts for one round.</capacity><!-- errata 12-2013 -->
+            </ranged_weapon>
+            <melee_weapon name="Bite" location="H" pow="4" p_plus_s="12">
+              <capacity title="Combo Strike" type="*Attack">Make a melee attack.  Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Bite" location="H" pow="4" p_plus_s="12">
+              <capacity title="Combo Strike" type="*Attack">Make a melee attack.  Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="Tracker" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model gains Circular Vision and Pathfinder.  Tracker lasts for one turn.</animus>
+          <capacity title="Circular Vision">This model's front arc extends to 360 degrees.</capacity>
+        </warbeast>
+        <!--Gorax complete-->
+        <warbeast id="OB02" name="Gorax" full_name="Gorax" damage_spiral="7-8-7" fury="4" threshold="8" cost="4" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Gorax" spd="5" str="9" mat="6" rat="3" def="12" arm="16" cmd="5" />
+          <weapons>
+            <melee_weapon name="Claw" location="L" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
+            <melee_weapon name="Claw" location="R" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="Primal" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly living warbeast gains +2 STR and MAT for one round and automatically frenzies during your next Control Phase.</animus>
+          <capacity title="Pain Response">While damaged this model can charge or make power attacks without being forced.</capacity>
+        </warbeast>
+        <!--Woldwatcher complete-->
+        <warbeast id="OB03" name="Woldwatcher" full_name="Woldwatcher" damage_spiral="7-8-9" fury="2" threshold="0" cost="5" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Woldwatcher" spd="5" str="8" mat="5" rat="5" def="10" arm="17" cmd="0" advance_deployment="true" construct="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Elemental Strike" location="-" rng="10" rof="1" aoe="-" pow="12" magical="true">
+              <capacity title="Fertilizer">When a living or undead model is boxed by this weapon, center a 3" AOE on it and then remove the model from play. The AOE is a forest that remains in play for one round.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Rune Fist" location="L" pow="4" p_plus_s="12" magical="true" open_fist="true">
+              <capacity title="Fertilizer">When a living or undead model is boxed by this weapon, center a 3" AOE on it and then remove the model from play. The AOE is a forest that remains in play for one round.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Rune Fist" location="R" pow="4" p_plus_s="12" magical="true" open_fist="true">
+              <capacity title="Fertilizer">When a living or undead model is boxed by this weapon, center a 3" AOE on it and then remove the model from play. The AOE is a forest that remains in play for one round.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="Earth's Blessing" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model cannot be pushed, knocked down, or made stationary.  Earth's Blessing lasts for one round.</animus>
+          <capacity title="Shield Guard">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity> <!-- errata 12-2013 -->
+          <capacity title="Stone Form">During its activation, this model can be forced to use Stone Form.  For one round or until it advances, this model gains +4 ARM, its base DEF is reduced to 5, and it is automatically hit by melee attacks.</capacity>
+        </warbeast>
+        <!--Woldwyrd complete-->
+        <warbeast id="OB04" name="Woldwyrd" full_name="Woldwyrd" damage_spiral="8-6-8" fury="3" threshold="0" cost="5" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Woldwyrd" spd="7" str="6" mat="3" rat="6" def="13" arm="16" cmd="0" construct="true" gunfighter="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Arcane Strike" location="-" rng="10" rof="3" aoe="-" pow="10" magical="true">
+              <capacity title="Purgation">Gain an additional die on attack and damage rolls with this weapon against models with an enemy upkeep spell on them.</capacity>
+            </ranged_weapon>
+          </weapons>
+          <animus name="Arcane Suppression" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">While within 10" of this model, enemy models must pay double fury and focus points to cast or upkeep spells.  Arcane Suppression lasts for one round.</animus>
+          <capacity title="Steady">This model cannot be knocked down.</capacity>
+          <capacity title="Witch Hunter">After an enemy model casts a spell within 10" of this model, this model can immediately make one normal ranged attack targeting that model.</capacity>
+        </warbeast>
+        <!--Gnarlhorn Satyr complete-->
+        <warbeast id="OB05" name="Gnarlhorn Satyr" full_name="Gnarlhorn Satyr" damage_spiral="8-10-8" fury="4" threshold="9" cost="8" qualification="Circle Heavy Warbeast" fa="U" completed="true">
+          <basestats name="Satyr" spd="6" str="11" mat="6" rat="3" def="12" arm="18" cmd="7" />
+          <weapons>
+            <melee_weapon name="Horns" location="H" pow="4" p_plus_s="15">
+              <capacity title="Hard Head">This model can add this weapon's POW to its head-butt and slam power attack damage rolls.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Claw" location="L" pow="3" p_plus_s="14" open_fist="true"></melee_weapon>
+            <melee_weapon name="Claw" location="R" pow="3" p_plus_s="14" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="Bounding" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction warbeast gains +2" movement if it charges or makes a slam or trample power attack.  The affected model also gains +2 on charge, slam, and trample attack rolls.  Bounding lasts for one turn.</animus>
+          <capacity title="Counter Slam">When an enemy model advances and ends its movement within 6" and in the LOS of this model, this model can immediately make a slam power attack against that model.  If this model makes a counter slam, it cannot make another until after your next turn.  This model cannot make a counter slam while engaged.</capacity>
+          <capacity title="Follow Up">When this model slams an enemy model, immediately after the slam is resolved this model can advance directly toward the slammed model up to the distance the slammed model was moved.</capacity>
+          <capacity title="Grand Slam">This model can make slam power attacks without spending focus or being forced.  Models slammed by this model are moved an additional 2".</capacity>
+        </warbeast>
+        <!--Megalith complete-->
+        <warbeast id="OB06" name="Megalith" full_name="Megalith" damage_spiral="10-14-11" fury="4" threshold="0" cost="11" qualification="Circle Character Heavy Warbeast" fa="C" completed="true">
+          <basestats name="Megalith" spd="5" str="11" mat="7" rat="4" def="10" arm="19" cmd="0" construct="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Rune Fist" location="L" pow="5" p_plus_s="16" magical="true" open_fist="true">
+              <capacity title="Weight of Stone">When a model is damaged by this weapon it suffers -3 SPD and DEF for one round.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Rune Fist" location="R" pow="5" p_plus_s="16" magical="true" open_fist="true">
+              <capacity title="Weight of Stone">When a model is damaged by this weapon it suffers -3 SPD and DEF for one round.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="Undergrowth" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">While within 5" of this model, enemy models treat open terrain as rough terrain and suffer -2 DEF.  Undergrowth lasts for one round.</animus>
+          <capacity title="Affinity [Baldur]">If this model is in Baldur's control area at the start of Baldur's activation, Baldur automatically heals d3 damage points.</capacity>
+          <capacity title="Bountiful Restoration">During your Control Phase, remove d3 damage points from this model.  During your Control Phase, remove 1 damage point from friendly Woldwardens B2B with it.</capacity>
+          <capacity title="Geomancy">Once per activation while in its controller's control area, this model can be forced to cast one of its warlock's spells with a COST of 3 or less.  This model's controller is considered to have cast the spell but this model is the point of origin.  When making a magic attack roll, this model uses its controller's FURY.  This model cannot cast spells with a RNG of SELF or CTRL.</capacity>
+          <capacity title="Steady">This model cannot be knocked down.</capacity>
+        </warbeast>
+        <!--Pureblood Warpwolf complete-->
+        <warbeast id="OB07" name="Pureblood Warpwolf" full_name="Pureblood Warpwolf" damage_spiral="8-8-10" fury="4" threshold="10" cost="9" qualification="Circle Heavy Warbeast" fa="U"  completed="true">
+          <basestats name="Warpwolf" spd="6" str="10" mat="6" rat="5" def="14" arm="17" cmd="7" />
+          <weapons>
+            <ranged_weapon name="Death Howler" location="-" rng="SP10" rof="1" aoe="-" pow="14" magical="true"></ranged_weapon>
+            <melee_weapon name="Claw" location="L" pow="4" p_plus_s="14" open_fist="true"></melee_weapon>
+            <melee_weapon name="Claw" location="R" pow="4" p_plus_s="14" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="Wraithbane" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model's weapons gain Magical Weapon and Blessed.  Wraithbane lasts for one turn.  (When making an attack with a weapon with Blessed, ignore spell effects that add to a model's ARM or DEF.)</animus>
+          <capacity title="Controlled Warping">At the beginning of this model's activation, choose one of the following warp effects.  Warp effects last for one round.  If this model frenzies it must choose Warp Strength at the start of its activation.</capacity>
+          <capacity title="● Ghostly">This model can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them.  This model cannot be targeted by free strikes.</capacity>
+          <capacity title="● Spell Ward">This model cannot be targeted by spells.</capacity>
+          <capacity title="● Warp Strength">This model gains +2 STR.</capacity>
+          <capacity title="Leadership [Warpwolves]">While in this model's command range, friendly Warpwolf models can use Ghostly as if it were a Controlled Warping effect on their cards.</capacity>
+          <capacity title="Regeneration [d3]">This model can be forced to heal d3 damage points once per activation.  This model cannot use Regeneration during an activation it runs.</capacity>
+        </warbeast>
+        <!--Shadowhorn Satyr complete-->
+        <warbeast id="OB08" name="Shadowhorn Satyr" full_name="Shadowhorn Satyr" damage_spiral="7-10-7" fury="4" threshold="9" cost="7" qualification="Circle Heavy Warbeast" fa="U" completed="true">
+          <basestats name="Satyr" spd="6" str="10" mat="6" rat="3" def="13" arm="17" cmd="6" />
+          <weapons>
+            <melee_weapon name="Horns" location="H" pow="4" p_plus_s="14">
+              <capacity title="Hard Head">This model can add this weapon's POW to its head-butt and slam power attack damage rolls.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Claw" location="L" pow="3" p_plus_s="13" open_fist="true"></melee_weapon>
+            <melee_weapon name="Claw" location="R" pow="3" p_plus_s="13" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="Virility" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly living Faction warbeast can make power attacks during its activation without being forced.  A model that is power attack slammed or thrown by the affected warbeast is moved an additional +2".  Virility lasts for one turn.</animus>
+          <capacity title="Bounding Leap">Once per activation, after making a full advance but before performing an action, this model can be forced to be placed completely within 5" of its current location.  Any effects that prevent charging also prevent this model from using Bounding Leap.</capacity>
+          <capacity title="Reversal">When a model misses this model with a charge or a power attack, the attacking model is knocked down.</capacity>
+          <capacity title="Set Defense">A model in this model's front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+        </warbeast>
+        <!--Feral Warpwolf complete-->
+        <warbeast id="OB09" name="Feral Warpwolf" full_name="Feral Warpwolf" damage_spiral="8-11-9" fury="4" threshold="9" cost="9" qualification="Circle Heavy Warbeast" fa="U" completed="true">
+          <basestats name="Warpwolf" spd="6" str="11" mat="7" rat="3" def="14" arm="16" cmd="7" />
+          <weapons>
+            <melee_weapon name="Bite" location="H" pow="3" p_plus_s="14"></melee_weapon>
+            <melee_weapon name="Claw" location="L" pow="4" p_plus_s="15" open_fist="true"></melee_weapon>
+            <melee_weapon name="Claw" location="R" pow="4" p_plus_s="15" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="Baying of Chaos" cost="2" rng="Self" aoe="*" pow="-" up="NO" off="NO">Remove 1 fury point from each enemy warbeast in this model's command range.  A warbeast can be affected by Baying of Chaos only once per turn.</animus>
+          <capacity title="Controlled Warping">At the beginning of this model's activation, choose one of the following warp effects.  Warp effects last for one round.  If this model frenzies it must choose Warp Strength at the start of its activation.</capacity>
+          <capacity title="● Protective Plates">This model gains +2 ARM.</capacity>
+          <capacity title="● Warp Speed">This model gains +2 SPD.</capacity>
+          <capacity title="● Warp Strength">This model gains +2 STR.</capacity>
+          <capacity title="Regeneration [d3]">This model can be forced to heal d3 damage points once per activation.  This model cannot use Regeneration during an activation it runs.</capacity>
+        </warbeast>
+        <!--Woldwarden complete-->
+        <warbeast id="OB10" name="Woldwarden" full_name="Woldwarden" damage_spiral="10-14-11" fury="3" threshold="0" cost="9" qualification="Circle Heavy Warbeast" fa="U" completed="true">
+          <basestats name="Woldwarden" spd="5" str="11" mat="6" rat="4" def="10" arm="18" cmd="0" construct="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Rune Fist" location="L" pow="4" p_plus_s="15" magical="true" open_fist="true">
+              <capacity title="Chain Attack: Smite">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional melee attack against that model.  If the additional attack hits, the target is slammed d6" directly away from this model.  The POW of the slam damage roll is equal to the STR of this model + the POW of this weapon.  The POW of collateral damage is equal to the STR of this model.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Rune Fist" location="R" pow="4" p_plus_s="15" magical="true" open_fist="true">
+              <capacity title="Chain Attack: Smite">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional melee attack against that model.  If the additional attack hits, the target is slammed d6" directly away from this model.  The POW of the slam damage roll is equal to the STR of this model + the POW of this weapon.  The POW of collateral damage is equal to the STR of this model.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="Wild Growth" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">Center a 4" AOE on this model.  The AOE is a forest that remains in play for one round.</animus>
+          <capacity title="Geomancy">Once per activation while in his controller's control area, this model can be forced to cast one of its warlock's spells with a cost of 3 or less.  This model's controller is considered to have cast the spell but this model is the point of origin.  When making a magic attack roll, this model uses its controller's FURY.  This model cannot cast spells with a RNG of SELF or CTRL.</capacity>
+        </warbeast>
+        <!--Warpwolf Stalker complete-->
+        <warbeast id="OB11" name="Warpwolf Stalker" full_name="Warpwolf Stalker" damage_spiral="8-9-8" fury="4" threshold="9" cost="10" qualification="Circle Heavy Warbeast" fa="U" completed="true">
+          <basestats name="Warpwolf" spd="6" str="10" mat="6" rat="3" def="14" arm="17" cmd="7" pathfinder="true"></basestats>
+          <weapons>
+            <melee_weapon name="Claw" location="L" pow="4" p_plus_s="14" open_fist="true"></melee_weapon>
+            <melee_weapon name="Great Sword" location="R" pow="6" p_plus_s="16" reach="true"></melee_weapon>
+          </weapons>
+          <animus name="Lightning Strike" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model gains Sprint.  Lightning Strike lasts for one turn.  (At the end of its activation, if a model with Sprint destroyed one or more enemy models with melee attacks this activation, it can make a full advance.)</animus>
+          <capacity title="Controlled Warping">At the beginning of this model's activation, choose one of the following warp effects.  Warp effects last for one round.  If this model frenzies it must choose Warp Strength at the start of its activation.</capacity>
+          <capacity title="● Berserk">When this model destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</capacity>
+          <capacity title="● Prowl">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+          <capacity title="● Warp Strength">This model gains +2 STR.</capacity>
+          <capacity title="Regeneration [d3]">This model can be forced to heal d3 damage points once per activation.  This model cannot use Regeneration during an activation it runs.</capacity>
+        </warbeast>
+        <!--Wold Guardian complete-->
+        <warbeast id="OB12" name="Woldguardian" full_name="Woldguardian" damage_spiral="8-14-8" fury="3" threshold="0" cost="9" qualification="Circle Heavy Warbeast" fa="U" completed="true">
+          <basestats name="Woldguardian" spd="4" str="12" mat="6" rat="1" def="9" arm="20" cmd="0" construct="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Ram Fist" location="L" pow="5" p_plus_s="17" magical="true">
+              <capacity title="Ram">When an enemy model is hit by this weapon, it is knocked down and can be pushed 1" directly away from this model.  If it is pushed, this model can immediately advance directly toward the pushed model up to the distance that model was moved.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Ram Fist" location="R" pow="5" p_plus_s="17" magical="true">
+              <capacity title="Ram">When an enemy model is hit by this weapon, it is knocked down and can be pushed 1" directly away from this model.  If it is pushed, this model can immediately advance directly toward the pushed model up to the distance that model was moved.</capacity>
+            </melee_weapon>
+          </weapons>
+          <animus name="Flesh of Clay" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">When this model is hit by a ranged attack, the attacked rolls one less damage die.  Flesh of Clay lasts for one round.</animus>
+          <capacity title="Empathic Transference">A friendly Faction warlock can transfer damage to this model even if this model has a number of fury points equal to its current FURY.</capacity>
+          <capacity title="Girded">This model does not suffer blast damage.  Friendly models in B2B with it do not suffer blast damage.</capacity>
+          <capacity title="Steady">This model cannot be knocked down.</capacity>
+        </warbeast>
+        <warbeast id="OB13" name="Scarsfell Griffon" full_name="Scarsfell Griffon" damage_spiral="8-7-7" fury="3" threshold="8" cost="5" qualification="Circle Light Warbeast" fa="U" completed="true" >
+          <basestats name="Scarsfell Griffon" spd="6" str="8" mat="6" rat="1" def="14" arm="15" cmd="6" stealth="true"/>
+          <weapons>
+              <melee_weapon p_plus_s="11" pow="3" name="Beak" location="H"></melee_weapon>
+              <melee_weapon p_plus_s="11" pow="3" name="Claw" location="L" open_fist="true"></melee_weapon>
+              <melee_weapon p_plus_s="11" pow="3" name="Claw" location="R" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="SHADOW SWIFT" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains Parry. Shadow Swift lasts for one round. (A model with Parry cannot be targeted by freestrikes.)</animus>
+          <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="Long Leash">When checking to see if this model is in its controller's control area, double the area.</capacity>
+        </warbeast>
+        <warbeast id="OB14" name="Ghetorix" full_name="Ghetorix" damage_spiral="7-12-9" fury="4" threshold="8" cost="11" qualification="Circle Warpwolf Character Heavy Warbeast" fa="C" completed="true">
+          <basestats name="Ghetorix" spd="6" str="11" mat="7" rat="3" def="14" arm="17" cmd="8" terror="true" />
+          <weapons>
+              <melee_weapon p_plus_s="14" pow="3" name="Bite"></melee_weapon>
+              <melee_weapon p_plus_s="17" pow="6" name="Great Axe" reach="true">
+                  <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+              </melee_weapon>
+          </weapons>
+          
+          <animus name="ORNERY" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains Retaliatory Strike. Ornery expires after the affected model makes a Retaliatory Strike attack. Ornery lasts for one round. (When a model with Retaliatory Strike is hit by a melee attack made by an enemy model during your opponent's turn, after the attack is resolved this model can immediately make one normal melee attack against that model.) </animus>
+          
+          <capacity title="Controlled Warping">At the beginning of this model's activation, choose one of the following warp effects.  Warp effects last for one round.  If this model frenzies it must choose Warp Strength at the start of its activation.</capacity>
+          <capacity title="● Hyper Aggressive">When this model suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.</capacity>
+          <capacity title="● Snacking">When this model boxes a Living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play.</capacity>
+          <capacity title="● Warp Strength">This model gains +2 STR.</capacity>
+          <capacity title="Regeneration [D3]">This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.</capacity>
+          <capacity title="Special Issue [Kromac]">This model can be included in Kromac's theme forces. It can also be bonded to Kromac.</capacity>
+          <capacity title="Unyielding">While engaging an enemy model, this model gains +2 ARM.</capacity>
+        </warbeast>
+        <warbeast id="OB15" name="Winter Argus" full_name="Winter Argus" damage_spiral="7-7-7" fury="3" threshold="9" cost="5" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Winter Argus" spd="7" str="8" mat="5" rat="4" def="15" arm="14" cmd="6" immunity_frost="true"/>
+          <weapons>
+              <melee_weapon p_plus_s="12" pow="4" name="Bite" location="H"></melee_weapon>
+              <melee_weapon p_plus_s="12" pow="4" name="Bite" location="H"></melee_weapon>
+              <ranged_weapon pow="12" aoe="-" rng="SP6" rof="1" name="Frost Breath" frost="true" location="H">
+                  <capacity title="Critical Freeze">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+              </ranged_weapon>
+              <ranged_weapon pow="12" aoe="-" rng="SP6" rof="1" name="Frost Breath" frost="true" location="H">
+                  <capacity title="Critical Freeze">See above.</capacity>
+              </ranged_weapon>
+              </weapons>
+          <capacity title="Circular Vision">This model's front arc extends to 360 degrees.</capacity>
+        </warbeast>
+        <warbeast id="OB16" name="Razorwing Griffon" full_name="Razorwing Griffon" damage_spiral="8-7-7" fury="3" threshold="8" cost="5" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Razorwing Griffon" spd="6" str="8" mat="6" rat="1" def="14" arm="15" cmd="6" />
+          <weapons >
+              <melee_weapon p_plus_s="12" pow="4" name="Claw Blades" location="L" open_fist="true"></melee_weapon>
+              <melee_weapon p_plus_s="12" pow="4" name="Claw Blades" location="R" open_fist="true"></melee_weapon>
+              <melee_weapon p_plus_s="12" pow="4" name="Wing Blades">
+                  <capacity title="Threshing Blades">This model can add this weapon's POW to its trample power attack damage rolls.</capacity>
+              </melee_weapon>
+          </weapons>
+          <animus name="Amuck" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">When target friendly warbeast makes a special attack, its attack rolls are boosted. Amuck lasts for one turn.</animus>
+          <capacity title="Blade Rush">While making a trample power attack, this model ignores free strikes and does not stop when it contacts a model with a medium or larger base, an obstacle, or an obstruction. This model makes trample attacks against models regardless of their base size.</capacity>
+          <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="Power Attack Trample">This model can make Trample power attacks.</capacity>
+        </warbeast>
+        <warbeast id="OB17" name="Rip Horn Satyr" full_name="Rip Horn Satyr" damage_spiral="8-10-8" fury="4" threshold="9" cost="9" qualification="Circle Heavy Warbeast" fa="U" completed="true">
+          <basestats name="Satyr" spd="6" str="12" mat="6" rat="3" def="12" arm="19" cmd="7" />
+          <weapons >
+              <melee_weapon p_plus_s="16" pow="4" name="Horns" location="H">
+                  <capacity title="Hard Head">This model can add this weapon's POW to its head-butt and slam power attack damage rolls.</capacity>
+              </melee_weapon>
+              <melee_weapon p_plus_s="16" pow="4" name="Bladed Gauntlet" location="L" open_fist="true">
+                  <capacity title="Chain Attack: Grab &amp; Smash">If this model hits the same model with both it's initial attacks with this weapon, after resolving the attacks it can immediately make a double-hand throw, head-butt, headlock/weapon lock, push, or throw power attack against that target.</capacity>
+              </melee_weapon>
+              <melee_weapon p_plus_s="16" pow="4" name="Bladed Gauntlet" location="R" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="Irresistible Force" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains Bulldoze for one turn. (When a model with Bulldoze advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.)</animus>
+          <capacity title="Aggressive">This model can run or charge without spending focus or being forced.</capacity>
+        </warbeast>
+        <warbeast id="OB18" name="Woldwrath" full_name="Woldwrath" damage_spiral="12-24-20" fury="4" threshold="0" cost="20" qualification="Circle Gargantuan" fa="2" completed="true">
+          <basestats name="Woldwrath" spd="5" str="16" mat="6" rat="5" def="7" arm="20" cmd="0" construct="true"/>
+          <weapons>
+              <melee_weapon p_plus_s="19" pow="3" name="Stone Fist" location="L" open_fist="true">
+                  <capacity title="Earth Shaker">When an enemy model is directly hit by an attack made with this weapon, center a 4" AOE on the model directly hit. Models in the AOE are knocked down.</capacity>
+              </melee_weapon>
+              <melee_weapon p_plus_s="19" pow="3" name="Stone Fist" location="R" open_fist="true">
+                  <capacity title="Earth Shaker">See above.</capacity>
+              </melee_weapon>
+              <ranged_weapon pow="15" aoe="-" rng="14" rof="1" name="Lightning Strike" electricity="true">
+                  <capacity title="Storm Generator">When a model is directly hit with this weapon, center a 3" AOE on it. You can then have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll. After this damage roll is resolved, center a 3" AOE on the model the lightning arced to. The AOEs remain in play for one round. Models entering or ending their activations in an AOE suffer a POW 10 electrical damage roll.</capacity>
+              </ranged_weapon>
+          </weapons>
+          <animus name="Druid's Wrath" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Friendly Faction models gain an additional die on magic attack rolls targeting enemy models within 10" of this model. Druid's Wrath lasts for one turn.</animus>
+          <capacity title="Spell Ward">This model cannot be targeted by spells.</capacity>
+        </warbeast>
+        <!--Laris complete-->
+        <warbeast id="Laris" name="Laris" full_name="Laris" damage_spiral="6-6-8" fury="3" threshold="10" qualification="Circle Character Light Warbeast" fa="C" completed="true">
+          <basestats name="Laris" spd="7" str="8" mat="6" rat="4" def="15" arm="14" cmd="7" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="4" p_plus_s="12" location="H"></melee_weapon>
+          </weapons>
+          <animus name="Spirit Shift" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">When this model uses Spirit Shift, immediately place it within 2" of Kaya.  When Kaya uses Spirit Shift, immediately place her within 2" of this model.  A model cannot advance this turn after being placed by Spirit Shift.</animus>
+          <capacity title="Companion [Kaya the Moonhunter]">This model is included in any army that includes Kaya the Moonhunter.  If Kaya is destroyed or removed from play, remove this model from play.  This model is part of Kaya's battlegroup.</capacity>
+          <capacity title="Guard Dog">While this model is within 3" of its warcaster or warlock and is not knocked down or stationary, its warcaster or warlock cannot be targeted by free strikes and gains +2 DEF against melee attack rolls, and models attacking the warcaster or warlock do not gain back strike bonuses.</capacity>
+          <capacity title="Warbeast Bond [Kaya the Moonhunter]">Laris is bonded to Kaya the Moonhunter.  If Laris frenzies, he cannot choose Kaya as his target.  While Laris is in Kaya's control area, she can channel spells through him.</capacity>
+          <restricted_to id="Ox01" />
+        </warbeast>
+        
+        <warbeast id="OB19" name="Rotterhorn Griffon" full_name="Rotterhorn Griffon" damage_spiral="8-7-7" fury="3" threshold="8" cost="4" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Rotterhorn Griffon" spd="6" str="8" mat="6" rat="1" def="14" arm="15" cmd="6" />
+          <weapons >
+              <melee_weapon p_plus_s="11" pow="3" name="Claw" open_fist="true" count="2"></melee_weapon>
+          </weapons>
+          <animus name="Acceleration" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">At the end of target friendly Faction model's activation, that model can immediately perform a special action. Acceleration lasts for one turn.</animus>
+          <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="Shrill Shriek" type="*Action">Models within 2" of this model suffer a POW 8 damage roll.</capacity>
+        </warbeast>
+
+        <warbeast id="OB20" name="Argus Moonhound" full_name="Argus Moonhound" damage_spiral="8-7-7" fury="3" threshold="9" cost="4" qualification="Circle Light Warbeast" fa="U" completed="true">
+          <basestats name="Argus Moonhound" spd="7" str="7" mat="5" rat="4" def="15" arm="14" cmd="7" pathfinder="true" />
+          <weapons >
+              <melee_weapon p_plus_s="11" pow="4" name="Bite" location="H" count="2"></melee_weapon>
+          </weapons>
+          <animus name="Hound" cost="1" rng="8" aoe="-" pow="-" up="NO" off="YES">If target enemy model advances during its activation, immediately after ending this movement this model can advance up to 3". A model can move only once per turn as a result of Hound. Hound lasts for one round.</animus>
+          <capacity title="Circular Vision">This model's front arc extends to 360 degrees.</capacity>
+          <capacity title="Hunting Howls" type="*Action">Enemy models lose Camouflage and Stealth within 5" of this model. Hunting Howls lasts for one round.</capacity>
+          <capacity title="Mark Target" >Other friendly Faction models gain +2 to ranged attack rolls against enemy models within 5" of this model and in its LOS.</capacity>
+        </warbeast>
+        
+        <warbeast id="OB21" name="Brennos the Elderhorn" full_name="Brennos the Elderhorn" qualification="Circle Satyr Character Heavy Warbeast" fa="C" cost="9" fury="4" threshold="10" damage_spiral="7-10-8" completed="true">
+          <basestats name="BRENNOS" spd="6" str="9" mat="5" rat="5" def="11" arm="17" cmd="8" pathfinder="true" />
+          <weapons>            
+            <ranged_weapon name="Arcane Winds" rng="12" rof="1" aoe="-" pow="11" magical="true">
+			  <capacity title="THUNDERBOLT">Enemy models hit are pushed d3" directly away from the attacking model. On a critical hit, the enemy model is knocked down after being pushed.</capacity>
+			</ranged_weapon>
+			<melee_weapon name="Horns" pow="4" p_plus_s="13" location="H">
+			  <capacity title="CRITICAL PITCH">On a critical hit, instead of rolling damage normally you can choose to have this model throw the model hit. Treat the throw as if this model had hit with and passed the STR check of a throw power attack. The thrown model suffers a damage roll with POW equal to this model's STR plus the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+			</melee_weapon>
+			<melee_weapon name="Oaken Staff" pow="6" p_plus_s="15" magical="true" reach="true">
+			  <capacity title="MAGE KILLER">Gain an additional damage die on this weapon's damage rolls against models with Spellcaster or Magic Ability.</capacity>
+			</melee_weapon>
+		  </weapons>
+          <animus name="RITES OF DAWN" cost="1" rng="SELF" aoe="*" pow="-" up="NO" off="NO">When a friendly Faction warbeast in this model's command range is forced to use its animus, reduce the COST of the animus by 1. Rites of Dawn lasts for one turn.</animus>
+          <capacity title="AFFINITY [MORVAHNA]">When Brennos the Elderhorn destroys one or more enemy models with a melee or ranged attack during its combat action while in Morvahna's control area, Morvahna heals 1 damage point. When Brennos the Elderhorn suffers damage from an enemy melee or ranged attack while in Morvahna's control area, Morvahna heals 1 damage point.</capacity>
+		  <capacity title="PRIMAL MAGIC">This model can use the animus of any friendly Faction noncharacter warbeast in its command range as if the animus were its own.</capacity>
+		  <capacity title="SACRED WARD">This model cannot be targeted by enemy spells.</capacity>
+		  <capacity title="SPECIAL ISSUE [MORVAHNA]">This model can be included in Morvahna's theme forces. It can also be bonded to Morvahna.</capacity>
+        </warbeast>
+        
+        
+      </warbeasts>
+      <battleEngines>
+        <battleEngine id="OE01" name="Celestal Fulcrum" full_name="Celestal Fulcrum" cost="9" qualification="Circle Battle engine" fa="2" completed="true">
+          <basestats name="Celestal Fulcrum" spd="5" str="10" mat="0" rat="6" def="10" arm="18" cmd="10" hitpoints="20" construct="true" gunfighter="true" immunity_frost="true" immunity_electricity="true" immunity_fire="true"/>
+          <weapons>
+              <ranged_weapon pow="15" aoe="4" rng="8" rof="1" name="Flame Blast" fire="true" continuous_fire="true" magical="true">
+                  <capacity title="Smoke">This weapon's AOE is a cloud effect that remains in play for one round.</capacity>
+              </ranged_weapon>
+              <ranged_weapon pow="14" aoe="-" rng="12" rof="1" name="Lightning Bolt" electricity="true" magical="true">
+                  <capacity title="Electro leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+              </ranged_weapon>
+              <ranged_weapon pow="12" aoe="-" rng="SP10" rof="1" name="Winter's Rage" frost="true" magical="true">
+                  <capacity title="Critical Freeze">On a critical hit, the model hit becomes stationary for one round unless it has Immunity: Cold.</capacity>
+              </ranged_weapon>
+          </weapons>
+          <capacity title="Circular Vision">This model's front arc extends to 360 degrees.</capacity>
+          <capacity title="Fury Generator">This model gains 1 fury point at the start of each of your Control Phases. It can have up to 3 fury points at a time. If this model is in a friendly warlock's control area, the warlock can leach fury points from it during your Control Phase. During its activation, this model can spend fury points to boost attack or damage rolls, at 1 fury point per boost.</capacity>
+          <capacity title="Interference">This model cannot be placed.</capacity>
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <!--Druids and Overseer complete-->
+        <unit id="OU01" name="Druids of Orboros" full_name="Druids of Orboros" base_cost="7" baseCount="6" full_cost="-" fullCount="-" qualification="Cirlce Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Grunts" spd="6" str="6" mat="5" rat="4" def="14" arm="13" cmd="9" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Voulge" pow="4" p_plus_s="10" magical="true" reach="true"></melee_weapon>
+          </weapons>
+          <capacity title="Camouflage">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="Magic Ability [7]"></capacity>
+          <capacity title="● Force Bolt" type="*Attack"> Force Bolt is a RNG 10, POW 10 magic attack.  An enemy model hit by this attack can be pushed d3" directly toward or away from this model.  Choose the direction before rolling the distance.  On a critical hit, the enemy model is knocked down after being pushed.</capacity>
+          <capacity title="● Medicate" type="*Action">RNG 3.  Target friendly Faction warbeast.  If the warbeast is in range, it heals d3 damage points.  warbeast can be affected by Medicate only once per turn.</capacity>
+          <capacity title="● Summon Vortex" type="*Action">Center a 3" AOE cloud effect on this model.  Enemy models suffer -2 to attack rolls while in the AOE.  Summon Vortex lasts for one round.</capacity>
+          <model name="Leader">
+            <basestats name="Leader" spd="6" str="6" mat="5" rat="4" def="14" arm="13" cmd="9" pathfinder="true" />
+            <weapons>
+              <melee_weapon name="Voulge" pow="4" p_plus_s="10" magical="true" reach="true"></melee_weapon>
+            </weapons>
+            <capacity title="Camouflage">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+            <capacity title="Magic Ability [7]"></capacity>
+            <capacity title="● Counter Magic" type="*Action">This model cannot be targeted by enemy spells. While within 3" ̋of this model +1"̋ for each other model in this unit that is in formation, friendly models cannot be targeted by enemy spells and enemy models cannot cast spells. Counter Magic lasts for one round.</capacity><!-- errata 12-2013 -->
+            <capacity title="● Force Bolt" type="*Attack">Force Bolt is a RNG 10, POW 10 magic attack.  An enemy model hit by this attack can be pushed d3" directly toward or away from this model.  Choose the direction before rolling the distance.  On a critical hit, the enemy model is knocked down after being pushed.</capacity>
+            <capacity title="● Medicate" type="*Action">RNG 3.  Target friendly Faction warbeast.  If the warbeast is in range, it heals d3 damage points.  warbeast can be affected by Medicate only once per turn.</capacity>
+            <capacity title="● Summon Vortex" type="*Action">Center a 3" AOE cloud effect on this model.  Enemy models suffer -2 to attack rolls while in the AOE.  Summon Vortex lasts for one round.</capacity>
+          </model>
+          <unit_attachment id="OA01" name="Druids of Orboros Overseer" full_name="Druids of Orboros Overseer" fa="1" cost="2" qualification="Circle Unit attachment" completed="true">
+            <model id="Druid of Orboros Overseer">
+              <basestats name="Overseer" spd="6" str="6" mat="6" rat="4" def="14" arm="13" cmd="9" hitpoints="5" officer="true" pathfinder="true" />
+              <weapons>
+                <melee_weapon name="Voulge" pow="4" p_plus_s="10" magical="true" reach="true"></melee_weapon>
+              </weapons>
+              <capacity title="Attachment [Druids of Orboros]">This attachment can be added to a Druids of Orboros unit.</capacity>
+              <capacity title="Beast Master">This model can force friendly Faction warbeasts in its command range as if it were their controlling warlock.</capacity>
+              <capacity title="Camouflage">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+              <capacity title="Magic Ability [8]"></capacity>
+              <capacity title="● Elemental Protection" type="*Action">Models in this unit gain Immunity: Cold, Immunity: Electricity, and Immunity: Fire for one round.</capacity>
+              <capacity title="● Medicate" type="*Action">RNG 3.  Target friendly Faction warbeast.  If the warbeast is in range, it heals d3 damage points.  warbeast can be affected by Medicate only once per turn.</capacity>
+              <capacity title="● Summon Vortex" type="*Action">Center a 3" AOE cloud effect on this model.  Enemy models suffer -2 to attack rolls while in the AOE.  Summon Vortex lasts for one round.</capacity>
+              <capacity title="● The Devouring" type="*Attack">The Devouring is a RNG 10, AOE 4, POW 8 magic attack.  Add 1 to the POW of the attack for each model in this unit.</capacity>
+              <capacity title="Tactics: Advance Deployment">Models in this unit gain Advance Deployment.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <!--Stoneward and Woldstalkers complete-->
+        <unit id="OU02" name="Stoneward and Woldstalkers" full_name="Druid Stoneward and Woldstalkers" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Circle Unit" fa="2" completed="true">
+          <basestats name="Woldstalker Grunt" spd="6" str="4" mat="0" rat="6" def="12" arm="15" cmd="4" construct="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Arcane Strike" rng="10" rof="1" aoe="-" pow="12" magical="true"></ranged_weapon>
+          </weapons>
+          <model name="Stoneward">
+            <basestats name="Stoneward" spd="6" str="6" mat="6" rat="4" def="14" arm="13" cmd="9" officer="true" pathfinder="true" />
+            <weapons>
+              <melee_weapon name="Voulge" pow="4" p_plus_s="10" magical="true" reach="true"></melee_weapon>
+            </weapons>
+            <capacity title="Magic Ability" />
+            <capacity title="● Concentrated Fire" type="*Action">This activation models in this unit gain a +1 cumulative bonus to ranged damage rolls for each other model in this unit that has hit an enemy model with a ranged attack this activation.</capacity>
+            <capacity title="● Zephyr" type="*Action">Models in this unit that are in formation can immediately advance up to 3".  They cannot be targeted by free strikes during this movement.</capacity>
+            <capacity title="Self-Sacrifice">If this model is disabled by an enemy attack, you can choose a non-disabled model in this unit within 3" of this model to be destroyed.  If another model is destroyed as a result of Self-Sacrifice, this model heals 1 damage point.</capacity>
+            <capacity title="Stone Heart">This model never flees and automatically passes command checks.</capacity>
+          </model>
+        </unit>
+        <!--Ravagers, Chieftain, Shaman complete-->
+        <unit id="OU03" name="Tharn Ravagers" full_name="Tharn Ravagers" base_cost="6" baseCount="4" full_cost="9" fullCount="6" qualification="Circle Unit" fa="2" has_unit_attachment="true" has_weapon_attachment="true" completed="true">
+          <basestats name="Leader and Grunts" spd="6" str="8" mat="7" rat="5" def="13" arm="14" cmd="8" hitpoints="8" fearless="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Tharn Axe" pow="5" p_plus_s="13" reach="true">
+              <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+          <capacity title="Treewalker">This model ignores forests when determining LOS.  While in a forest, this model gains +2 DEF against melee attack rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
+          <unit_attachment id="OA06" name="Tharn Ravager Chieftain" full_name="Tharn Ravager Chieftain" fa="1" cost="2" qualification="Circle Unit attachment" completed="true">
+            <model id="Tharn Ravager Chieftain">
+              <basestats name="Chieftain" spd="6" str="8" mat="8" rat="5" def="13" arm="14" cmd="9" hitpoints="8" fearless="true" officer="true" pathfinder="true" />
+              <weapons>
+                <melee_weapon name="Tharn Axe" pow="5" p_plus_s="13" reach="true">
+                  <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="Attachment [Tharn Ravagers]">This attachment can be added to a Tharn Ravagers unit.</capacity>
+              <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+              <capacity title="Granted: Brutal Charge">While this model is in play, the melee weapons of model in its unit gain Brutal Charge.  (A model gains +2 to charge attack damage rolls when attacking with a weapon with Brutal Charge.)</capacity>
+              <capacity title="Tactics: Advance Deployment">Models in this unit gain Advance Deployment.</capacity>
+              <capacity title="Treewalker">This model ignores forests when determining LOS.  While in a forest, this model gains +2 DEF against melee attack rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="OA02" name="Tharn Ravager Shaman" full_name="Tharn Ravager Shaman" fa="1" cost="2" qualification="Circle Weapon attachment" max_wa="1" completed="true">
+            <model id="Tharn Ravager Shaman">
+              <basestats name="Shaman" spd="6" str="8" mat="7" rat="6" def="13" arm="14" cmd="8" hitpoints="8" fearless="true" pathfinder="true" />
+              <weapons>
+                <ranged_weapon name="Lightning" rng="10" rof="1" aoe="-" pow="13" electricity="true" magical="true">
+                  <capacity title="Electro Leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model.  The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.</capacity>
+                </ranged_weapon>
+                <melee_weapon name="Totem Staff" pow="5" p_plus_s="13" magical="true" reach="true">
+                  <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="Attachment [Tharn Ravagers]">This attachment can be added to a Tharn Ravagers unit.</capacity>
+              <capacity title="Assault">As part of a charge, after moving but before making its charge attacks, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation.  When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty.  If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+              <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+              <capacity title="Treewalker">This model ignores forests when determining LOS.  While in a forest, this model gains +2 DEF against melee attack rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
+            </model>
+          </weapon_attachment>
+        </unit>
+        <!--Reeves and Officer/Standard complete-->
+        <unit id="OU04" name="Reeves of Orboros" full_name="Reeves of Orboros" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Circle Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and grunts" spd="6" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" cra="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Double Crossbow" rng="12" rof="1" aoe="-" pow="10" />
+            <melee_weapon name="Battle Blade" pow="3" p_plus_s="8" />
+          </weapons>
+          <capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="Snap Fire">When this model destroys one or more enemy models with a ranged attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack.  Attacks gained from Snap Fire do not count against a weapon's ROF and cannot generate additional attacks from Snap Fire.</capacity>
+          <unit_attachment id="OA05" name="Reeves of Orboros Chieftain &amp; Standard" full_name="Reeves of Orboros Chieftain &amp; Standard" fa="1" cost="2" qualification="Circle Unit Attachment" completed="true">
+            <model id="Reeves of Orboros Chieftain">
+              <basestats name="Chieftain" spd="6" str="5" mat="6" rat="6" def="13" arm="13" cmd="9" hitpoints="5" cra="true" officer="true" pathfinder="true" />
+              <weapons>
+                <ranged_weapon name="Double Crossbow" rng="12" rof="1" aoe="-" pow="10" />
+                <melee_weapon name="Battle Blade" pow="3" p_plus_s="8" />
+              </weapons>
+              <capacity title="Granted: Swift Hunter">While this model is in play, models in this unit gain Swift Hunter.  (When a model with Swift Hunter destroys an enemy model with a normal ranged attack, immediately after the attack is resolved it can advance up to 2".)</capacity>
+              <capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+              <capacity title="Snap Fire">When this model destroys one or more enemy models with a ranged attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack.  Attacks gained from Snap Fire do not count against a weapon's ROF and cannot generate additional attacks from Snap Fire.</capacity>
+              <capacity title="Tactics: Ranked Attacks">Models in this unit gain Ranked Attacks.  (Friendly Faction models can ignore models with Ranked Attacks when determining LOS.)</capacity>
+            </model>
+            <model id="Reeves of Orboros Standard">
+              <basestats name="Standard Bearer" spd="6" str="5" mat="5" rat="5" def="13" arm="13" cmd="8" pathfinder="true" standard_bearer="true" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <!--Tharn Bloodweavers complete-->
+        <unit id="OU05" name="Tharn Bloodweavers" full_name="Tharn Bloodweavers" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Circle Unit" fa="2" completed="true">
+          <basestats name="Leader and Grunts" spd="7" str="6" mat="6" rat="4" def="14" arm="11" cmd="8" pathfinder="true" stealth="true" />
+          <weapons>
+            <melee_weapon name="Sacral Blade" pow="3" p_plus_s="9" magical="true">
+              <capacity title="Bloodletting">When this model makes an attack with this weapon during its activation, choose one of the following abilities:</capacity>
+              <capacity title="● Blood Burst">When this attack boxes a living enemy model, center a 5" AOE on the boxed model, then remove the model from play.  Enemy models in the AOE are hit and suffer a blast damage roll with a POW equal to the boxed model's STR.</capacity>
+              <capacity title="● Blood Spiller">Gain an additional damage die against a living model.</capacity>
+              <capacity title="● Dispel">When this weapon hits a model/unit, upkeep spells on that model/unit immediately expire.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Gang">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+        </unit>
+        <!--Tharn Wolf Riders complete.-->
+        <unit id="OU06" name="Tharn Wolf Riders" full_name="Tharn Wolf Riders" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="Circle Light Cavalry Unit" fa="1" completed="true">
+          <basestats name="Leader and Grunts" spd="9" str="6" mat="6" rat="6" def="15" arm="14" cmd="8" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Thrown Javelin" rng="7" rof="1" aoe="-" pow="3" weapon_master="true">
+              <capacity title="Luck">This model can reroll missed attack rolls with this weapon.  Each attack roll can be rerolled only once as a result of Luck.</capacity>
+              <capacity title="Thrown">Add this model's STR to the POW of this ranged attack.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Javelin" pow="3" p_plus_s="9" />
+            <mount_weapon name="Mount" pow="12" />
+          </weapons>
+          <capacity title="Assault" type="Order">Affected models must charge or run.  As part of a charge, after moving but before making a charge attack, an affected model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of the affected model's activation.  Models that received this order cannot make combined ranged attacks this activation.  When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty.  If the target is not in melee range after moving, the affected model must still make the ranged attack before its activation ends.</capacity>
+          <capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="Prey">After deployment but before the first player's turn, choose an enemy model/unit to be this model/unit's prey.  This model gains +2 to attack and damage rolls against its prey.  When this model begins its activation within 10" of its prey, it gains +2" movement that activation.  When they prey is destroyed or removed from play, choose another model/unit to be the prey.</capacity>
+        </unit>
+        <!--Tharn Bloodtrackers and Nuala complete-->
+        <unit id="OU07" name="Tharn Bloodtrackers" full_name="Tharn Bloodtrackers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Circle Unit" fa="1" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and Grunts" spd="7" str="6" mat="6" rat="6" def="14" arm="11" cmd="8" advance_deployment="true" pathfinder="true" stealth="true" />
+          <weapons>
+            <ranged_weapon name="Thrown Javelin" rng="7" rof="1" aoe="-" pow="3" weapon_master="true">
+              <capacity title="Thrown">Add this model's STR to the POW of this ranged attack.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Fighting Claw" pow="3" p_plus_s="9" />
+          </weapons>
+          <capacity title="Prey">After deployment but before the first player's turn, choose an enemy model/unit to be this model/unit's prey.  This model gains +2 to attack and damage rolls against its prey.  When this model begins its activation within 10" of its prey, it gains +2" movement that activation.  When they prey is destroyed or removed from play, choose another model/unit to be the prey.</capacity>
+          <unit_attachment id="OA07" name="Nuala the Huntress" full_name="Nuala the Huntress" fa="C" cost="2" qualification="Circle Character Unit attachment" completed="true">
+            <model id="Nuala the Huntress">
+              <basestats name="Nuala" spd="7" str="6" mat="8" rat="7" def="14" arm="11" cmd="9" hitpoints="5" advance_deployment="true" officer="true" pathfinder="true" stealth="true" />
+              <weapons>
+                <ranged_weapon name="Thrown Javelin" rng="7" rof="1" aoe="-" pow="3" weapon_master="true">
+                  <capacity title="Thrown">Add this model's STR to the POW of this ranged attack.</capacity>
+                </ranged_weapon>
+                <melee_weapon name="Fighting Claw" pow="3" p_plus_s="9" />
+              </weapons>
+              <capacity title="Granted: Reform">While this model is in play, after all models in its unit have completed their actions, each can advance up to 3".</capacity>
+              <capacity title="Prey">After deployment but before the first player's turn, choose an enemy model/unit to be this model/unit's prey.  This model gains +2 to attack and damage rolls against its prey.  When this model begins its activation within 10" of its prey, it gains +2" movement that activation.  When they prey is destroyed or removed from play, choose another model/unit to be the prey.</capacity>
+              <capacity title="Tactics: Quick Work">Models in this unit gain Quick Work.  (When a model with Quick Work destroys one or more enemy models with a melee attack during its combat action, immediately after the attack is resolved it can make one normal ranged attack.  Attacks gained from Quick Work do not count against a weapon's ROF.)</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <!--Wolves and chieftain/standard complete-->
+        <unit id="OU08" name="Wolves of Orboros" full_name="Wolves of Orboros" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Circle Unit" fa="3" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and Grunts" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="8" cma="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Cleft Spear" pow="4" p_plus_s="9" reach="true">
+              <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <unit_attachment id="OA03" name="Wolf of Orboros Officer &amp; Standard" full_name="Wolf of Orboros Officer &amp; Standard" fa="1" cost="2" qualification="Circle Unit attachment" completed="true">
+            <model id="Wolf of Orboros Officer">
+              <basestats name="Chieftain" spd="6" str="5" mat="7" rat="4" def="13" arm="13" cmd="8" hitpoints="5" cma="true" officer="true" pathfinder="true" />
+              <weapons>
+                <melee_weapon name="Cleft Spear" pow="4" p_plus_s="9" reach="true">
+                  <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="Attachment [Wolves of Orboros]">This attachment can be added to a Wolves of Orboros unit.</capacity>
+              <capacity title="Power Swell">Once per game during its unit's activation, this model can use Power Swell.  During this activation, models in this unit gain an additional die on melee damage rolls.</capacity>
+              <capacity title="Tactics: Ranked Attacks">Models in this unit gain Ranked Attacks.  (Friendly Faction models can ignore models with Ranked Attacks when determining LOS.)</capacity>
+            </model>
+            <model id="Wolf of Orboros Standard">
+              <basestats name="Standard Bearer" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="8" pathfinder="true" standard_bearer="true" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <!--Shifting Stones and Keeper complete-->
+        <unit id="OU09" name="Shifting Stones" full_name="Shifting Stones" base_cost="2" baseCount="3" full_cost="-" fullCount="-" qualification="Circle Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="4" hitpoints="5" advance_deployment="true" construct="true"></basestats>
+          <weapons />
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved.  Its front arc extends to 360 degrees.  It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Serenity">At the beginning of your Control Phase, before leaching, you can remove 1 fury point from a friendly Faction warbeast within 1" of this model.</capacity>
+          <capacity title="Shifting Powers">Choose one of the following effects at the start of this unit's activation:</capacity>
+          <capacity title="● Healing Field">Models in this unit that are in formation and friendly Faction models within 1" of one or more of them heal d3 damage points.  Roll separately for each model.  Healing Field can heal warbeasts with Construct.</capacity>
+          <capacity title="● Shifting">Place each model in this unit that is in formation anywhere within 8" of its current location.</capacity>
+          <capacity title="● Teleportation">If all three Shifting Stone models in this unit are in formation, place one friendly Faction model whose base is within the triangular area between them anywhere within 8" of its current location.  The placed model must forfeit its movement after being placed this turn.</capacity>
+          <unit_attachment id="OA04" name="Stone Keeper" full_name="Stone Keeper" fa="1" cost="1" qualification="Circle Unit attachment" completed="true">
+            <model>
+              <basestats name="Keeper" spd="6" str="6" mat="5" rat="4" def="14" arm="13" cmd="8" hitpoints="5" advance_deployment="true" officer="true" pathfinder="true" />
+              <weapons>
+                <melee_weapon name="Voulge" pow="4" p_plus_s="10" magical="true" reach="true"></melee_weapon>
+              </weapons>
+              <capacity title="Disorientation">This model cannot advance this turn after being placed by Shifting.</capacity>
+              <capacity title="Granted: Stealth">While this model is in play, models in its unit gain Stealth.</capacity>
+              <capacity title="Magic Ability [6]"></capacity>
+              <capacity title="● Rock Hammer" type="*Attack">Rock Hammer is a RNG 8, AOE 3, POW 14 magic attack.  On a critical hit, models hit are knocked down.</capacity>
+              <capacity title="● Stone Form" type="*Action">For one round or until it advances, this model gains +4 ARM, its base DEF is reduced to 5, and it is automatically hit by melee attacks.</capacity>
+              <capacity title="Stone Heart">This model never flees and automatically passes command checks.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <!--Sentry Stone and Mannikins complete-->
+        <unit id="OU10" name="Sentry Stone &amp; Mannikins" full_name="Sentry Stone &amp; Mannikins" base_cost="3" baseCount="4" full_cost="-" fullCount="-" qualification="Circle Unit" fa="2" completed="true">
+          <basestats name="Mannikin Grunt" spd="6" str="7" mat="5" rat="4" def="12" arm="12" cmd="0" advance_deployment="true" construct="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Splinter Burst" rng="SP8" rof="1" aoe="-" pow="10" magical="true"></ranged_weapon>
+            <melee_weapon name="Claw" count="2" pow="4" p_plus_s="11" />
+          </weapons>
+          <capacity title="Forest Growth" type="*Action">Center a 3" AOE on this model, then remove the model from play.  This AOE is a forest that remains in play for one round.</capacity>
+          <capacity title="Fury Linked">While in formation, this model can spend fury on its commander during its unit's activation to boost attack or damage rolls.</capacity>
+          <model name="Sentry Stone">
+            <basestats name="Sentry Stone" spd="0" str="0" mat="0" rat="0" def="5" arm="18" cmd="6" advance_deployment="true" construct="true" officer="true" stealth="true" />
+            <capacity title="Devour Magic">Once per turn at any time during its unit's activation, this model can use Devour Magic.  When it does, you can remove up to 1 focus or fury point from each enemy model in its command range.  For each focus or fury point removed, place 1 fury point on this model.  A model can have focus or fury removed from it only once per turn as a result of Devour Magic.  This model can have up to 5 fury points at a time.</capacity>
+            <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved.  Its front arc extends to 360 degrees.  It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+            <capacity title="Phase">This model can spend 1 fury point to use Phase once at any time during its unit's activation.  When it does, place this model anywhere within 5" of its current location.</capacity>
+            <capacity title="Wellspring">If there are fewer than 3 fury points on the Sentry Stone at the start of its activation, place 1 fury point on it.  If there are fewer than three Mannikin Grunts in this unit in play at any time during its unit's activation, this model can spend a fury point to put a Mannikin Grunt into play.  Place the Mannikin Grunts in formation.  Mannikin Grunts cannot activate the activation they are put in play.  If this model is destroyed or removed from play, the Mannikin Grunts in its unit are removed from play.</capacity>
+          </model>
+        </unit>
+        <!--Skinwalkers and Alpha complete-->
+        <unit id="OU11" name="Warpborn Skinwalkers" full_name="Warpborn Skinwalkers" base_cost="5" baseCount="3" full_cost="8" fullCount="5" qualification="Circle Unit" fa="2" has_unit_attachment="true" completed="true">
+          <basestats name="Leader and Grunts" spd="5" str="8" mat="6" rat="3" def="12" arm="16" cmd="9" hitpoints="8" cma="true" fearless="true" pathfinder="true" terror="true" />
+          <weapons>
+            <melee_weapon name="Pole Axe" pow="5" p_plus_s="13" reach="true"></melee_weapon>
+          </weapons>
+          <capacity title="Relentless Advance">When a model in this unit is damaged by an enemy attack, models in this unit gain +2 SPD for one round.</capacity>
+          <capacity title="Unyielding">While engaging an enemy model, this model gains +2 ARM.</capacity>
+          <unit_attachment id="OA08" name="Warpborn Alpha" full_name="Warpborn Alpha" fa="1" cost="3" qualification="Circle Unit attachment" completed="true">
+            <model id="Warpborn Alpha">
+              <basestats name="Alpha" spd="5" str="8" mat="7" rat="3" def="12" arm="16" cmd="9" hitpoints="8" cma="true" fearless="true" officer="true" pathfinder="true" terror="true" />
+              <weapons>
+                <melee_weapon name="Pole Axe" pow="5" p_plus_s="13" reach="true"></melee_weapon>
+              </weapons>
+              <capacity title="Attachment [Warpborn Skinwalkers]">This attachment can be added to a Warpborn Skinwalker unit.</capacity>
+              <capacity title="Granted: Blood Drinker">While this model is in play, models in its unit gain Blood Drinker.  (Immediately after a model with Blood Drinker resolves a melee attack in which it destroys one or more living models, it can end its activation to heal d3 damage points.)</capacity>
+              <capacity title="Relentless Advance">When a model in this unit is damaged by an enemy attack, models in this unit gain +2 SPD for one round.</capacity>
+              <capacity title="Retaliatory Strike">When this model is hit by a melee attack made by an enemy model during your opponent's turn, after the attack is resolved this model can immediately make one normal melee attack against that model.  This model can make one Retaliatory Strike per turn.</capacity>
+              <capacity title="Tactics: Rapid Strike">Models in this unit gain Rapid Strike.  (A model with Rapid Strike can make one additional melee attack each combat action.)</capacity>
+              <capacity title="Unyielding">While engaging an enemy model, this model gains +2 ARM.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="OU12" name="Tharn Blood Pack" full_name="Tharn Blood Pack" base_cost="7" baseCount="4" full_cost="10" fullCount="6" qualification="Circle Unit" fa="2" completed="true">
+          <basestats name="Leader and grunts" spd="6" str="8" mat="7" rat="6" def="13" arm="14" cmd="8" hitpoints="8" fearless="true" pathfinder="true"/>
+          <weapons>
+              <ranged_weapon pow="13" aoe="-" rng="12" rof="1" name="Tharn Bow"></ranged_weapon>
+              <melee_weapon p_plus_s="11" pow="3" name="Hunter's Blade"></melee_weapon>
+          </weapons>
+          <capacity title="Assault &amp; Battery" type="Order">Before their normal movement, affected models can make one ranged attack. During their normal movement, affected models must charge or run. The ranged attack is made before declaring a charge target.</capacity>
+          <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+          <capacity title="Treewalker">This model ignores forests when determining LOS.  While in a forest, this model gains +2 DEF against melee attack rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
+        </unit>
+		<unit id="OU13" name="Death Wolves, The" full_name="Death Wolves, The" qualification="Circle Wolves of Orboros Character Unit" fa="C" base_cost="5" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="SKÖLL" spd="6" str="7" mat="7" rat="4" def="14" arm="14" cmd="8" hitpoints="5" fearless="true" officer="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Headsman's Axe" pow="6" p_plus_s="13" reach="true" />
+          </weapons>
+          <capacity title="CANNIBAL MAGIC">This model begins the game with one corpse token. When a damage roll against this model exceeds its ARM, it can spend a corpse token to suffer 1 damage point instead of the total rolled.</capacity>
+          <capacity title="GRANTED: OVERTAKE">While this model is in play, models in its unit gain Overtake. (When a model with Overtake destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved the model can immediately advance up to 1".)</capacity>
+		  <capacity title="HEART EATER">This model gains a corpse token each time it destroys a living enemy model with a melee attack. This model can have up to three corpse tokens at a time. It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+          <model id="Tala">
+            <basestats name="TALA" spd="6" str="6" mat="7" rat="4" def="14" arm="14" cmd="8" hitpoints="5" fearless="true" pathfinder="true" />
+            <weapons>              
+			  <melee_weapon name="Cleft Sword" count="2" pow="5" p_plus_s="11">
+				<capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+			  </melee_weapon>
+            </weapons>
+            <capacity title="CANNIBAL MAGIC">See above.</capacity>
+			<capacity title="GRANTED: PROWL">While this model is in play, models in its unit gain Prowl. (Models with Prowl gain Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.)</capacity>
+			<capacity title="HEART EATER">See above.</capacity>            
+          </model>
+          <model id="Caleb">
+            <basestats name="CALEB" spd="6" str="7" mat="7" rat="6" def="13" arm="15" cmd="9" hitpoints="5" fearless="true" pathfinder="true" />
+            <weapons>
+              <melee_weapon name="Iron Claw" count="2" pow="3" p_plus_s="9" magical="true">
+				<capacity title="COMBO STRIKE (★ATTACK)">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+			  </melee_weapon>
+            </weapons>
+            <capacity title="CANNIBAL MAGIC">See above.</capacity>
+			<capacity title="GRANTED: GANG">While this model is in play, models in this unit gain Gang. (When making a melee attack targeting an enemy model in melee range of another model in its unit, a model with Gang gains +2 to melee attack and melee damage rolls.)</capacity>
+			<capacity title="HEART EATER">See above.</capacity>
+          </model>
+        </unit>
+      </units>
+      <solos>
+        <!--Blackclad Wayfarer complete-->
+        <solo id="OS01" name="Blackclad Wayfarer" full_name="Blackclad Wayfarer" cost="2" qualification="Circle Solo" fa="2" completed="true">
+          <basestats name="Wayfarer" spd="6" str="6" mat="7" rat="4" def="14" arm="13" cmd="9" hitpoints="5" commander="true" immunity_frost="true" immunity_electricity="true" immunity_fire="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Voulge" pow="4" p_plus_s="10" magical="true" reach="true"></melee_weapon>
+          </weapons>
+          <capacity title="Magic Ability [7]"></capacity>
+          <capacity title="● Hunter's Mark" type="*Attack">Hunter's Mark is a RNG 10 magic attack that causes no damage.  Friendly models can charge or make a slam power attack against an enemy model hit by Hunter's Mark without being forced or spending focus.  A friendly model charging an enemy model hit by Hunter's Mark gains +2" of movement.  Hunter's Mark lasts for one turn.</capacity>
+          <capacity title="● Phase Jump" type="*Action">If it is within 2" of a friendly Shifting Stone model, place this model anywhere completely within 12" of its current location.  Otherwise, place it within 2" of a friendly Shifting Stone model anywhere on the table.  After using Phase Jump, this model's activation ends.</capacity>
+          <capacity title="● Stone Spray" type="*Attack">Stone Spray is a RNG SP8, POW 12 magic attack.  On a critical hit, the model hit is knocked down.</capacity>
+        </solo>
+        <!--Lord of the Feast complete-->
+        <solo id="OS02" name="Lord of the Feast" full_name="Lord of the Feast" cost="4" qualification="Circle Character Solo" fa="C" completed="true">
+          <basestats name="Lord of the Feast" spd="5" str="8" mat="8" rat="7" def="12" arm="17" cmd="10" hitpoints="8" advance_deployment="true" fearless="true" pathfinder="true" stealth="true" terror="true" />
+          <weapons>
+            <ranged_weapon name="Raven" rng="10" rof="1" aoe="-" pow="-">
+              <capacity title="Shifter">When this attack hits an enemy model, immediately after the attack is resolved place this model in BRB with the enemy model.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Wurmblade" pow="5" p_plus_s="13" magical="true" reach="true">
+              <capacity title="Blood Reaper">When this model makes its first melee attack during its activation, it makes one melee attack with this weapon against each model in its LOS and this weapon's melee range</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+          <capacity title="Virtuoso">This model can make melee and ranged attacks during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+        </solo>
+        <!--Tharn Ravager White Mane complete-->
+        <solo id="OS03" name="Tharn Ravager White Mane" full_name="Tharn Ravager White Mane" cost="3" qualification="Circle Solo" fa="2" completed="true">
+          <basestats name="Tharn Ravager White Mane" spd="6" str="8" mat="8" rat="3" def="13" arm="14" cmd="8" hitpoints="8" fearless="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Tharn Axe" pow="5" p_plus_s="13" reach="true">
+              <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+          <capacity title="Overtake">When this model destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1".</capacity>
+          <capacity title="Sprint">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+          <capacity title="Tactician [Tharn Ravager]">While in this model's command range, friendly Tharn Ravager models ignore other friendly Tharn Ravager models when determining LOS.  Friendly Tharn Ravager models can advance through other friendly Tharn Ravager models in this model's command range without effect if they have enough movement to move completely past them.</capacity>
+          <capacity title="Treewalker">This model ignores forests when determining LOS.  While in a forest, this model gains +2 DEF against melee attack rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
+        </solo>
+        <!--Wolflord Marraig complete-->
+        <solo id="OS04" name="Wolflord Morraig" full_name="Wolflord Morraig" cost="5" qualification="Circle Character Solo" fa="C" dragoon="true" completed="true">
+          <basestats name="Morraig (mounted)" spd="8" str="7" mat="8" rat="4" def="14" arm="17" cmd="9" hitpoints="10" commander="true" fearless="true" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Cleft Blade" pow="6" p_plus_s="13" reach="true" weapon_master="true"></melee_weapon>
+            <mount_weapon name="Mount" pow="12" />
+          </weapons>
+          <capacity title="Dragoon">While mounted, this model has base SPD 8 and base ARM 17.  While dismounted, it has base SPD 6, base ARM 15.</capacity>
+          <capacity title="Cleave">When this model destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved the model can make one additional melee attack.  This model can gain only one additional attack from Cleave each activation.</capacity>
+          <capacity title="Flank [Wolves of Orboros]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
+          <capacity title="Prowl">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+          <model id="OS04_dismount" name="Wolflord Morraig (dismounted)" full_name="Wolflord Morraig (dismounted)">
+            <basestats name="Morraig (dismounted)" spd="6" str="7" mat="8" rat="4" def="14" arm="15" cmd="9" hitpoints="5" />
+            <weapons>
+              <melee_weapon name="Cleft Blade" pow="6" p_plus_s="13" reach="true" weapon_master="true"></melee_weapon>
+            </weapons>
+            <capacity title="Dragoon">While mounted, this model has base SPD 8 and base ARM 17.  While dismounted, it has base SPD 6, base ARM 15.</capacity>
+            <capacity title="Cleave">When this model destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved the model can make one additional melee attack.  This model can gain only one additional attack from Cleave each activation.</capacity>
+            <capacity title="Flank [Wolves of Orboros]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
+            <capacity title="Prowl">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+          </model>
+        </solo>
+        <!--War Wolf complete-->
+        <solo id="OS05" name="War Wolf" full_name="War Wolf" cost="1" qualification="Circle Solo" fa="3" completed="true">
+          <basestats name="War Wolf" spd="7" str="7" mat="6" rat="0" def="13" arm="12" cmd="7" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Bite" pow="4" p_plus_s="11" />
+          </weapons>
+          <capacity title="Gang Fighter">When making a melee attack targeting an enemy model in melee range of another friendly Faction warrior model, this model gains +2 to melee attack and melee damage rolls.</capacity>
+          <capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="Sic 'Em [Reeve of Orboros]">Once per turn if this model is not in melee, when a friendly Reeve of Orboros hits an enemy model with an attack, immediately after the attack is resolved this model can charge the model hit.  This model's charge attack roll is boosted.</capacity>
+        </solo>
+        <!--Druid Wilder complete-->
+        <solo id="OS06" name="Druid Wilder" full_name="Druid Wilder" cost="2" qualification="Circle Solo" fa="1" completed="true">
+          <basestats name="Wilder" spd="6" str="5" mat="5" rat="4" def="14" arm="11" cmd="7" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Staff" pow="3" p_plus_s="8" magical="true" reach="true"></melee_weapon>
+          </weapons>
+          <capacity title="Attached">Before the start of the game, attach this model to a friendly Faction warlock for the rest of the game.  Each warlock can have only one model attached to it.</capacity>
+          <capacity title="Herding">While this model is in its warlock's control area, the warlock can force, leach, reave, heal, and transfer damage to the warbeasts in its battlegroup that are in this model's command range.</capacity>
+          <capacity title="Magic Ability [6]"></capacity>
+          <capacity title="● Condition" type="*Action">RNG3. Target friendly Faction warbeast. If the warbeast is in range, place any number of fury points on or remove any number of fury points from it.</capacity>
+          <capacity title="● Spirit Tap" type="*Action">This model immediately casts the animus of a friendly Faction warbeast in its command range as a spell.  This model cannot cast an animus with a RNG of SELF.  This model must make a special attack to cast an offensive spell.  Other spells are cast by making a special action.</capacity>
+        </solo>
+        <!--Reeve Hunter complete-->
+        <solo id="OS07" name="Reeve Hunter" full_name="Reeve Hunter" cost="2" qualification="Circle Reeve of Orboros Solo" fa="2" completed="true">
+          <basestats name="Hunter" spd="6" str="6" mat="6" rat="7" def="13" arm="13" cmd="8" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Double Crossbow" rng="12" rof="1" aoe="-" pow="10" />
+            <melee_weapon name="Battle Blade" pow="3" p_plus_s="9" />
+            <melee_weapon name="Cleft Sword" pow="5" p_plus_s="11">
+              <capacity title="Powerful Charge">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="Camouflage">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <capacity title="Hunter">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="Leadership [Reeves of Orboros]">While in this model's command range, friendly Reeves of Orboros models gain Camouflage.</capacity>
+          <capacity title="Quick Work">When this model destroys one or more enemy models with a melee attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack.  Attacks gained from Quick Work do not count against a weapon's ROF.</capacity>
+          <capacity title="Snap Fire">When this model destroys one or more enemy models with a ranged attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack.  Attacks gained from Snap Fire do not count against a weapon's ROF and cannot generate additional attacks from Snap Fire.</capacity>
+          <capacity title="Swift Hunter">When this model destroys an enemy model with a normal ranged attack, immediately after the attack is resolved it can advance up to 2".</capacity>
+        </solo>
+        <solo id="OS08" name="Gallows Grove" full_name="Gallows Grove" cost="1" qualification="Circle Solo" fa="4" completed="true">
+          <basestats name="Gallows Grove" spd="0" str="0" mat="0" rat="0" def="5" arm="16" cmd="3" hitpoints="5" advance_deployment="true"/>
+          <weapons />
+          <capacity title="Channeler [friendly Faction warlock]">While this model is not engaged and is in a friendly Faction warlock's control area, the warlock can channel spells trough it.</capacity>
+          <capacity title="Entropic Force">While in this models command range, enemy models lose Tough, cannot heal or be healed, and cannot transfer damage.</capacity>
+          <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extend to 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="Prowl">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
+          <capacity title="Strange Growth">Once per turn during its activation, place this model anywhere within 5" of its current location. This model cannot be placed except as a result of Strange Growth.</capacity>
+        </solo>
+        <solo id="OS09" name="Una the Falconer" full_name="Una the Falconer" cost="3" qualification="Circle Character Solo" fa="C" completed="true">
+          <basestats name="Una the Falconer" spd="6" str="5" mat="5" rat="6" def="15" arm="13" cmd="8" hitpoints="5" lesser_warlock="true" focus="4" fearless="true" pathfinder="true"/>
+          <weapons>
+              <ranged_weapon pow="10" aoe="-" rng="CTRL" rof="3" name="Bird of Prey">
+                  <capacity title="Black Penny">This attack ignores the firing into melee penalty.</capacity>
+              </ranged_weapon>
+              <melee_weapon p_plus_s="9" pow="4" name="Talonstrike" reach="true" magical="true"></melee_weapon>
+          </weapons>
+          <spell name="Dog Pile" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Warbeasts in this model's battlegroup can charge or make slam power attacks against target enemy model without being forced and regardless of LOS.  When a warbeast does, it gains +2 movement and gains Pathfinder while resolving that charge or slam.</spell>
+          <spell name="WATCHER" cost="3" rng="SELF" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement within 6" of this model, choose a warjack in this model's battlegroup that is in it's control area. That warjack can immediately make a full advance and then can make one normal melee or ranged attack targeting the enemy model. The attack and damage rolls againt that model are boosted. After the attack is resolved Watcher expires.</spell>
+          <capacity title="Bird's Eye">While in this model's control area, models in its battlegroup extend their front arcs 360 degrees and when determining LOS ignore cloud effects, forest terrain, and intervening models.</capacity>
+          <capacity title="Lesser Warlock">This model is not a warlock but has the following warlock special rules : Battlegroup Commander, Control Area, Damage Transferance, Forcing, Fury Manipulation, Healing, and Spellcaster</capacity>
+          <capacity title="Specialization [Warbeasts with Flight]">The only warbeasts that can be included in this model's battlegroup are warbeasts with Flight. Reduce the cost of warbeasts with Flight in this model's battlegroup by 1.</capacity>
+          <restricted_to id="OB13"/>
+          <restricted_to id="OB16"/>
+          <restricted_to id="OB19"/>
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>

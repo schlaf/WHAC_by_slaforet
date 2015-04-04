@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/spacerImage"
         android:text="Leader &amp; grunts"
-        android:textColor="@android:color/primary_text_dark"
+        android:textColor="@android:color/primary_text_light"
         android:textSize="@dimen/textview_small_height"
         android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
         android:layout_alignParentBottom="false"
         android:layout_below="@id/tvTitle"
         android:text="def 12 / arm 18"
-        android:textColor="@android:color/primary_text_dark"
+        android:textColor="@android:color/primary_text_light"
         android:textSize="@dimen/textview_small_height"
         android:textStyle="bold" />
 

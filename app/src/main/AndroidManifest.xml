@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schlaf.steam"
-    android:versionCode="28"
-    android:versionName="1.5.4" >
+    android:versionCode="29"
+    android:versionName="1.6.0" >
     
 <!--
 1.0.3 - 
@@ -128,7 +128,7 @@ corrected/completed vindictus tier
 missing reflex servitors
 eradicator point value
 corrected SR2014 destruction map
-menoth theme forces can use the indictor
+inapp_menoth theme forces can use the indictor
 
 
 
@@ -192,12 +192,31 @@ Completed Minions, Mercs and Retribution theme forces
 Allow importing files with .whac.xml extension (due to navigator appending .xml on download)
 Corrected boneswarm for WrongEye
 
+1.6.0
+Add <b>specialists</b>
+New design (Android Material Design) : colors, icons, navigation.
+Add imported files version checking (= compare local imported version with latest internet published version)
+Corrected "save battle result" bug (was not saving the result)
+Corrected most crash (when reloading app after long pause)
+Better selection/display of SR scenarii
+Corrected UA bug (UA were not saved in army list)
+Correct puppet master contract (could not take solos)
+Add Ruin (and Ruin in theme forces)
+Add Devil's Shadow Mutineers
+Add Goreshade3 theme force
+Add Force Wall theme force
+Add Issyria theme force
+Add Kaya2 - Soothe the save beast theme force
+Add Butcher3 - Blood in the snow theme force
+Add Reznik2 - Weighed and Found Wanting theme force
+Corrected Shadows of Retribution theme force
+
 
  -->    
 
     <uses-sdk
         android:minSdkVersion="7"
-        android:targetSdkVersion="20" />
+        android:targetSdkVersion="22" />
 
     <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true"  android:xlargeScreens="true" android:anyDensity="true" android:resizeable="true"/>
     
@@ -225,17 +244,32 @@ Corrected boneswarm for WrongEye
         
         <meta-data 
       android:name="android.app.default_searchable" 
-      android:value=".activities.search.SearchableActivity)" /> 
-        
+      android:value=".activities.search.SearchableActivity)" />
+
+        <activity
+            android:name=".activities.PreStartActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".activities.StartActivity"
             android:label="@string/app_name"
             android:theme="@style/WhacTheme" >
+            <!--
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
             
             <intent-filter>
 		        <action android:name="android.intent.action.VIEW" />

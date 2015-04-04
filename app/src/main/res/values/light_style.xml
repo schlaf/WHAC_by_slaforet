@@ -29,7 +29,7 @@
     
     
   <style name="lightUI">
-     <item name="android:textColor">@color/White</item>
+     <item name="android:textColor">@color/Black</item>
      <!-- <item name="android:background">@color/AndroidBlue</item> -->
   </style>
 
@@ -45,7 +45,7 @@
   
   <style name="lightUI.main">
     <!-- <item name="android:background">@color/Black</item>  -->
-    <item name="android:textColor">@color/White</item>
+    <item name="android:textColor">@color/TextBaseColor</item>
     <item name="android:textSize">@dimen/textview_small_height</item>
   </style>
   
@@ -63,7 +63,7 @@
   
   <style name="lightUI.spell">
     <!-- <item name="android:background">@color/Black</item>  -->
-    <item name="android:textColor">@color/White</item>
+    <item name="android:textColor">@color/Black</item>
   </style>
   
   <style name="lightUI.spell.caracs">
@@ -89,7 +89,7 @@
   </style>
   
   <style name="lightUI.mainValues">
-    <item name="android:textColor">@color/White</item>
+    <item name="android:textColor">@color/TextBaseColor</item>
   </style>
   
   <style name="lightUI.mainValues.text">
@@ -108,7 +108,6 @@
   
   
   <style name="heavyUI">
-      <item name="android:textColor">@color/White</item>
-      <item name="android:background">@drawable/texture_card_title</item>
+      <item name="android:textColor">@color/TextBaseColor</item>
   </style>
 </resources>

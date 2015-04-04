@@ -29,7 +29,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/centerItem"
-            android:drawableLeft="@drawable/edit_list_icon"
+            android:drawableLeft="@drawable/ic_edit"
             android:onClick="loadArmy"
             android:text="@string/load_army" />
         
@@ -41,7 +41,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignTop="@id/button_load_army"
             android:layout_toLeftOf="@id/centerItem"
-            android:drawableLeft="@drawable/ic_input_add"
+            android:drawableLeft="@drawable/ic_plus"
             android:onClick="startArmy"
             android:text="@string/build_army" />
         
@@ -52,8 +52,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/button_load_army"
-            android:drawableLeft="@drawable/battle_icon"
-            android:drawableRight="@drawable/battle_icon"
+            android:drawableLeft="@drawable/ic_battle"
+            android:drawableRight="@drawable/ic_battle"
             android:minHeight="72dip"
             android:onClick="startBattle"
             android:text="@string/launch_battle" />
@@ -65,7 +65,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@id/button_launch_battle"
             android:layout_toLeftOf="@id/centerItem"
-            android:drawableLeft="@drawable/stat_card"
+            android:drawableLeft="@drawable/ic_cards"
             android:onClick="cardLibrary"
             android:text="@string/card_library" />
         
@@ -76,7 +76,7 @@
             android:layout_alignParentLeft="false"
             android:layout_below="@id/button_launch_battle"
             android:layout_toRightOf="@id/centerItem"
-            android:drawableLeft="@drawable/steamroller"
+            android:drawableLeft="@drawable/ic_steamroller"
             android:onClick="scenarioLibrary"
             android:text="@string/steamroller" />
 
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@id/button_scenario_library"
-            android:drawableLeft="@drawable/ic_menu_preferences"
+            android:drawableLeft="@drawable/ic_customize"
             android:onClick="preferences"
             android:text="@string/preferences" />
 
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true" 
             android:layout_below="@+id/button_preferences" 
-            android:drawableLeft="@drawable/import_content"
+            android:drawableLeft="@drawable/ic_import"
             android:onClick="importDataFile"
             android:text="@string/import_data" />
 
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/button_battle_results"
-            android:drawableLeft="@drawable/collection"
+            android:drawableLeft="@drawable/ic_collection"
             android:onClick="collection"
             android:text="@string/my_collection" />
 
@@ -138,7 +138,7 @@
             android:layout_alignParentLeft="false"
             android:layout_below="@id/button_collection"
             android:layout_toRightOf="@id/centerItem"
-            android:drawableLeft="@drawable/donate"
+            android:drawableLeft="@drawable/ic_donate"
             android:onClick="donate"
             android:text="@string/donate" />
 

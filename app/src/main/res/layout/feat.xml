@@ -41,7 +41,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@id/TextView1"
-        android:background="@drawable/gradient_line_blue" >
+        android:background="@drawable/gradient_line_primary_color" >
 
     </FrameLayout>
     

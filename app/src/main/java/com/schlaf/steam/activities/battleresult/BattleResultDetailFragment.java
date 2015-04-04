@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.schlaf.steam.R;
 import com.schlaf.steam.activities.battle.BattleResult;
+import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.data.FactionNamesEnum;
 import com.schlaf.steam.storage.StorageManager;
 
@@ -57,6 +58,12 @@ public class BattleResultDetailFragment extends Fragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		Log.d(TAG, "onActivityCreated");
 		super.onActivityCreated(savedInstanceState);
+
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            return;
+        }
+
+
 		currentResult = ((ViewBattleResultActivityInterface) getActivity()).getBattleResult();
 		fillResult( ((ViewBattleResultActivityInterface) getActivity()).getBattleResult());
 	}
@@ -102,7 +109,7 @@ public class BattleResultDetailFragment extends Fragment {
 	    	imageViewVictory.setImageResource(R.drawable.defeat);
 	    }
 	    
-	    date.setText(DateFormat.getDateTimeInstance().format(result.getBattleDate()));
+	    date.setText(result.getBattleDate());
 	    clock.setText(result.getClockType());
 	    scenario.setText(result.getScenario());
 	    victory.setText(result.getVictoryCondition());

@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
+  <armies>
+    <army faction="faction_menoth" name="Menoth" version="forum_menoth_001">
+      <warcasters>
+        <warcaster id="Pw01" name="High Exemplar Kreoss" generation="P" full_name="High Exemplar Kreoss" qualification="Protectorate Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+          <basestats name="KREOSS" spd="5" str="6" mat="7" rat="4" def="14" arm="15" cmd="8" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Spellbreaker" pow="8" p_plus_s="14" magical="true" reach="true">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+              <capacity title="DISPEL">When this weapon hits a model/unit, upkeep spells on the model/unit hit immediately expire.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Menoth's Wrath">Enemy models currently in Kreoss's control area are knocked down.</feat>
+          <spell name="CLEANSING FIRE" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">Cleansing Fire causes fire damage. On a critical hit, models hit suffer the Fire continuous effect.</spell>
+          <spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and ARM.</spell>
+          <spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">Immolation causes fire damage. On a critical hit, the model hit suffers the Fire continuous effect.</spell>
+          <spell name="LAMENTATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Enemy models pay double the focus or fury point cost to cast or upkeep spells while in this model's control area.</spell>
+          <spell name="PURIFICATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Continuous effects, animi, and upkeep spells in this model's control area immediately expire.</spell>
+        </warcaster>
+        <warcaster id="Px01" name="Grand Exemplar Kreoss" generation="E" full_name="Grand Exemplar Kreoss" qualification="Protectorate Epic Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
+          <basestats name="KREOSS" spd="5" str="6" mat="7" rat="4" def="14" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Justifier" pow="8" p_plus_s="14" magical="true" reach="true">
+              <capacity title="ARMOR PIERCING (★ATTACK)" type="">When calculating damage from this attack, halve the base ARM stats of models hit that have medium or larger bases. This attack gains +2 to damage rolls against models with small bases.</capacity>
+              <capacity title="SMITE (★ATTACK)" type="">Instead of making a normal damage roll, the model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model's current STR plus the POW of this weapon. The POW of collateral damage from this slam is equal to this model's STR.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Strength of Arms">When a friendly Faction model makes a melee attack against an enemy model while the enemy model is in Kreoss' control area, the attack automatically hits. While in Kreoss' control area, friendly Faction models can make one additional melee attack during their combat actions. Strength of Arms lasts for one turn.</feat>
+          <spell name="CASTIGATE" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">For one round, enemy models lose the Arc Node advantage while in this model's control area.</spell>
+          <spell name="CHASTEN" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">Enemy upkeep spells and animi on target model/unit damaged by Chasten expire.</spell>
+          <spell name="CLEANSING FIRE" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">Cleansing Fire causes fire damage. On a critical hit, models hit suffer the Fire continuous effect.</spell>
+          <spell name="INVIOLABLE RESOLVE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM and Fearless</spell>
+          <spell name="SACROSANCT" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target a friendly Faction model/unit. When an enemy non-warcaster, non-warlock warrior model destroys one or more affected models with an attack, immediately after the attack is resolved the attacking model is knocked down.</spell>
+          <capacity title="AEGIS">This model is immune to continuous effects.</capacity>
+          <capacity title="ELITE CADRE [EXEMPLAR]">Friendly Exemplar models gain Aegis.</capacity>
+          <capacity title="IMPERISHABLE CONVICTION">When a friendly Faction model in its control area is destroyed by an enemy attack, this model heals 1 damage point.</capacity>
+        </warcaster>
+        <warcaster id="Pz01" name="Intercessor Kreoss" generation="EE" full_name="Intercessor Kreoss" qualification="Protectorate Cavalry Epic Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+          <basestats name="KREOSS" spd="8" str="6" mat="8" rat="4" def="14" arm="17" cmd="10" hitpoints="18" />
+          <weapons>
+            <melee_weapon name="Conviction" pow="8" p_plus_s="14" magical="true" reach="true">
+              <capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+              <capacity title="BLESSED" type="">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12" />
+          </weapons>
+          <feat title="Invocations of the True Law">Enemy upkeep spells and animi in Kreoss' control area immediately expire. Then Kreoss can immediately cast each upkeep spells on his card without spending focus points.</feat>
+          <spell name="CREVASSE" cost="3" rng="8" aoe="-" pow="12" up="NO" off="YES">If Crevasse boxes its original target, you can make a SP 6 attack using the boxed model as the attack's point of origin. Models hit suffer a POW 12 magic damage roll. Models boxed by Crevasse are removed from play.</spell>
+          <spell name="DEATH SENTENCE" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">When a friendly Faction model misses target enemy model/unit with an attack, it can reroll the attack roll. Each attack roll can be rerolled only once as a result of Death Sentence.</spell>
+          <spell name="FORCE HAMMER" cost="4" rng="10" aoe="-" pow="12" up="NO" off="YES">Instead of suffering a normal damage roll, a non-incorporeal model Force Hammer hits is slammed d6" directly away from the spell's point of origin regardless of its base size and suffers a POW 12 damage roll. Collateral damage from this slam is POW 12.</spell>
+          <spell name="HOLY WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and cannot be targeted by enemy spells or animi.</spell>
+          <spell name="IGNITE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack damage rolls. Affected models gain Critical Fire on their normal melee attacks.</spell>
+          <spell name="WARPATH" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">When a friendly Faction model in this model's control area destroys one or more enemy models with a melee or ranged attack during its activation, immediately after the attack is resolved, one warjack in this model's battlegroup that is in its control area can advance up to 3". A warjack can advance only once per turn as a result of Warpath.</spell>
+          <capacity title="IMPERISHABLE CONVICTION">When a friendly Faction model in its control area is destroyed by an enemy attack, this model heals 1 damage point.</capacity>
+          <capacity title="ELITE CADRE [EXEMPLAR VENGERS[" type="">Friendly Exemplar Venger models gain Divine Inspiration.</capacity>
+          <capacity title="DIVINE INSPIRATION" type="">This model gains an additional die on melee attack and melee damage rolls. Discard the lowest die of each roll.</capacity>
+        </warcaster>
+        <warcaster id="Pw02" name="The High Reclaimer" generation="P" full_name="The High Reclaimer" qualification="Protectorate Warcaster" focus="5" warjack_points="6" fa="C" completed="true">
+          <basestats name="HIGH RECLAIMER" spd="5" str="7" mat="6" rat="4" def="14" arm="15" cmd="8" hitpoints="18" terror="true" />
+          <weapons>
+            <melee_weapon name="Cremator" pow="7" p_plus_s="14" magical="true" reach="true" continuous_fire="true" />
+          </weapons>
+          <feat title="Resurrection">Return d3+3 friendly destroyed Faction troopers to play. Place those models in formation in their original units completely in the High Reclaimer's control area.</feat>
+          <spell name="ASHES TO ASHES" cost="4" rng="8" aoe="*" pow="10" up="NO" off="YES">If target model is hit, it and the d6 nearest enemy models within 5" of it suffer a POW 10 fire damage roll.</spell>
+          <spell name="BURNING ASH" cost="1" rng="CTRL" aoe="3" pow="-" up="NO" off="NO">Place a 3" cloud effect anywhere within this model's control area. While in the AOE, living enemy models suffer –2 to attack rolls. The AOE remains in play for one round.</spell>
+          <spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">Immolation causes fire damage. On a critical hit, the model hit suffers the Fire continuous effect.</spell>
+          <spell name="SACRIFICIAL LAMB" cost="1" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Remove one friendly living Faction model in this model's control area from play to allocate 1 focus point to each warjack in this model's battlegroup that is currently in its control area. Sacrificial Lamb can be cast only once per turn.</spell>
+          <capacity title="OATH OF SILENCE">This model does not have the Commander advantage.</capacity>
+          <capacity title="RECLAIM">This model gains one soul token for each friendly living Faction warrior model destroyed by a continuous effect, an enemy attack, or collateral damage from an enemy attack in its control area. During your Control Phase, after this model replenishes its focus but before it allocates focus, replace each soul token with 1 focus point.</capacity>
+          <capacity title="SOULSTORM">While this model has one or more soul tokens, enemy models entering or ending their activation within 2" of it immediately suffer 1 damage point.</capacity>
+        </warcaster>
+        <warcaster id="Px02" name="Testament of Menoth" generation="E" full_name="Testament of Menoth" qualification="Protectorate Epic High Reclaimer Warcaster" focus="5" warjack_points="6" fa="C" completed="true">
+          <basestats name="TESTAMENT" spd="5" str="7" mat="6" rat="4" def="14" arm="16" cmd="8" hitpoints="18" terror="true" />
+          <weapons>
+            <melee_weapon name="Requiem" pow="7" p_plus_s="14" magical="true" reach="true" continuous_fire="true" />
+          </weapons>
+          <feat title="Essence of Dust">Friendly Faction models currently in the Testament's control area gain Incorporeal. When declaring charges and slam power attacks, an affected model can ignore other models when determining LOS. Essence of Dust lasts for one turn.</feat>
+          <spell name="ASHEN VEIL" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains concealment. Living enemy models suffer –2 to attack rolls while within 2" of an affected model.</spell>
+          <spell name="DUST TO DUST" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When a warrior model is boxed by Dust to Dust, center a 3" AOE cloud effect on it, then remove the model from play. The AOE remains in play for one round.</spell>
+          <spell name="HALLOWED AVENGER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When an enemy attack destroys or removes from play one or more friendly Faction models within 5" of target warjack in this model's battelgroup, after the attack is resolved the affected warjack can charge an enemy model, then Hallowed Avenger expires.</spell>
+          <spell name="REVIVE" cost="3" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Return one destroyed friendly Faction Grunt to play with one unmarked damage box. It must be placed in this model's control area in formation and within 3" of another model in its unit.</spell>
+          <capacity title="OATH OF SILENCE">This model does not have the Commander advantage.</capacity>
+          <capacity title="THE OMEGAS">Enemy models cannot gain soul tokens from models destroyed in this model's control area.</capacity>
+          <capacity title="RECLAIM">This model gains one soul token for each friendly living Faction warrior model destroyed by a continuous effect, an enemy attack, or collateral damage from an enemy attack in its control area. uring your Control Phase, after this model replenishes its focus but before it allocates focus, replace each soul token with 1 focus point.</capacity>
+          <capacity title="URCAEN'S GATE">Once per turn during your Control Phase, after replenishing focus but before focus allocation, this model can spend one soul token to be placed anywhere completely within 3" of its current location.</capacity>
+        </warcaster>
+        <warcaster id="Pw03" name="Grand Scrutator Severius" generation="P" full_name="Grand Scrutator Severius" qualification="Protectorate Warcaster" focus="8" warjack_points="6" fa="C" completed="true">
+          <basestats name="SEVERIUS" spd="5" str="5" mat="4" rat="5" def="14" arm="14" cmd="9" hitpoints="16" />
+          <weapons>
+            <melee_weapon name="Staff of Judgment" pow="8" p_plus_s="13" magical="true" reach="true" />
+          </weapons>
+          <feat title="Divine Might">For one round, enemy models cannot cast spells and lose the Arc Node advantage while in Severius' control area. While in Severius control area, enemy models with the Focus Manipulation ability do not replenish focus points during their controller's next turn.</feat>
+          <spell name="ASHES TO ASHES" cost="4" rng="8" aoe="*" pow="10" up="NO" off="YES">If target model is hit, it and the d6 nearest enemy models within 5" of it suffer a POW 10 fire damage roll.</spell>
+          <spell name="DEATH SENTENCE" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">When a friendly Faction model misses target enemy model/unit with an attack, it can reroll the attack roll. Each attack roll can be rerolled only once as a result of Death Sentence.</spell>
+          <spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and ARM.</spell>
+          <spell name="EYE OF MENOTH" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, friendly Faction models gain +1 to attack and damage rolls.</spell>
+          <spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">Immolation causes fire damage. On a critical hit, the model hit suffers the Fire continuous effect.</spell>
+          <spell name="VISION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">The next time target friendly Faction model is directly hit by an attack, it suffers no damage roll from the attack, then Vision expires.</spell>
+          <capacity title="CONVERT (★ACTION)" type="">RNG CMD. Target living enemy non-character trooper model. If the model is in range, it must pass a command check or it becomes a friendly Faction solo under your control for the rest of the game. The converted model cannot activate this turn.</capacity>
+          <capacity title="SACRED WARD">This model cannot be targeted by enemy spells.</capacity>
+        </warcaster>
+        <warcaster id="Px03" name="Hierarch Severius" generation="E" full_name="Hierarch Severius" qualification="Protectorate Epic Warcaster" focus="8" warjack_points="6" fa="C" completed="true">
+          <basestats name="SEVERIUS" spd="5" str="5" mat="4" rat="6" def="14" arm="14" cmd="10" hitpoints="16" />
+          <weapons>
+            <ranged_weapon name="REIGN OF FIRE" rng="8" rof="1" aoe="-" pow="10" magical="true" fire="true">
+              <capacity title="SPIRITUAL CHANNELING">This attack can be channeled through an arc node. If a model cannot channel spells, it also cannot channel attacks as a result of Spiritual Channeling.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Staff of Authority" pow="8" p_plus_s="13" magical="true" reach="true" />            
+          </weapons>
+          <feat title="Fires of Communion">Either you take control of d3+3 living enemy Grunts currently in Severius' control area, or d3 +3 undead models currently in Severius' control area suffer a POW 12 fire damage roll. Decide before rolling. You choose the models affected. Controlled models become friendly solos for one turn.</feat>
+          <spell name="AWARENESS" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, the front arcs of models in its battlegroup are extended to 360° and when determining LOS those models ignore cloud effects, forests, and intervening models. Awareness lasts for one round.</spell>
+          <spell name="CREATOR'S WRATH" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">This model gains an additional die on melee attack and melee damage rolls. When making a melee attack, it ignores spell effects that add to the target's DEF or ARM.</spell>
+          <spell name="FEAR OF GOD" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Target enemy model/unit cannot give orders, receive orders, or make special attacks.</spell>
+          <spell name="HEX BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">Enemy upkeep spells and animi on the model/unit directly hit by Hex Blast immediately expire.</spell>
+          <spell name="HOLY WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and cannot be targeted by enemy spells or animi.</spell>
+          <spell name="INFLUENCE" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-warcaster, non-warlock warrior model. The model immediately makes one normal melee attack, then Influence expires.</spell>
+          <capacity title="ADMONISHER">When this model directly hits an enemy model with a melee or ranged attack, the d3 nearest enemy models within 5" of the model hit suffer a POW 10 magical damage roll.</capacity>
+          <capacity title="WARJACK BOND">One non-character warjack in Severius' battlegroup can begin the game bonded to him. Once per turn, when the warjack is directly hit by an attack it can immeiately spend 1 focus point not to suffer a damage roll from the attack.</capacity>
+        </warcaster>
+        <warcaster id="Pw04" name="Feora, Priestess of the Flame" generation="P" full_name="Feora, Priestess of the Flame" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="FEORA" spd="6" str="7" mat="6" rat="5" def="15" arm="17" cmd="9" hitpoints="16" immunity_fire="true" />
+          <weapons>
+            <ranged_weapon name="Flame Thrower " count="2" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
+			<melee_weapon name="Truth" pow="6" p_plus_s="13" magical="true" critical_fire="true" />
+            <melee_weapon name="Consequence" pow="6" p_plus_s="13" magical="true" critical_fire="true" />            
+          </weapons>
+          <feat title="Scorched Earth">Enemy models currently in Feora's control area suffer the Fire continuous effect.</feat>
+          <spell name="BLAZING EFFIGY" cost="4" rng="8" aoe="*" pow="14" up="NO" off="NO">Enemy models within 2" of target friendly Faction warjack suffer a POW 14 fire damage roll.</spell>
+          <spell name="ENGINE OF DESTRUCTION" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains +2 SPD, +4 STR, and +4 MAT for one round.</spell>
+          <spell name="HEX HAMMER" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">When an enemy model casts a spell or uses an animus while in this model's control area, after the spell or animus has been cast or used the enemy model suffers d3 damage points.</spell>
+          <spell name="IGNITE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack damage rolls. Affected models gain Critical Fire on their normal melee attacks.</spell>
+          <spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">Immolation causes fire damage. On a critical hit, the model hit suffer the Fire continuous effect</spell>
+          <spell name="WALL OF FIRE" cost="2" rng="CTRL" aoe="WALL" pow="-" up="YES" off="NO">Place the wall template anywhere completely in this model's control area where it does not touch a model's base, an obstruction, or an obstacle. When a model enters or ends its activation in the wall area, it suffers an unboostable POW 12 fire damage roll and the Fire continuous effect. Models within the wall template gain concealment.</spell>
+          <capacity title="INSPIRATION [FLAMEGUARD]">Friendly Flameguard models/units in this model's command range never flee and immediately rally.</capacity>
+        </warcaster>
+        <warcaster id="Px04" name="Feora, Protector of the Flame" generation="E" full_name="Feora, Protector of the Flame" qualification="Protectorate Epic Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="FEORA" spd="6" str="7" mat="7" rat="5" def="15" arm="17" cmd="9" hitpoints="16" immunity_fire="true" />
+          <weapons>
+            <ranged_weapon name="Heavy Flame Thrower" count="0" rng="SP10" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
+			<melee_weapon name="Apocalypse" pow="7" p_plus_s="14" magical="true" reach="true" critical_fire="true" />            
+          </weapons>
+          <feat title="Wild Fire">Feora gains 1 focus point for each enemy model currently in her control area suffering the Fire continuous effect and can immediately allocate that focus to warjacks in her battlegroup in her control area. Feora can then remove the Fire continuous effects from any number of models in her control area. For each Fire continuous effect Feora removes, choose one model in her control area to suffer the Fire continuous effect.</feat>
+          <spell name="CLEANSING FIRE" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">Cleansing Fire causes fire damage. On a critical hit, models hit suffer the Fire continuous effect.</spell>
+          <spell name="CONVECTION" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">When Convection destroys a living enemy model, allocate 1 focus point to a warjack in this model’s battlegroup that is in its control area.</spell>
+          <spell name="ESCORT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Warjacks in this model's battlegroup beginning their activations in its control area gain +2" movement. This model gains +2 ARM while one or more warjacks in its battlegroup are within 3" of it.</spell>
+          <spell name="FIRE STEP" cost="2" rng="SELF" aoe="*" pow="13" up="NO" off="NO">Enemy models within 2" of this model suffer a POW 13 fire damage roll. After the damage is resolved, place this model completely within 3" of its current location. Fire Step can be cast only once per activation.</spell>
+          <spell name="IGNITE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack damage rolls. Affected models gain Critical Fire on their normal melee attacks.</spell>
+          <capacity title="CAUSTIC PRESENCE [FIRE]">Fire continuous effects that affect enemy models in this model's control area cannot expire.</capacity>
+          <capacity title="INSPIRATION [FLAMEGUARD]">Friendly Flameguard models/units in this model's command range never flee and immediately rally.</capacity>
+          <capacity title="RIGHTEOUS FLAMES">An enemy model that ends its activation within 2" of this model suffers the Fire continuous effect.</capacity>
+          <capacity title="WARJACK BOND">One non-character warjack in Feora's battlegroup begins the game bonded to her. When a model is hit by a ranged or melee attack made by the warjack while the warjack is in her control area, the model hit suffers the Fire continuous effect.</capacity>
+        </warcaster>
+        <warcaster id="PW05" name="High Allegiant Amon Ad-Raza" generation="P" full_name="High Allegiant Amon Ad-Raza" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="AMON" spd="6" str="8" mat="7" rat="4" def="16" arm="14" cmd="8" hitpoints="17" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Oblivion" pow="6" p_plus_s="14" magical="true" reach="true">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+              <capacity title="SMITE (★ATTACK)" type="">Instead of making a normal damage roll, the model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model's current STR plus the POW of this weapon. The POW of collateral damage from this slam is equal to this model's STR.</capacity>
+              <capacity title="THRESHER (★ATTACK)" type="">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Union">While in Amon's control area, warjacks in Amon's battlegroup gain Perfect Balance. For each focus point Amon spends during his activation, allocate 1 focus point to a warjack in his battlegroup that was in his control area when he spent the focus. Union lasts for one round.</feat>
+          <spell name="CONVECTION" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">When Convection destroys a living enemy model, allocate 1 focus point to a warjack in this model’s battlegroup that is in its control area.</spell>
+          <spell name="FLAGELLATION" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">When making melee attacks, this model ignores both focus points overboosting the target's Power Field and spell effects that add to its DEF or ARM. Models damaged by this model lose Tough and cannot be healed for one round.</spell>
+          <spell name="MOBILITY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Models in this model's battlegroup currently in its control area gain +2 SPD and Pathfinder for one turn.</spell>
+          <spell name="SYNERGY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in its control area, models in this model's battlegroup gain a +1 cumulative bonus on melee attack and melee damage rolls for each other model in the battlegroup that hit an enemy model with a melee attack this turn while in this model's control area.</spell>
+          <capacity title="GROUNDWORK" type="">While knocked down, this model is not automatically hit by melee attacks and its DEF is not reduced.</capacity>
+          <capacity title="PERFECT BALANCE" type="">This model cannot be targeted by combined melee attacks, combined ranged attacks, or free strikes. Models do not gain back strike bonuses against this model. When knocked down, this model can stand up during its activation without forfeiting its movement or action if it is able to forfeit its movement or action to stand up.</capacity>
+        </warcaster>
+        <warcaster id="PW06" name="The Harbinger of Menoth" generation="P" full_name="The Harbinger of Menoth" qualification="Protectorate Warcaster" focus="10" warjack_points="5" fa="C" completed="true">
+          <basestats name="HARBINGER" spd="6" str="4" mat="3" rat="1" def="14" arm="14" cmd="10" hitpoints="17" />
+          <weapons>
+            <melee_weapon name="Providence" pow="8" p_plus_s="12" magical="true">
+              <capacity title="GUIDED">Attacks made with this weapon automatically hit.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Godhead">For one round, advancing enemy models that end their movement in the Harbinger's control area closer to her than they began suffer an unboostable POW 14 fire damage roll.</feat>
+          <spell name="CATACLYSM" cost="4" rng="8" aoe="5" pow="20" up="NO" off="YES">Target enemy model is automatically hit. Reduce the base POW of Cataclysm by 1 for each full inch between the target and this model. Blast damage affects only enemy models. Cataclysm has no effect if the target model is out of range.</spell>
+          <spell name="CRUSADER'S CALL" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly faction models beginning a charge while in this model's control area this turn gain +2" movement.</spell>
+          <spell name="FEAR OF GOD" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Target enemy model/unit cannot give orders, receive orders, or make special attacks.</spell>
+          <spell name="GUIDED HAND" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains an additional die on each model's first melee attack roll this turn.</spell>
+          <spell name="PURIFICATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Continuous effects, animi, and upkeep spells in this model's control area immediately expire.</spell>
+          <capacity title="DIVINITY">This model cannot be knocked down and never suffers Blind. Its front arc extends to 360 degrees.</capacity>
+          <capacity title="AWE">While in this model's command range, living enemy models suffer –2 to attack rolls.</capacity>
+          <capacity title="MARTYRDOM">When a friendly Faction non-warcaster warrior model in this model's command range is disabled, this model can suffer d3 damage points to heal 1 damage point on the disabled model.</capacity>
+        </warcaster>
+        <warcaster id="PW07" name="High Executioner Servath Reznik" generation="P" full_name="High Executioner Servath Reznik" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="REZNIK" spd="5" str="7" mat="7" rat="4" def="14" arm="17" cmd="7" hitpoints="17" terror="true" />
+          <weapons>
+            <melee_weapon name="Confessor" pow="7" p_plus_s="14" magical="true" reach="true">
+              <capacity title="PURGATION">Gain an additional die on attack and damage rolls with this weapon against models with an enemy upkeep spell on them.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Judgment Day">Enemy models currently in Reznik's control area lose all focus and fury points. While in Reznik's control area, enemy models cannot upkeep spells or be allocated focus and those casting spells suffer the Fire continuous effect. Judgment Day lasts for one round.</feat>
+          <spell name="ENGINE OF DESTRUCTION" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains +2 SPD, +4 STR, and +4 MAT for one round.</spell>
+          <spell name="HEX BLAST" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">Enemy upkeep spells and animi on the model/unit directly hit by Hex Blast immediately expire.</spell>
+          <spell name="IGNITE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains +2 to melee attack damage rolls. Affected models gain Critical Fire on their normal melee attacks.</spell>
+          <spell name="IRON AGGRESSION" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack can run, charge, or make slam or trample power attacks without spending focus and gains boosted melee attack rolls.</spell>
+          <spell name="PERDITION" cost="2" rng="10" aoe="-" pow="10" up="NO" off="YES">When an enemy model is damaged by Perdition, immediately after the attack is resolved one warjack in this model's battlegroup that is currently in this model's control area can make a full advance toward the nearest enemy model. A model can advance as a result of Perdition only once per turn.</spell>
+          <capacity title="EXCRUCIATOR">Once per turn during this model's activation, when it boxes a living enemy warrior model with a melee attack you can place a Wrack into play within 3" of this model. If you do, remove the boxed model from play.</capacity>
+          <capacity title="WITCH HOUND">When one or more models in this model's battlegroup that are in its control area are hit by an enemy magic attack, immediately after the attack is resolved one model in this model's battlegroup that is in its control area can make a full advance and make one normal attack.</capacity>
+        </warcaster>
+        <warcaster id="Px07" name="Servath Reznik, Wrath of Ages" generation="E" full_name="Servath Reznik, Wrath of Ages" qualification="Protectorate Epic Cavalry Battle Engine Warcaster" focus="7" warjack_points="4" fa="C" completed="true">
+          <basestats name="REZNIK" spd="7" str="7" mat="7" rat="4" def="13" arm="17" cmd="7" hitpoints="20" terror="true" />
+          <weapons>
+            <melee_weapon name="Verdict" pow="6" p_plus_s="13" magical="true" reach="true">
+              <capacity title="FLAME BURST">When this model boxes an enemy model with this weapon, enemy models within 1" of the boxed model suffer the Fire continuous effect.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="12" />
+          </weapons>
+          <feat title="Purge the Unbelievers">While within Reznik's control area, enemy models suffer –2 DEF. When an enemy model is boxed by a melee or ranged attack in Reznik's control area, center a 4" AOE on the boxed model, then remove that model from play. Enemy models in the AOE are hit and suffer an unboostable POW 12 fire damage roll. Purge the Unbelievers lasts for one turn.</feat>
+          <spell name="CREATOR'S WRATH" cost="2" rng="SELF" aoe="-" pow="-" up="YES" off="NO">This model gains an additional die on melee attack and melee damage rolls. When making a melee attack, it ignores spell effects that add to the target's DEF or ARM.</spell>
+          <spell name="DEATH MARCH" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly unit gains +2 MAT and Vengeance. (During your Maintenance Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.)</spell>
+          <spell name="IRON AGGRESSION" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack can run, charge, or make slam or trample power attacks without spending focus and gains boosted melee attack rolls.</spell>
+          <spell name="LAMENTATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Enemy models pay double the focus or fury point cost to cast or upkeep spells while in this model's control area.</spell>
+          <spell name="THE FLESH IS WEAK" cost="3" rng="8" aoe="4" pow="12" up="NO" off="YES">Living and Undead models hit by The Flesh is Weak cannot run or charge for one round.</spell>
+          <capacity title="LAMENTATION OF SUFFERING">While this model has 1 or more focus points, non-magical ranged attacks targeting it automatically miss.</capacity>
+          <capacity title="TAKE DOWN">Models disabled by a melee attack made by this model cannot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.</capacity>
+        </warcaster>
+        <warcaster id="PW08" name="Vice Scrutator Vindictus" generation="P" full_name="Vice Scrutator Vindictus" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="VINDICTUS" spd="6" str="6" mat="7" rat="4" def="15" arm="16" cmd="9" hitpoints="16" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Lawgiver" pow="6" p_plus_s="12" magical="true">
+              <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Solace" pow="6" p_plus_s="12" magical="true">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+            </melee_weapon>
+          </weapons>
+          <feat title="Penitence">When one or more friendly Faction models are damaged by an enemy attack while in Vindictus' control area, immediately after the attack is resolved the attacker suffers 1 damage point. Penitence lasts for one round.</feat>
+          <spell name="DEFENDER'S WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 DEF and ARM.</spell>
+          <spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">Immolation causes fire damage. On a critical hit, the model hit suffers the Fire continuous effect.</spell>
+          <spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+          <spell name="SACRIFICIAL LAMB" cost="1" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Remove one friendly living Faction model in this model's control area from play to allocate 1 focus point to each warjack in this model's battlegroup that is currently in its control area. Sacrificial Lamb can be cast only once per turn.</spell>
+          <spell name="TRUE PATH" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction warrior models/units beginning their activations in this model's control area gain +2" movement and Pathfinder during their activations. True Path lasts for one turn.</spell>
+          <capacity title="DEATH TOLL [HOLY ZEALOT]" type="">When this model destroys a living enemy model with a melee attack, after the attack is resolved you can add one Grunt to a friendly Holy Zealot unit in this model's command range. The Grunt must be placed in formation and within 3" of this model. The destroyed model is removed from play but does not provide a soul or corpse token.</capacity>
+          <capacity title="SACRIFICIAL PAWN [HOLY ZEALOT]" type="">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Holy Zealot model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+        </warcaster>
+        <warcaster id="PW09" name="Thyra, Flame of Sorrow" generation="P" full_name="Thyra, Flame of Sorrow" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="THYRA" spd="7" str="6" mat="8" rat="4" def="17" arm="14" cmd="9" hitpoints="15" />
+          <weapons>
+            <melee_weapon name="Grief" pow="5" p_plus_s="11" magical="true" weapon_master="true" />
+            <melee_weapon name="Lament" pow="5" p_plus_s="11" magical="true" weapon_master="true" />
+          </weapons>
+          <feat title="Shadows of Urcaen">Immediately place Thyra anywhere completely within 2" of her current location. When a friendly Faction model activates in Thyra's control area, at the start of its activation you can place it anywhere completely within 2" of its current location. Shadows of Urcaen lasts for one turn.</feat>
+          <spell name="CARNAGE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction models gain +2 to melee attack rolls against enemy models in this model's control area. Carnage lasts for one turn.</spell>
+          <spell name="OCCULTATION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Stealth.</spell>
+          <spell name="PURSUIT" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">If target enemy model/unit advances during its normal movement, immediately after ending this movement one model in this model's battlegroup that is in its control area can make a full advance.</spell>
+          <spell name="SILENCE OF DEATH" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit's melee weapons gain Grievous Wounds. (When a model is hit by a weapon with Grievous Wounds, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.)</spell>
+          <spell name="STRANGLEHOLD" cost="2" rng="10" aoe="-" pow="11" up="NO" off="YES">A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.</spell>
+          <capacity title="ACROBATICS" type="">This model can advance through other models if it has enough movement to move completely past their bases. This model cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="ELITE CADRE [DAUGHTERS OF THE FLAME]" type="">Friendly Daughters of the Flame models gain Vengeance. (During your Maintenance Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.)</capacity>
+          <capacity title="OVERTAKE" type="">When this model destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1".</capacity>
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="PJ01" name="Redeemer" full_name="Redeemer" qualification="Protectorate Light Warjack" fa="U" cost="6" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="REDEEMER" spd="5" str="9" mat="6" rat="5" def="12" arm="17" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Skyhammer" rng="16" rof="3" aoe="3" pow="12" location="L">
+              <capacity title="IN‌ACCURATE">This model suffers –4 on attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Battle Mace" pow="4" p_plus_s="13" location="R" />            
+          </weapons>
+        </warjack>
+        <warjack id="PJ02" name="Repenter" full_name="Repenter" qualification="Protectorate Light Warjack" fa="U" cost="4" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="REPENTER" spd="5" str="9" mat="6" rat="5" def="12" arm="17" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Flame Thrower" rng="SP8" rof="1" aoe="-" pow="12" location="L" fire="true" continuous_fire="true" />
+			<melee_weapon name="War Flail" pow="4" p_plus_s="13" location="R">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+            </melee_weapon>            
+          </weapons>
+        </warjack>
+        <warjack id="PJ03" name="Revenger" full_name="Revenger" qualification="Protectorate Light Warjack" fa="U" cost="6" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" completed="true">
+          <basestats name="REVENGER" spd="5" str="9" mat="6" rat="5" def="12" arm="17" cmd="0" arc_node="true" />
+          <weapons>
+            <melee_weapon name="Repulsor Shield" pow="1" p_plus_s="10" shield="true" location="L">
+              <capacity title="REPEL">When this model hits with this weapon during its activation, the model hit is pushed 1" directly away from this model. When this model is hit with a melee attack made by a model in its front arc, after the attack is resolved the attacking model is pushed 1" directly away from this model. This model loses Repel while this weapon system is crippled or locked.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Halberd" pow="4" p_plus_s="13" reach="true" location="R">
+              <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="PJ04" name="Devout" full_name="Devout" qualification="Protectorate Light Warjack" fa="U" cost="5" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="DEVOUT" spd="5" str="9" mat="6" rat="4" def="13" arm="16" cmd="0" />
+          <weapons>
+            <melee_weapon name="Great Shield" pow="1" p_plus_s="10" shield="true" location="L" />
+            <melee_weapon name="Pole Axe" pow="4" p_plus_s="13" reach="true" location="R" />
+          </weapons>
+          <capacity title="DEFENSIVE STRIKE" type="">Once per turn, when an enemy model advances into and ends its movement in this model's melee range, this model can immediately make one normal melee attack against it.</capacity>
+          <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+          <capacity title="SPELL BARRIER" type="">Anytime during its activation while B2B with its controlling warcaster, this model can spend 1 focus point to use Spell Barrier. If it does, the warcaster cannot be targeted by enemy spells for one round.</capacity>
+        </warjack>
+        <warjack id="PJ05" name="Dervish" full_name="Dervish" qualification="Protectorate Light Warjack" fa="U" cost="4" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="DERVISH" spd="5" str="9" mat="6" rat="4" def="13" arm="16" cmd="0" />
+          <weapons>
+            <melee_weapon name="Sword" pow="4" p_plus_s="13" location="R">
+              <capacity title="COMBO STRIKE (★ATTACK)" type="">Make a melee attack. Instead of making a normal damage roll, the POW of the damage roll is equal to this model's STR plus twice the POW of this weapon.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Sword" pow="4" p_plus_s="13" location="L">
+              <capacity title="COMBO STRIKE (★ATTACK)" type="">See above.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="SIDE STEP" type="">When this model hits an enemy model with an initial attack or a special attack that is not a power attack, it can advance up to 2" after the attack is resolved. This model cannot be targeted by free strikes during this movement.</capacity>
+        </warjack>
+        <warjack id="PJ06" name="Blessing of Vengeance" full_name="Blessing of Vengeance" qualification="Protectorate Character Light Warjack" fa="C" cost="7" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" completed="true">
+          <basestats name="BLESSING OF VENGEANCE" spd="5" str="9" mat="7" rat="5" def="12" arm="17" cmd="0" arc_node="true" />
+          <weapons>
+            <melee_weapon name="Repulsor Shield" pow="1" p_plus_s="10" shield="true" location="L">
+              <capacity title="REPEL">When this model hits with this weapon during its activation, the model hit is pushed 1" directly away from this model. When this model is hit with a melee attack made by a model in its front arc, after the attack is resolved the attacking model is pushed 1" directly away from this model. This model loses Repel while this weapon system is crippled or locked.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Halberd" pow="4" p_plus_s="13" reach="true" location="R">
+              <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="AFFINITY [SEVERIUS]" type="">Once per turn, when Severius channels a spell through this model, he gains +2 to that spell's damage rolls.</capacity>
+          <capacity title="DEFENSIVE STRIKE" type="">Once per turn, when an enemy model advances into and ends its movement in this model's melee range, this model can immediately make one normal melee attack against it.</capacity>
+          <capacity title="IMPRINT: BUSHWHACK" type="">During its activation, this model can spend 1 focus point to gain Bushwhack this activation. (During its activation, a model with Bushwhack can make its combat action before its normal movement. If it does, it must make a full advance as its normal movement this activation.)</capacity>
+        </warjack>
+        <warjack id="PJ07" name="Crusader" full_name="Crusader" qualification="Protectorate Heavy Warjack" fa="U" cost="6" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="CRUSADER" spd="4" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="14" open_fist="true" location="L" />
+            <melee_weapon name="Inferno Mace" pow="7" p_plus_s="18" critical_fire="true" location="R" />
+          </weapons>
+        </warjack>
+        <warjack id="PJ08" name="Vanquisher" full_name="Vanquisher" qualification="Protectorate Heavy Warjack" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="VANQUISHER" spd="4" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Blazing Star" pow="5" p_plus_s="16" location="R">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+              <capacity title="THRESHER (★ATTACK)" type="">This model makes one melee attack with this weapon against each models in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+            <ranged_weapon name="Flame Belcher" rng="10" rof="1" aoe="4" pow="14" fire="true" continuous_fire="true" location="L" />
+          </weapons>
+        </warjack>
+        <warjack id="PJ09" name="Guardian" full_name="Guardian" qualification="Protectorate Heavy Warjack" fa="U" cost="9" damage_grid="...................LAAR.LLMCRRxMMCCx" completed="true">
+          <basestats name="GUARDIAN" spd="4" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" arc_node="true" />
+          <weapons>
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="14" open_fist="true" location="L" />
+            <melee_weapon name="Flame Pike" pow="6" p_plus_s="17" reach="true" location="R">
+              <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+              <capacity title="CRITICAL PITCH">On a critical hit, instead of rolling damage normally you can choose to have this model throw the model hit. Treat the throw as if this model had hit with and passed the STR check of a throw power attack. The thrown model suffers a damage roll with POW equal to this model's STR plus the POW of the weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+            </melee_weapon>
+          </weapons>
+        </warjack>
+        <warjack id="PJ10" name="Reckoner" full_name="Reckoner" qualification="Protectorate Heavy Warjack" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="RECKONER" spd="5" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Condemner" rng="12" rof="1" aoe="-" pow="13" fire="true" critical_fire="true" location="L">
+              <capacity title="FLARE">Models hit by this weapon suffer –2 DEF for one round.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Consecrator" pow="6" p_plus_s="17" reach="true" location="R" />            
+          </weapons>
+          <capacity title="ASHEN VEIL" type="">This model has concealment. living enemy models suffer –2 to attack rolls while within 2" of this model.</capacity>
+          <capacity title="ASSAULT" type="">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+        </warjack>
+        <warjack id="PJ11" name="Avatar of Menoth" full_name="Avatar of Menoth" qualification="Protectorate Character Heavy Warjack" fa="C" cost="11" damage_grid="x....x..................LLM.RRxLMMRx" completed="true">
+          <basestats name="AVATAR" spd="5" str="12" mat="8" rat="6" def="10" arm="19" cmd="0" terror="true" />
+          <weapons>
+            <melee_weapon name="Divine Shield" pow="1" p_plus_s="13" magical="true" shield="true" location="L" />
+            <melee_weapon name="Burning Wrath" pow="7" p_plus_s="19" magical="true" reach="true" location="R">
+              <capacity title="FLAME BURST">When this model boxes an enemy model with this weapon, enemy models within 1" of the boxed model suffer the Fire continuous effect.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="HOLY VESSEL">This model cannot be part of a battlegroup, does not have a functional cortex, and cannot be allocated focus. During the focus allocation step of your Control Phase, this model receives d3+1 focus points.</capacity>
+          <capacity title="MENOTH'S GAZE">During its activation, this model can spend 1 focus point to use Menoth's Gaze. For one round, enemy models that begin their activation within 8" of this model can advance only toward this model.</capacity>
+          <capacity title="SACRED WARD">This model cannot be targeted by enemy spells.</capacity>
+        </warjack>
+        <warjack id="PJ12" name="Castigator" full_name="Castigator" qualification="Protectorate Heavy Warjack" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="CASTIGATOR" spd="5" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" immunity_fire="true" />
+          <weapons>
+            <melee_weapon name="Flame Fist" pow="5" p_plus_s="16" open_fist="true" continuous_fire="true" location="R" />
+            <melee_weapon name="Flame Fist" pow="5" p_plus_s="16" open_fist="true" continuous_fire="true" location="L" />
+          </weapons>
+          <capacity title="COMBUSTION (★ATTACK)" type="">Models within 2" of this model suffer a POW 12 fire damage roll and the Fire continuous effect. This model can make additional melee attacks after making this special attack.</capacity>
+        </warjack>
+        <warjack id="PJ13" name="Fire of Salvation" full_name="Fire of Salvation" qualification="Protectorate Character Heavy Warjack" fa="C" cost="9" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="FIRE OF SALVATION" spd="5" str="11" mat="7" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Absolver" pow="7" p_plus_s="18" continuous_fire="true" location="R" />
+            <melee_weapon name="Open Fist" pow="3" count="0" p_plus_s="14" open_fist="true" location="L" />
+          </weapons>
+          <capacity title="AFFINITY [KREOSS]" type="">While this model is in Kreoss' control area, its weapons gain Dispel. (When a weapon with Dispel hits a model/unit, upkeep spells on that model/unit immediately expire.)</capacity>
+          <capacity title="IMPRINT: HOLY FERVOR" type="">During its activation, this model can spend 1 focus point to use Holy Fervor. This activation, this model's melee attack rolls are boosted. When it destroys one or more enemy models with an attack with one of its melee weapons this activation, immediately after the attack is resolved this model can make one additional melee attack.</capacity>
+          <capacity title="RIGHTEOUS VENGEANCE" type="">If one or more friendly Faction warrior models were destroyed or removed from play by enemy attacks while within 5" of this model during your opponent's last turn, after resolving continuous effects during your Maintenance Phase, this model can make a full advance followed by one normal melee attack.</capacity>
+        </warjack>
+        <warjack id="PJ14" name="Templar" full_name="Templar" qualification="Protectorate Heavy Warjack" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="TEMPLAR" spd="4" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Flail" pow="6" p_plus_s="17" reach="true" location="R">
+              <capacity title="BEAT BACK">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+              <capacity title="CHAIN WEAPON" type="">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Shield" pow="1" count="0" p_plus_s="12" shield="true" location="L" />
+          </weapons>
+        </warjack>
+        <warjack id="PJ15" name="Vigilant" full_name="Vigilant" qualification="Protectorate Light Warjack" fa="U" cost="4" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="VIGILANT" spd="5" str="9" mat="6" rat="5" def="12" arm="17" cmd="0" />
+          <weapons>
+            <melee_weapon name="Shield Fist" pow="2" p_plus_s="11" shield="true" open_fist="true" location="R" />
+            <melee_weapon name="Shield Fist" pow="2" p_plus_s="11" shield="true" open_fist="true" location="L" />
+          </weapons>
+          <capacity title="GIRDED" type="">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
+        </warjack>
+        <warjack id="PJ16" name="Scourge of Heresy" full_name="Scourge of Heresy" qualification="Protectorate Character Heavy Warjack" fa="C" cost="9" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="SCOURGE OF HERESY" spd="4" str="11" mat="7" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Punisher" pow="7" p_plus_s="18" continuous_fire="true" location="L">
+              <capacity title="PURGATION">Gain an additional die on attack and damage rolls with this weapon against models with an enemy upkeep spell on them.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Blazing Star " pow="5" p_plus_s="16" location="R">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+              <capacity title="THRESHER (★ATTACK)" type="">This model makes one melee attack with this weapon against each model in its LOS and this weapon's melee range.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="ARCANE VORTEX">This model can immediately negate any spell that targets it or a model within 3" of it by spending 1 focus point before the RNG of the spell is measured. The negated spell does not take effect, but its COST remains spent.</capacity>
+          <capacity title="IMPRINT: ARCANE ASSASSIN">During its activation, this model can spend 1 focus point to gain Arcane Assasin for one turn. (When making attacks, a model with Arcane Assassin ignores focus points overboosting the target's Power Field and spell effects adding to its ARM or DEF.)</capacity>
+          <capacity title="SPECIAL ISSUE [REZNIK]">This model can be included in Reznik's theme forces. It can also be bonded to Reznik.</capacity>
+        </warjack>
+        <warjack id="PJ17" name="Sanctifier" full_name="Sanctifier" qualification="Protectorate Heavy Warjack" fa="U" cost="9" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="SANCTIFIER" spd="5" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="14" open_fist="true" location="L" />
+            <melee_weapon name="Grave Maker" pow="6" p_plus_s="17" magical="true" reach="true" location="R" />
+          </weapons>
+          <capacity title="CENOTAPH">This model gains one soul token for each friendly living Faction warrior model destroyed within 5" by a continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to three soul tokens at a time. During your Control Phase, you can remove all soul tokens from this model to allocate it 1 focus point for each token removed.</capacity>
+          <capacity title="EXORCIST">While within 5" of this model, enemy models lose Incorporeal.</capacity>
+        </warjack>
+        <warjack id="PJ18" name="Blood of Martyrs" full_name="Blood of Martyrs" qualification="Protectorate Character Heavy Warjack" fa="C" cost="9" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="BLOOD OF MARTYRS" spd="5" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Blade" pow="5" p_plus_s="16" location="L" />
+            <melee_weapon name="Blade" pow="5" p_plus_s="16" location="R" />
+          </weapons>
+          <capacity title="AFFINITY [THYRA]">While in Thyra's control area, this model gains Side Step. (When a model with Side Step hits an enemy model with an initial melee attack or a special attack that is not a power attack, it can advance up to 2" after the attack is resolved. It cannot be targeted by free strikes during this movement.)</capacity>
+          <capacity title="HAND OF VENGEANCE">When one or more friendly Faction warrior models are destroyed or removed from play by enemy attacks while within 5" of this model, this model gains +2 on attack and damage rolls for one round.</capacity>
+          <capacity title="PARRY">This model cannot be targeted by free strikes.</capacity>
+        </warjack>
+        <warjack id="PJ20" name="Indictor" full_name="Indictor" qualification="Protectorate Heavy Warjack" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="INDICTOR" spd="4" str="11" mat="6" rat="5" def="10" arm="19" cmd="0" />
+          <weapons>
+            <melee_weapon name="Shield" pow="1" p_plus_s="12" shield="true" location="L" />
+            <melee_weapon name="Banisher" pow="6" p_plus_s="17" magical="true" location="R">
+              <capacity title="BLESSED" type="">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="CONSECRATION" type="">While within 5" of this model, enemy models cannot cast, channel, or upkeep spells.</capacity>
+          <capacity title="SACRED WARD" type="">This model cannot be targeted by enemy spells.</capacity>
+        </warjack>
+      </warjacks>
+      <colossals>
+        <colossal id="PJ19" name="Judicator" full_name="Judicator" qualification="Protectorate Colossal" fa="2" cost="18" damage_grid_left="xxxx..xx........SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx....xxSS....CSRR..CCCCRRMMMMCR" completed="true">
+          <basestats name="JUDICATOR" spd="4" str="17" mat="6" rat="5" def="8" arm="19" cmd="0" />
+          <weapons>
+            <ranged_weapon name="Rocket Pod" rng="14" rof="1" aoe="3" pow="14" location="L">
+              <capacity title="SECONDARY BLAST">After determining the point of impact, roll deviation for one additional 3" AOE from that point. A model hit by the additional AOE suffers a POW 7 blast damage roll.</capacity>
+              <capacity title="INACCURATE" type="">This model suffers –4 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+            <ranged_weapon name="Rocket Pod" rng="14" rof="1" aoe="3" pow="14" location="R">
+              <capacity title="SECONDARY BLAST">See above.</capacity>
+			  <capacity title="INACCURATE">See above.</capacity>              
+            </ranged_weapon>
+            <ranged_weapon name="Flame Thrower" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" location="L" />
+            <ranged_weapon name="Flame Thrower" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" location="R" />			
+			<melee_weapon name="Fist" pow="3" p_plus_s="20" open_fist="true" location="L" />
+            <melee_weapon name="Fist" pow="3" p_plus_s="20" open_fist="true" location="R" />            
+          </weapons>
+          <capacity title="RELIQUARY">This model is allocated 1 additional focus point during your Control Phase. The S boxes of this model's damage grid represent its Reliquary system. While its Reliquary system is crippled, this model loses the benefits of Reliquary.</capacity>
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="PE01" name="Vessel of Judgement" full_name="Vessel of Judgement" qualification="Protectorate Battle Engine" fa="2" cost="9" completed="true">
+          <basestats name="VESSEL OF JUDGMENT" spd="5" str="10" mat="0" rat="6" def="10" arm="20" cmd="10" hitpoints="24" construct="true" immunity_fire="true" />
+          <weapons>
+            <ranged_weapon name="Divine Wrath" rng="12" rof="1" aoe="-" pow="15" magical="true" />
+          </weapons>
+          <capacity title="ADMONISHER">When this model directly hits an enemy model with a melee or ranged attack, the d3 nearest enemy models within 5" of the model hit suffer a POW 10 magical damage roll.</capacity>
+          <capacity title="DESTRUCTIVE POWER">During this activation, this model can suffer 1 damage point to boost an attack or damage roll. This damage is suffered before the roll is made.</capacity>
+          <capacity title="HOLY RELIQUARY">This model suffers d3 damage points each time it activates one of the following miracles. This damage is suffered before the Miracle takes effect.</capacity>
+          <capacity title="● CLEANSING AURA">This model can activate this miracle once per turn at anytime during its activation. When this miracle is activated, animi and confinuous effects on models/units in this model's command range immediately expire.</capacity>
+          <capacity title="● DOORS OF JUDGMENT">Once per turn when a friendly living Faction warrior model in this model's command range is boxed by an enemy attack at anytime other than when it is advancing, this model can use this miracle. The boxed model can immediately make a full advance and can make one normal attack, then the boxed model is removed from play. The boxed model cannot be targeted by free strikes during this movement.</capacity>
+          <capacity title="● ERUPTION OF FAITH">This model can activate this miracle once per turn at anytime during its activation. When this miracle is activated, enemy models currently within 2" of this model suffer the Fire continuous effect and are pushed 4" directly away from this model in the order you choose.</capacity>
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="PU01" name="Choir of Menoth" full_name="Choir of Menoth" qualification="Protectorate Unit" fa="3" base_cost="2" full_cost="3" baseCount="4" fullCount="6" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="4" mat="4" rat="4" def="12" arm="12" cmd="8" />
+          <weapons>
+            <melee_weapon name="Battle Staff" pow="2" p_plus_s="6" reach="true" />
+          </weapons>
+          <capacity title="HYMN">RNG 3. Target friendly Faction warjack. When a model in this unit performs a Hymn special action, choose a hymn. Each activation, all models in this unit perform the same one. If the target warjack is in range, it is affected by the hymn. While affected by a hymn, a warjack cannot be affected by other hymn.</capacity>
+          <capacity title="● BATTLE (★ACTION)" type="">The warjack gains +2 to attack and damage rolls for one turn.</capacity>
+          <capacity title="● PASSAGE (★ACTION)" type="">The warjack cannot be targeted by non-magical ranged attacks. Passage lasts for one round.</capacity>
+          <capacity title="● SHIELDING (★ACTION)" type="">The warjack cannot be targeted by enemy spells. Shielding lasts for one round.</capacity>
+        </unit>
+        <unit id="PU02" name="Deliverers" full_name="Deliverers" qualification="Protectorate Unit" fa="1" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="4" mat="4" rat="5" def="12" arm="11" cmd="7" />
+          <weapons>
+            <ranged_weapon name="Skyhammer" rng="16" rof="1" aoe="3" pow="12">
+              <capacity title="INACCURATE">This model suffers –4 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sword" pow="3" p_plus_s="7" />            
+          </weapons>
+          <capacity title="ROCKET VOLLEY">Instead of making ranged attack separately, two or more models in this unit can make a combined ranged attack. Do not add a damage bonus for the number of models participating in the combined ranged attack. If 3–5 models participate in the attack, it has base AOE 4" and base POW 14. If 6 or more models particpate in the attack, it has base AOE 5" and base POW 16.</capacity>
+        </unit>
+        <unit id="PU03" name="Holy Zealots" full_name="Holy Zealots" qualification="Protectorate Unit" fa="3" base_cost="4" full_cost="6" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="4" mat="4" rat="4" def="12" arm="12" cmd="8" />
+          <weapons>
+            <ranged_weapon name="Fire Bomb" rng="5" rof="1" aoe="3" pow="12" fire="true" critical_fire="true" />
+			<melee_weapon name="Mace" pow="3" p_plus_s="7" />            
+          </weapons>
+          <capacity title="PRAYERS">The Leader of this unit can recite one of the following prayers each turn anytime during its unit's activation. Each model in this unit gains the benefits listed.</capacity>
+          <capacity title="● FERVOR">Affected models gain +2 to attack and damage rolls this activation.</capacity>
+          <capacity title="● WARDING">Affected models cannot be targeted by enemy spells for one round.</capacity>
+          <unit_attachment id="PA01" name="Holy Zealot Monolith Bearer" full_name="Holy Zealot Monolith Bearer" qualification="Protectorate Holy Zealot Unit attachment" fa="1" cost="2" completed="true">
+            <model id="Holy Zealot Monolith Bearer" name="Monolith Bearer" full_name="Monolith Bearer" qualification="Protectorate Holy Zealot Unit Attachment">
+              <basestats name="BEARER" spd="6" str="6" mat="5" rat="5" def="12" arm="12" cmd="9" hitpoints="5" officer="true" />
+              <weapons>
+                <melee_weapon name="Mace" pow="3" p_plus_s="9" />
+              </weapons>              
+              <capacity title="GRANTED: FEARLESS">While this model is in play, models in its unit gain Fearless.</capacity>
+              <capacity title="GREATER DESTINY">Once per game during its unit's activation, this model can use Greater Destiny. For one round, models in this unit in formation do not suffer damage except from spells and feats.</capacity>
+              <capacity title="HOLY MONOLITH">When one or more models in this units are destroyed by an enemy attack, after the attack is resolved models in this unit gain +4 ARM for one turn.</capacity>
+			  <capacity title="ATTACHMENT [HOLY ZEALOTS]">This attachment can be added to a Holy Zealots unit.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU04" name="Knights Exemplar" full_name="Knights Exemplar" qualification="Protectorate Unit" fa="3" base_cost="5" full_cost="-" baseCount="6" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="7" rat="4" def="12" arm="15" cmd="9" fearless="true" />
+          <weapons>
+            <melee_weapon name="Relic Blade" pow="5" p_plus_s="11" magical="true" weapon_master="true" />
+          </weapons>
+          <capacity title="BOND OF BROTHERHOOD">Model in this unit gain +1 STR and ARM for each model in this unit that has been destroyed or removed from play. The bonuses for a model are lost if it returns to play.</capacity>
+        </unit>
+        <unit id="PU05" name="Temple Flameguard" full_name="Temple Flameguard" qualification="Protectorate Unit" fa="3" base_cost="4" full_cost="6" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="8" cma="true" />
+          <weapons>
+            <melee_weapon name="Flame Spear" pow="5" p_plus_s="10" reach="true">
+              <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="SHIELD WALL (ORDER)" type="">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
+          <unit_attachment id="PA02" name="Temple Flameguard Officer &amp; Standard" full_name="Temple Flameguard Officer &amp; Standard" qualification="Protectorate Unit attachment" fa="1" cost="2" completed="true">
+            <model id="Temple Flameguard Officer">
+              <basestats name="OFFICER" spd="6" str="5" mat="7" rat="4" def="13" arm="13" cmd="9" hitpoints="5" cma="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Flame Spear" pow="5" p_plus_s="10" reach="true">
+                  <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+                </melee_weapon>
+              </weapons>
+              <capacity title="GRANTED: RANKED ATTACKS">When this model is in play, models in its unit gain Ranked Attacks. (Friendly Faction models can ignore models with Ranked Attacks when determining LOS.)</capacity>
+              <capacity title="IRON ZEAL">Once per game during its unit's activation, this model can use Iron Zeal. For one round, while in formation models in this unit gain +4 ARM and cannot become stationary or be knocked down.</capacity>
+              <capacity title="TACTICS: MENOTH'S HOWL">Model in this unit gain Terror and their melee weapons gain the Fire continuous effect.</capacity>
+              <capacity title="ATTACHMENT [TEMPLE FLAMEGUARD]" type="">This attachment can be added to a Temple Flameguard unit.</capacity>
+            </model>
+            <model id="Temple Flameguard Standard">
+              <basestats name="STANDARD BEARER" spd="6" str="5" mat="6" rat="4" def="13" arm="13" cmd="8" standard_bearer="true" />
+              <weapons />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU06" name="Deliverer Sunburst Crew" full_name="Deliverer Sunburst Crew" qualification="Protectorate Weapon Crew Unit" fa="2" base_cost="3" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="LEADER" spd="4" str="4" mat="4" rat="5" def="12" arm="11" cmd="7" />
+          <weapons>
+            <ranged_weapon name="Sunburst" rng="16" rof="1" aoe="4" pow="16">
+              <capacity title="LIGHT ARTILLERY">This weapon cannot be used to make attacks or special actions during activations this model moves. This model cannot gain the aiming bonus when attacking with this weapon and cannot charge. If this model attacks with this weapon during its activation, it cannot attack with any other weapons that activation.</capacity>
+              <capacity title="RANGE FINDER">While B2B with one or more grunts in this unit, the leader gains +2 to attack rolls with this weapon.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sword" pow="3" p_plus_s="7" />            
+          </weapons>
+          <model id="Grunt" full_name="Grunt" qualification="">
+            <basestats name="GRUNT" spd="4" str="4" mat="4" rat="5" def="12" arm="11" cmd="7" />
+            <weapons>
+              <melee_weapon name="Sword" pow="3" p_plus_s="7" />
+            </weapons>
+          </model>
+        </unit>
+        <unit id="PU07" name="Flameguard Cleansers" full_name="Flameguard Cleansers" qualification="Protectorate Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="5" mat="5" rat="5" def="12" arm="14" cmd="8" immunity_fire="true" />
+          <weapons>
+            <ranged_weapon name="Purifier" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
+			<melee_weapon name="Purifier Blade" pow="3" p_plus_s="8" />            
+          </weapons>
+          <capacity title="INCINERATE (ORDER)" type="">Models that receive this order can participate in a combined range attack. The unit commander must be the primary attacker. This attack has RNG 8, AOE 4" and POW 12. This attack causes fire damage. The AOE remains in play for one round and is a cloud effect. Models entering or ending their activations in the AOE suffer a POW 12 fire damage roll. A unit can make only one Incinerate attack per activation.</capacity>
+          <unit_attachment id="PA06" name="Flameguard Cleanser Officer" full_name="Flameguard Cleanser Officer" qualification="Protectorate Unit attachment" fa="1" cost="2" completed="true">
+            <model id="Flameguard Cleanser Officer">
+              <basestats name="OFFICER" spd="5" str="5" mat="6" rat="6" def="12" arm="14" cmd="8" hitpoints="5" immunity_fire="true" officer="true" />
+              <weapons>
+                <melee_weapon name="Purifier Blade" pow="3" p_plus_s="8" />
+                <ranged_weapon name="Purifier" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
+              </weapons>
+              <capacity title="BUSHWHACK (ORDER)" type="">During this unit's activation, affected models make their combat action before their normal movement. Affected models must make a full advance as their normal movement this activation.</capacity>
+              <capacity title="SCOURING FLAMES">Once per game during its unit's activation, this model can use Scouring Flames. This activation, the base RNG of Purifier weapons in this unit becomes SP10 and the base POW becomes 10.</capacity>
+              <capacity title="SHEET OF FIRE (★ACTION)" type="">Place a wall template anywhere completely within 5" of this model where it does not touch a model's base, an obstruction, or an obstacle. When a model enters or ends its activation in the wall area, it suffers an unboostable POW 12 fire damage roll and the Fire continuous effect. Models within the wall template gain concealment. Sheet of Fire lasts for one round.</capacity>
+              <capacity title="ATTACHMENT [FLAMEGUARD CLEANSER]" type="">This attachment can be added to a Flameguard Cleanser unit.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU08" name="Daughters of the Flame" full_name="Daughters of the Flame" qualification="Protectorate Flameguard Unit" fa="2" base_cost="5" full_cost="-" baseCount="6" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="7" str="5" mat="6" rat="4" def="15" arm="12" cmd="8" advance_deployment="true" cma="true" />
+          <weapons>
+            <melee_weapon name="Sword " count="2" pow="4" p_plus_s="9" />
+          </weapons>
+          <capacity title="ACROBATICS">This model can advance through other models if it has enough movement to move completely past their bases. This model cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="ANATOMICAL PRECISION">When this model's melee damage roll fails to exceed the ARM of the living model hit, that model suffers 1 damage point.</capacity>
+        </unit>
+        <unit id="PU09" name="Exemplar Errants" full_name="Exemplar Errants" qualification="Protectorate Unit" fa="3" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="7" rat="6" def="12" arm="16" cmd="9" advance_deployment="true" fearless="true" />
+          <weapons>
+            <ranged_weapon name="Heavy Crossbow" rng="10" rof="1" aoe="-" pow="10" magical="true">
+                <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </ranged_weapon>
+            <melee_weapon name="Sword" pow="3" p_plus_s="9" weapon_master="true" />
+          </weapons>
+          <capacity title="SELF-SACRIFICE">If this model is disabled by an enemy attack, you can choose a non-disabled model in this unit within 3" of this model to be destroyed. If another model is destroyed as a result of Self-Sacrifice, this model heals 1 damage point.</capacity>
+          <unit_attachment id="PA04" name="Exemplar Errant Officer &amp; Standard Bearer" full_name="Exemplar Errant Officer &amp; Standard Bearer" qualification="Protectorate Unit Attachment" fa="1" cost="2" completed="true">
+            <model id="Exemplar Errant Officer">
+              <basestats name="OFFICER" spd="5" str="6" mat="8" rat="7" def="12" arm="16" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" officer="true" />
+              <weapons>
+                <ranged_weapon name="Heavy Crossbow" rng="10" rof="1" aoe="-" pow="10" magical="true">
+                  <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+                </ranged_weapon>
+				<melee_weapon name="Sword" pow="3" p_plus_s="9" weapon_master="true" />                
+              </weapons>
+              <capacity title="SELF-SACRIFICE" type="">If this model is disabled by an enemy attack, you can choose a non-disabled model in this unit within 3" of this model to be destroyed. If another model is destroyed as a result of Self-Sacrifice, this model heals 1 damage point.</capacity>
+			  <capacity title="TACTICS: PATHFINDER">Models in this unit gain Pathfinder.</capacity>
+			  <capacity title="TACTICS: QUICK WORK">Models in this unit gain Quick Work. (When a model with Quick Work destroys one or more enemy models with a melee attack during its combat action, immediately after that attack is resolved it can make one normal ranged attack. Attacks gained from Quick Work do not count against a weapon's ROF.)</capacity>           
+              <capacity title="ATTACHMENT [EXEMPLAR ERRANTS]" type="">This attachment can be added to an Exemplar Errant unit.</capacity>
+            </model>
+            <model id="Exemplar Errant Standard Bearer">
+              <basestats name="STANDARD BEARER" spd="5" str="6" mat="7" rat="6" def="12" arm="16" cmd="9" advance_deployment="true" fearless="true" standard_bearer="true" />
+              <weapons />
+              <capacity title="PURITY" type="">While this model is in formation, models in its unit cannot be targeted by enemy spells.</capacity>
+			  <capacity title="SELF-SACRIFICE">See above.</capacity>              
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU10" name="Exemplar Vengers" full_name="Exemplar Vengers" qualification="Protectorate Cavalry Unit" fa="1" base_cost="7" full_cost="11" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="8" str="6" mat="7" rat="4" def="12" arm="17" cmd="9" hitpoints="5" fearless="true" />
+          <weapons>
+            <melee_weapon name="Blessed Lance" pow="8" p_plus_s="14" magical="true">
+              <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+              <capacity title="LANCE">This weapon can only be used to make charge attacks. When this model charges, this weapon gains Reach until the charge is resolved.</capacity>
+            </melee_weapon>
+            <melee_weapon name="Sword" pow="3" p_plus_s="9" weapon_master="true">
+              <capacity title="CLOSE COMBAT">This model cannot make an initial attack with this weapon during an activation it charged at least 3".</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="BATTLE-DRIVEN">When a model in this unit is damaged by an enemy attack, after the attack is resolved models in this unit gain +2 STR and ARM and Pathfinder for one round.</capacity>
+        </unit>
+        <unit id="PU11" name="Exemplar Bastions" full_name="Exemplar Bastions" qualification="Protectorate Unit" fa="2" base_cost="5" full_cost="8" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="7" mat="7" rat="4" def="11" arm="16" cmd="9" hitpoints="8" fearless="true" />
+          <weapons>
+            <melee_weapon name="Consecrated Halberd" pow="5" p_plus_s="12" magical="true" reach="true" weapon_master="true">
+              <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="SANGUINE BOND">When this model would suffer damage from an enemy attack, you can choose one or more models in this unit to suffer any number of those damage points instead, divided as you choose. If you do, this model does not suffer that damage. A model cannot suffer more damage as a result of Sanguine Bond than it has unmarked damage boxes</capacity>
+        </unit>
+        <unit id="PU12" name="Visgoth Juviah Rhoven &amp; Honor Guard" full_name="Visgoth Juviah Rhoven &amp; Honor Guard" qualification="Protectorate Character Unit" fa="C" base_cost="4" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="VISGOTH RHOVEN" spd="5" str="6" mat="8" rat="4" def="12" arm="16" cmd="10" hitpoints="5" fearless="true" commander="true" officer="true" />
+          <weapons>
+            <melee_weapon name="Staff Of Sulon" pow="6" p_plus_s="12" magical="true" reach="true" continuous_fire="true" />
+          </weapons>
+          <capacity title="BATTLE-DRIVEN">When a model in this unit is damaged by an enemy attack, after the attack is resolved models in this unit gain +2 STR and ARM and Pathfinder for one round.</capacity>
+          <capacity title="CLEANSE (★ACTION)" type="">Animi and continuous effects on models/units in this model's command range immediately expire.</capacity>
+          <capacity title="MENOTH'S SIGHT (★ACTION)" type="">Choose a friendly Faction model. While in this model's command range, for one round the chosen model ignores Stealth and ignores cloud effects when determining LOS.</capacity>
+          <capacity title="NEGATION (★ACTION)" type="">Remove 1 focus point or fury point from enemy models currently in this model's command range.</capacity>
+          <model id="Gius" full_name="Gius">
+            <basestats name="GIUS" spd="5" str="6" mat="8" rat="4" def="12" arm="16" cmd="9" hitpoints="5" fearless="true" />
+            <weapons>
+              <melee_weapon name="Consecrated Halberd" pow="5" p_plus_s="11" magical="true" reach="true" weapon_master="true">
+                <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+                <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="BATTLE-DRIVEN">See above.</capacity>
+            <capacity title="EXEMPLAR">Gius and Cassian are Exemplar models.</capacity>
+          </model>
+          <model id="Cassian">
+            <basestats name="CASSIAN" spd="5" str="6" mat="8" rat="4" def="12" arm="16" cmd="9" hitpoints="5" fearless="true" />
+            <weapons>
+              <melee_weapon name="Consecrated Halberd" pow="5" p_plus_s="11" magical="true" reach="true" weapon_master="true">
+                <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+                <capacity title="SET DEFENSE">A model in this model's front arc suffers –2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+              </melee_weapon>
+            </weapons>
+            <capacity title="BATTLE-DRIVEN">See above.</capacity>
+            <capacity title="EXEMPLAR">Gius and Cassian are Exemplar models.</capacity>
+          </model>
+        </unit>
+        <unit id="PU13" name="Idrian Skirmishers" full_name="Idrian Skirmishers" qualification="Protectorate Idrian Ally Unit" fa="2" base_cost="6" full_cost="10" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="6" rat="5" def="13" arm="12" cmd="8" advance_deployment="true" cra="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+			<melee_weapon name="Kopis" pow="4" p_plus_s="10" />            
+          </weapons>
+          <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+          <unit_attachment id="PA03" name="Idrian Skirmishers Chieftain &amp; Guide" full_name="Idrian Skirmishers Chieftain &amp; Guide" qualification="Protectorate Ally Unit attachment" fa="1" cost="3" completed="true">
+            <model id="Idrian Skirmisher Chieftain" full_name="Idrian Skirmisher Chieftain">
+              <basestats name="CHIEFTAIN" spd="6" str="6" mat="7" rat="6" def="13" arm="12" cmd="9" hitpoints="5" advance_deployment="true" cra="true" officer="true" pathfinder="true" />
+              <weapons>
+                <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+				<melee_weapon name="Kopis " pow="4" count="2" p_plus_s="10" />                
+              </weapons>
+              <capacity title="ASSAULT &amp; BATTERY (ORDER)">Before their normal movement, affected models can make one ranged attack. During their normal movement, affected models must charge or run. The ranged attack is made before declaring a charge target.</capacity>
+              <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+              <capacity title="TACTICS: COMBINED MELEE ATTACK">Models in this unit gain Combined Melee Attack.</capacity>
+              <capacity title="ATTACHMENT [IDRIAN SKIRMISHER]" type="">This attachment can be added to an Idrian Skirmsishers unit.</capacity>
+            </model>
+            <model id="Idrian Skirmisher Guide">
+              <basestats name="GUIDE" spd="6" str="6" mat="6" rat="5" def="13" arm="12" cmd="8" hitpoints="5" advance_deployment="true" cra="true" pathfinder="true" />
+              <weapons>
+                <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11" />
+				<melee_weapon name="Kopis" pow="4" p_plus_s="10" />                
+              </weapons>
+              <capacity title="CAMOUFLAGE">See above.</capacity>
+              <capacity title="GO TO GROUND">Once per game while in formation during its unit's activation, this model can use to Go to Ground. For one round or until they move, are placed, or are engaged, models in this unit in formation gain cover, do not suffer blast damage, and do not block LOS.</capacity>
+              <capacity title="HUNTSMAN">After deployment but before the first player's turn, choose an enemy model/unit to be this unit's prey. While this model is in play, each model in its unit beginning its activation within 10" of the prey gains +2" movement that activation. While this model is in play, models in its unit gains +2 to attack and damage rolls against the prey. When the prey is destroyed or removed from play, choose another model/unit as the prey.</capacity>
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU14" name="Exemplar Cinerators" full_name="Exemplar Cinerators" qualification="Protectorate Unit" fa="2" base_cost="5" full_cost="8" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="4" str="7" mat="7" rat="4" def="11" arm="17" cmd="9" hitpoints="8" fearless="true" />
+          <weapons>
+            <melee_weapon name="Blazing Sword" pow="5" p_plus_s="12" magical="true" weapon_master="true">
+              <capacity title="FLAME BURST">When this model boxes an enemy model with this weapon, enemy models within 1" of the boxed model suffer the Fire continuous effect.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="RELENTLESS ADVANCE">When a model in this unit is damaged by an enemy attack, models in this unit gain +2 SPD for one round.</capacity>
+        </unit>
+        <unit id="PU15" name="Flame Bringers" full_name="Flame Bringers" qualification="Protectorate Flameguard Light Cavalry Unit" fa="1" base_cost="6" full_cost="10" baseCount="3" fullCount="5" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="9" str="5" mat="6" rat="4" def="14" arm="15" cmd="9" hitpoints="5" pathfinder="true" />
+          <weapons>
+            <melee_weapon name="Sword " count="2" pow="4" p_plus_s="9" weapon_master="true">
+              <capacity title="CRITICAL GRIEVOUS WOUNDS">On a critical hit, the model hit by this weapon loses Tough, cannot heal or be healed, and cannot transfer damage for one round.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="SIDE STEP">When this model hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved. This model cannot be targeted by free strikes during this movement.</capacity>
+        </unit>
+      </units>
+      <solos>
+        <solo id="PS01" name="Paladin of the Order of the Wall" full_name="Paladin of the Order of the Wall" qualification="Protectorate Solo" fa="2" cost="2" completed="true">
+          <basestats name="PALADIN" spd="6" str="7" mat="8" rat="4" def="13" arm="16" cmd="9" hitpoints="5" fearless="true" />
+          <weapons>
+            <melee_weapon name="Firebrand" pow="7" p_plus_s="14" magical="true" weapon_master="true" critical_fire="true" />
+          </weapons>
+          <capacity title="STONE-AND-MORTAR STANCE">During its activation, this model can forfeit its movement or action to gain +5 ARM. The affected model cannot be knocked down. Stone-and-Mortar Stance lasts for one round.</capacity>
+        </solo>
+        <solo id="PS02" name="Knights Exemplar Seneschal" full_name="Knights Exemplar Seneschal" qualification="Protectorate Solo" fa="2" cost="3" completed="true">
+          <basestats name="SENESCHAL" spd="6" str="6" mat="8" rat="4" def="13" arm="15" cmd="9" hitpoints="5" fearless="true" commander="true" />
+          <weapons>
+            <melee_weapon name="Relic Blade " pow="5" count="2" p_plus_s="11" magical="true" weapon_master="true">
+              <capacity title="CHAIN ATTACK: SMITE">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional melee attack against that model. If the additional attack hits, the target is slammed d6" directly away from this model. The POW of the slam damage roll is equal to the STR of this model + the POW of this weapon. The POW of collateral damage is equal to the STR of this model.</capacity>
+            </melee_weapon>
+          </weapons>
+          <capacity title="AEGIS">This model is immune to continuous effects.</capacity>
+          <capacity title="RESTORATION">When a living friendly Faction model in this model's command range is destroyed by an enemy attack, after the attack is resolved this model heals 1 damage point. When this model is disabled, it is knocked down instead of becoming boxed and its activation immediately ends. While this model is disabled, it cannot activate. If this model is disabled at the beginning of your Maintenance Phase, it is destroyed.</capacity>
+          <capacity title="RIGHTEOUS FURY">When one or more friendly Faction warrior models are destroyed by an enemy attack while in this model's command range, this model gains +2 STR and ARM for one round.</capacity>
+        </solo>
+        <solo id="PS03" name="Wrack" full_name="Wrack" qualification="Protectorate Solo" fa="1" cost="1" completed="true">
+          <basestats name="WRACK" spd="0" str="1" mat="0" rat="0" def="5" arm="10" cmd="10" advance_deployment="true" />
+          <weapons />
+          <capacity title="DEATH BLAST">When this model is disabled, center a 5" AOE on it, then remove this model from play. Models in the AOE suffer a POW 14 blast damage roll.</capacity>
+          <capacity title="IMMOBILE">This model has no movement or action and cannot be knocked down or moved. Its front arc extends to 360 degrees. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
+          <capacity title="SUFFERING'S PRAYER">This model begins the game with 1 focus point. During your Control Phase during the focus allocation step, it receives 1 focus point if it does not have any. This model cannot have more than 1 focus point at a time. While this model has a focus point, ranged attacks targeting it automatically miss. During a friendly Faction warcaster's activation, it can remove 1 focus point from this model in its control area and add that focus point to its own total. Each warcaster can do this only once per turn. When a focus point is removed from this model, roll a d6. On a 1, 2, or 3, this model explodes with the same effect as Death Blast and is removed from play.</capacity>
+        </solo>
+        <solo id="PS04" name="The Covenant of Menoth" full_name="The Covenant of Menoth" qualification="Protectorate Character Solo" fa="C" cost="2" completed="true">
+          <basestats name="COVENANT" spd="5" str="5" mat="4" rat="4" def="12" arm="12" cmd="10" hitpoints="5" fearless="true" />
+          <weapons />
+          <capacity title="ANCIENT SHROUD">When a damage roll against this model exceeds its ARM, it suffers 1 damage point instead of the total rolled.</capacity>
+          <capacity title="FLAMES OF WRATH (★ACTION)" type="">Choose a friendly Faction model/unit. For one round, while affected models are in this model's command range, enemy models directly hit by their melee or ranged attacks suffer the Fire continuous effect.</capacity>
+          <capacity title="LAWGIVER'S CREED (★ACTION)" type="">For one round, enemy models cannot cast spells while in this model's command range.</capacity>
+          <capacity title="MAN-SIZED" type="">This model is treated as a model with a small base and occupied the space from the bottom of its base to a height of 1.75".</capacity>
+          <capacity title="POWER OF FAITH (★ACTION)" type="">For one round, friendly Faction models cannot be knocked down or made stationary while in this model's command range.</capacity>
+          <capacity title="SPELL WARD" type="">This model cannot be targeted by spells.</capacity>
+        </solo>
+        <solo id="PS05" name="Reclaimer" full_name="Reclaimer" qualification="Protectorate Solo" fa="2" cost="2" completed="true">
+          <basestats name="RECLAIMER" spd="5" str="5" mat="6" rat="4" def="13" arm="13" cmd="8" hitpoints="5" />
+          <weapons>
+            <melee_weapon name="Cinerator" pow="5" p_plus_s="10" reach="true" continuous_fire="true" />
+          </weapons>
+          <capacity title="COMMUNION (★ACTION)" type="">RNG 5. Target friendly Faction warjack. If the warjack is in range, spend up to three soul tokens to allocate it 1 focus point for each soul token spent.</capacity>
+          <capacity title="GATEKEEPER">This model gains one soul token for each friendly living Faction warrior model destroyed in its command range by a continuous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to five soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or boost attack or damage rolls at one token per attack or boost.</capacity>
+          <capacity title="SOULSTORM">While this model has one or more soul tokens, enemy models entering or ending their activations within 2" of it immediately suffer 1 damage point.</capacity>
+        </solo>
+        <solo id="PS06" name="High Paladin Dartan Vilmon" full_name="High Paladin Dartan Vilmon" qualification="Protectorate Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="VILMON" spd="6" str="7" mat="9" rat="4" def="13" arm="16" cmd="10" hitpoints="5" fearless="true" commander="true" />
+          <weapons>
+            <melee_weapon name="Censure" pow="8" p_plus_s="15" magical="true" reach="true" weapon_master="true" />
+          </weapons>
+          <capacity title="ELITE CADRE [PALADINS OF THE ORDER OF THE WALL]">Friendly Paladin of the Order of the Wall models gain Impervious Wall.</capacity>
+          <capacity title="IMPERVIOUS WALL">During its activation, this model can forfeit its normal movement or action to gain Impervious Wall for one round. A model with Impervious Wall is immune to continous effects, does not suffer damage or effects from non-magical ranged or melee attacks, and cannot be knocked down.</capacity>
+          <capacity title="STONE-AND-MORTAR STANCE">During its activation, this model can forfeit its movement or action to gain +5 ARM. The affected model cannot be knocked down. Stone-and-Mortar Stance lasts for one round.</capacity>
+        </solo>
+        <solo id="PS07" name="Allegiant of the Order of the Fist" full_name="Allegiant of the Order of the Fist" qualification="Protectorate Solo" fa="2" cost="2" completed="true">
+          <basestats name="ALLEGIANT" spd="7" str="7" mat="7" rat="4" def="15" arm="12" cmd="9" hitpoints="5" tough="true" />
+          <weapons>
+            <melee_weapon name="Punching Gauntlet " pow="2" count="2" p_plus_s="9" weapon_master="true" />
+          </weapons>
+          <capacity title="GROUNDWORK">While knocked down, this model is not automatically hit by melee attacks and its DEF is not reduced.</capacity>
+          <capacity title="PERFECT BALANCE">This model cannot be targeted by combined melee attacks, combined ranged attacks, or free strikes. Models do not gain back strike bonuses against this model. When knocked down, this model can stand up during its activation without forfeiting its movement or action if it is able to forfeit its movement or action to stand up.</capacity>
+          <capacity title="SHIFTING SANDS STANCE">During its activation, this model can forfeit its movement or action to gain +2 DEF. If an enemy attack misses this model anytime except while it is advancing, after the attack is resolved it can immediately make a full advance. Shifting Sands Stance lasts for one round.</capacity>
+        </solo>
+        <solo id="PS08" name="Hierophant" full_name="Hierophant" qualification="Protectorate Solo" fa="1" cost="2" warcaster_attachment="true" completed="true">
+          <basestats name="HIEROPHANT" spd="5" str="5" mat="5" rat="4" def="13" arm="13" cmd="7" hitpoints="5" />
+          <weapons>
+            <melee_weapon name="Staff" pow="3" p_plus_s="8" reach="true" />
+          </weapons>          
+          <capacity title="HARMONIOUS EXALTATION (★ACTION)" type="">RNG 5. Target this model's warcaster. If it is in range, once this turn when the warcaster casts a spell, reduce its COST by 1.</capacity>
+          <capacity title="HEAL (★ACTION)" type="">Choose a friendly living model B2B with this model. That model heals d3 damage points.</capacity>
+          <capacity title="SPIRITUAL CONDUIT">While its warcaster is in this model's command range, when the warcaster casts a spell and is the point of origin for the spell, the spell gains +2 RNG.</capacity>
+		  <capacity title="ATTACHED">Before the start of the game, attach this model to a friendly Faction warcaster for the rest of the game. Each warcaster can have only one model attached to it.</capacity>
+        </solo>
+        <solo id="PS09" name="High Exemplar Gravus" full_name="High Exemplar Gravus" qualification="Protectorate Dragoon Character Solo" fa="C" cost="5" completed="true">
+          <basestats name="HIGH EXEMPLAR GRAVUS" spd="8" str="5" mat="8" rat="4" def="12" arm="17" cmd="9" hitpoints="10" fearless="true" commander="true" />
+          <weapons>
+            <melee_weapon name="Reverence" pow="6" p_plus_s="11" magical="true" reach="true" weapon_master="true">
+              <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+              <capacity title="DISPEL">When this weapon hits a model/unit, upkeep spells on that model/unit hit immediately expire.</capacity>
+            </melee_weapon>
+            <mount_weapon name="Mount" pow="10" />
+          </weapons>
+          <capacity title="BROTHER'S KEEPER">While in this model's command range, friendly Exemplar models cannot be knocked down or made stationary.</capacity>
+          <capacity title="CRUSADER'S REQUIEM">This model gains one soul token for each friendly living Exemplar model destroyed in its command range by a continous effect, an enemy attack, or collateral damage of an enemy attack. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
+          <capacity title="DRAGOON">While mounted, this model has a base SPD 8 and base ARM 17. While dismounted, it has a base SPD 5, base ARM 15.</capacity>
+          <model id="PS09_dismount" name="High Exemplar Gravus (dismounted)" full_name="High Exemplar Gravus (dismounted)">
+            <basestats name="GRAVUS (DISMOUNTED)" spd="5" str="5" mat="8" rat="4" def="12" arm="15" cmd="9" hitpoints="5" fearless="true" commander="true" />
+            <weapons>
+              <melee_weapon name="Reverence" pow="6" p_plus_s="11" magical="true" reach="true" weapon_master="true">
+                <capacity title="CHAIN WEAPON">See above.</capacity>
+                <capacity title="DISPEL">See above.</capacity>
+              </melee_weapon>
+            </weapons>
+          </model>
+        </solo>
+        <solo id="PS10" name="Vassal of Menoth" full_name="Vassal of Menoth" qualification="Protectorate Solo" fa="2" cost="2" completed="true">
+          <basestats name="VASSAL" spd="5" str="5" mat="5" rat="4" def="13" arm="13" cmd="6" hitpoints="5" />
+          <weapons />
+          <capacity title="IRON SENTINEL">While B2B with a friendly Faction warjack, this model gains +2 DEF and ARM and cannot be knocked down.</capacity>
+          <capacity title="MAGIC ABILITY [7] -" />
+          <capacity title="● ANCILLARY ATTACK (★ACTION)" type="">RNG 5. Target friendly Faction Warjack. If the warjack is in range, it immediately makes one normal melee or ranged attack. A warjack can make an Anciliary Attack special action only once per turn.</capacity>
+          <capacity title="● ARCANE BOLT (★ATTACK)" type="">Arcane Bolt is a RNG 12, POW 11 magic attack.</capacity>
+          <capacity title="● ENLIVEN (★ACTION)" type="">RNG 5. Target friendly Faction warjack. If the warjack is in range, the next time it suffers damage from an enemy attack while it is not advancing, immediately after the attack is resolved the warjack can make a full advance, then Enliven expires. The warjack cannot be targeted by free strikes during this movement. Enliven lasts for one round.</capacity>
+        </solo>
+        <solo id="PS11" name="Exemplar Errant Seneschal" full_name="Exemplar Errant Seneschal" qualification="Protectorate Solo" fa="2" cost="2" completed="true">
+          <basestats name="SENESCHAL" spd="6" str="6" mat="8" rat="7" def="12" arm="16" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" commander="true" pathfinder="true" />
+          <weapons>
+            <ranged_weapon name="Heavy Crossbow" rng="10" rof="1" aoe="-" pow="10" magical="true">
+              <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </ranged_weapon>
+			<melee_weapon name="Sword" pow="3" p_plus_s="9" weapon_master="true" />            
+          </weapons>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
+          <capacity title="CALL TO SACRIFICE [EXEMPLAR ERRANTS]">If this model is disabled by an enemy attack, you can choose a non-disabled trooper model of the type indicated in its command range to be destroyed. If another model is destroyed as a result of Self-Sacrifice, this model heals 1 damage point.</capacity>
+          <capacity title="HUNTER">This model ignores forests, concealment, and cover when determining LOS or making a ranged attack.</capacity>
+          <capacity title="LEADERSHIP [EXEMPLAR ERRANTS]">While in this model's command range, friendly Exemplar Errant models gain Hunter.</capacity>
+        </solo>
+        <solo id="PS12" name="Vassal Mechanik" full_name="Vassal Mechanik" qualification="Protectorate Solo" fa="3" cost="1" completed="true">
+          <basestats name="MECHANIK" spd="5" str="5" mat="5" rat="4" def="13" arm="13" cmd="8" hitpoints="5" />
+          <weapons>
+            <melee_weapon name="Multi Tool" pow="3" p_plus_s="8" />
+          </weapons>
+          <capacity title="IRON SENTINEL">While B2B with a friendly Faction warjack, this model gains +2 DEF and ARM and cannot be knocked down.</capacity>
+          <capacity title="REPAIR [8] (★ACTION)" type="">This model can attempt repairs on any damaged friendly Faction warjack. To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
+        </solo>
+        <solo id="PS13" name="Nicia, Tear of Vengeance" full_name="Nicia, Tear of Vengeance" qualification="Protectorate Flameguard Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="NICIA" spd="7" str="5" mat="7" rat="7" def="16" arm="13" cmd="9" hitpoints="5" advance_deployment="true" fearless="true" stealth="true" />
+          <weapons>
+            <ranged_weapon name="Sword Cannon" rng="10" rof="1" aoe="-" pow="12" />
+			<melee_weapon name="Blade" pow="5" p_plus_s="10" reach="true" weapon_master="true" />            
+          </weapons>
+          <capacity title="ACROBATICS">This model can advance through other models if it has enough movement to move completely past their bases. This model cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="QUICK WORK">When this model destroys one or more enemy models with a melee attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack. Attacks gained from Quick Work do not count against a weapon's ROF.</capacity>
+          <capacity title="RAPID STRIKE">This model can make one additional melee attack each combat action.</capacity>
+          <capacity title="SPRINT">At the end of this model's activation, if it destroyed one or more enemy models with melee attacks this activation it can make a full advance.</capacity>
+        </solo>
+        <solo id="PA05" name="Attendant Priest" full_name="Attendant Priest" qualification="Protectorate Unit Attachment" fa="2" cost="2" completed="true">
+          <basestats name="PRIEST" spd="6" str="4" mat="4" rat="4" def="13" arm="13" cmd="9" hitpoints="5" officer="true" />
+          <weapons>
+            <melee_weapon name="Battle Staff" pow="2" p_plus_s="6" reach="true" />
+          </weapons>
+          <capacity title="PRAYERS">This model can recite one of the following prayers each turn anytime during its unit's activation. Each model in this unit gain the benefits listed.</capacity>
+          <capacity title="● EMPOWER" type="">Affected model's weapons gain Magical Weapon for one turn.</capacity>
+          <capacity title="● MARCH" type="">Affected models gain Pathfinder for one turn.</capacity>
+          <capacity title="● WARDING" type="">Affected models cannot be targeted by enemy spells for one round.</capacity>
+          <capacity title="RANKING OFFICER">This model is a Ranking Officer. While this model is in play, models in its unit are Protectorate models instead of Mercenary models.</capacity>
+          <capacity title="ATTACHMENT [SMALL- OR MEDIUM-BASED MERCENARY]" type="">This attachment can be added to Small- or Medium-Based Mercenary unit.</capacity>
+        </solo>
+        <solo id="PS14" name="Exemplar Bastion Seneschal" full_name="Exemplar Bastion Seneschal" qualification="Protectorate Solo" fa="2" cost="3" completed="true">
+          <basestats name="SENESCHAL" spd="4" str="7" mat="8" rat="4" def="11" arm="16" cmd="10" hitpoints="8" fearless="true" commander="true" jack_marshal="true" />
+          <weapons>
+            <melee_weapon name="Consecrated Halberd" pow="5" p_plus_s="12" magical="true" reach="true" weapon_master="true">
+              <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+          </weapons>          
+          <capacity title="DEFENSIVE STRIKE" type="">Once per turn, when an enemy model advances into and ends its movement in this model's melee range, this model can immediately make one normal melee attack against it.</capacity>
+		  <capacity title="IRON WALL" type="">This model gains +2 ARM for each warjack it controls B2B with it. When this model is directly hit by an enemy ranged or magic attack, you can choose to have one of those non-incorporeal warjacks be directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+		  <capacity title="LEADERSHIP [EXEMPLAR BASTIONS]">Friendly Exemplar Bastion models heal 1 point when they begin an activation in this model's command range.</capacity>
+        </solo>
+        <solo id="PS15" name="Initiate Tristan Durant" full_name="Initiate Tristan Durant" qualification="Protectorate Character Solo" fa="C" cost="3" completed="true">
+          <basestats name="DURANT" spd="5" str="5" mat="5" rat="5" def="14" arm="15" cmd="7" focus="4" hitpoints="5" fearless="true" journeyman_warcaster="true" />
+          <weapons>
+            <melee_weapon name="Battle Staff" pow="6" p_plus_s="11" magical="true" reach="true">
+              <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+            </melee_weapon>
+          </weapons>
+		  <spell name="FORTIFY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warjack in this model's battlegroup gains +2 ARM. The affected model and any friendly model B2B with it cannot be knocked down, pushed, or moved by a slam.</spell>
+		  <spell name="IMMOLATION" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">Immolation causes fire damage. On a critical hit, the model hit suffers the Fire continuous effect.</spell>
+          <capacity title="JOURNEYMAN WARCASTER">This model is not a warcaster but has the following warcaster special rules: Battlegroup Commander, Control Area, Focus Manipulation, Power Field, and Spellcaster.</capacity>
+          <capacity title="TRUE SIGHT">This model ignores concealment, Camouflage, and Stealth.</capacity>
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>

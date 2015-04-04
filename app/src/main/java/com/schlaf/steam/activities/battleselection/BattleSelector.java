@@ -1,5 +1,6 @@
 package com.schlaf.steam.activities.battleselection;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -44,8 +45,9 @@ public class BattleSelector extends ActionBarActivity implements ChooseArmyListe
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.battle_selector);
- 
-        getSupportActionBar().setLogo(R.drawable.battle_icon);
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_USE_LOGO | ActionBar.DISPLAY_SHOW_TITLE );
+        getSupportActionBar().setLogo(R.drawable.ic_battle);
         
         getSupportActionBar().setTitle(R.string.startresumeBattle);
  

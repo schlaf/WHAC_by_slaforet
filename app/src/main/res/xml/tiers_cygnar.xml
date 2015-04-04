@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
   <tiers name="Haley1 - The Dead Line" casterId="Yw01" faction="faction_cygnar">
 
       <availableModels>
@@ -1457,6 +1459,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YE01" />
         <!-- field mecha, sword knights -->
         <entry id="YU03" />
         <entry id="YU08" />
@@ -1788,4 +1791,133 @@ attachment and the FA for Scattergunners is increased. -->
       </benefits>
     </level>
   </tiers>
+    <tiers name="Dalin Sturgis - United we stand" casterId="YW10" faction="faction_cygnar">
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Cygnar non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Rangers, Stormsmith units, Trencher units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Lieutenant Allison Jakes, Squire, Stormsmith solos, Trencher solos</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Storm Strider</models>
+            </type>
+        </availableModels>
+        <level number="1">
+            <only>
+                <entry id="YW10" />
+                <!-- Cygnar non-character warjacks -->
+                <entry id="YJ01" />
+                <entry id="YJ02" />
+                <entry id="YJ03" />
+                <entry id="YJ04" />
+                <entry id="YJ05" />
+                <entry id="YJ07" />
+                <entry id="YJ08" />
+                <entry id="YJ09" />
+                <entry id="YJ10" />
+                <entry id="YJ12" />
+                <entry id="YJ14" />
+                <entry id="YJ15" />
+                <entry id="YJ18" />
+                <entry id="YJ19" />
+                <entry id="YJ20" />
+                <entry id="YJ21" />
+                <!-- storm strider -->
+                <entry id="YE01" />
+                <!-- Rangers, Stormsmith units,Trencher units -->
+                <entry id="YU13" />
+                <entry id="YU15" />
+                <entry id="YU05" />
+                <entry id="YA03" />
+                <entry id="YA04" />
+                <entry id="YU06" />
+                <entry id="YU07"/>
+                <entry id="YU14"/>
+                <!-- Lieutenant Allison Jakes, Squire, Stormsmith solos, Trencher solos-->
+                <entry id="YA11" />
+                <entry id="YS06" />
+                <entry id="YS03" />
+                <entry id="YS04" />
+            </only>
+            <benefits>
+                <ingameeffect></ingameeffect>
+                <alterFA bonus="1" entryId="YS03">
+                    <forEach>
+                        <entry id="YU05" />
+                        <entry id="YU06" />
+                        <entry id="YU07"/>
+                        <entry id="YU14"/>
+                    </forEach>
+                </alterFA>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2YU12-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <!-- warjacks with Advance deployment -->
+                    <entry id="YJ04" />
+                    <entry id="YJ05" />
+                    <entry id="YJ18" />
+                </entrygroup>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <!-- trencher with Advance deployment -->
+                    <entry id="YU05" />
+                    <entry id="YU06" />
+                    <entry id="YU07"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Trencher models/units in the army gain Pathfinder during the first round of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  YS09-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="YU15" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Stormsmith weapon crews in the army gain Advance Deployment</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have  YJ17-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="YA11" />
+                </entrygroup>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="YJ01" />
+                    <entry id="YJ02" />
+                    <entry id="YJ03" />
+                    <entry id="YJ04" />
+                    <entry id="YJ05" />
+                    <entry id="YJ07" />
+                    <entry id="YJ08" />
+                    <entry id="YJ09" />
+                    <entry id="YJ10" />
+                    <entry id="YJ12" />
+                    <entry id="YJ14" />
+                    <entry id="YJ15" />
+                    <entry id="YJ18" />
+                    <entry id="YJ19" />
+                    <entry id="YJ20" />
+                    <entry id="YJ21" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Additionnaly, the free Grenadier of Firefly must be attached to Allison Jakes.</ingameeffect>
+                <freeModel > <!-- onlyIfAttachedTo="YA11" -->
+                    <entry id="YJ05"/>
+                    <entry id="YJ15"/>
+                </freeModel>
+            </benefits>
+        </level>
+    </tiers>
 </tierslist>

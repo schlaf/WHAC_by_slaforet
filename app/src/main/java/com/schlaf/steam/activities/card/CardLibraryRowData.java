@@ -5,13 +5,19 @@ public class CardLibraryRowData implements Comparable<CardLibraryRowData> {
 	String id;
 	String label;
 	String qualification;
-	private boolean completed;
+    String FA;
+    String cost;
+    String modelCount;
+    boolean showModelCount;
 
-	public CardLibraryRowData(String id, String label, String qualification, boolean completed) {
+	public CardLibraryRowData(String id, String label, String qualification, String FA, String cost, String modelCount, boolean showModelCount) {
 		this.id = id;
 		this.label = label;
 		this.qualification = qualification;
-		this.completed = completed;
+        this.FA = FA;
+        this.cost = cost;
+        this.modelCount = modelCount;
+        this.showModelCount = showModelCount;
 	}
 
 	public String getId() {
@@ -26,11 +32,23 @@ public class CardLibraryRowData implements Comparable<CardLibraryRowData> {
 		return qualification;
 	}
 	
-	public boolean isCompleted() {
-		return completed;
-	}
+    public String getFA() {
+        return FA;
+    }
 
-	@Override
+    public String getCost() {
+        return cost;
+    }
+
+    public String getModelCount() {
+        return modelCount;
+    }
+
+    public boolean isShowModelCount() {
+        return showModelCount;
+    }
+
+    @Override
 	public int compareTo(CardLibraryRowData another) {
 		return label.compareTo(another.getLabel());
 	}

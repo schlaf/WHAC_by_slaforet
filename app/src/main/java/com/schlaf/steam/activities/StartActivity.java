@@ -1,8 +1,6 @@
 package com.schlaf.steam.activities;
 
-import java.io.IOException;
-import java.io.InputStream;
-
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -26,7 +24,6 @@ import android.widget.Toast;
 
 import com.schlaf.steam.R;
 import com.schlaf.steam.SteamPunkRosterApplication;
-import com.schlaf.steam.activities.ChooseFactionDialog.ChangeFactionListener;
 import com.schlaf.steam.activities.battleresult.BattleResultsActivity;
 import com.schlaf.steam.activities.battleselection.BattleSelector;
 import com.schlaf.steam.activities.card.CardLibraryActivity;
@@ -47,13 +44,16 @@ import com.schlaf.steam.storage.ArmyListDescriptor;
 import com.schlaf.steam.storage.ArmyListDirectory;
 import com.schlaf.steam.storage.StorageManager;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class StartActivity extends ActionBarActivity implements ChangeFactionListener, ChooseArmyListener {
 	
 	
 	private static final String TAG = "StartActivity";
 	
 	private static final String NOTIFY_NEWS = "notify_news";
-	private static final String NOTIFICATION_DONE_V154 = "v1.5.4";
+	private static final String NOTIFICATION_DONE_V160 = "v1.6.0";
 	private static final String DONATION = "donation";
 	private static final String REMIND_COUNT = "count";
 	private static final String REMIND_COUNT_THRESHOLD = "threshold";
@@ -67,17 +67,19 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 	ProgressDialog progressBar;
 	
 	boolean checkTiers = false;
-	
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
 		LayoutInflater inflater = getLayoutInflater();
 		View view = inflater.inflate(R.layout.main, null);
         
 		setContentView(view);
-		
+
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_USE_LOGO);
+        getSupportActionBar().setIcon(R.drawable.ic_launcher);
 		getSupportActionBar().setTitle("W&H Army Creator");
     
 		if (! ArmySingleton.getInstance().isFullyLoaded()) {
@@ -96,7 +98,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
         
 		
 		final SharedPreferences notifyNews = getSharedPreferences(NOTIFY_NEWS, Context.MODE_PRIVATE);
-		if ( ! notifyNews.contains(NOTIFICATION_DONE_V154)) {
+		if ( ! notifyNews.contains(NOTIFICATION_DONE_V160)) {
 			
 			AlertDialog.Builder alert = new AlertDialog.Builder(this);
 			
@@ -112,7 +114,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 		    WebView wvChanges= (WebView) versionView.findViewById(R.id.wvChanges);
 		    
 		    try {
-	            InputStream fin = getAssets().open("version154.html");
+	            InputStream fin = getAssets().open("version160.html");
 	                byte[] buffer = new byte[fin.available()];
 	                fin.read(buffer);
 	                fin.close();
@@ -126,7 +128,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 			alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int whichButton) {
 					Editor editor = notifyNews.edit();
-					editor.putBoolean(NOTIFICATION_DONE_V154, true);
+					editor.putBoolean(NOTIFICATION_DONE_V160, true);
 					editor.commit();
 				}
 			});

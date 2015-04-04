@@ -44,6 +44,11 @@ public class ViewScenarioFragment extends Fragment {
 	}
 
 	private void fillScenario(Mission scenario) {
+
+        if (scenario == null) {
+            return;
+        }
+
 		TextView tvTitle = (TextView) getView().findViewById(R.id.textTitle);
 		tvTitle.setText(scenario.getName());
 		

@@ -126,6 +126,13 @@
         android:checked="true"
         android:text="ToggleButton" />
 
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.schlaf.steam.activities.damages.DamageSpiralView"
+        android:id="@+id/view"
+        android:layout_gravity="bottom"/>
+
     <com.schlaf.steam.activities.damages.DamageUnitView
         android:id="@+id/damageUnitView1"
         android:layout_width="wrap_content"

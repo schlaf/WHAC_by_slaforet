@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
+  <armies>
+    <army faction="faction_menoth" name="menoth" version="inapp_menoth_001">
+      <warcasters>
+        <warcaster id="Pw01" name="Kreoss1" full_name="High Exemplar Kreoss" generation="P" qualification="warcaster" focus="7" warjack_points="5" fa="C">
+          <basestats name="Kreoss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons>
+          </weapons>
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Px01" name="Kreoss2" full_name="Grand Exemplar Kreoss" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Pz01" name="Kreoss3" full_name="Intercessor Kreoss" generation="EE" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Pw02" name="Reclaimer1" full_name="Reclaimer" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Px02" name="Reclaimer2" full_name="Testament" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Pw03" name="Severius1" full_name="Grand Scrutator Severius" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Px03" name="Severius2" full_name="Hierarch Severius" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Pw04" name="Feora1" full_name="Feora, Priestess of the Flame" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Px04" name="Feora2" full_name="Feora, Protector of the Flame" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="PW05" name="Amon" full_name="Amon Ad-Raza" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="PW06" name="Harbinger" full_name="Harbinger" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="PW07" name="Reznik1" full_name="High Executioner Servath Reznik" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Px07" name="Reznik2" full_name="Servath Reznik, Wrath of Ages" generation="E" qualification="epic warcaster" focus="7" warjack_points="4" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        
+        <warcaster id="PW08" name="Vindictus" full_name="Vindictus" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="PW09" name="Thyra" full_name="Thyra" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="PJ01" name="Redeemer" full_name="Redeemer" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="6" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ02" name="Repenter" full_name="Repenter" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="Repenter" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="PJ03" name="Revenger" full_name="Revenger" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="6" qualification="Light Warjack" fa="U">
+          <basestats name="Revenger" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="PJ04" name="Devout" full_name="Devout" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="5" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ05" name="Dervish" full_name="Dervish" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ06" name="Blessing of Vengeance" full_name="Blessing of Vengeance" damage_grid="xx..xxx....x.......LAAR.LLMCRRxMMCCx" cost="7" qualification="Light Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ07" name="Crusader" full_name="Crusader" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="6" qualification="Heavy Warjack" fa="U">
+          <basestats name="Crusader" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="PJ08" name="Vanquisher" full_name="Vanquisher" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ09" name="Guardian" full_name="Guardian" damage_grid="...................LAAR.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ10" name="Reckoner" full_name="Reckoner" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ11" name="Avatar of Menoth" full_name="Avatar of Menoth" damage_grid="x....x..................LLM.RRxLMMRx" cost="11" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ12" name="Castigator" full_name="Castigator" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ13" name="Fire of Salvation" full_name="Fire of Salvation" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ14" name="Templar" full_name="Templar" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ15" name="Vigilant" full_name="Vigilant" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ16" name="Scourge of Heresy" full_name="Scourge of Heresy" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ17" name="Sanctifier" full_name="Sanctifier" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="PJ18" name="Blood of Martyrs" full_name="Blood of Martyrs" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        
+        <warjack id="PJ20" name="Indictor" full_name="Indictor" qualification="Protectorate Heavy Warjack" fa="U" cost="8" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+          <basestats name="INDICTOR" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>        
+      </warjacks>
+      <colossals>
+        <colossal id="PJ19" name="Judicator" full_name="Judicator" damage_grid_left="xxxx..xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="..xxxx....xxSS....CSLLL.CCCCLLMMMMCL" cost="18" qualification="Colossal" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </colossal>
+      </colossals>
+      <battleEngines>
+          <battleEngine id="PE01" name="Vessel of Judgement" full_name="Vessel of Judgement" cost="9" qualification="Protectorate Battle Engine" fa="2">
+              <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="24" />
+          	  <weapons />
+          </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="PU01" name="Choir of Menoth" full_name="Choir of Menoth" base_cost="2" baseCount="4" full_cost="3" fullCount="6" qualification="Unit" fa="3">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="PU02" name="Deliverers" full_name="Deliverers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="1">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="PU03" name="Holy Zealots" full_name="Holy Zealots" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="3" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="PA01" name="Holy Zealot Monolith Bearer" full_name="Holy Zealot Monolith Bearer" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Holy Zealot Monolith Bearer">
+              <basestats name="Holy Zealot Monolith Bearer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU04" name="Knights Exemplar" full_name="Knights Exemplar" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="3">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="PU05" name="Temple Flameguard" full_name="Temple Flameguard" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="3" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="PA02" name="Temple Flameguard Officer &amp; Standard" full_name="Temple Flameguard Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Temple Flameguard Officer">
+              <basestats name="Temple Flameguard Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Temple Flameguard Standard">
+              <basestats name="Temple Flameguard Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU06" name="Deliverer Sunburst Crew" full_name="Deliverer Sunburst Crew" base_cost="3" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="PU07" name="Flameguard Cleansers" full_name="Flameguard Cleansers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="PA06" name="Flameguard Cleanser Officer" full_name="Flameguard Cleanser Officer" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Flameguard Cleanser Officer">
+              <basestats name="Flameguard Cleanser Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU08" name="Daughters of the Flame" full_name="Daughters of the Flame" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="PU09" name="Exemplar Errants" full_name="Exemplar Errants" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="3" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="PA04" name="Exemplar Errant Officer &amp; Standard Bearer" full_name="Exemplar Errant Officer &amp; Standard Bearer" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Exemplar Errant Officer">
+              <basestats name="Exemplar Errant Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Exemplar Errant Standard Bearer">
+              <basestats name="Exemplar Errant Standard Bearer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU10" name="Exemplar Vengers" full_name="Exemplar Vengers" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+        <unit id="PU11" name="Exemplar Bastions" full_name="Exemplar Bastions" base_cost="5" baseCount="3" full_cost="8" fullCount="5" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="PU12" name="Visgoth Juviah Rhoven &amp; Honor Guard" full_name="Visgoth Juviah Rhoven &amp; Honor Guard" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+          <basestats name="Rhoven" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <model id="Guis">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+          <model id="Cassian">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </unit>
+        <unit id="PU13" name="Idrian Skirmishers" full_name="Idrian Skirmishers" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="PA03" name="Idrian Skirmishers Chieftain &amp; Guide" full_name="Idrian Skirmishers Chieftain &amp; Guide" fa="1" cost="3" qualification="Unit attachment">
+            <model id="Idrian Skirmisher Chieftain">
+              <basestats name="Idrian Skirmisher Chieftain" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Idrian Skirmisher Guide">
+              <basestats name="Idrian Skirmisher Guide" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="PU14" name="Exemplar Cinerators" full_name="Exemplar Cinerators" base_cost="5" baseCount="3" full_cost="8" fullCount="5" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="PU15" name="Flame Bringers" full_name="Flame Bringers" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="Protectorate Flameguard Light Cavalry Unit" fa="1">
+          <basestats name="Leader &amp; Grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+      </units>
+      <solos>
+        <solo id="PS01" name="Paladin of the Order of the Wall" full_name="Paladin of the Order of the Wall" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS02" name="Knight Exemplar Seneschal" full_name="Knight Exemplar Seneschal" cost="3" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS03" name="The Wrack (3 wracks)" full_name="The Wrack (3 wracks)" cost="1" qualification="Solo" fa="1">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </solo>
+        <solo id="PS04" name="The Covenant of Menoth" full_name="The Covenant of Menoth" cost="2" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS05" name="Reclaimer" full_name="Reclaimer" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS06" name="High Paladin Dartan Vilmon" full_name="High Paladin Dartan Vilmon" cost="3" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS07" name="Allegiant of the Order of the Fist" full_name="Allegiant of the Order of the Fist" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS08" name="Hierophant" full_name="Hierophant" cost="2" qualification="Solo" fa="1" warcaster_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS09" name="High Exemplar Gravus" full_name="High Exemplar Gravus" cost="5" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+          <weapons />
+        </solo>
+        <solo id="PS10" name="Vassal of Menoth" full_name="Vassal of Menoth" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS11" name="Exemplar Errant Seneschal" full_name="Exemplar Errant Seneschal" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS12" name="Vassal Mechanik" full_name="Vassal Mechanik" cost="1" qualification="Solo" fa="3">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PS13" name="Nicia, Tear of Vengeance" full_name="Nicia, Tear of Vengeance" cost="3" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="PA05" name="Attendant Priest" full_name="Attendant Priest" fa="2" cost="2" qualification="Unit attachment" mercenary_attachment="true">
+          <basestats name="Attendant Priest" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+       	<solo id="PS14" name="Exemplar Bastion Seneschal" full_name="Exemplar Bastion Seneschal" cost="3" qualification="Protectorate Solo" fa="2">
+         <basestats name="Seneschal" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" jack_marshal="true"/>
+         <weapons>
+         </weapons>
+         </solo>
+        <solo id="PS15" name="Tristan Durant" full_name="Initiate Tristan Durant" cost="3" qualification="Protectorate Solo" fa="C" >
+         <basestats name="Seneschal" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" journeyman_warcaster="true" focus="4"/>
+         <weapons>
+         </weapons>
+         </solo>
+        
+      </solos>
+    </army>
+  </armies>
+</ruleset>

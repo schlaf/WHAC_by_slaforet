@@ -19,14 +19,14 @@ public class JackEntry extends MultiPVModel {
 	private WarjackLikeDamageGrid damageGrid;
 	
 	
-	public JackEntry(ArmyElement jack, int entryCounter) {
-		this(jack, null, entryCounter);
+	public JackEntry(ArmyElement jack, int entryCounter, int cost, boolean specialist) {
+		this(jack, null, entryCounter, cost, specialist);
 		attached = false;
 	}
 	
 	
-	public JackEntry(ArmyElement jack, BattleEntry parent, int entryCounter) {
-		super(jack.getModels().get(0), jack, jack.getFullName(), entryCounter);
+	public JackEntry(ArmyElement jack, BattleEntry parent, int entryCounter, int cost, boolean specialist) {
+		super(jack.getModels().get(0), jack, jack.getFullName(), entryCounter, cost, specialist);
 		
 		if (parent != null) {
 			attached = true;

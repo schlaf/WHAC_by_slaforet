@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="tiers_schema.xsd" >
+<tierslist xmlns="http://www.whactiers.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
 
     <tiers
         name="Dr. Arkadius - Mad Science"
@@ -358,7 +359,8 @@ Carver's battle group gains a before game movement bonus.
         </level>
         <level number="4" >
 
-<!--  Must have in battlegroup  4(IB03 IB04 IB05 IB07 IB08) -->
+<!--  Must have in battlegroup  4(IB03 IB04 IB05 IB07 IB08)
+ -->
             <must_have>
                 <entrygroup
                     inBattlegroupOnly="true"
@@ -688,7 +690,8 @@ Carver's battle group gains a before game movement bonus.
         </level>
         <level number="4" >
 
-<!--  Must have in battlegroup  4(IB01 IB02 IB06 IB09 IB07) -->
+<!--  Must have in battlegroup  4(IB01 IB02 IB06 IB09 IB07)
+ -->
             <must_have>
                 <entrygroup
                     inBattlegroupOnly="true"
@@ -777,7 +780,8 @@ Carver's battle group gains a before game movement bonus.
         </level>
         <level number="4" >
 
-<!--  Must have in battlegroup  3(IB03 IB04 IB05 IB07 IB08) -->
+<!--  Must have in battlegroup  3(IB03 IB04 IB05 IB07 IB08)
+ -->
             <must_have>
                 <entrygroup
                     inBattlegroupOnly="true"

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.schlaf.steam.adapters;
 
@@ -24,41 +24,47 @@ import com.schlaf.steam.activities.card.CardLibraryRowData;
  *
  */
 public class CardLibrayRowAdapter extends ArrayAdapter<CardLibraryRowData> {
-	
-	  private final Context context;
-	  private final List<CardLibraryRowData> cards;
 
-	  public CardLibrayRowAdapter(Context context,  List<CardLibraryRowData> cards) {
-	    super(context, R.layout.row_card_library, cards);
-	    
-	    Collections.sort(cards);
-	    this.context = context;
-	    this.cards = cards;
-	  }
+    private final Context context;
+    private final List<CardLibraryRowData> cards;
 
-	  @Override
-	  public View getView(int position, View convertView, ViewGroup parent) {
-	    LayoutInflater inflater = (LayoutInflater) context
-	        .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-	    
-	    if (convertView == null) {
-		    convertView = inflater.inflate(R.layout.row_card_library, parent, false);
-	    }
-	    TextView title = (TextView) convertView.findViewById(R.id.card_title);
-	    TextView description = (TextView) convertView.findViewById(R.id.card_description);
-	    
-	    description.setText(cards.get(position).getQualification());
-	    
-	    if (cards.get(position).isCompleted()) {
-	    	title.setText(Html.fromHtml("<font color=\"white\">" + cards.get(position).getLabel() + "</font>"));
-	    	description.setTextColor(Color.WHITE);
-	    } else {
-	    	title.setText(Html.fromHtml("<font color=\"grey\">" + cards.get(position).getLabel() + "</font>"));
-	    	description.setTextColor(Color.GRAY);
-	    }
-	    
-	    return convertView;
-	  }
-	  
-	
+    public CardLibrayRowAdapter(Context context,  List<CardLibraryRowData> cards) {
+        super(context, R.layout.row_card_library, cards);
+
+        Collections.sort(cards);
+        this.context = context;
+        this.cards = cards;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        LayoutInflater inflater = (LayoutInflater) context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        if (convertView == null) {
+            convertView = inflater.inflate(R.layout.row_card_library, parent, false);
+        }
+        TextView title = (TextView) convertView.findViewById(R.id.card_title);
+        TextView description = (TextView) convertView.findViewById(R.id.card_subtitle);
+        TextView fa = (TextView) convertView.findViewById(R.id.card_fa);
+        TextView modelCount = (TextView) convertView.findViewById(R.id.card_unit_size);
+        TextView modelsLabel = (TextView) convertView.findViewById(R.id.card_models_label);
+        TextView cost = (TextView) convertView.findViewById(R.id.card_cost);
+
+        description.setText(cards.get(position).getQualification());
+        title.setText(Html.fromHtml(cards.get(position).getLabel()));
+        fa.setText(cards.get(position).getFA());
+        if (cards.get(position).isShowModelCount()) {
+            modelCount.setText(cards.get(position).getModelCount());
+            modelsLabel.setVisibility(View.VISIBLE);
+        } else {
+            modelCount.setText("");
+            modelsLabel.setVisibility(View.INVISIBLE);
+        }
+        cost.setText(cards.get(position).getCost());
+
+        return convertView;
+    }
+
+
 }

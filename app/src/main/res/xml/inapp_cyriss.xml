@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
+  <armies>
+    <army faction="faction_cyriss" name="cyriss" version="inapp_cyriss_001">
+      <warcasters>
+        <warcaster id="cocW01" name="Aurora, Numen of Aerogensis" full_name="Aurora, Numen of Aerogensis" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Aurora, Numen of Aerogensis" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="cocW02" name="Axis, the Harmonic Enforcer" full_name="Axis, the Harmonic Enforcer" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Axis, the Harmonic Enforcer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+            <feat title=""/>
+        </warcaster>
+        <warcaster id="cocW03" name="Iron Mother Directrix &amp; Exponent Servitors" full_name="Iron Mother Directrix &amp; Exponent Servitors" generation="P" qualification="warcaster" focus="6" warjack_points="4" fa="C">
+          <basestats name="Iron Mother Directrix &amp; Exponent Servitors" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+            <feat title=""/>
+        </warcaster>
+        <warcaster id="cocW04" name="Father Lucant, Divinity Architect" full_name="Father Lucant, Divinity Architect" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Father Lucant, Divinity Architect" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="21" />
+          <weapons />
+            <feat title=""/>
+        </warcaster>
+        <warcaster id="cocW05" name="Forge Master Syntherion" full_name="Forge Master Syntherion" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Forge Master Syntherion" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons>
+          </weapons>
+          <feat title=""></feat>
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="cocJ01" name="Corollary" full_name="Corollary" damage_grid="xxxxxxxx..xxx....xM....MxMHHMxxxIIxx" cost="3" qualification="Light Warjack" fa="1">
+          <basestats name="Corollary" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="cocJ02" name="Diffuser" full_name="Diffuser" damage_grid="xx..xxxx..xxxx..xxx....xxHHHHxMMIIMM" cost="3" qualification="Light Warjack" fa="U">
+          <basestats name="Diffuser" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="cocJ03" name="Galvanizer" full_name="Galvanizer" damage_grid="xx..xxxx..xxxx..xxx....xxHHHHxMMIIMM" cost="3" qualification="Light Warjack" fa="U">
+          <basestats name="Galvanizer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="cocJ04" name="Mitigator" full_name="Mitigator" damage_grid="xx..xxxx..xxxx..xxx....xxHHHHxMMIIMM" cost="4" qualification="Light Warjack" fa="U">
+          <basestats name="Mitigator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="cocJ05" name="Assimilator" full_name="Assimilator" damage_grid="xx..xxx....x........LR..MLLRRMxMIIRx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="Assimilator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="cocJ06" name="Cipher" full_name="Cipher" damage_grid="x....xx....x........LR...LLRR.MMIIMM" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Cipher" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="cocJ07" name="Conservator" full_name="Conservator" damage_grid="xx..xxx....x........LR..MLLRRMxMIIRx" cost="7" qualification="Heavy Warjack" fa="U">
+          <basestats name="Conservator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="cocJ08" name="Inverter" full_name="Inverter" damage_grid="x....xx....x........LR...LLRR.MMIIMM" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="Inverter" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="cocJ09" name="Modulator" full_name="Modulator" damage_grid="xx..xxx....x........LR..MLLRRMxMIIRx" cost="6" qualification="Heavy Warjack" fa="U">
+          <basestats name="Modulator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="cocJ10" name="Monitor" full_name="Monitor" damage_grid="x....xx....x........LR...LLRR.MMIIMM" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="Monitor" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+      </warjacks>
+      <colossals>
+        <colossal id="cocJ11" name="Prime Axiom" full_name="Prime Axiom" damage_grid_left="xx....xx....xx..SS.LLSSILLIIIIMMMMMI" damage_grid_right="....xx....xxSS..xxISRR.xIIIIRRIMMMMM" cost="19" qualification="Heavy Warjack" fa="2">
+          <basestats name="Prime Axiom" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="cocE01" name="Transinfinite Emergence Projector &amp; Permutation Servitors" full_name="Transinfinite Emergence Projector &amp; Permutation Servitors" cost="9" qualification="Battle engine" fa="2">
+          <basestats name="Transinfinite Emergence Projector &amp; Permutation Servitors" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons />
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="cocU01" name="Clockwork Angels" full_name="Clockwork Angels" base_cost="3" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="3">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="cocU02" name="Obstructors" full_name="Obstructors" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="3">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="cocU03" name="Reductors" full_name="Reductors" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="cocU04" name="Eradicators" full_name="Eradicators" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="cocU05" name="Optifex Directive" full_name="Optifex Directive" base_cost="2" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="U">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="cocU06" name="Reciprocators" full_name="Reciprocators" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="cocU07" name="Perforators" full_name="Perforators" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="2">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+      </units>
+      <solos>
+        <solo id="cocS01" name="Accretion Servitors" full_name="Accretion Servitors" cost="1" qualification="Solo" fa="3">
+          <basestats name="Accretion Servitors" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </solo>
+        <solo id="cocS02" name="Algorithmic Dispersion Optifex" full_name="Algorithmic Dispersion Optifex" cost="1" qualification="Solo" fa="4">
+          <basestats name="Algorithmic Dispersion Optifex" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="cocS03" name="Attunement Servitors" full_name="Attunement Servitors" cost="2" qualification="Solo" fa="3">
+          <basestats name="Attunement Servitors" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </solo>
+        <solo id="cocS04" name="Elimination Servitors" full_name="Elimination Servitors" cost="2" qualification="Solo" fa="3">
+          <basestats name="Elimination Servitors" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </solo>
+        <solo id="cocS05" name="Enigma Foundry" full_name="Enigma Foundry" cost="3" qualification="Solo" fa="2">
+          <basestats name="Enigma Foundry" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </solo>
+        <solo id="cocS06" name="Steelsoul Protector" full_name="Steelsoul Protector" cost="2" qualification="Solo" fa="3">
+          <basestats name="Steelsoul Protector" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </solo>
+        <solo id="cocS07" name="Reflex Servitors" full_name="Reflex Servitors" cost="2" qualification="Convergence Solo" fa="3">
+          <basestats name="Reflex Servitors" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+          <weapons>
+          </weapons>
+        </solo>
+        
+        <solo id="cocA01" name="Transverse Enumerator" full_name="Transverse Enumerator" fa="3" cost="2" qualification="Unit attachment">
+          <basestats name="Transverse Enumerator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>
+

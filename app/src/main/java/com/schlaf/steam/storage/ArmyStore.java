@@ -25,8 +25,10 @@ import com.schlaf.steam.data.Warjack;
 
 public class ArmyStore implements Serializable {
 
-	private static final long serialVersionUID = -8997444309756364811L;
-	protected String filename;
+    private static final long serialVersionUID = -8997444309756364811L;
+    public static final String SPECIALIST = " (SPECIALIST)";
+    public static final String POINTS = "points)";
+    protected String filename;
 	protected String factionId;
 	protected int nbCasters;
 	protected int nbPoints;
@@ -127,33 +129,32 @@ public class ArmyStore implements Serializable {
 			
 			sb.append("<br>").append("<B>").append(element.toString());
 			if (element instanceof ArmyCommander) {
-				sb.append("(*").append(element.getBaseCost()).append("points)");
+				sb.append("(*").append(element.getBaseCost()).append(POINTS);
 			} else {
-				sb.append("(").append(entry.getCost()).append("points)");
+				sb.append("(").append(entry.getCost()).append(POINTS);
 			}
 			sb.append("</B>");
 			
 			
 			// attach descendants
-			if (entry instanceof JackCommander) {
-				for (SelectedWarjack jack : ((JackCommander) entry).getJacks()) {
-					Warjack aJack = (Warjack) ArmySingleton.getInstance().getArmyElement(jack.getId());
-					sb.append("<br>* ").append(aJack.toString()).append("(").append(jack.getCost()).append("points)");
-				}
-			}
-			
 			if (entry instanceof BeastCommander) {
 				for (SelectedWarbeast beast : ((BeastCommander) entry).getBeasts()) {
 					Warbeast aBeast = (Warbeast) ArmySingleton.getInstance().getArmyElement(beast.getId());
-					sb.append("<br>* ").append(aBeast.toString()).append("(").append(beast.getCost()).append("points)");;
+					sb.append("<br>* ").append(aBeast.toString()).append("(").append(beast.getCost()).append(POINTS);;
+                    if (beast.isSpecialist()) {
+                        sb.append(SPECIALIST);
+                    }
 				}
 			}
 			
 			if (entry instanceof SelectedArmyCommander) {
 				if ( ((SelectedArmyCommander)entry).getAttachment() != null) {
 					Solo attachment = (Solo) ArmySingleton.getInstance().getArmyElement(((SelectedArmyCommander)entry).getAttachment().getId());
-					sb.append("<br>* ").append(attachment.toString()).append("(").append(((SelectedArmyCommander)entry).getAttachment().getRealCost()).append("points)");;
-				}
+					sb.append("<br>* ").append(attachment.toString()).append("(").append(((SelectedArmyCommander)entry).getAttachment().getRealCost()).append(POINTS);;
+                    if (((SelectedArmyCommander)entry).getAttachment().isSpecialist()) {
+                        sb.append(SPECIALIST);
+                    }
+                }
 			}
 			
 			if (entry instanceof SelectedUnit) {
@@ -161,20 +162,29 @@ public class ArmyStore implements Serializable {
 				if ( ((SelectedUnit) entry).getUnitAttachment() != null) {
 					SelectedUA ua = ((SelectedUnit) entry).getUnitAttachment();
 					ArmyElement uaDescription = ArmySingleton.getInstance().getArmyElement(ua.getId());
-					sb.append("<br>* ").append(uaDescription.toString()).append("(").append(ua.getCost()).append("points)");;
+					sb.append("<br>* ").append(uaDescription.toString()).append("(").append(ua.getCost()).append(POINTS);;
+                    if (ua.isSpecialist()) {
+                        sb.append(SPECIALIST);
+                    }
 				}
 				
 				if ( ((SelectedUnit) entry).getRankingOfficer() != null) {
 					SelectedRankingOfficer ra = ((SelectedUnit) entry).getRankingOfficer();
 					ArmyElement raDescription = ArmySingleton.getInstance().getArmyElement(ra.getId());
-					sb.append("<br>* ").append(raDescription.toString()).append("(").append(ra.getCost()).append("points)");;
+					sb.append("<br>* ").append(raDescription.toString()).append("(").append(ra.getCost()).append(POINTS);;
+                    if (ra.isSpecialist()) {
+                        sb.append(SPECIALIST);
+                    }
 				}
 				
 				if ( ((SelectedUnit) entry).getSoloAttachment() != null) {
 					
 					SelectedSolo solo = ((SelectedUnit) entry).getSoloAttachment();
 					ArmyElement raDescription = ArmySingleton.getInstance().getArmyElement(solo.getId());
-					sb.append("<br>* ").append(raDescription.toString()).append("(").append(solo.getCost()).append("points)");;
+					sb.append("<br>* ").append(raDescription.toString()).append("(").append(solo.getCost()).append(POINTS);;
+                    if (solo.isSpecialist()) {
+                        sb.append(SPECIALIST);
+                    }
 				}
 				
 				
@@ -182,9 +192,27 @@ public class ArmyStore implements Serializable {
 					SelectedWA wa = ((SelectedUnit) entry).getWeaponAttachments().get(0);
 					int waCount = ((SelectedUnit) entry).getWeaponAttachments().size();
 					ArmyElement waDescription = ArmySingleton.getInstance().getArmyElement(wa.getId());
-					sb.append("<br>* ").append(waCount).append(" ").append(waDescription.toString()).append("(").append(waCount * wa.getRealCost()).append("points)");;
+					sb.append("<br>* ").append(waCount).append(" ").append(waDescription.toString()).append("(").append(waCount * wa.getCost()).append(POINTS);;
+                    if (wa.isSpecialist()) {
+                        sb.append(SPECIALIST);
+                    }
 				}
 			}
+
+            // jacks are placed AFTER units to have correct model count
+            if (entry instanceof JackCommander) {
+                for (SelectedWarjack jack : ((JackCommander) entry).getJacks()) {
+                    Warjack aJack = (Warjack) ArmySingleton.getInstance().getArmyElement(jack.getId());
+                    sb.append("<br>* ").append(aJack.toString()).append("(").append(jack.getCost()).append(POINTS);
+                    if (jack.isSpecialist()) {
+                        sb.append(SPECIALIST);
+                    }
+                }
+            }
+
+            if (entry.isSpecialist()) {
+                sb.append(SPECIALIST);
+            }
 		
 		}
 		

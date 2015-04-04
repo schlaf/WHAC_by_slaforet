@@ -19,18 +19,18 @@ public abstract class MultiPVModel extends BattleEntry {
 	 */
 	public abstract DamageGrid getDamageGrid();
 	
-	public MultiPVModel(ArmyElement entry, int entryCounter) {
-		super(entry, entryCounter);
+	public MultiPVModel(ArmyElement entry, int entryCounter, int cost, boolean specialist) {
+		super(entry, entryCounter, cost, specialist);
 	}
 	
-	public MultiPVModel(SingleModel model, ArmyElement entry, String label,int entryCounter ) {
-		super(entry, entryCounter);
+	public MultiPVModel(SingleModel model, ArmyElement entry, String label,int entryCounter, int cost, boolean specialist ) {
+		super(entry, entryCounter, cost, specialist);
 		this.model = new MiniModelDescription(model);
 		this.label = label;
 	}
 	
-	public MultiPVModel(MiniModelDescription desc, ArmyElement entry, String label,int entryCounter ) {
-		super(entry, entryCounter);
+	public MultiPVModel(MiniModelDescription desc, ArmyElement entry, String label,int entryCounter, int cost, boolean specialist ) {
+		super(entry, entryCounter, cost, specialist);
 		this.model = desc;
 		this.label = label;
 	}

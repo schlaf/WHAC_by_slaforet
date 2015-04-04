@@ -300,9 +300,9 @@ public class DamageUnitView extends DamageBaseView implements ColumnChangeNotifi
 			canvas.drawRect(clipbounds, paint);
 			
 			paint.setStyle(Style.FILL);
-			paint.setColor(Color.WHITE);	
+			paint.setColor(getResources().getColor(R.color.primary_text_default_material_light));
 		} else {
-			paint.setColor(Color.GRAY);
+			paint.setColor(getResources().getColor(R.color.secondary_text_default_material_light));
 		}
 		
 		int yAxisText = yAxis; // - modelZoneHeight / 4;

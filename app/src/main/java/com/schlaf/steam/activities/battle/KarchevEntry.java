@@ -11,8 +11,8 @@ public class KarchevEntry extends JackEntry {
 	/** damage grid */
 	private WarjackLikeDamageGrid damageGrid;
 	
-	public KarchevEntry(ArmyElement karchev, int entryCounter) {
-		super(karchev, entryCounter);
+	public KarchevEntry(ArmyElement karchev, int entryCounter, int cost) {
+		super(karchev, entryCounter, cost, false);
 		attached = false;
 		damageGrid = new WarjackDamageGrid(karchev.getModels().get(0));
 		damageGrid.fromString(  ((WarjackDamageGrid) karchev.getModels().get(0).getHitpoints()).getDamageGridString() );

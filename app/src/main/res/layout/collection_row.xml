@@ -53,7 +53,7 @@
             android:background="@android:color/transparent"
             android:minWidth="48dp"
             android:text="+"
-            android:textColor="@color/White" />
+            android:textColor="@color/primary_text_default_material_light" />
 
         <Button
             android:id="@+id/buttonless_owned"
@@ -62,7 +62,7 @@
             android:layout_height="24dp"
             android:layout_toRightOf="@id/numberOwned"
             android:layout_below="@id/buttonmore_owned"
-            android:textColor="@color/White" 
+            android:textColor="@color/primary_text_default_material_light"
             android:text="-" />
 
     </RelativeLayout>
@@ -94,7 +94,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_toRightOf="@id/numberPainted"
-            android:textColor="@color/White" 
+            android:textColor="@color/primary_text_default_material_light"
             android:text="+" />
 
         <Button
@@ -104,7 +104,7 @@
             android:layout_height="24dp"
             android:layout_toRightOf="@id/numberPainted"
             android:layout_below="@id/buttonmore_painted"
-            android:textColor="@color/White" 
+            android:textColor="@color/primary_text_default_material_light"
             android:text="-" />
 
     </RelativeLayout>

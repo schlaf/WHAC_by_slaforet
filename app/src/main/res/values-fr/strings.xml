@@ -520,6 +520,10 @@
     <string name="add_entry_title">Insérer un modèle dans la bataille</string>
     <string name="battle_planner">Préparer votre plan de bataille</string>
     <string name="long_press_to_add">Appui long pour ajouter cette carte</string>
+    <string name="import_versions">Versions d\'import</string>
+    <string name="specialists">Spécialistes</string>
+    <string name="choose_specialists">Choix des spécialistes</string>
+    <string name="specialists_points">Points de spécialistes = </string>
 
 
 </resources>

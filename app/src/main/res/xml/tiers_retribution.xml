@@ -594,6 +594,7 @@
         <entry id="RJ11" />
         <entry id="RJ13" />
         <entry id="RU05" />
+        <entry id="RU10" />
         <entry id="RA03" />
         <entry id="RA04" />
         <entry id="MS01" />
@@ -832,4 +833,186 @@
       </benefits>
     </level>
   </tiers>
+    <tiers name="Kaelyssa - Force Wall" casterId="RW04" faction="faction_retribution">
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Retribution non-character myrmidons with force field damage boxes</models>
+            </type>
+            <type type="UNITS">
+                <models>House Shyeel units </models>
+            </type>
+            <type type="SOLOS">
+                <models>Arcanists, House Shyeel solos</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Arcantrik Force Generator</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="RW04" />
+                <entry id="RJ01" />
+                <entry id="RJ02" />
+                <entry id="RJ03" />
+                <entry id="RJ04" />
+                <entry id="RJ05" />
+                <entry id="RJ06" />
+                <entry id="RJ08" />
+                <entry id="RJ13" />
+                <entry id="RU03" />
+                <entry id="RA04" />
+                <entry id="RS01" />
+                <entry id="RS04" />
+                <entry id="RS11" />
+                <entry id="RE01" />
+            </only>
+            <benefits>
+                <ingameeffect >Arcanists gain Force Multiplier (★Action). (Replace the Arcanist card with the theme force Arcanist card found in this article.)</ingameeffect>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2RU04-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="RU03" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect />
+                <alterFA bonus="2" entryId="RU03"/>
+                <alterFA bonus="2" entryId="RS04"/>
+                <alterFA bonus="2" entryId="RS11"/>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  2(RS01)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="RS11" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect >Enemy models cannot run or charge during the first round of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have  RJ12-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="RJ04" />
+                    <entry id="RJ05" />
+                    <entry id="RJ06" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect ></ingameeffect>
+                <freeModel>
+                    <entry id="RS01"/>
+                    <forEach>
+                        <entry id="RJ01" />
+                        <entry id="RJ02" />
+                        <entry id="RJ03" />
+                        <entry id="RJ04" />
+                        <entry id="RJ05" />
+                        <entry id="RJ06" />
+                        <entry id="RJ08" />
+                        <entry id="RJ13" />
+                    </forEach>
+                </freeModel>
+            </benefits>
+        </level>
+    </tiers>
+
+    <tiers name="Issyria - Dawnbringers" casterId="RW07" faction="faction_retribution">
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Retribution non-character myrmidons with Field Generator systems</models>
+            </type>
+            <type type="UNITS">
+                <models>Dawnguard Invictors, Dawnguard Sentinels, Houseguard units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Arcanists, Dawnguard Scyirs, Houseguard solos, Sylys Wyshnalyrr the Seeker</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="RW07" />
+                <entry id="RJ01" />
+                <entry id="RJ02" />
+                <entry id="RJ03" />
+                <entry id="RJ04" />
+                <entry id="RJ05" />
+                <entry id="RJ06" />
+                <entry id="RJ08" />
+                <entry id="RJ13" />
+
+                <entry id="RU01" />
+                <entry id="RU02" />
+                <entry id="RU04" />
+                <entry id="RU07" />
+                <entry id="RU01" />
+
+                <entry id="RA01" />
+                <entry id="RA02" />
+                <entry id="RA04" />
+                <entry id="RA05" />
+                <entry id="RA06" />
+
+                <entry id="RS01" />
+                <entry id="RS02" />
+                <entry id="RS13" />
+                <entry id="MS23" />
+
+            </only>
+            <benefits>
+                <ingameeffect ></ingameeffect>
+                <alterFA bonus="1" entryId="RS01" />
+                <alterFA bonus="1" entryId="RS02" />
+                <alterFA bonus="1" entryId="RS13" />
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2RU04-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="RS13" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Warrior models/units gain +2 SPD during your first turn of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  2(RS01)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="RU01" />
+                    <entry id="RU02" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect ></ingameeffect>
+                <freeModel>
+                    <entry id="RA01"/>
+                    <entry id="RA02" />
+                </freeModel>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have  RJ12-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="RJ01" />
+                    <entry id="RJ06" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect >Roll two dice for your starting game roll and keep the higher result.
+                </ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
 </tierslist>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/lightUI"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal|center_horizontal">
+
+        <TextView
+                android:id="@+id/scenario_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/_1"
+                android:textSize="@dimen/textview_large_height"
+                android:textStyle="bold"
+                android:textColor="@android:color/primary_text_light"/>
+
+        <TextView
+                android:id="@+id/scenario_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/description"
+                android:textSize="@dimen/textview_large_height"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"
+                android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/scenario_map"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:src="@drawable/maps_2015_1_standard_destruction"
+            android:layout_below="@+id/scenario_number"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

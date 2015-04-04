@@ -5,6 +5,7 @@ package com.schlaf.steam.activities.battle;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -281,8 +282,22 @@ public class BattleActivity extends ActionBarActivity implements BattleListInter
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.e(TAG, "onCreate");
-		super.onCreate(savedInstanceState);
-		
+        super.onCreate(savedInstanceState);
+
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            Log.e(TAG, "status not clean, exiting" );
+            Intent i = getBaseContext().getPackageManager()
+                    .getLaunchIntentForPackage(getBaseContext().getPackageName() );
+            Log.e(TAG, "intent = " + i.toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+            startActivity(i);
+
+            finish();
+            return;
+        }
+
+
+
 		battleName = getIntent().getStringExtra(INTENT_BATTLE_NAME);
 		armyPath = getIntent().getStringExtra(INTENT_ARMY_PATH);
 		battlePath = getIntent().getStringExtra(INTENT_BATTLE_PATH);
@@ -306,8 +321,25 @@ public class BattleActivity extends ActionBarActivity implements BattleListInter
 				// clean player2 list
 				BattleSingleton.getInstance().setArmy(null, BattleSingleton.PLAYER2);
 				BattleSingleton.getInstance().getEntries(BattleSingleton.PLAYER2).clear();
-				
-			} else {
+
+                boolean hasSpecialist = false;
+                for (BattleEntry entry : BattleSingleton.getInstance().getEntries(BattleSingleton.PLAYER1)) {
+                    if (entry.isSpecialist()) {
+                        hasSpecialist = true;
+                        break;
+                    }
+                }
+
+                if (hasSpecialist) {
+                    AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                    alert.setTitle("Specialist");
+                    alert.setMessage("This army contains specialist. Hit the specialist menu to select your entries...");
+                    alert.show();
+                }
+
+
+
+            } else {
 				// default : load existing battle...
 				boolean complete = StorageManager.loadExistingBattle(getApplicationContext(), battlePath, BattleSingleton.getInstance());
 				
@@ -448,7 +480,24 @@ public class BattleActivity extends ActionBarActivity implements BattleListInter
 		
 		int chronoPageNumber = mTabsAdapter.getTabIndexForId(CHRONO_FRAGMENT);
 		((ChronoFragment) mTabsAdapter.getItem(chronoPageNumber)).updateDisplay();
-//		
+//
+
+        boolean hasSpecialist = false;
+        for (BattleEntry entry : BattleSingleton.getInstance().getEntries(BattleSingleton.PLAYER1)) {
+            if (entry.isSpecialist()) {
+                hasSpecialist = true;
+                break;
+            }
+        }
+
+        if (hasSpecialist) {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setTitle("Specialist");
+            alert.setMessage("This army contains specialist. Hit the specialist menu to select your entries...");
+            alert.show();
+        }
+
+
 //		FragmentManager fragmentManager = getSupportFragmentManager();
 //
 //		if (fragmentManager.findFragmentByTag(BattleListFragmentPlayer1.ID) != null) {
@@ -787,12 +836,23 @@ public class BattleActivity extends ActionBarActivity implements BattleListInter
 	        case R.id.menu_steamroller:
 	        	openScenarioLibrary();
 	        	return true;
+            case R.id.menu_specialist:
+                chooseSpecialists();
+                return true;
 	        case R.id.startBlueTooth: 
 	        	startActivity(new Intent(this, EnableBluetoothActivity.class));
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
-	}	
+	}
+
+
+    private void chooseSpecialists() {
+
+        DialogFragment dialog = new ChooseSpecialistsDialog();
+        dialog.show(getSupportFragmentManager(), "ChooseSpecialistsDialog");
+
+    }
 	
 	private void openScenarioLibrary() {
 		Intent intent = new Intent(this, ScenarioLibraryActivity.class);
@@ -1017,10 +1077,13 @@ startActivity(intent);
 	public void endBattle(int winnerNumber, String player2name,
 			String clockType, String scenario, String victoryCondition,
 			String notes) {
+
+        SimpleDateFormat sdf = new SimpleDateFormat();
+
 		BattleResult result = new BattleResult();
 		
 		result.setArmyName(battleName);
-		result.setBattleDate(new Date());
+		result.setBattleDate(sdf.format(new Date()));
 		result.setWinnerNumber(winnerNumber);
 		result.setPlayer2name(player2name);
 		result.setClockType(clockType);
@@ -1221,7 +1284,7 @@ startActivity(intent);
 					ArmyElement element = ArmySingleton.getInstance().getArmyElement(objectiveName);
 					
 					int countEntries = BattleSingleton.getInstance().getEntries(BattleSingleton.PLAYER1).size();
-					BattleEntry bEntry = new SingleDamageLineEntry(element, countEntries++);
+					BattleEntry bEntry = new SingleDamageLineEntry(element, countEntries++, 0, false);
 					
 					BattleSingleton.getInstance().getEntries(BattleSingleton.PLAYER1).add(bEntry);
 				
@@ -1719,28 +1782,28 @@ startActivity(intent);
 		} else if (element instanceof Unit) {
 			SelectedUnit selectedUnit = new SelectedUnit(element.getId(), element.getFullName(), false);
 			Unit unit = (Unit) element;
-			bEntry = new MultiPVUnit((SelectedUnit) selectedUnit, unit, entryCounter++);
+			bEntry = new MultiPVUnit((SelectedUnit) selectedUnit, unit, entryCounter++, 0, false);
 
 		} else if (element instanceof Solo){
 			if (element.hasMultiPVModels()) {
 				if (element.getModels().size() == 1) {
-					bEntry = new SingleDamageLineEntry(element, entryCounter++);
+					bEntry = new SingleDamageLineEntry(element, entryCounter++, 0, false);
 				} else {
 					// dragoon
 					SelectedDragoon dragoon = new SelectedDragoon(element.getId(), element.getFullName(), true);
-					bEntry = new MultiPVUnit(dragoon, element, entryCounter++);
+					bEntry = new MultiPVUnit(dragoon, element, entryCounter++, 0, false);
 				}
 			} else {
-				bEntry = new BattleEntry(element, entryCounter++);
+				bEntry = new BattleEntry(element, entryCounter++, 0, false);
 			}
 		} else if (element instanceof BattleEngine) {
-			bEntry = new SingleDamageLineEntry(element, entryCounter++);
+			bEntry = new SingleDamageLineEntry(element, entryCounter++, 0, false);
 		} else if (element instanceof Warjack) {
-			bEntry = new JackEntry( (Warjack) element, null, entryCounter++);
+			bEntry = new JackEntry( (Warjack) element, null, entryCounter++, 0, false);
 		} else if (element instanceof Warbeast) {
-			bEntry = new BeastEntry( (Warbeast) element, null, entryCounter++);
+			bEntry = new BeastEntry( (Warbeast) element, null, entryCounter++, 0, false);
 		} else {
-			bEntry = new BattleEntry(element, entryCounter++);
+			bEntry = new BattleEntry(element, entryCounter++, 0, false);
 		}
 		
 		BattleSingleton.getInstance().getEntries(BattleSingleton.PLAYER1).add(bEntry);
@@ -1750,5 +1813,10 @@ startActivity(intent);
 
 		
 	}		
-	
+
+    public void notifySpecialistsChange() {
+        BattleListFragment listFragment = (BattleListFragment) mTabsAdapter.getItem(0); // first tab
+        listFragment.refreshAllList();
+    }
+
 }

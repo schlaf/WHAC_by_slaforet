@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://www.whac.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
+  <armies>
+    <army faction="faction_khador" name="Khador" version="inapp_khador_001">
+      <warcasters>
+        <warcaster id="Kw01" name="Butcher1" full_name="The Butcher of Khardov" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Kx01" name="Butcher2" full_name="Kommander Orsus Zoktavir" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Kz01" name="Butcher3" full_name="Kommander Zoktavir, The Butcher Unleashed" generation="EE" qualification="Khador Epic Caster Unit" focus="6" warjack_points="4" fa="C">
+          <basestats name="Zoktavir" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
+          <weapons />
+          <feat title=""/>
+          <model id="kz01_argus1" name="War Argus" full_name="War Argus">
+            <basestats name="War Argus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+            <weapons>
+            </weapons>
+          </model>
+          <model id="kz01_argus2" name="War Argus" full_name="War Argus">
+            <basestats name="War Argus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+            <weapons>
+            </weapons>
+          </model>
+        </warcaster>
+        <warcaster id="Kw02" name="Sorscha1" full_name="Kommander Sorscha" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Kommander Sorscha" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17"  />
+          <weapons>
+          </weapons>
+          <feat title=""></feat>
+        </warcaster>
+        <warcaster id="Kx02" name="Sorscha2" full_name="Forward Kommander Sorscha" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Kw03" name="Vladimir1" full_name="Vladimir, The Dark Prince" generation="P" generation_id="vlad" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Kx03" name="Vladimir2" full_name="Vladimir Tzepesci, the Dark Champion" generation="E" generation_id="vlad" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Kz03" name="Vladimir3" full_name="Vladimir Tzepesci, Great Prince of Umbrey" generation="EE" generation_id="vlad" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Kw04" name="Irusk1" full_name="Kommandant Irusk" generation="P" generation_id="irusk" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Kx04" name="Irusk2" full_name="Supreme Kommandant Irusk" generation="E" generation_id="irusk" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="KW05" name="Karchev" full_name="Karchev" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="Karchev" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" damage_grid="...................L..R.LLMBRRxMMBBx" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="KW06" name="Zerkova" full_name="Zerkova" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="KW07" name="Old Witch" full_name="Old Witch" generation="P" qualification="warcaster" focus="6" warjack_points="3" fa="C" companionId="Scrapjack">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="KW08" name="Strakhov" full_name="Strakhov" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="KW09" name="Harkevich" full_name="Harkevich" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
+      </warcasters>
+      <warjacks>
+        <warjack id="Scrapjack" name="Scrapjack" full_name="Scrapjack" damage_grid="xxxxxxxx..xxx....x......MCAACMxMCCMx" cost="0" qualification="Heavy Warjack" fa="C">
+          <basestats name="Scrapjack" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <restricted_to id="KW07" />
+        </warjack>
+        <warjack id="KJ01" name="Destroyer" full_name="Destroyer" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Khador Heavy Warjack" fa="U">
+          <basestats name="Destroyer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="KJ02" name="Juggernaut" full_name="Juggernaut" damage_grid="...................L..R.LLMCRRxMMCCx" cost="7" qualification="Khador Heavy Warjack" fa="U">
+          <basestats name="Juggernaut" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </warjack>
+        <warjack id="KJ03" name="Marauder" full_name="Marauder" damage_grid="...................L..R.LLMCRRxMMCCx" cost="7" qualification="Heavy Warjack" fa="U">
+          <basestats name="Marauder" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ04" name="Berserker" full_name="Berserker" damage_grid="x....x.............L..R.LLMCRRxMMxCx" cost="6" qualification="Heavy Warjack" fa="U">
+          <basestats name="Berserker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ05" name="Devastator" full_name="Devastator" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Devastator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ06" name="Kodiak" full_name="Kodiak" damage_grid="...................L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U">
+          <basestats name="Kodiak" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ07" name="Behemoth" full_name="Behemoth" damage_grid="....................SS..LLMCRRLMMCCR" cost="13" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Behemoth" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ08" name="Spriggan" full_name="Spriggan" damage_grid="...................L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Warjack" fa="U">
+          <basestats name="Spriggan" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ09" name="Beast-09" full_name="Beast-09" damage_grid="...................L..R.LLMCRRxMMCCx" cost="11" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Beast-09" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ10" name="Drago" full_name="Drago" damage_grid="x....x.............L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Drago" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ11" name="Decimator" full_name="Decimator" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Decimator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ12" name="Torch" full_name="Torch" damage_grid="...................L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Torch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ13" name="Demolisher" full_name="Demolisher" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Demolisher" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ14" name="Black Ivan" full_name="Black Ivan" damage_grid="...................L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Black Ivan" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ16" name="Grolar" full_name="Grolar" damage_grid="...................L..R.LLMCRRxMMCCx" cost="9" qualification="Heavy Warjack" fa="U">
+          <basestats name="Grolar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="KJ17" name="Ruin" full_name="Ruin" qualification="Khador Character Heavy Warjack" fa="C" cost="10" damage_grid="...................L..R.LLMCRRxMMCCx" >
+          <basestats name="Ruin" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+          <weapons/>
+        </warjack>
+        
+      </warjacks>
+      <colossals>
+        <colossal id="KJ15" name="Conquest" full_name="Conquest" damage_grid_left="xxx...xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="...xxx....xxSS....CSRRR.CCCCRRMMMMCR" cost="19" qualification="Colossal" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </colossal>
+      </colossals>
+      <battleEngines>
+        <battleEngine id="KE01" cost="9" fa="2" name="Gun Carriage" full_name="Gun Carriage" qualification="Khador Battle Engine">
+          <basestats name="Gun Carriage" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="22" />
+          <weapons />
+        </battleEngine>
+      </battleEngines>
+      <units>
+        <unit id="KU01" name="Battle Mechaniks" full_name="Battle Mechaniks" base_cost="2" baseCount="4" full_cost="3" fullCount="6" qualification="Unit" fa="3" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" jack_marshal="true" />
+          <weapons />
+          <unit_attachment id="KA08" name="Battle Mechanik Officer" full_name="Battle Mechanik Officer" fa="2" cost="2" qualification="Unit attachment">
+            <model id="Battle Mechanik Officer">
+              <basestats name="Battle Mechanik Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU02" name="Doom Reavers" full_name="Doom Reavers" base_cost="6" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="KA06" name="Greylord Escort" full_name="Greylord Escort" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Greylord Escort">
+              <basestats name="Greylord Escort" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU03" name="Iron Fang Pikemen" full_name="Iron Fang Pikemen" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="KA01" name="Iron Fang Pikemen Officer &amp; Standard" full_name="Iron Fang Pikemen Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Iron Fang Pikemen Officer">
+              <basestats name="Iron Fang Pikemen Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Iron Fang Pikemen Standard">
+              <basestats name="Iron Fang Pikemen Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU04" name="Man-o-war Shocktroopers" full_name="Man-o-war Shocktroopers" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="3">
+          <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="KU05" name="Widowmakers" full_name="Widowmakers" base_cost="4" baseCount="4" full_cost="-" fullCount="-" qualification="Unit" fa="1">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="KU06" name="Winter Guard Infantry" full_name="Winter Guard Infantry" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="3" has_unit_attachment="true" has_weapon_attachment="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="KA02" name="Winter Guard Inf. Officer &amp; Standard" full_name="Winter Guard Inf. Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+            <model id="Winter Guard Infantry Officer">
+              <basestats name="Winter Guard Infantry Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+            <model id="Winter Guard Infantry Standard">
+              <basestats name="Winter Guard Infantry Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </unit_attachment>
+          <weapon_attachment id="KA03" name="Winter Guard Infantry Rocketeer" full_name="Winter Guard Infantry Rocketeer" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+            <model id="Winter Guard Infantry Rocketeer">
+              <basestats name="Winter Guard Infantry Rocketeer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="0" />
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="KU07" name="Greylord Ternion" full_name="Greylord Ternion" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="3">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="KU08" name="Kossite Woodsmen" full_name="Kossite Woodsmen" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="KU09" name="Winter Guard Mortar Crew" full_name="Winter Guard Mortar Crew" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="KU10" name="Assault Kommandos" full_name="Assault Kommandos" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <weapon_attachment id="KA05" name="Assault Kommando Flame Thrower" full_name="Assault Kommando Flame Thrower" fa="2" cost="1" qualification="Unit attachment" max_wa="3">
+            <model id="Assault Kommando Flame Thrower">
+              <basestats name="Assault Kommando Flame Thrower" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+            </model>
+          </weapon_attachment>
+        </unit>
+        <unit id="KU11" name="Iron Fang Uhlans" full_name="Iron Fang Uhlans" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+        <unit id="KU12" name="Man-o-war Demolition Corps" full_name="Man-o-war Demolition Corps" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="3">
+          <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="KU13" name="Winter Guard Field Gun Crew" full_name="Winter Guard Field Gun Crew" base_cost="2" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="KU14" name="Great Bears of Gallowswood" full_name="Great Bears of Gallowswood" base_cost="5" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+          <basestats name="Volkov" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <model id="Kolsk">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+          <model id="Yarovich">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </unit>
+        <unit id="KU15" name="Kayazy Assassins" full_name="Kayazy Assassins" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+          <unit_attachment id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss" qualification="khador ally unit attachment" fa="1" cost="2">
+            <model id="KA04" name="Kayazy Assassin Underboss" full_name="Kayazy Assassin Underboss">
+              <basestats name="Underboss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+            </model>
+          </unit_attachment>
+        </unit>
+        <unit id="KU16" name="Man-o-war Bombardiers" full_name="Man-o-war Bombardiers" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          <weapons />
+        </unit>
+        <unit id="KU17" name="Winter Guard Rifle Corps" full_name="Winter Guard Rifle Corps" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="3">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </unit>
+        <unit id="KU18" name="Kayazy Eliminators" full_name="Kayazy Eliminators" base_cost="3" baseCount="2" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+          <basestats name="Leader" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <model id="Eliminator B">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </unit>
+        <unit id="KU19" name="Greylord Outriders" full_name="Greylord Outriders" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Unit" fa="1">
+          <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </unit>
+      </units>
+      <solos>
+        <solo id="KS01" name="Manhunter" full_name="Manhunter" cost="2" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="KS02" name="Man-o-war Kovnik" full_name="Man-o-war Kovnik" cost="3" qualification="Solo" fa="2">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" jack_marshal="true" />
+          <weapons />
+        </solo>
+        <solo id="KS03" name="Kovnik Jozef Grigorovich" full_name="Kovnik Jozef Grigorovich" cost="2" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="KS04" name="Man-o-war Drakhun" full_name="Man-o-war Drakhun" cost="4" qualification="Solo" fa="1" dragoon="true" dismount_cost="5" dismount_option="true">
+          <basestats name="Drakhun (mounted)" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+          <weapons />
+          <model id="KS04_dismount" name="Drakhun (dismounted)" full_name="Drakhun (dismounted)">
+            <basestats name="Drakhun (dismounted)" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+          </model>
+        </solo>
+        <solo id="KS05" name="Fenris" full_name="Fenris" cost="5" qualification="Character Solo" fa="C" dragoon="true">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+          <weapons />
+          <model id="KS05_dismount" name="Fenris (dismounted)" full_name="Fenris (dismounted)">
+            <basestats name="Fenris (dismounted)" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+        </solo>
+        <solo id="KS06" name="Koldun Lord" full_name="Koldun Lord" cost="2" qualification="Solo" fa="1">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" jack_marshal="true" />
+          <weapons />
+        </solo>
+        <solo id="KS07" name="Kovnik Markov" full_name="Kovnik Markov" cost="4" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="10" />
+          <weapons />
+        </solo>
+        <solo id="KS08" name="War Dog" full_name="War Dog" cost="1" qualification="Solo" fa="1" warcaster_attachment="true" >
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+          <solo id="KS08_for_butcher" name="War Dog (Butcher addon)" full_name="War Dog" cost="1" qualification="Khador Solo" fa="0">
+              <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+              <only_in_tier id="Butcher3 - Blood in the Snow" />
+          </solo>
+
+        <solo id="KS09" name="Yuri the Axe" full_name="Yuri the Axe" cost="3" qualification="Character Solo" fa="C">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="KS10" name="Widowmaker Marksman" full_name="Widowmaker Marksman" cost="2" qualification="Solo" fa="1">
+          <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+        </solo>
+        <solo id="KA07" name="Koldun Kapitan Valachev" full_name="Koldun Kapitan Valachev" fa="C" cost="2" qualification="Character Unit attachment" mercenary_attachment="true">
+          <basestats name="Koldun Kapitan Valachev" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+        </solo>
+        <solo id="KS11" name="Iron Fang Kovnik" full_name="Iron Fang Kovnik" fa="2" cost="2" qualification="Khador Solo">
+          <basestats name="Kovnik" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" jack_marshal="true" />
+        </solo>
+        <solo id="KS12" name="Kovnik Andrei Malakov" full_name="Kovnik Andrei Malakov" cost="3" qualification="Khador Character Solo" fa="C">
+          <basestats name="Malakov" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" journeyman_warcaster="true" focus="4" fearless="true" />
+        </solo>
+        <solo id="KA09" name="Black Dragon Officer &amp; Standard" full_name="Black Dragon Officer &amp; Standard" cost="2" qualification="Khador Iron Fang Pikement Unit Attachment" fa="2" unit_attachment="true">
+          <basestats name="Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <model id="black_dragon_standard" name="Standard" full_name="Standard">
+            <basestats name="Standard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          </model>
+          <restricted_to id="KU03" />
+        </solo>
+      </solos>
+    </army>
+  </armies>
+</ruleset>
+

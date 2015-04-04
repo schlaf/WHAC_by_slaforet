@@ -14,8 +14,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.net.LinkAddress;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -30,10 +35,14 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.schlaf.steam.R;
+import com.schlaf.steam.activities.ChangeEntryTypeListener;
+import com.schlaf.steam.activities.ChangeFactionListener;
 import com.schlaf.steam.activities.ChooseArmyListDialog;
 import com.schlaf.steam.activities.card.ViewCardFragment.ViewCardActivityInterface;
 import com.schlaf.steam.activities.selectlist.SelectionModelSingleton;
 import com.schlaf.steam.adapters.CardLibrayRowAdapter;
+import com.schlaf.steam.adapters.EntryTypeRowAdapter;
+import com.schlaf.steam.adapters.FactionHorizontalRowAdapter;
 import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.data.Faction;
@@ -46,12 +55,14 @@ import com.schlaf.steam.storage.StorageManager;
  * @author S0085289
  * 
  */
-public class ChooseCardFromLibraryDialog extends DialogFragment implements OnItemSelectedListener, OnClickListener, OnItemClickListener, OnItemLongClickListener {
+public class ChooseCardFromLibraryDialog extends DialogFragment implements ChangeFactionListener, ChangeEntryTypeListener, OnItemClickListener, OnItemLongClickListener {
 
 	public static final String ID = "ChooseCardFromLibraryDialog";
-	
-	Spinner factionSpinner;
-	Spinner entryTypeSpinner;
+    private static final String TAG = "ChooseCardFromLibraryDialog";
+
+    RecyclerView factionRecyclerView;
+    RecyclerView entryTypeRecyclerView;
+
 	ListView entriesListView;
 	
 	private ViewCardActivityInterface mListener;
@@ -77,79 +88,22 @@ public class ChooseCardFromLibraryDialog extends DialogFragment implements OnIte
             throw new ClassCastException(activity.toString()
                     + " must implement ViewCardActivityInterface");
         }
-        
-        
 
 		// reload from preferences
 		SharedPreferences save = activity.getSharedPreferences(CardLibraryActivity.LIBRARY_PREF, Context.MODE_PRIVATE);
 		String faction = save.getString(CardLibraryActivity.LIBRARY_PREF_FACTION_KEY, FactionNamesEnum.CRYX.getId());
 		HashMap<String, Faction> factions = ArmySingleton.getInstance().getFactions();
-		CardLibrarySingleton.getInstance().setFaction(factions.get(faction));
 
+        if (factions.isEmpty() ) {
+            // app closed, singleton empty, quit
+            return;
+        }
+		CardLibrarySingleton.getInstance().setFaction(factions.get(faction));
 
 		String entryType = save.getString(CardLibraryActivity.LIBRARY_PREF_ENTRY_TYPE_KEY, ModelTypeEnum.WARCASTER.name());
 		CardLibrarySingleton.getInstance().setEntryType(ModelTypeEnum.valueOf(entryType));
 
     }
-
-	@Override
-	public void onItemSelected(AdapterView<?> parent, View view, int position,
-			long id) {
-		
-		if (parent.getId() == factionSpinner.getId()) {
-			if (factionSpinner.getSelectedItemPosition() != Spinner.INVALID_POSITION) {
-				// change faction, refilter entries types
-				CardLibrarySingleton.getInstance().setFaction((Faction)factionSpinner.getSelectedItem());
-				List<ModelTypeEnum> types = CardLibrarySingleton.getInstance().getNonEmptyEntryType();
-				
-				List<ModelTypeEnumTranslated> typesTranslated = new ArrayList<ModelTypeEnumTranslated>();
-				for (ModelTypeEnum type : types) {
-					ModelTypeEnumTranslated translated = new ModelTypeEnumTranslated(type, getString(type.getTitle()));
-					typesTranslated.add(translated);
-				}
-				
-				ArrayAdapter<ModelTypeEnumTranslated> adapterEntryType = new ArrayAdapter<ModelTypeEnumTranslated>(getActivity(), android.R.layout.simple_spinner_item, android.R.id.text1, typesTranslated);
-				adapterEntryType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-				entryTypeSpinner.setAdapter(adapterEntryType);
-				
-				// reselect same type if possible
-				if (CardLibrarySingleton.getInstance().getEntryType() == null) {
-					CardLibrarySingleton.getInstance().setEntryType(types.get(0));	
-				} else {
-					int selected = types.indexOf(CardLibrarySingleton.getInstance().getEntryType());
-					if (selected == -1) {
-						// if type has disappeared, select first by default...
-						selected = 0;
-					}
-					entryTypeSpinner.setSelection(selected, false);
-				}
-				
-			}
-		}
-		
-		if (parent.getId() == factionSpinner.getId() || parent.getId() == entryTypeSpinner.getId() ) {
-			
-			if (factionSpinner.getSelectedItemPosition() != Spinner.INVALID_POSITION &&
-					entryTypeSpinner.getSelectedItemPosition() != Spinner.INVALID_POSITION) {
-				
-				CardLibrarySingleton.getInstance().setFaction((Faction)factionSpinner.getSelectedItem());
-				CardLibrarySingleton.getInstance().setEntryType( ((ModelTypeEnumTranslated)entryTypeSpinner.getSelectedItem()).getType());
-				
-				CardLibrayRowAdapter adapterEntry = 
-						new CardLibrayRowAdapter(getActivity(), CardLibrarySingleton.getInstance().getEntries());
-				entriesListView.setAdapter(adapterEntry);
-			}
-		} 
-		
-	}
-
-
-
-	@Override
-	public void onNothingSelected(AdapterView<?> parent) {
-		// TODO Auto-generated method stub
-	}
-	
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -167,48 +121,65 @@ public class ChooseCardFromLibraryDialog extends DialogFragment implements OnIte
 
 	private View createView(LayoutInflater inflater) {
 		View view = inflater.inflate(R.layout.choose_card_options, null);
-		
-				
-		factionSpinner = (Spinner) view.findViewById(R.id.icsSpinnerFaction);
-		
+
+
+        factionRecyclerView = (RecyclerView) view.findViewById(R.id.factionRV);
+        entryTypeRecyclerView = (RecyclerView) view.findViewById(R.id.entryTypeRV);
+
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            return view;
+        }
+
+
 		HashMap<String, Faction> factions = ArmySingleton.getInstance().getFactions();
 		List<Faction> factionsList= new ArrayList<Faction>();
 		factionsList.addAll(factions.values());
 		Collections.sort(factionsList);
-		
-		ArrayAdapter<Faction> adapter = new ArrayAdapter<Faction>(getActivity(), android.R.layout.simple_spinner_item, android.R.id.text1, factionsList);
-		// Specify the layout to use when the list of choices appears
-		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		factionSpinner.setAdapter(adapter);
-		
+
+        FactionHorizontalRowAdapter factionAdapter = new FactionHorizontalRowAdapter(getActivity(), this, factionsList);
+        factionRecyclerView.setAdapter(factionAdapter);
+        LinearLayoutManager manager = new LinearLayoutManager(getActivity());
+        manager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        factionRecyclerView.setLayoutManager(manager);
 
 		if (CardLibrarySingleton.getInstance().getFaction() == null) {
 			CardLibrarySingleton.getInstance().setFaction(factionsList.get(0));	
 		} else {
 			int selected = factionsList.indexOf(CardLibrarySingleton.getInstance().getFaction());
-			factionSpinner.setSelection(selected, false);
+            factionRecyclerView.scrollToPosition(selected);
 		}
 
-		
-		entryTypeSpinner = (Spinner) view.findViewById(R.id.icsSpinnerEntryType);
-		
+
+
+
 		List<ModelTypeEnum> types = CardLibrarySingleton.getInstance().getNonEmptyEntryType();
 		List<ModelTypeEnumTranslated> typesTranslated = new ArrayList<ModelTypeEnumTranslated>();
 		for (ModelTypeEnum type : types) {
 			ModelTypeEnumTranslated translated = new ModelTypeEnumTranslated(type, getString(type.getTitle()));
 			typesTranslated.add(translated);
 		}
-		
-		ArrayAdapter<ModelTypeEnumTranslated> adapterEntryType = new ArrayAdapter<ModelTypeEnumTranslated>(getActivity(), android.R.layout.simple_spinner_item, android.R.id.text1, typesTranslated);
-		adapterEntryType.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		entryTypeSpinner.setAdapter(adapterEntryType);
-		
-		entriesListView = (ListView) view.findViewById(R.id.listView1);
-				
-		factionSpinner.setOnItemSelectedListener(this);
-		entryTypeSpinner.setOnItemSelectedListener(this);
+
+
+        EntryTypeRowAdapter entriesAdapter= new EntryTypeRowAdapter(getActivity(), this, typesTranslated);
+        entryTypeRecyclerView.setAdapter(entriesAdapter);
+        LinearLayoutManager manager2 = new LinearLayoutManager(getActivity());
+        manager2.setOrientation(LinearLayoutManager.HORIZONTAL);
+        entryTypeRecyclerView.setLayoutManager(manager2);
+
+        if (CardLibrarySingleton.getInstance().getEntryType() == null) {
+            CardLibrarySingleton.getInstance().setEntryType(types.get(0));
+        } else {
+            int selected = types.indexOf(CardLibrarySingleton.getInstance().getEntryType());
+            entryTypeRecyclerView.scrollToPosition(selected);
+        }
+
+
+        entriesListView = (ListView) view.findViewById(R.id.listView1);
+
+        CardLibrayRowAdapter adapterEntry =
+                new CardLibrayRowAdapter(getActivity(), CardLibrarySingleton.getInstance().getEntries());
+        entriesListView.setAdapter(adapterEntry);
 		entriesListView.setOnItemClickListener(this);
-		
 		
 		if (openForAddingCard) {
 			view.findViewById(R.id.textViewLabelToAdd).setVisibility(View.VISIBLE);
@@ -217,35 +188,9 @@ public class ChooseCardFromLibraryDialog extends DialogFragment implements OnIte
 			view.findViewById(R.id.textViewLabelToAdd).setVisibility(View.GONE);
 			entriesListView.setOnItemLongClickListener(null);
 		}
-		
-		
-		
-		
-		// reselect same type if possible
-		if (CardLibrarySingleton.getInstance().getEntryType() == null) {
-			CardLibrarySingleton.getInstance().setEntryType(types.get(0));	
-		} else {
-			int selected = types.indexOf(CardLibrarySingleton.getInstance().getEntryType());
-			if (selected == -1) {
-				// if type has disappeared, select first by default...
-				selected = 0;
-			}
-			entryTypeSpinner.setSelection(selected, false);
-		}
 
-		
 		return view;
 	}
-
-
-
-	@Override
-	public void onClick(View v) {
-		
-
-	}
-
-
 
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
@@ -316,11 +261,7 @@ public class ChooseCardFromLibraryDialog extends DialogFragment implements OnIte
 		    	
 		    	dialog.show();				
 				
-				
-				
-				
-				
-				
+
 				
 				if (getShowsDialog()) {
 					
@@ -340,4 +281,49 @@ public class ChooseCardFromLibraryDialog extends DialogFragment implements OnIte
 	}
 
 
+    @Override
+    public void onChangeFaction(Faction newFaction) {
+        Log.e(TAG, "onChangeFaction, new = " + newFaction.getFullName());
+        CardLibrarySingleton.getInstance().setFaction(newFaction);
+        List<ModelTypeEnum> types = CardLibrarySingleton.getInstance().getNonEmptyEntryType();
+
+
+        List<ModelTypeEnumTranslated> typesTranslated = new ArrayList<ModelTypeEnumTranslated>();
+        for (ModelTypeEnum type : types) {
+            ModelTypeEnumTranslated translated = new ModelTypeEnumTranslated(type, getString(type.getTitle()));
+            typesTranslated.add(translated);
+        }
+
+        factionRecyclerView.getAdapter().notifyDataSetChanged();
+
+        EntryTypeRowAdapter entriesAdapter= new EntryTypeRowAdapter(getActivity(), this, typesTranslated);
+        entryTypeRecyclerView.swapAdapter(entriesAdapter, true);
+
+
+
+        // reselect same entry type if possible
+        if (CardLibrarySingleton.getInstance().getEntryType() == null) {
+            CardLibrarySingleton.getInstance().setEntryType(types.get(0));
+        } else {
+            int selected = types.indexOf(CardLibrarySingleton.getInstance().getEntryType());
+            if (selected != -1) {
+                onChangeModelType(typesTranslated.get(selected));
+                entryTypeRecyclerView.scrollToPosition(selected);
+            }
+        }
+
+    }
+
+    @Override
+    public void onChangeModelType(ModelTypeEnumTranslated newType) {
+        Log.e(TAG, "onChangeModelType, new = " + newType.toString());
+        CardLibrarySingleton.getInstance().setEntryType(newType.getType());
+
+        entryTypeRecyclerView.getAdapter().notifyDataSetChanged();
+
+        CardLibrayRowAdapter adapterEntry =
+                new CardLibrayRowAdapter(getActivity(), CardLibrarySingleton.getInstance().getEntries());
+        entriesListView.setAdapter(adapterEntry);
+
+    }
 }

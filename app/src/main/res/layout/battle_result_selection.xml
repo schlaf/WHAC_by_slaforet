@@ -81,5 +81,5 @@
         android:layout_gravity="center_vertical"
         android:background="@drawable/empty"
         android:contentDescription="@string/delete"
-        android:src="@drawable/ic_menu_delete" />
+        android:src="@drawable/ic_delete" />
 </LinearLayout>

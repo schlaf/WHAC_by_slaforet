@@ -109,7 +109,7 @@ public class SelectionEntry implements Serializable, Comparable<SelectionEntry> 
 			sb.append("</font>"); 
 		} else {
 			if (selectable) {
-				sb.append("<font color=\"white\">");	
+				sb.append("<font color=\"black\">");
 			} else {
 				sb.append("<font color=\"#696969\">");
 			}
@@ -163,12 +163,12 @@ public class SelectionEntry implements Serializable, Comparable<SelectionEntry> 
 			sb.append("</font>"); 
 		} else {
 			if (countSelected > 0) {
-				sb.append("<font color=\"grey\">");
+				sb.append("<font color=\"darkgrey\">");
 				sb.append("/");
 				sb.append(getAlteredFAString(alteredFAByCasterCount));
 				sb.append("</font>"); 
 			} else {
-				sb.append("<font color=\"white\">");
+				sb.append("<font color=\"black\">");
 				sb.append(getAlteredFAString(alteredFAByCasterCount));
 				sb.append("</font>"); 
 			}
@@ -184,7 +184,7 @@ public class SelectionEntry implements Serializable, Comparable<SelectionEntry> 
 		
 		StringBuffer sb = new StringBuffer();
 		if (alteredCost == baseCost) {
-			sb.append("<font color=\"white\">");
+			sb.append("<font color=\"black\">");
 		} else {
 			sb.append("<font color=\"blue\">");
 		}
@@ -215,6 +215,16 @@ public class SelectionEntry implements Serializable, Comparable<SelectionEntry> 
 		}
 	}
 
+
+    public String getBaseFAString() {
+        if (baseFA == ArmyElement.C_FA && uniqueCharacter == true) {
+            return "C";
+        } else if (baseFA == ArmyElement.MAX_FA) {
+            return "U";
+        } else {
+            return String.valueOf(baseFA);
+        }
+    }
 	
 	/** helps sorting various instances */
 	protected int getOrderingOffset() {

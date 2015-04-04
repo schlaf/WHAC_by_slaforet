@@ -35,7 +35,9 @@ public abstract class SelectedEntry implements Comparable<SelectedItem>, Seriali
 	
 	/** indicates a free model cause of tier benefit */
 	private boolean freeModel;
-	
+
+    private boolean specialist;
+
 	private static int orderingOffset = 0;
 	
 	/** helps sorting various instances */
@@ -107,6 +109,14 @@ public abstract class SelectedEntry implements Comparable<SelectedItem>, Seriali
 	public int getTotalCost() {
 		return getCost();
 	}
+
+    /**
+     * returns the total cost of affiliate models of this models which are specialists (not including THIS model cost)
+     * @return int
+     */
+    public int getTotalSubSpecialistCost() {
+        return 0;
+    }
 	
 
 	/**
@@ -185,5 +195,12 @@ public abstract class SelectedEntry implements Comparable<SelectedItem>, Seriali
 		this.ruleAltered = ruleAltered;
 	}
 
+    public boolean isSpecialist() {
+        return specialist;
+    }
+
+    public void setSpecialist(boolean specialist) {
+        this.specialist = specialist;
+    }
 
 }

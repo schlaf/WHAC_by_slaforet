@@ -3,6 +3,14 @@
   <armies>
     <army name="objectives" faction="faction_objectives">
       <solos>
+          <solo name="CACHE À PROVISIONS" completed="true" cost="0" fa="1" full_name="CACHE À PROVISIONS" id="objective_2014_standard_supply_cache" qualification="Steamroller Objective">
+              <basestats name="CACHE À PROVISIONS" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
+              <weapons />
+              <capacity title="Carburant">Tant que cet objectif n'est pas contesté par un modèle ennemi, les modèles amis commençant leur activation dans les 4" de ce modèle peuvent courir ou charger sans être forcé ou dépenser de focus.</capacity>
+              <capacity title="Immobile">Ce modèle n'a ni mouvement ni action et ne peut être mis KO ou déplacé. Son arc avant s'étend sur 360°. Il n'a pas de zone de mêlée, ne peut engager, et est automatiquement touché par les attaques de mêlée.</capacity>
+              <capacity title="Objectif">Ce modèle ne peut être ciblé ou endommagé avant le second tour du second joueur. Un objectif ne peut être engagé.</capacity>
+              <capacity title="Priorité">Les warcasters/warlocks ennemis ne peuvent dominer tant que cet objectif est dans leur zone de contrôle.</capacity>
+          </solo>
         <solo name="Ammunition Cache" completed="true" cost="0" fa="1" full_name="Ammunition Cache" id="objective_2014_standard_ammunition_cache" qualification="Steamroller Objective">
           <basestats name="Cache de munitions" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />
@@ -37,14 +45,6 @@
     </army>
       <army name="objectives SR 2015" faction="faction_objectives_sr2015">
           <solos>
-        <solo name="CACHE À PROVISIONS" completed="true" cost="0" fa="1" full_name="CACHE À PROVISIONS" id="objective_2014_standard_supply_cache" qualification="Steamroller Objective">
-          <basestats name="CACHE À PROVISIONS" arm="18" cmd="0" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
-          <weapons />
-          <capacity title="Carburant">Tant que cet objectif n'est pas contesté par un modèle ennemi, les modèles amis commençant leur activation dans les 4" de ce modèle peuvent courir ou charger sans être forcé ou dépenser de focus.</capacity>
-          <capacity title="Immobile">Ce modèle n'a ni mouvement ni action et ne peut être mis KO ou déplacé. Son arc avant s'étend sur 360°. Il n'a pas de zone de mêlée, ne peut engager, et est automatiquement touché par les attaques de mêlée.</capacity>
-          <capacity title="Objectif">Ce modèle ne peut être ciblé ou endommagé avant le second tour du second joueur. Un objectif ne peut être engagé.</capacity>
-          <capacity title="Priorité">Les warcasters/warlocks ennemis ne peuvent dominer tant que cet objectif est dans leur zone de contrôle.</capacity>
-        </solo>
         <solo name="MERVEILLE ARCANIQUE" completed="true" cost="0" fa="1" full_name="MERVEILLE ARCANIQUE" id="objective_2015_arcane_wonder" qualification="Steamroller Objective">
           <basestats name="MERVEILLE ARCANIQUE" arm="18" cmd="0" construct="true" def="5" hitpoints="15" mat="0" rat="0" spd="0" str="0" />
           <weapons />

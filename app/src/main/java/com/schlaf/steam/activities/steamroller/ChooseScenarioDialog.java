@@ -6,6 +6,8 @@ package com.schlaf.steam.activities.steamroller;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,14 +25,13 @@ import com.schlaf.steam.data.Mission;
  * @author S0085289
  * 
  */
-public class ChooseScenarioDialog extends DialogFragment implements OnItemSelectedListener {
+public class ChooseScenarioDialog extends DialogFragment {
 
 	public static final String ID = "ChooseScenarioDialog";
 	
-	Spinner spinnerScenario;
-	
 	private ViewScenarioActivityInterface mListener;
-	
+    RecyclerView recyclerView;
+
     // Override the Fragment.onAttach() method to instantiate the NoticeDialogListener
     @Override
     public void onAttach(Activity activity) {
@@ -64,20 +65,13 @@ public class ChooseScenarioDialog extends DialogFragment implements OnItemSelect
 		View view = inflater.inflate(R.layout.choose_scenario_options, null);
 		
 		ScenarioRowAdapter adapterEntry = 
-				new ScenarioRowAdapter(getActivity(), SteamRollerSingleton.getInstance().getScenarii());
-		
-		spinnerScenario = (Spinner) view.findViewById(R.id.icsSpinnerScenario);
-		spinnerScenario.setAdapter(adapterEntry);
-		spinnerScenario.setOnItemSelectedListener(this);
-		
-		
-		// reselect same type if possible
-		if (BattleSingleton.getInstance().getScenario() != null) {
-			int number = SteamRollerSingleton.getInstance().getScenarii().indexOf(BattleSingleton.getInstance().getScenario());
-			spinnerScenario.setSelection(number, false);
-		} 
+				new ScenarioRowAdapter(getActivity(), this, SteamRollerSingleton.getInstance().getScenarii());
 
-		
+        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+
+        recyclerView.setAdapter(adapterEntry);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+
 		return view;
 	}
 
@@ -91,22 +85,11 @@ public class ChooseScenarioDialog extends DialogFragment implements OnItemSelect
 	
 	boolean firstSelect = true;
 	
-	@Override
-	public void onItemSelected(AdapterView<?> parent, View view, int position,
-			long id) {
-		if (parent.getId() == spinnerScenario.getId()) {
-			if (spinnerScenario.getItemAtPosition(position) != null) {
-				Mission mission = ((Mission) spinnerScenario.getItemAtPosition(position));
-				SteamRollerSingleton.getInstance().setCurrentMission(mission);
-				mListener.viewScenario(mission);
-			}
-		}
-	}
+	public void showScenario(Mission mission, int position) {
 
-	@Override
-	public void onNothingSelected(AdapterView<?> parent) {
-		// TODO Auto-generated method stub
-		
+        SteamRollerSingleton.getInstance().setCurrentMission(mission);
+        recyclerView.getAdapter().notifyDataSetChanged();
+        mListener.viewScenario(mission);
 	}
 
 

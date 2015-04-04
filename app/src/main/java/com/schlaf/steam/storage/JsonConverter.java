@@ -112,6 +112,7 @@ public class JsonConverter {
 	private static final String TIER_ID = "tierId";
 	private static final String CONTRACT_ID = "contractId";
 	private static final String MARSHAL_VIA_UA = "marshal_via_ua";
+    private static final String SPECIALIST = "specialist";
 
 	public static void createArmyObject(Writer writer, ArmyStore store) {
 		JSONWriter json = new JSONWriter(writer);
@@ -190,6 +191,7 @@ public class JsonConverter {
 		int cost = entry.optInt(COST);
 		boolean free = entry.optBoolean(FREE);
 		boolean tierAltered = entry.optBoolean(ALTERED_BY_TIER_OR_CONTRACT);
+        boolean specialist = entry.optBoolean(SPECIALIST);
 
 		
 		
@@ -322,6 +324,7 @@ public class JsonConverter {
 		result.setRealCost(realCost);
 		result.setFreeModel(free);
 		result.setTiersAltered(tierAltered);
+        result.setSpecialist(specialist);
 		
 		return result;
 		
@@ -343,6 +346,9 @@ public class JsonConverter {
 			result.put(REALCOST, entry.getRealCost());
 			result.put(ALTERED_BY_TIER_OR_CONTRACT, true);
 		}
+        if (entry.isSpecialist()) {
+            result.put(SPECIALIST, true);
+        }
 
 		if (entry instanceof SelectedSolo) { // put this first so it can be
 												// overriden
@@ -501,7 +507,7 @@ public class JsonConverter {
 		
 		result.setArmyName(source.getString(ARMY));
 		result.setWinnerNumber("ME".equals(source.getString("WINNER"))?0:1);
-		result.setBattleDate(new Date(source.getString("DATE")));
+		result.setBattleDate(source.getString("DATE"));
 		result.setClockType(source.getString("CLOCKTYPE"));
 		result.setScenario(source.getString("SCENARIO"));
 		result.setVictoryCondition(source.getString("VICTORY_CONDITION"));
@@ -612,6 +618,8 @@ public class JsonConverter {
 		result.put(ID, entry.getId());
 		result.put(BATTLE_ID, entry.getUniqueId());
 		result.put(LABEL, entry.getLabel());
+        result.put(COST, entry.getCost());
+        result.put(SPECIALIST, entry.isSpecialist());
 		if (entry.getParentId() > 0) {
 			result.put(PARENT_ID, entry.getParentId());
 		}
@@ -740,23 +748,25 @@ public class JsonConverter {
 			int uniqueId = entry.getInt(BATTLE_ID);
 			String label = entry.getString(LABEL);
 			int parentId = entry.optInt(PARENT_ID);
+            int cost = entry.optInt(COST);
+            boolean specialist = entry.optBoolean(SPECIALIST);
 			
 			ArmyElement reference = ArmySingleton.getInstance().getArmyElement(refId);
 			
 			BattleEntry battleEntry = null;
 
 			if (MONO_PV.equals(type)) {
-				battleEntry = new BattleEntry(reference, uniqueId);
+				battleEntry = new BattleEntry(reference, uniqueId, cost, specialist);
 			}
 			
 			if (SINGLE_LINE.equals(type)) {
-				battleEntry = new SingleDamageLineEntry(reference, uniqueId);
+				battleEntry = new SingleDamageLineEntry(reference, uniqueId, cost, specialist);
 				String damageGridString = entry.getString(DAMAGES);
 				((SingleDamageLineEntry) battleEntry).getDamageGrid().fromStringWithDamageStatus(damageGridString);
 			}
 			
 			if (MULTIPV_UNIT.equals(type)) {
-				battleEntry = new MultiPVUnit(reference, uniqueId);
+				battleEntry = new MultiPVUnit(reference, uniqueId, cost, specialist);
 				
 				MultiPVUnit unit = (MultiPVUnit) battleEntry;
 				MultiPVUnitGrid grid = (MultiPVUnitGrid) unit.getDamageGrid();
@@ -777,7 +787,7 @@ public class JsonConverter {
 					damageLine.fromStringWithDamageStatus(damageGridString);
 					grid.getDamageLines().add(damageLine);
 					
-					SingleDamageLineEntry line = new SingleDamageLineEntry(desc, j, reference, uniqueId, damageLine);
+					SingleDamageLineEntry line = new SingleDamageLineEntry(desc, j, reference, uniqueId, damageLine, 0, false);
 					unit.getModels().add(line);
 					
 				}
@@ -785,13 +795,13 @@ public class JsonConverter {
 			}
 
             if (KARCHEV.equals(type)) {
-                battleEntry = new KarchevEntry(reference, uniqueId);
+                battleEntry = new KarchevEntry(reference, uniqueId, 0);
                 String damageGridString = entry.getString(DAMAGES);
                 ((JackEntry) battleEntry).getDamageGrid().fromStringWithDamageStatus(damageGridString);
             }
 			
 			if (JACK.equals(type)) {
-				battleEntry = new JackEntry(reference, uniqueId);
+				battleEntry = new JackEntry(reference, uniqueId, cost, specialist);
 				
 				String damageGridString = entry.getString(DAMAGES); 
 				((JackEntry) battleEntry).getDamageGrid().fromStringWithDamageStatus(damageGridString);
@@ -799,7 +809,7 @@ public class JsonConverter {
 			if (BEAST.equals(type)) {
 				
 				
-				battleEntry = new BeastEntry( (Warbeast) reference, uniqueId);
+				battleEntry = new BeastEntry( (Warbeast) reference, uniqueId, cost, specialist);
 				String damageGridString = entry.getString(DAMAGES); 
 				((BeastEntry) battleEntry).getDamageGrid().fromStringWithDamageStatus(damageGridString);
 			}

@@ -1,20 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/lightUI"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    card_view:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        style="@style/lightUI"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingTop="1dp" >
 
         <TextView
             android:id="@+id/card_title"
+            style="@style/lightUI.title"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/title"
-            android:textSize="@dimen/textview_large_height" />
+            android:text="Commander Coleman Striker"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"/>
 
         <TextView
-            android:id="@+id/card_description"
+            android:id="@+id/card_subtitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/description"
-            android:textSize="@dimen/textview_small_height" />
-</LinearLayout>
+            android:text="Cygnar Warcaster"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/card_title"/>
+            <TextView
+                style="@style/lightUI.mainValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FA : "
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/card_subtitle"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/textView7"/>
+
+            <TextView
+                android:id="@+id/card_fa"
+                style="@style/lightUI.mainValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@+id/card_subtitle"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_toEndOf="@+id/textView7"/>
+
+            <TextView
+                android:id="@+id/card_unit_size"
+                style="@style/lightUI.mainValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="6/10"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/card_subtitle"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/card_models_label"
+                style="@style/lightUI.mainValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_models"
+                android:layout_below="@+id/card_subtitle"
+                android:layout_toRightOf="@+id/card_unit_size"/>
+
+            <TextView
+                android:id="@+id/card_cost"
+                style="@style/lightUI.mainValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:text="WJ : +6"
+                android:layout_below="@+id/card_subtitle"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

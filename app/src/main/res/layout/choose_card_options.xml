@@ -1,54 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/factionRV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_height="64dp"
+    />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/faction"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <Spinner
-            android:id="@+id/icsSpinnerFaction"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/entryTypeRV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/type"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <Spinner
-            android:id="@+id/icsSpinnerEntryType"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:entries="@array/army_size"
-            android:layout_weight="1" />
-    </LinearLayout>
+        android:layout_height="64dp"
+        />
 
     <FrameLayout
         android:layout_width="fill_parent"
         android:layout_height="2dp"
-        android:background="@color/White" >
+        android:background="@color/WhacAccentColor" >
 
     </FrameLayout>
 
@@ -60,6 +31,8 @@
         android:gravity="center_horizontal"
         android:text="@string/long_press_to_add"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
 
     <ListView
         android:id="@+id/listView1"

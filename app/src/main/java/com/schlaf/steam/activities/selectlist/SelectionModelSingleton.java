@@ -4,6 +4,7 @@
 package com.schlaf.steam.activities.selectlist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -76,6 +77,8 @@ import com.schlaf.steam.storage.ArmyStore;
  */
 public class SelectionModelSingleton {
 
+    private static final String TAG = "SelectionModelSingleton";
+
 	private static SelectionModelSingleton instance;
 
 	
@@ -87,7 +90,16 @@ public class SelectionModelSingleton {
 	private List<SelectedEntry> selectedEntries = new ArrayList<SelectedEntry>(
 			100);
 
-	private ArmyElement currentlyViewedElement;
+    // group selected in first panel
+    private SelectionGroup selectedGroup;
+
+    // list of models available, sorted in groups;
+    HashMap<SelectionGroup, List<SelectionEntry>> sortedModels = new HashMap<SelectionGroup, List<SelectionEntry>>();
+
+
+
+
+    private ArmyElement currentlyViewedElement;
 	
 	/**
 	 * complete path of army
@@ -619,15 +631,25 @@ public class SelectionModelSingleton {
 		if (entry.getType() == ModelTypeEnum.SOLO) {
 			// maybe attach to caster
 			if ( ((SelectionSolo) entry).isWarcasterAttached() ) {
+                List<SelectedEntry> candidates = modelsToWhichAttach(entry);
 				for (SelectedEntry possibleCaster : selectedEntries) {
-					if (possibleCaster instanceof SelectedArmyCommander) {
-						
-						SelectedCasterAttachment newSolo = new SelectedCasterAttachment(entry.getId(), entry.getFullLabel());
-						addedEntry = newSolo;
-						((SelectedArmyCommander) possibleCaster).setAttachment(newSolo);
-					}
+                    SelectedCasterAttachment newSolo = new SelectedCasterAttachment(entry.getId(), entry.getFullLabel());
+                    addedEntry = newSolo;
+                    ((SelectedArmyCommander) candidates.get(0)).setAttachment(newSolo);
 				}
-			} else {
+			} else if ( ((SelectionSolo) entry).isMercenaryUnitAttached() ) {
+                List<SelectedEntry> candidates = modelsToWhichAttach(entry);
+                SelectedRankingOfficer rankingOfficer = new SelectedRankingOfficer(entry.getId(), entry.getFullLabel());
+                addedEntry = rankingOfficer;
+                ((SelectedUnit) candidates.get(0)).setRankingOfficer(rankingOfficer);
+            } else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
+                List<SelectedEntry> candidates = modelsToWhichAttach(entry);
+                SelectedSolo genericAttachment = new SelectedSolo(entry.getId(), entry.getFullLabel());
+                addedEntry = genericAttachment;
+                ((SelectedUnit) candidates.get(0)).setSoloAttachment(genericAttachment);
+            }
+
+            else {
 				throw new UnsupportedOperationException("addAttachedElementByDefault - can not attach " + entry.getFullLabel() + " - model is not attachable");
 			}
 			
@@ -642,9 +664,9 @@ public class SelectionModelSingleton {
 					((SelectedUnit) candidates.get(0)).setRankingOfficer(rankingOfficer);
 				} else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
 					List<SelectedEntry> candidates = modelsToWhichAttach(entry);
-					SelectedSolo genericAttachment = new SelectedSolo(entry.getId(), entry.getFullLabel());
+					SelectedUA genericAttachment = new SelectedUA(entry.getId(), entry.getFullLabel());
 					addedEntry = genericAttachment;
-					((SelectedUnit) candidates.get(0)).setSoloAttachment(genericAttachment);
+					((SelectedUnit) candidates.get(0)).setUnitAttachment(genericAttachment);
 				} 
 			} else if (entry instanceof SelectionUA) {
 				// attach to unit
@@ -1085,11 +1107,16 @@ public class SelectionModelSingleton {
 
 		int nbModels = 0;
 		int cost = 0;
+        int costSpecialist = 0;
 		int nbCasters = 0;
 		for (SelectedEntry entry : selectedEntries) {
 			nbModels += entry.getModelCount();
-			
-			cost += entry.getTotalCost();
+
+            if (entry.isSpecialist()) {
+                costSpecialist += entry.getTotalCost();
+            } else {
+                cost += entry.getTotalCost();
+            }
 			
 			if (entry instanceof SelectedArmyCommander) {
 				nbCasters++;
@@ -1098,19 +1125,23 @@ public class SelectionModelSingleton {
 				SelectionEntry selection = getSelectionEntryById(entry.getId());
 				int commanderCost = selection.getBaseCost();
 				
-				int jackOrBeastCost = 0;
-				for (SelectedModel jackOrBeast : commander.getAttachedModels()) {
-					if (jackOrBeast instanceof SelectedWarjack || jackOrBeast instanceof SelectedWarbeast) {
-						jackOrBeastCost += getSelectionEntryById(jackOrBeast.getId()).getAlteredCost();
+                int jackOrBeastCost = 0;
+                for (SelectedModel jackOrBeast : commander.getAttachedModels()) {
+					if (jackOrBeast instanceof SelectedWarjack || jackOrBeast instanceof SelectedWarbeast && ! jackOrBeast.isSpecialist()) {
+                        jackOrBeastCost += getSelectionEntryById(jackOrBeast.getId()).getAlteredCost();
 					}
 				}
 				int costToRemove = Math.min(jackOrBeastCost, commanderCost);
 				cost -= costToRemove;
 			}
-		}
+            costSpecialist += entry.getTotalSubSpecialistCost();
+
+        }
+/*
 		sb.append(nbCasters).append("/").append(this.nbCasters)
 				.append("caster");
 		sb.append(" - ");
+*/
 		if (cost > nbPoints) {
 			sb.append("<font color=\"red\">");
 			sb.append(cost);
@@ -1120,7 +1151,10 @@ public class SelectionModelSingleton {
 			sb.append(cost);
 			sb.append("</font>");
 		}
-		sb.append("/").append(nbPoints).append(" PC");
+		sb.append("/").append(nbPoints); // .append(" PC");
+        if (costSpecialist > 0) {
+            sb.append(" + ").append(costSpecialist).append(" SPE");
+        }
 		sb.append(" - ").append(nbModels).append(" ").append(context.getString(R.string.models));
 
 		return sb.toString();
@@ -2019,8 +2053,12 @@ public class SelectionModelSingleton {
 			}
 
 		}
-		
-		handleMercs(warcasterCount, mercWarcasterCount);
+
+
+
+
+
+        handleMercs(warcasterCount, mercWarcasterCount);
 		
 		handleOnlyInTiersOrContracts();
 		
@@ -2310,4 +2348,151 @@ public class SelectionModelSingleton {
 			SelectionEntry currentEntryChooseWhoToAttach) {
 		this.currentEntryChooseWhoToAttach = currentEntryChooseWhoToAttach;
 	}
+
+
+
+
+
+    /**
+     * à partir de la liste des models, extrait les groupes disponibles
+     * (filtrage beast/jacks, units, ...)
+     */
+    public ArrayList<SelectionGroup> createGroupsFromModels() {
+
+        Log.d(TAG, "createGroupsFromModels");
+        ArrayList<SelectionGroup> groups = new ArrayList<SelectionGroup>();
+
+
+        for (SelectionEntry model : SelectionModelSingleton.getInstance().getSelectionModels()) {
+
+            SelectionGroup groupNormal = new SelectionGroup(model.getType(), SelectionModelSingleton.getInstance().getFaction());
+
+            SelectionGroup groupMercOrMinions = null;
+            if (SelectionModelSingleton.getInstance().getFaction().getGameSystem() == Faction.GameSystem.WARMACHINE) {
+                groupMercOrMinions = new SelectionGroup(model.getType(), FactionNamesEnum.MERCENARIES);
+            } else {
+                groupMercOrMinions = new SelectionGroup(model.getType(), FactionNamesEnum.MINIONS);
+            }
+
+            SelectionGroup groupObjectives = new SelectionGroup(ModelTypeEnum.OBJECTIVE, FactionNamesEnum.OBJECTIVES_SR2015);
+
+
+            if (model.isVisible()) {
+                if (model.isObjective()) {
+                    if ( ! groups.contains(groupObjectives)) {
+                        groups.add(groupObjectives);
+                        sortedModels.put(groupObjectives,
+                                new ArrayList<SelectionEntry>());
+                    }
+
+                } else if (model.isMercenaryOrMinion()) {
+                    if ( ! groups.contains(groupMercOrMinions)) {
+                        groups.add(groupMercOrMinions);
+                        sortedModels.put(groupMercOrMinions,
+                                new ArrayList<SelectionEntry>());
+                    }
+                } else {
+                    if ( ! groups.contains(groupNormal)) {
+                        groups.add(groupNormal);
+                        sortedModels.put(groupNormal,
+                                new ArrayList<SelectionEntry>());
+                    }
+                }
+            }
+
+
+            if (SelectionModelSingleton.getInstance().getCurrentTiers() != null) {
+                // if tiers, do not add models that are not allowed
+                if (SelectionModelSingleton.getInstance().getCurrentTiers().isAllowedModel(SelectionModelSingleton.getInstance().getCurrentTiersLevel(), model.getId())) {
+                    if (model.isVisible()) {
+                        if (model.isMercenaryOrMinion()) {
+                            sortedModels.get(groupMercOrMinions).add(model);
+                        } else if (model.isObjective()) {
+                            sortedModels.get(groupObjectives).add(model);
+                        } else {
+                            sortedModels.get(groupNormal).add(model);
+                        }
+                    }
+                } else {
+                    // not allowed, but maybe already selected?
+                    if (model.isSelected() && ! model.isObjective()) {
+                        model.setAlteredFA(0);
+                        if (model.isMercenaryOrMinion()) {
+                            sortedModels.get(groupMercOrMinions).add(model);
+                        } else {
+                            sortedModels.get(groupNormal).add(model);
+                        }
+                    }
+                    // objectives always allowed!
+                    if (model.isObjective()) {
+                        sortedModels.get(groupObjectives).add(model);
+                    }
+                }
+            } else if (SelectionModelSingleton.getInstance().getCurrentContract() != null) {
+                // if contract, do not add models that are not allowed
+                if (SelectionModelSingleton.getInstance().getCurrentContract().isAllowedModel(model.getId())) {
+                    if (model.isVisible()) {
+                        sortedModels.get(groupMercOrMinions).add(model);
+                    }
+                } else {
+                    // not allowed, but maybe already selected?
+                    if (model.isSelected() && ! model.isObjective()) {
+                        model.setAlteredFA(0);
+                        if (model.isMercenaryOrMinion()) {
+                            sortedModels.get(groupMercOrMinions).add(model);
+                        } else {
+                            sortedModels.get(groupNormal).add(model);
+                        }
+                    }
+                    // objectives always allowed!
+                    if (model.isObjective()) {
+                        sortedModels.get(groupObjectives).add(model);
+                    }
+                }
+            } else {
+                if (model.isMercenaryOrMinion()) {
+                    if (model.isVisible()) {
+                        sortedModels.get(groupMercOrMinions).add(model);
+                    }
+                } else if (model.isObjective()) {
+                    sortedModels.get(groupObjectives).add(model);
+                } else {
+                    if (model.isVisible()) {
+                        sortedModels.get(groupNormal).add(model);
+                    }
+                }
+            }
+
+        }
+
+        // filter groups with no models
+        List<SelectionGroup> groupsToDelete = new ArrayList<SelectionGroup>();
+        for (SelectionGroup group : groups) {
+            if ( sortedModels.get(group).isEmpty()) {
+                groupsToDelete.add(group);
+            }
+        }
+        groups.removeAll(groupsToDelete);
+
+        Collections.sort(groups);
+        for (SelectionGroup group : sortedModels.keySet()) {
+            Collections.sort(sortedModels.get(group));
+        }
+
+        return groups;
+    }
+
+
+    public SelectionGroup getSelectedGroup() {
+        return selectedGroup;
+    }
+
+    public void setSelectedGroup(SelectionGroup selectedGroup) {
+        this.selectedGroup = selectedGroup;
+    }
+
+    public List<SelectionEntry> getModelsForCurrentGroup() {
+        createGroupsFromModels();
+        return sortedModels.get(selectedGroup);
+    }
 }

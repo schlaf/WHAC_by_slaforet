@@ -13,7 +13,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginRight="10dp"
         android:contentDescription="@string/faction_icon"
-        android:src="@drawable/folder" >
+        android:src="@drawable/ic_folder" >
 
     </ImageView>
 
@@ -36,6 +36,6 @@
         android:layout_weight="0"
         android:background="@drawable/empty"
         android:contentDescription="@string/delete"
-        android:src="@drawable/ic_input_add" />
+        android:src="@drawable/ic_plus" />
 
 </LinearLayout>

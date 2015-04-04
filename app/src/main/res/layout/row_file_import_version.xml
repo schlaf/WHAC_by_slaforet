@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+
+    <ImageView android:id="@+id/factionLogo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/trolls"
+        android:contentDescription="@string/example"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/factionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="@string/faction"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/localVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1"
+        android:textSize="16sp"
+        android:layout_below="@+id/factionLabel"
+        android:layout_alignParentLeft="true"
+    >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/latestVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2"
+        android:textSize="16sp"
+        android:layout_below="@+id/factionLabel"
+        android:layout_alignLeft="@+id/frameLayout"
+        >
+
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/factionLogo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frameLayout">
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/okVersionIcon"
+        android:layout_marginStart="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignTop="@+id/latestVersion"
+        android:layout_alignBottom="@+id/latestVersion"
+        android:src="@drawable/defeat"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/WhacAccentColor"
+        android:layout_below="@+id/localVersion">
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,16 +1,25 @@
 package com.schlaf.steam.activities.card;
 
+import android.view.View;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
+import com.schlaf.steam.R;
 import com.schlaf.steam.activities.selectlist.selection.SelectionEntry;
+import com.schlaf.steam.activities.selectlist.selection.SelectionSolo;
+import com.schlaf.steam.activities.selectlist.selection.SelectionUnit;
 import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.data.Faction;
 import com.schlaf.steam.data.ModelTypeEnum;
 import com.schlaf.steam.data.Restrictable;
+import com.schlaf.steam.data.Unit;
+import com.schlaf.steam.data.WarbeastPack;
+import com.schlaf.steam.data.Warcaster;
+import com.schlaf.steam.data.Warlock;
 
 public class CardLibrarySingleton {
 
@@ -82,7 +91,55 @@ public class CardLibrarySingleton {
 				}
 				
 				if (shouldAdd){
-					map.get(entry.getType()).add(new CardLibraryRowData(entry.getId(), entry.getDisplayLabel(), entry.getQualification(), entry.isCompleted()));	
+
+                    StringBuffer faString = new StringBuffer();
+                    faString.append("FA:");
+                    if (element.isUniqueCharacter()) {
+                        faString.append("C");
+                    } else if (element.isUnlimitedFA()) {
+                        faString.append("U");
+                    } else {
+                        faString.append(element.getFA());
+                    }
+
+                    StringBuffer costString = new StringBuffer(12);
+                    if (element instanceof Warcaster) {
+                        costString.append("WJ:+").append(Math.abs(element.getBaseCost()));
+                    } else if (element instanceof Warlock) {
+                        costString.append("WB:+").append(Math.abs(element.getBaseCost()));
+                    } else {
+                        costString.append("PC:").append(element.getBaseCost());
+                    }
+
+                    String unitSize;
+                    String cost = "0";
+                    if (element instanceof Unit) {
+                        if ( ((Unit) element).isVariableSize() ) {
+                            Unit unit = (Unit) element;
+                            unitSize =  unit.getBaseNumberOfModels() + "/" + unit.getFullNumberOfModels();
+                            cost =  "PC:" + unit.getBaseCost() + "/" + unit.getFullCost();
+                        } else {
+                            unitSize = ((Unit) element).getBaseNumberOfModels() + "" ;
+                            cost = "PC:"+ ((Unit) element).getBaseCost();
+                        }
+                    } else if (element instanceof WarbeastPack) {
+                        unitSize= ((WarbeastPack) element).getNbModels() + "";
+                    } else {
+                        unitSize = "";
+                    }
+
+
+                    if (entry instanceof SelectionUnit) {
+                        SelectionUnit unit = (SelectionUnit) entry;
+                        map.get(entry.getType()).add(new CardLibraryRowData(entry.getId(), entry.getDisplayLabel(), entry.getQualification(), entry.getBaseFAString(), cost, unitSize, true));
+                    } else if (entry instanceof SelectionSolo && ((SelectionSolo) entry).isDragoon()) {
+                        cost = "PC:" + ((SelectionSolo) entry).getBaseCost() + "/" + ((SelectionSolo) entry).getDismountCost() ;
+                        map.get(entry.getType()).add(new CardLibraryRowData(entry.getId(), entry.getDisplayLabel(), entry.getQualification(), entry.getBaseFAString(), cost, "1", false));
+                    } else {
+                        map.get(entry.getType()).add(new CardLibraryRowData(entry.getId(), entry.getDisplayLabel(), entry.getQualification(), entry.getBaseFAString(), costString.toString(), "1", false));
+                    }
+
+
 				}
 				
 			}

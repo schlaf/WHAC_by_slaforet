@@ -6,7 +6,7 @@
             <solid android:color="@android:color/transparent"/>
             <stroke
                 android:width="2dp"
-                android:color="#9933b5e5"
+                android:color="@color/FireBrickHalfTransparent"
                 />
         </shape>
     </item>

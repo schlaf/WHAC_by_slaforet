@@ -1,5 +1,7 @@
 package com.schlaf.steam.activities.selectlist.selected;
 
+import com.schlaf.steam.data.Warjack;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -48,11 +50,24 @@ public class SelectedJourneyManWarcaster extends SelectedSolo implements Warcast
 	public int getTotalCost() {
 		int result = getCost();
 		for (SelectedModel attached : getJacks()) {
-			result += attached.getCost();
+            if (! attached.isSpecialist()) {
+                result += attached.getCost();
+            }
 		}
 		return result;
 	}
-	
+
+    @Override
+    public int getTotalSubSpecialistCost() {
+        int result = 0;
+        for (SelectedModel attached : getJacks()) {
+            if (attached.isSpecialist()) {
+                result += attached.getCost();
+            }
+        }
+        return result;
+    }
+
 	@Override
 	public int getModelCount() {
 		return 1 + getJacks().size();
@@ -90,4 +105,14 @@ public class SelectedJourneyManWarcaster extends SelectedSolo implements Warcast
 		sb.append("[").append(cost).append("PC]");
 		return sb.toString();
 	}
+
+    @Override
+    public void setSpecialist(boolean specialist) {
+        super.setSpecialist(specialist);
+        if (specialist) {
+            for (SelectedWarjack jack : getJacks()) {
+                jack.setSpecialist(true);
+            }
+        }
+    }
 }

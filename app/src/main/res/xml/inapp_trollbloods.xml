@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="warmachine.xsd">
+	<armies>
+	    
+<army faction="faction_trollblood" name="Trollbloods" version="inapp_trollblood_001">
+    
+<warlocks>
+<warlock  id="Tw01" name="Chief Madrak Ironhide" full_name="Chief Madrak Ironhide" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="Chief Madrak Ironhide" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="Tx01" name="Madrak Ironhide, World Ender" full_name="Madrak Ironhide, World Ender" generation="E" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="Madrak Ironhide, World Ender" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="Tw02" name="Hoarluk Doomshaper" full_name="Hoarluk Doomshaper" generation="P" qualification="warlock" fury="6" warbeast_points="7" fa="C">
+	<basestats name="Hoarluk Doomshaper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="Tx02" name="Hoarluk Doomshaper, Rage of Dhunia" full_name="Hoarluk Doomshaper, Rage of Dhunia" generation="E" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="Hoarluk Doomshaper, Rage of Dhunia" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="Tw03" name="Grissel Bloodsong" full_name="Grissel Bloodsong" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="Grissel Bloodsong" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="Tx03" name="Grissel Bloodsong, Marshal of the Kriels" full_name="Grissel Bloodsong, Marshal of the Kriels" generation="E" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="Grissel Bloodsong, Marshal of the Kriels" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="Tw04" name="Grim Angus" full_name="Grim Angus" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="Grim Angus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="Tx04" name="Hunters Grim" full_name="Hunters Grim" generation="E" qualification="warlock" fury="6" warbeast_points="4" fa="C">
+	<basestats name="Hunters Grim" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat></feat>
+	<model  id="Muggs">
+	  <basestats name="Muggs" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+    </model>
+    <model  id="Krump">
+	  <basestats name="Krump" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+    </model>
+</warlock>
+<warlock  id="TW05" name="Borka Kegslayer" full_name="Borka Kegslayer" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="Borka Kegslayer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat></feat>
+    <model  id="Pyg Keg Carrier">
+	  <basestats name="Pyg Keg Carrier" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+    </model>
+</warlock>
+<warlock id="TX05" name="Borka, Vengeance of the Rimeshaws" generation="E" full_name="Borka, Vengeance of the Rimeshaws" qualification="Trollblood Epic Trollkin Cavalry Warlock" fury="5" warbeast_points="6" fa="C">
+  <basestats name="BORKA" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="TW06" name="Calandra Truthsayer" full_name="Calandra Truthsayer" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="Calandra Truthsayer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="TW07" name="Captain Gunnbjorn" full_name="Captain Gunnbjorn" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
+	<basestats name="Captain Gunnbjorn" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+<warlock  id="TW08" name="Jarl Skuld" full_name="Jarl Skuld" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
+	<basestats name="Jarl Skuld" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+	<weapons></weapons>
+	<feat></feat>
+</warlock>
+    
+    
+</warlocks>
+
+<warbeasts>
+<warbeast  id="TB01" name="Pyre Troll" full_name="Pyre Troll" damage_spiral="7-8-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="Pyre Troll" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons/>
+</warbeast>
+<warbeast  id="TB02" name="Slag Troll" full_name="Slag Troll" damage_spiral="7-8-7" fury="0" threshold="0" cost="6" qualification="Light Warbeast" fa="U">
+	<basestats name="Slag Troll" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB03" name="Troll Axer" full_name="Troll Axer" damage_spiral="7-8-7" fury="0" threshold="0" cost="6" qualification="Light Warbeast" fa="U">
+	<basestats name="Troll Axer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons/>
+</warbeast>
+<warbeast  id="TB04" name="Troll Bouncer" full_name="Troll Bouncer" damage_spiral="7-8-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="Troll Bouncer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons/>
+</warbeast>
+<warbeast  id="TB05" name="Troll Impaler" full_name="Troll Impaler" damage_spiral="7-8-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="Troll Impaler" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons/>
+</warbeast>
+<warbeast  id="TB06" name="Winter Troll" full_name="Winter Troll" damage_spiral="7-8-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="Winter Troll" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB07" name="Dire Troll Blitzer" full_name="Dire Troll Blitzer" damage_spiral="9-10-9" fury="0" threshold="0" cost="9" qualification="Heavy Warbeast" fa="U">
+	<basestats name="Dire Troll Blitzer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB08" name="Dire Troll Mauler" full_name="Dire Troll Mauler" damage_spiral="9-10-9" fury="0" threshold="0" cost="9" qualification="Heavy Warbeast" fa="U">
+	<basestats name="Dire Troll Mauler" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB09" name="Earthborn Dire Troll" full_name="Earthborn Dire Troll" damage_spiral="10-11-11" fury="0" threshold="0" cost="10" qualification="Heavy Warbeast" fa="U">
+	<basestats name="Earthborn Dire Troll" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB10" name="Mulg the Ancient" full_name="Mulg the Ancient" damage_spiral="9-13-12" fury="0" threshold="0" cost="12" qualification="Heavy Character Warbeast" fa="C">
+	<basestats name="Mulg the Ancient" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB11" name="Dire Troll Bomber" full_name="Dire Troll Bomber" damage_spiral="9-10-9" fury="0" threshold="0" cost="10" qualification="Heavy Warbeast" fa="U">
+	<basestats name="Dire Troll Bomber" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB12" name="Swamp Troll" full_name="Swamp Troll" damage_spiral="7-8-7" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
+	<basestats name="Swamp Troll" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB13" name="Rök" full_name="Rök" damage_spiral="9-10-9" fury="0" threshold="0" cost="11" qualification="Heavy Character Warbeast" fa="C">
+	<basestats name="Rök" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB14" name="Storm Troll" full_name="Storm Troll" damage_spiral="7-8-7" fury="0" threshold="0" cost="5" qualification="Light Warbeast" fa="U">
+	<basestats name="Storm Troll" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB15" name="Night Troll" full_name="Night Troll" damage_spiral="7-8-7" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
+	<basestats name="Night Troll" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>
+<warbeast  id="TB16" name="Mountain King" full_name="Mountain King" damage_spiral="11-20-17" fury="0" threshold="0" cost="20" qualification="Heavy Warbeast" fa="2">
+	<basestats name="Mountain King" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</warbeast>    
+<warbeast id="TB17" name="Dozer &amp; Smigg" full_name="Dozer &amp; Smigg" qualification="Trollblood Dire Troll Character Heavy Warbeast" fa="C" cost="9" fury="4" threshold="10" damage_spiral="9-10-9">
+    <basestats name="DOZER &amp; SMIGG" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+    <weapons/>
+</warbeast>        
+
+    
+</warbeasts>
+
+<battleEngines>
+    <battleEngine  id="TE01" name="War Wagon" full_name="War Wagon" cost="9" qualification="Battle engine" fa="2">
+	<basestats name="War Wagon" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"   hitpoints="22"/>
+	<weapons></weapons>
+</battleEngine>
+</battleEngines>
+
+<units>
+<unit  id="TU01" name="Kriel Warriors" full_name="Kriel Warriors" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="3" has_unit_attachment="true" has_weapon_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="TA01" name="Kriel Warrior Standard Bearer &amp; Piper" full_name="Kriel Warrior Standard Bearer &amp; Piper" fa="1" cost="2" qualification="Unit attachment">
+    <model  id="Standard Bearer">
+	<basestats name="Standard Bearer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+</model>
+<model  id="Kriel Warrior Piper">
+	<basestats name="Kriel Warrior Piper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+</model>
+</unit_attachment>
+<weapon_attachment  id="TA02" name="Kriel Warrior Caber Thrower" full_name="Kriel Warrior Caber Thrower" fa="3" cost="1" qualification="Unit attachment" max_wa="3">
+<model  id="Caber Thrower">
+	<basestats name="Caber Thrower" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+</model></weapon_attachment>
+</unit>
+<unit  id="TU02" name="Krielstone Bearer and Stone Scribes" full_name="Krielstone Bearer and Stone Scribes" base_cost="3" baseCount="4" full_cost="4" fullCount="6" qualification="Unit" fa="1" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="TA03" name="Krielstone Stone Scribe Elder" full_name="Krielstone Stone Scribe Elder" fa="1" cost="1" qualification="Unit attachment">
+<model  id="Krielstone Stone Scribe Elder">
+	<basestats name="Krielstone Stone Scribe Elder" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+</unit_attachment>
+</unit>
+<unit  id="TU03" name="Pyg Burrowers" full_name="Pyg Burrowers" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="1">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="TU04" name="Pyg Bushwhackers" full_name="Pyg Bushwhackers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="TU05" name="Thumpercrew" full_name="Thumpercrew" base_cost="3" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="TU06" name="Trollkin Champions" full_name="Trollkin Champions" base_cost="6" baseCount="3" full_cost="10" fullCount="5" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+<unit_attachment  id="TA05" name="Skaldi Bonehammer" full_name="Skaldi Bonehammer" fa="C" cost="3" qualification="Character Unit attachment">
+<model  id="Skaldi Bonehammer">
+	<basestats name="Skaldi Bonehammer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+</model>
+</unit_attachment>
+</unit>
+<unit  id="TU07" name="Trollkin Fennblades" full_name="Trollkin Fennblades" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="TA04" name="Trollkin Fennblade Officer &amp; Drummer" full_name="Trollkin Fennblade Officer &amp; Drummer" fa="1" cost="2" qualification="Unit attachment">
+<model  id="Trollkin Fennblade Officer">
+	<basestats name="Trollkin Fennblade Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+<model  id="Trollkin Fennblade Drummer">
+	<basestats name="Trollkin Fennblade Drummer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+</unit>
+<unit  id="TU08" name="Trollkin Long Riders" full_name="Trollkin Long Riders" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Unit" fa="1">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+</unit>
+<unit  id="TU09" name="Trollkin Runeshapers" full_name="Trollkin Runeshapers" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+</unit>
+<unit  id="TU10" name="Trollkin Scattergunners" full_name="Trollkin Scattergunners" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+<unit_attachment  id="TA06" name="Trollkin Scattergunner Officer &amp; Standard" full_name="Trollkin Scattergunner Officer &amp; Standard" fa="1" cost="2" qualification="Unit attachment">
+<model  id="Trollkin Scattergunner Officer">
+	<basestats name="Trollkin Scattergunner Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+</model>
+<model  id="Trollkin Scattergunner Drummer">
+	<basestats name="Trollkin Scattergunner Drummer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="0"/>
+</model>
+</unit_attachment>
+</unit>
+<unit  id="TU11" name="Trollkin Scouts" full_name="Trollkin Scouts" base_cost="5" baseCount="6" full_cost="-" fullCount="-" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</unit>
+<unit  id="TU12" name="Trollkin Sluggers" full_name="Trollkin Sluggers" base_cost="5" baseCount="3" full_cost="8" fullCount="5" qualification="Unit" fa="1">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+</unit>
+<unit  id="TU13" name="Sons of Bragg" full_name="Sons of Bragg" base_cost="6" baseCount="3" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
+	<basestats name="Wrathar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8" />
+	<weapons></weapons>
+<model  id="Tor">
+	<basestats name="Tor" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+</model>
+<model  id="Rhudd">
+	<basestats name="Rhudd" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+</model>
+</unit>
+<unit  id="TU14" name="Trollkin Warders" full_name="Trollkin Warders" base_cost="5" baseCount="3" full_cost="8" fullCount="5" qualification="Unit" fa="2">
+	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+</unit>    
+<unit id="TU15" name="Northkin Fire Eaters" full_name="Northkin Fire Eaters" qualification="Trollblood Unit" fa="2" base_cost="4" full_cost="-" baseCount="2" fullCount="-">
+  <basestats name="LEADER" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+  <weapons>
+  </weapons>
+  <model id="GRUNT">
+    <basestats name="GRUNT" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+    <weapons>
+    </weapons>
+  </model>
+  <model id="Pyg_Buddy">
+    <basestats name="PYG BUDDY" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+    <weapons>
+    </weapons>
+  </model>
+</unit>
+<unit id="TU16" name="Trollkin Highwaymen" full_name="Trollkin Highwaymen" qualification="Trollblood Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10">
+  <basestats name="LEADER &amp; GRUNTS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+  <weapons>
+  </weapons>
+</unit>
+    
+</units>
+
+<solos>
+    
+<solo  id="TS01" name="Fell Caller Hero" full_name="Fell Caller Hero" cost="3" qualification="Solo" fa="2">
+	<basestats name="Fell Caller Hero" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+</solo>
+<solo  id="TS02" name="Stone Scribe Chronicler" full_name="Stone Scribe Chronicler" cost="2" qualification="Solo" fa="1">
+	<basestats name="Stone Scribe Chronicler" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+</solo>
+<solo  id="TS03" name="Troll Whelps" full_name="Troll Whelps" cost="2" qualification="Solo" fa="3">
+	<basestats name="Troll Whelps" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</solo>
+<solo  id="TS04" name="Trollkin Champion Hero" full_name="Trollkin Champion Hero" cost="3" qualification="Solo" fa="2">
+	<basestats name="Trollkin Champion Hero" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+</solo>
+<solo  id="TS05" name="Horthol, Long Rider Champion" full_name="Horthol, Long Rider Champion" cost="5" qualification="Character Solo" fa="C">
+	<basestats name="Horthol, Long Rider Champion" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="10"/>
+	<weapons></weapons>
+</solo>
+<solo  id="TS06" name="Trollkin Runebearer" full_name="Trollkin Runebearer" cost="2" qualification="Solo" fa="1">
+	<basestats name="Trollkin Runebearer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+</solo>
+<solo  id="TS07" name="Trollblood Skinner" full_name="Trollblood Skinner" cost="2" qualification="Solo" fa="2">
+	<basestats name="Trollblood Skinner" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="5"/>
+	<weapons></weapons>
+</solo>
+<solo  id="TS08" name="Janissa Stonetide" full_name="Janissa Stonetide" cost="3" qualification="Character Solo" fa="C">
+	<basestats name="Janissa Stonetide" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+</solo>
+<solo  id="TS09" name="Trollkin Sorcerer" full_name="Trollkin Sorcerer" cost="1" qualification="Solo" fa="2">
+	<basestats name="Trollkin Sorcerer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+	<weapons></weapons>
+</solo>
+<solo  id="TS10" name="Fennblade Kithkar" full_name="Fennblade Kithkar" cost="2" qualification="Solo" fa="2">
+	<basestats name="Fennblade Kithkar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8"/>
+	<weapons></weapons>
+</solo>    
+<solo  id="TS11" name="Horgle Ironstrike" full_name="Horgle Ironstrike" cost="3" qualification="Solo" fa="C">
+	<basestats name="Fennblade Kithkar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  hitpoints="8" lesser_warlock="true" focus="4"/>
+	<weapons></weapons>
+	<restricted_to id="TB01"/>
+	<restricted_to id="TB02"/>
+</solo>   
+<solo id="TS12" name="Braylen Wanderheart, Trollkin Outlaw" full_name="Braylen Wanderheart, Trollkin Outlaw" qualification="Trollblood Character Solo" fa="C" cost="3" >
+  <basestats name="WANDERHEART" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8"  />
+  <weapons/>
+</solo> 
+</solos>
+    
+    </army>		
+
+</armies>
+	
+		    
+</ruleset>

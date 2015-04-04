@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/lightUI"
+    android:layout_gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -45,5 +55,6 @@
         android:layout_gravity="center_vertical"
         android:background="@drawable/empty"
         android:contentDescription="@string/delete"
-        android:src="@drawable/ic_menu_delete" />
+        android:src="@drawable/ic_delete" />
 </LinearLayout>
+</android.support.v7.widget.CardView>

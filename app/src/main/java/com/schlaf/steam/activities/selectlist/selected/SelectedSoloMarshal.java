@@ -88,11 +88,26 @@ public class SelectedSoloMarshal extends SelectedSolo implements JackMarshall {
 		int cost = getCost();
 		if (! getJacks().isEmpty()) {
 			for (SelectedWarjack jack : getJacks()) {
-				cost += jack.getCost();
+                if (! jack.isSpecialist()) {
+                    cost += jack.getCost();
+                }
 			}
 		}
 		return cost;
 	}
+
+    @Override
+    public int getTotalSubSpecialistCost() {
+        int cost = 0;
+        if (! getJacks().isEmpty()) {
+            for (SelectedWarjack jack : getJacks()) {
+                if (jack.isSpecialist()) {
+                    cost += jack.getCost();
+                }
+            }
+        }
+        return cost;
+    }
 
 	@Override
 	public int getModelCount() {
@@ -121,5 +136,15 @@ public class SelectedSoloMarshal extends SelectedSolo implements JackMarshall {
 		}
 		return sb.toString();
 	}
+
+    @Override
+    public void setSpecialist(boolean specialist) {
+        super.setSpecialist(specialist);
+        if (specialist) {
+            for (SelectedWarjack jack : getJacks()) {
+                jack.setSpecialist(true);
+            }
+        }
+    }
 
 }

@@ -2,7 +2,6 @@
 <resources>
 
     <string name="pp_copyright">Circle Orboros, Cygnar, Khador, Legion of Everblight, Mercenaries, Minions, Protectorate of Menoth, Retribution of Scyrah, Skorne, Trollbloods and their logos are trademarks of Privateer Press, Inc. Trademarks used without permission. This application is unofficial and is not endorsed by Privateer Press.</string>
-    
     <string name="abomination">Abomination</string>
     <string name="advance_deployment">Advance Deployment</string>
     <string name="arc_node">Arc Node</string>
@@ -27,7 +26,6 @@
     <string name="immunity_electricity">Immunity : Electricity</string>
     <string name="immunity_frost">Immunity : Cold</string>
     <string name="no_weapon">No weapon</string>
-    
     <string name="magical">Magical weapon</string>
     <string name="reach">Reach</string>
     <string name="open_fist">Open Fist</string>
@@ -43,8 +41,7 @@
     <string name="critical_corrosion">Critical Corrosion</string>
     <string name="frost">Cold Damage</string>
     <string name="electricity">Electricity Damage</string>
-    
-    
+
     <!-- start screen -->
     <string name="hello">Hello</string>
     <string name="app_name">WH army creator</string>
@@ -59,14 +56,13 @@
     <string name="my_collection">My collection</string>
     <string name="version">Version</string>
     <string name="donate">Donate</string>
-    
     <string name="empty"></string>
-    
+
     <!-- donation -->
     <string name="small_donation">Small donation</string>
     <string name="medium_donation">Medium donation</string>
     <string name="big_donation">Big donation</string>
-    <string name="donation_notice">Donation is up to you. This app is provided free, so you can give some money with no reward : you don\'t buy anything with this money, except the developer\'s gratitude. The donation does not allow any new feature or hide adverts, as everything in this app is free, and there is no ads. Donation is a reward to the developer, who spent a lot of time coding this application ; if you feel generous, be sure your money will be well spent (chocolate, warmachines miniatures, &#8230;)!</string>
+    <string name="donation_notice">Donation is up to you. This app is provided free, so you can give some money with no reward : you don\'t buy anything with this money, except the developer\'s gratitude. The donation does not allow any new feature or hide adverts, as everything in this app is free, and there is no ads. Donation is a reward to the developer, who spent a lot of time coding this application ; if you feel generous, be sure your money will be well spent (chocolate, warmachines miniatures, …)!</string>
     <string name="in_app_billing_failure">Failed to contact Google Play billing services</string>
     <string name="in_app_billing_not_available">Google Play billing service not available</string>
     <string name="thank_you">Donation successful, thank you for your support!</string>
@@ -74,25 +70,21 @@
     <string name="would_donate">Have you considered making a donation?</string>
     <string name="yes_donate">Shut up and take my money</string>
     <string name="no_thanks">No, remind me later</string>
-    
+
     <!-- import files -->
-    <string name="import_files">Import files&#8230;</string>
+    <string name="import_files">Import files…</string>
     <string name="files_imported">Files already imported</string>
-    
     <string name="choose_faction">Choose faction</string>
     <string name="choose_tier">Choose tier</string>
     <string name="choose_contract">Choose contract</string>
     <string name="choose_warcaster">Choose warcaster</string>
     <string name="choose_player2">Choose 2nd player army list</string>
     <string name="field_promotion">Field promotion</string>
-    
-    
     <string name="faction_icon">faction icon</string>
     <string name="title">Example title</string>
     <string name="description">Example description</string>
-    
-    
-	<!-- caracs -->    
+
+    <!-- caracs -->
     <string name="carac_spd">SPD</string>
     <string name="carac_str">STR</string>
     <string name="carac_mat">MAT</string>
@@ -101,29 +93,24 @@
     <string name="carac_arm">ARM</string>
     <string name="carac_foc">FOC</string>
     <string name="carac_cmd">CMD</string>
-    
     <string name="carac_pow">POW</string>
     <string name="carac_p_plus_s">P+S</string>
     <string name="carac_range">RNG</string>
     <string name="carac_rof">ROF</string>
     <string name="carac_aoe">AOE</string>
-    
     <string name="feat">FEAT</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugi</string>
-    
     <string name="unit_name">Unit name</string>
     <string name="field_allowance">FA</string>
     <string name="base_cost">base cost</string>
     <string name="full_cost">full cost</string>
-    
-   	<string name="casters">Casters</string>
-	<string name="units">Units</string>
-	<string name="solos">Solos</string>
-	<string name="battle_engines">Battle engines</string>
+    <string name="casters">Casters</string>
+    <string name="units">Units</string>
+    <string name="solos">Solos</string>
+    <string name="battle_engines">Battle engines</string>
     <string name="objective">Objectives</string>
-	
-	<string name="example">example</string>
-    
+    <string name="example">example</string>
+
     <!-- populate army list -->
     <string name="selection_choices">Selection choices</string>
     <string name="selected_army">Selected army</string>
@@ -131,38 +118,31 @@
     <string name="tier">Tier</string>
     <string name="tier_level">Tier level</string>
     <string name="contract_info">Contract information</string>
-    
     <string name="no_entry_to_attach">Sorry, there is actually no model to attach this entry</string>
     <string name="add_unit">Add unit : </string>
     <string name="models">models</string>
     <string name="min">Min. : </string>
     <string name="max">Max. : </string>
-    
     <string name="min_size">Min. size</string>
     <string name="max_size">Max. size</string>
-    
     <string name="exit_create_army">You are about to leave the page</string>
     <string name="exit_create_army_confirm">Your army as not been saved? Changes will be lost. Exit anyway?</string>
-    
     <string name="plus">+</string>
     <string name="moins">-</string>
-    
     <string name="_1">1</string>
     <string name="_2">2</string>
     <string name="_3">3</string>
     <string name="_4">4</string>
     <string name="_5">5</string>
     <string name="_6">6</string>
-    
     <string name="edit_army">Edit armies</string>
     <string name="delete">Delete</string>
     <string name="import_">Import</string>
     <string name="duplicate">Duplicate</string>
     <string name="rename">Rename</string>
-    
-    
+
     <!-- generic -->
-	<string name="ok">OK</string>    
+    <string name="ok">OK</string>
     <string name="copy">Copy</string>
     <string name="export">Export</string>
     <string name="exit">Exit</string>
@@ -179,22 +159,18 @@
     <string name="repair">Repair</string>
     <string name="repair_force_field">Repair force field</string>
     <string name="search">Search</string>
-    
-    
-    
+
     <!-- mini collection -->
     <string name="owned">Owned</string>
     <string name="painted">Painted</string>
     <string name="in_my_collection">In my collection</string>
-    
-    
     <string name="entry_title">Entry title</string>
     <string name="entry_fa">FA : 2/2</string>
     <string name="entry_cost">8PC</string>
-    
-    
+
     <!-- dice launcher -->
     <string name="dice_stat">Dice stats</string>
+
     <string-array name="dice_count">
         <item>1</item>
         <item>2</item>
@@ -203,18 +179,16 @@
         <item>5</item>
         <item>6</item>
     </string-array>
-    
     <string-array name="dice_discard">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-    
     <string-array name="discard_method">
         <item>Lowest</item>
         <item>Biggest</item>
     </string-array>
-    
+
     <!-- army selection settings -->
     <string name="choose_army_list">Choose army list</string>
     <string name="choose_army_settings">Choose current army list settings</string>
@@ -222,16 +196,15 @@
     <string name="army_size">Army size</string>
     <string name="army_selection_settings">Settings</string>
     <string name="none">None</string>
-    <string name="should_attach">Should be attached to &#8230;</string>
-    
+    <string name="should_attach">Should be attached to …</string>
+
     <string-array name="caster_count">
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
     </string-array>
-
-	<string-array name="army_size">
+    <string-array name="army_size">
         <item>15</item>
         <item>25</item>
         <item>35</item>
@@ -241,51 +214,42 @@
         <item>150</item>
         <item>200</item>
     </string-array>
-    
-	<string-array name="use_tiers">
+    <string-array name="use_tiers">
         <item>yes</item>
         <item>no</item>
-    </string-array>	
+    </string-array>
+    <string-array name="use_specialists">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
 
-	<string-array name="use_specialists">
-        <item>yes</item>
-        <item>no</item>
-    </string-array>	
-	
-	<!-- victory conditions & battle results -->
-	<string name="savebattle">Save battle winner/conditions</string>
-	<string name="winner">Winner</string>
-	<string name="player2name">Player 2 name</string>
-	<string name="unknown">Unknown</string>
-	<string name="useClock">Use clock/deathclock</string>
-	<string name="scenario">Scenario</string>
-	<string name="victoryCondition">Victory on</string>
-	<string name="notes">Notes</string>
-	<string name="datePlayed">Played on</string>
-	
-	<string name="myArmy">Army played</string>
-	<string name="opponentArmy">Opponent\'s army</string>
-  
+    <!-- victory conditions & battle results -->
+    <string name="savebattle">Save battle winner/conditions</string>
+    <string name="winner">Winner</string>
+    <string name="player2name">Player 2 name</string>
+    <string name="unknown">Unknown</string>
+    <string name="useClock">Use clock/deathclock</string>
+    <string name="scenario">Scenario</string>
+    <string name="victoryCondition">Victory on</string>
+    <string name="notes">Notes</string>
+    <string name="datePlayed">Played on</string>
+    <string name="myArmy">Army played</string>
+    <string name="opponentArmy">Opponent\'s army</string>
     <string name="no_results">No battle results have been registered yet.\nRemember to terminate your battle and save result to get statistics.</string>
-    
     <string name="sort_win">Sort by win/loss</string>
     <string name="sort_date">Sort by date</string>
     <string name="sort_opponent">Sort by opponent</string>
     <string name="export_file">Export File</string>
 
-	
-	<string-array name="winner_option">
+    <string-array name="winner_option">
         <item>Me</item>
         <item>The other guy</item>
     </string-array>
-    
-	<string-array name="use_clock_option">
+    <string-array name="use_clock_option">
         <item>No clock</item>
         <item>Loveclock</item>
         <item>Deathclock</item>
     </string-array>
-    
-    
     <string-array name="scenario_option">
         <item>SR2015-1. Destruction</item>
         <item>SR2015-2. Two fronts</item>
@@ -309,79 +273,66 @@
         <item>SR2014-12. Fire support</item>
         <item>Other</item>
     </string-array>
-	
-	<string-array name="victory_option">
+    <string-array name="victory_option">
         <item>Caster-kill</item>
         <item>Clock</item>
         <item>Scenario</item>
         <item>Forfeit</item>
     </string-array>
-	
-	
-	<!--  preferences -->
-	<string-array name="card_access_method">
+
+    <!-- preferences -->
+    <string-array name="card_access_method">
         <item>simple click</item>
         <item>long click</item>
     </string-array>
-
-	<string-array name="card_access_method_values">
+    <string-array name="card_access_method_values">
         <item>simple</item>
         <item>long</item>
     </string-array>
-	
-			
-	<string name="pref_timer_group">Timer settings</string>
-	<string name="pref_use_timer">Use timer by default</string>
-	<string name="pref_key_timer_minutes_summary">Default number of minutes on the clock = !replace!</string>
-	<string name="pref_key_timer_minutes">Number of minutes per player</string>
-	
-	<string name="pref_list_building_group">List building settings</string>
-	<string name="pref_list_building_army_size">Army default size</string>
-	<string name="pref_list_building_caster_count">Default caster count</string>
-	<string name="pref_list_building_use_specialists">Use specialists</string>
-	
-	<string name="pref_list_building_army_size_summary">Default size is !replace! points</string>
-	<string name="pref_list_building_caster_count_summary">Default caster(s) count is !replace!</string>
-	<string name="pref_list_building_use_specialists_summary">Use specialist = !replace!</string>
-	
-	
-	<string name="pref_list_ergonomy">Ergonomy</string>
-	<string name="pref_list_view_card_click_summary">Access card via single click</string>
-	<string name="pref_list_view_card_fullscreen_summary">Always show card full-screen</string>
-	<string name="pref_list_exit_silently_summary">Always exit silently (no confirmation asked)</string>
-	
 
+    <string name="pref_timer_group">Timer settings</string>
+    <string name="pref_use_timer">Use timer by default</string>
+    <string name="pref_key_timer_minutes_summary">Default number of minutes on the clock = !replace!</string>
+    <string name="pref_key_timer_minutes">Number of minutes per player</string>
+    <string name="pref_list_building_group">List building settings</string>
+    <string name="pref_list_building_army_size">Army default size</string>
+    <string name="pref_list_building_caster_count">Default caster count</string>
+    <string name="pref_list_building_use_specialists">Use specialists</string>
+    <string name="pref_list_building_army_size_summary">Default size is !replace! points</string>
+    <string name="pref_list_building_caster_count_summary">Default caster(s) count is !replace!</string>
+    <string name="pref_list_building_use_specialists_summary">Use specialist = !replace!</string>
+    <string name="pref_list_ergonomy">Ergonomy</string>
+    <string name="pref_list_view_card_click_summary">Access card via single click</string>
+    <string name="pref_list_view_card_fullscreen_summary">Always show card full-screen</string>
+    <string name="pref_list_exit_silently_summary">Always exit silently (no confirmation asked)</string>
 
-    <!--  DeviceListActivity -->
+    <!-- DeviceListActivity -->
     <string name="bt_search">Search other devices</string>
     <string name="bt_discovery_on">Make me discoverable</string>
 
     <!-- Options Menu -->
     <string name="secure_connect">Connect with another device</string>
     <string name="discoverable">Make me discoverable</string>
-	
+
     <!-- export army list -->
     <string name="export_list">Export army list</string>
     <string name="export_mail">Send by mail</string>
-    <string name="sendmail">Send&#8230;</string>
-    
-	
+    <string name="sendmail">Send…</string>
     <string name="askDeleteFolder">This will delete the folder and all files inside :</string>
     <string name="confirmDeleteFolder">Delete folder?</string>
-    
+
     <!-- choose battle -->
     <string name="startresumeBattle">Start/Resume battle</string>
-    <string name="createbattlefrom">Create battle from &#8230;</string>
+    <string name="createbattlefrom">Create battle from …</string>
     <string name="resumebattle">Resume battle</string>
     <string name="askDeleteBattle">You are about to delete the battle : </string>
     <string name="confirmdeletebattle">Delete battle?</string>
-    <string name="creatingbattlefromlist">Creating battle from army list&#8230;</string>
-    <string name="askDeleteList">You are about to delete the army list :</string> 
+    <string name="creatingbattlefromlist">Creating battle from army list…</string>
+    <string name="askDeleteList">You are about to delete the army list :</string>
     <string name="confirmDeleteList">Delete list?:</string>
     <string name="noExistingArmy">No existing army.</string>
     <string name="noExistingBattle">No existing battle.</string>
-    
-    
+
     <!-- battle activity -->
     <string name="battle_exists">A battle already exists for this army list</string>
     <string name="recreate_battle">Do you want to re-create a battle from new, or use the existing one</string>
@@ -392,7 +343,7 @@
     <string name="player1">Player 1</string>
     <string name="player2">Player 2</string>
     <string name="chronotab">Chrono</string>
-    
+
     <!-- dice -->
     <string name="dice_title">Calculate Dice roll stats</string>
     <string name="launch">Launch</string>
@@ -403,26 +354,23 @@
     <string name="crit_chance">Crit. chance</string>
     <string name="lowest">Lowest</string>
     <string name="biggest">Biggest</string>
-    
-    
+
     <!-- chrono config -->
     <string name="chrono_title">Choose chronometer initial time</string>
-    
-    
+
     <!-- battle activity menu -->
     <string name="battle_planner">Prepare your battle plan</string>
     <string name="add_2nd_player">Add 2nd player</string>
     <string name="chrono">Chrono config</string>
     <string name="end_battle">End battle</string>
     <string name="battle_bluetooth">Use bluetooth</string>
-    
+
     <!-- battle planner -->
     <string-array name="battle_actions">
         <item>Move and action</item>
         <item>Run</item>
         <item>Charge</item>
     </string-array>
-    
     <string-array name="power_actions">
         <item>SLAM</item>
         <item>TRAMPLE</item>
@@ -431,11 +379,11 @@
         <item>HEADBUTT</item>
         <item>LOCK</item>
     </string-array>
-    
+
     <!-- steamroller -->
     <string name="steamroller">Steamroller</string>
     <string name="scenariiLibrary">Steamroller scenarii</string>
-    
+
     <!-- card library -->
     <string name="search_library">Search card library</string>
     <string name="card_complete">Card data complete</string>
@@ -445,32 +393,30 @@
     <string name="long_press_to_add">Long press to add the card to battle</string>
     <string name="add_entry_title">Insert a model into battle</string>
     <string name="add_entry_message">You are about to add a card to your army entries : </string>
-    
+
     <!-- save dialog -->
     <string name="choose_save_destination">Choose save destination</string>
-	
+
     <!-- search_label -->
     <string name="search_label">Search</string>
     <string name="search_hint">Search</string>
-    
-    <string name="loading_data">Loading data&#8230;</string>
+    <string name="loading_data">Loading data…</string>
     <string name="no_previous_battle">no previous battle</string>
     <string name="no_previous_army">no previous army</string>
-    
     <string name="exit_the_application">You are about to exit the application</string>
     <string name="deletion_failed">deletion failed</string>
-    <string name="sending_army_list_">Sending army list&#8230;</string>
-    <string name="receiving_army_list_">Receiving army list&#8230;</string>
+    <string name="sending_army_list_">Sending army list…</string>
+    <string name="receiving_army_list_">Receiving army list…</string>
     <string name="received_army_list">Received army list</string>
     <string name="bluetooth_disconnection">Bluetooth disconnection</string>
     <string name="apply_damages_to">"Apply damages to "</string>
     <string name="battle_stats_exported_on_sd_card">battle stats exported on SD card</string>
-    <string name="send_mail">Send mail&#8230;</string>
+    <string name="send_mail">Send mail…</string>
     <string name="delete_the_battle_result">"you are about to delete the battle result : "</string>
     <string name="confirm_delete_result">delete result?</string>
     <string name="_models">" models"</string>
     <string name="import_how_to">Import How-to</string>
-    <string name="starting_import_process_please_wait">Starting import process&#8230; please wait.</string>
+    <string name="starting_import_process_please_wait">Starting import process… please wait.</string>
     <string name="import_successfull">import successful</string>
     <string name="import_failed_make_sure_the_source_file_is_correct">import failed - make sure the source file is correct</string>
     <string name="you_are_about_to_delete_the_file">"you are about to delete the file : "</string>
@@ -487,11 +433,10 @@
     <string name="gargantuans">Gargantuans</string>
     <string name="other">Other</string>
     <string name="mercenaries">Mercenaries</string>
-    
     <string name="p1_time">"P1 time= "</string>
     <string name="p2_time">"P2 time= "</string>
     <string name="paused">paused</string>
-    
+
     <!-- steamroller -->
     <string name="choose_this_scenario">Choose this scenario</string>
     <string name="special_rules">Special Rules</string>
@@ -499,7 +444,7 @@
     <string name="tactical_tips">Tactical tips</string>
     <string name="no_entries_selected">No entries selected</string>
     <string name="prompt">>_</string>
-    
+
     <!-- spells on cards -->
     <string name="spells">SPELLS</string>
     <string name="cost">COST</string>
@@ -508,19 +453,22 @@
     <string name="pow">POW</string>
     <string name="up">UP</string>
     <string name="off">OFF</string>
-    
+
     <!-- display tier & contracts -->
     <string name="model_restrictions">Model restrictions</string>
     <string name="requirements">Requirements</string>
     <string name="benefit">Benefit</string>
     <string name="contract_restrictions">Contract restrictions</string>
     <string name="repair_1">Repair 1</string>
-	<string name="tier_level_attained">"Tier level attained : "</string>
-    
+    <string name="tier_level_attained">"Tier level attained : "</string>
     <string name="help">Help</string>
-    
-    
-    
-    
-    
+    <string name="import_versions">Import versions</string>
+
+
+    <!-- specialists -->
+    <string name="choose_specialists">Choose specialists</string>
+    <string name="specialists">Specialists</string>
+    <string name="specialists_points">Points of selected specialists = </string>
+
+
 </resources>

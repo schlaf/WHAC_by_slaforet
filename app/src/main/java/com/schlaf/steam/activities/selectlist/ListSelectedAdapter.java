@@ -19,6 +19,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import com.schlaf.steam.R;
 import com.schlaf.steam.activities.card.ViewCardFragment.ViewCardActivityInterface;
@@ -69,8 +70,6 @@ public class ListSelectedAdapter extends BaseExpandableListAdapter {
 	 * constructeur avec la liste initiale de modeles
 	 * 
 	 * @param activity
-	 * @param models
-	 * @param faction
 	 */
 	public ListSelectedAdapter(Activity activity) {
 		if ( ! (activity instanceof ArmySelectionChangeListener)) {
@@ -194,13 +193,6 @@ public class ListSelectedAdapter extends BaseExpandableListAdapter {
 					null);
 		}
 		
-		// to handle left/right swipe
-//		final ModelFlingGestureListener flingListener = new ModelFlingGestureListener(convertView, activity);
-//		convertView.setOnTouchListener(flingListener);
-//		convertView.setTag(entry);
-
-
-
 		// association de la vue et du model
 		HashMap<String, SelectedEntry> model = new HashMap<String, SelectedEntry>();
 		model.put("group", (SelectedEntry) getGroup(groupPosition));
@@ -209,17 +201,6 @@ public class ListSelectedAdapter extends BaseExpandableListAdapter {
 		
 		drawEntryView(convertView, entry);
 		
-		ImageView image = (ImageView) convertView.findViewById(R.id.childImage);
-		image.setTag(entry);
-//		image.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				SelectedEntry currentEntry = (SelectedEntry) v.getTag();
-//				SelectionEntry model = SelectionModelSingleton.getInstance().getSelectionEntryById(currentEntry.getId());
-//				((ArmySelectionChangeListener) ListSelectedAdapter.this.activity).viewModelDetail(model);
-//			}
-//		});
-
 		// gesture listener, flip --> to select, <-- to unselect
 //		final ModelFlingGestureListener flingListener = new ModelFlingGestureListener(this, convertView, entry, activity);
 //		convertView.setOnTouchListener(flingListener);
@@ -249,42 +230,39 @@ public class ListSelectedAdapter extends BaseExpandableListAdapter {
 				}, 380);
 			}
 		});
-		
+
+        ToggleButton specialistButton = (ToggleButton) convertView.findViewById(R.id.specialistToggleButton);
+        specialistButton.setTag(model);
+        specialistButton.setFocusable(false);
+        specialistButton.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                @SuppressWarnings("unchecked")
+                HashMap<String, SelectedEntry> model = (HashMap<String, SelectedEntry>) v.getTag();
+                SelectedEntry group = model.get("group");
+                SelectedEntry child = model.get("child");
+                ((ArmySelectionChangeListener) activity).onChangeSpecialistValue(child, ((ToggleButton) v).isChecked()); // to play animation
+            }
+        });
+
+
 		return convertView;
 	}
 
 	protected void drawEntryView(View convertView,
 			final SelectedEntry model) {
-		ImageView image = (ImageView) convertView.findViewById(R.id.childImage);
-		if (model instanceof SelectedUA) {
-			image.setImageResource(R.drawable.ua_icon);
-		}
-		if (model instanceof SelectedWA) {
-			image.setImageResource(R.drawable.wa_icon);
-		}
-		if (model instanceof SelectedWarjack) {
-			image.setImageResource(R.drawable.j_icon);
-		}
-		if (model instanceof SelectedWarbeast) {
-			image.setImageResource(R.drawable.b_icon);
-		}
 		if (model instanceof SelectedSolo) {
 			// maybe an UA
 			SelectionSolo selection = (SelectionSolo) SelectionModelSingleton.getInstance().getSelectionEntryById(model.getId());
-			if (selection.getType() == ModelTypeEnum.UNIT_ATTACHMENT) {
-				image.setImageResource(R.drawable.ua_icon);
-			} else {
-				// really a solo
-				image.setImageResource(R.drawable.s_icon);
-			}
 		}
 		if (model instanceof SelectedBattleEngine) {
-			image.setImageResource(R.drawable.b_icon);
 		}
 		if (model instanceof SelectedObjective) {
-			image.setImageResource(R.drawable.objo);
 		}
-		
+
+        ((ToggleButton) convertView.findViewById(R.id.specialistToggleButton)).setChecked(model.isSpecialist());
+
 		TextView tvDetail = (TextView) convertView.findViewById(R.id.entry_detail);
 		tvDetail.setText(Html.fromHtml(model.toFullString()));
 	}
@@ -366,19 +344,18 @@ public class ListSelectedAdapter extends BaseExpandableListAdapter {
 
 		convertView.setTag(group);
 		
-		ImageView image = (ImageView) convertView.findViewById(R.id.groupImage);
-		
+        ((ToggleButton) convertView.findViewById(R.id.specialistToggleButton)).setVisibility(View.VISIBLE);
+        // convertView.findViewById(R.id.tvSpecialist).setVisibility(View.VISIBLE);
+
 		if (group instanceof SelectedArmyCommander) {
-			image.setImageResource(R.drawable.w_icon);
+            ((ToggleButton) convertView.findViewById(R.id.specialistToggleButton)).setVisibility(View.INVISIBLE);
+            // convertView.findViewById(R.id.tvSpecialist).setVisibility(View.INVISIBLE);
 		} else if (group instanceof SelectedUnit) {
-			image.setImageResource(R.drawable.u_icon);
 		} else if (group instanceof SelectedSolo) {
-			image.setImageResource(R.drawable.s_icon);
-			if (group instanceof SelectedObjective) {
-				image.setImageResource(R.drawable.objo);
-			}
 		}
-		
+
+        ((ToggleButton) convertView.findViewById(R.id.specialistToggleButton)).setChecked(group.isSpecialist());
+
 		TextView tvLabel = (TextView) convertView.findViewById(R.id.def_arm_label);
 		// tvLabel.setTextAppearance(activity, FactionNamesEnum.MENOTH.getStyleResource());
 		tvLabel.setText(Html.fromHtml(group.getLabel()));
@@ -440,18 +417,21 @@ public class ListSelectedAdapter extends BaseExpandableListAdapter {
 				
 				
 			}
-		});		
-		
-		image.setTag(group);
-//		image.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				SelectedEntry currentEntry = (SelectedEntry) v.getTag();
-//				SelectionEntry model = SelectionModelSingleton.getInstance().getSelectionEntryById(currentEntry.getId());
-//				((ArmySelectionChangeListener) ListSelectedAdapter.this.activity).viewModelDetail(model);
-//			}
-//		});
-		
+		});
+
+
+        ToggleButton specialistButton = (ToggleButton) convertView.findViewById(R.id.specialistToggleButton);
+        specialistButton.setTag(group);
+        specialistButton.setFocusable(false);
+        specialistButton.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                SelectedEntry group = (SelectedEntry) v.getTag();
+                ((ArmySelectionChangeListener) activity).onChangeSpecialistValue(group, ((ToggleButton) v).isChecked()); // to play animation
+            }
+        });
+
 		convertView.setFocusable(false);
 		
 		return convertView;

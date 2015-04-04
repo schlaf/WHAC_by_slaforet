@@ -28,11 +28,24 @@ public class SelectedLesserWarlock extends SelectedSolo  implements WarlockInter
 	public int getTotalCost() {
 		int result = getCost();
 		for (SelectedModel attached : getBeasts()) {
-			result += attached.getCost();
+            if (! attached.isSpecialist()) {
+                result += attached.getCost();
+            }
 		}
 		return result;
-	}	
-	
+	}
+
+    @Override
+    public int getTotalSubSpecialistCost() {
+        int result = 0;
+        for (SelectedModel attached : getBeasts()) {
+            if (attached.isSpecialist()) {
+                result += attached.getCost();
+            }
+        }
+        return result;
+    }
+
 	@Override
 	public int getModelCount() {
 		return 1 + getBeasts().size();
@@ -62,4 +75,14 @@ public class SelectedLesserWarlock extends SelectedSolo  implements WarlockInter
 		}
 		return sb.toString();
 	}
+
+    @Override
+    public void setSpecialist(boolean specialist) {
+        super.setSpecialist(specialist);
+        if (specialist) {
+            for (SelectedWarbeast jack : getBeasts()) {
+                jack.setSpecialist(true);
+            }
+        }
+    }
 }

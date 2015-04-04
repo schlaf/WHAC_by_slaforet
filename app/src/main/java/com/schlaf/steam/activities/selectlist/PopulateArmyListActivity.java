@@ -11,9 +11,12 @@ import java.util.Locale;
 import java.util.Map;
 
 import android.annotation.SuppressLint;
+import android.app.ActionBar;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -79,13 +82,19 @@ public class PopulateArmyListActivity extends ActionBarActivity
 		implements ArmySelectionChangeListener, ViewCardActivityInterface,
 		ArmySettingListener, ChooseFileToSaveListener, ChooseArmyListener, ChooseAttachInterface {
 
+    private static final String TAG = "PopulateArmyListActiv";
+
 	private static final String CARD_FRAGMENT = "card_fragment";
-	public static String INTENT_START_NEW_ARMY = "start_new_army";
+    private static final String POPULATE_ACTIVITY_STATE = "POPULATE_ACTIVITY_STATE";
+    public static String INTENT_START_NEW_ARMY = "start_new_army";
 	public static String INTENT_FIRT_START = "first_start";
 	public static String INTENT_FACTION = "faction";
 
 	TabsAdapter mTabsAdapter; // the adapter for swiping pages
 	ViewPager pager; // the pager that handles fragments swipe
+
+
+    private SelectionModelSingleton selectionModelSingleton;
 
 
 	/**
@@ -233,18 +242,6 @@ public class PopulateArmyListActivity extends ActionBarActivity
 		
 	}
 
-	private void collapseSelection() {
-
-		// in case a fragment remains after a screen rotation
-		for (Fragment fragment : getSupportFragmentManager().getFragments()) {
-			// check if viewCardFragment exists
-			if (fragment instanceof SelectionArmyFragment) {
-				((SelectionArmyFragment) fragment).collapseAll();
-			}
-		}
-
-	}
-
 	private void openCardLibrary() {
 
 		FragmentManager fm = getSupportFragmentManager();
@@ -325,7 +322,8 @@ public class PopulateArmyListActivity extends ActionBarActivity
 									.setCurrentContract(
 											contracts.get(which - 1));
 						}
-						notifyArmyChange();
+                        notifyMaybeGroupChange();
+                        notifyArmyChange();
 					}
 				});
 		alert.show();
@@ -335,7 +333,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	 * return available tiers labels
 	 * 
 	 * @param tiers
-	 * @return
+	 * @return labels for tiers (aka titles)
 	 */
 	private String[] getTierLabels(List<Tier> tiers) {
 		ArrayList<String> result = new ArrayList<String>();
@@ -353,7 +351,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	 * return available contract labels
 	 * 
 	 * @param  contracts
-	 * @return String[]
+	 * @return String[] labels for contracts (aka titles)
 	 */
 	private String[] getContractLabels(List<Contract> contracts) {
 		ArrayList<String> result = new ArrayList<String>();
@@ -478,11 +476,53 @@ public class PopulateArmyListActivity extends ActionBarActivity
 //		alert.show();
 	}
 
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();  // Always call the superclass method first
+        Log.e(TAG, "onRestart");
+        // Activity being restarted from stopped state
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();  // Always call the superclass method first
+
+        Log.e(TAG, "onStop");
+        // Save the note's current draft, because the activity is stopping
+        // and we want to be sure the current note progress isn't lost.
+//        ContentValues values = new ContentValues();
+//        values.put("armyPath", );
+        // values.put(NotePad.Notes.COLUMN_NAME_TITLE, getCurrentNoteTitle());
+
+        SharedPreferences settings = getSharedPreferences(POPULATE_ACTIVITY_STATE, 0);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putString("armyPath", SelectionModelSingleton.getInstance().getArmyFilePath());
+        // Commit the edits!
+        editor.commit();
+    }
+
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 
-		super.onCreate(savedInstanceState);
+        Log.e(TAG, "onCreate");
+        super.onCreate(savedInstanceState);
+
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            Log.e(TAG, "status not clean, exiting" );
+            Intent i = getBaseContext().getPackageManager()
+                    .getLaunchIntentForPackage(getBaseContext().getPackageName() );
+            Log.e(TAG, "intent = " + i.toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+            startActivity(i);
+
+            finish();
+            return;
+        }
+
 
 		setContentView(R.layout.populate_army_list_layout_fragmented);
 
@@ -494,10 +534,11 @@ public class PopulateArmyListActivity extends ActionBarActivity
 		SelectionModelSingleton.getInstance().setFaction(factionEnum);
 
 		// getSupportActionBar().setHomeButtonEnabled(true);
-		getSupportActionBar().setLogo(R.drawable.edit_list_icon);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_HOME | ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_USE_LOGO );
+		getSupportActionBar().setLogo(R.drawable.ic_edit);
+        getSupportActionBar().setHomeButtonEnabled(true);
 		getSupportActionBar().setTitle("");
 
-		
 		pager = (ViewPager) findViewById(R.id.viewpager);
 		pager.setOffscreenPageLimit(3);
 		
@@ -635,7 +676,8 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	@Override
 	protected void onStart() {
 		Log.d("PopulateArmyListActivity", "onStart");
-		super.onStart();
+
+        super.onStart();
 		boolean startNewArmy = getIntent().getBooleanExtra(
 				INTENT_START_NEW_ARMY, false);
 
@@ -716,17 +758,26 @@ public class PopulateArmyListActivity extends ActionBarActivity
 
 		
 		int selectionIndex = mTabsAdapter.getTabIndexForId(SelectionArmyFragment.ID);
+        int selectionEntriesIndex = mTabsAdapter.getTabIndexForId(SelectionEntriesArmyFragment.ID);
 		int selectedIndex = mTabsAdapter.getTabIndexForId(SelectedArmyFragment.ID);
-		
+
 		if (selectionIndex != -1) {
 			SelectionArmyFragment selectionfragment = (SelectionArmyFragment) mTabsAdapter.getItem(selectionIndex);
 			selectionfragment.notifyDataSetChanged();
 
 		}
+        if (selectionEntriesIndex != -1) {
+            SelectionEntriesArmyFragment selectionEntriesfragment = (SelectionEntriesArmyFragment) mTabsAdapter.getItem(selectionEntriesIndex);
+            selectionEntriesfragment.notifyDataSetChanged();
+
+        }
 		if (selectedIndex != -1) {
 			SelectedArmyFragment selectedfragment = (SelectedArmyFragment) mTabsAdapter.getItem(selectedIndex);
 			selectedfragment.notifyDataSetChanged();
 		}
+
+        notifyMaybeGroupChange();
+
 //		SelectionArmyFragment selectionfragment = (SelectionArmyFragment) getSupportFragmentManager()
 //				.findFragmentByTag(SelectionArmyFragment.ID);
 //		if (selectionfragment != null && selectionfragment.isInLayout()) {
@@ -814,28 +865,31 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	private void displayTierLevel() {
 		ImageView tierLevelIcon = (ImageView) findViewById(R.id.tier_level_icon);
 
-		if (SelectionModelSingleton.getInstance().getCurrentTiersLevel() > 0) {
+		if (SelectionModelSingleton.getInstance().getCurrentTiers() != null) {
 			tierLevelIcon.setVisibility(View.VISIBLE);
 			switch (SelectionModelSingleton.getInstance()
 					.getCurrentTiersLevel()) {
-			case 1:
-				tierLevelIcon.setImageResource(R.drawable.tier_level_1);
-				break;
-			case 2:
-				tierLevelIcon.setImageResource(R.drawable.tier_level_2);
-				break;
-			case 3:
-				tierLevelIcon.setImageResource(R.drawable.tier_level_3);
-				break;
-			case 4:
-				tierLevelIcon.setImageResource(R.drawable.tier_level_4);
-				break;
-			default:
-				break;
-			}
-		} else {
-			tierLevelIcon.setVisibility(View.GONE);
-		}
+                case 0:
+                    tierLevelIcon.setImageResource(R.drawable.ic_tier0);
+                    break;
+                case 1:
+                    tierLevelIcon.setImageResource(R.drawable.ic_tier1);
+                    break;
+                case 2:
+                    tierLevelIcon.setImageResource(R.drawable.ic_tier2);
+                    break;
+                case 3:
+                    tierLevelIcon.setImageResource(R.drawable.ic_tier3);
+                    break;
+                case 4:
+                    tierLevelIcon.setImageResource(R.drawable.ic_tier4);
+                    break;
+                default:
+                    break;
+            }
+        } else {
+            tierLevelIcon.setVisibility(View.GONE);
+        }
 	}
 
 	/**
@@ -866,11 +920,11 @@ public class PopulateArmyListActivity extends ActionBarActivity
 
 	@Override
 	public boolean onModelAdded(SelectionEntry entry) {
-		boolean showAddAnimation = true;
+		boolean directlyAdded = true;
 		if (entry.isSelectable()) {
 			if (entry.getType() == ModelTypeEnum.UNIT) {
 				if (((SelectionUnit) entry).isVariableSize()) {
-					showAddAnimation = false;
+					directlyAdded = false;
 					askForUnitDetails((SelectionUnit) entry);
 				} else {
 					SelectionModelSingleton.getInstance().addUnit(
@@ -888,7 +942,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 							R.string.no_entry_to_attach,
 							Toast.LENGTH_SHORT).show();
 				} else if (candidatesCount > 1) {
-					showAddAnimation = false;
+					directlyAdded = false;
 					askWhoToAttach(entry);
 					// return of dialog is treated in onActivityResult() method
 				} else {
@@ -900,13 +954,13 @@ public class PopulateArmyListActivity extends ActionBarActivity
 				int candidatesCount = SelectionModelSingleton.getInstance()
 						.modelsToWhichAttach(entry).size();
 				if (candidatesCount == 0) {
-					showAddAnimation = false;
+					directlyAdded = false;
 					Toast.makeText(
 							getApplicationContext(),
 							R.string.no_entry_to_attach,
 							Toast.LENGTH_SHORT).show();
 				} else if (candidatesCount > 1) {
-					showAddAnimation = false;
+					directlyAdded = false;
 					askWhoToAttach(entry);
 					// return of dialog is treated in onActivityResult() method
 				} else {
@@ -918,13 +972,13 @@ public class PopulateArmyListActivity extends ActionBarActivity
 				int candidatesCount = SelectionModelSingleton.getInstance()
 						.modelsToWhichAttach(entry).size();
 				if (candidatesCount == 0) {
-					showAddAnimation = false;
+					directlyAdded = false;
 					Toast.makeText(
 							getApplicationContext(),
 							R.string.no_entry_to_attach,
 							Toast.LENGTH_SHORT).show();
 				} else if (candidatesCount > 1) {
-					showAddAnimation = false;
+					directlyAdded = false;
 					askWhoToAttach(entry);
 					// return of dialog is treated in onActivityResult() method
 				} else {
@@ -936,7 +990,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 				if (solo.isWarcasterAttached()) {
 					if (SelectionModelSingleton.getInstance()
 							.modelsToWhichAttach(entry).size() > 1) {
-						showAddAnimation = false;
+						directlyAdded = false;
 						askWhoToAttach(entry);
 						// return of dialog is treated in onActivityResult()
 						// method
@@ -948,7 +1002,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 					int candidatesCount = SelectionModelSingleton.getInstance()
 							.modelsToWhichAttach(entry).size();
 					if (candidatesCount > 1) {
-						showAddAnimation = false;
+						directlyAdded = false;
 						askWhoToAttach(entry);
 						// return of dialog is treated in onActivityResult()
 						// method
@@ -956,7 +1010,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 						SelectionModelSingleton.getInstance()
 								.addAttachedElementByDefault(entry);
 					} else {
-						showAddAnimation = false;
+						directlyAdded = false;
 						Toast.makeText(
 								getApplicationContext(),
 								R.string.no_entry_to_attach,
@@ -966,7 +1020,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 					int candidatesCount = SelectionModelSingleton.getInstance()
 							.modelsToWhichAttach(entry).size();
 					if (candidatesCount > 1) {
-						showAddAnimation = false;
+						directlyAdded = false;
 						askWhoToAttach(entry);
 						// return of dialog is treated in onActivityResult()
 						// method
@@ -974,14 +1028,14 @@ public class PopulateArmyListActivity extends ActionBarActivity
 						SelectionModelSingleton.getInstance()
 								.addAttachedElementByDefault(entry);
 					} else {
-						showAddAnimation = false;
+						directlyAdded = false;
 						Toast.makeText(
 								getApplicationContext(),
 								R.string.no_entry_to_attach,
 								Toast.LENGTH_SHORT).show();
 					}
 				} else if (solo.isDragoon()) {
-					showAddAnimation = false;
+					directlyAdded = false;
 					askForDismountOption(solo);
 				} else {
 					SelectionModelSingleton.getInstance().addSolo(
@@ -994,35 +1048,19 @@ public class PopulateArmyListActivity extends ActionBarActivity
 						.addIndependantModel(entry);
 			}
 		} else {
-			showAddAnimation = false;
+			directlyAdded = false;
 			Toast.makeText(this, "this entry is not selectable",
 					Toast.LENGTH_SHORT).show();
 			Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 			v.vibrate(300);
 		}
 		// notifyArmyChange();
-		
-		if (false) {
-			// animate view
-			
-			int selectionIndex = mTabsAdapter.getTabIndexForId(SelectionArmyFragment.ID);
-			
-			if (selectionIndex != -1) {
-				SelectionArmyFragment selectionfragment = (SelectionArmyFragment) mTabsAdapter.getItem(selectionIndex);
-				
-				selectionfragment.notifyDataSetChanged();
-				
-				selectionfragment.slideElementToRight(entry);
-				
-				
-			}
 
-			
-			
-		}
-		
-		
-		return showAddAnimation;
+        if (directlyAdded) {
+            notifyMaybeGroupChange();
+        }
+
+		return directlyAdded;
 	}
 
 	// @Override
@@ -1079,7 +1117,65 @@ public class PopulateArmyListActivity extends ActionBarActivity
 
 	}
 
-	public void removeViewCardFragment(View v) {
+    @Override
+    public void selectedGroup(SelectionGroup group) {
+
+        SelectionModelSingleton.getInstance().setSelectedGroup(group);
+
+        Log.d(TAG, "selectedGroup");
+
+        int tabNumberForEntries = mTabsAdapter.getTabIndexForId(SelectionEntriesArmyFragment.ID);
+
+        if ( tabNumberForEntries != -1) {
+            mTabsAdapter.removeTab(tabNumberForEntries);
+        }
+
+        SelectionEntriesArmyFragment selectionEntriesFragment = new SelectionEntriesArmyFragment();
+
+        int currentPageNumber = pager.getCurrentItem();
+        mTabsAdapter.addTabAtPosition(SelectionEntriesArmyFragment.ID,  getResources().getString(group.getType().getTitle()),
+                selectionEntriesFragment, null, currentPageNumber + 1);
+
+        // position the card after the current fragment, so that a swipe "back" returns to the current fragment
+        // also, this mean the card fragment is NOT destroyed when going back (due to proximity cache)
+        int entriesTabIndex = mTabsAdapter.getTabIndexForId(SelectionEntriesArmyFragment.ID);
+
+
+        pager.setPageTransformer(true, null);
+
+        mTabsAdapter.selectTab(entriesTabIndex);
+
+        mTabsAdapter.notifyDataSetChanged();
+
+        pager.setPageTransformer(true, new DepthPageTransformer());
+
+        // Give the SlidingTabLayout the ViewPager, this must be done AFTER the ViewPager has had
+        // it's PagerAdapter set.
+        mSlidingTabLayout.setViewPager(pager);
+
+    }
+
+    @Override
+    public void unselectedGroup() {
+
+        SelectionModelSingleton.getInstance().setSelectedGroup(null);
+
+        mTabsAdapter.selectTab(0);
+
+        int tabId = mTabsAdapter.getTabIndexForId(SelectionEntriesArmyFragment.ID);
+        if ( tabId != -1) {
+            mTabsAdapter.removeTab(tabId);
+        }
+
+        mTabsAdapter.notifyDataSetChanged();
+
+        // Give the SlidingTabLayout the ViewPager, this must be done AFTER the ViewPager has had
+        // it's PagerAdapter set.
+        mSlidingTabLayout.setViewPager(pager);
+    }
+
+
+    public void removeViewCardFragment(View v) {
 		Log.d("PopulateArmyList", "removeViewCardFragment");
 //		FragmentManager fragmentManager = getSupportFragmentManager();
 //		FragmentTransaction fragmentTransaction = fragmentManager
@@ -1130,7 +1226,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 				int selectionIndex = mTabsAdapter.getTabIndexForId(SelectionArmyFragment.ID);
 				if (selectionIndex != -1) {
 					SelectionArmyFragment selectionfragment = (SelectionArmyFragment) mTabsAdapter.getItem(selectionIndex);
-					selectionfragment.slideElementToRight(unit);
+					// selectionfragment.slideElementToRight(unit);
 				}
 				
 				notifyArmyChange();
@@ -1347,8 +1443,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 	}
 
 	public void navigateHome() {
-		Toast.makeText(getApplicationContext(), "Home pressed",
-				Toast.LENGTH_SHORT).show();
+        onBackPressed();
 	}
 
 	@Override
@@ -1558,7 +1653,7 @@ public class PopulateArmyListActivity extends ActionBarActivity
 
 			selectionfragment.notifyDataSetChanged();
 
-			selectionfragment.slideElementToRight(entry);
+			// selectionfragment.slideElementToRight(entry);
 
 
 		}
@@ -1575,9 +1670,17 @@ public class PopulateArmyListActivity extends ActionBarActivity
 				SelectedArmyFragment selectedfragment = (SelectedArmyFragment) mTabsAdapter.getItem(selectionIndex);
 				selectedfragment.deleteElement(entry);
 			}
+
+        notifyMaybeGroupChange();
 	}
 
-	@Override
+    @Override
+    public void onChangeSpecialistValue(SelectedEntry entry, boolean isSpecialist) {
+        entry.setSpecialist(isSpecialist);
+        notifyArmyChange();
+    }
+
+    @Override
 	public boolean canAddCardToBattle() {
 		return false;
 	}

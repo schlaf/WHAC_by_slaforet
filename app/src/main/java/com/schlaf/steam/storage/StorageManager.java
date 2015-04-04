@@ -42,6 +42,7 @@ import com.schlaf.steam.activities.selectlist.selected.BeastCommander;
 import com.schlaf.steam.activities.selectlist.selected.JackCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedArmyCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedEntry;
+import com.schlaf.steam.activities.selectlist.selected.SelectedModel;
 import com.schlaf.steam.activities.selectlist.selected.SelectedRankingOfficer;
 import com.schlaf.steam.activities.selectlist.selected.SelectedSolo;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUA;
@@ -805,25 +806,25 @@ public class StorageManager {
 						
 						if(element.getModels().get(0).getHitpoints() instanceof WarjackDamageGrid) {
 							// karchev!
-							bEntry = new KarchevEntry(element, entryCounter++);
+							bEntry = new KarchevEntry(element, entryCounter++, entry.getCost());
 						} else {
-							bEntry = new SingleDamageLineEntry(element, entryCounter++);	
+							bEntry = new SingleDamageLineEntry(element, entryCounter++, 0, false);
 						}
 						
 							
 					} else {
-						bEntry = new MultiPVUnit(entry, element, entryCounter++);
+						bEntry = new MultiPVUnit(entry, element, entryCounter++, entry.getCost(), entry.isSpecialist());
 					}
 					entries.add(bEntry);
 				} else if (element instanceof Unit) {
 					Unit unit = (Unit) element;
-					bEntry = new MultiPVUnit((SelectedUnit) entry, unit, entryCounter++);
+					bEntry = new MultiPVUnit((SelectedUnit) entry, unit, entryCounter++, entry.getCost(), entry.isSpecialist());
 					entries.add(bEntry);
 					
 					if ( ((SelectedUnit) entry).getRankingOfficer() != null) {
 						SelectedRankingOfficer ra = ((SelectedUnit) entry).getRankingOfficer();
 						ArmyElement raDescription = ArmySingleton.getInstance().getArmyElement(ra.getId());
-						BattleEntry raEntry = new MultiPVUnit(ra, (ArmyElement) raDescription, entryCounter++);
+						BattleEntry raEntry = new MultiPVUnit(ra, (ArmyElement) raDescription, entryCounter++, ra.getCost(), ra.isSpecialist());
 						raEntry.setAttached(true);
 						raEntry.setParentId(bEntry.getUniqueId());
 						//bEntry.getChilds().add(raEntry);
@@ -833,7 +834,7 @@ public class StorageManager {
 					if ( ((SelectedUnit) entry).getSoloAttachment() != null) {
 						SelectedSolo solo = ((SelectedUnit) entry).getSoloAttachment();
 						ArmyElement soloDescription = ArmySingleton.getInstance().getArmyElement(solo.getId());
-						BattleEntry soloEntry = new MultiPVUnit(solo, (ArmyElement) soloDescription, entryCounter++);
+						BattleEntry soloEntry = new MultiPVUnit(solo, (ArmyElement) soloDescription, entryCounter++, solo.getCost(), solo.isSpecialist());
 						soloEntry.setAttached(true);
 						soloEntry.setParentId(bEntry.getUniqueId());
 						//bEntry.getChilds().add(raEntry);
@@ -843,7 +844,7 @@ public class StorageManager {
 					if ( ((SelectedUnit) entry).getUnitAttachment() != null) {
 						SelectedUA ua = ((SelectedUnit) entry).getUnitAttachment();
 						ArmyElement uaDescription = ArmySingleton.getInstance().getArmyElement(ua.getId());
-						BattleEntry uaEntry = new MultiPVUnit(ua, (ArmyElement) uaDescription, entryCounter++);
+						BattleEntry uaEntry = new MultiPVUnit(ua, (ArmyElement) uaDescription, entryCounter++, ua.getCost(), ua.isSpecialist());
 						uaEntry.setAttached(true);
 						uaEntry.setParentId(bEntry.getUniqueId());
 						//bEntry.getChilds().add(uaEntry);
@@ -853,7 +854,7 @@ public class StorageManager {
 					if ( ! ((SelectedUnit) entry).getWeaponAttachments().isEmpty() ) {
 						for ( SelectedWA wa : ((SelectedUnit) entry).getWeaponAttachments()) {
 							ArmyElement waDescription = ArmySingleton.getInstance().getArmyElement(wa.getId());
-							BattleEntry waEntry = new MultiPVUnit(wa, (WeaponAttachment) waDescription, entryCounter++ );
+							BattleEntry waEntry = new MultiPVUnit(wa, waDescription, entryCounter++, wa.getCost(), wa.isSpecialist() );
 							waEntry.setAttached(true);
 							waEntry.setParentId(bEntry.getUniqueId());
 							//bEntry.getChilds().add(waEntry);
@@ -864,20 +865,20 @@ public class StorageManager {
 				} else if (element instanceof Solo){
 					if (element.hasMultiPVModels()) {
 						if (element.getModels().size() == 1) {
-							bEntry = new SingleDamageLineEntry(element, entryCounter++);
+							bEntry = new SingleDamageLineEntry(element, entryCounter++, entry.getCost(), entry.isSpecialist() );
 						} else {
 							// dragoon
-							bEntry = new MultiPVUnit(entry, element, entryCounter++);
+							bEntry = new MultiPVUnit(entry, element, entryCounter++, entry.getCost(), entry.isSpecialist());
 						}
 					} else {
-						bEntry = new BattleEntry(element, entryCounter++);
+						bEntry = new BattleEntry(element, entryCounter++, entry.getCost(), entry.isSpecialist());
 					}
 					entries.add(bEntry);
 				} else if (element instanceof BattleEngine) {
-					bEntry = new SingleDamageLineEntry(element, entryCounter++);
+					bEntry = new SingleDamageLineEntry(element, entryCounter++, entry.getCost(), entry.isSpecialist());
 					entries.add(bEntry);
 				} else {
-					bEntry = new BattleEntry(element, entryCounter++);
+					bEntry = new BattleEntry(element, entryCounter++, entry.getCost(), entry.isSpecialist());
 					entries.add(bEntry);
 				}
 
@@ -885,7 +886,7 @@ public class StorageManager {
 				if (entry instanceof JackCommander) {
 					for (SelectedWarjack jack : ((JackCommander) entry).getJacks()) {
 						Warjack aJack = (Warjack) ArmySingleton.getInstance().getArmyElement(jack.getId());
-						JackEntry jackBattleEntry = new JackEntry(aJack, bEntry, entryCounter++);
+						JackEntry jackBattleEntry = new JackEntry(aJack, bEntry, entryCounter++, jack.getCost(), jack.isSpecialist());
 						entries.add(jackBattleEntry);
 						//bEntry.getChilds().add(jackBattleEntry);
 					}
@@ -896,10 +897,10 @@ public class StorageManager {
 						Warbeast aBeast = (Warbeast) ArmySingleton.getInstance().getArmyElement(beast.getId());
 						
 						if (aBeast instanceof WarbeastPack) {
-							BeastPackEntry beastBattleEntry = new BeastPackEntry(beast, aBeast, bEntry,  entryCounter++);
+							BeastPackEntry beastBattleEntry = new BeastPackEntry(beast, aBeast, bEntry,  entryCounter++, beast.getCost(), beast.isSpecialist());
 							entries.add(beastBattleEntry);
 						} else {
-							BeastEntry beastBattleEntry = new BeastEntry(aBeast, bEntry, entryCounter++);
+							BeastEntry beastBattleEntry = new BeastEntry(aBeast, bEntry, entryCounter++, beast.getCost(), beast.isSpecialist());
 							entries.add(beastBattleEntry);
 						}
 						
@@ -909,17 +910,18 @@ public class StorageManager {
 				
 				if (entry instanceof SelectedArmyCommander) {
 					if ( ((SelectedArmyCommander)entry).getAttachment() != null) {
+                        SelectedModel model = ((SelectedArmyCommander) entry).getAttachment();
 						Solo attachment = (Solo) ArmySingleton.getInstance().getArmyElement(((SelectedArmyCommander)entry).getAttachment().getId());
 						BattleEntry soloEntry = null; 
 						if (attachment.hasMultiPVModels()) {
 							if (attachment.getModels().size() == 1) {
-								soloEntry = new SingleDamageLineEntry(attachment, entryCounter++);
+								soloEntry = new SingleDamageLineEntry(attachment, entryCounter++, model.getCost(), model.isSpecialist() );
 							} else {
 								// dragoon
-								soloEntry = new MultiPVUnit(entry, attachment, entryCounter++);
+								soloEntry = new MultiPVUnit(entry, attachment, entryCounter++, model.getCost(), model.isSpecialist() );
 							}
 						} else {
-							soloEntry = new BattleEntry(attachment, entryCounter++);
+							soloEntry = new BattleEntry(attachment, entryCounter++, model.getCost(), model.isSpecialist());
 						}
 						entries.add(soloEntry);
 						soloEntry.setAttached(true);
@@ -1157,6 +1159,7 @@ public class StorageManager {
 			Writer writer = new OutputStreamWriter(fos, "UTF-8");
 			JsonConverter.createBattleResult(writer, result);
 			writer.flush();
+            writer.close();
 			
 		} catch (Exception e) {
 			Log.w(TAG, e.getMessage());
@@ -1269,7 +1272,7 @@ public class StorageManager {
 			ps.println("date;opponent;win/lose;scenario;clock type;win condition;personal note;battle short description");
 			
 			for (BattleResult br : results) {
-				ps.print(sdf.format(br.getBattleDate()));
+				ps.print(br.getBattleDate());
 				ps.print(";");
 				ps.print(br.getPlayer2name());
 				ps.print(";");

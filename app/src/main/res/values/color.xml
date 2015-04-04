@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
- <color name="AndroidBlue">#33b5e5</color>   
+
+ <color name="TextBaseColor">@color/Black</color>
+ <color name="TextSecondaryColor">@color/DarkGray</color>
+ <!--<color name="AndroidBlue">#33b5e5</color>-->
+ <color name="WhacAccentColor">@color/FireBrick</color> <!-- firebrick -->
+ <color name="WhacAccentColorHalfTransparent">@color/FireBrickHalfTransparent</color> <!-- firebrick -->
  <color name="White">#FFFFFF</color>
  <color name="Ivory">#FFFFF0</color>
  <color name="LightYellow">#FFFFE0</color>
@@ -75,6 +80,7 @@
  <color name="MediumOrchid">#BA55D3</color>
  <color name="DarkGoldenrod">#B8860B</color>
  <color name="FireBrick">#B22222</color>
+ <color name="FireBrickHalfTransparent">#bbB22222</color>
  <color name="PowderBlue">#B0E0E6</color>
  <color name="LightSteelBlue">#B0C4DE</color>
  <color name="PaleTurquoise">#AFEEEE</color>

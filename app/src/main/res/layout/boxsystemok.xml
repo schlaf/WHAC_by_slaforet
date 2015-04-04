@@ -3,7 +3,7 @@
     android:id="@+id/boxSystemOK"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/White"
+    android:background="@color/LightGreen"
     android:gravity="center"
     android:maxHeight="24dp"
     android:maxWidth="24dp"

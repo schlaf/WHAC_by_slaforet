@@ -40,7 +40,9 @@ public class SR2014Extractor {
 	private static final String OBJECTIVE = "objective";
 	
 	
-	int[] XML_FILES = new int[] {R.xml.sr_2014_missions, R.xml.sr_2015_missions};
+	int[] XML_FILES = new int[] {
+//            R.xml.sr_2014_missions,
+            R.xml.sr_2015_missions};
 
 	/** access to local resources */
 	Resources res;

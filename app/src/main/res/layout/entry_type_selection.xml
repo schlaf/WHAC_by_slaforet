@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/lightUI"
+    android:layout_gravity="center"
+    android:layout_width="96dp"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/choose_save_destination"
+        android:textSize="@dimen/textview_large_height"
+        android:singleLine="true"
+        android:ellipsize="end">
+    </TextView>
+
+</android.support.v7.widget.CardView>
+

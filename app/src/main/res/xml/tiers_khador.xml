@@ -23,7 +23,10 @@
 
  -->
 
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
+
   <tiers name="Sorscha1 - Mechanized Infantry" casterId="Kw02" faction="faction_khador">
       <availableModels>
             <type type="WARJACKS">
@@ -320,6 +323,7 @@
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+        <entry id="KJ17" /> <!-- special issue : Ruin -->
         <entry id="KU08" />
         <entry id="KU05" />
         <entry id="KU04" />
@@ -388,6 +392,7 @@
           <entry id="KJ04" />
           <entry id="KJ05" />
           <entry id="KJ06" />
+          <entry id="KJ17" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -432,6 +437,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ04" />
         <entry id="KJ05" />
         <entry id="KJ06" />
+        <entry id="KJ17" /> <!-- special issue : Ruin -->
         <entry id="KU01" />
         <entry id="KU03" />
         <entry id="KU11" />
@@ -483,6 +489,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ04" />
           <entry id="KJ05" />
           <entry id="KJ06" />
+          <entry id="KJ17" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -517,6 +524,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+        <entry id="KJ17" /> <!-- special issue : Ruin -->
         <entry id="KU02" />
         <entry id="KA06" />
         <entry id="KS01" />
@@ -568,6 +576,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ13" />
           <entry id="KJ15" />
           <entry id="KJ16" />
+          <entry id="KJ17" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -575,7 +584,113 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
       </benefits>
     </level>
   </tiers>
-  <tiers name="Vladimir1 - War Host" casterId="Kw03" faction="faction_khador">
+    <tiers name="Butcher3 - Blood in the Snow" casterId="Kx01" faction="faction_khador">
+
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Khador non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Doom Reavers units, Winter guard units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Fenris, Manhunters, War Dog, Winter Guard solos, Yuri the Axe</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Gun Carriage</models>
+            </type>
+        </availableModels>
+        <level number="1">
+            <only>
+                <entry id="Kx01" />
+                <entry id="KJ01" />
+                <entry id="KJ02" />
+                <entry id="KJ03" />
+                <entry id="KJ04" />
+                <entry id="KJ05" />
+                <entry id="KJ06" />
+                <entry id="KJ08" />
+                <entry id="KJ11" />
+                <entry id="KJ13" />
+                <entry id="KJ15" />
+                <entry id="KJ16" />
+                <entry id="KJ17" /> <!-- special issue : Ruin -->
+                <entry id="KU02" />
+                <entry id="KA06" />
+                <entry id="KU06" />
+                <entry id="KA02" />
+                <entry id="KA03" />
+                <entry id="KU09" />
+                <entry id="KU13" />
+                <entry id="KU17" />
+
+                <entry id="KS01" />
+                <entry id="KS08" />
+                <entry id="KS09" />
+                <entry id="KS05" />
+                <entry id="KS03" />
+                <entry id="KS08_for_butcher" />
+
+                <entry id="KE01"/>
+            </only>
+            <benefits>
+                <ingameeffect />
+                <alterFA bonus="1" entryId="KS08_for_butcher">
+                    <forEach>
+                        <entry id="KJ01" />
+                        <entry id="KJ02" />
+                        <entry id="KJ03" />
+                        <entry id="KJ04" />
+                        <entry id="KJ05" />
+                        <entry id="KJ06" />
+                        <entry id="KJ08" />
+                        <entry id="KJ11" />
+                        <entry id="KJ13" />
+                        <entry id="KJ15" />
+                        <entry id="KJ16" />
+                        <entry id="KJ17" />
+                    </forEach>
+                </alterFA>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  3(KU02)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="KS09" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Models/units in the army gain Pathfinder during your first turn of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  KS05-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="KE01"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>For each Gun Carriage in the army, place one 4" AOE completely within 20" of the back edge of Zoktavir’s deployment zone after terrain has been placed but before either player deploys his army. These AOEs are rough terrain. Rough terrain AOEs cannot be placed within 3" of a terrain feature or another rough terrain AOE.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have in battlegroup  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="KJ06" />
+                    <entry id="KJ16" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect></ingameeffect>
+                <alterCost bonus="1" entryId="KJ06"/>
+                <alterCost bonus="1" entryId="KJ16"/>
+            </benefits>
+        </level>
+    </tiers>
+    <tiers name="Vladimir1 - War Host" casterId="Kw03" faction="faction_khador">
 <availableModels>
             <type type="WARJACKS">
                 <models>Khador non-character warjacks, Drago</models>

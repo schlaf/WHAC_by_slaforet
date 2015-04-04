@@ -22,8 +22,14 @@ public interface ArmySelectionChangeListener extends EventListener {
 	public boolean onModelAdded(SelectionEntry model);
 	
 	public void onEntryRemoved(SelectedEntry entry);
+
+    public void onChangeSpecialistValue(SelectedEntry entry, boolean isSpecialist);
 	
 	public void viewSelectionDetail(SelectionEntry model);
+
+    public void selectedGroup(SelectionGroup group);
+
+    public void unselectedGroup();
 
 	public void notifyArmyChange();
 

@@ -3,7 +3,7 @@
     android:id="@+id/boxSystemDown"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/Gray"
+    android:background="@color/Red"
     android:gravity="center"
     android:maxHeight="24dp"
     android:maxWidth="24dp"

@@ -44,15 +44,31 @@ public abstract class SelectedArmyCommander extends SelectedEntry implements Ser
 	@Override 
 	public int getTotalCost() {
 		int result = 0; // Warcasters are free! 
-		if (getAttachment() != null) {
+		if (getAttachment() != null && ! getAttachment().isSpecialist()) {
 			result += getAttachment().getCost();
 		}
 		for (SelectedModel attached : getAttachedModels()) {
-			result += attached.getCost();
+            if (! attached.isSpecialist()) {
+                result += attached.getCost();
+            }
 		}
 		return result;
 	}
-	
+
+    @Override
+    public int getTotalSubSpecialistCost() {
+        int result = 0;
+        if (attachment != null && attachment.isSpecialist()) {
+            result += attachment.getCost();
+        }
+        for (SelectedModel attached : getAttachedModels()) {
+            if (attached.isSpecialist()) {
+                result += attached.getCost();
+            }
+        }
+        return result;
+    }
+
 	
 	public abstract List<SelectedModel> getAttachedModels();
 	

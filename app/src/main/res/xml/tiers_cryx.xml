@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
   <tiers name="Asphyxious1 - Scavengers of the Line" casterId="Cw01" faction="faction_cryx">
       <availableModels>
           <type type="WARJACKS">
@@ -654,7 +656,104 @@
       </benefits>
     </level>
   </tiers>
-  <tiers name="Skarre1 - Shore Leave" casterId="Cw03" faction="faction_cryx">
+    <tiers name="Goreshade3 - Chill of Death" casterId="Cz05" faction="faction_cryx">
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Cryx non-character warjacks</models>
+            </type>
+            <type type="UNITS">
+                <models>Bane units, Thrall units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Bane solos, Thrall solos</models>
+            </type>
+        </availableModels>
+        <level number="1">
+            <only>
+                <entry id="Cz05" />
+                <entry id="CJ01" />
+                <entry id="CJ02" />
+                <entry id="CJ03" />
+                <entry id="CJ15" />
+                <entry id="CJ04" />
+                <entry id="CJ05" />
+                <entry id="CJ07" />
+                <entry id="CJ08" />
+                <entry id="CJ09" />
+                <entry id="CJ10" />
+                <entry id="CJ11" />
+                <entry id="CJ14" />
+                <entry id="CJ17" />
+                <entry id="CJ18" />
+                <entry id="CJ20" />
+                <entry id="CJ21" />
+
+                <!-- banes and UA-->
+                <entry id="CU01" />
+                <entry id="CA04" />
+                <entry id="CU06" />
+                <entry id="CU17" /> <!-- add bane riders -->
+
+                <!-- *thralls and UA-->
+                <entry id="CU02" />
+                <entry id="CU03" />
+                <entry id="CU15" />
+                <entry id="CS15" />
+
+                <!-- Bane Lord Tartarus, Bloat Thrall, Scrap Thralls, Skarlock Thrall -->
+                <entry id="CS07" />
+                <entry id="CS02" />
+                <entry id="CS04" />
+                <entry id="CS01" />
+
+
+            </only>
+            <benefits>
+                <ingameeffect  />
+                <alterFA bonus="1" entryId="CU17" />
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2CU01-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="CU17" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  CU12-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="CJ18" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect ></ingameeffect>
+                <alterCost bonus="1" entryId="CJ18"/>
+                <alterCost bonus="1" entryId="CJ11"/>
+                <alterCost bonus="1" entryId="CJ10"/>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have in battlegroup  3(CJ01 CJ02 CJ03 CJ15)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="CJ20" />
+                </entrygroup>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="CU03" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Krakens begin the game with one corpse token per Mechanithrall unit in the army.</ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
+    <tiers name="Skarre1 - Shore Leave" casterId="Cw03" faction="faction_cryx">
       <availableModels>
           <type type="WARJACKS">
               <models>Cryx non-character bonejacks, Cryx helljacks with Amphibious</models>
@@ -1646,7 +1745,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect>Enemy non-caster units/models begin the game with Deneghra's upkeep spells. The spells do not cost upkeep on the first turn. </ingameeffect>
+        <ingameeffect>Enemy non-warcaster/non-warlock models/units can begin the game affected by Deneghra’s upkeep spells. These spells and their targets must be declared before either player sets up models. Deneghra does not pay focus to upkeep these spells during your first turn. Models/units that cannot be targeted by Deneghra’s spells cannot be chosen as affected models.</ingameeffect>
       </benefits>
     </level>
   </tiers>  

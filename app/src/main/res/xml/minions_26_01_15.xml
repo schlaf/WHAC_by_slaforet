@@ -552,7 +552,18 @@
 		  <restricted_to id="IW13" />
           <restricted_to id="IW03_minion" />		  
         </warbeast>
-        <warbeast id="Lug_minion" name="Lug" full_name="Lug" qualification="Mercenary Minion Character Heavy Warbeast" fa="C" cost="0" fury="4" threshold="9" damage_spiral="8-11-8" completed="true">
+        <warbeast  id="OB02_minion_arkadius" name="Gorax(Arkadius)" full_name="Gorax(Arkadius)" damage_spiral="7-8-7" fury="4" threshold="8" cost="4" qualification="Minion Light Warbeast" fa="U" completed="true">
+          <basestats name="Gorax" spd="5" str="9" mat="6" rat="3" def="12" arm="16" cmd="5" />
+          <weapons>
+              <melee_weapon name="Claw" location="L" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
+              <melee_weapon name="Claw" location="R" pow="3" p_plus_s="12" open_fist="true"></melee_weapon>
+          </weapons>
+          <animus name="Primal" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly living warbeast gains +2 STR and MAT for one round and automatically frenzies during your next Control Phase.</animus>
+          <capacity title="Pain Response">While damaged this model can charge or make power attacks without being forced.</capacity>
+        </warbeast>
+
+
+          <warbeast id="Lug_minion" name="Lug" full_name="Lug" qualification="Mercenary Minion Character Heavy Warbeast" fa="C" cost="0" fury="4" threshold="9" damage_spiral="8-11-8" completed="true">
           <basestats name="LUG" spd="5" str="12" mat="5" rat="1" def="12" arm="18" cmd="6" immunity_frost="true" pathfinder="true" />
           <weapons>
             <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="L">

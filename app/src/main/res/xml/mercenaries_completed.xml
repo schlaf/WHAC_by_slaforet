@@ -215,7 +215,7 @@
           
           <spell name="COUNTERMEASURE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">While within 5" of target model/unit, enemy models can not make ranged attacks.</spell>
           <spell name="ENERGIZER" cost="*" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.</spell>
-          <spell name="FAIL SAFE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack gains +2 ARM and does not suffer the effects of crippled systems.</spell>
+          <spell name="FAIL SAFE" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warjack gains +2 ARM and does not suffer the effects of crippled systems.</spell>
           <spell name="FORTUNE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit can reroll its missed attack rolls. Each attack roll can be rerolled only once as a result of Fortune.</spell>
           <spell name="JACKHAMMER" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">Target model in this model's battlegroup immediately makes one normal melee attack.</spell>
           <spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>

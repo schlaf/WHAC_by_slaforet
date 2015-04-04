@@ -18,19 +18,19 @@
     
     <item
         android:id="@+id/menu_card_reference"
-        android:icon="@drawable/stat_card"
+        android:icon="@drawable/ic_cards"
         yourapp:showAsAction="ifRoom"
         android:title="@string/search_library"/>
     
     <item
         android:id="@+id/menu_steamroller"
-        android:icon="@drawable/sr2014"
+        android:icon="@drawable/ic_steamroller"
         yourapp:showAsAction="ifRoom"
         android:title="@string/steamroller"/>
     
     <item
         android:id="@+id/menu_dice"
-        android:icon="@drawable/dice"
+        android:icon="@drawable/ic_cube"
         yourapp:showAsAction="ifRoom"
         android:title="@string/dice_stat"/>
     
@@ -45,6 +45,11 @@
         android:icon="@drawable/clock"
         yourapp:showAsAction="ifRoom"
         android:title="@string/chrono"/>
+
+    <item
+        android:id="@+id/menu_specialist"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/specialists"/>
     
     <item
         android:id="@+id/menu_end"

@@ -17,7 +17,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/entry_title"
-            android:textColor="@android:color/primary_text_dark"
+            android:textColor="@android:color/primary_text_light"
             android:textSize="@dimen/textview_standard_height"
             android:typeface="sans" />
 
@@ -32,7 +32,7 @@
                 android:layout_marginLeft="5dip"
                 android:layout_weight="2"
                 android:text="@string/entry_cost"
-                android:textColor="@android:color/secondary_text_dark"
+                android:textColor="@android:color/secondary_text_light"
                 android:textSize="@dimen/textview_standard_height"
                 android:textStyle="normal" />
 
@@ -41,7 +41,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/stat_card"
+                android:src="@drawable/ic_cards"
                 android:contentDescription="@string/card_complete" />
 
             <RelativeLayout
@@ -54,7 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/collection" />
+                    android:src="@drawable/ic_collection" />
 
                 <TextView
                     android:id="@+id/tfcollectionowned"
@@ -86,6 +86,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
         android:contentDescription="@string/empty"
-        android:src="@drawable/ic_input_add" />
+        android:background="@drawable/empty"
+        android:src="@drawable/ic_plus" />
 
 </LinearLayout>

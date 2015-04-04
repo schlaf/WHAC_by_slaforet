@@ -46,7 +46,7 @@
             android:layout_alignParentTop="false"
             android:layout_centerVertical="true"
             android:gravity="center_horizontal|center_vertical"
-            android:textColor="@color/White" 
+            android:textColor="@color/primary_text_default_material_light"
             android:text="-" />
         
         <TextView
@@ -69,7 +69,7 @@
             android:layout_centerVertical="true"
             android:minWidth="48dp"
             android:text="+"
-            android:textColor="@color/White" />
+            android:textColor="@color/primary_text_default_material_light" />
 
 
     </RelativeLayout>
@@ -92,7 +92,7 @@
             android:layout_height="24dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:textColor="@color/White" 
+            android:textColor="@color/primary_text_default_material_light"
             android:text="-" />
         
         <TextView
@@ -113,7 +113,7 @@
             android:layout_toRightOf="@id/numberPainted"
             android:layout_alignParentTop="false"
             android:layout_centerVertical="true"
-            android:textColor="@color/White" 
+            android:textColor="@color/primary_text_default_material_light"
             android:text="+" />
         
 

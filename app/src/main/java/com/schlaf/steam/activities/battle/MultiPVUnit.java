@@ -28,16 +28,16 @@ public class MultiPVUnit extends MultiPVModel {
 	/** indicates that this unit is just one model : one stat line for everybody */
 	private boolean leaderAndGrunts;
 	
-	public MultiPVUnit(ArmyElement entry, int entryCounter) {
-		super(entry, entryCounter);
+	public MultiPVUnit(ArmyElement entry, int entryCounter, int cost, boolean specialist) {
+		super(entry, entryCounter, cost, specialist);
 	}
 	
-	public MultiPVUnit(SelectedUA entry, UnitAttachment ua, int entryCounter) {
-		super(ua, entryCounter);
+	public MultiPVUnit(SelectedUA entry, UnitAttachment ua, int entryCounter, int cost, boolean specialist) {
+		super(ua, entryCounter, cost, specialist);
 		// add every single model
 		Iterator<SingleModel> iterator = ua.getModels().iterator();
 		while (iterator.hasNext()) {
-			SingleDamageLineEntry model = new SingleDamageLineEntry(iterator.next(), ua, entryCounter);
+			SingleDamageLineEntry model = new SingleDamageLineEntry(iterator.next(), ua, entryCounter, 0, false);
 			model.setAttached(true);
 			model.setParentId(entryCounter);
 			models.add(model);
@@ -47,13 +47,13 @@ public class MultiPVUnit extends MultiPVModel {
 
 	}
 	
-	public MultiPVUnit(SelectedWA entry, WeaponAttachment wa, int waCount, int entryCounter) {
-		super(wa, entryCounter);
+	public MultiPVUnit(SelectedWA entry, WeaponAttachment wa, int waCount, int entryCounter, int cost, boolean specialist) {
+		super(wa, entryCounter, 0, specialist);
 		int addedModels = 0;
 		// add every single model
 		Iterator<SingleModel> iterator = wa.getModels().iterator();
 		while (iterator.hasNext()) {
-			SingleDamageLineEntry model = new SingleDamageLineEntry(iterator.next(), wa, entryCounter);
+			SingleDamageLineEntry model = new SingleDamageLineEntry(iterator.next(), wa, entryCounter, 0, false);
 			model.setAttached(true);
 			model.setParentId(entryCounter);
 			models.add(model);
@@ -64,7 +64,7 @@ public class MultiPVUnit extends MultiPVModel {
 			// complete with last model
 			while (addedModels < waCount) {
 				//SingleDamageLineEntry model = new SingleDamageLineEntry(unit.getModels().get(unit.getModels().size() - 1), nbModelsCreated+1, unit, false);
-				SingleDamageLineEntry model = new SingleDamageLineEntry(wa.getModels().get(wa.getModels().size() - 1), addedModels+1 , wa, entryCounter);
+				SingleDamageLineEntry model = new SingleDamageLineEntry(wa.getModels().get(wa.getModels().size() - 1), addedModels+1 , wa, entryCounter, 0, false);
 				model.setAttached(true);
 				model.setParentId(entryCounter);
 				models.add(model);
@@ -82,8 +82,8 @@ public class MultiPVUnit extends MultiPVModel {
 	 * @param entry
 	 * @param armyEntry
 	 */
-	public MultiPVUnit(SelectedEntry entry, ArmyElement armyEntry, int entryCounter) {
-		super(armyEntry,entryCounter);
+	public MultiPVUnit(SelectedEntry entry, ArmyElement armyEntry, int entryCounter, int cost, boolean specialist) {
+		super(armyEntry,entryCounter, cost, specialist);
 		
 		// override unit label to display model count
 		label = armyEntry.getFullName();
@@ -91,7 +91,7 @@ public class MultiPVUnit extends MultiPVModel {
 		// add every single model with a description
 		Iterator<SingleModel> iterator = armyEntry.getModels().iterator();
 		while (iterator.hasNext()) {
-			SingleDamageLineEntry model = new SingleDamageLineEntry(iterator.next(), armyEntry, entryCounter);	
+			SingleDamageLineEntry model = new SingleDamageLineEntry(iterator.next(), armyEntry, entryCounter, 0, false);
 			model.setAttached(true);
 			model.setParentId(entryCounter);
 			models.add(model);
@@ -103,8 +103,8 @@ public class MultiPVUnit extends MultiPVModel {
 		
 	}	
 	
-	public MultiPVUnit(SelectedUnit entry, Unit unit, int entryCounter) {
-		super(unit, entryCounter);
+	public MultiPVUnit(SelectedUnit entry, Unit unit, int entryCounter, int cost, boolean specialist) {
+		super(unit, entryCounter, cost, specialist);
 		
 		int nbModelsToCreate = 0;
 		if (unit.isVariableSize()) {
@@ -140,9 +140,9 @@ public class MultiPVUnit extends MultiPVModel {
 		while (iterator.hasNext()) {
 			SingleDamageLineEntry model; 
 			if (leaderAndGrunts) {
-				model= new SingleDamageLineEntry(iterator.next(), 1, unit, true, entryCounter);	
+				model= new SingleDamageLineEntry(iterator.next(), 1, unit, true, entryCounter, 0, false);
 			} else {
-				model= new SingleDamageLineEntry(iterator.next(), unit, entryCounter);
+				model= new SingleDamageLineEntry(iterator.next(), unit, entryCounter, 0, false);
 			}
 			model.setAttached(true);
 			model.setParentId(entryCounter);
@@ -155,9 +155,9 @@ public class MultiPVUnit extends MultiPVModel {
 			while (nbModelsCreated < nbModelsToCreate) {
 				SingleDamageLineEntry model;
 				if (leaderAndGrunts) {
-					model = new SingleDamageLineEntry(unit.getModels().get(unit.getModels().size() - 1), nbModelsCreated+1, unit, false, entryCounter);	
+					model = new SingleDamageLineEntry(unit.getModels().get(unit.getModels().size() - 1), nbModelsCreated+1, unit, false, entryCounter, 0, false);
 				} else {
-					model = new SingleDamageLineEntry(unit.getModels().get(unit.getModels().size() - 1), nbModelsCreated+1, unit, entryCounter);
+					model = new SingleDamageLineEntry(unit.getModels().get(unit.getModels().size() - 1), nbModelsCreated+1, unit, entryCounter, 0, false);
 				}
 				model.setAttached(true);
 				model.setParentId(entryCounter);

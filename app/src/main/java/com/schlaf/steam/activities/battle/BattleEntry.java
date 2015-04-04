@@ -34,8 +34,11 @@ public class BattleEntry implements Serializable, Comparable<BattleEntry> {
 	
 	protected String id;
 	protected String label;
-	
-	protected int uniqueId;
+
+    protected int cost;
+    protected boolean specialist;
+
+    protected int uniqueId;
 	
 	/** this entry is attached to another */
 	protected boolean attached = false;
@@ -102,11 +105,13 @@ public class BattleEntry implements Serializable, Comparable<BattleEntry> {
 		return Color.BLACK;
 	}
 	
-	public BattleEntry(ArmyElement entry, int entryCounter) {
+	public BattleEntry(ArmyElement entry, int entryCounter, int cost, boolean specialist) {
 		uniqueId = entryCounter;
 		id = entry.getId();
 		label = entry.getFullName();
 		reference = entry;
+        this.cost = cost;
+        this.specialist = specialist;
 	}
 
 	public String getLabel() {
@@ -215,5 +220,17 @@ public class BattleEntry implements Serializable, Comparable<BattleEntry> {
 	public boolean hasDamageGrid() {
 		return false;
 	}
-	
+
+    public int getCost() {
+        return cost;
+    }
+
+    public boolean isSpecialist() {
+        return specialist;
+    }
+
+    public void setSpecialist(boolean specialist) {
+        this.specialist = specialist;
+    }
+
 }

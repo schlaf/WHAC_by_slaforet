@@ -4,6 +4,7 @@
 package com.schlaf.steam.activities.battle;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import android.content.SharedPreferences;
@@ -133,6 +134,27 @@ public class BattleSingleton {
 			return player2entries;
 		}
 	}
+
+
+    public List<BattleEntry> getNonSpecialistEntries(int nbPlayer) {
+        List<BattleEntry> result = new ArrayList<BattleEntry>();
+        if (nbPlayer == 1) {
+            result.addAll(player1entries);
+        } else {
+            result.addAll(player2entries);
+        }
+
+        Iterator<BattleEntry> iterator = result.iterator();
+        while (iterator.hasNext()) {
+            BattleEntry entry = iterator.next();
+            if (entry.isSpecialist()) {
+                iterator.remove();
+            }
+        }
+
+        return result;
+    }
+
 	
 	public BattleEntry getCurrentEntry() {
 		return currentEntry;
@@ -302,7 +324,14 @@ public class BattleSingleton {
 	public void setPlayer2ArmyReceived(boolean player2ArmyReceived) {
 		this.player2ArmyReceived = player2ArmyReceived;
 	}
-	
+
+    public boolean hasSpecialist() {
+        for (BattleEntry entry : player1entries) {
+            // if (entry.)
+        }
+
+        return true;
+    }
 
 	
 }

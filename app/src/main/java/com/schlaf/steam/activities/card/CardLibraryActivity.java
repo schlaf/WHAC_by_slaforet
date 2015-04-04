@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -14,29 +15,45 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.schlaf.steam.R;
+import com.schlaf.steam.activities.ChangeFactionListener;
 import com.schlaf.steam.activities.card.ViewCardFragment.ViewCardActivityInterface;
 import com.schlaf.steam.activities.selectlist.SelectionModelSingleton;
 import com.schlaf.steam.data.ArmyElement;
+import com.schlaf.steam.data.ArmySingleton;
+import com.schlaf.steam.data.Faction;
 
-public class CardLibraryActivity extends ActionBarActivity implements ViewCardActivityInterface {
+public class CardLibraryActivity extends ActionBarActivity implements ViewCardActivityInterface{
 	
 	public static final String LIBRARY_PREF = "library_preferences";
 	public static final String LIBRARY_PREF_FACTION_KEY = "faction";
 	public static final String LIBRARY_PREF_ENTRY_TYPE_KEY = "entryType";
-	
-	/** Called when the activity is first created. */
+    private static final String TAG = "CardLibraryActivity";
+
+    /** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		Log.d("CardLibraryActivity", "onCreate" );
 		super.onCreate(savedInstanceState);
 
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            Log.e(TAG, "status not clean, exiting");
+            Intent i = getBaseContext().getPackageManager()
+                    .getLaunchIntentForPackage(getBaseContext().getPackageName() );
+            Log.e(TAG, "intent = " + i.toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+            startActivity(i);
+
+            finish();
+            return;
+        }
+
 		setContentView(R.layout.cardlibrary_fragmented);
 
 		FragmentManager fragmentManager = getSupportFragmentManager();
 
-		// getSupportActionBar().setHomeButtonEnabled(true);
+		getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_USE_LOGO | ActionBar.DISPLAY_SHOW_TITLE);
 		getSupportActionBar().setTitle(R.string.card_library);
-		getSupportActionBar().setLogo(R.drawable.stat_card);
+		getSupportActionBar().setLogo(R.drawable.ic_cards);
 		
 		if (findViewById(R.id.choose_card_zone) != null) {
 			FragmentTransaction fragmentTransaction = fragmentManager
@@ -189,5 +206,5 @@ public class CardLibraryActivity extends ActionBarActivity implements ViewCardAc
 	public void addModelToBattle(View v) {
 		// do nothing
 	}
-	
+
 }

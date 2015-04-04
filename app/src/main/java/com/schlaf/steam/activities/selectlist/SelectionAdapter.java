@@ -292,7 +292,11 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
 		
 	}
 	
-	private void selectGroup(int position) {
+	private void selectGroup(int position, View v) {
+
+        ((ArmySelectionChangeListener)  v.getContext()).selectedGroup(null);
+
+
 		selectedGroup = groups.get(position);
 		modeSelectGroup = false;
 		
@@ -329,9 +333,11 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
         notifyDataSetChanged();
     }
 
-	public void backToGroups(SelectionGroup oldGroupSelected) {
-		
-		modeSelectGroup = true;
+	public void backToGroups(SelectionGroup oldGroupSelected, View v) {
+
+        ((ArmySelectionChangeListener)  v.getContext()).unselectedGroup();
+
+        modeSelectGroup = true;
 		
 		createGroupsFromModels();
 		
@@ -367,27 +373,27 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
 			final SelectionGroup group = (SelectionGroup) groups.get(position);
 			holder.tvLabel.setTextColor(holder.itemView.getContext().getResources().getColor(android.R.color.primary_text_dark));
 			// we can select a group
-			holder.imageBack.setVisibility(View.GONE);
+			//holder.imageBack.setVisibility(View.GONE);
 			holder.image.setVisibility(View.VISIBLE);
 			holder.imageExpand.setVisibility(View.VISIBLE);
-			holder.imageExpand.setImageResource(R.drawable.expander_open_holo_dark);
+			// holder.imageExpand.setImageResource(R.drawable.expander_open_holo_dark);
 			holder.itemView.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {
 					final Animation animShow = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.abc_fade_in);
-					holder.imageBack.startAnimation(animShow);
+					//holder.imageBack.startAnimation(animShow);
 					// select current group
-					selectGroup(position);
+					selectGroup(position, v);
 				}
 			});
 			holder.tvLabel.setText(group.getType().getTitle());
 			holder.image.setImageResource(group.getFaction().getLogoResource());	
 		} else {
 			final SelectionGroup group = (SelectionGroup) selectedGroup;
-			holder.tvLabel.setTextColor(holder.itemView.getContext().getResources().getColor(R.color.AndroidBlue));
+			holder.tvLabel.setTextColor(holder.itemView.getContext().getResources().getColor(R.color.WhacAccentColor));
 			
 			// we can go back to group list
-			holder.imageBack.setVisibility(View.VISIBLE);
+			//holder.imageBack.setVisibility(View.VISIBLE);
 			holder.imageExpand.setVisibility(View.GONE);
 			holder.image.setVisibility(View.GONE);
 			final Animation animFade = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.abc_fade_out);
@@ -396,9 +402,9 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
 			holder.itemView.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					holder.imageBack.startAnimation(animFade);
+					//holder.imageBack.startAnimation(animFade);
 					// select current group
-					backToGroups(group);
+					backToGroups(group, v);
 				}
 			});
 			holder.tvLabel.setText(group.getType().getTitle());

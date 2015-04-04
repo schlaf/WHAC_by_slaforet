@@ -76,7 +76,7 @@ public class SelectionUnit extends SelectionEntry implements Serializable {
 		if (discount > 0) {
 			sb.append("<font color=\"blue\">");
 		} else {
-			sb.append("<font color=\"white\">");
+			// sb.append("<font color=\"white\">");
 		}
 		
 		if (isVariableSize()) {
@@ -84,7 +84,7 @@ public class SelectionUnit extends SelectionEntry implements Serializable {
 		} else {
 			sb.append(minCost-discount);
 		}
-		sb.append("</font><font color=\"grey\">PC</font>");
+		sb.append("</font>PC");
 		return sb.toString();
 	}	
 	

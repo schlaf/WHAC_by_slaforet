@@ -1,13 +1,10 @@
 package com.schlaf.steam.activities.importation;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,85 +15,149 @@ import android.webkit.WebView;
 import android.widget.TabHost;
 import android.widget.Toast;
 
+import com.example.android.common.view.DepthPageTransformer;
+import com.example.android.common.view.SlidingTabLayout;
 import com.schlaf.steam.R;
 import com.schlaf.steam.SteamPunkRosterApplication;
+import com.schlaf.steam.activities.selectlist.SelectedArmyFragment;
 import com.schlaf.steam.storage.StorageManager;
+import com.schlaf.steam.tabs.TabsAdapter;
 import com.schlaf.steam.xml.TierExtractor;
 import com.schlaf.steam.xml.XmlExtractor;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class ImportSelector extends ActionBarActivity implements ImportFileListener {
 
     TabHost tHost;
-    
+
+    TabsAdapter mTabsAdapter; // the adapter for swiping pages
+    ViewPager pager; // the pager that handles fragments swipe
+
+    /**
+     * A custom {@link ViewPager} title strip which looks much like Tabs present in Android v4.0 and
+     * above, but is designed to give continuous feedback to the user when scrolling.
+     */
+    private SlidingTabLayout mSlidingTabLayout;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.import_selector);
- 
+
+        pager = (ViewPager) findViewById(R.id.viewpager);
+        pager.setOffscreenPageLimit(3);
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
+            pager.setPageTransformer(true, new DepthPageTransformer());
+        }
+
+
+        mSlidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
+        mSlidingTabLayout.setDividerColors(getResources().getColor(R.color.LightGrey));
+
+//		PagerTabStrip tabStrip = (PagerTabStrip) findViewById(R.id.pagerTab);
+//		tabStrip.setTabIndicatorColor(getResources().getColor(R.color.AndroidBlue));
+
+        if (mTabsAdapter == null) {
+            mTabsAdapter = new TabsAdapter(this, pager);
+        }
+
+
+        if (mTabsAdapter.getTabIndexForId(FilesToImportFragment.ID) == -1) {
+            FilesToImportFragment filesToImportFragment = new FilesToImportFragment();
+            mTabsAdapter.addTab(FilesToImportFragment.ID,  getResources().getString(R.string.import_files),
+                    filesToImportFragment, null);
+        }
+
+        if (mTabsAdapter.getTabIndexForId(SelectedArmyFragment.ID) == -1) {
+            ImportedFilesFragment importedFilesFragment = new ImportedFilesFragment();
+            mTabsAdapter.addTab(ImportedFilesFragment.ID,  getResources().getString(R.string.files_imported),
+                    importedFilesFragment, null);
+        }
+
+        if (mTabsAdapter.getTabIndexForId(ImportVersionsFragment.ID) == -1) {
+            ImportVersionsFragment importVersionsFragment = new ImportVersionsFragment();
+            mTabsAdapter.addTab(ImportVersionsFragment.ID,  getResources().getString(R.string.import_versions),
+                    importVersionsFragment, null);
+        }
+
+
+        mTabsAdapter.notifyDataSetChanged();
+
+        // BEGIN_INCLUDE (setup_slidingtablayout)
+        // Give the SlidingTabLayout the ViewPager, this must be done AFTER the ViewPager has had
+        // it's PagerAdapter set.
+        mSlidingTabLayout.setViewPager(pager);
+
         
         getSupportActionBar().setTitle(R.string.import_data);
-        getSupportActionBar().setLogo(R.drawable.import_content);
+        getSupportActionBar().setIcon(R.drawable.ic_launcher);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        // getSupportActionBar().setLogo(R.drawable.import_content);
         
-        tHost = (TabHost) findViewById(android.R.id.tabhost);
-        tHost.setup();
- 
-        /** Defining Tab Change Listener event. This is invoked when tab is changed */
-        TabHost.OnTabChangeListener tabChangeListener = new TabHost.OnTabChangeListener() {
- 
-            @Override
-            public void onTabChanged(String tabId) {
-                android.support.v4.app.FragmentManager fm =   getSupportFragmentManager();
-                FilesToImportFragment filesToImportFragment = (FilesToImportFragment) fm.findFragmentByTag(FilesToImportFragment.ID);
-                ImportedFilesFragment importedFilesFragment = (ImportedFilesFragment) fm.findFragmentByTag(ImportedFilesFragment.ID);
-                android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
- 
-                /** Detaches the toImport fragment if exists */
-                if(filesToImportFragment!=null)
-                    ft.detach(filesToImportFragment);
- 
-                /** Detaches the imported fragment if exists */
-                if(importedFilesFragment!=null)
-                    ft.detach(importedFilesFragment);
- 
-                /** If current tab is battles */
-                if(tabId.equalsIgnoreCase(FilesToImportFragment.ID)){
- 
-                    if(filesToImportFragment==null){
-                        /** Create AndroidFragment and adding to fragmenttransaction */
-                        ft.add(R.id.realtabcontent,new FilesToImportFragment(), FilesToImportFragment.ID);
-                    }else{
-                        /** Bring to the front, if already exists in the fragmenttransaction */
-                        ft.attach(filesToImportFragment);
-                        // filesToImportFragment.refresh();
-                    }
- 
-                }else{    /** If current tab is armies */
-                    if(importedFilesFragment==null){
-                        /** Create AppleFragment and adding to fragmenttransaction */
-                        ft.add(R.id.realtabcontent,new ImportedFilesFragment(), ImportedFilesFragment.ID);
-                     }else{
-                        /** Bring to the front, if already exists in the fragmenttransaction */
-                        ft.attach(importedFilesFragment);
-                    }
-                }
-                ft.commit();
-            }
-        };
- 
-        /** Setting tabchangelistener for the tab */
-        tHost.setOnTabChangedListener(tabChangeListener);
- 
-        /** Defining tab builder for armies tab */
-        TabHost.TabSpec tSpecFilesToImport = tHost.newTabSpec(FilesToImportFragment.ID);
-        tSpecFilesToImport.setIndicator(getResources().getString(R.string.import_files),getResources().getDrawable(R.drawable.import_content));
-        tSpecFilesToImport.setContent(new ImportTab(getBaseContext()));
-        tHost.addTab(tSpecFilesToImport);
- 
-        /** Defining tab builder for battles tab */
-        TabHost.TabSpec tSpecFilesImported = tHost.newTabSpec(ImportedFilesFragment.ID);
-        tSpecFilesImported.setIndicator(getResources().getString(R.string.files_imported),getResources().getDrawable(R.drawable.edit_list_icon));
-        tSpecFilesImported.setContent(new ImportTab(getBaseContext()));
-        tHost.addTab(tSpecFilesImported);
+//        tHost = (TabHost) findViewById(android.R.id.tabhost);
+//        tHost.setup();
+//
+//        /** Defining Tab Change Listener event. This is invoked when tab is changed */
+//        TabHost.OnTabChangeListener tabChangeListener = new TabHost.OnTabChangeListener() {
+//
+//            @Override
+//            public void onTabChanged(String tabId) {
+//                android.support.v4.app.FragmentManager fm =   getSupportFragmentManager();
+//                FilesToImportFragment filesToImportFragment = (FilesToImportFragment) fm.findFragmentByTag(FilesToImportFragment.ID);
+//                ImportedFilesFragment importedFilesFragment = (ImportedFilesFragment) fm.findFragmentByTag(ImportedFilesFragment.ID);
+//                android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
+//
+//                /** Detaches the toImport fragment if exists */
+//                if(filesToImportFragment!=null)
+//                    ft.detach(filesToImportFragment);
+//
+//                /** Detaches the imported fragment if exists */
+//                if(importedFilesFragment!=null)
+//                    ft.detach(importedFilesFragment);
+//
+//                /** If current tab is battles */
+//                if(tabId.equalsIgnoreCase(FilesToImportFragment.ID)){
+//
+//                    if(filesToImportFragment==null){
+//                        /** Create AndroidFragment and adding to fragmenttransaction */
+//                        ft.add(R.id.realtabcontent,new FilesToImportFragment(), FilesToImportFragment.ID);
+//                    }else{
+//                        /** Bring to the front, if already exists in the fragmenttransaction */
+//                        ft.attach(filesToImportFragment);
+//                        // filesToImportFragment.refresh();
+//                    }
+//
+//                }else{    /** If current tab is armies */
+//                    if(importedFilesFragment==null){
+//                        /** Create AppleFragment and adding to fragmenttransaction */
+//                        ft.add(R.id.realtabcontent,new ImportedFilesFragment(), ImportedFilesFragment.ID);
+//                     }else{
+//                        /** Bring to the front, if already exists in the fragmenttransaction */
+//                        ft.attach(importedFilesFragment);
+//                    }
+//                }
+//                ft.commit();
+//            }
+//        };
+//
+//        /** Setting tabchangelistener for the tab */
+//        tHost.setOnTabChangedListener(tabChangeListener);
+//
+//        /** Defining tab builder for armies tab */
+//        TabHost.TabSpec tSpecFilesToImport = tHost.newTabSpec(FilesToImportFragment.ID);
+//        tSpecFilesToImport.setIndicator(getResources().getString(R.string.import_files),getResources().getDrawable(R.drawable.import_content));
+//        tSpecFilesToImport.setContent(new ImportTab(getBaseContext()));
+//        tHost.addTab(tSpecFilesToImport);
+//
+//        /** Defining tab builder for battles tab */
+//        TabHost.TabSpec tSpecFilesImported = tHost.newTabSpec(ImportedFilesFragment.ID);
+//        tSpecFilesImported.setIndicator(getResources().getString(R.string.files_imported),getResources().getDrawable(R.drawable.edit_list_icon));
+//        tSpecFilesImported.setContent(new ImportTab(getBaseContext()));
+//        tHost.addTab(tSpecFilesImported);
  
     }
     
@@ -169,8 +230,8 @@ public class ImportSelector extends ActionBarActivity implements ImportFileListe
 						getApplicationContext(), fileName, file);
 
 				// notify fragment...
-				android.support.v4.app.FragmentManager fm =   getSupportFragmentManager();
-				ImportedFilesFragment fragment = (ImportedFilesFragment) fm.findFragmentByTag(ImportedFilesFragment.ID);
+                int index = mTabsAdapter.getTabIndexForId(ImportedFilesFragment.ID);
+                ImportedFilesFragment fragment = (ImportedFilesFragment) mTabsAdapter.getItem(index);
 				if (fragment != null) {
 					fragment.notifyFileImported(file);
 				}
@@ -195,8 +256,8 @@ public class ImportSelector extends ActionBarActivity implements ImportFileListe
 						getApplicationContext(), fileName, file);
 
 				// notify fragment...
-				android.support.v4.app.FragmentManager fm =   getSupportFragmentManager();
-				ImportedFilesFragment fragment = (ImportedFilesFragment) fm.findFragmentByTag(ImportedFilesFragment.ID);
+                int index = mTabsAdapter.getTabIndexForId(ImportedFilesFragment.ID);
+                ImportedFilesFragment fragment = (ImportedFilesFragment) mTabsAdapter.getItem(index);
 				if (fragment != null) {
 					fragment.notifyFileImported(file);
 				}
@@ -238,8 +299,8 @@ public class ImportSelector extends ActionBarActivity implements ImportFileListe
                 // User clicked OK button
             	if (StorageManager.deleteImportedFile(getApplicationContext(), file)) {
                 	// notify fragment...
-                	android.support.v4.app.FragmentManager fm =   getSupportFragmentManager();
-                	ImportedFilesFragment fragment = (ImportedFilesFragment) fm.findFragmentByTag(ImportedFilesFragment.ID);
+                    int index = mTabsAdapter.getTabIndexForId(ImportedFilesFragment.ID);
+                    ImportedFilesFragment fragment = (ImportedFilesFragment) mTabsAdapter.getItem(index);
                 	fragment.notifyFileDeletion(file);
             	} else {
             		Toast.makeText(getApplicationContext(), R.string.deletion_failed, Toast.LENGTH_SHORT).show();
@@ -259,8 +320,16 @@ public class ImportSelector extends ActionBarActivity implements ImportFileListe
     	dialog.show();
 	}
 
+    @Override
+    public void checkVersions(View v) {
 
-	@Override
+        int index = mTabsAdapter.getTabIndexForId(ImportVersionsFragment.ID);
+        ImportVersionsFragment fragment = (ImportVersionsFragment) mTabsAdapter.getItem(index);
+        fragment.checkVersions();
+    }
+
+
+    @Override
 	public void onImportFileDeleted(final File file) {
  	Log.d("BattleSelector","onImportFileDeleted " + file.getName());
     	
@@ -277,8 +346,8 @@ public class ImportSelector extends ActionBarActivity implements ImportFileListe
                 // User clicked OK button
             	if (StorageManager.deleteImportedFile(getApplicationContext(), file)) {
                 	// notify fragment...
-                	android.support.v4.app.FragmentManager fm =   getSupportFragmentManager();
-                	FilesToImportFragment fragment = (FilesToImportFragment) fm.findFragmentByTag(FilesToImportFragment.ID);
+                    int index = mTabsAdapter.getTabIndexForId(FilesToImportFragment.ID);
+                    FilesToImportFragment fragment = (FilesToImportFragment) mTabsAdapter.getItem(index);
                 	if (fragment != null) {
                 		fragment.notifyFileDeletion(file);
                 	}

@@ -299,24 +299,71 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 	@Override
 	public int getTotalCost() {
 		int result = getCost();
-		if (rankingOfficer != null) {
+		if (rankingOfficer != null && ! rankingOfficer.isSpecialist()) {
 			// ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
 			result += rankingOfficer.getCost();
 		}
-		if (unitAttachment != null) {
+		if (unitAttachment != null && ! unitAttachment.isSpecialist()) {
 			// ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
 			result += unitAttachment.getCost();
 		}
 		if (weaponAttachments != null && weaponAttachments.size() > 0) {
 			for (SelectedWA wa : weaponAttachments) {
-				result += wa.getCost() ;	
+                if (! wa.isSpecialist()) {
+                    result += wa.getCost() ;
+                }
 			}
 		}
-		if (soloAttachment != null ){
+		if (soloAttachment != null && ! soloAttachment.isSpecialist()){
 			result += soloAttachment.getCost();
 		}
 		return result;
 	}
+
+    @Override
+    public void setSpecialist(boolean specialist) {
+        super.setSpecialist(specialist);
+        if (specialist) {
+            if (rankingOfficer != null && ! rankingOfficer.isSpecialist()) {
+                rankingOfficer.setSpecialist(true);
+            }
+            if (unitAttachment != null && ! unitAttachment.isSpecialist()) {
+                unitAttachment.setSpecialist(true);
+            }
+            if (weaponAttachments != null && weaponAttachments.size() > 0) {
+                for (SelectedWA wa : weaponAttachments) {
+                    wa.setSpecialist(true);
+                }
+            }
+            if (soloAttachment != null && ! soloAttachment.isSpecialist()){
+                soloAttachment.setSpecialist(true);
+            }
+        }
+    }
+
+    @Override
+    public int getTotalSubSpecialistCost() {
+        int result = 0;
+        if (rankingOfficer != null && rankingOfficer.isSpecialist()) {
+            // ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
+            result += rankingOfficer.getCost();
+        }
+        if (unitAttachment != null && unitAttachment.isSpecialist()) {
+            // ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
+            result += unitAttachment.getCost();
+        }
+        if (weaponAttachments != null && weaponAttachments.size() > 0) {
+            for (SelectedWA wa : weaponAttachments) {
+                if (wa.isSpecialist()) {
+                    result += wa.getCost() ;
+                }
+            }
+        }
+        if (soloAttachment != null && soloAttachment.isSpecialist()){
+            result += soloAttachment.getCost();
+        }
+        return result;
+    }
 		
 	public boolean isMinSize() {
 		return minSize;

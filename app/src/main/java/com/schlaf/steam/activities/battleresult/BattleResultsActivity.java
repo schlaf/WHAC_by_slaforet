@@ -19,6 +19,7 @@ import com.schlaf.steam.R;
 import com.schlaf.steam.activities.battle.BattleResult;
 import com.schlaf.steam.activities.battleresult.BattleResultDetailFragment.ViewBattleResultActivityInterface;
 import com.schlaf.steam.activities.battleresult.BattleResultsListFragment.ChooseBattleResultListener;
+import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.storage.StorageManager;
 
 public class BattleResultsActivity extends ActionBarActivity implements ChooseBattleResultListener, ViewBattleResultActivityInterface {
@@ -28,8 +29,22 @@ public class BattleResultsActivity extends ActionBarActivity implements ChooseBa
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d("BattleActivity", "onCreate");
-	
-		super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
+
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            Log.e(TAG, "status not clean, exiting" );
+            Intent i = getBaseContext().getPackageManager()
+                    .getLaunchIntentForPackage(getBaseContext().getPackageName() );
+            Log.e(TAG, "intent = " + i.toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+            startActivity(i);
+
+            finish();
+            return;
+        }
+
+
+
 		setContentView(R.layout.battleresults_fragmented);
 		
 		getSupportActionBar().setTitle(R.string.battle_results);

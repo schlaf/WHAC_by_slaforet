@@ -21,8 +21,8 @@ public class SingleDamageLineEntry extends MultiPVModel {
 	/** serial */
 	private static final long serialVersionUID = 8535111131294165725L;
 
-	public SingleDamageLineEntry(SingleModel entry, ArmyElement reference, int entryCounter) {
-		super(entry, reference, entry.getName(), entryCounter);
+	public SingleDamageLineEntry(SingleModel entry, ArmyElement reference, int entryCounter, int cost, boolean specialist) {
+		super(entry, reference, entry.getName(), entryCounter, cost, specialist);
 		label = entry.getName(); 
 		damageGrid = new ModelDamageLine(entry);		
 	}
@@ -31,8 +31,8 @@ public class SingleDamageLineEntry extends MultiPVModel {
 	 * create an entry from a reference which contains only one model
 	 * @param reference
 	 */
-	public SingleDamageLineEntry(ArmyElement reference, int entryCounter) {
-		this(reference.getModels().get(0), reference, entryCounter);
+	public SingleDamageLineEntry(ArmyElement reference, int entryCounter, int cost, boolean specialist) {
+		this(reference.getModels().get(0), reference, entryCounter, cost, specialist);
 		label = reference.getFullName();
 	}
 
@@ -43,22 +43,22 @@ public class SingleDamageLineEntry extends MultiPVModel {
 	 * @param reference
 	 * @param isLeader
 	 */
-	public SingleDamageLineEntry(SingleModel entry, int order, ArmyElement reference, boolean isLeader, int entryCounter) {
-		super(entry, reference, (reference.getName() + (isLeader?" Leader":("Grunt # " + order))), entryCounter);
+	public SingleDamageLineEntry(SingleModel entry, int order, ArmyElement reference, boolean isLeader, int entryCounter, int cost, boolean specialist) {
+		super(entry, reference, (reference.getName() + (isLeader?" Leader":("Grunt # " + order))), entryCounter, cost, specialist);
 		label = isLeader?"Leader":("Grunt # " + order);
 		MiniModelDescription description = new MiniModelDescription(entry);
 		description.setName(label);
 		damageGrid = new ModelDamageLine(description, entry.getHitpoints().getTotalHits());		
 	}
 
-	public SingleDamageLineEntry(SingleModel entry, int order, ArmyElement reference, int entryCounter) {
-		this(entry, reference, entryCounter);
+	public SingleDamageLineEntry(SingleModel entry, int order, ArmyElement reference, int entryCounter, int cost, boolean specialist) {
+		this(entry, reference, entryCounter, cost, specialist);
 		this.order = order;
 		label = model.getName() + " #" + this.order;
 	}
 	
-	public SingleDamageLineEntry(MiniModelDescription desc, int order, ArmyElement reference, int entryCounter, ModelDamageLine damageGrid) {
-		super(desc, reference, desc.getName(), entryCounter);
+	public SingleDamageLineEntry(MiniModelDescription desc, int order, ArmyElement reference, int entryCounter, ModelDamageLine damageGrid, int cost, boolean specialist) {
+		super(desc, reference, desc.getName(), entryCounter, cost, specialist);
 		this.order = order;
 		this.damageGrid = damageGrid;
 	}

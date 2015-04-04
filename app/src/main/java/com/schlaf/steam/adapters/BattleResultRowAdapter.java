@@ -58,7 +58,7 @@ public class BattleResultRowAdapter extends ArrayAdapter<BattleResult> {
 	    
 	    player2NameTv.setText("vs. " + result.getPlayer2name());
 	    description.setText( result.getDescription());
-	    battleDate.setText(DateFormat.getDateTimeInstance().format(result.getBattleDate()));
+	    battleDate.setText(result.getBattleDate());
 	    
 	    imageView.setImageResource(FactionNamesEnum.getFaction(result.getArmy1().getFactionId()).getLogoResource());
 	    if (result.getArmy2() == null) {

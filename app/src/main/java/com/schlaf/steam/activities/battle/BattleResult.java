@@ -23,7 +23,7 @@ public class BattleResult implements Serializable {
 	ArmyStore army1;
 	ArmyStore army2;
 	
-	private Date battleDate;
+	private String battleDate;
 	
 	int winnerNumber; // 0 = me, 1 = other guy
 	String player2name;
@@ -83,10 +83,10 @@ public class BattleResult implements Serializable {
 	public void setArmy2(ArmyStore army2) {
 		this.army2 = army2;
 	}
-	public Date getBattleDate() {
+	public String getBattleDate() {
 		return battleDate;
 	}
-	public void setBattleDate(Date battleDate) {
+	public void setBattleDate(String battleDate) {
 		this.battleDate = battleDate;
 	}
 	public int getWinnerNumber() {

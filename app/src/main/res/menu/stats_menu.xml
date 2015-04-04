@@ -20,12 +20,12 @@
     
     <item android:id="@+id/menu_export_stats"
         yourapp:showAsAction="ifRoom"
-          android:icon="@drawable/export"
+          android:icon="@drawable/ic_export"
           android:title="@string/export_file" />
     
     <item android:id="@+id/menu_export_by_mail"
         yourapp:showAsAction="ifRoom"
-          android:icon="@drawable/ic_dialog_email"
+          android:icon="@drawable/ic_mail"
           android:title="@string/export_mail" />
 
 </menu>

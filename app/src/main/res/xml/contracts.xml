@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<contractslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="contracts_schema.xsd" >
+<contractslist xmlns="http://whaccontracts.com"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="www.whaccontracts.com/Sample contracts_schema.xsd" >
 
     <contract
         name="Four star syndicate"
@@ -74,6 +75,7 @@
             <entry id="KU15_mercs"/>
             <entry id="KU18_mercs"/>
             <entry id="MU20" />
+            <entry id="MU21" />
             <!-- ua -->
             <entry id="MA01"/>
             <entry id="MA02"/>
@@ -274,6 +276,7 @@
             <entry id="MU12" />
             <entry id="MU13" />
             <entry id="MU14" />
+            <entry id="MU21" />
             <!-- ua -->
             <entry id="MA01"/>
             <entry id="MA02"/>
@@ -392,9 +395,10 @@
             
         </only>
         <benefits>
-            <ingameeffect label="">The FA of non-character Gatormen increases by 1 ; you can place two AOE 3 shallow water templates 20&quot; from the back of your deployment zone</ingameeffect>
+            <ingameeffect label="">Increase the FA of all non-character Gatorman models and units included in the army by +1 ; you can place two AOE 3 shallow water templates 20" of the back edge of your deployment zone.</ingameeffect>
             <alterFA entryId="IU04" bonus="1"/>
             <alterFA entryId="IU08" bonus="1"/>
+            <alterFA entryId="IU01" bonus="1"/>
             <alterFA entryId="IS11" bonus="1"/>
         </benefits>
     </contract>
@@ -494,6 +498,7 @@
             <entry id="MU08"/>
             <entry id="MU18"/>
             <entry id="MU20"/>
+            <entry id="MU21" />
             
             <!-- cryx entries -->
             <entry id="CS02_mercs"/>

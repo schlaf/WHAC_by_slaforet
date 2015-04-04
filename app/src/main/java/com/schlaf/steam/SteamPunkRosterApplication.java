@@ -18,6 +18,7 @@ import android.os.Build;
 import android.util.Log;
 import android.view.ViewConfiguration;
 
+import com.schlaf.steam.activities.PreStartActivity;
 import com.schlaf.steam.activities.battle.BattleSingleton;
 import com.schlaf.steam.activities.bluetooth.CommunicationService;
 import com.schlaf.steam.activities.card.CardLibrarySingleton;
@@ -46,6 +47,8 @@ public class SteamPunkRosterApplication extends Application {
 	public void setPlayerName(String playerName) {
 		this.playerName = playerName;
 	}
+
+    private static Boolean cleanStart = true;
 
 	/******************************************************************************************/
 	/** Attributes **************************************************************************/
@@ -119,19 +122,29 @@ public class SteamPunkRosterApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		Log.e("MApplication:onCreate", "Application is create");
+		Log.e(TAG, "Application onCreate");
+
 		instance = this;
 		communicationServiceIntent = new Intent(getApplicationContext(),
 				CommunicationService.class);
-		
-		
+
 		selectionModelSingleton = SelectionModelSingleton.getInstance();
 		battleSingleton = BattleSingleton.getInstance();
 		armySingleton = ArmySingleton.getInstance();
 		cardSingleton = CardLibrarySingleton.getInstance();
 		rulesSingleton = RulesSingleton.getInstance();
-		
-		
+
+//        if (! armySingleton.isFullyLoaded()) {
+//            Log.e(TAG, "armySingleton not loaded : clear!!");
+//            Intent i = getBaseContext().getPackageManager()
+//                    .getLaunchIntentForPackage(getBaseContext().getPackageName() );
+//            Log.e(TAG, "intent = " + i.toString());
+//            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+//            // i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//            startActivity(i);
+//        }
+
+
 		// this hack is to prevent the "overflow" button in actionbar to be hidden if there is a physical menu button
 		try {
 	        ViewConfiguration config = ViewConfiguration.get(this);

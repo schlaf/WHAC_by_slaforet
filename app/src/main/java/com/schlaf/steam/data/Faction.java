@@ -44,6 +44,9 @@ public class Faction implements Serializable, Comparable<Faction> {
 	FactionNamesEnum enumValue;
 	private String name;
 	private String fullName;
+
+
+    private String version;
 	private GameSystem system;
 	private Regularity regularity;
 	
@@ -271,4 +274,13 @@ public class Faction implements Serializable, Comparable<Faction> {
 	public HashMap<String, Warbeast> getBeasts() {
 		return beasts;
 	}
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
 }

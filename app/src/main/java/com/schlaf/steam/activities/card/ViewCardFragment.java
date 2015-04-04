@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -84,7 +85,6 @@ public class ViewCardFragment extends Fragment {
 		
 		/**
 		 * card is opened with a single click (else : use long click)
-		 * @param singleClick
 		 * @return
 		 */
 		public boolean useSingleClick();
@@ -150,7 +150,7 @@ public class ViewCardFragment extends Fragment {
 	/**
 	 * add a drawable icon to the end of the linear layout "title"
 	 * 
-	 * @param weapon1TitleLayout
+	 * @param textResource
 	 * @param drawableResource
 	 */
 	private void addCapacityImage(LinearLayout modelTitleLayout,
@@ -223,6 +223,11 @@ public class ViewCardFragment extends Fragment {
 	 * @param element
 	 */
 	private void fillCard(ArmyElement element) {
+
+        if (element == null) {
+            return;
+        }
+
 		if (D) Log.d(TAG, "-- start fillCard");
 	
 		TextView title = (TextView) getView().findViewById(R.id.card_title);
@@ -651,7 +656,7 @@ public class ViewCardFragment extends Fragment {
 		}
 	
 		// handle damage grid
-		LinearLayout layoutGrid = (LinearLayout) container;
+        View layoutGrid = container;
 		// if (parent instanceof Warjack || parent instanceof Warcaster) {
 		FrameLayout gridHolder = (FrameLayout) layoutGrid.findViewById(R.id.damageGridHolder);
 		

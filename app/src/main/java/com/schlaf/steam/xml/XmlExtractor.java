@@ -198,14 +198,19 @@ public class XmlExtractor {
 	private static final String CHAIN_ATTRIBUTE = "chain";
 
 	private static final String BUCKLER_ATTRIBUTE = "buckler";
-	
-//	int[] XML_FILES = new int[] {R.xml.cygnar_completed_angus, R.xml.khador_v3_1, R.xml.menoth_08_06_14, R.xml.cryx_10_06_14,
-//			R.xml.retribution_complete, R.xml.cyriss_completed, R.xml.mercenaries_completed ,
-//			R.xml.orboros_09_10_14, R.xml.everblight_09_10_14, R.xml.skorne_09_10_14, R.xml.trollbloods_completed, R.xml.minions_09_10_14, R.xml.objectives};
 
-	int[] XML_FILES = new int[] {R.xml.cygnar, R.xml.khador, R.xml.menoth, R.xml.cryx,
-			R.xml.retribution, R.xml.cyriss, R.xml.mercenaries_corrected,
-			R.xml.orboros, R.xml.everblight, R.xml.skorne, R.xml.trollbloods, R.xml.minions, R.xml.objectives	};
+//    int[] XML_FILES = new int[] {R.xml.completed_cryx, R.xml.completed_cygnar, R.xml.completed_cyriss,
+//            R.xml.completed_khador, R.xml.completed_menoth, R.xml.completed_mercenaries, R.xml.completed_retribution,
+//            R.xml.completed_everblight, R.xml.completed_orboros, R.xml.completed_skorne, R.xml.completed_trollbloods, R.xml.completed_minions, R.xml.objectives};
+
+
+    int[] XML_FILES = new int[] {R.xml.inapp_cryx, R.xml.inapp_cygnar, R.xml.inapp_cyriss,
+			R.xml.inapp_khador, R.xml.inapp_menoth, R.xml.inapp_mercenaries, R.xml.inapp_retribution,
+            R.xml.inapp_everblight, R.xml.inapp_orboros, R.xml.inapp_skorne, R.xml.inapp_trollbloods, R.xml.inapp_minions, R.xml.objectives};
+
+//	int[] XML_FILES = new int[] {R.xml.cygnar, R.xml.khador, R.xml.inapp_menoth, R.xml.cryx,
+//			R.xml.retribution, R.xml.cyriss, R.xml.inapp_mercenaries,
+//			R.xml.orboros, R.xml.everblight, R.xml.skorne, R.xml.trollbloods, R.xml.minions, R.xml.objectives	};
 
 	/** access to local resources */
 	Resources res;
@@ -466,8 +471,12 @@ public class XmlExtractor {
 
 		if (doLog) { Log.d (TAG,"loadArmy - start");}
 		String faction_id = xpp.getAttributeValue(null, "faction");
+        String version = xpp.getAttributeValue(null, "version");
 
 		Faction faction = ArmySingleton.getInstance().getFactions().get(faction_id);
+
+
+        faction.setVersion(version);
 		
 		//xpp.next();
 		int eventType = xpp.getEventType();

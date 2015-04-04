@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tierslist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tiers_schema.xsd">
+<tierslist xmlns="http://www.whactiers.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="www.whactiers.com/Sample tiers_schema.xsd">
     
     <!-- 
     
@@ -1178,6 +1180,99 @@ Reznik does not pay focus to upkeep these spells during your first turn</ingamee
       </benefits>
     </level>
   </tiers>
+
+    <tiers name="Reznik2 - Weighed and Found Wanting" casterId="Px07" faction="faction_menoth">
+
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Protectorate non-character warjacks, Scourge of Heresy</models>
+            </type>
+            <type type="UNITS">
+                <models>Choirs of Menoth, Exemplar units, Holy Zealots</models>
+            </type>
+            <type type="SOLOS">
+                <models>Exemplar solos, Reclaimers, Vassal solos, Wracks</models>
+            </type>
+        </availableModels>
+        <level number="1">
+            <only>
+                <entry id="Px07" />
+                <entry id="PJ01" />
+                <entry id="PJ02" />
+                <entry id="PJ03" />
+                <entry id="PJ04" />
+                <entry id="PJ05" />
+                <entry id="PJ07" />
+                <entry id="PJ08" />
+                <entry id="PJ09" />
+                <entry id="PJ10" />
+                <entry id="PJ12" />
+                <entry id="PJ14" />
+                <entry id="PJ15" />
+                <entry id="PJ16" />
+                <entry id="PJ17" />
+                <entry id="PJ19" />
+                <entry id="PE01" />
+                <entry id="PU01" />
+                <entry id="PU03" />
+                <entry id="PA01" />
+                <entry id="PU04" />
+                <entry id="PU09" />
+                <entry id="PA04" />
+                <entry id="PU11" />
+                <entry id="PU10" />
+                <entry id="PU14" />
+                <entry id="PS02" />
+                <entry id="PS03" />
+                <entry id="PS05" />
+                <entry id="PS09" />
+                <entry id="PS10" />
+                <entry id="PS11" />
+                <entry id="PS12" />
+                <entry id="PS14" />
+            </only>
+            <benefits>
+                <ingameeffect >Additionally, Reznik can remove 1 focus point from any number of Wracks in his control area during your first turn of the game.</ingameeffect>
+                <alterFA bonus="512" entryId="PS03" />
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  1 PU14-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="PU14" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect >Medium-based units in the army gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  2 PS05-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="PS05" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect >Models with Cenotaph or Gatekeeper begin the game with one soul token.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have  2(PJ07 PJ08 PJ09 PJ10 PJ12 PJ14 PJ16 PJ17)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="PJ19" />
+                    <entry id="PE01" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect />
+                <alterCost entryId="PJ19" bonus="1"/>
+                <alterCost entryId="PE01" bonus="1"/>
+            </benefits>
+        </level>
+    </tiers>
   <tiers name="Vindictus - Missionaries of War" casterId="PW08" faction="faction_menoth">
     <level number="1">
       <only>

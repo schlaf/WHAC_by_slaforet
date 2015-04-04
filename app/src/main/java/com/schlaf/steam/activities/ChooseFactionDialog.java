@@ -11,6 +11,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,10 +29,6 @@ import com.schlaf.steam.data.Faction;
  */
 public class ChooseFactionDialog extends DialogFragment implements OnItemClickListener {
 
-	public interface ChangeFactionListener {
-		public void onChangeFaction(Faction newFaction);
-	}
-	
 	private ChangeFactionListener mListener;
 	
 	private ListView listView;
@@ -53,9 +50,8 @@ public class ChooseFactionDialog extends DialogFragment implements OnItemClickLi
     
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		// Use the Builder class for convenient dialog construction
-		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+		AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), R.style.WhacTheme ));
 		builder.setTitle(R.string.choose_faction);
-		
 		builder.setNegativeButton(R.string.cancel,
 				new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {

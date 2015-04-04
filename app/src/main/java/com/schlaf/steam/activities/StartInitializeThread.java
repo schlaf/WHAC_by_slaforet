@@ -310,7 +310,7 @@ public class StartInitializeThread extends AsyncTask<String, Integer, Boolean> {
 			progressDialog.setMessage("loaded tier data...");
 			break;
 		case 4 : 
-			progressDialog.setMessage("loaded SR2014...");
+			progressDialog.setMessage("loaded Steamroller...");
 			break;
 		case 6 : 
 			progressDialog.setMessage("converting old army lists to new format...");

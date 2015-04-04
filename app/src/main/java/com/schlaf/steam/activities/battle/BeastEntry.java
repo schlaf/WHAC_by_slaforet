@@ -9,12 +9,12 @@ public class BeastEntry extends MultiPVModel {
 	private static final long serialVersionUID = 2331845805167531358L;
 	private WarbeastDamageSpiral damageGrid;
 	
-	public BeastEntry(Warbeast beast, int entryCounter) {
-		this (beast, null, entryCounter);
+	public BeastEntry(Warbeast beast, int entryCounter, int cost, boolean specialist) {
+		this (beast, null, entryCounter, cost, specialist);
 	}
 	
-	public BeastEntry(Warbeast beast, BattleEntry parent, int entryCounter) {
-		super(beast.getModels().get(0), beast, beast.getFullName(), entryCounter);
+	public BeastEntry(Warbeast beast, BattleEntry parent, int entryCounter, int cost, boolean specialist) {
+		super(beast.getModels().get(0), beast, beast.getFullName(), entryCounter, cost, specialist);
 		if (parent != null) {
 			attached = true;
 			this.parentId = parent.getUniqueId();

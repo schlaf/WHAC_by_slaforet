@@ -20,7 +20,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/AndroidBlue" >
+            android:background="@color/WhacAccentColor" >
         </FrameLayout>
 
         <TextView
@@ -165,7 +165,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/AndroidBlue" >
+            android:background="@color/WhacAccentColor" >
 
         </FrameLayout>
 

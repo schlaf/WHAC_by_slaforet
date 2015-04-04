@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -38,7 +39,8 @@ import com.schlaf.steam.storage.StorageManager;
 
 public class MyCollectionActivity extends ActionBarActivity implements OnItemSelectedListener {
 	public static final String SHARED_PREF_COLLECTION = "collection";
-	Spinner factionSpinner;
+    private static final String TAG = "MyCollectionActivity" ;
+    Spinner factionSpinner;
 	Spinner entryTypeSpinner;
 	ListView entriesListView;
 	
@@ -108,8 +110,22 @@ public class MyCollectionActivity extends ActionBarActivity implements OnItemSel
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		Log.d("MycollectionActivity", "restore collection from preferences");
+
+        if (! ArmySingleton.getInstance().isFullyLoaded()) {
+            Log.e(TAG, "status not clean, exiting" );
+            Intent i = getBaseContext().getPackageManager()
+                    .getLaunchIntentForPackage(getBaseContext().getPackageName() );
+            Log.e(TAG, "intent = " + i.toString());
+            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK );
+            startActivity(i);
+
+            finish();
+            return;
+        }
+
+
+
+        Log.d("MycollectionActivity", "restore collection from preferences");
 		// restore collection from preferences
 		SharedPreferences save = getSharedPreferences(SHARED_PREF_COLLECTION, MODE_PRIVATE);
 		Map<String, ?> entries = save.getAll();
@@ -124,6 +140,8 @@ public class MyCollectionActivity extends ActionBarActivity implements OnItemSel
 		
 		getSupportActionBar().setTitle(R.string.my_collection);
 		getSupportActionBar().setLogo(R.drawable.collection);
+        getSupportActionBar().setDisplayOptions( ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_USE_LOGO );
+        getSupportActionBar().setLogo(R.drawable.ic_collection);
 				
 		factionSpinner = (Spinner) findViewById(R.id.icsSpinnerFaction);
 		

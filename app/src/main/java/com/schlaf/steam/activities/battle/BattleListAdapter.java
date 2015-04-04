@@ -60,7 +60,7 @@ public class BattleListAdapter extends BaseAdapter {
 		parentActivity = parent;
 		entries = new ArrayList<BattleEntry>(BattleSingleton.getInstance()
 				.getEntries(playerNumber).size());
-		entries.addAll(BattleSingleton.getInstance().getEntries(playerNumber));
+		entries.addAll(BattleSingleton.getInstance().getNonSpecialistEntries(playerNumber));
 		Collections.sort(entries);
 	}
 
@@ -144,9 +144,9 @@ public class BattleListAdapter extends BaseAdapter {
 				.findViewById(R.id.damageTextView);
 		
 		if (entry.isAttached()) {
-			tvLabel.setTextColor(Color.GRAY);
+			tvLabel.setTextColor(parentActivity.getResources().getColorStateList(R.color.secondary_text_default_material_light));
 		} else {
-			tvLabel.setTextColor(Color.WHITE);
+			tvLabel.setTextColor(parentActivity.getResources().getColorStateList(R.color.primary_text_default_material_light));
 		}
 		
 		TextView defArmTV = (TextView) convertView
@@ -299,11 +299,11 @@ public class BattleListAdapter extends BaseAdapter {
 					// indent only if first level
 					if (entry.isAttached()) {
 						row.findViewById(R.id.spacerImage).setVisibility(View.GONE);
-						gruntTitle.setTextColor(Color.GRAY);
+						gruntTitle.setTextColor(parentActivity.getResources().getColor(R.color.secondary_text_default_material_light));
 					} else {
 						row.findViewById(R.id.spacerImage).setVisibility(
 								View.VISIBLE);
-						gruntTitle.setTextColor(Color.WHITE);
+						gruntTitle.setTextColor(parentActivity.getResources().getColor(R.color.primary_text_default_material_light));
 					}
 
 

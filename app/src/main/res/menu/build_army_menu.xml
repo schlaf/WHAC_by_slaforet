@@ -10,27 +10,27 @@
     
     <item
         android:id="@+id/menu_save"
-        android:icon="@drawable/ic_menu_save"
+        android:icon="@drawable/ic_save"
         yourapp:showAsAction="ifRoom"
         android:title="@string/save"/>
     <item
         android:id="@+id/menu_battle"
-        android:icon="@drawable/battle_icon"
+        android:icon="@drawable/ic_battle"
         yourapp:showAsAction="ifRoom"
         android:title="@string/launch_battle"/>
     <item
         android:id="@+id/menu_tiers"
-        android:icon="@drawable/ic_menu_tier"
+        android:icon="@drawable/ic_tiers"
         yourapp:showAsAction="ifRoom"
         android:title="@string/choose_tier"/>
     <item
         android:id="@+id/menu_contract"
-        android:icon="@drawable/sceau"
+        android:icon="@drawable/ic_sceau"
         yourapp:showAsAction="ifRoom"
         android:title="@string/choose_contract"/>
     <item
         android:id="@+id/menu_save_as"
-        android:icon="@drawable/ic_menu_save"
+        android:icon="@drawable/ic_save"
         android:title="@string/save_as"/>
     <item
         android:id="@+id/menu_cancel"
@@ -38,19 +38,19 @@
         android:title="@string/clear"/>
     <item
         android:id="@+id/menu_prefs"
-        android:icon="@drawable/ic_menu_preferences"
+        android:icon="@drawable/ic_customize"
         yourapp:showAsAction="ifRoom"
         android:title="@string/army_selection_settings"/>
     
     <item
         android:id="@+id/menu_card_reference"
-        android:icon="@drawable/stat_card"
+        android:icon="@drawable/ic_cards"
         yourapp:showAsAction="ifRoom"
         android:title="@string/search_library"/>
     
         <item android:id="@+id/menu_export_army_list"
         yourapp:showAsAction="ifRoom"
-          android:icon="@drawable/export"
+          android:icon="@drawable/ic_export"
           android:title="@string/export_list" />
 
 </menu>
