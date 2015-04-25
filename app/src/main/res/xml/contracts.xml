@@ -447,6 +447,8 @@
             <entry id="Brine_minion"/>
             <entry id="MS26_minion" />
             <entry id="IS13" />
+            <entry id="IS14" />
+
         </only>
         <benefits>
             <ingameeffect label="">All Farrow units in a Thornfall list get Advance Deployment.</ingameeffect>
