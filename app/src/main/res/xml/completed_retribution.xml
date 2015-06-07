@@ -184,6 +184,24 @@
           <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them.  This model ignores intervening models when declaring its charge target.</capacity>
           <capacity title="True Sight">This model ignores concealment, Camouflage, and Stealth.</capacity>
         </warcaster>
+        <warcaster id="RW08" name="Thyron" full_name="Thyron, Sword of Truth" generation="P" qualification="Retribution Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="Thyron" spd="6" str="7" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+              <melee_weapon name="Remembrance" pow="6" p_plus_s="13" magical="true" reach="true" weapon_master="true">
+              </melee_weapon>
+          </weapons>
+          <feat title="Blades of Vengeance">Thyron and friendly Faction models beginning their activations in Thyron's control area gain an additional die on melee attack rolls and Side Step. (When a model with Side Step hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved. A model with Side Step cannot be targeted by free strikes during this movement.)</feat>
+
+          <spell name="ASSAIL" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction warjack can charge or make slam or trample power attacks without spending focus. The warjack gains +2" movement when it charges or makes a slam or trample power attack. Models slammed by the warjack are moved +2".</spell>
+          <spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Center a 5" AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll. Each model damaged by Ground Zero is pushed d6" directly away from this model in the order you choose.</spell>
+            <spell name="ONSLAUGHT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Friendly Faction models beginning a charge in this model's control area gain Pathfinder during the charge.</spell>
+            <spell name="SPELLPIERCER" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While within this model's control area, friendly Faction model/units' weapons gain Magical Weapon and Blessed. Spellpiercer lasts for one round. (When making an attack with a weapon with Blessed, ignore spell effects that add to a model's ARM or DEF.)</spell>
+            <spell name="STORM RAGER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model gains +2 STR, MAT, and ARM and cannot be targeted by combined ranged attacks or combined melee attacks.</spell>
+
+          <capacity title="Blade Shield">This model gains +2 DEF against ranged attack rolls.</capacity>
+          <capacity title="Field Marshal [Cleave]">Models in this model's battlegroup gain Cleave. (When a model with Cleave destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved the model can make one additional melee attack. The model can gain only one additional attack from Cleave each activation.)</capacity>
+          <capacity title="Riposte">When this model is missed by an enemy melee attack, immediately after the attack is resolved it can make one normal melee attack against the attacking model.</capacity>
+        </warcaster>
       </warcasters>
       <warjacks>
         <!--Chimera complete-->
@@ -748,6 +766,18 @@
           <capacity title="Firing Solution [Houseguard]" type="*Action">RNG CMD.  Target Friendly Houseguard unit.  If the Houseguard unit is in range, it ignores Camouflage and Stealth during its activation this turn.</capacity>
           <capacity title="Inspiration [Houseguard]">Friendly Houseguard models/units in this model's command range never flee and immediately rally.</capacity>
         </solo>
+
+
+        <solo id="RS14" name="Soulless Voidtracer" full_name="Soulless Voidtracer" cost="1" qualification="Retribution Mage Hunter Solo" fa="2" completed="true">
+          <basestats name="Voidtracer" spd="6" str="6" mat="6" rat="3" def="13" arm="13" cmd="5" fearless="true" stealth="true"/>
+          <weapons>
+              <melee_weapon name="Two-Handed Sword" pow="6" p_plus_s="12" magical="true" reach="true"/>
+          </weapons>
+            <capacity title="Arcane Vacuum">When a model in this model's command range is targeted by an enemy spell, before the spell is resolved the enemy spellcaster takes d3 damages points.</capacity>
+            <capacity title="Soulless">This model does not generate a soul token when it is destroyed.</capacity>
+            <capacity title="Spell Ward">This model cannot be targeted by spells.</capacity>
+        </solo>
+
         <!--**************************-->
         <!--*****Unit attachments*****-->
         <!--**************************-->
@@ -906,6 +936,9 @@
             <!--Mage Hunter Infiltrators-->
           </restricted_to>
         </solo>
+
+
+
       </solos>
     </army>
   </armies>
