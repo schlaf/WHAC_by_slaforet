@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_khador" name="Khador" version="forum_khador_001">
+    <army faction="faction_khador" name="Khador" version="forum_khador_002"> <!-- add zerkova2, Ruin, Victor, Rager and Mad Dog -->
       <warcasters>
         <warcaster id="Kw01" name="Butcher1" full_name="The Butcher of Khardov" generation="P" qualification="Khador Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="BUTCHER" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" terror="true"/>
@@ -235,6 +235,49 @@
           <capacity title="● GHOST STONE">This model's front arc extends to 360°, it ignores LOS when targeting models in its control area, and it ignores Stealth</capacity>
           <capacity title="● LENS OF TARVODH">The spell gain +3RNG</capacity>
           <capacity title="ORGOTH SEAL">When a model targets this model with an offensive spell, the spell suffer -3RNG. If a model directly hits this model with an offensive spell, after the attack is resolved the attacking model suffer D6 damage points</capacity>
+        </warcaster>
+		<warcaster id="Kx06" name="Zerkova2" generation="E" full_name="Obavnik Kommander Zerkova and Reaver Guard" qualification="Khador Epic Caster Unit" focus="7" warjack_points="4" fa="C" completed="true">
+            <basestats name="ZERKOVA" spd="6" str="5" mat="6" rat="5" def="15" arm="15" cmd="9" hitpoints="16" officer="true" immunity_frost="true"/>
+            <weapons>
+                <melee_weapon name="ORGOTH BLADE" pow="7" p_plus_s="12" magical="true">
+                    <capacity title="BLESSED">When making an attack with this weapon, ignore spell effects that add to a model's ARM or DEF.</capacity>
+                </melee_weapon>
+            </weapons>
+            <feat title="Arcane Convergence">Each friendly faction model currently in Zerkova's control area can immediately cast one spell without spending focus, performing a special action, or performing a special attack.</feat>
+            <spell name="BANISHING WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Enemy upkeep spells on target friendly model/unit expire. Affected models cannot be targeted by enemy spells or animi.</spell>
+            <spell name="DISSOLUTION BOLT" cost="2" rng="8" aoe="-" pow="12" up="NO" off="YES">A model hit by Dissolution Bolt cannot channel spells for one round.</spell>
+            <spell name="HOARFROST" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">Hoarfrost causes cold damage. On a critical hit, models in the AOE become stationary for one round unless they have Immunity: Cold.</spell>
+            <spell name="OCCULT WHISPERS" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction models gain an additional die on their magic attack rolls this turn.</spell>
+            <spell name="SACRIFICIAL LAMB" cost="1" rng="CTRL" aoe="-" pow="-" up="NO" off="NO">Remove one friendly living Faction model in this model's control area from play to allocate 1 focus point to each warjack in this model's battlegroup that is currently in its control area. Sacrificial Lamb can only be cast once per turn.</spell>
+            <spell  name="TELGESH MARK" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">This model can channel spells through target friendly model as if it were a model in this model's battlegroup with Arc Node.</spell>
+            <capacity title="GREYLORD">This model is a Greylord model.</capacity>
+            <capacity title="INSPIRATION [GREYLORD]">Friendly Greylord models/units in this model's command range never flee and immediately rally.</capacity>
+            <capacity title="SACRED WARD">This model cannot be targeted by enemy spells.</capacity>
+            <capacity title="SELF-SACRIFICE">If this model is disabled by an enemy attack, you may choose a non-disabled model in this unit within 3" of this model to be destroyed. If another model is destroyed as a result of Self-Sacrifice, this model heals 1 damage point.</capacity>
+            <capacity title="WARCASTER UNIT">This unit is made up of Zerkova and two Reaver Guards.</capacity>
+
+            <model id="Kx06_guard1" name="Reaver Guard" full_name="Reaver Guard">
+                <basestats name="REAVER GUARD A" spd="6" str="7" mat="7" rat="4" def="13" arm="15" cmd="7" hitpoints="5" abomination="true" fearless="true"/>
+                <weapons>
+                    <melee_weapon name="FELL AXE" pow="5" p_plus_s="12" magical="true" reach="true" weapon_master="true"/>
+                </weapons>
+                <capacity title="BERSERK">When this model destroys one or more models with a melee attack during its combat action, immediately after the attack is resolved it must make one additional melee attack against another model in its melee range.</capacity>
+                <capacity title="COUNTER CHARGE">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+                <capacity title="DOOM REAVER">This model is a Doom Reaver model.</capacity>
+                <capacity title="SACRED WARD">This model cannot be targeted by enemy spells.</capacity>
+                <capacity title="SILENCE">This models does not have to make Berserk attacks.</capacity>
+            </model>
+            <model id="Kx06_guard2" name="Reaver Guard" full_name="Reaver Guard">
+                <basestats name="REAVER GUARD B" spd="6" str="7" mat="7" rat="4" def="13" arm="15" cmd="7" hitpoints="5" abomination="true" fearless="true"/>
+                <weapons>
+                    <melee_weapon name="FELL AXE" pow="5" p_plus_s="12" magical="true" reach="true" weapon_master="true"/>
+                </weapons>
+                <capacity title="BERSERK">See above.</capacity>
+                <capacity title="COUNTER CHARGE">See above.</capacity>
+                <capacity title="DOOM REAVER">This model is a Doom Reaver model.</capacity>
+                <capacity title="SACRED WARD">See above.</capacity>
+                <capacity title="SILENCE">See above.</capacity>
+            </model>
         </warcaster>
         <warcaster id="KW07" name="Old Witch" full_name="Old Witch of Khador" generation="P" qualification="Khador Warcaster" focus="7" warjack_points="3" fa="C" companionId="Scrapjack"  completed="true">
           <basestats name="OLD WITCH" spd="5" str="7" mat="6" rat="3" def="15" arm="14" cmd="8" hitpoints="16" pathfinder="true" terror="true" />
@@ -505,6 +548,28 @@
           <capacity title="SOUL TAKER">This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
           <capacity title="SPECIAL ISSUE [ZOKTAVIR]">This model can be included in Zoktavir's theme forces. It can be also bonded to Zoktavir.</capacity>
         </warjack>
+          <warjack id="KJ19" name="Mad Dog" full_name="Mad Dog" qualification="Khador Heavy Warjack" fa="U" cost="5" damage_grid="x....x.............L..R.LLMCRRxMMxCx" completed="true">
+              <basestats name="MAD DOG" spd="4" str="11" mat="5" rat="3" def="11" arm="18" cmd="0" />
+              <weapons>
+                  <melee_weapon name="Hammer Spike" pow="3" p_plus_s="14" location="L" />
+                  <melee_weapon name="Hammer Spike" pow="3" p_plus_s="14" location="R" />
+              </weapons>
+              <capacity title="AGGRESSIVE">This model can run or charge without spending focus or being forced</capacity>
+              <capacity title="CRUSHER">This model gains an additional die on trample attack rolls and can make trample power attacks without spending focus.</capacity>
+              <capacity title="JURY-RIGGED [SPD]">At the start of its activation, this model can spend 1 focus point to use Jury-Rigged. This model gains +2 SPD this activation. At the end of this activation, it suffers 1 damage point to its first available Movement system box. This model cannot use Jury-Rigged if its Movement system is crippled. Jury-Rigged can be used only once per activation.</capacity>
+              <capacity title="UNSTABLE">At the end of any activation in which this model spent 1 or more focus points, roll a d6. If this roll is equal to or less than the number of focus points spent, this model explodes and models within 3" of it suffer an unboostable POW 14 blast damage roll. Remove this model from play.</capacity>
+          </warjack>
+          <warjack id="KJ20" name="Rager" full_name="Rager" qualification="Khador Heavy Warjack" fa="U" cost="6" damage_grid="x....x.............L..R.LLMCRRxMMxCx" completed="true">
+              <basestats name="RAGER" spd="4" str="11" mat="5" rat="3" def="11" arm="18" cmd="0" />
+              <weapons>
+                  <ranged_weapon name="Shield Cannon" rng="8" rof="1" aoe="-" pow="15" location="L" />
+                  <melee_weapon name="Shield" shield="true" pow="1" p_plus_s="12" location="L" />
+                  <melee_weapon name="Gladius" pow="4" p_plus_s="15" location="R" />
+              </weapons>
+              <capacity title="AGGRESSIVE">This model can run or charge without spending focus or being forced</capacity>
+              <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use shield guard if it is incorporeal, knocked down, or stationary.</capacity>
+              <capacity title="UNSTABLE">At the end of any activation in which this model spent 1 or more focus points, roll a d6. If this roll is equal to or less than the number of focus points spent, this model explodes and models within 3" of it suffer an unboostable POW 14 blast damage roll. Remove this model from play.</capacity>
+          </warjack>
       </warjacks>
       <colossals>
         <colossal id="KJ15" name="Conquest" full_name="Conquest" damage_grid_left="xxx...xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="...xxx....xxSS....CSRRR.CCCCRRMMMMCR" cost="19" qualification="Khador Colossal" fa="2" completed="true">
@@ -525,6 +590,34 @@
             </ranged_weapon>
           </weapons>
         </colossal>
+          <colossal id="KJ18" name="Victor" full_name="Victor" qualification="Khador Colossal" fa="2" cost="18" damage_grid_left="xxx...xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="...xxx....xxSS....CSRRR.CCCCRRMMMMCR" completed="true">
+              <basestats name="VICTOR" spd="4" str="18" mat="6" rat="4" def="7" arm="20" cmd="0" />
+              <weapons>
+                  <ranged_weapon name="Siege Mortar" rng="20" rof="1" aoe="5" pow="15" location="S">
+                      <capacity title="ARCING FIRE">
+                          When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.
+                      </capacity>
+                      <capacity title="INACCURATE">This model suffers -4 to attack rolls with this weapon.</capacity>
+                      <capacity title="MINIMUM RANGE [6]">
+                          Attacks made with this weapon cannot target any model within 6" of it.
+                      </capacity>
+                  </ranged_weapon>
+                  <ranged_weapon name="Autocannon" rng="10" rof="1" aoe="-" pow="12" location="L">
+                      <capacity title="AUTOFIRE [d3]">Make d3 ranged attacks targetting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more attacks than the primary target. Auto Fire counts as one attack for ROF.</capacity>
+                      <capacity title="FLAK FIRE">This model gains an additional die on attack rolls with this weapon against models with Flight.</capacity>
+                  </ranged_weapon>
+                  <ranged_weapon name="Autocannon" rng="10" rof="1" aoe="-" pow="12" location="R">
+                      <capacity title="AUTOFIRE [d3]">Make d3 ranged attacks targetting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more attacks than the primary target. Auto Fire counts as one attack for ROF.</capacity>
+                      <capacity title="FLAK FIRE">This model gains an additional die on attack rolls with this weapon against models with Flight.</capacity>
+                  </ranged_weapon>
+                  <melee_weapon name="Fist" pow="4" p_plus_s="22" open_fist="true" location="L" />
+                  <melee_weapon name="Fist" pow="4" p_plus_s="22" open_fist="true" location="R" />
+              </weapons>
+              <capacity title="ATTACK TYPE">Each time this model makes a normal Siege Mortar attack, choose on of the following abilities:</capacity>
+              <capacity title="● Crater">The AOE is rough terrain and remains in play for one round.</capacity>
+              <capacity title="● Flare">Models hit by this attack suffer -2 DEF for one round.</capacity>
+              <capacity title="● Incendiary">This attack causes fire damage, and models hit suffer the continuous fire effect.</capacity>
+          </colossal>
       </colossals>
       <battleEngines>
         <battleEngine id="KE01" cost="9" fa="2" name="Gun Carriage" full_name="Gun Carriage" qualification="Khador cavalry battle engine" completed="true">
