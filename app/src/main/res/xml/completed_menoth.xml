@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_menoth" name="Menoth" version="forum_menoth_001">
+    <army faction="faction_menoth" name="Menoth" version="forum_menoth_002"> <!-- 002 : add reckoning entries : anson, hand of judgment, purifier, pyrrhus, revelator -->
       <warcasters>
-        <warcaster id="Pw01" name="High Exemplar Kreoss" generation="P" full_name="High Exemplar Kreoss" qualification="Protectorate Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+        <warcaster id="Pw01" name="Kreoss1" generation="P" full_name="High Exemplar Kreoss" qualification="Protectorate Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
           <basestats name="KREOSS" spd="5" str="6" mat="7" rat="4" def="14" arm="15" cmd="8" hitpoints="18" />
           <weapons>
             <melee_weapon name="Spellbreaker" pow="8" p_plus_s="14" magical="true" reach="true">
@@ -20,7 +20,7 @@
           <spell name="LAMENTATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Enemy models pay double the focus or fury point cost to cast or upkeep spells while in this model's control area.</spell>
           <spell name="PURIFICATION" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Continuous effects, animi, and upkeep spells in this model's control area immediately expire.</spell>
         </warcaster>
-        <warcaster id="Px01" name="Grand Exemplar Kreoss" generation="E" full_name="Grand Exemplar Kreoss" qualification="Protectorate Epic Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
+        <warcaster id="Px01" name="Kreoss2" generation="E" full_name="Grand Exemplar Kreoss" qualification="Protectorate Epic Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
           <basestats name="KREOSS" spd="5" str="6" mat="7" rat="4" def="14" arm="16" cmd="9" hitpoints="18" />
           <weapons>
             <melee_weapon name="Justifier" pow="8" p_plus_s="14" magical="true" reach="true">
@@ -38,7 +38,7 @@
           <capacity title="ELITE CADRE [EXEMPLAR]">Friendly Exemplar models gain Aegis.</capacity>
           <capacity title="IMPERISHABLE CONVICTION">When a friendly Faction model in its control area is destroyed by an enemy attack, this model heals 1 damage point.</capacity>
         </warcaster>
-        <warcaster id="Pz01" name="Intercessor Kreoss" generation="EE" full_name="Intercessor Kreoss" qualification="Protectorate Cavalry Epic Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
+        <warcaster id="Pz01" name="Kreoss3" generation="EE" full_name="Intercessor Kreoss" qualification="Protectorate Cavalry Epic Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
           <basestats name="KREOSS" spd="8" str="6" mat="8" rat="4" def="14" arm="17" cmd="10" hitpoints="18" />
           <weapons>
             <melee_weapon name="Conviction" pow="8" p_plus_s="14" magical="true" reach="true">
@@ -87,7 +87,7 @@
           <capacity title="RECLAIM">This model gains one soul token for each friendly living Faction warrior model destroyed by a continuous effect, an enemy attack, or collateral damage from an enemy attack in its control area. uring your Control Phase, after this model replenishes its focus but before it allocates focus, replace each soul token with 1 focus point.</capacity>
           <capacity title="URCAEN'S GATE">Once per turn during your Control Phase, after replenishing focus but before focus allocation, this model can spend one soul token to be placed anywhere completely within 3" of its current location.</capacity>
         </warcaster>
-        <warcaster id="Pw03" name="Grand Scrutator Severius" generation="P" full_name="Grand Scrutator Severius" qualification="Protectorate Warcaster" focus="8" warjack_points="6" fa="C" completed="true">
+        <warcaster id="Pw03" name="Severius1" generation="P" full_name="Grand Scrutator Severius" qualification="Protectorate Warcaster" focus="8" warjack_points="6" fa="C" completed="true">
           <basestats name="SEVERIUS" spd="5" str="5" mat="4" rat="5" def="14" arm="14" cmd="9" hitpoints="16" />
           <weapons>
             <melee_weapon name="Staff of Judgment" pow="8" p_plus_s="13" magical="true" reach="true" />
@@ -102,7 +102,7 @@
           <capacity title="CONVERT (★ACTION)" type="">RNG CMD. Target living enemy non-character trooper model. If the model is in range, it must pass a command check or it becomes a friendly Faction solo under your control for the rest of the game. The converted model cannot activate this turn.</capacity>
           <capacity title="SACRED WARD">This model cannot be targeted by enemy spells.</capacity>
         </warcaster>
-        <warcaster id="Px03" name="Hierarch Severius" generation="E" full_name="Hierarch Severius" qualification="Protectorate Epic Warcaster" focus="8" warjack_points="6" fa="C" completed="true">
+        <warcaster id="Px03" name="Severius2" generation="E" full_name="Hierarch Severius" qualification="Protectorate Epic Warcaster" focus="8" warjack_points="6" fa="C" completed="true">
           <basestats name="SEVERIUS" spd="5" str="5" mat="4" rat="6" def="14" arm="14" cmd="10" hitpoints="16" />
           <weapons>
             <ranged_weapon name="REIGN OF FIRE" rng="8" rof="1" aoe="-" pow="10" magical="true" fire="true">
@@ -120,7 +120,7 @@
           <capacity title="ADMONISHER">When this model directly hits an enemy model with a melee or ranged attack, the d3 nearest enemy models within 5" of the model hit suffer a POW 10 magical damage roll.</capacity>
           <capacity title="WARJACK BOND">One non-character warjack in Severius' battlegroup can begin the game bonded to him. Once per turn, when the warjack is directly hit by an attack it can immeiately spend 1 focus point not to suffer a damage roll from the attack.</capacity>
         </warcaster>
-        <warcaster id="Pw04" name="Feora, Priestess of the Flame" generation="P" full_name="Feora, Priestess of the Flame" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+        <warcaster id="Pw04" name="Feora1" generation="P" full_name="Feora, Priestess of the Flame" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="FEORA" spd="6" str="7" mat="6" rat="5" def="15" arm="17" cmd="9" hitpoints="16" immunity_fire="true" />
           <weapons>
             <ranged_weapon name="Flame Thrower " count="2" rng="SP8" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
@@ -136,7 +136,7 @@
           <spell name="WALL OF FIRE" cost="2" rng="CTRL" aoe="WALL" pow="-" up="YES" off="NO">Place the wall template anywhere completely in this model's control area where it does not touch a model's base, an obstruction, or an obstacle. When a model enters or ends its activation in the wall area, it suffers an unboostable POW 12 fire damage roll and the Fire continuous effect. Models within the wall template gain concealment.</spell>
           <capacity title="INSPIRATION [FLAMEGUARD]">Friendly Flameguard models/units in this model's command range never flee and immediately rally.</capacity>
         </warcaster>
-        <warcaster id="Px04" name="Feora, Protector of the Flame" generation="E" full_name="Feora, Protector of the Flame" qualification="Protectorate Epic Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+        <warcaster id="Px04" name="Feora2" generation="E" full_name="Feora, Protector of the Flame" qualification="Protectorate Epic Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="FEORA" spd="6" str="7" mat="7" rat="5" def="15" arm="17" cmd="9" hitpoints="16" immunity_fire="true" />
           <weapons>
             <ranged_weapon name="Heavy Flame Thrower" count="0" rng="SP10" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true" />
@@ -187,7 +187,7 @@
           <capacity title="AWE">While in this model's command range, living enemy models suffer –2 to attack rolls.</capacity>
           <capacity title="MARTYRDOM">When a friendly Faction non-warcaster warrior model in this model's command range is disabled, this model can suffer d3 damage points to heal 1 damage point on the disabled model.</capacity>
         </warcaster>
-        <warcaster id="PW07" name="High Executioner Servath Reznik" generation="P" full_name="High Executioner Servath Reznik" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+        <warcaster id="PW07" name="Reznik1" generation="P" full_name="High Executioner Servath Reznik" qualification="Protectorate Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="REZNIK" spd="5" str="7" mat="7" rat="4" def="14" arm="17" cmd="7" hitpoints="17" terror="true" />
           <weapons>
             <melee_weapon name="Confessor" pow="7" p_plus_s="14" magical="true" reach="true">
@@ -203,7 +203,7 @@
           <capacity title="EXCRUCIATOR">Once per turn during this model's activation, when it boxes a living enemy warrior model with a melee attack you can place a Wrack into play within 3" of this model. If you do, remove the boxed model from play.</capacity>
           <capacity title="WITCH HOUND">When one or more models in this model's battlegroup that are in its control area are hit by an enemy magic attack, immediately after the attack is resolved one model in this model's battlegroup that is in its control area can make a full advance and make one normal attack.</capacity>
         </warcaster>
-        <warcaster id="Px07" name="Servath Reznik, Wrath of Ages" generation="E" full_name="Servath Reznik, Wrath of Ages" qualification="Protectorate Epic Cavalry Battle Engine Warcaster" focus="7" warjack_points="4" fa="C" completed="true">
+        <warcaster id="Px07" name="Reznik2" generation="E" full_name="Servath Reznik, Wrath of Ages" qualification="Protectorate Epic Cavalry Battle Engine Warcaster" focus="7" warjack_points="4" fa="C" completed="true">
           <basestats name="REZNIK" spd="7" str="7" mat="7" rat="4" def="13" arm="17" cmd="7" hitpoints="20" terror="true" />
           <weapons>
             <melee_weapon name="Verdict" pow="6" p_plus_s="13" magical="true" reach="true">
@@ -255,6 +255,23 @@
           <capacity title="ELITE CADRE [DAUGHTERS OF THE FLAME]" type="">Friendly Daughters of the Flame models gain Vengeance. (During your Maintenance Phase, if one or more models in a unit with Vengeance were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.)</capacity>
           <capacity title="OVERTAKE" type="">When this model destroys one or more enemy warrior models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1".</capacity>
         </warcaster>
+        <warcaster id="PW10" name="Anson Durst, Rock of the Faith" full_name="Anson Durst, Rock of the Faith" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C" completed="true">
+          <basestats name="Durst" spd="5" str="8" mat="8" rat="4" def="13" arm="18" cmd="10" hitpoints="19" />
+          <weapons>
+              <melee_weapon name="Recompense" pow="7" p_plus_s="15" magical="true" reach="true" weapon_master="true">
+                  <capacity title="ERUPTION OF ASH">If a model is boxed by an attack made with this weapon, center a 3" AOE cloud effect on the boxed model and then remove that model form play. The AOE remains in play for one round. Enemy models in the AOE when it was put in play are hit and suffer a POW 12 fire damage roll. Enemy models entering or ending their activation in the AOE suffer a POW 12 fire damage roll. Eruption of Ash damage rolls cannot be boosted.</capacity>
+              </melee_weapon>
+          </weapons>
+          <feat title="Bastion of Faith">While in Durst's control area, warjacks in Durst's battlegroup gain +5 ARM. When a friendly Faction warrior model in Durst's control area is directly hit by an attack during your opponent's turn while B2B with a warjack in Durst's battlegroup, you can choose to have the warjack directly hit instead. The warjack is automatically hit and suffers all damage and effects. Bastion of Faith lasts for one round.</feat>
+            <spell name="BOUNDLESS CHARGE" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">During its activation, target friendly model can charge without spending focus or being forced and gains +2" movement and Pathfinder when it charges. Boundless Charge lasts for one turn.</spell>
+            <spell name="CLEANSING FIRE" cost="3" rng="8" aoe="3" pow="14" up="NO" off="YES">Cleansing Fire causes fire damage. On a critical hit, models hit suffer the Fire continuous effect.</spell>
+            <spell name="DEFLECTION" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models gain +2 ARM against ranged and magic attack damage rolls. Deflection lasts for one round.</spell>
+            <spell name="HALLOWED AVENGER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When an enemy attack destroys or removes from play one or more friendly Faction models within 5" of target warjack in this model's battelgroup, after the attack is resolved the affected warjack can charge an enemy model, then Hallowed Avenger expires.</spell>
+            <spell name="WALL OF STEEL" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area and B2B with one or more models in this model's battlegroup, models in this model's battlegroup cannot be knocked-down and gain +2 DEF.</spell>
+            <capacity title="RAMPART GUARDIAN STANCE">During its activation, this model can forfeit its movement or action to gain Cornerstone for one round. (A model with Cornerstone cannot be knocked down, placed, pushed, or made stationary, and friendly models B2B with a model with Cornerstone cannot be knocked down, placed, pushed, or made stationary.)</capacity>
+            <capacity title="RETALIATORY STRIKE">When this model is hit by a melee attack made by an enemy model during your opponent's turn, after the attack is resolved this model can immediately make one normal melee attack against that model. This model can make one Retaliatory Strike per turn.</capacity>
+        </warcaster>
+
       </warcasters>
       <warjacks>
         <warjack id="PJ01" name="Redeemer" full_name="Redeemer" qualification="Protectorate Light Warjack" fa="U" cost="6" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
@@ -453,6 +470,35 @@
           <capacity title="CONSECRATION" type="">While within 5" of this model, enemy models cannot cast, channel, or upkeep spells.</capacity>
           <capacity title="SACRED WARD" type="">This model cannot be targeted by enemy spells.</capacity>
         </warjack>
+          <warjack id="PJ21" name="Hand of Judgment" full_name="Hand of Judgment" qualification="Protectorate Heavy Character Warjack" fa="C" cost="10" damage_grid="x....x.............L..R.LLMCRRxMMCCx" completed="true">
+              <basestats name="HAND OF JUDGMENT" spd="5" str="11" mat="7" rat="5" def="10" arm="19" cmd="0" immunity_fire="true"/>
+              <weapons>
+                  <melee_weapon name="Flame of Truth" pow="7" p_plus_s="18" reach="true" critical_fire="true" location="R">
+                      <capacity title="FLAME BURST">When this model boxes an enemy model with this weapon, enemy models within 1" of the boxed model suffer the Fire continuous effect.</capacity>
+                  </melee_weapon>
+                  <ranged_weapon name="Immolator Cannon" rng="SP8" rof="1" aoe="-" pow="14" fire="true" continuous_fire="true" location="L">
+                  </ranged_weapon>
+              </weapons>
+              <capacity title="Affinity[Feora]" type="">While in Feora's control area, this model gains boosted ranged attack rolls.</capacity>
+              <capacity title="Blazing Wrath">This model can charge without spending focus or being forced if its charge target is suffering the Fire continuous effect. </capacity>
+              <capacity title="Fuel for the Flames">When a model suffers a Fire damage roll, while within 5" of this model, add +2 to the roll.</capacity>
+              <capacity title="Special Issue[Feora]">This model can be included in Feora's theme forces. It can also be bonded to Feora.</capacity>
+          </warjack>
+          <warjack id="PJ22" name="Purifier" full_name="Purifier" qualification="Protectorate Light Warjack" fa="U" cost="5" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
+              <basestats name="Purifier" spd="5" str="9" mat="6" rat="4" def="13" arm="16" cmd="0" immunity_fire="true"/>
+              <weapons>
+                  <melee_weapon name="Immolator" pow="4" p_plus_s="13" chain="true" location="L">
+                      <capacity title="CHAIN ATTACK : COMBUSTION">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional melee attack againts that model. If the additional attack hits, models within 2" of this model suffer a POW 12 Fire damage roll and the Fire continuous effect.</capacity>
+                      <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+                  </melee_weapon>
+                  <melee_weapon name="Immolator" pow="4" p_plus_s="13" chain="true" location="R">
+                      <capacity title="CHAIN ATTACK : COMBUSTION">See above.</capacity>
+                      <capacity title="CHAIN WEAPON">See above.</capacity>
+                  </melee_weapon>
+              </weapons>
+              <capacity title="Flametrail" type="">When this model advances into B2B contact with an enemy model during its activation, the enemy model suffers the Fire continuous effect.</capacity>
+              <capacity title="Overtake">When this model destroys one or more enemy models with a normal melee attack, after the attack is resolved this model can immediately advance up to 1"</capacity>
+          </warjack>
       </warjacks>
       <colossals>
         <colossal id="PJ19" name="Judicator" full_name="Judicator" qualification="Protectorate Colossal" fa="2" cost="18" damage_grid_left="xxxx..xx........SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx....xxSS....CSRR..CCCCRRMMMMCR" completed="true">
@@ -473,6 +519,26 @@
           </weapons>
           <capacity title="RELIQUARY">This model is allocated 1 additional focus point during your Control Phase. The S boxes of this model's damage grid represent its Reliquary system. While its Reliquary system is crippled, this model loses the benefits of Reliquary.</capacity>
         </colossal>
+          <colossal id="PJ23" name="Revelator" full_name="Revelator" qualification="Protectorate Colossal" fa="2" cost="19" damage_grid_left="xxxx..xx........SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx....xxSS....CSRR..CCCCRRMMMMCR" completed="true">
+              <basestats name="REVELATOR" spd="4" str="17" mat="6" rat="5" def="8" arm="19" cmd="0" />
+              <weapons>
+                  <ranged_weapon name="Conflagator" rng="10" rof="1" aoe="4" pow="15" location="L" fire="true">
+                      <capacity title="BURNING EARTH">On a direct hit against an enemy model, this attack's AOE remains in play for one round. Models entering or ending their activations in the AOE suffer a POW 12 fire damage roll and the Fire continuous effect.</capacity>
+                  </ranged_weapon>
+                  <ranged_weapon name="Conflagator" rng="10" rof="1" aoe="4" pow="15" location="R" fire="true">
+                      <capacity title="BURNING EARTH">On a direct hit against an enemy model, this attack's AOE remains in play for one round. Models entering or ending their activations in the AOE suffer a POW 12 fire damage roll and the Fire continuous effect.</capacity>
+                  </ranged_weapon>
+                  <ranged_weapon name="Light Bringer" rng="14" rof="1" aoe="-" pow="12" fire="true" location="L">
+                      <capacity title="RADIANCE">A model hit by this weapon loses Camouflage and Stealth for one round.</capacity>
+                  </ranged_weapon>
+                  <ranged_weapon name="Light Bringer" rng="14" rof="1" aoe="-" pow="12" fire="true" location="R">
+                      <capacity title="RADIANCE">A model hit by this weapon loses Camouflage and Stealth for one round.</capacity>
+                  </ranged_weapon>
+                  <melee_weapon name="Fist" pow="3" p_plus_s="20" open_fist="true" location="L" />
+                  <melee_weapon name="Fist" pow="3" p_plus_s="20" open_fist="true" location="R" />
+              </weapons>
+              <capacity title="FERETORY">This model ignores Concealment, Camouflage and Stealth. Additionaly this model's weapons gain Magical Weapon. While its S system is crippled, this model loses the benefits of Feretory.</capacity>
+          </colossal>
       </colossals>
       <battleEngines>
         <battleEngine id="PE01" name="Vessel of Judgement" full_name="Vessel of Judgement" qualification="Protectorate Battle Engine" fa="2" cost="9" completed="true">
@@ -918,6 +984,22 @@
           <capacity title="JOURNEYMAN WARCASTER">This model is not a warcaster but has the following warcaster special rules: Battlegroup Commander, Control Area, Focus Manipulation, Power Field, and Spellcaster.</capacity>
           <capacity title="TRUE SIGHT">This model ignores concealment, Camouflage, and Stealth.</capacity>
         </solo>
+          <solo id="PS16" name="Pyrrhus" full_name="Pyrrhus" qualification="Protectorate Temple Flameguard Character Solo" fa="C" cost="3" completed="true">
+              <basestats name="PYRRHUS" spd="6" str="7" mat="7" rat="4" def="15" arm="15" cmd="9" hitpoints="5" commander="true" fearless="true" tough="true" />
+              <weapons>
+                  <melee_weapon name="Flame Spear" pow="5" p_plus_s="12" weapon_master="true" reach="true">
+                      <capacity title="SET DEFENSE">A model in this model front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
+                  </melee_weapon>
+                  <melee_weapon name="Shield" pow="1" p_plus_s="8" weapon_master="true">
+                      <capacity title="Beat back">Immediately after a normal attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy model is pushed, the attacking model can advance up to 1".</capacity>
+                  </melee_weapon>
+              </weapons>
+              <capacity title="IMPENETRABLE SHIELD">While this model is B2B with one or more friendly Temple Flameguard models, it does not suffer damage from non-magical melee or ranged attacks.</capacity>
+              <capacity title="LEADERSHIP[TEMPLE FLAMEGUARD]">Friendly Temple Flameguard models activating while in this model's command range gain Relentless Charge that activation.</capacity>
+              <capacity title="RAPID STRIKE">This model can make one additional melee attack each combat action.</capacity>
+              <capacity title="RELENTLESS CHARGE">This model gains Pathfinder during activations it charges.</capacity>
+              <capacity title="UNYIELDING">While engaging an enemy model, this model gains +2 ARM.</capacity>
+          </solo>
       </solos>
     </army>
   </armies>
