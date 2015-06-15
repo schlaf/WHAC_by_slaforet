@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_minions" name="Minions" version="forum_minions_001">
+        <army faction="faction_minions" name="Minions" version="forum_minions_002"> <!-- add croak raiders, swamp gobber river raiders, gremlin swarm-->
             <warlocks>
                 <warlock id="IW05" name="Lord Carver, BMMD, Esq. III" generation="P" full_name="Lord Carver, BMMD, Esq. III" qualification="Minion Farrow Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
                     <basestats name="CARVER" spd="6" str="8" mat="7" rat="6" def="15" arm="17" cmd="9" hitpoints="16" tough="true" />
