@@ -231,6 +231,7 @@
         <entry id="YU14_mercs" />
         <entry id="YA08_mercs" />
         <entry id="YS08_mercs" />
+        <entry id="YS11_mercs" />
       </only>
       <benefits>
         <ingameeffect>Magnus’ battlegroup can include Charger and Sentinel light warjacks and up to one Defender heavy warjack. This army can include Sword Knight, Ranger, and Trencher units and Sword Knight, Ranger, and Trencher non-character solos. These models are considered to be friendly Mercenary models instead of Cygnar models and can include attachments.</ingameeffect>
@@ -1161,6 +1162,75 @@
                 <alterFA entryId="MS28" bonus="1"></alterFA>
             </benefits>
         </level>
-    </tiers>     
-  
+    </tiers>
+    <tiers name="Cyphon - Oppression Overwhelming" casterId="MW12" faction="faction_mercs">
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Mercenary non-character monstrosities</models>
+            </type>
+            <type type="UNITS">
+                <models>Mercenary Drudge units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Mercenary Cephalyx solos</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="MW12" />
+                <entry id="MM01" />
+                <entry id="MM02" />
+                <entry id="MM03" />
+                <entry id="CU13_mercs" />
+                <entry id="CU15_mercs" />
+                <entry id="MS27" />
+                <entry id="MS28" />
+            </only>
+            <benefits>
+                <ingameeffect  />
+                <alterFA bonus="512" entryId="CU13_mercs" />
+                <alterFA bonus="512" entryId="CU15_mercs" />
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2(MS27)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="MS27" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Drudges in the army gain +2SPD during your first turn of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  3(MM01 MM02 MM03)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+                    <entry id="MM01" />
+                    <entry id="MM02" />
+                    <entry id="MM03" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Monstrosities in Cyphon's battlegroup gain Advance Move.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have in battlegroup  2(CU15_mercs)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="CU15_mercs" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Add a minimum-sized Cephalyx Mind Slaver &amp; Drugdes unit to the army free of cost.</ingameeffect>
+                <freeModel>
+                    <entry id="CU13_mercs" />
+                </freeModel>
+            </benefits>
+        </level>
+    </tiers>
+
 </tierslist>
