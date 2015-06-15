@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_orboros" name="Orboros" version="forum_orboros_001">
+    <army faction="faction_orboros" name="Orboros" version="forum_orboros_002"> <!-- add kromac 2-->
       <warlocks>
         <!--Kaya Wildborne complete-->
         <warlock id="Ow01" name="Kaya1" full_name="Kaya the Wildborne" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
@@ -252,6 +252,22 @@
 		  <restricted_to id="OB12"/>
 		  <restricted_to id="OB18"/>
         </warlock>
+          <warlock id="OW10" name="Kromac2" full_name="Kromac, Champion of the Wurm" generation="E" qualification="Circle Warlock" fury="7" warbeast_points="4" fa="C" completed="true">
+              <basestats name="Kromac" spd="6" str="10" mat="8" rat="4" def="14" arm="18" cmd="4" hitpoints="19" pathfinder="true" terror="true"/>
+              <weapons>
+                  <melee_weapon name="Rathrok" pow="7" p_plus_s="17" magical="true" reach="true">
+                      <capacity title="LIFE DRINKER">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+                  </melee_weapon>
+              </weapons>
+              <feat title="Blood Lust">While within Kromac's control area, living models in its battlegroup gain +2 STR and ARM. When a living friendly Faction model makes a charge attack against an enemy model while the enemy model is in Kromac's control area, the attack automatically hits. Blood Lust lasts for one round.</feat>
+              <spell name="AGGRAVATOR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, friendly warbeasts gain Hyper Aggressive. (When a model with Hyper Aggressive suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.)</spell>
+              <spell name="AWAKENED SPIRIT" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warbeast in this model's battlegroup can use its animus once during its activation without being forced. A warbeast that uses its animus as a result of Awakened Spirit cannot also be forced to use its animus that activation.</spell>
+              <spell name="CARNAGE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction models gain +2 to melee attack rolls against enemy models in this model's control area. Carnage lasts for one turn.</spell>
+              <spell name="PRIMAL HOWL" cost="3" rng="SELF" aoe="*" pow="-" up="NO" off="NO">While in this model's command range, living enemy models suffer -2 to their attack rolls and living enemy models/units suffer -2 CMD when making command checks. Primal Howl lasts for one round.</spell>
+              <spell name="PRIMAL SHOCK" cost="2" rng="CTRL" aoe="-" pow="*" up="NO" off="YES">Choose a friendly Faction warbeast in this model's control area. Target an enemy model within 8" of the chosen warbeast and make a magic attack against it. The chosen warbeast is the attack's point of origin. If the enemy model is hit, it suffers a damage roll with a POW equal to the warbeast's base STR.</spell>
+              <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+          </warlock>
+
       </warlocks>
       <warbeasts>
         <!--Argus complete-->
