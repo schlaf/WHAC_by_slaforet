@@ -715,7 +715,7 @@
         <entry id="EA05" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Non-character solos in this army gaim Advance Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -726,7 +726,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -743,7 +743,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Warbeasts with Flight gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
