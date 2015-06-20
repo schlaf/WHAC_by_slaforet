@@ -1282,7 +1282,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Units in this army with unit attachments gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -1297,7 +1297,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>For each heavy warbeast in Kallus' battlegroup, place one 3" AOE cloud effect template anywhere completely within 20" of the back of Kallus' deployment zone after terrain has been placed but before either player deploys his army.  Enemy models and non-Faction friendly models entering or ending their activation in the AOE suffer an unboostable POW 14 fire damage roll.  The cloud effects leave play after the first round of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
@@ -1310,7 +1310,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models in this army gain Pathfinder during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
   </tiers>
