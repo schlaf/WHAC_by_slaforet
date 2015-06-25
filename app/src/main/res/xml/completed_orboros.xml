@@ -3,7 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_orboros" name="Orboros" version="forum_orboros_002"> <!-- add kromac 2-->
+    <army faction="faction_orboros" name="Orboros" version="forum_orboros_002">
+        <!-- 002 add kromac 2-->
+        <!-- 003 Winter Coat animus for winter argus -->
       <warlocks>
         <!--Kaya Wildborne complete-->
         <warlock id="Ow01" name="Kaya1" full_name="Kaya the Wildborne" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
@@ -492,6 +494,7 @@
                   <capacity title="Critical Freeze">See above.</capacity>
               </ranged_weapon>
               </weapons>
+          <animus name="Winter Coat" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model gains +2 ARM and Immunity:Cold for one round.</animus>
           <capacity title="Circular Vision">This model's front arc extends to 360 degrees.</capacity>
         </warbeast>
         <warbeast id="OB16" name="Razorwing Griffon" full_name="Razorwing Griffon" damage_spiral="8-7-7" fury="3" threshold="8" cost="5" qualification="Circle Light Warbeast" fa="U" completed="true">
