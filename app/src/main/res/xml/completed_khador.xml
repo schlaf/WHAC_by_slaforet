@@ -3,7 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_khador" name="Khador" version="forum_khador_002"> <!-- add zerkova2, Ruin, Victor, Rager and Mad Dog -->
+    <army faction="faction_khador" name="Khador" version="forum_khador_003">
+        <!-- 002 add zerkova2, Ruin, Victor, Rager and Mad Dog -->
+        <!-- 003 vlad3 foc, kovnik axe P+S, irusk2 tactical supremacy -->
       <warcasters>
         <warcaster id="Kw01" name="Butcher1" full_name="The Butcher of Khardov" generation="P" qualification="Khador Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="BUTCHER" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" terror="true"/>
@@ -139,7 +141,7 @@
           <capacity title="DEFENSIVE STRIKE">Once per turn, when an enemy model advances into and ends its movement in this model's melee range, this model can immediately make one normal melee attack against it.</capacity>
           <capacity title="MIGHT OF KINGS">When Vladimir is first damaged, he gains +1 SPD, STR, DEF, and CMD for the rest of the game. If he is reduced to 10 or fewer unmarked damage boxes, this bonus increases to +2 for the rest of the game. If he is reduced to 5 or fewer, this bonus increases to +3 for the rest of the game. These benefits remain even if Vladimir heals. If a friendly model damages him with an attack, Vladimir loses Might of Kings for the rest of the game.</capacity>
         </warcaster>
-        <warcaster id="Kz03" name="Vladimir3" full_name="Vladimir Tzepesci, Great Prince of Umbrey" generation="EE" generation_id="vlad" qualification="Khador Cavalry Epic Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+        <warcaster id="Kz03" name="Vladimir3" full_name="Vladimir Tzepesci, Great Prince of Umbrey" generation="EE" generation_id="vlad" qualification="Khador Cavalry Epic Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
           <basestats name="VLADIMIR" spd="6" str="6" mat="7" rat="5" def="15" arm="17" cmd="9" hitpoints="18" />
           <weapons>
             <melee_weapon name="Horselord's Spear" pow="6" p_plus_s="12" magical="true" reach="true">
@@ -191,7 +193,7 @@
           <spell name="BATTLE LUST" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction warrior model/unit gains Fearless and gains an additional die on melee damage rolls for one round.</spell>
           <spell name="ENERGIZER" cost="*" rng="self" aoe="ctrl" pow="-" up="NO" off="NO">This model spends up to 3 focus points to cast Energizer. Models in its battlegroup that are currently in its control area can immediately advance up to 1" for each focus point spent. Energizer can be cast only once per turn.</spell>
           <spell name="FIRE FOR EFFECT" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Boost the attack and damage rolls of target friendly Faction model's first ranged attack each activation.</spell>
-          <spell name="TACTICAL SUPREMACY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction warjack gains +2 SPD, MAT, and DEF and cannot be knocked down.</spell>
+          <spell name="TACTICAL SUPREMACY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit can advance up to 3" after all models have ended their activations on your turn.</spell>
           <capacity title="MARTIAL DISCIPLINE">Friendly living Faction warrior models with small or medium bases can ignore friendly Faction warrior models in this model's command range when determining LOS and can advance through friendly Faction warrior models in this model's command range if they have enough movement to move completely past them.</capacity>
           <capacity title="TOTAL OBEDIENCE">While in this model's command range, friendly living non-warcaster Faction warrior models gain Tough.</capacity>
           <capacity title="WARJACK BOND (EPIC IRUSK)">One non-character warjack in Irusk's battlegroup begins the game bonded to him. The warjack gains +2 DEF and cannot be knocked down.</capacity>
@@ -527,7 +529,7 @@
               <ranged_weapon pow="12" aoe="-" rng="8" rof="5" name="Auto Cannon" location="L">
                   <capacity title="Double Strike">This model can make two additional attacks for each focus point spent to make additional attacks with this weapon.</capacity>
               </ranged_weapon>
-              <melee_weapon p_plus_s="15" pow="3" name="Open Fist" location="L" open_fist="true"></melee_weapon>
+              <melee_weapon p_plus_s="15" pow="3" name="Open Fist" location="L" open_fist="true"/>
               <melee_weapon p_plus_s="18" pow="6" name="Piston Hammer" location="R">
                   <capacity title="Ram">When an enemy model is hit by this weapon, it is knocked down and can be pushed 1" directly away from this model. If it is pushed, this model can immediately advance directly toward the pushed model up to the distance that model was moved.</capacity>
               </melee_weapon>
@@ -992,7 +994,7 @@
         <solo id="KS02" name="Man-o-war Kovnik" full_name="Man-o-war Kovnik" cost="3" qualification="Khador Solo" fa="2" completed="true">
           <basestats name="Kovnik" spd="4" str="9" mat="8" rat="6" def="11" arm="18" cmd="9" hitpoints="8" jack_marshal="true" commander="true" fearless="true" />
           <weapons>
-            <melee_weapon p_plus_s="16" pow="6" name="Axe Cannon" weapon_master="true" />
+            <melee_weapon p_plus_s="15" pow="6" name="Axe Cannon" weapon_master="true" />
             <ranged_weapon rng="8" name="Cannon Shot" aoe="-" pow="14" rof="1" />
           </weapons>
           <capacity title="Drive: Boosted Attack">This model can attempt to Drive each warjack under its control in its command range. To Drive a warjack, this model must make a command check at any time during its activation. If it passes, the attack rolls for the warjack's initial attacks are boosted during it's activation. If it fails, the warjack does not benefit from 'Jack Marshal this turn.</capacity>
