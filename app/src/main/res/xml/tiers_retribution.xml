@@ -552,11 +552,17 @@
     </level>
     <level number="4">
       <only>
-        <entry id="RJ01" />
-        <entry id="RJ02" />
-        <entry id="RJ03" />
-        <entry id="RJ08" />
-        <entry id="RJ15" /> <!-- special issue Moros -->
+          <entry id="RW03" />
+          <entry id="RJ01" />
+          <entry id="RJ02" />
+          <entry id="RJ03" />
+          <entry id="RJ08" />
+          <entry id="RJ15" /> <!-- special issue Moros -->
+          <entry id="RU05" />
+          <entry id="RA03" />
+          <entry id="RA04" />
+          <entry id="RS05" />
+          <entry id="RS07" />
       </only>
       <benefits>
         <ingameeffect >Models in Garryth's battlegroup gain Advance Deployment.</ingameeffect>
