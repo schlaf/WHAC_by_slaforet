@@ -20,12 +20,10 @@ public abstract class ArmyElement implements Serializable, Comparable<ArmyElemen
 	private static final long serialVersionUID = 3794930661069857397L;
 
 	/** if FA = MAX_FA, then FA = "U" 
-	 * @see unlimitedFA
 	 */
 	public static final int MAX_FA = 512; 
 	
 	/** if FA = C_FA && uniqueCharacter==true , then FA = "C" 
-	 * @see uniqueCharacter
 	 */
 	public static final int C_FA = 1; 
 
