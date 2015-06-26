@@ -1,10 +1,12 @@
 package com.schlaf.steam.data;
 
+import com.schlaf.steam.activities.selectlist.selected.SpellCaster;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SingleModel implements Serializable {
+public class SingleModel implements SpellCaster, Serializable {
 
 	/** serial 	 */
 	private static final long serialVersionUID = -7920751069340356399L;
@@ -27,8 +29,11 @@ public class SingleModel implements Serializable {
 
 	/** list of weapons */
 	private List<Weapon> weapons = new ArrayList<Weapon>();
-		
-	/** hitpoints on damage grid */
+
+    private ArrayList<Spell> spells = new ArrayList<Spell>(10);
+
+
+    /** hitpoints on damage grid */
 	private DamageGrid damages;
 	
 	private List<Capacity> capacities = new ArrayList<Capacity>();
@@ -375,6 +380,13 @@ public class SingleModel implements Serializable {
 		this.fury = fury;
 	}
 
+    public ArrayList<Spell> getSpells() {
+        return spells;
+    }
+
+    public void setSpells(ArrayList<Spell> spells) {
+        this.spells = spells;
+    }
 
 
 }
