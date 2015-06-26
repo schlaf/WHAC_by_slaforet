@@ -468,26 +468,34 @@ public class SelectionModelSingleton {
 			
 		}
 		
-		if (currentTiers != null && currentTiers.getTitle().equals("Exulon - Will of Darkness")) {
-			HashMap<String, ArrayList<RuleFAAlteration>> faRules = RulesSingleton.getInstance().getFaRules();
-			
-			// those are the unit that can have the cephalyx dominator as UA...
-			ArrayList<RuleFAAlteration> restrictedUnitRules = faRules.get("MS28");
-			
-			for (RuleFAAlteration rule : restrictedUnitRules) {
-
-				if (rule.getEntryId().equals(entry.getId())) {
-					// automagically add the dominator as UA.
-					
-					SelectionEntry dominator = getSelectionEntryById("MS28");
-					addAttachedElementTo(dominator, selected);
-					
-				}
-				
-			}
-			
-			
+		if (currentTiers != null && currentTiers.getTitle().equals("Zerkova2 - Winter's Wind")) {
+            if (ArmySingleton.getInstance().getArmyElement(entry.getId()).getFaction() == FactionNamesEnum.MERCENARIES) {
+                // auto attach valachev to merc unit in this theme
+                SelectionEntry valachev = getSelectionEntryById("KA07");
+                addAttachedElementTo(valachev, selected);
+            }
 		}
+
+        if (currentTiers != null && currentTiers.getTitle().equals("Exulon - Will of Darkness")) {
+            HashMap<String, ArrayList<RuleFAAlteration>> faRules = RulesSingleton.getInstance().getFaRules();
+
+            // those are the unit that can have the cephalyx dominator as UA...
+            ArrayList<RuleFAAlteration> restrictedUnitRules = faRules.get("MS28");
+
+            for (RuleFAAlteration rule : restrictedUnitRules) {
+
+                if (rule.getEntryId().equals(entry.getId())) {
+                    // automagically add the dominator as UA.
+
+                    SelectionEntry dominator = getSelectionEntryById("MS28");
+                    addAttachedElementTo(dominator, selected);
+
+                }
+
+            }
+
+
+        }
 		
 		
 		saved = false;
@@ -581,7 +589,15 @@ public class SelectionModelSingleton {
 				getSelectedEntries().remove(group);
 			}
 		}
-		
+
+
+        if (currentTiers!= null && currentTiers.getTitle().equals("Zerkova2 - Winter's Wind")) {
+            // in this tier, you can have only 1 merc unit, and it shall be attached to Valachev
+            if (child.getId().equals("KA07")) {
+                // remove the UA AND the unit
+                getSelectedEntries().remove(group);
+            }
+        }
 		
 		saved = false;
 	}
@@ -1585,8 +1601,30 @@ public class SelectionModelSingleton {
 				}
 			}
 		}
-		
-		
+
+        if (currentTiers!= null && currentTiers.getTitle().equals("Zerkova2 - Winter's Wind")) {
+            // in this tier, you can have only 1 merc unit, and it shall be attached to Valachev
+            boolean hasOneUnitWithValachev = ! getSelectedEntriesByIdIncludingChildren("KA07").isEmpty();
+            for (SelectionEntry entry : getSelectionModels()) {
+                if (entry instanceof SelectionUnit) {
+                    if (ArmySingleton.getInstance().getArmyElement(entry.getId()).getFaction() == FactionNamesEnum.MERCENARIES) {
+                        SelectedUnit unit = (SelectedUnit) getSelectedEntryById(entry.getId());
+                        if (unit != null) { // there can be only one Merc unit in this theme force. so if selected, this is "the one".
+                            entry.setAlteredFA(1);
+                        } else {
+                            if (hasOneUnitWithValachev) {
+                                entry.setAlteredFA(0);
+                            } else {
+                                // can have one exactly
+                                entry.setAlteredFA(1);
+                            }
+
+                        }
+                    }
+                }
+            }
+       }
+
 	}
 	
 	private void alterMarshal() {
@@ -1757,12 +1795,17 @@ public class SelectionModelSingleton {
 			int bonusAlreadyUsedCount = 0;
 			
 			int bonusUsableCount = 0;
+
+            int divider = freebie.getForEachGroupOf();
+
 			if (freebie.getForEach() != null && freebie.getForEach().size() > 0) {
 				// free model depends on another model/unit selection --> ONE free model PER entry selected of the given type
+                int forEachModelsSelectedCount = 0;
 				for (TierEntry requiredEntry : freebie.getForEach()) {
 					SelectionEntry selected = getSelectionEntryById(requiredEntry.getId());
-					bonusUsableCount += selected.getCountSelected();
+                    forEachModelsSelectedCount += selected.getCountSelected();
 				}
+                bonusUsableCount = forEachModelsSelectedCount / divider;
 			} else {
 				// free model does not depend on another model/unit selection --> ONE free model
 				bonusUsableCount = 1;
