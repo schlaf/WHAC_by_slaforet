@@ -407,41 +407,61 @@ public class ViewCardFragment extends Fragment {
 			
 			spellTable.removeView(spellTable.findViewById(R.id.toRemove1));
 			spellTable.removeView(spellTable.findViewById(R.id.toRemove2));
-			
-			for (Spell spell : ((SpellCaster)element).getSpells()) {
-				View spellLineCaracView = getLayoutInflater(null).inflate(R.layout.spell_line_carac, null, false);	
-				((TextView) spellLineCaracView.findViewById(R.id.spellTitle)).setText(spell.getTitle());
-				((TextView) spellLineCaracView.findViewById(R.id.spellCost)).setText(spell.getCost()); 
-				((TextView) spellLineCaracView.findViewById(R.id.spellRange)).setText(spell.getRange());
-				((TextView) spellLineCaracView.findViewById(R.id.spellAOE)).setText(spell.getAoe());
-				((TextView) spellLineCaracView.findViewById(R.id.spellPOW)).setText(spell.getPow());
-				((TextView) spellLineCaracView.findViewById(R.id.spellUP)).setText(spell.getUpkeep());
-				((TextView) spellLineCaracView.findViewById(R.id.spellOFF)).setText(spell.getOffensive());
-				spellTable.addView(spellLineCaracView);
-				
-				View spellLineTextView = getLayoutInflater(null).inflate(R.layout.spell_line_text, null, false);
-				((TextView) spellLineTextView.findViewById(R.id.spellDescription)).setText(Html.fromHtml(spell.getFullText()));
-				spellTable.addView(spellLineTextView);
-				
-				
-				spellLineCaracView.setTag(spell);
-				spellLineTextView.setTag(spell);
-				spellLineCaracView.setOnClickListener(new OnClickListener() {
-					@Override
-					public void onClick(View v) {
-						createSpellPopup(v);
-					}
-				});
-				spellLineTextView.setOnClickListener(new OnClickListener() {
-					@Override
-					public void onClick(View v) {
-						createSpellPopup(v);
-					}
-				});
-				
-			}
-			secondCardHasData = true;
 
+            if (element.getModels() != null && element.getModels().size() > 0) {
+
+                boolean moreThan1Model = false;
+                if (element.getModels().size() > 1) {
+                    moreThan1Model = true;
+                }
+                // more than 1 model --> write down the model name
+
+
+                for (SingleModel model : element.getModels()) {
+                    if (moreThan1Model) {
+                        View spellLineModelNameView = getLayoutInflater(null).inflate(R.layout.spell_line_model_name, null, false);
+                        ((TextView) spellLineModelNameView.findViewById(R.id.modelNameTv)).setText(model.getName());
+                        spellTable.addView(spellLineModelNameView);
+                    }
+
+
+                    for (Spell spell : ((SpellCaster)model).getSpells()) {
+                        View spellLineCaracView = getLayoutInflater(null).inflate(R.layout.spell_line_carac, null, false);
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellTitle)).setText(spell.getTitle());
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellCost)).setText(spell.getCost());
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellRange)).setText(spell.getRange());
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellAOE)).setText(spell.getAoe());
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellPOW)).setText(spell.getPow());
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellUP)).setText(spell.getUpkeep());
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellOFF)).setText(spell.getOffensive());
+                        spellTable.addView(spellLineCaracView);
+
+                        View spellLineTextView = getLayoutInflater(null).inflate(R.layout.spell_line_text, null, false);
+                        ((TextView) spellLineTextView.findViewById(R.id.spellDescription)).setText(Html.fromHtml(spell.getFullText()));
+                        spellTable.addView(spellLineTextView);
+
+
+                        spellLineCaracView.setTag(spell);
+                        spellLineTextView.setTag(spell);
+                        spellLineCaracView.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                createSpellPopup(v);
+                            }
+                        });
+                        spellLineTextView.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                createSpellPopup(v);
+                            }
+                        });
+
+                    }
+                }
+
+
+            }
+			secondCardHasData = true;
 		}  else {
 			View spellView = (View) getView().findViewById(R.id.spellView);
 			spellView.setVisibility(View.GONE);
@@ -493,7 +513,7 @@ public class ViewCardFragment extends Fragment {
 		ImageView imageThr = (ImageView) container.findViewById(R.id.imageViewThreshold);
 		Log.d("ViewCardFragment", "army element class = " + parent.getClass().getName());
 		boolean noFocusOrFury = true;
-		if (firstModel) {
+		if (true) {
 			if (parent instanceof Warcaster || (element.getFocus() > 0 && element.isJourneyManWarcaster())) {
 				noFocusOrFury = false;
 				int focus = 0;
