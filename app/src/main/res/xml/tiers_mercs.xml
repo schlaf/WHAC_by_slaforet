@@ -50,6 +50,7 @@
         <entry id="MS03" />
         <entry id="MS06" />
         <entry id="MS15" />
+        <entry id="MS29" />
         <entry id="IS06_mercs" />
         <!-- saxon -->
         <entry id="MS16" />
@@ -920,6 +921,7 @@
         <entry id="MU15" />
         <entry id="MU18" />
         <entry id="MS16" />
+        <entry id="MS29" />
       </only>
       <benefits>
         <ingameeffect  />
