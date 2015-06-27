@@ -70,6 +70,14 @@
           <weapons />
           <feat title="" />
         </warlock>
+        <warlock id="EW09" name="Saeryn &amp; Rhyas" full_name="Saeryn &amp; Rhyas, Talons of Everblight" generation="E" qualification="Legion Epic Blighted Nyss Warlock Unit" fury="6" warbeast_points="1" fa="C">
+          <basestats name="Saeryn" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" focus="5"/>
+          <weapons />
+          <feat title="" />
+          <model>
+              <basestats name="Rhyas" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" focus="7"/>
+          </model>
+        </warlock>
       </warlocks>
       <warbeasts>
         <warbeast id="EB01" name="Harrier" full_name="Harrier" damage_spiral="4-4-5" fury="0" threshold="0" cost="2" qualification="Lesser Warbeast" fa="U">
