@@ -111,6 +111,7 @@
 			<xs:element maxOccurs="unbounded" name="entry" type="entryType"
 				minOccurs="0" />
 		</xs:sequence>
+        <xs:attribute name="groupOf" type="xs:int" use="optional"/>
 	</xs:complexType>
 	
 	<xs:complexType name="mustHaveType">
