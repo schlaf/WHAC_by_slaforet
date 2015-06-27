@@ -1090,7 +1090,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Models/units gain Pathfinder during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
