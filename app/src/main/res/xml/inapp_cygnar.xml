@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="warmachine.xsd">
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
     <army faction="faction_cygnar" name="cygnar" version="inapp_cygnar_001">
       <warcasters>
         <warcaster id="Yw01" name="Haley1" full_name="Captain Victoria Haley" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="Yx01" name="Haley2" full_name="Major Victoria Haley" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
           <weapons />
-          <feat />
+          <feat title="" />
+        </warcaster>
+        <warcaster id="Yz01" name="Haley3" full_name="Major Prime Victoria Haley" generation="E" qualification="warcaster" focus="6" warjack_points="3" fa="C">
+          <basestats name="Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
+          <weapons />
+          <feat title="" />
+          <model id="past_haley">
+              <basestats name="Past Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
+          <model id="future_haley">
+              <basestats name="Future Victoria Haley" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          </model>
         </warcaster>
         <warcaster id="Yw02" name="Stryker1" full_name="Commander Coleman Stryker" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
@@ -22,37 +34,37 @@
         <warcaster id="Yx02" name="Stryker2" full_name="Lord Commander Stryker" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="Yz02" name="Stryker3" full_name="Lord General Coleman Stryker" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Stryker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="Yw03" name="Caine1" full_name="Lieutenant Allister Caine" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Allister Caine" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="Yx03" name="Caine2" full_name="Captain Allister Caine" generation="E" qualification="epic warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Allister Caine" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="Yw04" name="Nemo1" full_name="Commander Adept Nemo" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="Yx04" name="Nemo2" full_name="General Adept Nemo" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="Yz04" name="Nemo3" full_name="Artificer General Nemo &amp; Storm Chaser Adept Finch" generation="EE" qualification="warcaster" focus="6" warjack_points="3" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="14" />
           <weapons />
-          <feat />
+          <feat title="" />
           <model id="Finch" full_name="Finch" qualification="cygnar solo">
             <basestats name="Finch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           </model>
@@ -60,27 +72,27 @@
         <warcaster id="YW05" name="Siege" full_name="Major Markus 'Siege' Brisbane" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="YW06" name="Kraye" full_name="Captain Jeremiah Kraye" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="YW07" name="Darius" full_name="Captain E. Dominic Darius &amp; Halfjacks" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="22" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="YW08" name="Kara Sloan" full_name="Captain Kara Sloan" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="YW09" name="Constance Blaize" full_name="Constance Blaize, Knight of the Prophet" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title="" />
         </warcaster>
         <warcaster id="YW10" name="Sturgis" full_name="Commander Dalin Sturgis" generation="P" qualification="Cygnar Warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Sturgis" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
@@ -175,12 +187,20 @@
           <weapons>
           </weapons>
         </warjack>
-        
+          <warjack id="YJ24" name="Ace" full_name="Ace" damage_grid="xxxxxxxx..xx.......L..R.LLMCRRxMMCCx" cost="7" qualification="Cygnar Character Light Warjack" fa="C">
+              <basestats name="Ace" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+              <weapons>
+              </weapons>
+          </warjack>
       </warjacks>
       <colossals>
         <colossal id="YJ20" name="Stormwall" full_name="Stormwall" damage_grid_left="xxxxx.xxx.......SS.LLLSCLLCCCCLCMMMM" damage_grid_right=".xxxxx...xxxSS....CSRRR.CCCCRRMMMMCR" cost="19" qualification="Heavy Warjack" fa="2">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
+        </colossal>
+          <colossal id="YJ23" name="Hurricane" full_name="Hurricane" damage_grid_left="xxxxx.xxx.......SS.LLLSCLLCCCCLCMMMM" damage_grid_right=".xxxxx...xxxSS....CSRRR.CCCCRRMMMMCR" cost="18" qualification="Cygnar Colossal" fa="2">
+            <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+            <weapons />
         </colossal>
       </colossals>
       <battleEngines>
@@ -375,8 +395,11 @@
           <weapons>
           </weapons>
         </solo>
-        
-        
+          <solo id="YS11" name="Trench Buster" full_name="Trench Buster" cost="3" qualification="Cygnar Ogrun Trencher Solo" fa="2" completed="true">
+              <basestats name="Trench Buster" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+              <weapons>
+              </weapons>
+          </solo>
       </solos>
     </army>
   </armies>
