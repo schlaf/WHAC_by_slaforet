@@ -411,6 +411,16 @@
 	<works_for id="faction_skorne" />
 </unit>
 
+    <unit id="IU09" name="Croak Raiders" full_name="Croak Raiders" qualification="Minion Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" >
+        <basestats name="Leader &amp; grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+        <weapons>
+        </weapons>
+        <works_for id="faction_orboros" />
+        <works_for id="faction_everblight" />
+        <works_for id="faction_trollblood" />
+        <works_for id="faction_skorne" />
+    </unit>
+
         <unit id="MU05_minion" name="Cylena Raefyll &amp; Nyss Hunters" full_name="Cylena Raefyll &amp; Nyss Hunters" base_cost="7" baseCount="6" full_cost="10" fullCount="10" qualification="Character Unit" fa="C">
           <basestats name="Cylena" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
           <weapons/>
@@ -626,6 +636,26 @@
   <works_for id="faction_skorne" />
   <works_for id="faction_trollblood" />          
 </solo>
+
+    <solo id="IS15" name="Gremlin Swarm" full_name="Gremlin Swarm" qualification="Minion Grymkin Solo" fa="3" cost="2">
+        <basestats name="GREMLIN SWARM" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+        <weapons>
+        </weapons>
+        <works_for id="faction_orboros" />
+        <works_for id="faction_everblight" />
+        <works_for id="faction_skorne" />
+        <works_for id="faction_trollblood" />
+    </solo>
+
+    <solo id="MS30_minion" name="Swamp Gobber River Raiders" full_name="Swamp Gobber River Raiders" qualification="Mercenary Minion Privateer Sea Dog Solo" fa="3" cost="2" >
+        <basestats name="RAIDER" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+        <weapons>
+        </weapons>
+        <works_for id="faction_orboros" />
+        <works_for id="faction_skorne" />
+    </solo>
+
+
 
 </solos>
 </army>
