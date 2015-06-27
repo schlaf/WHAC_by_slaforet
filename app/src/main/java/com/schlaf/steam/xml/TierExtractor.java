@@ -558,6 +558,14 @@ public class TierExtractor {
 
 	private void loadForEachFreeModel(XmlPullParser xpp, TierFreeModel freeModel) throws XmlPullParserException, IOException  {
 		int eventType = xpp.getEventType();
+
+        String groupOf = xpp.getAttributeValue(null, "groupOf");
+
+        if (groupOf != null &&  extractFromString(groupOf)> 1) {
+            freeModel.setForEachGroupOf(extractFromString(groupOf));
+        }
+
+
 		freeModel.setForEach(new ArrayList<TierEntry>());
 		while (!(eventType == XmlPullParser.END_TAG && FOR_EACH_TAG.equals(xpp
 				.getName()))) {
