@@ -75,7 +75,12 @@
 		  <restricted_to id="OB10"/>
 		  <restricted_to id="OB12"/>
 		  <restricted_to id="OB18"/>
-        </warlock>        
+        </warlock>
+          <warlock id="OW10" name="Kromac2" full_name="Kromac, Champion of the Wurm" generation="E" qualification="Circle Warlock" fury="6" warbeast_points="4" fa="C" >
+              <basestats name="Kromac" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="19"/>
+              <weapons />
+              <feat title=""/>
+          </warlock>
       </warlocks>
       <warbeasts>
         <warbeast id="OB01" name="Argus" full_name="Argus" damage_spiral="7-7-7" fury="0" threshold="0" cost="4" qualification="Light Warbeast" fa="U">
