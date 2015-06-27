@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="warmachine.xsd">
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
     <army faction="faction_cryx" name="cryx" version="inapp_cryx_001">
       <warcasters>
@@ -8,7 +9,7 @@
         <warcaster id="Cw01" name="Iron Lich Asphyxious" full_name="Iron Lich Asphyxious" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Iron Lich Asphyxious" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster> -->
         <warcaster id="Cw01" 
 				    name="Asphyxious1" 
@@ -21,22 +22,17 @@
 					<basestats name="Iron Lich Asphyxious" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
 					<weapons>
 					</weapons>
-					<feat title=""><![CDATA[
-]]>    		
-					</feat>
-					<full_text><![CDATA[
-]]>                 		
-	           		</full_text>
+					<feat title=""/>
 				</warcaster>
         <warcaster id="Cx01" name="Asphyxious2" full_name="Lich Lord Asphyxious" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Lich Lord Asphyxious" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="Cz01" name="Asphyxious3" full_name="Asphyxious the Hellbringer &amp; Vociferon" generation="EE" qualification="warcaster" focus="6" warjack_points="4" fa="C">
           <basestats name="Asphyxious the Hellbringer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""/>
           <model id="Vociferon" full_name="Vociferon" name="Vociferon" qualification="cryx skarlock thrall character solo">
             <basestats name="Vociferon" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           </model>
@@ -62,43 +58,48 @@
         <warcaster id="Cx02" name="Deneghra2" full_name="Wraith Witch Deneghra" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Wraith Witch Deneghra" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""/>
+        </warcaster>
+        <warcaster id="Cz02" name="Deneghra3" full_name="Deneghra, the Soul Weaver" generation="E" qualification="warcaster" focus="6" warjack_points="4" fa="C">
+          <basestats name="Deneghra" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+          <weapons />
+          <feat title=""/>
         </warcaster>
         <warcaster id="Cw03" name="Skarre1" full_name="Pirate Queen Skarre" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Pirate Queen Skarre" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="Cx03" name="Skarre2" full_name="Skarre, Queen of the Broken Coast" generation="E" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Skarre, Queen of the Broken Coast" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="CW04" name="Terminus" full_name="Terminus" generation="P" qualification="warcaster" focus="6" warjack_points="4" fa="C">
           <basestats name="Terminus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="20" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="Cw05" name="Goreshade1" full_name="Goreshade the Bastard" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Goreshade the Bastard" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="Cx05" name="Goreshade2" full_name="Goreshade the Cursed" generation="E" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Goreshade the Cursed" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="Cz05" name="Goreshade3" full_name="Goreshade, Lord of Ruin" generation="EE" qualification="warcaster" focus="7" warjack_points="5" fa="C">
           <basestats name="Goreshade the Cursed" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         
         <warcaster id="CW06" name="Witch Coven" full_name="Witch Coven" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Helleana" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
           <weapons />
-          <feat />
+          <feat title=""/>
           <model id="Morgaen" full_name="Morgaen" name="Morgaen" qualification="">
             <basestats name="Deryliss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
           </model>
@@ -109,7 +110,7 @@
         <warcaster id="CW07" name="Mortenebra" full_name="Mortenebra" generation="P" qualification="warcaster" focus="6" warjack_points="4" fa="C">
           <basestats name="Mortenebra" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
-          <feat />
+          <feat title=""/>
           <model id="deryliss" full_name="Deryliss" name="Deryliss" qualification="cryx skarlock thrall character solo">
             <basestats name="Deryliss" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           </model>
@@ -117,17 +118,17 @@
         <warcaster id="CW08" name="Venethrax" full_name="Venethrax" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Venethrax" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="CW09" name="Scaverous" full_name="Scaverous" generation="P" qualification="warcaster" focus="6" warjack_points="5" fa="C">
           <basestats name="Scaverous" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
         <warcaster id="CW10" name="Sturgis" full_name="Sturgis the Corrupted" generation="P" qualification="Cryx Epic Warcaster" focus="6" warjack_points="6" fa="C">
           <basestats name="Sturgis" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
           <weapons />
-          <feat />
+          <feat title=""/>
         </warcaster>
       </warcasters>
       <warjacks>
@@ -223,10 +224,23 @@
           <basestats name="Inflictor" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
         </warjack>
+        <warjack id="CJ23" name="Barathrum" full_name="Barathrum" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="10" qualification="Heavy Character Warjack" fa="C">
+          <basestats name="Barathrum" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
+        <warjack id="CJ24" name="Shrike" full_name="Shrike" damage_grid="xxxxxxxxxxxxx.xx.x......HCCCCMxHHMMx" cost="4" qualification="Cryx Bonejack" fa="U">
+          <basestats name="Shrike" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons />
+        </warjack>
       </warjacks>
       <colossals>
         <colossal id="CJ20" name="Kraken" full_name="Kraken" qualification="CRYX COLOSSAL" fa="2" cost="19" damage_grid_left="xxxx..xxx.......SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx...xxxSS....CSRR..CCCCRRMMMMCR" >
           <basestats name="Kraken" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+          <weapons>
+          </weapons>
+        </colossal>
+        <colossal id="CJ22" name="Sepulcher" full_name="Sepulcher" qualification="CRYX COLOSSAL" fa="2" cost="18" damage_grid_left="xxxx..xxx.......SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx...xxxSS....CSRR..CCCCRRMMMMCR" >
+          <basestats name="Sepulcher" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons>
           </weapons>
         </colossal>
@@ -412,7 +426,11 @@
           <restricted_to id="CU02"></restricted_to>
           <restricted_to id="CU03"></restricted_to>
         </solo>
-        
+        <solo id="CS16" name="Soul Trapper" full_name="Soul Trapper" cost="1" qualification="Cryx Thrall Solo" fa="3">
+          <basestats name="Soul Trapper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+          <weapons />
+          <capacity title="Model Count">2 Soul Trappers</capacity>
+        </solo>
       </solos>
     </army>
   </armies>
