@@ -1131,7 +1131,7 @@ attachment and the FA for Scattergunners is increased. -->
               <models>Field Mechaniks, Cygnar units with Immunity:Electricity </models>
           </type>
           <type type="SOLOS">
-              <models>Journeyman Warcaster, Cygnar solos with Immunity: Electricity</models>
+              <models>Journeyman Warcasters, Cygnar solos with Immunity: Electricity</models>
           </type>
           <type type="BATTLE_ENGINES">
               <models>Storm Strider</models>
@@ -1163,6 +1163,8 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YS05" />
         <entry id="YS07" />
         <entry id="YS10" />
+        <entry id="YA11" /> <!-- jakes & gastonne allowed -->
+        <entry id="MS25" />
       </only>
       <benefits>
         <ingameeffect >Reduce the point cost of Stormguard units by 1.</ingameeffect>
