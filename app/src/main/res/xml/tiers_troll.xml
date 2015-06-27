@@ -970,6 +970,7 @@
         <entry id="TU12" />
         <entry id="TU13" />
         <entry id="TU15" />
+        <entry id="TU16" /> <!-- add highwaymen -->
         <entry id="TS03" />
         <entry id="TS01" />
         <entry id="TS12" />
@@ -991,6 +992,7 @@
           <entry id="TU12" />
           <entry id="TU13" />
           <entry id="TU15" />
+          <entry id="TU16" /> <!-- add highwaymen -->
         </entrygroup>
       </must_have>
       <benefits>
