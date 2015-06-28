@@ -3,7 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_002"> <!-- add cyphon, siege crawler, nicolas verendrye, correct puppet masters affiliation solos + swamp gobber river raiders + trench buster for Magnus bad seeds-->
+    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_003">
+        <!-- 002 add cyphon, siege crawler, nicolas verendrye, correct puppet masters affiliation solos + swamp gobber river raiders + trench buster for Magnus bad seeds-->
+        <!-- 003 corrected drudge grunt ARM -->
       <warcasters>
         <warcaster id="Mw01" name="Magnus the Traitor" generation="P" full_name="Magnus the Traitor" qualification="Mercenary Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="MAGNUS" spd="5" str="6" mat="7" rat="5" def="14" arm="17" cmd="7" hitpoints="17" />
@@ -1899,7 +1901,7 @@
 		  <capacity title="PSYCHIC PROJECTION">This model can channel spells through grunts in this unit that are in formation. When it does, you can choose up to two more of those grunts and cast the spell once through each, even if the channeler is engaged. Grunts in this unit that channel a spell this way are then removed from play.</capacity>
 		  <capacity title="SACRIFICIAL PAWN [DRUDGE GRUNT]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Drudge Grunt model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
           <model id="Drudges">
-            <basestats name="DRUDGE GRUNT" spd="5" str="8" mat="5" rat="2" def="11" arm="11" cmd="4" eyelesssight="true" fearless="true" tough="true"/>
+            <basestats name="DRUDGE GRUNT" spd="5" str="8" mat="5" rat="2" def="11" arm="15" cmd="4" eyelesssight="true" fearless="true" tough="true"/>
             <weapons>
                 <melee_weapon name="Battering Fists" pow="4" p_plus_s="12" />
             </weapons>
