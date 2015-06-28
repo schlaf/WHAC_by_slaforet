@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_orboros" name="Orboros" version="forum_orboros_002">
+    <army faction="faction_orboros" name="Orboros" version="forum_orboros_003">
         <!-- 002 add kromac 2-->
         <!-- 003 Winter Coat animus for winter argus -->
       <warlocks>
