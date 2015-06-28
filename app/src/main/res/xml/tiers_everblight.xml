@@ -610,6 +610,7 @@
         <entry id="EA03" />
         <entry id="EU10" />
         <entry id="EU11" />
+        <entry id="EU12" /> <!-- add blackfrostshard cause it's a blighted nyss unit -->
         <entry id="EA04" />
         <entry id="EU06" />
         <entry id="ES03" />
@@ -715,7 +716,7 @@
         <entry id="EA05" />
       </only>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Non-character solos in this army gaim Advance Deployment.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -726,7 +727,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
       </benefits>
     </level>
     <level number="3">
@@ -743,7 +744,7 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect  />
+        <ingameeffect>Warbeasts with Flight gain +2 SPD during your first turn of the game.</ingameeffect>
       </benefits>
     </level>
     <level number="4">
