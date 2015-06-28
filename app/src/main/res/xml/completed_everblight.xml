@@ -86,7 +86,7 @@
 			<melee_weapon name="Rapture" pow="7" p_plus_s="18" magical="true" reach="true">
               <capacity title="ERUPTION OF ASH">If a model is boxed by an attack made with this weapon, center a 3" AOE cloud effect on the boxed model and then remove that model from play. The AOE remains in play for one round. Enemy models in the AOE when it was put in play are hit and suffer a POW 12 fire damage roll. Enemy models entering or ending their activation in the AOE suffer a POW 12 fire damage roll. Eruption of Ash damage rolls cannot be boosted.</capacity>
             </melee_weapon>
-            <melee_weapon name="Claw" pow="3" p_plus_s="12" />            
+            <melee_weapon name="Claw" pow="3" p_plus_s="14" />
           </weapons>
           <feat title="Dragon Storm">After all friendly models have completed their activations this turn, each warbeast in Thagrosh's battlegroup that is in his control area can make a full advance followed by one normal melee attack. Completely resolve each model's movement and attack before moving on to the next model.</feat>
           <spell name="DRAGON'S BLOOD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly non-warlock Faction model/unit gains +2 ARM. When an affected model is disabled by a melee attack, roll a d6. On a roll of 5 or 6, the attacker suffers 1 damage point.</spell>
