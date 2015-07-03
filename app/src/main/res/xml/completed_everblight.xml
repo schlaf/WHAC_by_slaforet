@@ -3,7 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_everblight" name="Everblight" version="forum_everblight_001">
+    <army faction="faction_everblight" name="Everblight" version="forum_everblight_002">
+        <!-- 002 add saeryn&rhyas + tagrosh2 weapon P+S -->
       <warlocks>
         <warlock id="Ew01" name="Lylyth1" generation="P" generation_id="Lylyth" full_name="Lylyth, Herald of Everblight" qualification="Legion Blighted Nyss Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
           <basestats name="LYLYTH" spd="7" str="4" mat="5" rat="7" def="16" arm="14" cmd="8" hitpoints="15" eyelesssight="true" pathfinder="true" />
