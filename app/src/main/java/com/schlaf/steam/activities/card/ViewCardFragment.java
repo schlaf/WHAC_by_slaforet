@@ -410,15 +410,21 @@ public class ViewCardFragment extends Fragment {
 
             if (element.getModels() != null && element.getModels().size() > 0) {
 
-                boolean moreThan1Model = false;
-                if (element.getModels().size() > 1) {
-                    moreThan1Model = true;
+                boolean moreThan1ModelWithSpells = false;
+                int modelsWithSpells = 0;
+                for (SingleModel model : element.getModels()) {
+                    if (model.getSpells() != null && ! model.getSpells().isEmpty()) {
+                        modelsWithSpells ++;
+                    }
                 }
-                // more than 1 model --> write down the model name
+                if (modelsWithSpells > 1) {
+                    moreThan1ModelWithSpells = true;
+                }
+                // more than 1 model with spells --> write down the model name
 
 
                 for (SingleModel model : element.getModels()) {
-                    if (moreThan1Model) {
+                    if (moreThan1ModelWithSpells && model.getSpells() != null && ! model.getSpells().isEmpty()) {
                         View spellLineModelNameView = getLayoutInflater(null).inflate(R.layout.spell_line_model_name, null, false);
                         ((TextView) spellLineModelNameView.findViewById(R.id.modelNameTv)).setText(model.getName());
                         spellTable.addView(spellLineModelNameView);
