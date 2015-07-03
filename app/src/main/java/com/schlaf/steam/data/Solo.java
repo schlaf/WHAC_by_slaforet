@@ -12,7 +12,7 @@ import com.schlaf.steam.activities.selectlist.selected.SpellCaster;
  * @author S0085289
  *
  */
-public class Solo extends ArmyElement implements Serializable, Restrictable{
+public class Solo extends ArmyElement implements SpellCaster, Serializable, Restrictable{
 
 	/**
 	 * 
@@ -151,6 +151,17 @@ public class Solo extends ArmyElement implements Serializable, Restrictable{
 	@Override
 	public String getCostString() {
 		return String.valueOf(baseCost);
-	}	
-	
+	}
+
+
+    public ArrayList<Spell> getSpells() {
+        if (getModels()!=null && getModels().size() > 0) {
+            return getModels().get(0).getSpells();
+        }
+        return new ArrayList<Spell>();
+    }
+
+    public void setSpells(ArrayList<Spell> spells) {
+        throw new UnsupportedOperationException();
+    }
 }
