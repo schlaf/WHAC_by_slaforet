@@ -1203,7 +1203,15 @@
         <solo id="YS08_mercs" name="Trencher Master Gunner" full_name="Trencher Master Gunner" cost="2" qualification="Solo" fa="2">
           <basestats name="Trencher Master Gunner" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           <weapons />
+            <only_in_tier id="Magnus2 - Bad Seeds (NQ36)" />
         </solo>
+          <solo id="YS11_mercs" name="Trench Buster (Magnus: Bad Seeds)" full_name="Trench Buster (Magnus: Bad Seeds)" cost="3" qualification="Cygnar Ogrun Trencher Solo" fa="2">
+              <basestats name="Trench Buster" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+              <weapons>
+              </weapons>
+              <only_in_tier id="Magnus2 - Bad Seeds (NQ36)" />
+          </solo>
+
         <!-- ashlynn viva la resistance -->
         <solo id="YS02_mercs" name="Gun Mage Captain Adept" full_name="Gun Mage Captain Adept" cost="2" qualification="Solo" fa="2">
           <basestats name="Gun Mage Captain Adept" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
