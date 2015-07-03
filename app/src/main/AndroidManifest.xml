@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schlaf.steam"
-    android:versionCode="29"
-    android:versionName="1.6.0" >
+    android:versionCode="30"
+    android:versionName="1.6.1" >
     
 <!--
 1.0.3 - 
@@ -211,6 +211,29 @@ Add Butcher3 - Blood in the snow theme force
 Add Reznik2 - Weighed and Found Wanting theme force
 Corrected Shadows of Retribution theme force
 
+1.6.1
+add saeryn & rhyas twins
+add thyron, helios, electromancers, force wall arcanist, soulless void tracer
+add haley3, ace, hurricane, trench buster
+add kromac2
+add cyphon, siege crawler, nicolas verendrye, correct puppet masters
+add deny3, barathrum, Sepulcher, Soul Trapper
+add zerkova2, Ruin, Victor, Rager and Mad Dog
+add Croak Raiders, Gremlin Swarm
+add anson durst, hand of judgment, purifier, revelator, pyrrhus
+feora2 / amon / harbinger theme text restrictions. + Anson theme.
+add highwaymen to gunnbjorn theme force
+handling multimodels with focus/fury/spells for additional models
+add verendye to allowed theme forces
+corrected nemo3 theme : can take jakes + gastonne crosse
+allow "for each XXX of (...)" condition
+handling zerkova2 tier (valachev + merc unit)
+add Maximus to Thornfall alliance
+corrected Garryth-assassin theme : tier4 requirements were not correct
+correct display cost for caster attachements (was 0 when reloading from saved list)
+correct cost of drakhun when reloaded
+add cyphon theme force + add trench buster for magnus
+correct battle engine for blindwater and correct FA bonus
 
  -->    
 
