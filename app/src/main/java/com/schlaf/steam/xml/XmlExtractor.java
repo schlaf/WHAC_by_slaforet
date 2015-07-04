@@ -1426,6 +1426,7 @@ public class XmlExtractor {
 			if (eventType == XmlPullParser.START_TAG && ANIMUS_TAG.equals(xpp.getName())) {
 				Spell spell = loadAnimus(xpp);
 				beast.setAnimus(spell);
+                model.getSpells().add(spell);
 			}
 			
 			
