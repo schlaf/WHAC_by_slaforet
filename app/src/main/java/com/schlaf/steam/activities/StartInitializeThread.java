@@ -1,8 +1,13 @@
 package com.schlaf.steam.activities;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -19,6 +24,7 @@ import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.data.Capacity;
 import com.schlaf.steam.data.Contract;
+import com.schlaf.steam.data.Faction;
 import com.schlaf.steam.data.SingleModel;
 import com.schlaf.steam.data.Spell;
 import com.schlaf.steam.data.Tier;
@@ -26,12 +32,16 @@ import com.schlaf.steam.data.TierEntry;
 import com.schlaf.steam.data.TierEntryGroup;
 import com.schlaf.steam.data.TierFACostBenefit;
 import com.schlaf.steam.data.TierLevel;
+import com.schlaf.steam.data.Warcaster;
+import com.schlaf.steam.storage.JsonConverter;
 import com.schlaf.steam.storage.StorageManager;
 import com.schlaf.steam.xml.ContractExtractor;
 import com.schlaf.steam.xml.RulesExtractor;
 import com.schlaf.steam.xml.SR2014Extractor;
 import com.schlaf.steam.xml.TierExtractor;
 import com.schlaf.steam.xml.XmlExtractor;
+
+import org.json.compatibility.JSONWriter;
 
 public class StartInitializeThread extends AsyncTask<String, Integer, Boolean> {
 	
@@ -101,7 +111,47 @@ public class StartInitializeThread extends AsyncTask<String, Integer, Boolean> {
 	            RulesExtractor rulesExtractor = new RulesExtractor(res, application);
 	            rulesExtractor.doExtract();
 	            publishProgress( 5);
-	            
+
+                if (false) {
+                    File externalStorageDir = Environment.getExternalStorageDirectory ();
+                    String whacExternalDirPath = externalStorageDir.getPath() + StorageManager.WHAC_SUBDIR;
+
+                    for (Faction faction : ArmySingleton.getInstance().getFactions().values()) {
+
+                        File factionFile = new File(whacExternalDirPath, faction.getId());
+                        FileOutputStream fos = null;
+                        try {
+                            fos = new FileOutputStream(factionFile);
+                            Writer writer = new OutputStreamWriter(fos, "UTF-8");
+                            JsonConverter.createFactionExport(writer, faction);
+                            writer.flush();
+                            fos.close();
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+                        File factionTierFile = new File(whacExternalDirPath, "tier_" + faction.getId() + ".js");
+                        FileOutputStream fosTier = null;
+
+                        try {
+                            fosTier = new FileOutputStream(factionTierFile);
+                            Writer writer = new OutputStreamWriter(fosTier, "UTF-8");
+                            JsonConverter.createTierExport(writer, ArmySingleton.getInstance().getTiers(faction.getEnumValue()));
+                            writer.flush();
+                            fosTier.close();
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+
+                }
+
+
 	            if (publishData) {
 	            	
 	    			File externalStorageDir = Environment.getExternalStorageDirectory ();
