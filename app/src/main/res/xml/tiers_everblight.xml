@@ -806,6 +806,7 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB23" />
         <entry id="EU11" />
         <entry id="EA04" />
         <entry id="EU03" />
@@ -872,7 +873,7 @@
     <level number="1">
       <only>
         <entry id="EW04" />
-        <!-- Non-character warbeasts, Typhon -->
+        <!-- Non-character warbeasts, Typhon, also Zuriel (special issue) -->
         <entry id="EB01" />
         <entry id="EB02" />
         <entry id="EB03" />
@@ -893,6 +894,7 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB23" />
         <!-- Blighted Nyss Swordsmen, Blighted Ogrun units -->
         <entry id="EU03" />
         <entry id="EA02" />
