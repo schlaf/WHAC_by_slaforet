@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<contractslist xmlns="http://whaccontracts.com"
+<contractslist xmlns="http://www.whaccontracts.com"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="www.whaccontracts.com/Sample contracts_schema.xsd" >
 
@@ -54,7 +54,9 @@
             <entry id="IB05_mercs"/>
             <entry id="IB04_mercs"/>
             <entry id="IB03_mercs"/>
-            
+
+            <!-- be -->
+            <entry id="ME01"/>
             
             <!-- units -->
             <entry id="MU01" />
@@ -113,6 +115,7 @@
             <entry id="MS24" />
             <entry id="MS25" />
             <entry id="MS26" />
+            <entry id="MS29" />
             <entry id="IS01_mercs" />
             <entry id="IS03_mercs" />
             <!-- <entry id="IS04_mercs" />  removed in 1.3 --> 
@@ -120,7 +123,7 @@
             <entry id="IS12_mercs" />
         </only>
         <benefits>
-            <ingameeffect label="">Sorry, no benefit :-(</ingameeffect>
+            <ingameeffect>Sorry, no benefit :-(</ingameeffect>
         </benefits>
     </contract>
     
@@ -170,7 +173,11 @@
             <entry id="IB02_mercs"/>
             <entry id="IB06_mercs"/>
             <entry id="IB09_mercs"/>
-            
+
+            <!-- be -->
+            <entry id="ME01"/>
+
+
             <!-- units -->
             <entry id="MU01" />
             <entry id="MU02" />
@@ -231,6 +238,7 @@
             <entry id="MS24" />
             <entry id="MS25" />
             <entry id="MS26" />
+            <entry id="MS29" />
             <entry id="IS01_mercs" />
             <entry id="IS03_mercs" />
             <entry id="IS04_mercs" />
@@ -239,7 +247,7 @@
             
         </only>
         <benefits>
-            <ingameeffect label="">All solos included in the army gain Advance Deployment</ingameeffect>
+            <ingameeffect>All solos included in the army gain Advance Deployment</ingameeffect>
         </benefits>
     </contract>
     
@@ -293,7 +301,7 @@
             
         </only>
         <benefits>
-            <ingameeffect label="">You gain +1 to the starting roll. You can redeploy all you solos after the Advance Deployment is done.</ingameeffect>
+            <ingameeffect >You gain +1 to the starting roll. You can redeploy all you solos after the Advance Deployment is done.</ingameeffect>
         </benefits>
     </contract>
      <contract
@@ -314,6 +322,8 @@
             <entry id="MJ14" />
             <entry id="MJ15" />
             <entry id="MJ19" />
+            <!-- be -->
+            <entry id="ME01"/>
             <!-- units -->
             <entry id="MU02" />
             <entry id="MA03" />
@@ -331,7 +341,7 @@
             <entry id="Lug_mercs"/>
         </only>
         <benefits>
-            <ingameeffect label="">Your deployment zone is extended 4"</ingameeffect>
+            <ingameeffect >Your deployment zone is extended 4"</ingameeffect>
             <alterFA entryId="MU06" bonus="1"/>
             <alterFA entryId="MA03" bonus="1"/>
             <alterFA entryId="MU07" bonus="1"/>
@@ -380,6 +390,7 @@
             <entry id="IU04" />
             <entry id="IU05" />
             <entry id="IU08" />
+            <entry id="IU09" />
             
             <entry id="IS02" />
             <entry id="IS05_minion" />
@@ -392,14 +403,15 @@
             <entry id="Snapjaw_minion"/>
 
 	        <entry id="MS26_minion" />
+            <entry id="MS30_minion" /> <!-- add Swamp Gobber River Raiders -->
             
         </only>
         <benefits>
-            <ingameeffect label="">Increase the FA of all non-character Gatorman models and units included in the army by +1 ; you can place two AOE 3 shallow water templates 20" of the back edge of your deployment zone.</ingameeffect>
+            <ingameeffect >Increase the FA of all non-character Gatorman models and units included in the army by +1 ; you can place two AOE 3 shallow water templates 20" of the back edge of your deployment zone.</ingameeffect>
             <alterFA entryId="IU04" bonus="1"/>
             <alterFA entryId="IU08" bonus="1"/>
-            <alterFA entryId="IU01" bonus="1"/>
             <alterFA entryId="IS11" bonus="1"/>
+            <alterFA entryId="IE02" bonus="1"/>
         </benefits>
     </contract>
     
@@ -447,9 +459,11 @@
             <entry id="Brine_minion"/>
             <entry id="MS26_minion" />
             <entry id="IS13" />
+            <entry id="IS14" />
+
         </only>
         <benefits>
-            <ingameeffect label="">All Farrow units in a Thornfall list get Advance Deployment.</ingameeffect>
+            <ingameeffect >All Farrow units in a Thornfall list get Advance Deployment.</ingameeffect>
             <alterFA entryId="IU02" bonus="1"/>
             <alterFA entryId="IU03" bonus="1"/>
             <alterFA entryId="IU06" bonus="1"/>
@@ -507,7 +521,7 @@
             
         </only>
         <benefits>
-            <ingameeffect label="">The army can include up to one non-Cephalyx Mercenary unit if that unit includes a Cephalyx Dominator UA. Units that include Cephalyx Dominator UAs gain Advance Deployment.</ingameeffect>
+            <ingameeffect >The army can include up to one non-Cephalyx Mercenary unit if that unit includes a Cephalyx Dominator UA. Units that include Cephalyx Dominator UAs gain Advance Deployment.</ingameeffect>
             <alterFA entryId="CU13_mercs" bonus="1"/>
             <alterFA entryId="CU14_mercs" bonus="1"/>
         </benefits>

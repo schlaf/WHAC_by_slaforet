@@ -3,7 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_001">
+    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_003">
+        <!-- 002 add cyphon, siege crawler, nicolas verendrye, correct puppet masters affiliation solos + swamp gobber river raiders + trench buster for Magnus bad seeds-->
+        <!-- 003 corrected drudge grunt ARM -->
       <warcasters>
         <warcaster id="Mw01" name="Magnus the Traitor" generation="P" full_name="Magnus the Traitor" qualification="Mercenary Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="MAGNUS" spd="5" str="6" mat="7" rat="5" def="14" arm="17" cmd="7" hitpoints="17" />
@@ -296,6 +298,29 @@
 		  <capacity title="SPELL DRIVER">When this model casts a spell, it can channel the spell through another model in its battlegroup that is in its control area. Once a spell is cast this way, the model it was channeled through suffers d3+1 damage points.</capacity>          
           <works_for id="faction_cryx" />
 		</warcaster>
+          <warcaster id="MW12" name="Cognifex Cyphon" full_name="Cognifex Cyphon" generation="P" qualification="Mercenary Cephalyx Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
+              <basestats name="Cyphon" spd="5" str="6" mat="6" rat="6" def="13" arm="17" cmd="9" hitpoints="18" pathfinder="true"/>
+              <weapons>
+                  <melee_weapon name="Pincer Embrace" pow="6" p_plus_s="12"></melee_weapon>
+                  <ranged_weapon name="Mind wipe" rng="SP10" rof="1" aoe="-" pow="10" magical="true">
+                      <capacity title="SILENCER">A model directly hit by this weapon cannot cast spells for one round.</capacity>
+                  </ranged_weapon>
+              </weapons>
+              <feat title="Adrenaline Rush">Monstrosities in Cyphon's battlegroup that are currently in his control area can gain +3 SPD, STR and ARM for one round. Those that do suffer 1 damage to each column on their damage grid at the end of their activation this turn.</feat>
+              <spell name="AFFLICTION" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">When a damage roll resulting from a direct hit fails to exceed the ARM of the target enemy model/unit, the affected model hit suffers 1 damage point.</spell>
+              <spell name="BREATH STEALER" cost="2" rng="10" aoe="-" pow="-" up="NO" off="YES">Target model/unit suffers –2 SPD and DEF for one round. Breath Stealer can be cast only once per turn.</spell>
+              <spell name="EMPATHIC OVERLOAD" cost="3" rng="8" aoe="4" pow="12" up="NO" off="YES">Models hit by Empathic Overload suffer a POW 12 damage roll. When Empathic Overload targets a friendly model, it automatically hits.</spell>
+              <spell name="GALLOWS" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallows' point of origin.</spell>
+              <spell name="ONSLAUGHT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Friendly Faction models beginning a charge in this model's control area gain Pathfinder during the charge.</spell>
+              <spell name="PERSEVERANCE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM, cannot be pushed and cannot be moved by a slam or throw.</spell>
+              <capacity title="MERCENARY">This model will work for Cryx.</capacity>
+              <capacity title="SELECTIVE">This model can be included only in Mercenary Contract armies that list Cephalyx as possible members.</capacity>
+              <capacity title="ESSENCE AMPLIFIER">When this model casts a spell and is the point of origin for the spell, you can destroy a friendly drudge in its command range. If you do the spell gains +5 RNG.</capacity>
+              <capacity title="SACRIFICIAL PAWN [MONSTROSITY]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Monstrosity model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
+              <capacity title="STEADY" type="">This model cannot be knocked down.</capacity>
+              <works_for id="faction_cryx" />
+          </warcaster>
+
       </warcasters>
       <warjacks>
         <warjack id="MJ04" name="Buccaneer" full_name="Buccaneer" qualification="Mercenary Light Warjack" fa="U" cost="3" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" completed="true">
@@ -1095,6 +1120,30 @@
           <restricted_to id="MS17" />
         </colossal>
       </colossals>
+        <battleEngines>
+            <battleEngine id="ME01" name="Hammerfall Siege Crawler" full_name="Hammerfall Siege Crawler"  qualification="Mercenary Rhulic Battle Engine" fa="2" cost="9" >
+                <basestats name="Siege Crawler" spd="5" str="15" mat="6" rat="6" def="9" arm="20" cmd="10" construct="true" hitpoints="22"/>
+                <weapons>
+                    <melee_weapon name="Bash" pow="0" p_plus_s="15"></melee_weapon>
+                    <ranged_weapon name="Quad Cannon" rng="10" rof="1" aoe="-" pow="12">
+                        <capacity title="AUTO FIRE[d3+1]">Make d3+1 ranged attacks targeting a primary target and any number of secondary targets within 2" of the first target. Ignore intervening models when declaring secondary targets. A secondary target cannot be targeted by more attacks than the primary target. Auto Fire counts as one attack for ROF.</capacity>
+                    </ranged_weapon>
+                    <ranged_weapon name="Siegebreaker" rng="12" rof="1" aoe="4" pow="15" location="L">
+                        <capacity title="CRITICAL STAGGER">On a critical hit, the model hit loses its initial attacks and cannot make special attack for one round.</capacity>
+                    </ranged_weapon>
+                    <ranged_weapon name="Siegebreaker" rng="12" rof="1" aoe="4" pow="15" location="R">
+                        <capacity title="CRITICAL STAGGER">See above.</capacity>
+                    </ranged_weapon>
+                </weapons>
+                <capacity title="MERCENARIES">These models will work for Cygnar and Khador.</capacity>
+                <capacity title="BULLDOZE">When this model advances into B2B contact with an enemy model during its activation, it can push that model up to 2" directly away from it. A model can be pushed by Bulldoze only once per activation. Bulldoze has no effect when this model makes a trample power attack.</capacity><!-- errata 12-2013 -->
+                <capacity title="GIRDED" >This model does not suffer blast damage. Friendly models in B2B with it do not suffer blast damage.</capacity>
+                <capacity title="WEAPON PLATFORM">This model can make melee and ranged attacks in the same activation. When this model makes its initial melee attacks or a power attack, it can also make its initial ranged attacks. This model can make ranged attacks even while in melee.</capacity>
+                <works_for id="faction_khador" />
+                <works_for id="faction_cygnar" />
+            </battleEngine>
+        </battleEngines>
+
       <units>
         <unit id="MU09" name="Alexia Ciannor &amp; the Risen &amp; Thrall Warrior" full_name="Alexia Ciannor &amp; the Risen &amp; Thrall Warrior" qualification="Mercenary Character Unit" fa="C" base_cost="5" full_cost="-" baseCount="10" fullCount="-" completed="true">
           <basestats name="ALEXIA" spd="6" str="4" mat="6" rat="5" def="15" arm="14" cmd="9" hitpoints="5" fearless="true" officer="true" />
@@ -1852,7 +1901,7 @@
 		  <capacity title="PSYCHIC PROJECTION">This model can channel spells through grunts in this unit that are in formation. When it does, you can choose up to two more of those grunts and cast the spell once through each, even if the channeler is engaged. Grunts in this unit that channel a spell this way are then removed from play.</capacity>
 		  <capacity title="SACRIFICIAL PAWN [DRUDGE GRUNT]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Drudge Grunt model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
           <model id="Drudges">
-            <basestats name="DRUDGE GRUNT" spd="5" str="8" mat="5" rat="2" def="11" arm="11" cmd="4" eyelesssight="true" fearless="true" tough="true"/>
+            <basestats name="DRUDGE GRUNT" spd="5" str="8" mat="5" rat="2" def="11" arm="15" cmd="4" eyelesssight="true" fearless="true" tough="true"/>
             <weapons>
                 <melee_weapon name="Battering Fists" pow="4" p_plus_s="12" />
             </weapons>
@@ -2542,6 +2591,23 @@
 		  <restricted_to id="Mx01" />
 		  <only_in_tier id="Magnus2 - Bad Seeds (NQ36)" />
 		</solo>
+
+          <solo id="YS11_mercs" name="Trench Buster (Magnus: Bad Seeds)" full_name="Trench Buster (Magnus: Bad Seeds)" cost="3" qualification="Cygnar Ogrun Trencher Solo" fa="2" completed="true">
+              <basestats name="Trench Buster" spd="6" str="9" mat="7" rat="5" def="13" arm="17" cmd="9" hitpoints="8" advance_deployment="true" tough="true" />
+              <weapons>
+                  <ranged_weapon name="Cinder Bomber" rng="10" rof="1" aoe="3" pow="14" fire="true" >
+                      <capacity title="Arcing Fire">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+                      <capacity title="Smoke">This weapon's AOE is a cloud effect that remains in play for one round.</capacity>
+                  </ranged_weapon>
+                  <melee_weapon name="Bayonet" pow="4" p_plus_s="13" />
+                  <melee_weapon name="Assault Shield" pow="2" p_plus_s="11" />
+              </weapons>
+              <capacity title="Assault">As part of a charge, after moving but before making its charge attack, a model with Assault can make one ranged attack targeting the model charged unless they were in melee with each other at the start of the affected model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model must still make the ranged attack before its activation ends.)</capacity>
+              <capacity title="Flank [Trencher]" type="">When this model makes a melee attack against an enemy model within a melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
+              <capacity title="Girded" >This model does not suffer blast damage. Friendly models in B2B with it do not suffer blast damage.</capacity>
+              <only_in_tier id="Magnus2 - Bad Seeds (NQ36)" />
+          </solo>
+
 		<!-- ashlynn viva la resistance -->		
         <solo id="YS02_mercs" name="Gun Mage Captain Adept (Ashlynn: Viva La Resistance)" full_name="Gun Mage Captain Adept (Ashlynn: Viva La Resistance)" qualification="Cygnar Arcane Tempest Solo" fa="2" cost="2" completed="true">
           <basestats name="CAPTAIN" spd="6" str="4" mat="5" rat="8" def="15" arm="11" cmd="9" hitpoints="5" advance_deployment="true" commander="true" />
@@ -2556,7 +2622,10 @@
           <capacity title="● SNIPE">This attack gains +4 RNG.</capacity>
 		  <restricted_to id="MW04" />
 		  <only_in_tier id="Ashlynn - Viva la resistance" />
-        </solo>        
+        </solo>
+
+
+
        <!-- cephalyx-->
         <solo id="MS28" name="Cephalyx Dominator" full_name="Cephalyx Dominator" fa="1" cost="1" qualification="Mercenary Cephalyx Unit Attachment" unit_attachment="true" completed="true">
           <basestats name="DOMINATOR" spd="6" str="6" mat="6" rat="4" def="14" arm="13" cmd="9" hitpoints="5" officer="true" pathfinder="true"/>
@@ -2590,8 +2659,9 @@
           <restricted_to id="MU08"/>
           <restricted_to id="MU18"/>
           <restricted_to id="MU20"/>
-              <only_in_tier id="Unwilling and Able"/>
-              <only_in_tier id="Exulon - Will of Darkness"/>
+            <only_in_tier id="Puppet Masters"/>
+            <only_in_tier id="Exulon - Will of Darkness"/>
+            <only_in_tier id="Cyphon - Oppression Overwhelming"/>
         </solo>        
         <solo id="MS27" name="Cephalyx Agitator" full_name="Cephalyx Agitator" fa="3" cost="2" qualification="Mercenary Cephalyx Solo" completed="true">
           <basestats name="AGITATOR" spd="6" str="6" mat="6" rat="4" def="14" arm="13" cmd="9" hitpoints="5" fearless="true" pathfinder="true"/>
@@ -2604,9 +2674,52 @@
 		  <capacity title="● INSTIGATE (★ACTION)"> While within 5" of this model, friendly Drudge and Monstrosity models gain +2 on attack and damage rolls. Instigate lasts for one turn.</capacity>
 		  <capacity title="● PSYCHIC ASSAULT (★ATTACK)">Psychic Assault is a RNG SP 8 magic attack. This attack ignores LOS. Models hit suffer a POW 12 damage roll.</capacity>
 		  <capacity title="SACRIFICIAL PAWN [MONSTROSITY]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Monstrosity model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity> 
-              <only_in_tier id="Unwilling and Able"/>
-              <only_in_tier id="Exulon - Will of Darkness"/>
-        </solo>        
+          <only_in_tier id="Puppet Masters"/>
+          <only_in_tier id="Exulon - Will of Darkness"/>
+          <only_in_tier id="Cyphon - Oppression Overwhelming"/>
+        </solo>
+
+
+
+        <solo id="MS29" name="Sergeant Nicolas Verendrye" full_name="Sergeant Nicolas Verendrye" fa="C" cost="2" qualification="Mercenary Steelhead Character Solo" >
+          <basestats name="Nicolas" spd="6" str="6" mat="5" rat="5" def="13" arm="14" cmd="9" hitpoints="5" fearless="true" tough="true" commander="true"/>
+          <weapons>
+              <melee_weapon name="Halberd" pow="5" p_plus_s="11" reach="true">
+                  <capacity title="POWERFUL CHARGE">This model gains +2 to charge attack rolls with this weapon.</capacity>
+                  <capacity title="SET DEFENSE">A model in this model's front arc suffers -2 on charge, slam power attack, and impact rolls against this model.</capacity>
+              </melee_weapon>
+              <ranged_weapon name="Pistol" rng="8" rof="1" aoe="" pow="10"/>
+          </weapons>
+          <capacity title="MERCENARY">This model will work for Cryx, Cygnar, Khador and the Protectorate</capacity>
+            <capacity title="Field Medic">While within 3" of this model, other friendly living non-warcaster, non-warlock Faction warrior models gain Tough</capacity>
+            <capacity title="Flank [Steelhead]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
+            <capacity title="Hold the line">While B2B with one or more Steelhead models, this model gains +2 ARM.</capacity>
+            <capacity title="Leadership [Steelhead]">While in this model's command range, friendly Steelhead models gain Defensive Line. (While a model with Defensive line is B2B with one or more models in its unit, it gains +2 ARM)</capacity>
+          <works_for id="faction_cryx"/>
+          <works_for id="faction_cygnar"/>
+          <works_for id="faction_khador"/>
+          <works_for id="faction_menoth"/>
+        </solo>
+
+          <solo id="MS30" name="Swamp Gobber River Raiders" full_name="Swamp Gobber River Raiders" qualification="Mercenary Minion Privateer Sea Dog Solo" fa="3" cost="2" completed="true">
+              <basestats name="RAIDER" spd="6" str="3" mat="5" rat="5" def="14" arm="12" cmd="7" advance_deployment="true"/>
+              <weapons>
+                  <melee_weapon name="Hand Weapon" pow="3" p_plus_s="6">
+                      <capacity title="WEAKEN">A living model hit by this weapon suffers -2 STR and DEF for one round.</capacity>
+                  </melee_weapon>
+                  <ranged_weapon name="Harpoon Pistol" rng="6" rof="1" aoe="-" pow="10">
+                      <capacity title="REELED IN">If this weapon hits a non-Incorporeal enemy model, this model can be placed B2B with that enemy model.</capacity>
+                  </ranged_weapon>
+              </weapons>
+              <capacity title="MERCENARIES">This model will work for Cryx.</capacity>
+              <capacity title="MINION">This model will work for Circle, Skorne, and the Blindwater Congregation pact.</capacity>
+              <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+              <capacity title="VIRTUOSO">This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+              <capacity title="MODEL COUNT">3 Raiders.</capacity>
+              <works_for id="faction_cryx" />
+          </solo>
+
+
         <!-- cryx solos that can be taken in cephalyx contract -->
         <solo id="CS02_mercs" name="Bloat Thrall" full_name="Bloat Thrall" cost="2" qualification="Mercenary Solo" fa="2" completed="true">
           <basestats name="BLOAT THRALL" spd="4" str="7" mat="5" rat="4" def="10" arm="14" cmd="5" hitpoints="8" undead="true" />
@@ -2618,7 +2731,7 @@
           </weapons>
           <capacity title="DEATH BLAST">When this model is disabled, center a 5" AOE on it, then remove this model from play. Models in the AOE suffer a POW 14 blast damage roll.</capacity>
           <capacity title="STEADY">This model cannot be knocked down.</capacity>
-          <only_in_tier id="Unwilling and Able"/>
+          <only_in_tier id="Puppet Masters"/>
         </solo>        
         <solo id="CS05_mercs" name="Machine Wraith" full_name="Machine Wraith" cost="1" qualification="Mercenary Solo" fa="3" completed="true">
           <basestats name="MACHINE WRAITH" spd="7" str="4" mat="6" rat="0" def="14" arm="12" cmd="7" incorporeal="true" undead="true" />
@@ -2626,7 +2739,7 @@
             <melee_weapon name="Mechano-claws" pow="4" p_plus_s="8" />
           </weapons>
           <capacity title="MACHINE MELD" type="*Action">RNG 1. Target enemy non-character warjack with a functional Cortex system or an inert non-character warjack with a functional Cortex system. If the warjack is in range, take control of it and remove this model from the table. Effects on this model when it is removed from the table expire. You cannot activate the warjack this turn. If the melded warjack was part of a battlegroup, while it is in its former controller's control area during the former controller's activation the former controller can spend focus points to attempt to regain control of it at 1 focus point per attempt. If it does so, the former controller and this model each roll a d6 and add their CMD. If the former controller's total is higher, it regains control of the warjack and this model exits the warjack. If the former controller's total is not higher, you maintain control of the warjack. After resolving an attack in which the melded warjack suffered 1 or more damage points, this model must make a command check. If it fails this check, it exits the warjack after resolving continuous effects during your next Maintenance Phase. You can choose to have this model exit the warjack after resolving continuous effects during your Maintenance Phase. If this model exits the warjack for any reason, control of the warjack returns its former controller. Place this model within 3" of the warjack. If the warjack was inert when this model melded with it, the warjack becomes autonomous. This model is destroyed if the melded warjack is destroyed before it exits the warjack.</capacity>
-          <only_in_tier id="Unwilling and Able"/>
+          <only_in_tier id="Puppet Masters"/>
         </solo>        
         <solo id="CS06_mercs" name="Pistol Wraith" full_name="Pistol Wraith" cost="3" qualification="Mercenary Solo" fa="2" completed="true">
           <basestats name="PISTOL WRAITH" spd="6" str="4" mat="4" rat="7" def="14" arm="12" cmd="7" hitpoints="5" gunfighter="true" incorporeal="true" undead="true" />
@@ -2636,7 +2749,7 @@
             </ranged_weapon>
           </weapons>
           <capacity title="BODY COUNT">This model gains one soul token each time it destroys a living enemy model. It can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to boost attack or damage rolls at one token per boost.</capacity>
-          <only_in_tier id="Unwilling and Able"/>
+          <only_in_tier id="Puppet Masters"/>
         </solo>		
       </solos>
     </army>

@@ -3,7 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_retribution" name="retribution" version="forum_retribution_001">
+    <army faction="faction_retribution" name="retribution" version="forum_retribution_002">
+        <!-- 002 thyron, helios, electromancers, arcanist (force wall) -->
       <warcasters>
         <!--Adeptis Rahn1 complete-->
         <warcaster id="RW01" name="Rahn1" full_name="Adeptis Rahn" generation="P" qualification="Retribution Warcaster" focus="8" warjack_points="6" fa="C" completed="true" generation_id="Rahn">
@@ -183,6 +184,24 @@
           <capacity title="Arcane Vortex">This model can immediately negate any spell that targets it or a model within 3" of it by spending 1 focus point before the RNG of the spell is measured.  The negated spell does not take effect, but its COST remains spent.</capacity>
           <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them.  This model ignores intervening models when declaring its charge target.</capacity>
           <capacity title="True Sight">This model ignores concealment, Camouflage, and Stealth.</capacity>
+        </warcaster>
+        <warcaster id="RW08" name="Thyron" full_name="Thyron, Sword of Truth" generation="P" qualification="Retribution Warcaster" focus="6" warjack_points="5" fa="C" completed="true">
+          <basestats name="Thyron" spd="6" str="7" mat="7" rat="5" def="15" arm="16" cmd="9" hitpoints="18" />
+          <weapons>
+              <melee_weapon name="Remembrance" pow="6" p_plus_s="13" magical="true" reach="true" weapon_master="true">
+              </melee_weapon>
+          </weapons>
+          <feat title="Blades of Vengeance">Thyron and friendly Faction models beginning their activations in Thyron's control area gain an additional die on melee attack rolls and Side Step. (When a model with Side Step hits an enemy model with an initial melee attack or a melee special attack that is not a power attack, it can advance up to 2" after the attack is resolved. A model with Side Step cannot be targeted by free strikes during this movement.)</feat>
+
+          <spell name="ASSAIL" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction warjack can charge or make slam or trample power attacks without spending focus. The warjack gains +2" movement when it charges or makes a slam or trample power attack. Models slammed by the warjack are moved +2".</spell>
+          <spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Center a 5" AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll. Each model damaged by Ground Zero is pushed d6" directly away from this model in the order you choose.</spell>
+            <spell name="ONSLAUGHT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Friendly Faction models beginning a charge in this model's control area gain Pathfinder during the charge.</spell>
+            <spell name="SPELLPIERCER" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While within this model's control area, friendly Faction model/units' weapons gain Magical Weapon and Blessed. Spellpiercer lasts for one round. (When making an attack with a weapon with Blessed, ignore spell effects that add to a model's ARM or DEF.)</spell>
+            <spell name="STORM RAGER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model gains +2 STR, MAT, and ARM and cannot be targeted by combined ranged attacks or combined melee attacks.</spell>
+
+          <capacity title="Blade Shield">This model gains +2 DEF against ranged attack rolls.</capacity>
+          <capacity title="Field Marshal [Cleave]">Models in this model's battlegroup gain Cleave. (When a model with Cleave destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved the model can make one additional melee attack. The model can gain only one additional attack from Cleave each activation.)</capacity>
+          <capacity title="Riposte">When this model is missed by an enemy melee attack, immediately after the attack is resolved it can make one normal melee attack against the attacking model.</capacity>
         </warcaster>
       </warcasters>
       <warjacks>
@@ -408,6 +427,30 @@
             </ranged_weapon>
           </weapons>
         </colossal>
+        <colossal id="RJ16" name="Helios" full_name="Helios" damage_grid_left="xxxxxxxxx...x..GGG.LLGCCLLCCCCLCMMMM" damage_grid_right="xxxxxx...xxxGGG..xCCGRR.CCCCRRMMMMCR" cost="17" qualification="Heavy Warjack" fa="2" is_myrmidon="true" force_field="12" completed="true">
+          <basestats name="Helios" spd="5" str="16" mat="6" rat="5" def="10" arm="19" cmd="0" immunity_fire="true"/>
+            <weapons>
+                <melee_weapon p_plus_s="20" pow="4" name="Inferno Fist" location="L" open_fist="true" continuous_fire="true">
+                    <capacity title="FLAME BURST">When this model boxes an enemy model with this weapon, enemy models within 1" of the boxed model suffer the Fire continuous effect.</capacity>
+                </melee_weapon>
+                <melee_weapon p_plus_s="20" pow="4" name="Inferno Fist" location="R" open_fist="true" continuous_fire="true">
+                    <capacity title="FLAME BURST">When this model boxes an enemy model with this weapon, enemy models within 1" of the boxed model suffer the Fire continuous effect.</capacity>
+                </melee_weapon>
+                <ranged_weapon rng="12" name="Tractor Beam" aoe="-" pow="-" rof="1">
+                    <capacity title="Force Grip">An enemy model hit by this weapon can be pushed up to 3" in any direction</capacity>
+                    <capacity title="Rapid Shot [3]">This model can make 3 initial attacks with this weapon during its combat action, ignoring ROF.</capacity>
+                </ranged_weapon>
+            </weapons>
+            <capacity title="Field Dependent">While its Field Generator system is crippled, this model loses Force Barrier and Force Gate and cannot make Tractor Beam attacks.</capacity>
+            <capacity title="FORCE BARRIER">This model gains +2 DEF against ranged attack rolls and does not suffer blast damage.</capacity>
+            <capacity title="FORCE GATE">During its activation, this model can spend focus to gain abilities. It gains one ability per focus point spent. Force Gate abilities last for one round.</capacity>
+            <capacity title="● Broadcast power">Allocate 1 focus point to each friendly myrmidon within 3" of this model. A myrmidon can be allocated only 1 focus point per round as a result of Broadcast Power.</capacity>
+            <capacity title="● Distortion Field">This model gains +2 DEF and Poltergeist. (When an enemy model misses a model with Poltergeist with an attack, immediately after the attack is resolved you can choose to push the enemy model d3" directly away from the model with Poltergeist.)</capacity>
+            <capacity title="● Repulsor Field">When this model is hit with a melee attack, after the attack is resolved the attacking model is pushed 1" directly away from this model.</capacity>
+            <capacity title="VIRTUOSO">This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+        </colossal>
+
+
       </colossals>
       <battleEngines>
         <battleEngine id="RE01" name="Arcantrik Force Generator" full_name="Arcantrik Force Generator" cost="10" qualification="battle engine" fa="2" completed="true">
@@ -540,6 +583,21 @@
           <capacity title="Arcane Assassin">When making attacks, ignore focus points overboosting the target's Power Field and spell effects adding to its ARM or DEF</capacity>
           <capacity title="Gang">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
         </unit>
+        <unit id="RU11" name="House Vyre Electromancers" full_name="House Vyre Electromancers" base_cost="4" baseCount="3" full_cost="-" fullCount="-" qualification="Retribution Unit" fa="2" completed="true">
+          <basestats name="Leader and grunts" spd="6" str="5" mat="6" rat="6" def="13" arm="12" cmd="9" immunity_electricity="true"/>
+          <weapons>
+              <melee_weapon name="Storm Inducer" pow="6" p_plus_s="11" magical="true" reach="true">
+                  <capacity title="Cortex Damage">When a warjack is hit by this weapon, it suffer 1 damage point to its first available Cortex system box.</capacity>
+              </melee_weapon>
+              <ranged_weapon name="Inducer Bolt" rng="10" rof="1" aoe="-" pow="12" magical="true" electricity="true">
+              </ranged_weapon>
+          </weapons>
+          <capacity title="Attack type">Each time this model makes a ranged attack, choose one of the following abilities</capacity>
+          <capacity title="● Energy Leak">When a warjack is hit with this weapon, it suffers a cumulative -1 penalty to its focus allocation limit for one round. Models that are immune to Disruption are immune to Energy Leak.</capacity>
+          <capacity title="● Lightning Generator">When a model is hit with this weapon, lightning arcs from that model to d3 consecutive additional models. The lightning arcs to the nearest model it has not already arced to within 4", ignoring this model. Each model the lightning arcs to suffer an POW 10 Electrical damage roll.</capacity>
+          <capacity title="● Pulse fire">When a model is hit with this weapon, it suffers d3 damage rolls instead of one.</capacity>
+        </unit>
+
       </units>
       <solos>
         <!--Arcanist complete-->
@@ -552,6 +610,18 @@
           <capacity title="Power Booster" type="*Action">RNG 5. Target friendly Faction warjack. If the target warjack is in range and has no focus points, it gains 1 focus point. If the warjack is Disrupted, it is no longer Disrupted.</capacity>
           <capacity title="Repair [8]" type="*Action">This model can attempt repairs on any damaged friendly Faction warjack.  To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
         </solo>
+          <solo id="RS01_forceWall" name="Arcanist" full_name="Arcanist (Force Wall)" cost="1" qualification="Retribution Solo" fa="2" completed="true">
+              <basestats name="Arcanist" spd="6" str="5" mat="5" rat="4" def="13" arm="12" cmd="8" />
+              <weapons>
+                  <melee_weapon name="Multi Tool" pow="3" p_plus_s="8"></melee_weapon>
+              </weapons>
+              <capacity title="Theme force[Force Wall]">This model can be included only in a Force Wall theme force army list</capacity>
+              <capacity title="Concentrated Power" type="*Action">RNG 5. Target friendly Faction warjack. If the warjack is in range, it gains +2 on melee damage rolls this turn.</capacity>
+              <capacity title="Force Multiplier" type="*Action">RNG 5. Target friendly Faction warjack.  If the warjack is in range and has 1 or more focus, points, it is allocated 1 focus point.</capacity>
+              <capacity title="Power Booster" type="*Action">RNG 5. Target friendly Faction warjack. If the target warjack is in range and has no focus points, it gains 1 focus point. If the warjack is Disrupted, it is no longer Disrupted.</capacity>
+              <capacity title="Repair [8]" type="*Action">This model can attempt repairs on any damaged friendly Faction warjack.  To attempt repairs, this model must be B2B with the damaged warjack and make a skill check. If successful, remove d6 damage points from the warjack's damage grid.</capacity>
+              <only_in_tier id="Kaelyssa - Force Wall"></only_in_tier>
+          </solo>
         <!--Scyir complete-->
         <solo id="RS02" name="Dawnguard Scyir" full_name="Dawnguard Scyir" cost="2" qualification="Retribution Solo" fa="2" completed="true">
           <basestats name="Dawnguard Scyir" spd="6" str="6" mat="8" rat="4" def="13" arm="15" cmd="10" hitpoints="5" jack_marshal="true" commander="true" />
@@ -697,6 +767,18 @@
           <capacity title="Firing Solution [Houseguard]" type="*Action">RNG CMD.  Target Friendly Houseguard unit.  If the Houseguard unit is in range, it ignores Camouflage and Stealth during its activation this turn.</capacity>
           <capacity title="Inspiration [Houseguard]">Friendly Houseguard models/units in this model's command range never flee and immediately rally.</capacity>
         </solo>
+
+
+        <solo id="RS14" name="Soulless Voidtracer" full_name="Soulless Voidtracer" cost="1" qualification="Retribution Mage Hunter Solo" fa="2" completed="true">
+          <basestats name="Voidtracer" spd="6" str="6" mat="6" rat="3" def="13" arm="13" cmd="5" fearless="true" stealth="true"/>
+          <weapons>
+              <melee_weapon name="Two-Handed Sword" pow="6" p_plus_s="12" magical="true" reach="true"/>
+          </weapons>
+            <capacity title="Arcane Vacuum">When a model in this model's command range is targeted by an enemy spell, before the spell is resolved the enemy spellcaster takes d3 damages points.</capacity>
+            <capacity title="Soulless">This model does not generate a soul token when it is destroyed.</capacity>
+            <capacity title="Spell Ward">This model cannot be targeted by spells.</capacity>
+        </solo>
+
         <!--**************************-->
         <!--*****Unit attachments*****-->
         <!--**************************-->
@@ -855,6 +937,9 @@
             <!--Mage Hunter Infiltrators-->
           </restricted_to>
         </solo>
+
+
+
       </solos>
     </army>
   </armies>

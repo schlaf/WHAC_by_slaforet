@@ -55,6 +55,9 @@
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+<entry id="KJ18"/>
+<entry id="KJ19"/>
+<entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KA08" />
         <entry id="KU05" />
@@ -100,7 +103,9 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  3(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ09 KJ11 KJ13 KJ15)-->
+<!--
+ Must have  3(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ09 KJ11 KJ13 KJ15 KJ16 KJ18 KJ19 KJ20)
+-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
           <entry id="KJ01" />
@@ -115,6 +120,9 @@
           <entry id="KJ13" />
           <entry id="KJ15" />
           <entry id="KJ16" />
+<entry id="KJ18"/>
+<entry id="KJ19"/>
+<entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -149,6 +157,9 @@
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+<entry id="KJ18"/>
+<entry id="KJ19"/>
+<entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KA08" />
         <entry id="KU05" />
@@ -233,6 +244,8 @@
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16"/>
+<entry id="KJ18"/>
+<entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KU06" />
         <entry id="KU09" />
@@ -281,7 +294,9 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have in battlegroup  2(KJ01 KJ08 KJ11 KJ13 KJ15)-->
+<!--
+ Must have in battlegroup  2(KJ01 KJ08 KJ11 KJ13 KJ15 KJ16)
+-->
       <must_have>
         <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="KJ01" />
@@ -323,7 +338,10 @@
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
-        <entry id="KJ17" /> <!-- special issue : Ruin -->
+<entry id="KJ17"/>
+<entry id="KJ18"/>
+<entry id="KJ19"/>
+<entry id="KJ20"/>
         <entry id="KU08" />
         <entry id="KU05" />
         <entry id="KU04" />
@@ -384,7 +402,9 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have in battlegroup  3(KJ02 KJ03 KJ04 KJ05 KJ06)-->
+<!--
+ Must have in battlegroup  3(KJ02 KJ03 KJ04 KJ05 KJ06 KJ19)
+-->
       <must_have>
         <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="KJ02" />
@@ -393,6 +413,7 @@
           <entry id="KJ05" />
           <entry id="KJ06" />
           <entry id="KJ17" />
+<entry id="KJ19"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -437,7 +458,8 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ04" />
         <entry id="KJ05" />
         <entry id="KJ06" />
-        <entry id="KJ17" /> <!-- special issue : Ruin -->
+<entry id="KJ17"/>
+<entry id="KJ19"/>
         <entry id="KU01" />
         <entry id="KU03" />
         <entry id="KU11" />
@@ -481,7 +503,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have in battlegroup  2(KJ02 KJ03 KJ04 KJ05 KJ06)-->
+<!--
+ Must have in battlegroup  2(KJ02 KJ03 KJ04 KJ05 KJ06 KJ17 KJ19)
+-->
       <must_have>
         <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="KJ02" />
@@ -524,7 +548,10 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
-        <entry id="KJ17" /> <!-- special issue : Ruin -->
+<entry id="KJ17"/>
+<entry id="KJ18"/>
+<entry id="KJ19"/>
+<entry id="KJ20"/>
         <entry id="KU02" />
         <entry id="KA06" />
         <entry id="KS01" />
@@ -562,7 +589,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have in battlegroup  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15)-->
+<!--
+ Must have in battlegroup  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15 KJ17 KJ18 KJ19 KJ20)
+-->
       <must_have>
         <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="KJ01" />
@@ -577,6 +606,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ15" />
           <entry id="KJ16" />
           <entry id="KJ17" />
+<entry id="KJ18"/>
+<entry id="KJ19"/>
+<entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -614,7 +646,10 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
                 <entry id="KJ13" />
                 <entry id="KJ15" />
                 <entry id="KJ16" />
-                <entry id="KJ17" /> <!-- special issue : Ruin -->
+<entry id="KJ17"/>
+<entry id="KJ18"/>
+<entry id="KJ19"/>
+<entry id="KJ20"/>
                 <entry id="KU02" />
                 <entry id="KA06" />
                 <entry id="KU06" />
@@ -676,7 +711,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
             </benefits>
         </level>
         <level number="4">
-            <!-- Must have in battlegroup  2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15)-->
+<!--
+ Must have in battlegroup  2(KJ06 KJ16)
+-->
             <must_have>
                 <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
                     <entry id="KJ06" />
@@ -718,7 +755,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ16" />
         
         <entry id="KJ10" />
-        
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
                 
         <entry id="KU01" />
         <entry id="KA08" />
@@ -797,7 +836,10 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
-        <entry id="KU08" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
+          <entry id="KU08" />
         <entry id="KU05" />
         <entry id="KU03" />
         <entry id="KA01" />
@@ -878,7 +920,11 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ15" />
         <entry id="KJ16" />
         <entry id="KJ10" />
-        <entry id="KE01" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
+
+          <entry id="KE01" />
         <entry id="KU01" />
         <entry id="KU11" />
         <entry id="KU19" />
@@ -943,6 +989,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <alterCost bonus="1" entryId="KJ10" />
         <alterCost bonus="1" entryId="KJ15" />
         <alterCost bonus="1" entryId="KJ16" />
+          <alterCost bonus="1" entryId="KJ18"/>
+          <alterCost bonus="1" entryId="KJ19"/>
+          <alterCost bonus="1" entryId="KJ20"/>
       </benefits>
     </level>
   </tiers>
@@ -973,6 +1022,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KA08" />
         <entry id="KU10" />
@@ -1037,6 +1089,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ13" />
           <entry id="KJ15" />
           <entry id="KJ16" />
+            <entry id="KJ18"/>
+            <entry id="KJ19"/>
+            <entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -1071,6 +1126,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KA08" />
         <entry id="KU05" />
@@ -1168,6 +1226,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ14" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+        <entry id="KJ18"/>
         <entry id="KE01" />
         <entry id="KU01" />
         <entry id="KU03" />
@@ -1227,6 +1286,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ14" />
           <entry id="KJ15" />
           <entry id="KJ16" />
+          <entry id="KJ18"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -1261,6 +1321,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16"/>
+        <entry id="KJ18"/>
+        <entry id="KJ19"/>
+        <entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KA08" />
         <entry id="KU07" />
@@ -1322,6 +1385,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ13" />
           <entry id="KJ15" />
           <entry id="KJ16"/>
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -1338,6 +1404,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <alterCost bonus="1" entryId="KJ13" />
         <alterCost bonus="1" entryId="KJ15" />
         <alterCost bonus="1" entryId="KJ16" />
+          <alterCost bonus="1" entryId="KJ18" />
+          <alterCost bonus="1" entryId="KJ19" />
+          <alterCost bonus="1" entryId="KJ20" />
       </benefits>
     </level>
   </tiers>
@@ -1369,6 +1438,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KA08" />
         <entry id="KU07" />
@@ -1421,6 +1493,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ11" />
           <entry id="KJ13" />
           <entry id="KJ16" />
+            <entry id="KJ18"/>
+            <entry id="KJ19"/>
+            <entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -1455,6 +1530,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KU19" />
         <entry id="KA08" />
@@ -1511,6 +1589,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ13" />
           <entry id="KJ15" />
           <entry id="KJ16"/>
+            <entry id="KJ18"/>
+            <entry id="KJ19"/>
+            <entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -1540,6 +1621,8 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ20"/>
         <entry id="MJ03_forKW06" />
         <entry id="KU07" />
         <entry id="KU15" />
@@ -1611,6 +1694,8 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <alterCost bonus="1" entryId="MJ03_forKW06" />
         <alterCost bonus="1" entryId="KJ15" />
         <alterCost bonus="1" entryId="KJ16" />
+          <alterCost bonus="1" entryId="KJ18"/>
+          <alterCost bonus="1" entryId="KJ20"/>
       </benefits>
     </level>
   </tiers>
@@ -1641,6 +1726,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ13" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         <entry id="KU10" />
         <entry id="KA05" />
         <entry id="KU15" />
@@ -1701,6 +1789,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ13" />
           <entry id="KJ15" />
           <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -1736,6 +1827,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <entry id="KJ14" />
         <entry id="KJ15" />
         <entry id="KJ16" />
+          <entry id="KJ18"/>
+          <entry id="KJ19"/>
+          <entry id="KJ20"/>
         <entry id="KU01" />
         <entry id="KA08" />
         <entry id="KU04" />
@@ -1796,6 +1890,9 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
           <entry id="KJ14" />
           <entry id="KJ15" />
           <entry id="KJ16" />
+            <entry id="KJ18"/>
+            <entry id="KJ19"/>
+            <entry id="KJ20"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -1807,7 +1904,137 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         <alterCost bonus="1" entryId="KJ14" />
         <alterCost bonus="1" entryId="KJ15" />
         <alterCost bonus="1" entryId="KJ16" />
+          <alterCost bonus="1" entryId="KJ18"/>
+          <alterCost bonus="1" entryId="KJ20"/>
       </benefits>
     </level>
   </tiers>
+
+
+
+    <tiers name="Zerkova2 - Winter's Wind" casterId="Kx06" faction="faction_khador">
+        <level number="1">
+            <only>
+                <entry id="Kx06"/>
+                <entry id="KJ01"/>
+                <entry id="KJ02"/>
+                <entry id="KJ03"/>
+                <entry id="KJ04"/>
+                <entry id="KJ05"/>
+                <entry id="KJ06"/>
+                <entry id="KJ08"/>
+                <entry id="KJ11"/>
+                <entry id="KJ13"/>
+                <entry id="KJ15"/>
+                <entry id="KJ18"/>
+                <entry id="KJ19"/>
+                <entry id="KJ20"/>
+                <entry id="KU02"/>
+                <entry id="KA06"/>
+                <entry id="KU07"/>
+                <entry id="KU19"/>
+                <entry id="KU06"/>
+                <entry id="KA02"/>
+                <entry id="KA03"/>
+                <entry id="KU09"/>
+                <entry id="KU13"/>
+                <entry id="KU17"/>
+                <entry id="KS06"/>
+                <entry id="KA07"/>
+                <entry id="MU01"/>
+                <entry id="MU02"/>
+                <entry id="MU04"/>
+                <entry id="MU05"/>
+                <entry id="MU06"/>
+                <entry id="MU08"/>
+                <entry id="MU09"/>
+                <entry id="MU11"/>
+                <entry id="MU12"/>
+                <entry id="MU13"/>
+                <entry id="MU14"/>
+                <entry id="MU16"/>
+                <entry id="MU18"/>
+                <entry id="MU20"/>
+            </only>
+            <benefits>
+                <ingameeffect>
+                    The army can include up to one Mercenary unit if that unit includes Koldun Kapitan Valachev.
+                </ingameeffect>
+            </benefits>
+        </level>
+        <level number="2">
+            <!--  Must have 2(KU07 KU19) -->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="KU07"/>
+                    <entry id="KU19"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>For each Greylord unit in the army, one warjack gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!--  Must have KA07 1(MU09 MU11 MU20)  Valachav's unit contains at least one other model with Magic Ability -->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="KA07"/>
+                </entrygroup>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="MU09"/>
+                    <entry id="MU11"/>
+                    <entry id="MU20"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have 2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15 KJ18 KJ19 KJ20) -->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="KJ01"/>
+                    <entry id="KJ02"/>
+                    <entry id="KJ03"/>
+                    <entry id="KJ04"/>
+                    <entry id="KJ05"/>
+                    <entry id="KJ06"/>
+                    <entry id="KJ08"/>
+                    <entry id="KJ11"/>
+                    <entry id="KJ13"/>
+                    <entry id="KJ15"/>
+                    <entry id="KJ18"/>
+                    <entry id="KJ19"/>
+                    <entry id="KJ20"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>For every two warjacks add one Koldun Lord Solo to the army free of cost. This solo does not count toward FA restrictions.</ingameeffect>
+                <freeModel>
+                    <!-- One Koldun Lord free for every 2(KJ01 KJ02 KJ03 KJ04 KJ05 KJ06 KJ08 KJ11 KJ13 KJ15 KJ18 KJ19 KJ20) -->
+                    <entry id="KS06" />
+                </freeModel>
+                <freeModel>
+                    <entry id="KS06" />
+                    <forEach groupOf="2">
+                        <entry id="KJ01"/>
+                        <entry id="KJ02"/>
+                        <entry id="KJ03"/>
+                        <entry id="KJ04"/>
+                        <entry id="KJ05"/>
+                        <entry id="KJ06"/>
+                        <entry id="KJ08"/>
+                        <entry id="KJ11"/>
+                        <entry id="KJ13"/>
+                        <entry id="KJ15"/>
+                        <entry id="KJ18"/>
+                        <entry id="KJ19"/>
+                        <entry id="KJ20"/>
+                    </forEach>
+                </freeModel>
+            </benefits>
+        </level>
+    </tiers>
+
 </tierslist>

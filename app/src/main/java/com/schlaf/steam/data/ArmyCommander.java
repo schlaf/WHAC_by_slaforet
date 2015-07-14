@@ -64,11 +64,14 @@ public abstract class ArmyCommander extends ArmyElement {
 	}
 
 	public ArrayList<Spell> getSpells() {
-		return spells;
+        if (getModels()!=null && getModels().size() > 0) {
+            return getModels().get(0).getSpells();
+        }
+        return new ArrayList<Spell>();
 	}
 
 	public void setSpells(ArrayList<Spell> spells) {
-		this.spells = spells;
+        throw new UnsupportedOperationException();
 	}
 
 	public String getGenerationId() {

@@ -86,7 +86,7 @@
 			<melee_weapon name="Rapture" pow="7" p_plus_s="18" magical="true" reach="true">
               <capacity title="ERUPTION OF ASH">If a model is boxed by an attack made with this weapon, center a 3" AOE cloud effect on the boxed model and then remove that model from play. The AOE remains in play for one round. Enemy models in the AOE when it was put in play are hit and suffer a POW 12 fire damage roll. Enemy models entering or ending their activation in the AOE suffer a POW 12 fire damage roll. Eruption of Ash damage rolls cannot be boosted.</capacity>
             </melee_weapon>
-            <melee_weapon name="Claw" pow="3" p_plus_s="12" />            
+            <melee_weapon name="Claw" pow="3" p_plus_s="14" />
           </weapons>
           <feat title="Dragon Storm">After all friendly models have completed their activations this turn, each warbeast in Thagrosh's battlegroup that is in his control area can make a full advance followed by one normal melee attack. Completely resolve each model's movement and attack before moving on to the next model.</feat>
           <spell name="DRAGON'S BLOOD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly non-warlock Faction model/unit gains +2 ARM. When an affected model is disabled by a melee attack, roll a d6. On a roll of 5 or 6, the attacker suffers 1 damage point.</spell>
@@ -236,6 +236,41 @@
           <capacity title="SOULLESS">This model does not generate a soul token when it is destroyed.</capacity>
           <capacity title="UNCONQUERABLE">While in this model's command range, friendly Faction warrior models gain Unyielding. (While engaging an enemy model, a model with Unyielding gains +2 ARM.)</capacity>
         </warlock>
+        <warlock id="EW09" name="Saeryn &amp; Rhyas" full_name="Saeryn &amp; Rhyas, Talons of Everblight" generation="E" qualification="Legion Epic Blighted Nyss Warlock Unit" fury="7" warbeast_points="1" fa="C">
+          <basestats name="Saeryn" spd="7" str="5" mat="6" rat="7" def="16" arm="14" cmd="8" hitpoints="8" focus="7" officer="true"/>
+          <weapons>
+              <melee_weapon name="Staff of Shyvess" pow="5" p_plus_s="10" magical="true" reach="true">
+                  <capacity title="DISPEL">When this weapon hits a model/ unit, upkeep spells on that model/unit immediately expire.</capacity>
+              </melee_weapon>
+          </weapons>
+
+          <feat title="Conjoined Spirits" >This feat can be used once per game by either Saeryn or Rhyas. When this feat is used, either Saeryn and Rhyas immediately trade places or you can return one of them to play. If you choose to return Saeryn or Rhyas to play, place the returned model within 3" of the model that used this feat. The returned model comes into play with a number of fury points equal to its FURY. After using Conjoined Spirits, models in this unit cannot advance for one turn.</feat>
+
+          <spell name="BANISHING WARD" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Enemy upkeep spells on target friendly model/unit expire. Affected models cannot be targeted by enemy spells or animi.</spell>
+            <spell name="BLOOD RAIN" cost="3" rng="8" aoe="3" pow="12" up="NO" off="YES">Blood Rain causes corrosion damage. Models hit suffer the Corrosion continuous effect</spell>
+            <spell name="MARKED FOR DEATH" cost="2" rng="8" aoe="-" pow="-" up="YES" off="YES">Target enemy model/ unit suffers -2 DEF and loses lncorporeal and Stealth and cannot gain those abilities while affected by Marked for Death. Friendly Faction models can target an affected model regardless of LOS.</spell>
+            <spell name="PSYCHIC VAMPIRE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">When an enemy model casts a spell or uses an animus while in this model's control area, the enemy model suffers 1 damage point and this model heals 1 damage point.</spell>
+            <spell name="RAZOR WIND" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A blade of wind slices through the target model.</spell>
+            <capacity title="Bond of Blood [Rhyas]">This model can spend fury points to transfer damage to Rhyas.</capacity>
+            <capacity title="Channeler [Rhyas]">While this model is not engaged and in Rhyas' control area, Rhyas can channel spells through it.</capacity>
+            <capacity title="Twin Sister">Saeryn and Rhyas are both warlock models, but only Saeryn has the Officer advantage. Saeryn and Rhyas share a single battlegroup and count as one warlock for the purposes of army construction. Saeryn cannot make attacks against Rhyas, and Rhyas cannot make attacks against Saeryn. Saeryn and Rhyas cannot have an attached model. Your warlock is destroyed only if both Saeryn and Rhyas are destroyed or removed from play.</capacity>
+          <model>
+              <basestats name="Rhyas" spd="7" str="5" mat="8" rat="6" def="16" arm="14" cmd="8" hitpoints="8" focus="5"/>
+              <weapons>
+                  <melee_weapon name="Antiphon" pow="7" p_plus_s="12" reach="true" magical="true" weapon_master="true">
+                      <capacity title="Critical Decapitation">On a critical hit, damage exceeding the ARM of the model hit is doubled. A model disabled by this attack cannot make a Tough roll.</capacity>
+                  </melee_weapon>
+              </weapons>
+              <spell name="ONSLAUGHT" cost="2" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">Friendly Faction models beginning a charge in this model's control area gain Pathfinder during the charge.</spell>
+              <spell name="FLASHING BLADE" cost="1" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This models immediately makes one normal melee attack with one of its melee weapon against each enemy model in its LOS that is in the weapon's melee range. These attacks are simultaneous.</spell>
+              <spell name="OCCULTATION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Stealth.</spell>
+              <capacity title="Acrobatics">This model can advance through other models if it has enough movement to move completely past their bases. This model cannot be targeted by free strikes. This model ignores intervening models when declaring its charge target.</capacity>
+              <capacity title="Bond of Blood [Saeryn]"> This model can spend fury points to transfer damage to Saeryn.</capacity>
+              <capacity title="Channeler [Saeryn]"> While this model is not engaged and in Saeryn's control area, Saeryn can channel spells through it.</capacity>
+              <capacity title="Granted: Riposte"> While this model is in play, models in this unit gain Riposte. (When a model with Riposte is missed by an enemy melee attack, immediately after the attack is resoved it can make one normal melee attack against the attacking model.)</capacity>
+          </model>
+        </warlock>
+
       </warlocks>
       <warbeasts>
         <warbeast id="EB01" name="Harrier" full_name="Harrier" qualification="Legion Lesser Warbeast" fa="U" cost="2" fury="2" threshold="7" damage_spiral="4-4-5" completed="true">

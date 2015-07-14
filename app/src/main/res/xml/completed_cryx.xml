@@ -3,7 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_cryx" name="cryx" version="forum_cryx_001">
+    <army faction="faction_cryx" name="cryx" version="forum_cryx_003">
+        <!-- 002 include deny3, barathrum, sepulcher, soul trapper -->
+        <!-- 003 correct soul trapper range for collecting souls + machine wraith FA-->
       <warcasters>
         <!-- ************************************************************* -->
         <!-- ***********************asphyxious   ************************* -->
@@ -29,8 +31,8 @@
         <warcaster id="Cx01" name="Asphyxious2" generation="P" full_name="Lich Lord Asphyxious" qualification="Cryx Epic Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
           <basestats name="Asphyxious" spd="6" str="7" mat="6" rat="3" def="15" arm="16" cmd="8" undead="true" terror="true" hitpoints="18" />
           <weapons>
-            <melee_weapon name="Daemortus" pow="8" p_plus_s="15" magical="true" reach="true">
-              <capacity title="SOUL REAPER (*Action)" type="*Action">Place a 5" AOE anywhere completely within this model's control area. The AOE remains in play for one round. When a living enemy model is destroyed in the AOE, this model gains one soul token. While the AOE is in play, this model cannot attack with Daeamortus and has no melee range.</capacity>
+            <melee_weapon name="Daeamortus" pow="8" p_plus_s="15" magical="true" reach="true">
+              <capacity title="SOUL REAPER" type="*Action">Place a 5" AOE anywhere completely within this model's control area. The AOE remains in play for one round. When a living enemy model is destroyed in the AOE, this model gains one soul token. While the AOE is in play, this model cannot attack with Daeamortus and has no melee range.</capacity>
             </melee_weapon>
           </weapons>
           <feat title="Spectral legion"><![CDATA[Return up to ten friendly destroyed non-warcaster small- or medium-based Faction grunts to play, placing them within 3" of Asphyxious. Returned models gain Undead and Ghostly, become solos, and cannot be attacked or damaged for one turn. Returned models must charge during their activations and leave play at the end of this turn. (A model with Ghostly can advance through terrain and obstacles without penalty and can advance through obstructions if it has enough movement to move completely past them. A model with Ghostly cannot be targeted by free strikes.)]]></feat><!-- errata 12-2013 -->
@@ -39,7 +41,7 @@
           <spell name="EXCARNATE" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When a living enemy warrior model is boxed by Excarnate, remove it from play. You can then add one Grunt to a friendly Faction small-based undead unit in this model's control area. The Grunt must be placed in formation and within 3" of this model.</spell>
           <spell name="HELLBOUND" cost="3" rng="SELF" aoe="-" pow="-" up="YES" off="NO">This model cannot be targeted by charges. While within 5" of this model, enemy models treat open ground as rough terrain.</spell>
           <spell name="PARASITE" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers -3 ARM and this model gains +1 ARM.</spell>
-          <spell name="TELEPORT" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Place this model anywhere completely within 8" of its current location, then its activation ends</spell>
+          <spell name="TELEPORT" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">Place this model anywhere completely within 8" of its current location, then its activation ends.</spell>
           <capacity title="CULL SOUL" type="">This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.</capacity>
         </warcaster>
         <warcaster id="Cz01" name="Asphyxious3" generation="EE" full_name="Asphyxious the Hellbringer &amp; Vociferon" qualification="Cryx Epic Warcaster &amp; Character Solo" focus="7" warjack_points="4" fa="C" completed="true">
@@ -112,7 +114,31 @@
           <capacity title="SEDUCTION" type="*Action">Take control of a living enemy non-warcaster, non-warlock warrior model B2B with this model. You can immediately make a full advance with the enemy model followed by a normal melee attack, then Seduction expires. The enemy model cannot be targeted by free strikes during this movement.</capacity>
           <capacity title="WRAITH WALKER" type="">At the end of your Control Phase, this model can gain Incorporeal for one round unless it gained Incorporeal during the last round.</capacity>
         </warcaster>
-        <warcaster id="Cw05" name="Goreshade1" generation="P" full_name="Goreshade the bastard" qualification="Cryx Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
+        <warcaster id="Cz02" name="Deneghra3" full_name="Deneghra, the Soul Weaver" generation="E" qualification="Cryx Epic Cavalry Battle Engine Warcaster" focus="7" warjack_points="4" fa="C" completed="true">
+          <basestats name="Deneghra" spd="9" str="5" mat="6" rat="4" def="15" arm="16" cmd="9" hitpoints="18" undead="true"/>
+          <weapons>
+            <melee_weapon name="MALEFACTOR" pow="8" p_plus_s="13" magical="true" reach="true">
+            </melee_weapon>
+              <ranged_weapon name="Venomous Breath" rng="SP8" rof="1" aoe="-" pow="10" continuous_corrosion="true" corrosion="true">
+              </ranged_weapon>
+              <mount_weapon name="BARBED TAIL" pow="12"></mount_weapon>
+          </weapons>
+
+          <feat title="Hell Gate">Deneghra immediately gains seven soul tokens</feat>
+          <spell name="GHOST WALK" cost="3" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly model/unit gains Ghostly for one turn. (When it advances, a model with Ghostly ignores movement penalties from terrain and obstacles and can advance through obstructions if it has enough movement to move completely past them. An affected model cannot be targeted by free strikes.)</spell>
+          <spell name="GRAVE WIND" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model gains +2 DEF and Poltergeist. (When an enemy model misses the model with Poltergeist with an attack, immediately after the attack is resolved you can choose to push the enemy model d3" directly away from the model with Poltergeist.)</spell>
+          <spell name="MORTALITY" cost="3" rng="10" aoe="-" pow="-" up="NO" off="YES">Target enemy model/unit suffers –2 DEF and ARM and cannot be healed. Mortality lasts for one round.</spell>
+          <spell name="SCOURGE" cost="4" rng="8" aoe="3" pow="13" up="NO" off="YES">All models hit by Scourge are knocked down.</spell>
+
+          <capacity title="CULL SOUL" type="">This model gains one soul token for each living enemy model destroyed within 2" of it. When this model replenishes its focus during your next Control Phase, replace each soul token on it with 1 focus point.</capacity>
+          <capacity title="FLIGHT">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="SOUL MASTERY">Anytime during its activation, this model can spend soul tokens for the following effects. Each use of a Soul Mastery effect costs one soul token.</capacity>
+          <capacity title="● Arcane Spirits">This model can cast a spell with COST 3 or less without spending focus.</capacity>
+          <capacity title="● Vengeful Spirits">Choose a warjack in this model's battlegroup that is in its CMD range. The warjack is allocated up to 3 focus.</capacity>
+          <capacity title="SOUL WEAVER">During its activation, this model can choose a friendly model in its CMD range with Body Count, Cull Soul, Soul Collector, or Soul taker. Remove any number of soul tokens from the chosen model and place one soul token on this model for each token removed.</capacity>
+        </warcaster>
+
+          <warcaster id="Cw05" name="Goreshade1" generation="P" full_name="Goreshade the bastard" qualification="Cryx Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
           <basestats name="Goreshade" spd="6" str="7" mat="7" rat="4" def="15" arm="16" cmd="7" hitpoints="17" undead="true" terror="true" />
           <weapons>
             <melee_weapon name="bloodcleaver" pow="7" p_plus_s="14" magical="true" reach="true">
@@ -578,7 +604,7 @@
           <capacity title="ARCANE ASSASSIN" type="">When making attacks, ignore focus points overboosting the target's Power Field and spell effects adding to its ARM or DEE</capacity>
           <capacity title="EXTENDED CONTROL RANGE" type="">When checking to see if this model is in its controller's control area, double the area.</capacity><!-- errata 12-2013 -->
         </warjack>
-        <warjack id="CJ21" name="Inflictor" full_name="Inflictor" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="8" qualification="Heavy Warjack" fa="U" completed="true">
+        <warjack id="CJ21" name="Inflictor" full_name="Inflictor" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="8" qualification="Cryx Heavy Warjack" fa="U" completed="true">
           <basestats name="Inflictor" spd="6" str="10" mat="7" rat="5" def="13" arm="17" cmd="0" />
           <weapons>
               <melee_weapon p_plus_s="13" pow="3" name="Shield Claw" open_fist="true" shield="true"></melee_weapon>
@@ -589,7 +615,35 @@
           <capacity title="Shield Guard">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
           <capacity title="Soul Drive">This model is allocated 1 additional focus point during your Control Phase.</capacity>
         </warjack>
-        
+        <warjack id="CJ23" name="Barathrum" full_name="Barathrum" damage_grid="xx..xxx....x.......L..R.LLMCRRxMMCCx" cost="10" qualification="Cryx Heavy Character Warjack" fa="C" completed="true">
+          <basestats name="Barathrum" spd="6" str="10" mat="8" rat="5" def="13" arm="17" cmd="0" advance_deployment="true" terror="true"/>
+          <weapons>
+              <melee_weapon name="TALON" pow="7" p_plus_s="17" location="L">
+                  <capacity title="FEEDBACK">If this weapon damages a warjack that is part of a battlegroup, its controller suffers 1 damage point.</capacity>
+              </melee_weapon>
+              <melee_weapon name="TALON" pow="7" p_plus_s="17" location="R">
+                  <capacity title="FEEDBACK">See above.</capacity>
+              </melee_weapon>
+              <melee_weapon name="TUSKS" pow="2" p_plus_s="12"></melee_weapon>
+          </weapons>
+          <capacity title="COUNTER CHARGE">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+          <capacity title="DIG IN" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+          <capacity title="DRAG BELOW">During this model's activation, immediately after resolving an attack in which is boxed a living enemy model, this mode can use Drag Below. The boxed model is removed from play and this model can immediately make a full advance and then perform a Dig In special action, then its activation ends.</capacity>
+          <capacity title="SOUL DRIVE" type="">This model is allocated 1 additional focus point during your Control Phase.</capacity>
+          <capacity title="SPECIAL ISSUE [TERMINUS]">This model can be included in Terminus' theme forces. It can also be bonded to Terminus.</capacity>
+        </warjack>
+        <warjack id="CJ24" name="Shrike" full_name="Shrike" damage_grid="xxxxxxxxxxxxx.xx.x......HCCCCMxHHMMx" cost="4" qualification="Cryx Bonejack" fa="U" completed="true">
+          <basestats name="Shrike" spd="7" str="7" mat="7" rat="4" def="16" arm="13" cmd="0" />
+          <weapons>
+              <melee_weapon name="VICIOUS BEAK" pow="4" p_plus_s="11"></melee_weapon>
+              <melee_weapon name="WING BLADES" pow="4" p_plus_s="11">
+                  <capacity title="THRESHING BLADES">This model can add this weapon's POW to its trample power attack damage rolls.</capacity>
+              </melee_weapon>
+          </weapons>
+          <capacity title="Blade Rush">While making a trample power attack, this model ignores free strikes and does not stop when it contacts a model with a medium or larger base, an obstacle, or an obstruction. This model makes trample attacks against models regardless of their base size.</capacity>
+          <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
+          <capacity title="Power Attack Trample">This model can make Trample power attacks.</capacity>
+        </warjack>
       </warjacks>
       <colossals>
         <colossal id="CJ20" name="Kraken" full_name="Kraken" qualification="CRYX COLOSSAL" fa="2" cost="19" damage_grid_left="xxxx..xxx.......SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx...xxxSS....CSRR..CCCCRRMMMMCR" completed="true">
@@ -615,6 +669,37 @@
           <capacity title="KILL SHOT">Once per activation, when a living enemy model is destroyed or removed from play as a result of a melee attack made by this model during its activation, immediately after that attack is resolved this model can make one normal ranged attack ignoring ROF.</capacity>
           <capacity title="MEAT-FUELED">This model gains+ 1 STR for each corpse token on it.</capacity>
         </colossal>
+        <colossal id="CJ22" name="Sepulcher" full_name="Sepulcher" qualification="CRYX COLOSSAL" fa="2" cost="18" damage_grid_left="xxxx..xxx.......SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx...xxxSS....CSRR..CCCCRRMMMMCR" completed="true">
+            <basestats name="Sepulcher" spd="5" str="15" mat="6" rat="5" def="10" arm="19" cmd="0" />
+            <weapons>
+                <melee_weapon name="Harvester" pow="3" p_plus_s="18" location="R" open_fist="true" chain="true">
+                    <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+                    <capacity title="CHAIN STRIKE">This weapon has a 4" melee range during this model's activation.</capacity>
+                    <capacity title="PULL">If this weapon hits an enemy model with an equal or smaller base, immediately after the attack is resolved the hit model can be pushed any distance directly toward this model.</capacity>
+                </melee_weapon>
+                <melee_weapon name="Harvester" pow="3" p_plus_s="18" location="R" open_fist="true" chain="true">
+                    <capacity title="CHAIN WEAPON">This attack ignores the Buckler and Shield weapon qualities and Shield Wall.</capacity>
+                    <capacity title="CHAIN STRIKE">This weapon has a 4" melee range during this model's activation.</capacity>
+                    <capacity title="PULL">See above.</capacity>
+                </melee_weapon>
+                <ranged_weapon name="Desolator" rng="13" rof="1" aoe="5" pow="13" location="S">
+                    <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+                    <capacity title="CRITICAL PARALYSIS">On a critical hit, living models hit have their base DEF reduced to 7 and cannot run or charge for one round.</capacity>
+                </ranged_weapon>
+                <ranged_weapon name="Spiker" rng="11" rof="2" aoe="-" pow="13" location="L">
+                    <capacity title="BURST FIRE">Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large or huge bases.</capacity>
+                    <capacity title="SWIVEL">When declaring and resolving attacks with this weapon, this model can target and draw line of sight to models in its field of fire or its back arc.</capacity>
+                </ranged_weapon>
+                <ranged_weapon name="Spiker" rng="11" rof="2" aoe="-" pow="13" location="R">
+                    <capacity title="BURST FIRE">Gain +1 to damage rolls with this weapon against models with medium bases and +2 to damage rolls against models with large or huge bases.</capacity>
+                    <capacity title="SWIVEL">When declaring and resolving attacks with this weapon, this model can target and draw line of sight to models in its field of fire or its back arc.</capacity>
+                </ranged_weapon>
+            </weapons>
+            <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+            <capacity title="BODY SNATCHER">This model gains one corpse token each time a Mechanithrall or living model is destroyed within 5" of it</capacity>
+            <capacity title="NECRO-INDUSTRY">Once per turn during its activation, you can remove corpse tokens from this model to add models to a friendly Mechanithrall unit. You can remove up to three corpse tokens to add one Grunt per token removed, or you can remove three corpse tokens to add one Brute Thrall. Added models must be placed in formation and within 3" of this model.</capacity>
+        </colossal>
+
       </colossals>
       <battleEngines>
         <battleEngine id="CE01" name="Wraith Engine" full_name="Wraith Engine" qualification="CRYX BATTLE ENGINE" fa="2" cost="9" completed="true">
@@ -1010,7 +1095,7 @@
           <capacity title="SOUL MATRIX">While in this model's commande range during their activation, warjacks controlled by this model can spend soul tokens on this model to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
           <capacity title="SOUL TAKER">This model gains one soul token when a living enemy model is destroyed within 2" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
         </solo>
-        <solo id="CS05" name="Machine Wraith" full_name="Machine Wraith" qualification="CRYX SOLO" fa="1" cost="1" completed="true">
+        <solo id="CS05" name="Machine Wraith" full_name="Machine Wraith" qualification="CRYX SOLO" fa="3" cost="1" completed="true">
           <basestats name="Machine Wraith" spd="7" str="4" mat="6" rat="0" def="14" arm="12" cmd="7" undead="true" incorporeal="true" />
           <weapons>
             <melee_weapon name="mechano-claws" pow="4" p_plus_s="8" />
@@ -1127,7 +1212,15 @@ This model is destroyed if the melded warjack is destroyed before it exits the w
           <restricted_to id="CU02"></restricted_to>
           <restricted_to id="CU03"></restricted_to>
         </solo>
-        
+        <solo id="CS16" name="Soul Trapper" full_name="Soul Trapper" cost="1" qualification="Cryx Thrall Solo" fa="3" completed="true">
+          <basestats name="Soul Trapper" spd="5" str="4" mat="5" rat="3" def="11" arm="12" cmd="5"/>
+          <weapons>
+              <melee_weapon name="MECHANO-CLAW" pow="4" p_plus_s="8"></melee_weapon>
+          </weapons>
+          <capacity title="SOUL COLLECTOR">This model gains one soul token when a living enemy model is destroyed within 10" of it. This model can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to gain additional attacks or to boost attack or damage rolls at one token per attack or boost.</capacity>
+          <capacity title="SOUL TRANSFER" type="*Action">RNG 5. Target Friendly Faction model with Body Count, Cull Soul, Soul Collector, or Soul Taker. If the model is in range, remove any number of soul tokens from this model and place one soul token on the friendly model for each token removed.</capacity>
+          <capacity title="Model Count">2 Soul Trappers</capacity>
+        </solo>
       </solos>
     </army>
   </armies>

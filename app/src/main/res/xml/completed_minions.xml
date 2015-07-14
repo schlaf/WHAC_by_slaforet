@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_minions" name="Minions" version="forum_minions_001">
+        <army faction="faction_minions" name="Minions" version="forum_minions_002"> <!-- add croak raiders, swamp gobber river raiders, gremlin swarm-->
             <warlocks>
                 <warlock id="IW05" name="Lord Carver, BMMD, Esq. III" generation="P" full_name="Lord Carver, BMMD, Esq. III" qualification="Minion Farrow Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
                     <basestats name="CARVER" spd="6" str="8" mat="7" rat="6" def="15" arm="17" cmd="9" hitpoints="16" tough="true" />
@@ -830,6 +830,25 @@
                     <works_for id="faction_trollblood" />
                     <works_for id="faction_skorne" />
                 </unit>
+                <unit id="IU09" name="Croak Raiders" full_name="Croak Raiders" qualification="Minion Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+                    <basestats name="LEADER &amp; GRUNTS" spd="6" str="5" mat="5" rat="6" def="13" arm="14" cmd="8" advance_deployment="true" immunity_corrosion="true"/>
+                    <weapons>
+                        <melee_weapon name="Hand Weapon" pow="3" p_plus_s="8" />
+                        <ranged_weapon name="Flaming Dart" rng="10" rof="1" aoe="-" pow="12" fire="true" continuous_fire="true"></ranged_weapon>
+                        <ranged_weapon name="Oil Gourd" rng="8" rof="1" aoe="3" pow="-" >
+                            <capacity title="ALCHEMICAL ACCELERANT">A model hit by this attack suffers Oil. When an oiled model suffers a Fire damage roll, the damage roll is automatically boosted. Oil lasts for one round.</capacity>
+                            <capacity title="CUMBERSOME">If this model attacks with this weapon during its activation, it cannot attack with another ranged weapon that activation. If this model attacked with another ranged weapon this activation, it cannot attack with this weapon.</capacity>
+                        </ranged_weapon>
+                    </weapons>
+                    <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+                    <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+                    <capacity title="GANG">When making a melee attack targeting an enemy model in melee range of another model in this unit, this model gains +2 to melee attack and melee damage rolls.</capacity>
+                    <capacity title="VITRIOL">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers the Corrosion continuous effect unless this model was destroyed or removed from play by the attack.</capacity>
+                    <works_for id="faction_orboros" />
+                    <works_for id="faction_everblight" />
+                    <works_for id="faction_trollblood" />
+                    <works_for id="faction_skorne" />
+                </unit>
                 <unit id="MU05_minion" name="Cylena Raefyll &amp; Nyss Hunters" full_name="Cylena Raefyll &amp; Nyss Hunters" qualification="Minion Character Unit" fa="C" base_cost="7" full_cost="10" baseCount="6" fullCount="10" completed="true">
                     <basestats name="CYLENA" spd="7" str="5" mat="7" rat="7" def="15" arm="11" cmd="9" hitpoints="5" officer="true" pathfinder="true" />
                     <weapons>
@@ -1245,6 +1264,40 @@
                     <works_for id="faction_skorne" />
                     <works_for id="faction_trollblood" />
                 </solo>
+                <solo id="IS15" name="Gremlin Swarm" full_name="Gremlin Swarm" qualification="Minion Grymkin Solo" fa="3" cost="2" completed="true">
+                    <basestats name="GREMLIN SWARM" spd="6" str="2" mat="2" rat="2" def="14" arm="12" cmd="7" stealth="true" incorporeal="true" hitpoints="5    "/>
+                    <weapons>
+                    </weapons>
+                    <capacity title="MINION">This model will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
+                    <capacity title="APPARITION">During your Control Phase, place this model anywhere completely within 2" of its current location.</capacity>
+                    <capacity title="MAN-SIZED" type="">This model is treated as a model with a small base and occupied the space from the bottom of its base to a height of 1.75".</capacity>
+                    <capacity title="MISCHIEF">When an enemy warjack begins its activation B2B with this model, roll a d3. On a 1, the warjack suffers Disruption for one round. One a 2, the warjack suffers -2 SPD for one round. On a 3, the warjack's ranged weapons suffer -5 RNG for one round. (A warjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round.)</capacity>
+                    <capacity title="SABOTAGE" type="*Action">Target enemy warjack or battle engine B2B with this model suffers d3+3 damage points and cannot be repaired or have damage removed for one round. When damaging a warjack, choose which column suffers the damage.</capacity>
+                    <works_for id="faction_orboros" />
+                    <works_for id="faction_everblight" />
+                    <works_for id="faction_skorne" />
+                    <works_for id="faction_trollblood" />
+                </solo>
+
+                <solo id="MS30_minion" name="Swamp Gobber River Raiders" full_name="Swamp Gobber River Raiders" qualification="Mercenary Minion Privateer Sea Dog Solo" fa="3" cost="2" completed="true">
+                    <basestats name="RAIDER" spd="6" str="3" mat="5" rat="5" def="14" arm="12" cmd="7" advance_deployment="true"/>
+                    <weapons>
+                        <melee_weapon name="Hand Weapon" pow="3" p_plus_s="6">
+                            <capacity title="WEAKEN">A living model hit by this weapon suffers -2 STR and DEF for one round.</capacity>
+                        </melee_weapon>
+                        <ranged_weapon name="Harpoon Pistol" rng="6" rof="1" aoe="-" pow="10">
+                            <capacity title="REELED IN">If this weapon hits a non-Incorporeal enemy model, this model can be placed B2B with that enemy model.</capacity>
+                        </ranged_weapon>
+                    </weapons>
+                    <capacity title="MERCENARIES">This model will work for Cryx.</capacity>
+                    <capacity title="MINION">This model will work for Circle, Skorne, and the Blindwater Congregation pact.</capacity>
+                    <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+                    <capacity title="VIRTUOSO">This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+                    <capacity title="MODEL COUNT">3 Raiders.</capacity>
+                    <works_for id="faction_orboros" />
+                    <works_for id="faction_skorne" />
+                </solo>
+
             </solos>
         </army>
     </armies>

@@ -150,7 +150,7 @@ public class ArmyStore implements Serializable {
 			if (entry instanceof SelectedArmyCommander) {
 				if ( ((SelectedArmyCommander)entry).getAttachment() != null) {
 					Solo attachment = (Solo) ArmySingleton.getInstance().getArmyElement(((SelectedArmyCommander)entry).getAttachment().getId());
-					sb.append("<br>* ").append(attachment.toString()).append("(").append(((SelectedArmyCommander)entry).getAttachment().getRealCost()).append(POINTS);;
+					sb.append("<br>* ").append(attachment.toString()).append("(").append(((SelectedArmyCommander)entry).getAttachment().getCost()).append(POINTS);;
                     if (((SelectedArmyCommander)entry).getAttachment().isSpecialist()) {
                         sb.append(SPECIALIST);
                     }

@@ -82,6 +82,11 @@
           <weapons />
           <feat title=""/>
         </warcaster>
+        <warcaster id="PW10" name="Anson Durst" full_name="Anson Durst, Rock of the Faith" generation="P" qualification="warcaster" focus="6" warjack_points="6" fa="C">
+          <basestats name="Anson" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="19" />
+          <weapons />
+          <feat title=""/>
+        </warcaster>
       </warcasters>
       <warjacks>
         <warjack id="PJ01" name="Redeemer" full_name="Redeemer" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="6" qualification="Light Warjack" fa="U">
@@ -165,12 +170,27 @@
           <weapons>
           </weapons>
         </warjack>        
+          <warjack id="PJ21" name="Hand of Judgment" full_name="Hand of Judgment" qualification="Protectorate Heavy Character Warjack" fa="C" cost="10" damage_grid="x....x.............L..R.LLMCRRxMMCCx">
+              <basestats name="HAND OF JUDGMENT" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+              <weapons>
+              </weapons>
+          </warjack>
+          <warjack id="PJ22" name="Purifier" full_name="Purifier" qualification="Protectorate Light Warjack" fa="U" cost="5" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx">
+              <basestats name="Purifier" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+              <weapons>
+              </weapons>
+          </warjack>
       </warjacks>
       <colossals>
         <colossal id="PJ19" name="Judicator" full_name="Judicator" damage_grid_left="xxxx..xx........SS.LLLSCLLCCCCLCMMMM" damage_grid_right="..xxxx....xxSS....CSLLL.CCCCLLMMMMCL" cost="18" qualification="Colossal" fa="2">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
         </colossal>
+          <colossal id="PJ23" name="Revelator" full_name="Revelator" qualification="Protectorate Colossal" fa="2" cost="19" damage_grid_left="xxxx..xx........SS..LLSCLLCCCCLCMMMM" damage_grid_right="..xxxx....xxSS....CSRR..CCCCRRMMMMCR">
+              <basestats name="REVELATOR" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+              <weapons>
+              </weapons>
+          </colossal>
       </colossals>
       <battleEngines>
           <battleEngine id="PE01" name="Vessel of Judgement" full_name="Vessel of Judgement" cost="9" qualification="Protectorate Battle Engine" fa="2">
@@ -347,7 +367,11 @@
          <weapons>
          </weapons>
          </solo>
-        
+          <solo id="PS16" name="Pyrrhus" full_name="Pyrrhus" qualification="Protectorate Temple Flameguard Character Solo" fa="C" cost="3">
+              <basestats name="PYRRHUS" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+              <weapons>
+              </weapons>
+          </solo>
       </solos>
     </army>
   </armies>

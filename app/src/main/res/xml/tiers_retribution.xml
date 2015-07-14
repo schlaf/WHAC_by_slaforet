@@ -552,11 +552,17 @@
     </level>
     <level number="4">
       <only>
-        <entry id="RJ01" />
-        <entry id="RJ02" />
-        <entry id="RJ03" />
-        <entry id="RJ08" />
-        <entry id="RJ15" /> <!-- special issue Moros -->
+          <entry id="RW03" />
+          <entry id="RJ01" />
+          <entry id="RJ02" />
+          <entry id="RJ03" />
+          <entry id="RJ08" />
+          <entry id="RJ15" /> <!-- special issue Moros -->
+          <entry id="RU05" />
+          <entry id="RA03" />
+          <entry id="RA04" />
+          <entry id="RS05" />
+          <entry id="RS07" />
       </only>
       <benefits>
         <ingameeffect >Models in Garryth's battlegroup gain Advance Deployment.</ingameeffect>
@@ -862,7 +868,7 @@
                 <entry id="RJ13" />
                 <entry id="RU03" />
                 <entry id="RA04" />
-                <entry id="RS01" />
+                <entry id="RS01_forceWall" />
                 <entry id="RS04" />
                 <entry id="RS11" />
                 <entry id="RE01" />
@@ -908,7 +914,7 @@
             <benefits>
                 <ingameeffect ></ingameeffect>
                 <freeModel>
-                    <entry id="RS01"/>
+                    <entry id="RS01_forceWall"/>
                     <forEach>
                         <entry id="RJ01" />
                         <entry id="RJ02" />
@@ -1012,6 +1018,83 @@
             <benefits>
                 <ingameeffect >Roll two dice for your starting game roll and keep the higher result.
                 </ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
+
+    <tiers name="Thyron - Rush of Battle" casterId="RW08" faction="faction_retribution">
+        <level number="1">
+            <only>
+                <entry id="RW08" />
+                <entry id="RJ01" />
+                <entry id="RJ02" />
+                <entry id="RJ03" />
+                <entry id="RJ04" />
+                <entry id="RJ05" />
+                <entry id="RJ06" />
+                <entry id="RJ08" />
+                <entry id="RJ09" />
+                <entry id="RJ10" />
+                <entry id="RJ11" />
+                <entry id="RU04" />
+                <entry id="RU07" />
+                <entry id="RU08" />
+                <entry id="RU09" />
+                <entry id="RU10" />
+                <entry id="RA06" />
+                <entry id="RU07" />
+                <entry id="RA05" />
+                <entry id="RA04" />
+                <entry id="RU09" />
+                <entry id="RS01" />
+                <entry id="RS03" />
+                <entry id="RS06" />
+                <entry id="RS13" />
+                <entry id="RS14" />
+                <entry id="MS23" />
+            </only>
+            <benefits>
+                <ingameeffect>Solos gain Advance Deployyment.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2RU07-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="RU07" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect /><!--Free Halb UA -->
+                <freeModel>
+                    <entry id="RA05" />
+                </freeModel>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  1(RU10)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="RU10" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect >You gain +1 on starting roll</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have in battlegroup  3(RJ01 RJ02 RJ03 RJ08)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
+                    <entry id="RJ01" />
+                    <entry id="RJ02" />
+                    <entry id="RJ03" />
+                    <entry id="RJ08" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <!-- Free upkeeps on turn 1 -->
+                <ingameeffect >Models/units in your army can begin the game affected by Thyron's upkeep spells. Thyron does not pay focus to upkeep these spells during your first turn.</ingameeffect>
             </benefits>
         </level>
     </tiers>

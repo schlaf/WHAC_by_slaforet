@@ -12,7 +12,7 @@ import com.schlaf.steam.activities.selectlist.selected.SpellCaster;
  * @author S0085289
  *
  */
-public class Solo extends ArmyElement implements Serializable, Restrictable, SpellCaster {
+public class Solo extends ArmyElement implements Serializable, Restrictable{
 
 	/**
 	 * 
@@ -53,8 +53,6 @@ public class Solo extends ArmyElement implements Serializable, Restrictable, Spe
 	
 	/** if solo is an attachment, list the units it can be attached to */
 	private ArrayList<String> allowedUnitsToAttach = new ArrayList<String>();
-	
-	private ArrayList<Spell> spells = new ArrayList<Spell>(10);
 	
 	private ArrayList<String> tiersInWhicAllowedToAppear = new ArrayList<String>();
 	
@@ -135,16 +133,6 @@ public class Solo extends ArmyElement implements Serializable, Restrictable, Spe
 	@Override
 	public ArrayList<String> getAllowedEntriesToAttach() {
 		return allowedUnitsToAttach;
-	}
-
-	@Override
-	public ArrayList<Spell> getSpells() {
-		return spells;
-	}
-
-	@Override
-	public void setSpells(ArrayList<Spell> spells) {
-		this.spells = spells;
 	}
 
 	@Override

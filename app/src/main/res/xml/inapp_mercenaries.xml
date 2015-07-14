@@ -103,7 +103,14 @@
           <feat title="" />
           <works_for id="faction_cryx" />
         </warcaster>
+          <warcaster id="MW12" name="Cognifex Cyphon" full_name="Cognifex Cyphon" generation="P" qualification="Mercenary Cephalyx Warcaster" focus="7" warjack_points="6" fa="C">
+              <basestats name="Thexus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+              <weapons />
+              <feat title="" />
+              <works_for id="faction_cryx" />
+          </warcaster>
       </warcasters>
+
       <warjacks>
         <warjack id="MJ04" name="Buccaneer" full_name="Buccaneer" damage_grid="xxxxxxx....x.......L..R.LLMCRRxMMCCx" cost="3" qualification="Light Warjack" fa="U">
           <basestats name="Buccaneer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
@@ -542,6 +549,14 @@
           <restricted_to id="MS17" />
         </colossal>
       </colossals>
+        <battleEngines>
+            <battleEngine id="ME01" name="Hammerfall Siege Crawler" full_name="Hammerfall Siege Crawler"  qualification="Mercenary Rhulic Battle Engine" fa="2" cost="9" >
+                <basestats name="Siege Crawler" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="22"/>
+                <weapons />
+                <works_for id="faction_khador" />
+                <works_for id="faction_cygnar" />
+            </battleEngine>
+        </battleEngines>
       <units>
         <unit id="MU09" name="Alexia Ciannor &amp; the Risen" full_name="Alexia Ciannor &amp; the Risen" base_cost="5" baseCount="10" full_cost="-" fullCount="-" qualification="Character Unit" fa="C">
           <basestats name="Alexia" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
@@ -1232,34 +1247,45 @@
               <restricted_to id="MU08"/>
               <restricted_to id="MU18"/>
               <restricted_to id="MU20"/>
-            <only_in_tier id="Unwilling and Able"/>
-              <only_in_tier id="Exulon - Will of Darkness"/>
+            <only_in_tier id="Puppet Masters"/>
+            <only_in_tier id="Exulon - Will of Darkness"/>
+            <only_in_tier id="Cyphon - Oppression Overwhelming"/>
         </solo>
         
         <solo id="MS27" name="Cephalyx Agitator" full_name="Cephalyx Agitator" fa="3" cost="2" qualification="Mercenary Solo" >
               <basestats name="Agitator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
               <weapons />
-              <only_in_tier id="Unwilling and Able"/>
+              <only_in_tier id="Puppet Masters"/>
               <only_in_tier id="Exulon - Will of Darkness"/>
+              <only_in_tier id="Cyphon - Oppression Overwhelming"/>
         </solo>
-        
+
+        <solo id="MS29" name="Sergeant Nicolas Verendrye" full_name="Sergeant Nicolas Verendrye" fa="C" cost="2" qualification="Mercenary Steelhead Character Solo" >
+          <basestats name="Nicolas" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+          <works_for id="faction_cryx"/>
+          <works_for id="faction_cygnar"/>
+          <works_for id="faction_khador"/>
+          <works_for id="faction_menoth"/>
+        </solo>
+
         <!-- cryx solos that can be taken in cephalyx contract -->
         <solo id="CS02_mercs" name="Bloat Thrall" full_name="Bloat Thrall" cost="2" qualification="Solo" fa="2">
           <basestats name="Bloat Thrall" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
           <weapons />
-            <only_in_tier id="Unwilling and Able"/>
+            <only_in_tier id="Puppet Masters"/>
         </solo>
         
         <solo id="CS05_mercs" name="Machine Wraith" full_name="Machine Wraith" cost="1" qualification="Solo" fa="3">
           <basestats name="Machine Wraith" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
-            <only_in_tier id="Unwilling and Able"/>
+            <only_in_tier id="Puppet Masters"/>
         </solo>
         
         <solo id="CS06_mercs" name="Pistol Wraith" full_name="Pistol Wraith" cost="3" qualification="Solo" fa="2">
           <basestats name="Pistol Wraith" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           <weapons />
-            <only_in_tier id="Unwilling and Able"/>
+            <only_in_tier id="Puppet Masters"/>
         </solo>
         
             

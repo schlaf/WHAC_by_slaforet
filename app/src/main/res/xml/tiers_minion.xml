@@ -745,7 +745,7 @@ Before determining which player deploys first at the start of the game declare w
                 <entry id="Snapjaw_minion" />
  <!-- SnapJaw -->
                 <!-- Battle Engines: Sacral Vault -->
-                <entry id="IE01" />
+                <entry id="IE02" />
             </only>
 
             <benefits>
@@ -754,7 +754,7 @@ Before determining which player deploys first at the start of the game declare w
                 <!-- <ingameeffect></ingameeffect> -->
                 <alterCost
                     bonus="1"
-                    entryId="IE01" />
+                    entryId="IE02" />
             </benefits>
         </level>
         <level number="2" >
@@ -800,7 +800,7 @@ Before determining which player deploys first at the start of the game declare w
                     inBattlegroupOnly="false"
                     jackMarshalledOnly="false"
                     minNumber="1" >
-                    <entry id="IE01" />
+                    <entry id="IE02" />
                 </entrygroup>
             </must_have>
 

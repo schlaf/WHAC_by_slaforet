@@ -46,8 +46,26 @@ import com.schlaf.steam.activities.selectlist.selected.SelectedWarjack;
 import com.schlaf.steam.activities.selectlist.selected.SelectedWarlock;
 import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
+import com.schlaf.steam.data.AvailableModels;
+import com.schlaf.steam.data.BattleEngine;
+import com.schlaf.steam.data.Faction;
+import com.schlaf.steam.data.ModelTypeEnum;
 import com.schlaf.steam.data.MultiPVUnitGrid;
+import com.schlaf.steam.data.Solo;
+import com.schlaf.steam.data.Tier;
+import com.schlaf.steam.data.TierCostAlteration;
+import com.schlaf.steam.data.TierEntry;
+import com.schlaf.steam.data.TierEntryGroup;
+import com.schlaf.steam.data.TierFAAlteration;
+import com.schlaf.steam.data.TierFACostBenefit;
+import com.schlaf.steam.data.TierFreeModel;
+import com.schlaf.steam.data.TierLevel;
+import com.schlaf.steam.data.Unit;
+import com.schlaf.steam.data.UnitAttachment;
 import com.schlaf.steam.data.Warbeast;
+import com.schlaf.steam.data.Warcaster;
+import com.schlaf.steam.data.Warjack;
+import com.schlaf.steam.data.WeaponAttachment;
 
 public class JsonConverter {
 
@@ -83,6 +101,7 @@ public class JsonConverter {
 	private static final String UNIT_ATTACHMENT = "unitAttachment";
 	private static final String WEAPON_ATTACHMENT = "weaponAttachment";
 	private static final String SOLO_DRAGOON = "soloDragoon";
+    private static final String SOLO_DRAGOON_DISMOUNT_OPTION = "soloDragoonDismountOption";
 	private static final String SOLO_OBJECTIVE = "soloObjective";
 	private static final String SOLO_WITH_MARSHAL = "soloWithMarshal";
 	private static final String RANKING_OFFICER = "rankingOfficer";
@@ -225,7 +244,8 @@ public class JsonConverter {
 			result = new SelectedCasterAttachment(id, label);
 		}
 		if (SOLO_DRAGOON.equals(type)) {
-			result = new SelectedDragoon(id, label, true);
+            boolean withDismount = entry.optBoolean(SOLO_DRAGOON_DISMOUNT_OPTION, true);
+			result = new SelectedDragoon(id, label, withDismount);
 		}
 		if (SOLO_OBJECTIVE.equals(type)) {
 			result = new SelectedObjective(id, label);
@@ -424,6 +444,7 @@ public class JsonConverter {
 
 		if (entry instanceof SelectedDragoon) {
 			result.put(TYPE, SOLO_DRAGOON);
+            result.put(SOLO_DRAGOON_DISMOUNT_OPTION, ((SelectedDragoon) entry).isWithDismountOption());
 		}
 
 		if (entry instanceof SelectedWA) {
@@ -834,4 +855,340 @@ public class JsonConverter {
 		}
 		
 	}
+
+    public static void createTierExport(Writer writer, List<Tier> tiers) {
+        JSONWriter json = new JSONWriter(writer);
+
+        json.object();
+
+        JSONArray tiersArray = new JSONArray();
+
+        for (Tier tier : tiers) {
+            JSONObject tierJson = new JSONObject();
+            tierJson.put("name", tier.getTitle());
+            tierJson.put("casterId", tier.getCasterId());
+            tierJson.put("faction", tier.getFactionId());
+
+            JSONArray models = new JSONArray();
+            for (AvailableModels model : tier.getAvailableModels()) {
+                JSONObject modelRestriction = new JSONObject();
+                modelRestriction.put("type", model.getType().name());
+                modelRestriction.put("models", model.getModels());
+                models.put(modelRestriction);
+            }
+
+            tierJson.put("availableModels", models);
+
+
+
+            JSONArray levels = new JSONArray();
+            for (TierLevel level : tier.getLevels()){
+                JSONObject levelJson = new JSONObject();
+                levelJson.put("level", level.getLevel());
+                levelJson.put("benefit", level.getBenefit().getInGameEffect());
+
+                JSONObject onlyModels = new JSONObject();
+                for (TierEntry onlyModel : level.getOnlyModels()) {
+                    onlyModels.append("ids", onlyModel.getId());
+                }
+                levelJson.put("onlyModels", onlyModels);
+
+                JSONArray mustHaveList = new JSONArray();
+                for (TierEntryGroup group : level.getMustHaveModels()) {
+                    JSONObject mustHave = new JSONObject();
+                    mustHave.put("min", group.getMinCount());
+                    mustHave.put("inBG", group.isInBattlegroup());
+                    mustHave.put("inMarshal", group.isInJackMarshal());
+                    for (TierEntry entry : group.getEntries()) {
+                        mustHave.append("ids" , entry.getId());
+                    }
+
+                    mustHaveList.put(mustHave);
+                }
+                for (TierEntryGroup group : level.getMustHaveModelsInBG()) {
+                    JSONObject mustHave = new JSONObject();
+                    mustHave.put("min", group.getMinCount());
+                    mustHave.put("inBG", true);
+                    mustHave.put("inMarshal", group.isInJackMarshal());
+                    for (TierEntry entry : group.getEntries()) {
+                        mustHave.append("ids" , entry.getId());
+                    }
+                    mustHaveList.put(mustHave);
+                }
+                for (TierEntryGroup group : level.getMustHaveModelsInMarshal()) {
+                    JSONObject mustHave = new JSONObject();
+                    mustHave.put("min", group.getMinCount());
+                    mustHave.put("inBG", false);
+                    mustHave.put("inMarshal", true);
+                    for (TierEntry entry : group.getEntries()) {
+                        mustHave.append("ids" , entry.getId());
+                    }
+                    mustHaveList.put(mustHave);
+                }
+                levelJson.put("mustHave", mustHaveList);
+
+
+                JSONArray faAlterList = new JSONArray();
+                JSONArray costAlterList = new JSONArray();
+                for (TierFACostBenefit alteration : level.getBenefit().getAlterations()) {
+                    if (alteration instanceof TierFAAlteration) {
+                        JSONObject fa = new JSONObject();
+                        TierFAAlteration faAlteration = (TierFAAlteration) alteration;
+                        fa.put("bonus", faAlteration.getFaAlteration());
+                        fa.put("id", faAlteration.getEntry().getId());
+                        for (TierEntry entry : faAlteration.getForEach()) {
+                            fa.append("forEach" , entry.getId());
+                        }
+
+                        faAlterList.put(fa);
+                    }
+
+
+                    if (alteration instanceof TierCostAlteration) {
+                        JSONObject fa = new JSONObject();
+                        TierCostAlteration costAlteration = (TierCostAlteration) alteration;
+                        fa.put("bonus", costAlteration.getCostAlteration());
+                        fa.put("id", costAlteration.getEntry().getId());
+                        if (alteration.isRestricted()) {
+                            fa.put("restricted_to", costAlteration.getRestrictedToId());
+                        }
+                        costAlterList.put(fa);
+                    }
+
+
+
+                }
+
+                JSONArray freeModelsList = new JSONArray();
+                for (TierFreeModel freebee : level.getBenefit().getFreebies()) {
+                    JSONObject free = new JSONObject();
+                    for (TierEntry entry : freebee.getFreeModels()) {
+                        free.append("id", entry.getId());
+                    }
+                    for (TierEntry entry : freebee.getForEach()) {
+                        free.append("forEach" , entry.getId());
+                    }
+                    freeModelsList.put(free);
+                }
+                levelJson.put("faAlterations", faAlterList);
+                levelJson.put("costAlterations", costAlterList);
+                levelJson.put("freeModels", freeModelsList);
+
+                levels.put(levelJson);
+            }
+
+            tierJson.put("levels", levels);
+
+            tiersArray.put(tierJson);
+
+
+        }
+
+        json.key("tiers");
+        json.value(tiersArray);
+
+
+        json.endObject();
+
+    }
+
+    public static void createFactionExport(Writer writer, Faction faction) {
+
+        JSONWriter json = new JSONWriter(writer);
+
+        json.object();
+
+        JSONArray groups = new JSONArray();
+
+        JSONObject casterGroup = new JSONObject();
+        casterGroup.put("id", faction.getEnumValue().getId() + "_warcasters");
+        casterGroup.put("label", "Warcasters");
+        casterGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray casterlist = new JSONArray();
+        for (Warcaster entry : faction.getCasters().values()) {
+            JSONObject result = new JSONObject();
+            result.put("type", "warcaster");
+            putBasicValues(faction, entry, result);
+            casterlist.put(result);
+        }
+
+        casterGroup.put("entries", casterlist);
+        groups.put(casterGroup);
+
+        JSONObject jacksGroup = new JSONObject();
+        jacksGroup.put("id", faction.getEnumValue().getId() +"_warjacks");
+        jacksGroup.put("label", "Warjacks");
+        jacksGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray jacklist = new JSONArray();
+        for (Warjack entry : faction.getJacks().values()) {
+            JSONObject result = new JSONObject();
+            result.put("type", "warjack");
+            putBasicValues(faction, entry, result);
+
+            if (! entry.getAllowedEntriesToAttach().isEmpty()) {
+                result.put("restricted_to", entry.getAllowedEntriesToAttach());
+            }
+
+            jacklist.put(result);
+        }
+        jacksGroup.put("entries", jacklist);
+        groups.put(jacksGroup);
+
+
+
+        JSONObject BEGroup = new JSONObject();
+        BEGroup.put("id", faction.getEnumValue().getId() +"_bes");
+        BEGroup.put("label", "Battle engines");
+        BEGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray belist = new JSONArray();
+        for (BattleEngine entry : faction.getBattleEngines().values()) {
+            JSONObject result = new JSONObject();
+            result.put("type", "battleengine");
+            putBasicValues(faction, entry, result);
+            belist.put(result);
+        }
+        BEGroup.put("entries", belist);
+        groups.put(BEGroup);
+
+        JSONObject unitsGroup = new JSONObject();
+        unitsGroup.put("id", faction.getEnumValue().getId() +"_units");
+        unitsGroup.put("label", "Units");
+        unitsGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray unitslist = new JSONArray();
+        for (Unit entry : faction.getUnits().values()) {
+            JSONObject result = new JSONObject();
+            result.put("type", "unit");
+            putBasicValues(faction, entry, result);
+            if (entry.isVariableSize()) {
+                result.put("costMin", entry.getBaseCost());
+                result.put("costMax", entry.getFullCost());
+                result.put("min", entry.getBaseNumberOfModels());
+                result.put("max", entry.getFullNumberOfModels());
+            }
+            if (entry.isJackMarshall()) {
+                result.put("type", "unitMarshall");
+            }
+            unitslist.put(result);
+        }
+        unitsGroup.put("entries", unitslist);
+        groups.put(unitsGroup);
+
+
+        JSONObject UAGroup = new JSONObject();
+        UAGroup.put("id", faction.getEnumValue().getId() +"_UAs");
+        UAGroup.put("label", "Unit Attachments");
+        UAGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray UAlist = new JSONArray();
+        for (Unit entry : faction.getUnits().values()) {
+
+            if (entry.getUnitAttachment() != null) {
+                UnitAttachment ua = entry.getUnitAttachment();
+                JSONObject result = new JSONObject();
+                result.put("type", "UA");
+                result.put("restricted_to", entry.getId());
+                putBasicValues(faction, ua, result);
+
+                if (ua.isJackMarshall()) {
+                    result.put("type", "UAMarshall");
+                }
+                UAlist.put(result);
+            }
+        }
+        UAGroup.put("entries", UAlist);
+        groups.put(UAGroup);
+
+
+        JSONObject WAGroup = new JSONObject();
+        WAGroup.put("id", faction.getEnumValue().getId() +"_WAs");
+        WAGroup.put("label", "Weapon Attachments");
+        WAGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray WAlist = new JSONArray();
+        for (Unit entry : faction.getUnits().values()) {
+
+            if (entry.getWeaponAttachment() != null) {
+                WeaponAttachment wa = entry.getWeaponAttachment();
+                JSONObject result = new JSONObject();
+                result.put("type", "WA");
+                result.put("restricted_to", entry.getId());
+                putBasicValues(faction, wa, result);
+                WAlist.put(result);
+            }
+        }
+        WAGroup.put("entries", WAlist);
+        groups.put(WAGroup);
+
+
+
+        JSONObject solosGroup = new JSONObject();
+        solosGroup.put("id", faction.getEnumValue().getId() +"_solos");
+        solosGroup.put("label", "Solos");
+        solosGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray soloslist = new JSONArray();
+        for (Solo entry : faction.getSolos().values()) {
+            JSONObject result = new JSONObject();
+            result.put("type", "solo");
+            putBasicValues(faction, entry, result);
+            if (entry.isMercenaryUnitAttached()) {
+                result.put("type", "RA");
+            }
+            if (entry.isGenericUnitAttached()) {
+                result.put("type", "UA");
+            }
+            if (! entry.getAllowedEntriesToAttach().isEmpty()) {
+                result.put("restricted_to", entry.getAllowedEntriesToAttach());
+            }
+
+            if (entry.isWarcasterAttached()) {
+                result.put("type", "soloAttachment");
+            }
+            if (entry.isDragoon() && entry.isDismountOption()) {
+                result.put("type", "soloDragoon");
+            }
+            if (entry.getModels().get(0).isJackMarshal()) {
+                result.put("type", "soloMarshall");
+            }
+            if (entry.getModels().get(0).isJourneyManWarcaster()) {
+                result.put("type", "soloJourneyMan");
+            };
+            if (entry.getModels().get(0).isLesserWarlock()) {
+                result.put("type", "soloLesserWarlock");
+            };
+            soloslist.put(result);
+        }
+        solosGroup.put("entries", soloslist);
+        groups.put(solosGroup);
+
+
+        json.key("groups");
+        json.value(groups);
+
+
+        json.endObject();
+
+    }
+
+    private static void putBasicValues(Faction faction, ArmyElement entry, JSONObject result) {
+        result.put(ID, entry.getId());
+        result.put("name", entry.getName());
+        result.put("cost", entry.getBaseCost());
+        result.put("faction", faction.getId());
+//        result.put("selectedFA", 0);
+//        result.put("alteredFa", 0);
+//        result.put("alteredCost", 0);
+        result.put("fa", entry.getFaString());
+
+        if (! entry.getAllowedFactionsToWorkFor().isEmpty()) {
+            result.put("works_for", entry.getAllowedFactionsToWorkFor());
+        }
+
+
+
+    }
 }

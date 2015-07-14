@@ -143,6 +143,7 @@
         <!-- trencher solos -->
         <entry id="YS04" />
         <entry id="YS08" />
+        <entry id="YS11" /> <!-- add trench buster -->
       </only>
       <benefits>
         <ingameeffect >You can redeploy one Trencher model/unit after both players have deployed but before the first player first turn. The redeployed models must be placed on the table in a location they could have been deployed initially</ingameeffect>
@@ -279,6 +280,110 @@
       </benefits>
     </level>
   </tiers>
+    <tiers name="Haley3 - Strands of Fate" casterId="Yz01" faction="faction_cygnar">
+
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Cygnar non-character warjacks, Thorn</models>
+            </type>
+            <type type="UNITS">
+                <models>Field Mechaniks, Long Gunner Infantry, Trencher units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Journeyman Warcaster, Trencher solos</models>
+            </type>
+        </availableModels>
+
+
+        <level number="1">
+            <only>
+
+                <entry id="Yw01" />
+                <!-- cygnar non-character warjack + ol'rowdy -->
+                <entry id="YJ01" />
+                <entry id="YJ02" />
+                <entry id="YJ03" />
+                <entry id="YJ04" />
+                <entry id="YJ05" />
+                <entry id="YJ07" />
+                <entry id="YJ08" />
+                <entry id="YJ09" />
+                <entry id="YJ10" />
+                <entry id="YJ12" />
+                <entry id="YJ14" />
+                <entry id="YJ15" />
+                <entry id="YJ13" />
+                <entry id="YJ18" />
+                <entry id="YJ19" />
+                <entry id="YJ20" />
+                <entry id="YJ21" /> <!-- reliant -->
+                <entry id="YJ23" /> <!-- hurricane-->
+                <entry id="YJ06" /> <!-- thorn -->
+                <!-- Field Mechaniks, Long Gunner Infantry, Trencher units -->
+                <entry id="YU03" />
+                <entry id="YU02" />
+                <entry id="YA07" />
+                <entry id="YU05" />
+                <entry id="YA03" />
+                <entry id="YA04" />
+                <entry id="YU06" />
+                <entry id="YU07" />
+                <entry id="YU14" />
+                <entry id="YA08" />
+
+                <!-- Journeyman Warcaster, Trencher solos-->
+                <entry id="YS01" />
+                <entry id="YS04" />
+                <entry id="YS08" />
+                <entry id="YS11" />
+            </only>
+            <benefits>
+                <ingameeffect >You can begin the game with Haley Past and/or Haley Future in play. For each model in this unit in play at the start of the game you can redeploy one model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed in a location they could have been placed initially.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2YU02-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+                    <entry id="YU05" />
+                    <entry id="YU06" />
+                    <entry id="YU07" />
+                    <entry id="YU14" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect  />
+                <alterCost bonus="1" entryId="YU05"/>
+                <alterCost bonus="1" entryId="YU06"/>
+                <alterCost bonus="1" entryId="YU07"/>
+                <alterCost bonus="1" entryId="YU14"/>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have jackmarshalled  1(YJ01 YJ03 YJ04 YJ05 YJ07 YJ10 YJ14 YJ15 YJ18 YJ19 YJ02 YJ21)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="YU14" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect >Units in the army gain Prowl during the first round of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have in battlegroup  2YJ04 (hunter)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="YJ02" />
+                    <entry id="YJ06" />
+                    <entry id="YJ23" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect >During your first turn of the game, models in Haley's battlegroup gain +2 SPD.</ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
   <tiers name="Stryker1 - Combined Arms" casterId="Yw02" faction="faction_cygnar">
       <availableModels>
           <type type="WARJACKS">
@@ -312,6 +417,7 @@
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- reliant -->
+        <entry id="YJ23" /> <!-- hurricane-->
         <!-- mechaniks, long gunner, trencher, stormblade -->
         <entry id="YU03" />
         <entry id="YU02" /> <!-- long gunner + UA -->
@@ -406,6 +512,7 @@
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21"/> <!-- reliant -->
+        <entry id="YJ23" /> <!-- hurricane-->
         <entry id="YU03" />
         <entry id="YU10" />
         <entry id="YU04" />
@@ -484,6 +591,7 @@
         <entry id="YJ13" />
         <entry id="YJ14" />
         <entry id="YJ20" />
+        <entry id="YJ23" /> <!-- hurricane-->
 
         <!-- Cygnar cavalry units -->
         <entry id="YU10" />
@@ -574,6 +682,9 @@
         <entry id="YJ20" />
         <entry id="YJ21"/> <!-- reliant -->
         <entry id="YJ02" />
+        <entry id="YJ24" /> <!-- ace - special issue caine -->
+        <entry id="YJ23" /> <!-- hurricane-->
+
         <!-- arcane tempest units -->
         <entry id="YU01" />
         <entry id="YA01" />
@@ -620,7 +731,9 @@
           <entry id="YJ18" />
           <entry id="YJ19" />
           <entry id="YJ20" />
+          <entry id="YJ23" /> <!-- hurricane-->
           <entry id="YJ02" />
+          <entry id="YJ24" /> <!-- ace - special issue caine -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -662,6 +775,7 @@
         <entry id="YJ05" />
         <entry id="YJ15" />
         <entry id="YJ18" />
+        <entry id="YJ24" /> <!-- ace - special issue caine -->
         <!-- arcane tempest units, rangers -->
         <entry id="YU01" />
         <entry id="YA01" />
@@ -670,6 +784,7 @@
         <entry id="YU16" />
         <!-- arcane tempest solo -->
         <entry id="YS02" />
+
       </only>
       <benefits>
         <ingameeffect>You can redeploy one model/unit after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
@@ -735,6 +850,7 @@
         <entry id="YJ05" />
         <entry id="YJ15" />
         <entry id="YJ18" />
+        <entry id="YJ24" /> <!-- ace - special issue caine -->
         <!-- Trencher Commandos, Trencher Infantry -->
         <entry id="YU05" />
         <entry id="YA03" />
@@ -744,6 +860,7 @@
         <!-- Non-character Trencher solos -->
         <entry id="YS04" />
         <entry id="YS08" />
+        <entry id="YS11" /> <!-- add trench buster -->
       </only>
       <benefits>
         <ingameeffect  />
@@ -796,6 +913,7 @@ attachment and the FA for Scattergunners is increased. -->
           <entry id="YJ05" />
           <entry id="YJ15" />
           <entry id="YJ18" />
+          <entry id="YJ24" /> <!-- ace - special issue caine -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -836,6 +954,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
         <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <entry id="YU03" />
         <!-- field mecha, storm knights -->
         <entry id="YU10" />
@@ -931,6 +1050,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
         <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <entry id="YU03" />
         <entry id="YU09" />
         <entry id="YU15" />
@@ -1011,7 +1131,7 @@ attachment and the FA for Scattergunners is increased. -->
               <models>Field Mechaniks, Cygnar units with Immunity:Electricity </models>
           </type>
           <type type="SOLOS">
-              <models>Journeyman Warcaster, Cygnar solos with Immunity: Electricity</models>
+              <models>Journeyman Warcasters, Cygnar solos with Immunity: Electricity</models>
           </type>
           <type type="BATTLE_ENGINES">
               <models>Storm Strider</models>
@@ -1034,6 +1154,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YU17" />
         <entry id="YJ21"/> <!-- add reliant -->
         <entry id="YJ22" /> <!-- special issue nemo / dynamo -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <!-- add silverline stormguard -->
         <entry id="YA02" />
         <entry id="YA09" />
@@ -1042,6 +1163,8 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YS05" />
         <entry id="YS07" />
         <entry id="YS10" />
+        <entry id="YA11" /> <!-- jakes & gastonne allowed -->
+        <entry id="MS25" />
       </only>
       <benefits>
         <ingameeffect >Reduce the point cost of Stormguard units by 1.</ingameeffect>
@@ -1121,6 +1244,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" /><!-- add reliant -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <!--  field mecha, rangers, trencher units -->
         <entry id="YU03" />
         <entry id="YU13" />
@@ -1135,6 +1259,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YS01" />
         <entry id="YS04" />
         <entry id="YS08" />
+        <entry id="YS11" /> <!-- add trench buster -->
       </only>
       <benefits>
         <ingameeffect  />
@@ -1228,6 +1353,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
         <entry id="YJ16" /> <!-- triumph -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <!--  Gun Mage Units, Long Gunners, Field Mechanics -->
         <entry id="YU01" />
         <entry id="YA01" />
@@ -1296,6 +1422,7 @@ attachment and the FA for Scattergunners is increased. -->
         <alterCost entryId="YJ19" bonus="1" onlyIfAttachedTo="YA11"/>
         <alterCost entryId="YJ20" bonus="1" onlyIfAttachedTo="YA11"/>
         <alterCost entryId="YJ21" bonus="1" onlyIfAttachedTo="YA11"/>
+        <alterCost entryId="YJ23" bonus="1" onlyIfAttachedTo="YA11"/>
         
         <alterCost entryId="YJ01" bonus="1" onlyIfAttachedTo="YS01"/>
         <alterCost entryId="YJ02" bonus="1" onlyIfAttachedTo="YS01"/>
@@ -1313,6 +1440,7 @@ attachment and the FA for Scattergunners is increased. -->
         <alterCost entryId="YJ19" bonus="1" onlyIfAttachedTo="YS01"/>
         <alterCost entryId="YJ20" bonus="1" onlyIfAttachedTo="YS01"/>
         <alterCost entryId="YJ21" bonus="1" onlyIfAttachedTo="YS01"/>
+        <alterCost entryId="YJ23" bonus="1" onlyIfAttachedTo="YS01"/>
         
         
         <alterCost entryId="YJ01" bonus="1" onlyIfAttachedTo="YW05"/>
@@ -1332,6 +1460,7 @@ attachment and the FA for Scattergunners is increased. -->
         <alterCost entryId="YJ20" bonus="1" onlyIfAttachedTo="YW05"/>
         <alterCost entryId="YJ21" bonus="1" onlyIfAttachedTo="YW05"/>
         <alterCost entryId="YJ16" bonus="1" onlyIfAttachedTo="YW05"/>
+        <alterCost entryId="YJ23" bonus="1" onlyIfAttachedTo="YW05"/>
       </benefits>
     </level>
   </tiers>  
@@ -1367,6 +1496,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <!-- field mecha, ranger, light cavalry, black 13 -->
         <entry id="YU03" />
         <entry id="YU13" />
@@ -1459,6 +1589,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <entry id="YE01" />
         <!-- field mecha, sword knights -->
         <entry id="YU03" />
@@ -1500,6 +1631,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <entry id="YU03" />
         <entry id="YU08" />
         <entry id="YA05" />
@@ -1560,6 +1692,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ14" />
         <entry id="YJ15" />
         <entry id="YJ20" />
+        <entry id="YJ23" /> <!-- add hurricane -->
         <entry id="YJ18" />
         <entry id="YJ19" />
         <entry id="YU03" />
@@ -1608,6 +1741,7 @@ attachment and the FA for Scattergunners is increased. -->
           <entry id="YJ12" />
           <entry id="YJ19" />
           <entry id="YJ20" />
+          <entry id="YJ23" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -1643,6 +1777,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" /> <!-- add reliant -->
+        <entry id="YJ23" /> <!-- add hurricane -->
         <!-- arcane tempest gun mages, field mecha, long gunner, rangers -->
         <entry id="YJ02" />
         <entry id="YU01" />
@@ -1738,6 +1873,7 @@ attachment and the FA for Scattergunners is increased. -->
         <entry id="YJ19" />
         <entry id="YJ20" />
         <entry id="YJ21" />
+        <entry id="YJ23" /> <!-- add hurricane -->
         <!-- Sword Knights, Field Mechaniks, Morrowan Units -->
         <entry id="YU03" />
         <entry id="YU08" />
@@ -1826,6 +1962,7 @@ attachment and the FA for Scattergunners is increased. -->
                 <entry id="YJ19" />
                 <entry id="YJ20" />
                 <entry id="YJ21" />
+                <entry id="YJ23" /> <!-- add hurricane -->
                 <!-- storm strider -->
                 <entry id="YE01" />
                 <!-- Rangers, Stormsmith units,Trencher units -->
@@ -1842,6 +1979,7 @@ attachment and the FA for Scattergunners is increased. -->
                 <entry id="YS06" />
                 <entry id="YS03" />
                 <entry id="YS04" />
+                <entry id="YS11" /> <!-- add trench buster -->
             </only>
             <benefits>
                 <ingameeffect></ingameeffect>
@@ -1908,6 +2046,7 @@ attachment and the FA for Scattergunners is increased. -->
                     <entry id="YJ18" />
                     <entry id="YJ19" />
                     <entry id="YJ20" />
+                    <entry id="YJ23" /> <!-- add hurricane -->
                     <entry id="YJ21" />
                 </entrygroup>
             </must_have>
