@@ -81,6 +81,7 @@
  <color name="DarkGoldenrod">#B8860B</color>
  <color name="FireBrick">#B22222</color>
  <color name="FireBrickHalfTransparent">#bbB22222</color>
+ <color name="FireBrickMostlyTransparent">#33B22222</color>
  <color name="PowderBlue">#B0E0E6</color>
  <color name="LightSteelBlue">#B0C4DE</color>
  <color name="PaleTurquoise">#AFEEEE</color>
