@@ -15,8 +15,8 @@ android {
         applicationId 'com.schlaf.steam'
         minSdkVersion 7
         targetSdkVersion 22
-        versionCode 29
-        versionName '1.6.0'
+        versionCode 31
+        versionName '1.6.1'
         signingConfig signingConfigs.test
     }
     buildTypes {
