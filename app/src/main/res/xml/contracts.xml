@@ -7,7 +7,31 @@
         name="Four star syndicate"
         contractId="four_stars"
         faction="faction_mercs" 
-        description="Models that work for Cryx, Khador, and the following: Rhupert Carvolo and Sam MacHorne &amp; the Devil Dogs.">
+        description="">
+
+        <availableModels>
+            <type type="WARCASTERS">
+                <models>Mercenary Warcasters that work for Cryx, Khador</models>
+            </type>
+            <type type="WARJACKS">
+                <models>Mercenary warjacks that can be affiliated to available models in this contract
+                </models>
+            </type>
+            <type type="WARBEASTS">
+                <models>Warbeasts that can be affiliated to lesser warlocks in this contract.
+                </models>
+            </type>
+            <type type="UNITS">
+                <models>Mercenary units that work for Cryx, Khador, and Sam MacHorne &amp; the Devil Dogs.</models>
+            </type>
+            <type type="SOLOS">
+                <models>Mercenary solos that work for Cryx, Khador and Rhupert Carvolo.</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Mercenary battle engines that work for Cryx, Khador</models>
+            </type>
+        </availableModels>
+
         <only>
             <!-- casters -->
             <entry id="Mw01" />
@@ -116,6 +140,7 @@
             <entry id="MS25" />
             <entry id="MS26" />
             <entry id="MS29" />
+            <entry id="MS30" />
             <entry id="IS01_mercs" />
             <entry id="IS03_mercs" />
             <!-- <entry id="IS04_mercs" />  removed in 1.3 --> 
@@ -123,7 +148,7 @@
             <entry id="IS12_mercs" />
         </only>
         <benefits>
-            <ingameeffect>Sorry, no benefit :-(</ingameeffect>
+            <ingameeffect>This contract has no benefit.</ingameeffect>
         </benefits>
     </contract>
     
@@ -132,6 +157,30 @@
         contractId="Highborn_Covenant"
         faction="faction_mercs" 
         description="The Highborn Covenant represents the resistance of Llael to the Khadoran invasion.">
+
+        <availableModels>
+            <type type="WARCASTERS">
+                <models>Warcasters that work for Cygnar</models>
+            </type>
+            <type type="WARJACKS">
+                <models>Mercenary warjacks that can be affiliated to available models in this contract
+                </models>
+            </type>
+            <type type="WARBEASTS">
+                <models>Mercenary Warbeasts that can be affiliated to lesser warlocks in this contract.
+                </models>
+            </type>
+            <type type="UNITS">
+                <models>Mercenary units that work for Cygnar, and up to one non-character Arcane Tempest Gun Mage unit or Long Gunner unit.</models>
+            </type>
+            <type type="SOLOS">
+                <models>Mercenary solos that work for Cygnar</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Mercenary battle engines that work for Cygnar</models>
+            </type>
+        </availableModels>
+
         <only>
             <!-- casters -->
             <!-- casters -->
@@ -239,6 +288,7 @@
             <entry id="MS25" />
             <entry id="MS26" />
             <entry id="MS29" />
+            <entry id="MS31" />
             <entry id="IS01_mercs" />
             <entry id="IS03_mercs" />
             <entry id="IS04_mercs" />
@@ -247,7 +297,7 @@
             
         </only>
         <benefits>
-            <ingameeffect>All solos included in the army gain Advance Deployment</ingameeffect>
+            <ingameeffect>The army can also include one Arcane Tempest Gun Mage unit or Long Gunner unit. This unit counts as a friendly Mercenary unit instead of a Cygnar unit and can include attachments. All solos included in the army gain Advance Deployment</ingameeffect>
         </benefits>
     </contract>
     
@@ -256,6 +306,23 @@
         contractId="Talion_Charter"
         faction="faction_mercs" 
         description="If you don't like a bunch of pirates, then you won't like the Talion Charter">
+
+        <availableModels>
+            <type type="WARCASTERS">
+                <models>Captain Phinneus Shae</models>
+            </type>
+            <type type="WARJACKS">
+                <models>Mercenary warjacks that can be affiliated to available models in this contract
+                </models>
+            </type>
+            <type type="UNITS">
+                <models>Privateer Mercenary units, and the Commodore Cannon &amp; Crew</models>
+            </type>
+            <type type="SOLOS">
+                <models>Privateer Mercenary solos</models>
+            </type>
+        </availableModels>
+
         <only>
             <!-- casters -->
             <!-- casters -->
@@ -309,6 +376,30 @@
         contractId="Searforge_Commission"
         faction="faction_mercs" 
         description="The Searforge Commission is the contract taken to protect the interests of the nation of Rhul.">
+
+         <availableModels>
+             <type type="WARCASTERS">
+                 <models>Mercenary Rhulic Warcasters</models>
+             </type>
+             <type type="WARJACKS">
+                 <models>Mercenary Rhulic warjacks that can be affiliated to available models in this contract.
+                 </models>
+             </type>
+             <type type="WARBEASTS">
+                 <models>Mercenary Rhulic Warbeasts that can be affiliated to lesser warlocks in this contract.
+                 </models>
+             </type>
+             <type type="UNITS">
+                 <models>Mercenary Rhulic and/or Ogrun units.</models>
+             </type>
+             <type type="SOLOS">
+                 <models>Mercenary Rhulic and/or Ogrun solos.</models>
+             </type>
+             <type type="BATTLE_ENGINES">
+                 <models>Mercenary Rhulic battle engines.</models>
+             </type>
+         </availableModels>
+
         <only>
             <!-- casters -->
             <entry id="MW02" />
@@ -356,7 +447,27 @@
         name="Blindwater Congregation"
         contractId="Blindwater_Congregation"
         faction="faction_minions" 
-        description="only croco!">
+        description="The gatormen of Blindwater Lake!">
+
+        <availableModels>
+            <type type="WARLOCKS">
+                <models>Minion Gatorman Warlocks</models>
+            </type>
+            <type type="WARBEASTS">
+                <models>Minion Warbeasts that can be affiliated to warlocks in this contract.
+                </models>
+            </type>
+            <type type="UNITS">
+                <models>Minion units with Amphibious, and Swamp Gobber Bellows Crew.</models>
+            </type>
+            <type type="SOLOS">
+                <models>Minion solos with Amphibious, and Feralgeists, Thrullg, Totem Hunter, Viktor Pendrake</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Minion Gatorman battle engines.</models>
+            </type>
+        </availableModels>
+
 
         <only>
             <entry id="IW06" />
@@ -421,6 +532,26 @@
         faction="faction_minions" 
         description="Ever wondered what it would be like to run an army of pigs? Well, it's your lucky day!">
 
+        <availableModels>
+            <type type="WARLOCKS">
+                <models>Minion Farrow Warlocks, Dr. Arkadius</models>
+            </type>
+            <type type="WARBEASTS">
+                <models>Minion Farrow Warbeasts that can be affiliated to warlocks in this contract.
+                </models>
+            </type>
+            <type type="UNITS">
+                <models>Minion Farrow units.</models>
+            </type>
+            <type type="SOLOS">
+                <models>Minion Farrow solos, and Alten Ashley, Gudrun the Wanderer, Saxon Orrik, Viktor Pendrake</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Minion Farrow battle engines.</models>
+            </type>
+        </availableModels>
+
+
         <only>
             <entry id="IW05" />
             <entry id="IW08" />
@@ -476,9 +607,27 @@
         contractId="Unwilling_and_Able"
         faction="faction_mercs" 
         description="Cephalyx contract from NQ #54.">
+
+        <availableModels>
+            <type type="WARCASTERS">
+                <models>Cephalix Warcasters</models>
+            </type>
+            <type type="WARJACKS">
+                <models>Cephalix Monstrosities.
+                </models>
+            </type>
+            <type type="UNITS">
+                <models>Cephalix units, and up to one non-Cephalyx Mercenary unit if that unit includes a Cephalyx Dominator UA.</models>
+            </type>
+            <type type="SOLOS">
+                <models>Cephalix solos, and Bloat Thrall, Machine Wraith, and Pistol Wraith solos.</models>
+            </type>
+        </availableModels>
+
         <only>
             <!-- casters -->
             <entry id="MW11" />
+            <entry id="MW12" />
             <!-- monstruosities -->
             <entry id="MM01" />
             <entry id="MM02" />
