@@ -3,9 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_003">
+    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_004">
         <!-- 002 add cyphon, siege crawler, nicolas verendrye, correct puppet masters affiliation solos + swamp gobber river raiders + trench buster for Magnus bad seeds-->
         <!-- 003 corrected drudge grunt ARM -->
+        <!-- 004 add savio montera + swamp gobber raiders + allow monstrosities for cyphon -->
       <warcasters>
         <warcaster id="Mw01" name="Magnus the Traitor" generation="P" full_name="Magnus the Traitor" qualification="Mercenary Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="MAGNUS" spd="5" str="6" mat="7" rat="5" def="14" arm="17" cmd="7" hitpoints="17" />
@@ -832,7 +833,8 @@
               <melee_weapon name="Impaling Blade" pow="6" p_plus_s="16" location="R" />
           </weapons>
           <restricted_to id="MW11" />
-        </warjack>        
+          <restricted_to id="MW12" />
+        </warjack>
         <warjack id="MM02" name="Warden" full_name="Warden" damage_grid="........................LLMBRRLMMBBR" cost="6" qualification="Mercenary Cephalyx Heavy Monstrosity" fa="U" completed="true">
           <basestats name="WARDEN" spd="5" str="10" mat="5" rat="4" def="10" arm="17" cmd="0" eyelesssight="true" />
           <weapons>
@@ -846,6 +848,7 @@
 			<capacity title="FOLLOW UP">When this model slams an enemy model, immediately after the slam is resolved this model can advance directly toward the slammed model up to the distance the slammed model was moved.</capacity>
 			<capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent’s turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>          
           <restricted_to id="MW11" />
+            <restricted_to id="MW12" />
         </warjack>
         <warjack id="MM03" name="Wrecker" full_name="Wrecker" damage_grid="........................LLMBRRLMMBBR" cost="7" qualification="Mercenary Cephalyx Heavy Monstrosity" fa="U"  completed="true">
           <basestats name="WRECKER" spd="5" str="10" mat="5" rat="4" def="10" arm="17" cmd="0" eyelesssight="true" />
@@ -862,6 +865,7 @@
               </melee_weapon>
           </weapons>
           <restricted_to id="MW11" />
+            <restricted_to id="MW12" />
         </warjack>
       </warjacks>
       <warbeasts>
@@ -2717,6 +2721,22 @@
               <capacity title="VIRTUOSO">This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
               <capacity title="MODEL COUNT">3 Raiders.</capacity>
               <works_for id="faction_cryx" />
+          </solo>
+
+
+          <solo id="MS31" name="Savio Montero Acosta" full_name="Sergeant Nicolas Verendrye" fa="C" cost="3" qualification="Mercenary Thamarite Character Solo" >
+              <basestats name="Acosta" spd="7" str="6" mat="9" rat="6" def="15" arm="15" cmd="9" hitpoints="5" fearless="true" immunity_electricity="true"/>
+              <weapons>
+                  <melee_weapon name="Storm Glaive" pow="7" p_plus_s="13" weapon_master="true" count="2"/>
+                  <ranged_weapon name="Storm Glaive Blast" rng="4" rof="1" aoe="-" pow="12" electricity="true" count="2" />
+                      
+              </weapons>
+              <capacity title="MERCENARIES">This model will work for Cygnar.</capacity>
+              <capacity title="DODGE">This can advance up to 2" immediately after an enemy attack that missed it is resolved unless it was missed while advancing. It cannot be targeted by free strikes during this movement.</capacity>
+              <capacity title="RIPOSTE">When this model is missed by an enemy melee attack, immediately after the attack is resolved it can make one normal melee attack against the attacking model.</capacity>
+              <capacity title="STEADY" type="">This model cannot be knocked down.</capacity>
+              <capacity title="SWIFT VENGEANCE">If one or more friendly warrior models were destroyed or removed from play by enemy attacks while within 5" of this model during your opponent's last turn, after resolving continuous effects during your Maintenance Phase, this model in make a full advance followed by one normal melee attack.</capacity>
+              <works_for id="faction_cygnar"/>
           </solo>
 
 
