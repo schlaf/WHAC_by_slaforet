@@ -420,18 +420,21 @@
           <basestats name="Subduer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
           <restricted_to id="MW11" />
+            <restricted_to id="MW12" />
         </warjack>
         
         <warjack id="MM02" name="Warden" full_name="Warden" damage_grid="........................LLMBRRLMMBBR" cost="6" qualification="Mercenary Cephalyx Heavy Monstrosity" fa="U">
           <basestats name="Warden" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
           <restricted_to id="MW11" />
+            <restricted_to id="MW12" />
         </warjack>
 
         <warjack id="MM03" name="Wrecker" full_name="Wrecker" damage_grid="........................LLMBRRLMMBBR" cost="7" qualification="Mercenary Cephalyx Heavy Monstrosity" fa="U">
           <basestats name="Wrecker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
           <restricted_to id="MW11" />
+            <restricted_to id="MW12" />
         </warjack>
 
         
@@ -774,10 +777,6 @@
           <model id="Grunts">
             <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           </model>
-          <works_for id="faction_menoth" />
-          <works_for id="faction_khador" />
-          <works_for id="faction_cryx" />
-          <works_for id="faction_cygnar" />
         </unit>
         <unit id="YU05_mercs" name="Trencher Infantry" full_name="Trencher Infantry" base_cost="6" baseCount="6" full_cost="10" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true" has_weapon_attachment="true">
           <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
@@ -1268,7 +1267,7 @@
               <only_in_tier id="Cyphon - Oppression Overwhelming"/>
         </solo>
 
-        <solo id="MS29" name="Sergeant Nicolas Verendrye" full_name="Sergeant Nicolas Verendrye" fa="C" cost="2" qualification="Mercenary Steelhead Character Solo" >
+        <solo id="MS29" name="Sergeant Nicolas Verendrye" full_name="Sergeant Nicolas Verendrye" fa="C" cost="3" qualification="Mercenary Steelhead Character Solo" >
           <basestats name="Nicolas" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           <weapons />
           <works_for id="faction_cryx"/>
@@ -1276,6 +1275,20 @@
           <works_for id="faction_khador"/>
           <works_for id="faction_menoth"/>
         </solo>
+
+
+          <solo id="MS30" name="Swamp Gobber River Raiders" full_name="Swamp Gobber River Raiders" qualification="Mercenary Minion Privateer Sea Dog Solo" fa="3" cost="2">
+              <basestats name="Raider" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  />
+              <weapons />
+              <works_for id="faction_cryx"/>
+          </solo>
+
+
+          <solo id="MS31" name="Savio Montero Acosta" full_name="Savio Montero Acosta" fa="C" cost="3" qualification="Mercenary Thamarite Character Solo" >
+              <basestats name="Acosta" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+              <weapons />
+              <works_for id="faction_cygnar"/>
+          </solo>
 
         <!-- cryx solos that can be taken in cephalyx contract -->
         <solo id="CS02_mercs" name="Bloat Thrall" full_name="Bloat Thrall" cost="2" qualification="Solo" fa="2">
