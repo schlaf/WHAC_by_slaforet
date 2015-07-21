@@ -1840,7 +1840,7 @@ attachment and the FA for Scattergunners is increased. -->
       </benefits>
     </level>
   </tiers>
-  <tiers name="Constance Blaize - Knights of the Prophet" casterId="YW09" faction="faction_cygnar">
+  <tiers name="Constance Blaize - Army of Light" casterId="YW09" faction="faction_cygnar">
         <availableModels>
           <type type="WARJACKS">
               <models>Cygnar non-character warjacks, Gallant</models>
