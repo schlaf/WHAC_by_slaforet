@@ -3,7 +3,7 @@ package com.schlaf.steam.data;
 public class AvailableModels {
 
 	public enum TierModelType {
-		WARJACKS,WARBEASTS,UNITS,SOLOS,BATTLE_ENGINES;
+        WARCASTERS, WARLOCKS, WARJACKS,WARBEASTS,UNITS,SOLOS,BATTLE_ENGINES;
 	}
 	
 	private TierModelType type;
