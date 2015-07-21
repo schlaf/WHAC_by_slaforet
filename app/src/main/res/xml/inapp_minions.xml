@@ -577,7 +577,7 @@
         </solo>
 
 <solo id="MS26_minion" name="Moorclaw" full_name="Raluk Moorclaw, The Ironmonger" fa="C" cost="2" qualification="Mercenary Minion Trollkin Character Solo">
- <basestats name="Moorclaw" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+ <basestats name="Moorclaw" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" jack_marshal="true"/>
 <weapons>
  </weapons>
  <works_for id="faction_trollblood"/>
