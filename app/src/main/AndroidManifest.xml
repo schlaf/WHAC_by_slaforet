@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schlaf.steam"
-    android:versionCode="31"
-    android:versionName="1.6.1" >
+    android:versionCode="32"
+    android:versionName="1.6.2" >
     
 <!--
 1.0.3 - 
@@ -234,6 +234,22 @@ correct display cost for caster attachements (was 0 when reloading from saved li
 correct cost of drakhun when reloaded
 add cyphon theme force + add trench buster for magnus
 correct battle engine for blindwater and correct FA bonus
+
+1.6.2
+add Xerxis2 - Footsteps of Giants
+add helios to relevant theme force.
+add MHI to garryth-assassins theme force
+add electromancers to Ossyan - The Hour of War theme force
+add proteus to relevant themes
+add Absylonia2 - Death's Wings theme force
+rename constance blaize theme force
+003 add gorax for arkadius
+add restriction on beasts to una the falconeer
+add jack marshall to raluk moorclaw (to allow taking warjacks)
+allow monstrosities for cyphon + add swamp gobber river rider + add savio montero acosta + remove the commodore from working for factions
+add transverse enumerator as UA for everybody
+add textual description of models for contracts
+add textual description of models for contracts + add Savio Montero Acosta to relevant contracts + correct puppet master
 
  -->    
 
