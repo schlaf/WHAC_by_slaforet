@@ -34,6 +34,7 @@
         <entry id="RJ10" />
         <entry id="RJ11" />
         <entry id="RJ13" />
+        <entry id="RJ16" />
         <entry id="RU03" />
         <entry id="RU04" />
         <entry id="RU07" />
@@ -127,6 +128,7 @@
         <entry id="RJ07" />
         <entry id="RJ08" />
         <entry id="RJ13" />
+        <entry id="RJ16" />
         <!-- House Shyeel units, Houseguard units, Stormfall Archers.-->
         <entry id="RU03" />
         <entry id="RU04" />
@@ -217,6 +219,7 @@
         <entry id="RJ10" />
         <entry id="RJ11" />
         <entry id="RJ13" />
+        <entry id="RJ16" />
         <entry id="RU01" />
         <entry id="RU02" />
         <entry id="RU06" />
@@ -312,6 +315,7 @@
         <entry id="RJ06" />
         <entry id="RJ08" />
         <entry id="RJ13" />
+          <entry id="RJ16" />
         <entry id="RU01" />
         <entry id="RA01" />
         <entry id="RU02" />
@@ -386,6 +390,7 @@
           <entry id="RJ10" />
           <entry id="RJ11" />
           <entry id="RJ13" />
+            <entry id="RJ16" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -420,6 +425,7 @@
         <entry id="RJ06" />
         <entry id="RJ08" />
         <entry id="RJ13" />
+          <entry id="RJ16" />
         <entry id="RU01" />
         <entry id="RU02" />
         <entry id="RU06" />
@@ -504,8 +510,10 @@
         <entry id="RJ10" />
         <entry id="RJ11" />
         <entry id="RJ13" />
+          <entry id="RJ16" />
         <entry id="RJ15" /> <!-- special issue Moros -->
         <entry id="RU05" />
+        <entry id="RU10" />
         <entry id="RA03" />
         <entry id="RA04" />
         <entry id="RS05" />
@@ -599,6 +607,7 @@
         <entry id="RJ10" />
         <entry id="RJ11" />
         <entry id="RJ13" />
+          <entry id="RJ16" />
         <entry id="RU05" />
         <entry id="RU10" />
         <entry id="RA03" />
@@ -657,6 +666,7 @@
           <entry id="RJ10" />
           <entry id="RJ11" />
           <entry id="RJ13" />
+            <entry id="RJ16" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -694,6 +704,7 @@
         <entry id="RJ10" />
         <entry id="RJ11" />
         <entry id="RJ13" />
+          <entry id="RJ16" />
         <entry id="RU01" />
         <entry id="RA01" />
         <entry id="RU08" />
@@ -785,6 +796,7 @@
         <entry id="RA05" />
         <entry id="RA04" />
         <entry id="RU09" />
+        <entry id="RU11" />
         <entry id="RS01" />
         <entry id="RS03" />
         <entry id="MS23" />
@@ -866,6 +878,7 @@
                 <entry id="RJ06" />
                 <entry id="RJ08" />
                 <entry id="RJ13" />
+                <entry id="RJ16" />
                 <entry id="RU03" />
                 <entry id="RA04" />
                 <entry id="RS01_forceWall" />
@@ -924,6 +937,7 @@
                         <entry id="RJ06" />
                         <entry id="RJ08" />
                         <entry id="RJ13" />
+                        <entry id="RJ16" />
                     </forEach>
                 </freeModel>
             </benefits>
@@ -954,6 +968,7 @@
                 <entry id="RJ06" />
                 <entry id="RJ08" />
                 <entry id="RJ13" />
+                <entry id="RJ16" />
 
                 <entry id="RU01" />
                 <entry id="RU02" />
@@ -1023,6 +1038,18 @@
     </tiers>
 
     <tiers name="Thyron - Rush of Battle" casterId="RW08" faction="faction_retribution">
+        <availableModels>
+            <type type="WARJACKS">
+                <models>Retribution non-character myrmidons</models>
+            </type>
+            <type type="UNITS">
+                <models>Houseguard units, Mage Hunter Infiltrators, Stormfall Archers</models>
+            </type>
+            <type type="SOLOS">
+                <models>Arcanists, Ghost Snipers, Houseguard solos, Soulless solos, Narn Mage Hunter of Ios, Sylys Wyshnalyrr the Seeker</models>
+            </type>
+        </availableModels>
+
         <level number="1">
             <only>
                 <entry id="RW08" />
