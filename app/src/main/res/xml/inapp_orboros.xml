@@ -324,6 +324,9 @@
         <solo id="OS09" name="Una the Falconer" full_name="Una the Falconer" cost="3" qualification="Solo" fa="C">
           <basestats name="Una the Falconer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" lesser_warlock="true" focus="4"/>
           <weapons />
+            <restricted_to id="OB13"/>
+            <restricted_to id="OB16"/>
+            <restricted_to id="OB19"/>
         </solo>
       </solos>
     </army>
