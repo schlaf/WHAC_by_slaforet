@@ -850,6 +850,95 @@
       </benefits>
     </level>
   </tiers>
+    <tiers name="Borka2 - Avalanche" casterId="TX05" faction="faction_trollblood">
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Trollblood non-character warbeasts, Rök</models>
+            </type>
+            <type type="UNITS">
+                <models>Kriel Warriors, Krielstone Bearer &amp; Stone Scribes, Trollkin Cavalry units, Trollblood units with Advance Deployment.</models>
+            </type>
+            <type type="SOLOS">
+                <models>Fell Caller Hero, Trollkin Sorcerer, Troll Whelps, Trollkin Cavalry solos, Trollblood solos with Advance Deployment.</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Trollkin War Wagons</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="TX05" />
+                <entry id="TB01" />
+                <entry id="TB02" />
+                <entry id="TB03" />
+                <entry id="TB04" />
+                <entry id="TB05" />
+                <entry id="TB06" />
+                <entry id="TB07" />
+                <entry id="TB08" />
+                <entry id="TB09" />
+                <entry id="TB11" />
+                <entry id="TB12" />
+                <entry id="TB14" />
+                <entry id="TB15" />
+                <entry id="TB16" />
+                <entry id="TB13" /> <!-- rok -->
+                <entry id="TU01" /> <entry id="TA01"/> <entry id="TA02"/> <!-- Kriel Warriors -->
+                <entry id="TU02" /> <entry id="TA03"/> <!-- Krielstone Bearer &amp; Stone Scribes -->
+                <entry id="TU08" /> <!-- Trollkin Cavalry units -->
+                <entry id="TU11"/> <entry id="TU15"/> <!-- Trollblood units with Advance Deployment. -->
+                <entry id="TS01" />  <!-- Fell Caller Hero  -->
+                <entry id="TS03" /> <!-- Troll Whelps  -->
+                <entry id="TS05" /> <!-- Trollkin Cavalry solos  -->
+                <entry id="TS06" /> <!-- Trollblood solos with Advance Deployment : Runebearer -->
+                <entry id="TS07" /> <!-- Trollblood solos with Advance Deployment : skinner -->
+                <entry id="TS09"/> <!-- Trollkin Sorcerer -->
+                <entry id="TE01" /> <!-- Trollkin War Wagons -->
+            </only>
+            <benefits>
+                <ingameeffect></ingameeffect>
+                <alterCost bonus="1" entryId="TU08"/>
+                <alterCost bonus="1" entryId="TS05"/>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2+ models/units with advance deployment -->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="TU11"/> <entry id="TU15"/> <entry id="TS06" /> <entry id="TS07" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Friendly models/units can begin the game affected by Borka's upkeep spells. These spells and their targets must be declared before either player sets up models. Borka does not pay fury to upkeep these spells during your first turn.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  rök + winter troll-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="TB13" />
+                </entrygroup>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="TB06" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>For each warbeast in the army, place one 4" AOE template anywhere completely within 20" of the back edge of Borka's deployment zone after terrain has been placed but before either player deploys his army. These templates cannot be placed within 3" of a terrain feature. The templates are snowdrifts. Models in a snowdrift gain Concealment and models without Immunity:Cold treat them as rough terrain.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have  3(TU12 TU06)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="TE01" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Models in Borka's battlegroup gain +2 SPD during your first turn of the game.</ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
   <tiers name="Calandra - Children of Dhunia" casterId="TW06" faction="faction_trollblood">
       <availableModels>
           <type type="WARBEASTS">
