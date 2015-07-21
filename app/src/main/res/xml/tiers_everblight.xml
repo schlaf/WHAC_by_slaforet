@@ -1068,6 +1068,7 @@
         <entry id="EB12" />
         <entry id="EB13" />
         <entry id="EB14" />
+        <entry id="EB15" />
         <entry id="EB16" />
         <entry id="EB18" />
         <entry id="EB17" />
@@ -1127,6 +1128,7 @@
           <entry id="EB10" />
           <entry id="EB11" />
           <entry id="EB13" />
+          <entry id="EB15" />
           <entry id="EB21" />
         </entrygroup>
       </must_have>
@@ -1138,10 +1140,117 @@
         <alterCost bonus="1" entryId="EB10" />
         <alterCost bonus="1" entryId="EB11" />
         <alterCost bonus="1" entryId="EB13" />
+        <alterCost bonus="1" entryId="EB15" />
         <alterCost bonus="1" entryId="EB21" />
       </benefits>
     </level>
   </tiers>
+    <tiers name="Absylonia2 - Death's Wings" casterId="Ex06" faction="faction_everblight">
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Legion non-character warbeasts, Proteus</models>
+            </type>
+            <type type="UNITS">
+                <models>Strider units, Legion units with Flight </models>
+            </type>
+            <type type="SOLOS">
+                <models> Forsaken, Strider solos, Legion solos with Flight</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Legion battle engines with Flight</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="Ex06" />
+                <entry id="EB01" />
+                <entry id="EB02" />
+                <entry id="EB03" />
+                <entry id="EB04" />
+                <entry id="EB05" />
+                <entry id="EB06" />
+                <entry id="EB07" />
+                <entry id="EB08" />
+                <entry id="EB09" />
+                <entry id="EB11" />
+                <entry id="EB12" />
+                <entry id="EB13" />
+                <entry id="EB14" />
+                <entry id="EB15" />
+                <entry id="EB16" />
+                <entry id="EB18" />
+                <entry id="EB17" />
+                <entry id="EB19" />
+                <entry id="EB21" />
+                <entry id="EB22" />
+                <entry id="EU13" /> <!-- Strider Blightblades -->
+                <entry id="EU07" /> <entry id="EA03" /> <!-- Strider Rangers + UA -->
+                <entry id="EU10" /> <!-- grotesques -->
+                <entry id="ES05" /> <!-- The Forsaken -->
+                <entry id="ES04" /> <!-- Strider Deathstalker -->
+                <entry id="ES01" /> <!-- Blighted Nyss Sorceress &amp; Hellion -->
+                <entry id="EE01" /> <!-- throne -->
+            </only>
+            <benefits>
+                <ingameeffect>Flying models gain +2 SPD during your first turn of the game. </ingameeffect>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- The army includes one or more units with Advance Deployment -->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="EU07" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Units in the army gain Advance Deployment</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- The army includes three or more different warbeasts.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+                    <entry id="EB01" />
+                    <entry id="EB02" />
+                    <entry id="EB03" />
+                    <entry id="EB04" />
+                    <entry id="EB05" />
+                    <entry id="EB06" />
+                    <entry id="EB07" />
+                    <entry id="EB08" />
+                    <entry id="EB09" />
+                    <entry id="EB11" />
+                    <entry id="EB12" />
+                    <entry id="EB13" />
+                    <entry id="EB14" />
+                    <entry id="EB15" />
+                    <entry id="EB16" />
+                    <entry id="EB18" />
+                    <entry id="EB17" />
+                    <entry id="EB19" />
+                    <entry id="EB21" />
+                    <entry id="EB22" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Warbeasts in Absylonia’s battlegroup can use their animi during your first turn of the game without being forced. Warbeasts cannot also be forced to use their animi that turn.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- The army includes one or more Archangel gargantuans. Reduce the point cost of huge-based models in the army by 1.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="EB17" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect  />
+                <alterCost bonus="1" entryId="EB17" />
+                <alterCost bonus="1" entryId="EE01" />
+            </benefits>
+        </level>
+    </tiers>
   <tiers name="Bethayne - Black Magic" casterId="EW07" faction="faction_everblight">
      <availableModels>
           <type type="WARBEASTS">
