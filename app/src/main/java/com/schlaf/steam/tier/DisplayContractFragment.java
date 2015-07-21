@@ -17,6 +17,7 @@ import com.schlaf.steam.R;
 import com.schlaf.steam.activities.selectlist.SelectionModelSingleton;
 import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
+import com.schlaf.steam.data.AvailableModels;
 import com.schlaf.steam.data.Contract;
 import com.schlaf.steam.data.ModelTypeEnum;
 import com.schlaf.steam.data.TierCostAlteration;
@@ -72,49 +73,111 @@ public class DisplayContractFragment extends DialogFragment {
 		ArrayList<String> units = new ArrayList<String>();
 		ArrayList<String> solos = new ArrayList<String>();
 		ArrayList<String> battleEngines = new ArrayList<String>();
-		
-		for (TierEntry entry :  onlyModels) {
-			ArmyElement model = ArmySingleton.getInstance().getArmyElement(entry.getId());
-			if (model.getModelType() == ModelTypeEnum.WARCASTER || model.getModelType() == ModelTypeEnum.WARLOCK) {
-				warcasters.add(model.getFullName());
-			}
-			if (model.getModelType() == ModelTypeEnum.WARJACK || model.getModelType() == ModelTypeEnum.COLOSSAL) {
-				warjacks.add(model.getFullName());
-			}
-			if (model.getModelType() == ModelTypeEnum.WARBEAST || model.getModelType() == ModelTypeEnum.GARGANTUAN) {
-				warbeasts.add(model.getFullName());
-			}
-			if (model.getModelType() == ModelTypeEnum.UNIT ) {
-				units.add(model.getFullName());
-			}
-			if (model.getModelType() == ModelTypeEnum.SOLO ) {
-				solos.add(model.getFullName());
-			}
-			if (model.getModelType() == ModelTypeEnum.BATTLE_ENGINE ) {
-				battleEngines.add(model.getFullName());
-			}
-		}
-		Collections.sort(warjacks);
-		Collections.sort(warbeasts);
-		Collections.sort(units);
-		Collections.sort(solos);
-		Collections.sort(battleEngines);
-		
-		LinearLayout llT_warcasters = (LinearLayout) view.findViewById(R.id.llT_warcasters);
-		LinearLayout llT_warjacks = (LinearLayout) view.findViewById(R.id.llT_warjacks);
-		LinearLayout llT_warbeasts= (LinearLayout) view.findViewById(R.id.llT_warbeasts);
-		LinearLayout llT_units = (LinearLayout) view.findViewById(R.id.llT_units);
-		LinearLayout llT_solos = (LinearLayout) view.findViewById(R.id.llT_solos);
-		LinearLayout llT_BE = (LinearLayout) view.findViewById(R.id.llT_BE);
-		
-		
-		fillRestrictionZone(llT_warcasters, warcasters);
-		fillRestrictionZone(llT_warjacks, warjacks);
-		fillRestrictionZone(llT_warbeasts, warbeasts);
-		fillRestrictionZone(llT_units, units);
-		fillRestrictionZone(llT_solos, solos);
-		fillRestrictionZone(llT_BE, battleEngines);
-		
+
+        LinearLayout llT_warcasters = (LinearLayout) view.findViewById(R.id.llT_warcasters);
+        LinearLayout llT_warjacks = (LinearLayout) view.findViewById(R.id.llT_warjacks);
+        LinearLayout llT_warbeasts= (LinearLayout) view.findViewById(R.id.llT_warbeasts);
+        LinearLayout llT_units = (LinearLayout) view.findViewById(R.id.llT_units);
+        LinearLayout llT_solos = (LinearLayout) view.findViewById(R.id.llT_solos);
+        LinearLayout llT_BE = (LinearLayout) view.findViewById(R.id.llT_BE);
+
+        boolean hasWarjacks = false;
+        boolean hasWarbeasts = false;
+        boolean hasUnits = false;
+        boolean hasSolos = false;
+        boolean hasBE = false;
+
+
+        if( ! contract.getAvailableModels().isEmpty()) {
+            for (AvailableModels models : contract.getAvailableModels()) {
+                switch (models.getType()) {
+                    case WARCASTERS:
+                    case WARLOCKS:
+                        fillRestrictionZone(llT_warcasters, models.getModels());
+                        break;
+                    case WARJACKS :
+                        fillRestrictionZone(llT_warjacks, models.getModels());
+                        hasWarjacks = true;
+                        break;
+                    case BATTLE_ENGINES:
+                        fillRestrictionZone(llT_BE, models.getModels());
+                        hasBE = true;
+                        break;
+                    case SOLOS:
+                        fillRestrictionZone(llT_solos, models.getModels());
+                        hasSolos = true;
+                        break;
+                    case UNITS:
+                        fillRestrictionZone(llT_units, models.getModels());
+                        hasUnits = true;
+                        break;
+                    case WARBEASTS:
+                        fillRestrictionZone(llT_warbeasts, models.getModels());
+                        hasWarbeasts = true;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            if (!hasWarjacks) {
+                llT_warjacks.setVisibility(View.GONE);
+            } else {
+                llT_warjacks.setVisibility(View.VISIBLE);
+            }
+            if (!hasWarbeasts) {
+                llT_warbeasts.setVisibility(View.GONE);
+            } else {
+                llT_warbeasts.setVisibility(View.VISIBLE);
+            }
+            if (!hasUnits) {
+                llT_units.setVisibility(View.GONE);
+            } else {
+                llT_units.setVisibility(View.VISIBLE);
+            }
+            if (!hasSolos) {
+                llT_solos.setVisibility(View.GONE);
+            } else {
+                llT_solos.setVisibility(View.VISIBLE);
+            }
+            if (!hasBE) {
+                llT_BE.setVisibility(View.GONE);
+            } else {
+                llT_BE.setVisibility(View.VISIBLE);
+            }
+
+
+        } else {
+            for (TierEntry entry :  onlyModels) {
+                ArmyElement model = ArmySingleton.getInstance().getArmyElement(entry.getId());
+                if (model.getModelType() == ModelTypeEnum.WARJACK || model.getModelType() == ModelTypeEnum.COLOSSAL) {
+                    warjacks.add(model.getFullName());
+                }
+                if (model.getModelType() == ModelTypeEnum.WARBEAST || model.getModelType() == ModelTypeEnum.GARGANTUAN) {
+                    warbeasts.add(model.getFullName());
+                }
+                if (model.getModelType() == ModelTypeEnum.UNIT ) {
+                    units.add(model.getFullName());
+                }
+                if (model.getModelType() == ModelTypeEnum.SOLO ) {
+                    solos.add(model.getFullName());
+                }
+                if (model.getModelType() == ModelTypeEnum.BATTLE_ENGINE ) {
+                    battleEngines.add(model.getFullName());
+                }
+            }
+            Collections.sort(warjacks);
+            Collections.sort(warbeasts);
+            Collections.sort(units);
+            Collections.sort(solos);
+            Collections.sort(battleEngines);
+
+            fillRestrictionZone(llT_warjacks, warjacks);
+            fillRestrictionZone(llT_warbeasts, warbeasts);
+            fillRestrictionZone(llT_units, units);
+            fillRestrictionZone(llT_solos, solos);
+            fillRestrictionZone(llT_BE, battleEngines);
+        }
 
 		tierRequirements = (TextView) view.findViewById(R.id.tvRequirements);
 		tierBenefit	 = (TextView) view.findViewById(R.id.tvBenefit);
@@ -134,7 +197,13 @@ public class DisplayContractFragment extends DialogFragment {
 		
 	}
 
-	private void fillRestrictionZone(LinearLayout view, ArrayList<String> models) {
+    private void fillRestrictionZone(LinearLayout view, String models) {
+        TextView tvRestriction = (TextView) view.findViewById(R.id.tvRestriction);
+        tvRestriction.setText(models);
+    }
+
+
+    private void fillRestrictionZone(LinearLayout view, ArrayList<String> models) {
 		
 		if (models.isEmpty()) {
 			view.setVisibility(View.GONE);
