@@ -4,6 +4,7 @@
 package com.schlaf.steam.xml;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -15,7 +16,9 @@ import android.util.Log;
 import com.schlaf.steam.R;
 import com.schlaf.steam.SteamPunkRosterApplication;
 import com.schlaf.steam.data.ArmySingleton;
+import com.schlaf.steam.data.AvailableModels;
 import com.schlaf.steam.data.Contract;
+import com.schlaf.steam.data.Tier;
 import com.schlaf.steam.data.TierBenefit;
 import com.schlaf.steam.data.TierCostAlteration;
 import com.schlaf.steam.data.TierEntry;
@@ -48,6 +51,8 @@ public class ContractExtractor {
 	
 	private static final String ID_TAG = "id";
 	private static final String NAME_TAG = "name";
+
+    private static final String AVAILABLEMODELS_TAG = "availableModels";
 	
 	private boolean D = false;
 	
@@ -162,8 +167,11 @@ public class ContractExtractor {
 					loadOnly(xpp, contract);
 				} else if (BENEFITS_TAG.equals(xpp.getName())) {
 					loadBenefits(xpp, contract);
-				}
-				eventType = xpp.next();
+				} else if (AVAILABLEMODELS_TAG.equals(xpp.getName())) {
+                    loadAvailableModels(xpp, contract);
+                }
+
+                eventType = xpp.next();
 			}
 			
 			
@@ -250,6 +258,55 @@ public class ContractExtractor {
 		TierEntry entry = new TierEntry(id);
 		return entry;
 	}
+
+
+    private void loadAvailableModels(XmlPullParser xpp, Contract contract) {
+
+        if (D) Log.d("ContractExtractor" ,"loadAvailableModels - start");
+        ArrayList<AvailableModels> models = new ArrayList<AvailableModels>();
+        try {
+            int eventType = xpp.getEventType();
+            while (!(eventType == XmlPullParser.END_TAG && AVAILABLEMODELS_TAG.equals(xpp
+                    .getName()))) {
+                if ("type".equals(xpp.getName())) {
+                    AvailableModels subType = loadSubType(xpp);
+                    models.add(subType);
+                }
+                eventType = xpp.next();
+            }
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (D) Log.d("ContractExtractor","loadAvailableModels - end");
+
+        contract.setAvailableModels(models);
+    }
+
+    private AvailableModels loadSubType(XmlPullParser xpp) {
+        if (D) Log.d("ContractExtractor","loadSubType - start");
+        String models = "";
+        String type = xpp.getAttributeValue(null, "type");
+        try {
+            int eventType = xpp.getEventType();
+            while (!(eventType == XmlPullParser.END_TAG && "type".equals(xpp
+                    .getName()))) {
+                if ("models".equals(xpp.getName())) {
+                    models = xpp.nextText();
+                }
+                eventType = xpp.next();
+            }
+        }catch (XmlPullParserException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AvailableModels result = new AvailableModels(type, models);
+        if (D) Log.d("ContractExtractor","loadSubType - end");
+        return result;
+
+    }
 
 
 }
