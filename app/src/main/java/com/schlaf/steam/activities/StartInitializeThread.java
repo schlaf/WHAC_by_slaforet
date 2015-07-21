@@ -118,12 +118,15 @@ public class StartInitializeThread extends AsyncTask<String, Integer, Boolean> {
 
                     for (Faction faction : ArmySingleton.getInstance().getFactions().values()) {
 
-                        File factionFile = new File(whacExternalDirPath, faction.getId());
+                        File factionFile = new File(whacExternalDirPath, faction.getId() + ".js");
                         FileOutputStream fos = null;
                         try {
                             fos = new FileOutputStream(factionFile);
                             Writer writer = new OutputStreamWriter(fos, "UTF-8");
+                            writer.append(faction.getId() + "_entries = ");
                             JsonConverter.createFactionExport(writer, faction);
+                            writer.flush();
+                            writer.append(";\n\n");
                             writer.flush();
                             fos.close();
                         } catch (UnsupportedEncodingException e) {
@@ -132,13 +135,16 @@ public class StartInitializeThread extends AsyncTask<String, Integer, Boolean> {
                             e.printStackTrace();
                         }
 
-                        File factionTierFile = new File(whacExternalDirPath, "tier_" + faction.getId() + ".js");
+//                        File factionTierFile = new File(whacExternalDirPath, "tier_" + faction.getId() + ".js");
                         FileOutputStream fosTier = null;
 
                         try {
-                            fosTier = new FileOutputStream(factionTierFile);
+                            fosTier = new FileOutputStream(factionFile, true);
                             Writer writer = new OutputStreamWriter(fosTier, "UTF-8");
-                            JsonConverter.createTierExport(writer, ArmySingleton.getInstance().getTiers(faction.getEnumValue()));
+                            writer.append(faction.getId() + "_tiers = ");
+                            JsonConverter.createTierExport(writer, ArmySingleton.getInstance().getTiers(faction.getEnumValue()), ArmySingleton.getInstance().getContracts(faction.getEnumValue()));
+                            writer.flush();
+                            writer.append(";\n\n");
                             writer.flush();
                             fosTier.close();
                         } catch (UnsupportedEncodingException e) {
