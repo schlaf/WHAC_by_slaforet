@@ -1204,7 +1204,7 @@
           <capacity title="Attachment [Small or Medium-Based Mercenary]">This attachment can be added to Small or Medium-Based Mercenary unit.</capacity>
           <capacity title="Assault" type="Order">Affected models must run or charge. As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model's activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model can make the Assault ranged attack before its activation ends.</capacity>
           <capacity title="Go to Ground">Once per game while in formation during its unit's activation, this model can use to Go to Ground. For one round, or until they move, are placed or ar engaged, models in this unit in formation gain cover, do not suffer blast damage, and do not block LOS.</capacity>
-          <capacity title="Ranking Officer">This model is a Ranking Officer. While this model is in play, models in its unit are Protectorate models instead of Mercenary models.</capacity>
+          <capacity title="Ranking Officer">This model is a Ranking Officer. While this model is in play, models in its unit are Cygnar models instead of Mercenary models.</capacity>
           <capacity title="Trencher">This model is a Trencher model.</capacity>
         </solo>
         <solo id="YA11" name="Lieutenant Allison Jakes" full_name="Lieutenant Allison Jakes" cost="3" qualification="Cygnar Character Solo" fa="C" completed="true">
