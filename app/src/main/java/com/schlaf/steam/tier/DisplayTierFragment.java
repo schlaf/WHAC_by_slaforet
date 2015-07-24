@@ -317,8 +317,8 @@ public class DisplayTierFragment extends DialogFragment implements OnClickListen
 			explicitRestriction = true;
 			String casterName = ArmySingleton.getInstance().getArmyElement(tier.getCasterId()).getFullName();
 			
-			StringBuffer modelList = new StringBuffer();
 			for (TierEntryGroup entryGroup :  level.getMustHaveModelsInBG()) {
+                StringBuffer modelList = new StringBuffer();
 				boolean first = true;
 				for (TierEntry entry :  entryGroup.getEntries()) {
 					if (!first) {

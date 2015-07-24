@@ -150,9 +150,16 @@
           </weapons>
         </solo>
         
-        <solo id="cocA01" name="Transverse Enumerator" full_name="Transverse Enumerator" fa="3" cost="2" qualification="Unit attachment">
+        <solo id="cocA01" name="Transverse Enumerator" full_name="Transverse Enumerator" fa="3" cost="2" qualification="Unit attachment" unit_attachment="true" >
           <basestats name="Transverse Enumerator" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
           <weapons />
+            <restricted_to id="cocU01" />
+            <restricted_to id="cocU02" />
+            <restricted_to id="cocU03" />
+            <restricted_to id="cocU04" />
+            <restricted_to id="cocU05" />
+            <restricted_to id="cocU06" />
+            <restricted_to id="cocU07" />
         </solo>
       </solos>
     </army>

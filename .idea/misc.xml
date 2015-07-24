@@ -5,8 +5,8 @@
   </component>
   <component name="ProjectResources">
     <resource url="http://www.whac.com" location="$PROJECT_DIR$/app/src/main/res/xml/warmachine.xsd" />
-    <resource url="http://whaccontracts.com" location="$PROJECT_DIR$/app/src/main/res/xml/contracts_schema.xsd" />
     <resource url="http://www.whactiers.com" location="$PROJECT_DIR$/app/src/main/res/xml/tiers_schema.xsd" />
+    <resource url="http://www.whaccontracts.com" location="$PROJECT_DIR$/app/src/main/res/xml/contracts_schema.xsd" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

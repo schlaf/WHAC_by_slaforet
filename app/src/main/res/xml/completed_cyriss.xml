@@ -3,7 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_cyriss" name="cyriss" version="forum_cyriss_001">
+    <army faction="faction_cyriss" name="cyriss" version="forum_cyriss_002">
+        <!-- 002 some typo corrections -->
       <warcasters>
         <warcaster id="cocW01" name="Aurora" full_name="Aurora, Numen of Aerogenesis" generation="P" qualification="Convergence Warcaster" focus="7" warjack_points="6" fa="C" completed="true">
           <basestats name="Aurora, Numen of Aerogenesis" spd="7" str="5" mat="6" rat="4" def="16" arm="15" cmd="9" hitpoints="16" />
@@ -21,7 +22,7 @@
           <spell name="TRUE PATH" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly faction warrior models/units beginning their activation in this model's control area gain +2" of movement and Pathfinder during their activation. True Path lasts one turn.</spell>
           <capacity title="ELITE CADRE [CLOCKWORK ANGELS]">Friendly Clockwork Angel units gain Combined Melee Attack.</capacity>
           <capacity title="FIELD MARSHAL [APPARITION]">Models in this model's battlegroup gain Apparition. (During your Control Phase, place models with Apparition anywhere completely within 2" of their current location.)</capacity>
-          <capacity title="FLANK [CLOCKWORK ANGELS]">When this model makes a melee attack against an enemy model within a melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
+          <capacity title="FLANK [CLOCKWORK ANGELS]">When this model makes a melee attack against an enemy model within a melee range of a friendly model of type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
           <capacity title="FLIGHT">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
         </warcaster>
         <warcaster id="cocW02" name="Axis" full_name="Axis, the Harmonic Enforcer" generation="P" qualification="Convergence Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
@@ -32,8 +33,8 @@
               <capacity title="DOUBLE STRIKE">This model can make two additional attacks for each focus point spent to make additional attacks with this weapon.</capacity>
             </melee_weapon>
             <melee_weapon p_plus_s="14" pow="7" name="REACTION">
-              <capacity title="BEAT BACK">Immediately after a normal melee attack with this weapon is resolved during this model's combat action, the enemy model hit can be pushed 1" directly away from the attacking model. After the enemy is pushed, the attacking model can advance up to 1".</capacity>
-              <capacity title="DOUBLE STRIKE">This model can make two additional attacks for each focus point spent to make additional attacks with this weapon.</capacity>
+              <capacity title="BEAT BACK">See above.</capacity>
+              <capacity title="DOUBLE STRIKE">See above.</capacity>
             </melee_weapon>
           </weapons>
           <feat title="Circumpotence">Enemy models currently within Axis' control area suffer -2 SPD and STR, and friendly Faction models currently in Axis' control area gain +2 SPD and STR. Circumpotence last for one round.</feat>
@@ -60,7 +61,7 @@
           <spell name="SHRAPNEL SWARM" cost="3" rng="8" aoe="*" pow="13" up="NO" off="YES">On a direct hit against an enemy model, center a 4" AOE on the model hit. After resolving the damage roll, models in the AOE are hit and suffer 1 point of damage.</spell>
           <spell name="TACTICAL SUPREMACY" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit can advance 3" after all models have ended their activations on your turn.</spell>
           <capacity title="FIELD MARSHAL [ARC NODE]">Models in this model's battlegroup gain Arc Node.</capacity>
-          <capacity title="ACTIVATE EXPONENT SERVITOR">At the end of your Control Phase, you can put one Exponent Servitor into play within 1" of this model if there are fewer than 2 Exponent Servitors in play in Directrix's battle group.</capacity>
+          <capacity title="ACTIVATE EXPONENT SERVITOR">At the end of your Control Phase, you can put one Exponent Servitor into play within 1" of this model if there are fewer than 2 Exponent Servitors in play in Directrix's battlegroup.</capacity>
           <capacity title="CLOCKWORK VESSEL">This model counts as a living model for the purposes of generating soul tokens.</capacity>
           <capacity title="REPAIRABLE">Other models can make Bodge or Repair special actions to repair this model as if it were a warjack.</capacity>
           <capacity title="WARCASTER UNIT">This unit is made up of Iron Mother Directrix and two Exponent Servitors.</capacity>
@@ -208,7 +209,7 @@
           <basestats name="Modulator" spd="5" str="10" mat="0" rat="0" def="11" arm="18" cmd="0" pathfinder="true" immunity_electricity="true"/>
           <weapons>
             <ranged_weapon rng="11" name="Emitter Surge" aoe="-" pow="10" rof="1" electricity="true" location="R">
-              <capacity title="DIRECT CURRENT">If this attack directly hits you can choose to have all models whose bases are intersected by a line drawn between the center of the model directly hit and the center of this model suffer an unboostabl POW 10 electrical damage roll. This damage is not considered to have been caused by a ranged attack.</capacity>
+              <capacity title="DIRECT CURRENT">If this attack directly hits you can choose to have all models whose bases are intersected by a line drawn between the center of the model directly hit and the center of this model suffer an unboostable POW 10 Electrical damage roll. This damage is not considered to have been caused by a ranged attack.</capacity>
             </ranged_weapon>
             <ranged_weapon rng="11" name="Emitter Surge" aoe="-" pow="10" rof="1" electricity="true" location="L">
               <capacity title="DIRECT CURRENT">See above.</capacity>
@@ -271,7 +272,7 @@
           <capacity title="SERVITOR SATELLITES">At the start of this model's activation, remove any permutation Servitors this model put into play from the table. Once per activation, after its normal movement, this model can place up to 3 Permutation Servitors anywhere within 1" of this model.</capacity>
           <capacity title="STEADY">This model cannot be knocked down.</capacity>
           <model id="Permutation Servitors" name="Permutation Servitors" full_name="Permutation Servitors">
-            <basestats name="Permutation Servitors" spd="6" str="3" mat="5" rat="5" def="12" arm="13" cmd="-" construct="true" pathfinder="true"/>
+            <basestats name="Permutation Servitors" spd="6" str="3" mat="5" rat="5" def="12" arm="13" cmd="0" construct="true" pathfinder="true"/>
               <capacity title="ORBIT">This model does not begin the game in play and does not activate. This model cannot be hit by attacks made by the model that put it into play. If the model that put this model into play is destroyed or removed from play, remove this model from play.</capacity>
               <capacity title="STEADY">This model cannot be knocked down.</capacity>
           </model>
@@ -338,7 +339,7 @@
             <melee_weapon p_plus_s="12" pow="4" name="Protean Polearm" reach="true"/>
           </weapons>
           <capacity title="CLOCKWORK VESSEL">This model counts as a living model for the purposes of generating soul tokens.</capacity>
-          <capacity title="SHIELD WALL" type="Order">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can beginthe game affected by Shield Wall.</capacity>
+          <capacity title="SHIELD WALL" type="Order">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
           <capacity title="REPAIRABLE">Other models can make Bodge or Repair special actions to repair this model as if it were a warjack.</capacity>
           <capacity title="VARIABLE[MELEE]">At the start of this model's activation, choose one of the following modes for the unit's weapons. Each of this model's melee weapons gains the ability listed for one round.</capacity>
           <capacity title="● EMPOWERED ATTACK">This weapon gains +2 on its damage rolls.</capacity>

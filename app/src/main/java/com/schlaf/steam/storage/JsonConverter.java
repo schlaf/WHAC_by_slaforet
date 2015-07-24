@@ -48,6 +48,7 @@ import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
 import com.schlaf.steam.data.AvailableModels;
 import com.schlaf.steam.data.BattleEngine;
+import com.schlaf.steam.data.Contract;
 import com.schlaf.steam.data.Faction;
 import com.schlaf.steam.data.ModelTypeEnum;
 import com.schlaf.steam.data.MultiPVUnitGrid;
@@ -65,6 +66,7 @@ import com.schlaf.steam.data.UnitAttachment;
 import com.schlaf.steam.data.Warbeast;
 import com.schlaf.steam.data.Warcaster;
 import com.schlaf.steam.data.Warjack;
+import com.schlaf.steam.data.Warlock;
 import com.schlaf.steam.data.WeaponAttachment;
 
 public class JsonConverter {
@@ -856,7 +858,7 @@ public class JsonConverter {
 		
 	}
 
-    public static void createTierExport(Writer writer, List<Tier> tiers) {
+    public static void createTierExport(Writer writer, List<Tier> tiers,List<Contract> contracts) {
         JSONWriter json = new JSONWriter(writer);
 
         json.object();
@@ -869,15 +871,7 @@ public class JsonConverter {
             tierJson.put("casterId", tier.getCasterId());
             tierJson.put("faction", tier.getFactionId());
 
-            JSONArray models = new JSONArray();
-            for (AvailableModels model : tier.getAvailableModels()) {
-                JSONObject modelRestriction = new JSONObject();
-                modelRestriction.put("type", model.getType().name());
-                modelRestriction.put("models", model.getModels());
-                models.put(modelRestriction);
-            }
-
-            tierJson.put("availableModels", models);
+            exportAvailableModels(tier.getAvailableModels(), tierJson);
 
 
 
@@ -984,6 +978,76 @@ public class JsonConverter {
 
         }
 
+        for (Contract contract : contracts) {
+            JSONObject tierJson = new JSONObject();
+            tierJson.put("name", "Contract : " + contract.getTitle());
+            tierJson.put("faction", contract.getFactionId());
+
+            exportAvailableModels(contract.getAvailableModels(), tierJson);
+
+            JSONArray levels = new JSONArray();
+
+            JSONObject levelJson = new JSONObject();
+            levelJson.put("level", 1);
+            levelJson.put("benefit", contract.getBenefit().getInGameEffect());
+
+            JSONObject onlyModels = new JSONObject();
+            for (TierEntry onlyModel : contract.getOnlyModels()) {
+                onlyModels.append("ids", onlyModel.getId());
+            }
+            levelJson.put("onlyModels", onlyModels);
+
+
+            // no "must have" and "free models", but create placeholders for javascript
+            JSONArray mustHaveList = new JSONArray();
+            levelJson.put("mustHave", mustHaveList);
+
+            JSONArray freeModelsList = new JSONArray();
+            levelJson.put("freeModels", freeModelsList);
+
+            JSONArray faAlterList = new JSONArray();
+            JSONArray costAlterList = new JSONArray();
+            for (TierFACostBenefit alteration : contract.getBenefit().getAlterations()) {
+                if (alteration instanceof TierFAAlteration) {
+                    JSONObject fa = new JSONObject();
+                    TierFAAlteration faAlteration = (TierFAAlteration) alteration;
+                    fa.put("bonus", faAlteration.getFaAlteration());
+                    fa.put("id", faAlteration.getEntry().getId());
+                    for (TierEntry entry : faAlteration.getForEach()) {
+                        fa.append("forEach" , entry.getId());
+                    }
+
+                    faAlterList.put(fa);
+                }
+
+
+                if (alteration instanceof TierCostAlteration) {
+                    JSONObject fa = new JSONObject();
+                    TierCostAlteration costAlteration = (TierCostAlteration) alteration;
+                    fa.put("bonus", costAlteration.getCostAlteration());
+                    fa.put("id", costAlteration.getEntry().getId());
+                    if (alteration.isRestricted()) {
+                        fa.put("restricted_to", costAlteration.getRestrictedToId());
+                    }
+                    costAlterList.put(fa);
+                }
+
+
+
+            }
+
+            levelJson.put("faAlterations", faAlterList);
+            levelJson.put("costAlterations", costAlterList);
+
+            levels.put(levelJson);
+
+            tierJson.put("levels", levels);
+
+            tiersArray.put(tierJson);
+
+        }
+
+
         json.key("tiers");
         json.value(tiersArray);
 
@@ -991,6 +1055,20 @@ public class JsonConverter {
         json.endObject();
 
     }
+
+    private static void exportAvailableModels(ArrayList<AvailableModels> availableModels, JSONObject tierJson) {
+        JSONArray models = new JSONArray();
+        for (AvailableModels model : availableModels) {
+            JSONObject modelRestriction = new JSONObject();
+            modelRestriction.put("type", model.getType().name());
+            modelRestriction.put("models", model.getModels());
+            models.put(modelRestriction);
+        }
+
+        tierJson.put("availableModels", models);
+    }
+
+
 
     public static void createFactionExport(Writer writer, Faction faction) {
 
@@ -1016,6 +1094,23 @@ public class JsonConverter {
         casterGroup.put("entries", casterlist);
         groups.put(casterGroup);
 
+
+        JSONObject warlockGroup = new JSONObject();
+        warlockGroup.put("id", faction.getEnumValue().getId() + "_warlocks");
+        warlockGroup.put("label", "Warlocks");
+        warlockGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray warlocklist = new JSONArray();
+        for (Warlock entry : faction.getWarlocks().values()) {
+            JSONObject result = new JSONObject();
+            result.put("type", "warlock");
+            putBasicValues(faction, entry, result);
+            warlocklist.put(result);
+        }
+
+        warlockGroup.put("entries", warlocklist);
+        groups.put(warlockGroup);
+
         JSONObject jacksGroup = new JSONObject();
         jacksGroup.put("id", faction.getEnumValue().getId() +"_warjacks");
         jacksGroup.put("label", "Warjacks");
@@ -1035,6 +1130,27 @@ public class JsonConverter {
         }
         jacksGroup.put("entries", jacklist);
         groups.put(jacksGroup);
+
+
+        JSONObject beastsGroup = new JSONObject();
+        beastsGroup.put("id", faction.getEnumValue().getId() +"_warbeasts");
+        beastsGroup.put("label", "Warbeasts");
+        beastsGroup.put("logo", faction.getEnumValue().getId());
+
+        JSONArray beastlist = new JSONArray();
+        for (Warbeast entry : faction.getBeasts().values()) {
+            JSONObject result = new JSONObject();
+            result.put("type", "warbeast");
+            putBasicValues(faction, entry, result);
+
+            if (! entry.getAllowedEntriesToAttach().isEmpty()) {
+                result.put("restricted_to", entry.getAllowedEntriesToAttach());
+            }
+
+            beastlist.put(result);
+        }
+        beastsGroup.put("entries", beastlist);
+        groups.put(beastsGroup);
 
 
 
@@ -1099,9 +1215,7 @@ public class JsonConverter {
                 UAlist.put(result);
             }
         }
-        UAGroup.put("entries", UAlist);
-        groups.put(UAGroup);
-
+        // not put UA here, cause maybe solos can be added later
 
         JSONObject WAGroup = new JSONObject();
         WAGroup.put("id", faction.getEnumValue().getId() +"_WAs");
@@ -1132,14 +1246,17 @@ public class JsonConverter {
 
         JSONArray soloslist = new JSONArray();
         for (Solo entry : faction.getSolos().values()) {
+            boolean ua = false; // this solo is a generic UA or a ranking officer
             JSONObject result = new JSONObject();
             result.put("type", "solo");
             putBasicValues(faction, entry, result);
             if (entry.isMercenaryUnitAttached()) {
                 result.put("type", "RA");
+                ua = true;
             }
             if (entry.isGenericUnitAttached()) {
                 result.put("type", "UA");
+                ua = true;
             }
             if (! entry.getAllowedEntriesToAttach().isEmpty()) {
                 result.put("restricted_to", entry.getAllowedEntriesToAttach());
@@ -1160,8 +1277,21 @@ public class JsonConverter {
             if (entry.getModels().get(0).isLesserWarlock()) {
                 result.put("type", "soloLesserWarlock");
             };
-            soloslist.put(result);
+
+            if (ua) {
+                UAlist.put(result);
+            } else {
+                soloslist.put(result);
+            }
+
         }
+
+        // put UA now, cause solos have been added
+        UAGroup.put("entries", UAlist);
+        groups.put(UAGroup);
+
+
+
         solosGroup.put("entries", soloslist);
         groups.put(solosGroup);
 

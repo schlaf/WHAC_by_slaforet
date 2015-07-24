@@ -15,6 +15,8 @@ public class Contract implements Comparable<Contract>, ModelRestrictor {
 	private String htmlDescription = null;
 
 	private ArrayList<TierEntry> onlyModels = new ArrayList<TierEntry>();
+
+    private ArrayList<AvailableModels> availableModels = new ArrayList<AvailableModels>();
 	
 	@Override
 	public boolean isAllowedModel(String id) {
@@ -140,5 +142,14 @@ public class Contract implements Comparable<Contract>, ModelRestrictor {
 	public void setBenefit(TierBenefit benefit) {
 		this.benefit = benefit;
 	}
-	
+
+    public ArrayList<AvailableModels> getAvailableModels() {
+        return availableModels;
+    }
+
+    public void setAvailableModels(ArrayList<AvailableModels> availableModels) {
+        this.availableModels = availableModels;
+    }
+
+
 }

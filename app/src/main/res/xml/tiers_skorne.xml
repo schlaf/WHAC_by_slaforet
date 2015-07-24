@@ -839,6 +839,92 @@
       </benefits>
     </level>
   </tiers>
+    <tiers name="Xerxis2 - Footsteps of Giants" casterId="Sx04" faction="faction_skorne">
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Skorne non-character warbeasts, Tiberion</models>
+            </type>
+            <type type="UNITS">
+                <models>Paingiver Beast Handlers, Skorne cavalry units, Skorne Tyrant units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Skorne Tyrant solos</models>
+            </type>
+            <type type="BATTLE_ENGINES">
+                <models>Siege Animantarax</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="Sx04" />
+                <entry id="SB01" />
+                <entry id="SB02" />
+                <entry id="SB03" />
+                <entry id="SB04" />
+                <entry id="SB05" />
+                <entry id="SB06" />
+                <entry id="SB07" />
+                <entry id="SB08" />
+                <entry id="SB09" />
+                <entry id="SB11" />
+                <entry id="SB12" />
+                <entry id="SB13" />
+                <entry id="SB14" />
+                <entry id="SB15" />
+                <entry id="SB17" />
+                <entry id="SB18" />
+                <entry id="SB19" />
+                <entry id="SB20" />
+                <entry id="SB21" />
+                <entry id="SU05" /> <!-- Paingiver Beast Handlers -->
+                <entry id="SU06" /> <!-- Skorne cavalry units -->
+                <entry id="SU09" /> <!-- Skorne Tyrant units -->
+                <entry id="SS05" /> <entry id="SS11"/> <!-- Skorne Tyrant solos -->
+                <entry id="SE01" /> <!-- Siege Animantarax -->
+            </only>
+            <benefits>
+                <ingameeffect></ingameeffect>
+                <alterCost bonus="1" entryId="SE01"></alterCost>
+                <alterCost bonus="1" entryId="SB18"></alterCost>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- Must have  2(SU07)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="SU09" />
+                    <entry id="SS05" />
+                    <entry id="SS11" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>For each Tyrant model/unit, you can redeploy one model/unit after both players have deployed but before the first player’s first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- Must have  2(SS02 SS04)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="SB13" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>You gain +1 on your starting roll for the game</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have  2(SB06)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="SE01" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Siege Animantarax battle engines begin the game with three rage tokens.</ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
   <tiers name="Zaal - Immortal Host" casterId="SW05" faction="faction_skorne">
       <availableModels>
           <type type="WARBEASTS">

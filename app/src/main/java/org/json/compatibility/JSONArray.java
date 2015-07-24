@@ -891,7 +891,7 @@ public class JSONArray {
      */
     public String toString() {
         try {
-            return this.toString(0);
+            return this.toString(2);
         } catch (Exception e) {
             return null;
         }
