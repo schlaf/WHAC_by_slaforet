@@ -284,8 +284,44 @@
 	<restricted_to id="IW03_minion"/>
 </warbeast>
 
+    <warbeast  id="IB10" name="Battle Boar" full_name="Battle Boar" damage_spiral="6-10-6" fury="0" threshold="0" cost="4" qualification="Minion Farrow Light Warbeast" fa="U">
+        <basestats name="Battle Boar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+        <weapons/>
 
-<warbeast  id="Lug_minion" name="Lug" full_name="Lug" damage_spiral="8-11-8" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
+        <restricted_to id="IW08"/>
+        <restricted_to id="IW10"/>
+        <restricted_to id="IW11"/>
+        <restricted_to id="IW05"/>
+        <restricted_to id="IW13" />
+        <restricted_to id="IW03_minion"/>
+    </warbeast>
+
+    <warbeast  id="IB11" name="Splatter Boar" full_name="Splatter Boar" damage_spiral="6-10-6" fury="0" threshold="0" cost="5" qualification="Minion Farrow Light Warbeast" fa="U">
+        <basestats name="Battle Boar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+        <weapons/>
+
+        <restricted_to id="IW08"/>
+        <restricted_to id="IW10"/>
+        <restricted_to id="IW11"/>
+        <restricted_to id="IW05"/>
+        <restricted_to id="IW13" />
+        <restricted_to id="IW03_minion"/>
+    </warbeast>
+
+    <warbeast  id="IB12" name="Blind Walker" full_name="Blind Walker" damage_spiral="5-14-8" fury="0" threshold="0" cost="7" qualification="Minion Gatorman Heavy Warbeast" fa="U">
+        <basestats name="Blind Walker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+        <weapons/>
+
+        <restricted_to id="IW06"/>
+        <restricted_to id="IW07"/>
+        <restricted_to id="IW09"/>
+        <restricted_to id="IW12"/>
+        <restricted_to id="IW14" />
+        <restricted_to id="IW04_minion"/>
+    </warbeast>
+
+
+    <warbeast  id="Lug_minion" name="Lug" full_name="Lug" damage_spiral="8-11-8" fury="0" threshold="0" cost="0" qualification="Heavy Warbeast" fa="C">
 	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
 	<weapons/>
 	
@@ -356,7 +392,12 @@
 <unit  id="IU03" name="Farrow Brigands" full_name="Farrow Brigands" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
 	<basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
 	<weapons/>
-	
+    <unit_attachment id="UA_for_IU03" name="Farrow Brigand Warlord" full_name="Farrow Brigand Warlord" qualification="Minion Unit Attachment" fa="1" cost="3" completed="false">
+        <model name="Farrow Brigand Warlord" full_name="Farrow Brigand Warlord" qualification="Minion Unit Attachment">
+            <basestats name="WARLORD" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+        </model>
+    </unit_attachment>
+
 	<works_for id="faction_orboros" />
 	<works_for id="faction_everblight" />
 	<works_for id="faction_trollblood" />
@@ -420,6 +461,19 @@
         <works_for id="faction_trollblood" />
         <works_for id="faction_skorne" />
     </unit>
+
+    <unit id="IU10" name="Lynus Wesselbaum &amp; Edrea Lloryrr" full_name="Lynus Wesselbaum &amp; Edrea Lloryrr" qualification="Mercenary Minion Character Unit" fa="C" base_cost="3" full_cost="-" baseCount="3" fullCount="-" >
+        <basestats name="Lynus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+        <weapons>
+        </weapons>
+        <model>
+            <basestats name="EDREA" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+        </model>
+        <works_for id="faction_orboros" />
+        <works_for id="faction_trollblood" />
+    </unit>
+
+
 
         <unit id="MU05_minion" name="Cylena Raefyll &amp; Nyss Hunters" full_name="Cylena Raefyll &amp; Nyss Hunters" base_cost="7" baseCount="6" full_cost="10" fullCount="10" qualification="Character Unit" fa="C">
           <basestats name="Cylena" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>

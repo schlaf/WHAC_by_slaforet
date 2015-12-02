@@ -26,6 +26,7 @@ id="Laris" name="Laris"
 id="OB19" name="Rotterhorn Griffon"
 id="OB20" name="Argus Moonhound"
 id="OB21" name="Brennos the Elderhorn"
+id="OB22" name="storm raptor"
 
 
  -->    
@@ -58,6 +59,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OB17" />
         <entry id="OB19" />
         <entry id="OB20" />
+        <entry id="OB22" /> <!-- add storm raptor -->
         <entry id="OU04" />
         <entry id="OA05" />
         <entry id="OU07" />
@@ -147,6 +149,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OB17" />
         <entry id="OB19" />
         <entry id="OB20" />
+        <entry id="OB22" /> <!-- add storm raptor -->
         <entry id="OU01" />
         <entry id="OA01" />
         <entry id="OU09" />
@@ -240,7 +243,7 @@ id="OB21" name="Brennos the Elderhorn"
             <entry id="OB18" />
             <entry id="OB19" />
             <entry id="OB20" />
-
+            <entry id="OB22" /> <!-- add storm raptor -->
             <entry id="OU09"/>
             <entry id="OA04" />
             <entry id="OU03" />
@@ -251,8 +254,10 @@ id="OB21" name="Brennos the Elderhorn"
             <entry id="OU07" />
             <entry id="OU12" />
 
+
             <entry id="OS03" />
             <entry id="OS06" />
+            <entry id="OS10"/> <!-- add blood Bloodweaver Night Witch-->
 
         </only>
         <benefits>
@@ -302,6 +307,7 @@ id="OB21" name="Brennos the Elderhorn"
                 <entry id="OB17" />
                 <entry id="OB19" />
                 <entry id="OB20" />
+                <entry id="OB22" /> <!-- add storm raptor -->
             </entrygroup>
         </must_have>
         <benefits>
@@ -351,6 +357,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OB18" />
         <entry id="OB19" />
         <entry id="OB20" />
+        <entry id="OB22" /> <!-- add storm raptor -->
         <entry id="OU01" />
         <entry id="OA01" />
         <entry id="OU09" />
@@ -406,6 +413,7 @@ id="OB21" name="Brennos the Elderhorn"
           <entry id="OB12" />
           <entry id="OB17" />
           <entry id="OB18" />
+          <entry id="OB22" /> <!-- add storm raptor -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -422,7 +430,7 @@ id="OB21" name="Brennos the Elderhorn"
                 <models>Tharn Ravagers, Warpborn Skinwalkers</models>
             </type>
             <type type="SOLOS">
-                <models>Tham Ravager solos, Lord of the Feast</models>
+                <models>Tharn Ravager solos, Lord of the Feast</models>
             </type>
       </availableModels>      
       
@@ -442,6 +450,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OB17" />
         <entry id="OB19" />
         <entry id="OB20" />
+        <entry id="OB22" /> <!-- add storm raptor -->
         <entry id="OU03" />
         <entry id="OA02" />
         <entry id="OA06" />
@@ -838,6 +847,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OB18" />
         <entry id="OB19" />
         <entry id="OB20" />
+        <entry id="OB22" /> <!-- add storm raptor -->
         <entry id="OU01" />
         <entry id="OA01" />
         <entry id="OU03" />
@@ -852,6 +862,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OS08" />
         <entry id="OS01" />
         <entry id="OS03" />
+        <entry id="OS10"/> <!-- add blood Bloodweaver Night Witch-->
         <entry id="OE01" />
       </only>
       <benefits>
@@ -875,6 +886,7 @@ id="OB21" name="Brennos the Elderhorn"
           <entry id="OB17" />
           <entry id="OB19" />
           <entry id="OB20" />
+          <entry id="OB22" /> <!-- add storm raptor -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -941,6 +953,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OB17" />
         <entry id="OB19" />
         <entry id="OB20" />
+        <entry id="OB22" /> <!-- add storm raptor -->
         <entry id="OU03" />
         <entry id="OA02" />
         <entry id="OA06" />
@@ -951,6 +964,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OA07" />
         <entry id="OS02" />
         <entry id="OS03" />
+        <entry id="OS10"/> <!-- add blood Bloodweaver Night Witch-->
       </only>
       <benefits>
         <ingameeffect  />
@@ -1005,6 +1019,111 @@ id="OB21" name="Brennos the Elderhorn"
       </benefits>
     </level>
   </tiers>
+
+
+    <tiers name="Kromac2 - Blood Price" casterId="OW10" faction="faction_orboros">
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Circle non-character living warbeasts, Ghetorix</models>
+            </type>
+            <type type="UNITS">
+                <models>Sentry Stone &amp; Mannikins, Shifting Stones, Tharn units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Tharn solos</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="OW10" />
+                <entry id="OB01" />
+                <entry id="OB02" />
+                <entry id="OB05" />
+                <entry id="OB07" />
+                <entry id="OB08" />
+                <entry id="OB09" />
+                <entry id="OB11" />
+                <entry id="OB13" />
+                <entry id="OB14" />
+                <entry id="OB15" />
+                <entry id="OB16" />
+                <entry id="OB17" />
+                <entry id="OB19" />
+                <entry id="OB20" />
+                <entry id="OB22" /> <!-- add storm raptor -->
+                <entry id="OU10"/> <!-- sentry stones -->
+                <entry id="OU09" /> <!-- shifting stones -->
+                <entry id="OU03" />
+                <entry id="OA02" />
+                <entry id="OA06" />
+                <entry id="OU05" />
+                <entry id="OU06" />
+                <entry id="OU07" />
+                <entry id="OU12" />
+                <entry id="OA07" />
+                <entry id="OS03" />
+                <entry id="OS10" /> <!-- Bloodweaver Night Witch -->
+            </only>
+            <benefits>
+                <ingameeffect  />
+                <alterFA bonus="1" entryId="OU03" />
+                <alterFA bonus="1" entryId="OU05" />
+                <alterFA bonus="1" entryId="OU06" />
+                <alterFA bonus="1" entryId="OU07" />
+                <alterFA bonus="1" entryId="OU12" />
+                <alterFA bonus="1" entryId="OS03" />
+                <alterFA bonus="1" entryId="OS10" />
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- The army includes one or more Bloodweaver models/units.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="OU05"/>
+                    <entry id="OS10" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>For each Bloodweaver unit or solo in the army, up to one model in the army with Heart Eater gains one corpse token at the start of the game. The same model can gain multiple corpse tokens but cannot gain more corpse tokens than it could gain normally.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- The army includes three or more light warbeasts.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+                    <entry id="OB01"/>
+                    <entry id="OB02"/>
+                    <entry id="OB13"/>
+                    <entry id="OB15"/>
+                    <entry id="OB16"/>
+                    <entry id="OB19"/>
+                    <entry id="OB20" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <alterCost bonus="1" entryId="OB01"/>
+                <alterCost bonus="1" entryId="OB02"/>
+                <alterCost bonus="1" entryId="OB13"/>
+                <alterCost bonus="1" entryId="OB15"/>
+                <alterCost bonus="1" entryId="OB16"/>
+                <alterCost bonus="1" entryId="OB19"/>
+                <alterCost bonus="1" entryId="OB20"/>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- The army includes one or more Sentry Stone & Mannikins units.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="OU10" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>For each Sentry Stone &amp; Mannikins unit in the army, place one 3" AOE forest template anywhere completely within 20" of the back edge of Kromac’s deployment zone after terrain has been placed but before either player deploys his army. Forest templates cannot be placed within 3" of another terrain feature including other forest templates.</ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
+
   <tiers name="Mohsar - Sandstorm" casterId="OW06" faction="faction_orboros">
       <availableModels>
             <type type="WARBEASTS">
@@ -1039,6 +1158,7 @@ id="OB21" name="Brennos the Elderhorn"
         <entry id="OB18" />
         <entry id="OB19" />
         <entry id="OB20" />
+        <entry id="OB22" /> <!-- add storm raptor -->
         <entry id="OU02" />
         <entry id="OU04" />
         <entry id="OA05" />

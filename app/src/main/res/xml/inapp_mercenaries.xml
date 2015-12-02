@@ -523,8 +523,28 @@
           <weapons>
           </weapons>
           <restricted_to id="IW03_mercs" />
-        </warbeast>        
-        
+        </warbeast>
+
+          <warbeast  id="IB10" name="Battle Boar" full_name="Battle Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="4" qualification="Minion Farrow Light Warbeast" fa="U">
+              <basestats name="Battle Boar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+              <weapons>
+              </weapons>
+              <restricted_to id="IW03_mercs" />
+          </warbeast>
+
+          <warbeast  id="IB11" name="Splatter Boar" full_name="Splatter Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="5" qualification="Minion Farrow Light Warbeast" fa="U">
+              <basestats name="Splatter Boar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+              <weapons>
+              </weapons>
+              <restricted_to id="IW03_mercs" />
+          </warbeast>
+
+          <warbeast  id="IB12" name="Blind Walker" full_name="Blind Walker" damage_spiral="5-14-8" fury="3" threshold="10" cost="7" qualification="Minion Gatorman Heavy Warbeast" fa="U">
+              <basestats name="Walker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+              <weapons>
+              </weapons>
+              <restricted_to id="IW04_mercs" />
+          </warbeast>
       </warbeasts>
       
       <colossals>
@@ -819,6 +839,17 @@
           </model>
           <works_for id="faction_cryx" />
         </unit>
+
+          <unit id="IU10_mercs" name="Lynus Wesselbaum &amp; Edrea Lloryrr" full_name="Lynus Wesselbaum &amp; Edrea Lloryrr" qualification="Mercenary Minion Character Unit" fa="C" base_cost="3" full_cost="-" baseCount="3" fullCount="-" completed="false">
+              <basestats name="Lynus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" officer="true"/>
+              <weapons>
+              </weapons>
+              <model>
+                  <basestats name="EDREA" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+              </model>
+              <works_for id="faction_cygnar" />
+          </unit>
+
         <!-- below, allies and other special cases... -->
         <!-- cygnar allies & mercs -->
         <unit id="YU12_mercs" name="Precursor Knights" full_name="Precursor Knights" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">

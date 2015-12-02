@@ -616,7 +616,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
       </benefits>
     </level>
   </tiers>
-    <tiers name="Butcher3 - Blood in the Snow" casterId="Kx01" faction="faction_khador">
+    <tiers name="Butcher3 - Blood in the Snow" casterId="Kz01" faction="faction_khador">
 
         <availableModels>
             <type type="WARJACKS">
@@ -634,7 +634,7 @@ Benefit: Models in the Butcher's battlegroup gain Advance Move. (Before the star
         </availableModels>
         <level number="1">
             <only>
-                <entry id="Kx01" />
+                <entry id="Kz01" />
                 <entry id="KJ01" />
                 <entry id="KJ02" />
                 <entry id="KJ03" />

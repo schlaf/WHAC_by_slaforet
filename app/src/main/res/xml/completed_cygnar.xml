@@ -3,8 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_cygnar" name="cygnar" version="forum_cygnar_004">
+        <army faction="faction_cygnar" name="cygnar" version="forum_cygnar_005">
             <!-- August 2015 Errata -->
+            <!-- 005 jonas murdoch ARM is 14 + Imprint: Grudge for ol'rowdy-->
             <warcasters>
                 <warcaster id="Yw01" name="Haley1" full_name="Captain Victoria Haley" generation="P" qualification="Cygnar Warcaster" focus="7" warjack_points="5" fa="C" completed="true">
                     <basestats name="Haley" spd="6" str="5" mat="6" rat="5" def="16" arm="14" cmd="8" hitpoints="15" />
@@ -535,6 +536,7 @@
                     </weapons>
                     <capacity title="Affinity [Styker]">While B2B with Rowdy, Stryker gains +2 DEF against melee attack rolls and cannot be knocked down. While B2B with Stryker, Rowdy does not move when slammed.</capacity>
                     <capacity title="Counter charge">When an enemy model advances and ends its movement within 6" of this model and in its LOS, this model can immediately charge it. If it does, it cannot make another counter charge until after your next turn. This model cannot make a counter charge while engaged.</capacity>
+                    <capacity title="Imprint: Grudge">During this model's activation, it can spend 1 focus to use Grudge. For one round, when this model is hit by one or more melee attacks during an enemy model's combat action, immediately after that combat action ends this model can make one normal melee attack, then Grudge expires.</capacity>
                     <capacity title="Aggressive">This model can run or charge without spending focus or being forced.</capacity>
                 </warjack>
                 <warjack id="YJ14" name="Cyclone" full_name="Cyclone" damage_grid="xx..xx.............L..R.LLMCRRxMMCCx" cost="9" qualification="Cygnar Heavy warjack" fa="U" completed="true">
@@ -1193,7 +1195,7 @@
                     <capacity title="Sacrificial pawn [Faction Warjack]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Faction warjack model within 3" of this model directly hit instead. That model is automatically hit and suffers all damage and effects.</capacity>
                 </solo>
                 <solo id="YA10" name="Jonas Murdoch" full_name="Captain Jonas Murdoch" cost="2" qualification="Cygnar Character Unit Attachment" fa="C" mercenary_attachment="true"  completed="true">
-                    <basestats name="Murdoch" spd="6" str="6" mat="7" rat="6" def="13" arm="17" cmd="9" hitpoints="5" officer="true" tough="true"/>
+                    <basestats name="Murdoch" spd="6" str="6" mat="7" rat="6" def="13" arm="14" cmd="9" hitpoints="5" officer="true" tough="true"/>
                     <weapons>
                         <ranged_weapon pow="10" aoe="-" rng="10" rof="1" name="Carbine"></ranged_weapon>
                         <melee_weapon p_plus_s="9" pow="3" name="Trench Knife"></melee_weapon>

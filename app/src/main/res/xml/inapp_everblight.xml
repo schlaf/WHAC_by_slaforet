@@ -176,6 +176,12 @@
           <basestats name="ZURIEL" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons/>
         </warbeast>
+        <warbeast id="EB24" name="Blight Bringer" full_name="Blight Bringer" qualification="Legion Gargantuan" fa="2" cost="18" fury="5" threshold="7" damage_spiral="15-24-13">
+          <basestats name="Blight Bringer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"  />
+          <weapons>
+          </weapons>
+        </warbeast>
+
       </warbeasts>
       <battleEngines>
         <battleEngine id="EE01" name="Throne of Everblight" full_name="Throne of Everblight" cost="9" qualification="Solo" fa="2">
@@ -257,7 +263,7 @@
             </model>
           </unit_attachment>
         </unit>
-        <unit id="EU10" name="Blighted Nyss Grotesques" full_name="Blighted Nyss Grotesques" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="2">
+        <unit id="EU10" name="Grotesques Raiders" full_name="Grotesques Raiders" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Legion Blighted Nyss Unit" fa="2">
           <basestats name="undefined" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
         </unit>
@@ -284,8 +290,12 @@
           <basestats name="LEADER &amp; GRUNTS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons>            
           </weapons>
-        </unit>        
-        
+        </unit>
+        <unit id="EU14" name="Grotesque Banshees" full_name="Grotesque Banshees" qualification="Legion Blighted Nyss Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" >
+          <basestats name="LEADER &amp; GRUNTS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+          <weapons>
+          </weapons>
+        </unit>
       </units>
       <solos>
         <solo id="ES01" name="Blighted Nyss Sorceress and Hellion" full_name="Blighted Nyss Sorceress and Hellion" cost="4" qualification="Solo" fa="2">
@@ -336,7 +346,11 @@
           <weapons>
           </weapons>
         </solo>
-        
+        <solo id="ES12" name="Grotesque Assassin" full_name="Grotesque Assassin" qualification="Legion Blighted Nyss Solo" fa="1" cost="2">
+          <basestats name="ASSASSIN" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+          <weapons>
+          </weapons>
+        </solo>
       </solos>
     </army>
   </armies>

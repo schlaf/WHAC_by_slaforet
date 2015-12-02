@@ -1030,7 +1030,13 @@
       </only>
       <benefits>
         <ingameeffect />
-        <alterFA bonus="1" entryId="PS01" />
+        <alterFA bonus="1" entryId="PS01">
+            <forEach>
+                <entry id="PU01" />
+                <entry id="PU03" />
+                <entry id="PU05" />
+            </forEach>
+        </alterFA>
       </benefits>
     </level>
     <level number="2">

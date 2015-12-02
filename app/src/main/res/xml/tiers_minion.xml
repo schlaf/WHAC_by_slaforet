@@ -417,6 +417,7 @@ Warbeasts in the army can run without being forced during the first round of the
         <entry id="IB08" />
         <entry id="IU01" />
         <entry id="IU04" />
+        <entry id="IU09" /> <!-- Croak Raiders have Amphibious, so they should be allowed in Maelok - The Walking Death -->
         <entry id="IS11" />
         <entry id="IS02" />
         <entry id="IW04_minion" />

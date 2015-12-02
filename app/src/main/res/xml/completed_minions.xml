@@ -3,9 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_minions" name="Minions" version="forum_minions_003">
+        <army faction="faction_minions" name="Minions" version="forum_minions_004">
             <!-- 002 add croak raiders, swamp gobber river raiders, gremlin swarm-->
             <!-- 003 add gorax for arkadius -->
+            <!-- 004 add devastation entries : battle boar, splatter board, blind walker, Lynus Wesselbaum &amp; Edrea Lloryrr, farrow brigand -->
             <warlocks>
                 <warlock id="IW05" name="Lord Carver, BMMD, Esq. III" generation="P" full_name="Lord Carver, BMMD, Esq. III" qualification="Minion Farrow Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
                     <basestats name="CARVER" spd="6" str="8" mat="7" rat="6" def="15" arm="17" cmd="9" hitpoints="16" tough="true" />
@@ -554,6 +555,68 @@
                     <restricted_to id="IW13" />
                     <restricted_to id="IW03_minion" />
                 </warbeast>
+
+                <warbeast  id="IB10" name="Battle Boar" full_name="Battle Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="4" qualification="Minion Farrow Light Warbeast" fa="U" completed="true">
+                    <basestats name="Battle Boar" spd="5" str="8" mat="5" rat="5" def="12" arm="17" cmd="6" />
+                    <weapons>
+                        <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="L"></melee_weapon>
+                        <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="R"></melee_weapon>
+                    </weapons>
+                    <animus name="HEIGHTENED METABOLISM" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly warbeast gains Snacking. Heightened Metabolism lasts for one turn. (When a model with Snacking boxes a living model with a melee attack, the model with Snacking can heal d3 damage points. If the model heals, the boxed model is removed from play.)</animus>
+                    <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>
+                    <capacity title="RABID">This model can be forced during its activation to gain +2 SPD, Pathfinder, and boosted attack and damage rolls for one turn.</capacity>
+                    <restricted_to id="IW08"/>
+                    <restricted_to id="IW10"/>
+                    <restricted_to id="IW11"/>
+                    <restricted_to id="IW05"/>
+                    <restricted_to id="IW13" />
+                    <restricted_to id="IW03_minion"/>
+                </warbeast>
+
+                <warbeast  id="IB11" name="Splatter Boar" full_name="Splatter Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="5" qualification="Minion Farrow Light Warbeast" fa="U" completed="true">
+                    <basestats name="Splatter Boar" spd="5" str="8" mat="5" rat="5" def="12" arm="17" cmd="6" immunity_corrosion="true"/>
+                    <weapons>
+                        <ranged_weapon name="Alchemical Mortar" rng="12" rof="1" aoe="3" pow="*">
+                            <capacity title="AMMO TYPE">Each time this weapon is used to make an attack, choose one of the following abilities:</capacity>
+                            <capacity title="● Acid Bomb">Models in the AOE are hit and suffer a POW 12 Corrosion damage roll and suffer the Corrosion continuous effect.</capacity>
+                            <capacity title="● Psychoactive Gas">This attack is a gas effect and causes no damage. Models/units hit must pass a command check or flee. Enemy warbeasts hit must pass a THR check or frenzy.</capacity>
+                            <capacity title="● Smoke Blast">The weapon’s base POW becomes 14 for this attack. This attack causes fire damage. This weapon’s AOE is a cloud effect that remains in play for one round.</capacity>
+                            <capacity title="Arcing Fire">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+                            <capacity title="Inaccurate">This model suffers -4 to attack rolls with this weapon.</capacity>
+                        </ranged_weapon>
+                        <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="L"></melee_weapon>
+                        <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="R"></melee_weapon>
+                    </weapons>
+                    <animus name="ACIDIC TOUCH" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains +2 to melee damage rolls and Immunity: Corrosion, and its melee weapons gain Critical Corrosion. Acidic Touch lasts for one round.</animus>
+                    <capacity title="ALCHEMICAL MASK">This model ignores Gas effects. When determining LOS or resolving attacks, this model ignores cloud effects</capacity>
+                    <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>
+                    <restricted_to id="IW08"/>
+                    <restricted_to id="IW10"/>
+                    <restricted_to id="IW11"/>
+                    <restricted_to id="IW05"/>
+                    <restricted_to id="IW13" />
+                    <restricted_to id="IW03_minion"/>
+                </warbeast>
+
+                <warbeast  id="IB12" name="Blind Walker" full_name="Blind Walker" damage_spiral="5-14-8" fury="3" threshold="10" cost="7" qualification="Minion Gatorman Heavy Warbeast" fa="U" completed="true">
+                    <basestats name="Walker" spd="5" str="11" mat="5" rat="1" def="10" arm="20" cmd="10" />
+                    <weapons>
+                        <melee_weapon name="Claw" pow="2" p_plus_s="14" open_fist="true" location="L" />
+                        <melee_weapon name="Claw" pow="2" p_plus_s="14" open_fist="true" location="R" />
+                    </weapons>
+                    <animus name="RITES OF POWER" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model’s controller can channel spells through it. After a spell is channeled through it, this model suffers d3 damage points. Rites of Power lasts for one turn.</animus>
+                    <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+                    <capacity title="EMPHATIC TRANSFERENCE">A friendly Faction warlock can transfer damage to this model even if this model has a number of fury points equal to its current FURY.</capacity>
+                    <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+
+                    <restricted_to id="IW06"/>
+                    <restricted_to id="IW07"/>
+                    <restricted_to id="IW09"/>
+                    <restricted_to id="IW12"/>
+                    <restricted_to id="IW14" />
+                    <restricted_to id="IW04_minion"/>
+                </warbeast>
+
                 <warbeast  id="OB02_minion_arkadius" name="Gorax(Arkadius)" full_name="Gorax(Arkadius)" damage_spiral="7-8-7" fury="4" threshold="8" cost="4" qualification="Minion Light Warbeast" fa="U" completed="true">
                     <basestats name="Gorax" spd="5" str="9" mat="6" rat="3" def="12" arm="16" cmd="5" />
                     <weapons>
@@ -562,9 +625,9 @@
                     </weapons>
                     <animus name="Primal" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly living warbeast gains +2 STR and MAT for one round and automatically frenzies during your next Control Phase.</animus>
                     <capacity title="Pain Response">While damaged this model can charge or make power attacks without being forced.</capacity>
+                    <restricted_to id="IW08"/>
                     <only_in_tier id="Dr. Arkadius - Nature of the Beast (NQ56)"/>
                 </warbeast>
-
 
                 <warbeast id="Lug_minion" name="Lug" full_name="Lug" qualification="Mercenary Minion Character Heavy Warbeast" fa="C" cost="0" fury="4" threshold="9" damage_spiral="8-11-8" completed="true">
                     <basestats name="LUG" spd="5" str="12" mat="5" rat="1" def="12" arm="18" cmd="6" immunity_frost="true" pathfinder="true" />
@@ -722,18 +785,33 @@
                     <works_for id="faction_trollblood" />
                     <works_for id="faction_skorne" />
                 </unit>
-                <unit id="IU03" name="Farrow Brigands" full_name="Farrow Brigands" qualification="Minion Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true">
+                <unit id="IU03" name="Farrow Brigands" full_name="Farrow Brigands" qualification="Minion Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" completed="true" has_unit_attachment="true">
                     <basestats name="LEADER &amp; GRUNTS" spd="5" str="6" mat="6" rat="5" def="12" arm="14" cmd="8" />
                     <weapons>
                         <ranged_weapon name="Pig Iron" rng="10" rof="1" aoe="-" pow="12" />
                         <melee_weapon name="Club" pow="4" p_plus_s="10" />
                     </weapons>
                     <capacity title="MINIONS">These models will work for Circle, Legion, Skorne, and Trollbloods.</capacity>
-                    <capacity title="DIG IN (★ACTION)">This model gains cover, does not suffer blast damage, and does not block LOS. This model remains dug in until it moves, is placed, or is engaged. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+                    <capacity title="DIG IN" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model remains dug in until it moves, is placed, or is engaged. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
                     <capacity title="PRAYERS">The Leader of this unit can recite one of the following prayers each turn anytime during its unit's activation. Each model in this unit gains the benefits listed.</capacity>
                     <capacity title="● HEROIC CALL">Affected models gain Fearless and Tough for one round.</capacity>
                     <capacity title="● HOG WILD">Affected models can make one ranged attack this activation before this unit makes its normal movement. After their normal movement, models in this unit that make combat actions can only make melee attacks this activation.</capacity>
                     <capacity title="● MARCH">Affected models gain Pathfinder for one turn.</capacity>
+                    <unit_attachment id="UA_for_IU03" name="Farrow Brigand Warlord" full_name="Farrow Brigand Warlord" qualification="Minion Unit Attachment" fa="1" cost="3" completed="true">
+                        <model name="Farrow Brigand Warlord" full_name="Farrow Brigand Warlord" qualification="Minion Unit Attachment">
+                            <basestats name="WARLORD" spd="5" str="7" mat="7" rat="6" def="12" arm="16" cmd="9" gunfighter="true" officer="true" hitpoints="5"/>
+                            <weapons>
+                                <ranged_weapon name="Pig Iron" rng="10" rof="1" aoe="-" pow="12" count="2"></ranged_weapon>
+                                <melee_weapon name="Battle Axe" pow="5" p_plus_s="12"></melee_weapon>
+                            </weapons>
+                            <capacity title="Attachment [Farrow Brigand]">This attachment can be added to a Farrow Brigand unit.</capacity>
+                            <capacity title="DIG IN" type="*Action">This model gains cover, does not suffer blast damage, and does not block LOS. This model remains dug in until it moves, is placed, or is engaged. This model cannot dig into solid rock or man-made constructions. This model can begin the game dug in.</capacity>
+                            <capacity title="GRANTED: GANG">While this model is in play, models in this unit gain Gang. (When making a melee attack targeting an enemy model in melee range of another model in its unit, a model with Gang gains +2 to melee attack and melee damage rolls.)</capacity>
+                            <capacity title="GRANTED: REFORM">While this model is in play, after all models in its unit have completed their actions, each can advance up to 3".</capacity>
+                            <capacity title="TACTICS : PROWL">Models in this unit gain Prowl. (Models with Prowl gain Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.)</capacity>
+                        </model>
+                    </unit_attachment>
+
                     <works_for id="faction_orboros" />
                     <works_for id="faction_everblight" />
                     <works_for id="faction_trollblood" />
@@ -852,6 +930,35 @@
                     <works_for id="faction_trollblood" />
                     <works_for id="faction_skorne" />
                 </unit>
+
+                <unit id="IU10" name="Lynus Wesselbaum &amp; Edrea Lloryrr" full_name="Lynus Wesselbaum &amp; Edrea Lloryrr" qualification="Mercenary Minion Character Unit" fa="C" base_cost="3" full_cost="-" baseCount="3" fullCount="-" completed="true">
+                    <basestats name="Lynus" spd="6" str="5" mat="5" rat="5" def="14" arm="12" cmd="9" hitpoints="5" officer="true"/>
+                    <weapons>
+                        <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11"></ranged_weapon>
+                        <melee_weapon name="Heavy Sword" pow="5" p_plus_s="10" reach="true"></melee_weapon>
+                    </weapons>
+                    <capacity title="Mercenaries">These models will work for Cygnar.</capacity>
+                    <capacity title="Minions">These models will work for Circle and Trollbloods and the Blindwater Congregation and Thornfall Alliance pacts.</capacity>
+                    <capacity title="Animosity [Saxon Orrik]">This unit cannot be included in an army that includes one or more models of the listed type.</capacity>
+                    <capacity title="Collaboration" type="*Action">RNG CMD. Target friendly warrior model’s next attack roll this turn is boosted.</capacity>
+                    <capacity title="Granted: Applied Knowledge">While this model is in play, models in this unit gain Applied Knowledge. (If a model with Applied Knowledge makes only normal attacks during its combat action, it can make an additional combat action during its activation this turn.)</capacity>
+
+                    <model>
+                        <basestats name="EDREA" spd="6" str="4" mat="5" rat="5" def="14" arm="12" cmd="9" hitpoints="5" />
+                        <weapons>
+                            <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11"></ranged_weapon>
+                            <melee_weapon name="Sword" pow="3" p_plus_s="7"></melee_weapon>
+                        </weapons>
+                        <capacity title="Magic Ability [7]"></capacity>
+                        <capacity title="•	Arcane Bolt" type="*Attack">Arcane Bolt is a RNG 12, POW 11 magic attack.</capacity>
+                        <capacity title="•	Wind Barrier" type="*Action">Non-magical ranged attacks targeting this model or a model in this unit completely within 3" of this model automatically miss. Wind Barrier lasts for one round.</capacity>
+                        <capacity title="•	Zephyr" type="*Action">Models in this unit that are in formation can immediately advance up to 3". They cannot be targeted by free strikes during this movement.</capacity>
+                        <capacity title="True Sight"> This model ignores concealment, Camouflage, and Stealth.</capacity>
+                    </model>
+                    <works_for id="faction_orboros" />
+                    <works_for id="faction_trollblood" />
+                </unit>
+
                 <unit id="MU05_minion" name="Cylena Raefyll &amp; Nyss Hunters" full_name="Cylena Raefyll &amp; Nyss Hunters" qualification="Minion Character Unit" fa="C" base_cost="7" full_cost="10" baseCount="6" fullCount="10" completed="true">
                     <basestats name="CYLENA" spd="7" str="5" mat="7" rat="7" def="15" arm="11" cmd="9" hitpoints="5" officer="true" pathfinder="true" />
                     <weapons>
@@ -1278,6 +1385,26 @@
                     <capacity title="SABOTAGE" type="*Action">Target enemy warjack or battle engine B2B with this model suffers d3+3 damage points and cannot be repaired or have damage removed for one round. When damaging a warjack, choose which column suffers the damage.</capacity>
                     <works_for id="faction_orboros" />
                     <works_for id="faction_everblight" />
+                    <works_for id="faction_skorne" />
+                    <works_for id="faction_trollblood" />
+                </solo>
+                <solo id="IS16" name="Hutchuck" full_name="Hutchuck, Ogrun Bounty Hunter" qualification="Mercenary Minion Character Solo" fa="C" cost="3" completed="true">
+                    <basestats name="HUTCHUCK" spd="5" str="9" mat="6" rat="6" def="13" arm="16" cmd="9" hitpoints="8" fearless="true"/>
+                    <weapons>
+                        <ranged_weapon name="Alchemical Grenades" rng="8" rof="1" aoe="3" pow="12">
+                            <capacity title="Ammo Type">Each time this weapon is used to make an attack, choose one of the following abilities:</capacity>
+                            <capacity title="● Brain Damage"> – A model damaged by an attack with this weapon cannot cast spells, upkeep spells, or use an animus for one round.</capacity>
+                            <capacity title="● Quake"> – On a direct hit against an enemy model, all models hit are knocked down.</capacity>
+                            <capacity title="● Rust"> – This attack causes no damage. Instead, warjacks in the AOE are hit and suffer –2 ARM for one turn.</capacity>
+                        </ranged_weapon>
+                        <melee_weapon name="Mace" pow="5" p_plus_s="14" reach="true"></melee_weapon>
+                    </weapons>
+                    <capacity title="MERCENARY">This model will work for Cygnar and Khador.</capacity>
+                    <capacity title="MINION">This model will work for Circle, Skorne, and Trollbloods.</capacity>
+                    <capacity title="AMBUSH">You can choose not to deploy this unit at the start of the game. If it is not deployed normally, you can put it into play at the end of any of your Control Phases after your first turn. When you do, choose any table edge except the back of you opponent's deployment zone. Place this unit within 3" of the chosen table edge.</capacity>
+                    <capacity title="TAKE DOWN">Models disabled by a melee attack made by this model cannot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.</capacity>
+                    <capacity title="Wild Shot">This model can make one ranged attack during its activation before its normal movement. If it does, after its normal movement, the model can only make melee attacks that activation.</capacity>
+                    <works_for id="faction_orboros" />
                     <works_for id="faction_skorne" />
                     <works_for id="faction_trollblood" />
                 </solo>

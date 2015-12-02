@@ -50,6 +50,11 @@
           <weapons />
           <feat title=""/>
         </warlock>
+        <warlock id="OX05" name="Kromac2" full_name="Kromac, Champion of the Wurm" generation="E" qualification="warlock" fury="6" warbeast_points="4" fa="C">
+          <basestats name="Kromac" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="19" />
+          <weapons />
+          <feat title=""/>
+        </warlock>
         <warlock id="OW06" name="Mohsar" full_name="Mohsar" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
           <basestats name="Mohsar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="15" />
           <weapons />
@@ -171,8 +176,13 @@
         <warbeast id="OB21" name="Brennos the Elderhorn" full_name="Brennos the Elderhorn" qualification="Circle Satyr Character Heavy Warbeast" fa="C" cost="9" fury="4" threshold="10" damage_spiral="7-10-8">
           <basestats name="BRENNOS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
           <weapons/>            
-        </warbeast>        
-        
+        </warbeast>
+          <warbeast id="OB22" name="Storm Raptor" full_name="Storm Raptor" qualification="Circle Gargantuan" fa="2" cost="19" fury="4" threshold="9" damage_spiral="14-14-18" >
+              <basestats name="RAPTOR" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+              <weapons>
+              </weapons>
+          </warbeast>
+
       </warbeasts>
       <battleEngines>
         <battleEngine id="OE01" name="Celestal Fulcrum" full_name="Celestal Fulcrum" cost="9" qualification="Battle engine" fa="2">
@@ -286,7 +296,11 @@
             <basestats name="CALEB" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8"/>
             <weapons/>
           </model>
-        </unit>        
+        </unit>
+          <unit id="OU14" name="Blackclad Mist Riders" full_name="Blackclad Mist Riders" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Circle Light Cavalry Unit" fa="1">
+          <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
+          <weapons/>
+          </unit>
       </units>
       <solos>
         <solo id="OS01" name="Blackclad Wayfarer" full_name="Blackclad Wayfarer" cost="2" qualification="Solo" fa="2">
@@ -328,6 +342,10 @@
             <restricted_to id="OB16"/>
             <restricted_to id="OB19"/>
         </solo>
+          <solo id="OS10" name="Bloodweaver Night Witch" full_name="Bloodweaver Night Witch" cost="2" qualification="Circle Tharn Solo" fa="2">
+          <basestats name="Night Witch" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+          <weapons />
+            </solo>
       </solos>
     </army>
   </armies>

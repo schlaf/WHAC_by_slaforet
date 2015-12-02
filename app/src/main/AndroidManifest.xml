@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.schlaf.steam"
-    android:versionCode="32"
-    android:versionName="1.6.2" >
+    android:versionCode="33"
+    android:versionName="1.6.3" >
     
 <!--
 1.0.3 - 
@@ -250,6 +250,14 @@ allow monstrosities for cyphon + add swamp gobber river rider + add savio monter
 add transverse enumerator as UA for everybody
 add textual description of models for contracts
 add textual description of models for contracts + add Savio Montero Acosta to relevant contracts + correct puppet master
+
+1.6.3
+add models from Devastation
+add theme forces from Devastation
+add models from Devastation to previsous theme forces if relevant
+correct Harbinger - Army of the Righteous paladin FA
+correct Darius - Field Tests (NQ43) : add Reliant
+correct Butcher3 - Blood in the Snow : use butcher3 not butcher2</ul>
 
  -->    
 

@@ -148,7 +148,7 @@ Mark two zones (12"-diameter circles) in accordance with
 the diagram below. Starting on the second player’s second
 turn, at the end of each player’s turn a player earns control
 points (CP) as follows:
-&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Zone: Control = 1 CP, Dominate = 1 CP&lt;/b&gt;&lt;/ul&gt;</specialRules>
+&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Zone: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;&lt;/ul&gt;</specialRules>
 	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
 	<map>maps_2015_7_standard_outflank</map>
 	<objective>NA</objective>

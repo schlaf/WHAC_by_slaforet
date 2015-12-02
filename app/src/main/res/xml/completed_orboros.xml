@@ -3,9 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_orboros" name="Orboros" version="forum_orboros_003">
+    <army faction="faction_orboros" name="Orboros" version="forum_orboros_006">
         <!-- 002 add kromac 2-->
         <!-- 003 Winter Coat animus for winter argus -->
+        <!-- 004 Upper cased all spells; Fixed typos -->
+        <!-- 005 add devastation entries -->
+        <!-- 006 correct entropic force for gallow groves + baldur2 ground zero-->
       <warlocks>
         <!--Kaya Wildborne complete-->
         <warlock id="Ow01" name="Kaya1" full_name="Kaya the Wildborne" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
@@ -16,10 +19,10 @@
             </melee_weapon>
           </weapons>
           <feat title="Wild Mastery">Place up to 3 fury points on each friendly Faction warbeast in Kaya's battlegroup that is in her control area.  She can immeadiately leach fury points from warbeasts in her battlegroup in her control area.</feat>
-          <spell name="Occultation" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Stealth.</spell>
-          <spell name="Soothing Song" cost="1" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">Remove up to 1 fury point from each friendly living Faction warbeast currently in this model's control area.  Soothing Song can only be cast once per turn.</spell>
-          <spell name="Spirit Door" cost="3" rng="Ctrl" aoe="-" pow="-" up="NO" off="NO">Select a model in this model's battlegroup in its control area.  If this model is selected, immediately place it within 2" of another model in its battlegroup that was in the control area at the time the spell was cast.  If another model in this model's battlegroup is selected, immediately place that model within 2" of this model.  A model cannot advance or attack after being placed by Spirit Door this turn.</spell>
-          <spell name="Spirit Fang" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A model damaged by Spirit Fang suffers -2 SPD and DEF for one round.</spell>
+                    <spell name="OCCULTATION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Stealth.</spell>
+                    <spell name="SOOTHING SONG" cost="1" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">Remove up to 1 fury point from each friendly living Faction warbeast currently in this model's control area.  Soothing Song can only be cast once per turn.</spell>
+                    <spell name="SPIRIT DOOR" cost="3" rng="Ctrl" aoe="-" pow="-" up="NO" off="NO">Select a model in this model's battlegroup in its control area.  If this model is selected, immediately place it within 2" of another model in its battlegroup that was in the control area at the time the spell was cast.  If another model in this model's battlegroup is selected, immediately place that model within 2" of this model.  A model cannot advance or attack after being placed by Spirit Door this turn.</spell>
+                    <spell name="SPIRIT FANG" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">A model damaged by Spirit Fang suffers -2 SPD and DEF for one round.</spell>
           <capacity title="Pack Hunters">Living warbeasts in this model's battlegroup in its control area gain +2 on melee attack rolls.</capacity>
         </warlock>
         <!--Kaya Moonhunter complete-->
@@ -29,10 +32,10 @@
             <melee_weapon name="Glimmer" pow="5" p_plus_s="11" magical="true" reach="true"></melee_weapon>
           </weapons>
           <feat title="Call of the Hunt">Kaya can force warbeasts in her battlegroup even if they are outside her control area.  At the end of the activation of each warbeast in her battlegroup, you can place that warbeast anywhere within 3" of Kaya.  Call of the Hunt lasts for one turn.</feat>
-          <spell name="Dog Pile" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Warbeasts in this model's battlegroup can charge or make slam power attacks against target enemy model without being forced and regardless of LOS.  When a warbeast does, it gains +2 movement and gains Pathfinder while resolving that charge or slam.</spell>
-          <spell name="Forced Evolution" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly living Faction warbeast gains +2 STR and DEF.</spell>
-          <spell name="Muzzle" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Muzzle cannot advance toward this model for one round.</spell>
-          <spell name="Shadow Pack" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">Models in this model's battlegroup gain Stealth while in its control area.</spell>
+                    <spell name="DOG PILE" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Warbeasts in this model's battlegroup can charge or make slam power attacks against target enemy model without being forced and regardless of LOS.  When a warbeast does, it gains +2 movement and gains Pathfinder while resolving that charge or slam.</spell>
+                    <spell name="FORCED EVOLUTION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly living Faction warbeast gains +2 STR and DEF.</spell>
+                    <spell name="MUZZLE" cost="2" rng="10" aoe="-" pow="12" up="NO" off="YES">An enemy warbeast damaged by Muzzle cannot advance toward this model for one round.</spell>
+                    <spell name="SHADOW PACK" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">Models in this model's battlegroup gain Stealth while in its control area.</spell>
           <capacity title="Alpha">Living warbeasts in this model's battlegroup beginning their activations in its control area can run, charge, or make a slam or trample power attack without being forced.</capacity>
           <capacity title="Flank [faction warbeast]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of the type indicated, this model gains +2 to attack rolls and gains an additional damage die.</capacity>
           <capacity title="Unyielding">While engaging an enemy model, this model gains +2 ARM.</capacity>
@@ -49,11 +52,11 @@
             </melee_weapon>
           </weapons>
           <feat title="Storm Ravager">Place three 3" AOEs anywhere completely in Krueger's control area.  Enemy models in one or more of the AOEs when they are placed suffer a boostable POW 10 electrical damage roll.  During each of your Maintenance Phases, remove one AOE.  An enemy model entering or ending its activation in one or more AOEs suffers an unboostable POW 10 electrical damage roll.</feat>
-          <spell name="Chain Lightning" cost="3" rng="10" aoe="-" pow="10" up="NO" off="YES">A model hit by Chain Lightning suffers a POW 10 electrical damage roll, and lightning arcs from that model to d6 consecutive additional models.  The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model.  Each model the lightning arcs to suffers a POW 10 electrical damage roll.</spell>
-          <spell name="Deflection" cost="2" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models gain +2 ARM against ranged and magic attack damage rolls.  Deflection lasts for one round.</spell>
-          <spell name="Lightning Tendrils" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Immunity: Electricity.  Affected models' melee weapons gain Reach and Electro Leap.  (When a model is hit by a weapon with Electro Leap, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model.  The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.)</spell>
-          <spell name="Skyborne" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">This model gains +2 SPD and DEF anf Flight for one round.  (A model with Flight can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them.  It ignores intervening models when declaring its charge target.)</spell>
-          <spell name="Tornado" cost="4" rng="10" aoe="-" pow="13" up="NO" off="YES">Instead of suffering a normal damage roll, a non-incorporeal model hit by Tornado is thrown d6" directly away from the spell's point of origin regardless of its base size and suffers a POW 13 damage roll.  Collateral damage from this throw is POW 13.</spell>
+                    <spell name="CHAIN LIGHTNING" cost="3" rng="10" aoe="-" pow="10" up="NO" off="YES">A model hit by Chain Lightning suffers a POW 10 electrical damage roll, and lightning arcs from that model to d6 consecutive additional models.  The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model.  Each model the lightning arcs to suffers a POW 10 electrical damage roll.</spell>
+                    <spell name="DEFLECTION" cost="2" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, friendly Faction warrior models gain +2 ARM against ranged and magic attack damage rolls.  Deflection lasts for one round.</spell>
+                    <spell name="LIGHTNING TENDRILS" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly model/unit gains Immunity: Electricity.  Affected models' melee weapons gain Reach and Electro Leap.  (When a model is hit by a weapon with Electro Leap, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model.  The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll.)</spell>
+                    <spell name="SKYBOURNE" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">This model gains +2 SPD and DEF anf Flight for one round.  (A model with Flight can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them.  It ignores intervening models when declaring its charge target.)</spell>
+                    <spell name="TORNADO" cost="4" rng="10" aoe="-" pow="13" up="NO" off="YES">Instead of suffering a normal damage roll, a non-incorporeal model hit by Tornado is thrown d6" directly away from the spell's point of origin regardless of its base size and suffers a POW 13 damage roll.  Collateral damage from this throw is POW 13.</spell>
         </warlock>
         <!--Krueger Stormlord complete-->
         <warlock id="Ox02" name="Krueger2" full_name="Krueger the Stormlord" generation="E" qualification="Circle Epic Warlock" fury="7" warbeast_points="5" fa="C"  completed="true">
@@ -67,10 +70,10 @@
             </melee_weapon>
           </weapons>
           <feat title="Hurricane">Enemy models currently in Krueger's control area are puched 3" directly away from Krueger and suffer -2 SPD for one round.  You determine the order models are moved.</feat>
-          <spell name="Gallows" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallows' point of origin.</spell>
-          <spell name="Lightning Storm" cost="3" rng="8" aoe="3" pow="10" up="NO" off="YES">Models hit suffer a POW 10 elecrical damage roll.  The AOE remains in play for one round.  Models entering or ending their activations in the AOE suffer a POW 10 electrical damage roll.</spell>
-          <spell name="Storm Wall" cost="3" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, enemy models suffer -5 RNG on their ranged attacks.  When an enemy AOE ranged attack deviates from a point in this model's control area, after determining the deviation distance, you choose the direction the AOE deviates.  Storm Wall lasts for one round.</spell>
-          <spell name="Telekinesis" cost="2" rng="8" aoe="-" pow="-" up="NO" off="*">Place target model completely within 2" of its current location.  When Telekinesis targets an enemy model, it is an offensive spell and requires a magic attack roll.  A model can be affected by Telekinesis only once per turn.</spell>
+                    <spell name="GALLOWS" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallows' point of origin.</spell>
+                    <spell name="LIGHTNING STORM" cost="3" rng="8" aoe="3" pow="10" up="NO" off="YES">Models hit suffer a POW 10 elecrical damage roll.  The AOE remains in play for one round.  Models entering or ending their activations in the AOE suffer a POW 10 electrical damage roll.</spell>
+                    <spell name="STONE WALL" cost="3" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, enemy models suffer -5 RNG on their ranged attacks.  When an enemy AOE ranged attack deviates from a point in this model's control area, after determining the deviation distance, you choose the direction the AOE deviates.  Storm Wall lasts for one round.</spell>
+                    <spell name="TELEKINESIS" cost="2" rng="8" aoe="-" pow="-" up="NO" off="*">Place target model completely within 2" of its current location.  When Telekinesis targets an enemy model, it is an offensive spell and requires a magic attack roll.  A model can be affected by Telekinesis only once per turn.</spell>
           <capacity title="Flight">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them.  This model ignores intervening models when declaring its charge target.</capacity>
           <capacity title="Inspiration [Circle]">Friendly Circle models/units in this model's command range never flee and immediately rally.</capacity>
         </warlock>
@@ -83,10 +86,10 @@
             </melee_weapon>
           </weapons>
           <feat title="Broken Earth">While in Baldur's control area, friendly models gain cover.  While in Baldur's control area, enemy models never have Pathfinder and treat open terrain as rough terrain.  Broken Earth lasts for one round.</feat>
-          <spell name="Earth Spikes" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">When making this attack, ignore cover and the +2 DEF bonus for elevation.  On a critical hit, models hit are knocked down.</spell>
-          <spell name="Rapid Growth" cost="2" rng="Ctrl" aoe="4" pow="-" up="YES" off="NO">Place the AOE completely in this model's control area.  The AOE is a forest that remains in play as long as the upkeep is paid.</spell>
-          <spell name="Solid Ground" cost="2" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">While in this model's control area, friendly models cannot be knocked down and do not suffer blast damage.</spell>
-          <spell name="Stone Skin" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 STR and ARM but suffers -1 SPD and DEF.</spell>
+                    <spell name="EARTH SPIKES" cost="3" rng="10" aoe="3" pow="13" up="NO" off="YES">When making this attack, ignore cover and the +2 DEF bonus for elevation.  On a critical hit, models hit are knocked down.</spell>
+                    <spell name="RAPID GROWTH" cost="2" rng="Ctrl" aoe="4" pow="-" up="YES" off="NO">Place the AOE completely in this model's control area.  The AOE is a forest that remains in play as long as the upkeep is paid.</spell>
+                    <spell name="SOLID GROUND" cost="2" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">While in this model's control area, friendly models cannot be knocked down and do not suffer blast damage.</spell>
+                    <spell name="STONE SKIN" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 STR and ARM but suffers -1 SPD and DEF.</spell>
           <capacity title="Elemental Mastery">Warbeasts in this model's battle group with Construct beginning their activations in this model's control area can charge and make power attacks without being forced.  This model can heal friendly warbeasts in its battlegroup that have Construct.</capacity>
           <capacity title="Forest Walk">While completely within a forest, this model can forfeit its normal movement to use Forest Walk.  If it does, choose a location completely within this model's control area that is completely within a forest.  Remove this model from the forest and place it in the chosen location.  This model cannot use Forest Walk while knocked down.</capacity>
         </warlock>
@@ -100,7 +103,7 @@
           <feat title="Hallowed Ground">Friendly models currently in Baldur's control area gain Roots of the Earth for one round. (A model affected by Roots of the Earth gains +3 ARM, cannot be knocked down, and cannot move or be placed.)</feat>
           
           <spell name="CREVASSE" cost="3" rng="8" aoe="-" pow="12" up="NO" off="YES">If Crevasse boxes its original target, you can make a SP6 attack using the boxed model as the attack's point of origin. Models hit suffer a POW 12 magic damage roll. Models boxed by Crevasse are removed from play.</spell>
-          <spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Center a 5" AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll. Each model damaged by Ground Zero is pushed d6" directly away from this model in the order you choose.</spell>
+          <spell name="GROUND ZERO" cost="3" rng="SELF" aoe="5" pow="13" up="NO" off="NO">Center a 5" AOE on this model. Each other model in the AOE is hit and suffers a POW 13 damage roll. Each enemy model damaged by Ground Zero is pushed d6" directly away from this model in the order you choose.</spell>
           <spell name="ROCK WALL" cost="2" rng="CTRL" aoe="WALL" pow="-" up="YES" off="NO">Place a wall template anywhere completely in this model's control area where it does not touch a model's base, an obstruction, or an obstacle. The wall is a linear obstacle that provides cover.</spell>
           <spell name="ROOTS OF THE EARTH" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains +3 ARM, cannot be knocked down, and cannot move or be placed. Roots of the Earth lasts for one round.</spell>
           
@@ -117,11 +120,11 @@
             </melee_weapon>
           </weapons>
           <feat title="Seeds of Destruction">When a friendly Faction model destroys a living or undead enemy model with a melee attack while in Morvahna's control area this turn, center a 3" AOE on the destroyed model and remove that model from the table.  The AOE is forrest terrain that remains in play for one round.  Enemy models in the AOE when it is put in play are hit and suffer an unboostable POW 13 blast damage roll.</feat>
-          <spell name="Eruption of Life" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">If this attack destroys a living or undead enemy model, center a 3" AOE on the destroyed model before removing it from the table.  The AOE is forest terrain that remains in play for one round.  Enemy models in the AOE when it is put in play are hit and suffer an unboostable POW 13 blast damage roll.</spell>
-          <spell name="Harvest" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">When a living or undead enemy model is destroyed in this model's control area, this model can gain 1 fury point.  This model's fury point total cannot exceed its FURY as a result of Harvest.</spell>
-          <spell name="Influence" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-warcaster, non-warlock warrior model.  The model immediately makes one normal melee attack, the Influence expires.</spell>
-          <spell name="Regrowth" cost="4" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction unit. During the Control Phase, this model can spend 1 or more fury points. For each fury point spent, you can return one living small-based Grunt to the unit. It must be placed in this model's control area in formation and within 3" of another model in its unit. The Grunt is returned with one unmarked damage box.</spell> <!-- errata may 2014 -->
-          <spell name="Restoration" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM.  When this spell is upkept, this model heals 1 damage point for each friendly model affected by Restoration within 1" of this model.</spell>
+                    <spell name="ERUPTION OF LIFE" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">If this attack destroys a living or undead enemy model, center a 3" AOE on the destroyed model before removing it from the table.  The AOE is forest terrain that remains in play for one round.  Enemy models in the AOE when it is put in play are hit and suffer an unboostable POW 13 blast damage roll.</spell>
+                    <spell name="HARVEST" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">When a living or undead enemy model is destroyed in this model's control area, this model can gain 1 fury point.  This model's fury point total cannot exceed its FURY as a result of Harvest.</spell>
+                    <spell name="INFLUENCE" cost="1" rng="10" aoe="-" pow="-" up="NO" off="YES">Take control of target enemy non-warcaster, non-warlock warrior model.  The model immediately makes one normal melee attack, the Influence expires.</spell>
+                    <spell name="REGROWTH" cost="4" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction unit. During the Control Phase, this model can spend 1 or more fury points. For each fury point spent, you can return one living small-based Grunt to the unit. It must be placed in this model's control area in formation and within 3" of another model in its unit. The Grunt is returned with one unmarked damage box.</spell> <!-- errata may 2014 -->
+                    <spell name="RESTORTATION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM.  When this spell is upkept, this model heals 1 damage point for each friendly model affected by Restoration within 1" of this model.</spell>
           <capacity title="Sacrificial Pawn [Faction warrior]">When this model is directly hit by an enemy ranged attack, you can choose to have one friendly, non-incorporeal Faction warrior model within 3" of this model directly hit instead.  That model is automatically hit and suffers all damage and effects.</capacity>
         </warlock>
         <warlock id="Ox04" name="Morvahna2" full_name="Morvahna the Dawnshadow" generation="E" qualification="Circle Light Cavalry Epic Warlock" fury="7" warbeast_points="5" fa="C"  completed="true">
@@ -144,17 +147,17 @@
           <capacity title="Scales of Fate"> When a friendly Faction model makes an attack or damage roll during its activation while in this model's control area, this model can suffer d3 damage points to cause that model to reroll that roll. Each roll can be rerolled only once due to Scales of Fate.</capacity>
         </warlock>
         <!--Kromac the Ravenous complete-->
-        <warlock id="OW05" name="Kromac" full_name="Kromac the Ravenous" generation="P" qualification="Circle Tharn Warlock" fury="7" warbeast_points="4" fa="C" completed="true">
+                <warlock id="OW05" name="Kromac" full_name="Kromac the Ravenous" generation="P" qualification="Circle Tharn Warlock" fury="7" warbeast_points="4" fa="C" completed="true">
           <basestats name="Human Form" spd="6" str="6" mat="6" rat="4" def="15" arm="14" cmd="9" hitpoints="17" pathfinder="true" />
           <weapons>
             <melee_weapon name="Dusk and Dawn" count="2" pow="5" p_plus_s="11" magical="true" reach="true"></melee_weapon>
           </weapons>
           <feat title="Blood Rage">Kromac suffers up to 7 damage points.  For each damage point he suffers, Kromac gains 1 fury point.  Kromac's fury point total cannot exceed his current FURY as a result of Blood Rage.  If Kromac is in human form when this feat is used, he can immediately take beast form; replace his human model with his beast model.  Effects on the replaced model are applied to the beast model.</feat>
-          <spell name="Bestial" cost="3" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, enemy models cannot cast spells or be used to channel spells.  Bestial lasts for one round.</spell>
-          <spell name="Inviolable Resolve" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM and Fearless.</spell>
-          <spell name="Rift" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
-          <spell name="Warpath" cost="2" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">When a friendly Faction model in this model's control area destroys one or more enemy models with a melee or ranged attack during its activation, immediately after the attack is resolved, one warbeast in this model's battlegroup that is in its control area can advance up to 3".  A warbeast can advance only once per turn as a result of Warpath.</spell>
-          <spell name="Wild Aggression" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly living warbeast in this model's battlegroup can run, charge, or make slam or trample power attacks without being forced and gains boosted melee attack rolls.</spell>
+                    <spell name="BESTIAL" cost="3" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">While in this model's control area, enemy models cannot cast spells or be used to channel spells.  Bestial lasts for one round.</spell>
+                    <spell name="INVIOLABLE RESOLVE" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains +2 ARM and Fearless.</spell>
+                    <spell name="RIFT" cost="3" rng="8" aoe="4" pow="13" up="NO" off="YES">The AOE is rough terrain and remains in play for one round.</spell>
+                    <spell name="WARPATH" cost="2" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">When a friendly Faction model in this model's control area destroys one or more enemy models with a melee or ranged attack during its activation, immediately after the attack is resolved, one warbeast in this model's battlegroup that is in its control area can advance up to 3".  A warbeast can advance only once per turn as a result of Warpath.</spell>
+                    <spell name="WILD AGGRESSION" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly living warbeast in this model's battlegroup can run, charge, or make slam or trample power attacks without being forced and gains boosted melee attack rolls.</spell>
           <capacity title="Altered States">At the start of your Maintenance Phase, choose a form for this model to take: human or beast.  If it changes form, replace the model in play with its alternate form.  Effects on the replaced model are applied to the alternate form.  You decide which form this model starts the game in.</capacity>
           <capacity title="Beast Out">When this model suffers damage from an enemy attack during an opponent's turn while in human form, immediately after the attack is resolved this model can spend 1 fury point to take beast form.  Replace its human model with the beast model.  Effects on the replaced model are applied to the beast model.</capacity>
           <model id="Kromac">
@@ -167,7 +170,24 @@
             <capacity title="Jump">After using its normal movement to make a full advance but before performing an action, you can place this model anywhere completely within 5" of its current location.  Any effects that prevent it from charging also prevent it from using Jump.</capacity>
           </model>
         </warlock>
-        <!--Mohsar Desertwalker complete-->
+        <warlock id="OW10" name="Kromac2" full_name="Kromac, Champion of the Wurm" generation="E" qualification="Circle Epic Tharn Warlock" fury="7" warbeast_points="4" fa="C" completed="true">
+            <!-- kromac has odd id -->
+          <basestats name="Kromac" spd="6" str="10" mat="8" rat="4" def="14" arm="18" cmd="4" hitpoints="19" pathfinder="true" terror="true"/>
+          <weapons>
+              <melee_weapon name="Rathrok" pow="7" p_plus_s="17">
+                  <capacity title="Life Drinker">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+              </melee_weapon>
+          </weapons>
+          <feat title="Blood Lust">While within Kromac’s control area, living models in his battlegroup gain +2 STR and ARM. When a living friendly Faction model makes a charge attack against an enemy model while the enemy model is in Kromac’s control area, the attack automatically hits. Blood Lust lasts for one round.</feat>
+            <spell name="AGGRAVATOR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, friendly warbeasts gain Hyper Aggressive. (When a model with Hyper Aggressive suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.)</spell>
+            <spell name="AWAKENED SPIRIT" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warbeast in this model's battlegroup can use its animus once during its activation without being forced. A warbeast that uses its animus as a result of Awakened Spirit cannot also be forced to use its animus that activation.</spell>
+            <spell name="CARNAGE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction models gain +2 to melee attack rolls against enemy models in this model's control area. Carnage lasts for one turn.</spell>
+            <spell name="PRIMAL HOWL" cost="3" rng="SELF" aoe="*" pow="-" up="NO" off="NO">While in this model's command range, living enemy models suffer -2 to their attack rolls and living enemy models/units suffer -2 CMD when making command checks. Primal Howl lasts for one round.</spell>
+            <spell name="PRIMAL SHOCK" cost="2" rng="CTRL" aoe="-" pow="*" up="NO" off="YES">Choose a friendly Faction warbeast in this model's control area. Target an enemy model within 8" of the chosen warbeast and make a magic attack against it. The chosen warbeast is the attack's point of origin. If the enemy model is hit, it suffers a damage roll with a POW equal to the warbeast's base STR.</spell>
+            <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack. This model can have up to three corpse tokens at a time. It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
+        </warlock>
+
+          <!--Mohsar Desertwalker complete-->
         <warlock id="OW06" name="Mohsar" full_name="Mohsar the Desertwalker" generation="P" qualification="Circle Warlock" fury="8" warbeast_points="5" fa="C" completed="true">
           <basestats name="Mohsar" spd="5" str="4" mat="5" rat="6" def="14" arm="14" cmd="8" hitpoints="15" eyelesssight="true" pathfinder="true" />
           <weapons>
@@ -177,12 +197,12 @@
             </melee_weapon>
           </weapons>
           <feat title="Disjunction">While in Mohsar's control area enemy models cannot be used to channel spells, cannot leach fury, and cannot have fury leached from them.  Disjunction lasts for one round.</feat>
-          <spell name="Crevasse" cost="3" rng="8" aoe="-" pow="12" up="NO" off="YES">If Crevasse boxes its original target, you can make a SP6 attack using the boxed model as the attack's point of origin.  Models hit suffer a POW 12 magic damage roll.  Models boxed by Crevasse are removed from play.</spell>
-          <spell name="Curse of Shadows" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers -2 ARM and cannot make free strikes.  A model can advance through an affected model if it has enough movement to move completely past its base.</spell>
-          <spell name="Mirage" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains Apparition.  (During your Control Phase, place models with Apparition anywhere completely within 2" of their current locations.  If Mirage affects a unit, only models in formation can be placed.)</spell>
-          <spell name="Pillar of Salt" cost="2" rng="Ctrl" aoe="3" pow="-" up="NO" off="NO">Place a 3" AOE anywhere completely in this model's control area where it does not touch a model's base.  The AOE is an obstruction that blocks LOS and provides cover.  It is a structure with ARM 18 and leaves play if it suffers 1 or more damage points.  The AOE remains in play for one round.</spell>
-          <spell name="Sands of Fate" cost="2" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">Remove a friendly living Faction trooper model in this model's control area from play and replace it with this model.  This model cannot advance this activation after being placed by Sands of Fate.</spell>
-          <spell name="Sunhammer" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">Enemy warbeasts/warjacks that advance more than 1" and end their normal movement in this model's control area suffer d3 damage points.</spell>
+                    <spell name="CREVASSE" cost="3" rng="8" aoe="-" pow="12" up="NO" off="YES">If Crevasse boxes its original target, you can make a SP6 attack using the boxed model as the attack's point of origin. Models hit suffer a POW 12 magic damage roll. Models boxed by Crevasse are removed from play.</spell>
+                    <spell name="CURSE OF SHADOWS" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers -2 ARM and cannot make free strikes.  A model can advance through an affected model if it has enough movement to move completely past its base.</spell>
+                    <spell name="MIRAGE" cost="3" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly Faction model/unit gains Apparition.  (During your Control Phase, place models with Apparition anywhere completely within 2" of their current locations.  If Mirage affects a unit, only models in formation can be placed.)</spell>
+                    <spell name="PILLAR OF SALT" cost="2" rng="Ctrl" aoe="3" pow="-" up="NO" off="NO">Place a 3" AOE anywhere completely in this model's control area where it does not touch a model's base.  The AOE is an obstruction that blocks LOS and provides cover.  It is a structure with ARM 18 and leaves play if it suffers 1 or more damage points.  The AOE remains in play for one round.</spell>
+                    <spell name="SANDS OF FATE" cost="2" rng="Self" aoe="Ctrl" pow="-" up="NO" off="NO">Remove a friendly living Faction trooper model in this model's control area from play and replace it with this model.  This model cannot advance this activation after being placed by Sands of Fate.</spell>
+                    <spell name="SUNHAMMER" cost="3" rng="Self" aoe="Ctrl" pow="-" up="YES" off="NO">Enemy warbeasts/warjacks that advance more than 1" and end their normal movement in this model's control area suffer d3 damage points.</spell>
           <capacity title="Circular Vision">This model's front arc extends to 360 degrees.</capacity>
           <capacity title="Maltreatment">Once per turn during its activation this model can remove one fury point from a warbeast in its battlegroup that is in its control area and add 1 fury point to its own current total. The warbeast suffers d3 damage points.</capacity>
         </warlock>
@@ -195,10 +215,10 @@
             </melee_weapon>
           </weapons>
           <feat title="Forest of Judgement">Wurmwood, Tree of Fate's command range becomes a forest.  Enemy models that are knocked down while in Wurmwood's command range suffer 1 damage point.  Forest of Judgement lasts for one round.</feat>
-          <spell name="Curse of Shadows" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers -2 ARM and cannot make free strikes.  A model can advance through the affected model if it has enough movement to move completely past its base.</spell>
-          <spell name="Hellmouth" cost="4" rng="8" aoe="*" pow="12" up="NO" off="YES">If this attack misses, nothing happens.  If it hits, before making the damage roll, push the models within 3" of the model hit 3" directly toward it in the order you choose.  Then center a 3" AOE on the model hit.  Models hit suffer a POW 12 damage roll.  Models boxed by Hellmouth are removed from play.</spell>
-          <spell name="Stranglehold" cost="2" rng="10" aoe="-" pow="11" up="NO" off="YES">A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.</spell>
-          <spell name="Unseen Path" cost="2" rng="Ctrl" aoe="-" pow="-" up="NO" off="NO">Unseen Path can be cast only while Wurmwood, Tree of Fate is in this model's control area.  When Unseen Path is cast, immediately place this model within 2" or Wurmwood or place Wurmwood within 2" of this model.  A model cannot advance this turn after being placed by Unseen Path.</spell>
+                    <spell name="CURSE OF SHADOWS" cost="3" rng="8" aoe="-" pow="-" up="YES" off="YES">Target model/unit suffers -2 ARM and cannot make free strikes.  A model can advance through an affected model if it has enough movement to move completely past its base.</spell>
+          <spell name="HELLMOUTH" cost="4" rng="8" aoe="*" pow="12" up="NO" off="YES">If this attack misses, nothing happens.  If it hits, before making the damage roll, push the models within 3" of the model hit 3" directly toward it in the order you choose.  Then center a 3" AOE on the model hit.  Models hit suffer a POW 12 damage roll.  Models boxed by Hellmouth are removed from play.</spell>
+                    <spell name="STRANGLEHOLD" cost="2" rng="10" aoe="-" pow="11" up="NO" off="YES">A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.</spell>
+                    <spell name="UNSEEN PATH" cost="2" rng="Ctrl" aoe="-" pow="-" up="NO" off="NO">Unseen Path can be cast only while Wurmwood, Tree of Fate is in this model's control area.  When Unseen Path is cast, immediately place this model within 2" or Wurmwood or place Wurmwood within 2" of this model.  A model cannot advance this turn after being placed by Unseen Path.</spell>
           <capacity title="Black Roots">This model ignores the firing into melee penalty when making magic attacks against models in Wurmwood's command range.</capacity>
           <capacity title="Treewalker">This model ignores forests when determining LOS.  While in a forest, this model gains +2 DEF against melee attack rolls and can advance through obstructions and other models if it has enough movement to move completely past them.</capacity>
           <model id="Wurmwood" qualification="Circle Character Solo">
@@ -219,7 +239,7 @@
           <feat title="Darkest Night">While in Grayle's control area, friendly Faction models gains Stealth. When a friendly Faction model in Grayle's control area destroys an enemy model with a melee attack during its activation, another friendly Faction model in Grayle's control area can advance up to 3". A model can advance only once as a result of Darkest Night. Darkest Night lasts for one round.</feat>
 
           <spell name="AWARENESS" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, the front arcs of models in its battlegroup are extended to 360° and when determining LOS those models ignore cloud effects, forests, and intervening models. Awareness lasts for one round.</spell>
-          <spell name="GALLOWS" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallow's point of origin</spell>
+                    <spell name="GALLOWS" cost="3" rng="10" aoe="-" pow="13" up="NO" off="YES">When an enemy model is hit by this attack, it can be pushed d6" directly toward Gallows' point of origin</spell>
           <spell name="STORM RAGER" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target friendly warrior model gains +2 STR, MAT and ARM and cannot be targeted by combined ranged attacks or combined melee attacks.</spell>
           <spell name="WIND BLAST" cost="2" rng="CTRL" aoe="5" pow="-" up="NO" off="NO">Place a 5" AOE anywhere completely in this model's control area. Cloud effects overlapping the AOE expire. Models suffer -3 RAT while within the AOE. The AOE remains in play for one round.</spell>
           
@@ -254,22 +274,6 @@
 		  <restricted_to id="OB12"/>
 		  <restricted_to id="OB18"/>
         </warlock>
-          <warlock id="OW10" name="Kromac2" full_name="Kromac, Champion of the Wurm" generation="E" qualification="Circle Warlock" fury="7" warbeast_points="4" fa="C" completed="true">
-              <basestats name="Kromac" spd="6" str="10" mat="8" rat="4" def="14" arm="18" cmd="4" hitpoints="19" pathfinder="true" terror="true"/>
-              <weapons>
-                  <melee_weapon name="Rathrok" pow="7" p_plus_s="17" magical="true" reach="true">
-                      <capacity title="LIFE DRINKER">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
-                  </melee_weapon>
-              </weapons>
-              <feat title="Blood Lust">While within Kromac's control area, living models in its battlegroup gain +2 STR and ARM. When a living friendly Faction model makes a charge attack against an enemy model while the enemy model is in Kromac's control area, the attack automatically hits. Blood Lust lasts for one round.</feat>
-              <spell name="AGGRAVATOR" cost="3" rng="SELF" aoe="CTRL" pow="-" up="YES" off="NO">While in this model's control area, friendly warbeasts gain Hyper Aggressive. (When a model with Hyper Aggressive suffers damage from an enemy attack anytime except while it is advancing, after the attack is resolved it can immediately make a full advance directly toward the attacking model.)</spell>
-              <spell name="AWAKENED SPIRIT" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">Target warbeast in this model's battlegroup can use its animus once during its activation without being forced. A warbeast that uses its animus as a result of Awakened Spirit cannot also be forced to use its animus that activation.</spell>
-              <spell name="CARNAGE" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">Friendly Faction models gain +2 to melee attack rolls against enemy models in this model's control area. Carnage lasts for one turn.</spell>
-              <spell name="PRIMAL HOWL" cost="3" rng="SELF" aoe="*" pow="-" up="NO" off="NO">While in this model's command range, living enemy models suffer -2 to their attack rolls and living enemy models/units suffer -2 CMD when making command checks. Primal Howl lasts for one round.</spell>
-              <spell name="PRIMAL SHOCK" cost="2" rng="CTRL" aoe="-" pow="*" up="NO" off="YES">Choose a friendly Faction warbeast in this model's control area. Target an enemy model within 8" of the chosen warbeast and make a magic attack against it. The chosen warbeast is the attack's point of origin. If the enemy model is hit, it suffers a damage roll with a POW equal to the warbeast's base STR.</spell>
-              <capacity title="Heart Eater">This model gains a corpse token each time it destroys a living enemy model with a melee attack.  This model can have up to three corpse tokens at a time.  It can spend corpse tokens during its activation to boost an attack or damage roll or to make an additional melee attack at one token per boost or additional attack.</capacity>
-          </warlock>
-
       </warlocks>
       <warbeasts>
         <!--Argus complete-->
@@ -594,8 +598,34 @@
 		  <capacity title="SACRED WARD">This model cannot be targeted by enemy spells.</capacity>
 		  <capacity title="SPECIAL ISSUE [MORVAHNA]">This model can be included in Morvahna's theme forces. It can also be bonded to Morvahna.</capacity>
         </warbeast>
-        
-        
+
+          <warbeast id="OB22" name="Storm Raptor" full_name="Storm Raptor" qualification="Circle Gargantuan" fa="2" cost="19" fury="4" threshold="9" damage_spiral="14-14-18" completed="true">
+              <basestats name="RAPTOR" spd="7" str="13" mat="5" rat="6" def="12" arm="18" cmd="9" />
+              <weapons>
+                  <ranged_weapon name="Lightning" rng="12" rof="1" aoe="-" pow="14" electricity="true">
+                      <capacity title="Lightning Generator"> When a model is hit with this weapon, lightning arcs from that model to d3 consecutive additional models. The lightning arcs to the nearest model it has not already arced to within 4" of the last model it arced to, ignoring this model. Each model the lightning arcs to suffers a POW 10 electrical damage roll.</capacity>
+                  </ranged_weapon>
+                  <melee_weapon name="Beak" pow="5" p_plus_s="18" >
+                      <capacity title="Disruption">A warjack hit loses its focus points and cannot be allocated focus or channel spells for one round.</capacity>
+                      <capacity title="Electro Leap">When a model is hit with this weapon, you can have lightning arc to the nearest model within 4" of the model hit, ignoring the attacking model. The model the lightning arcs to suffers an unboostable POW 10 electrical damage roll</capacity>
+                  </melee_weapon>
+                  <melee_weapon name="Talon" pow="4" p_plus_s="17" open_fist="true" location="L">
+                      <capacity title="Disruption">See above.</capacity>
+                      <capacity title="Electro Leap">See above.</capacity>
+                  </melee_weapon>
+                  <melee_weapon name="Talon" pow="4" p_plus_s="17" open_fist="true" location="R">
+                      <capacity title="Disruption">See above.</capacity>
+                      <capacity title="Electro Leap">See above.</capacity>
+                  </melee_weapon>
+              </weapons>
+              <animus name="SKY FIRES" cost="2" rng="SELF" aoe="*" pow="-" up="NO" off="NO">When an enemy model in this model's command range suffers an electrical damage roll , add +2 to the roll. Sky Fire lasts for one round.</animus>
+              <capacity title="FLIGHT">This model can advance through terrain and obstacles without penalty and can advance through obstructions and other models if it has enough movement to move completely past them. This model ignores intervening models when declaring its charge target.</capacity>
+              <capacity title="PLASMA NIMBUS">If this model is hit by a melee attack, immediately after the attack is resolved the attacking model suffers a POW 10 electrical damage roll unless this model was destroyed or removed from play by the attack</capacity>
+              <capacity title="SUPERCONDUCTION">When a friendly model attacks with a ranged weapon with Damage Type : Electricity, it gains +2 to attacks rolls against enemy models wihtin 5" of this model.</capacity>
+              <capacity title="VIRTUOSO">This model can make melee and ranged attack during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
+          </warbeast>
+
+
       </warbeasts>
       <battleEngines>
         <battleEngine id="OE01" name="Celestal Fulcrum" full_name="Celestal Fulcrum" cost="9" qualification="Circle Battle engine" fa="2" completed="true">
@@ -929,6 +959,19 @@
 			<capacity title="HEART EATER">See above.</capacity>
           </model>
         </unit>
+        <unit id="OU14" name="Blackclad Mist Riders" full_name="Blackclad Mist Riders" base_cost="6" baseCount="3" full_cost="9" fullCount="5" qualification="Circle Light Cavalry Unit" fa="1" completed="true">
+          <basestats name="Leader and grunts" spd="8" str="6" mat="5" rat="4" def="14" arm="15" cmd="9" hitpoints="5" pathfinder="true"/>
+          <weapons>
+              <melee_weapon p_plus_s="10" pow="4" name="Voulge" magical="true" reach="true">
+                  <capacity title="BRUTAL CHARGE">This model gains +2 to charge attack damage rolls with this weapon.</capacity>
+              </melee_weapon>
+          </weapons>
+            <capacity title="BATTLE WIZARD">Once per turn, when this model destroys one or more enemy models with a melee attack during its activation, immediately after the attack is resolved it can make one Magic Ability special attack or special action.</capacity>
+            <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
+            <capacity title="MAGIC ABILITY">[7]</capacity>
+            <capacity title="● Blizzard" type="*Action">RNG 5. Target friendly Faction model. If the model is in range, center a 3" AOE cloud effect on it. The AOE remains centered on the model for one round. If the target model is destroyed or removed from play, remove the AOE from play.</capacity>
+            <capacity title="● Shock Bolt" type="*Attack"> Shock Bolt is a RNG 8, POW 12 magical attack that causes electrical damage. On a critical hit, instead of suffering a normal damage roll, a non-incorporeal model hit is slammed d3" directly away from this model regardless of its base size and suffers a POW 12 electrical damage roll. Collateral damage from this slam is POW 12.</capacity>
+        </unit>
       </units>
       <solos>
         <!--Blackclad Wayfarer complete-->
@@ -1035,7 +1078,7 @@
           <basestats name="Gallows Grove" spd="0" str="0" mat="0" rat="0" def="5" arm="16" cmd="3" hitpoints="5" advance_deployment="true"/>
           <weapons />
           <capacity title="Channeler [friendly Faction warlock]">While this model is not engaged and is in a friendly Faction warlock's control area, the warlock can channel spells trough it.</capacity>
-          <capacity title="Entropic Force">While in this models command range, enemy models lose Tough, cannot heal or be healed, and cannot transfer damage.</capacity>
+          <capacity title="Entropic Force">While in this models command range, enemy models lose Tough, cannot heal or be healed.</capacity>
           <capacity title="Immobile">This model has no movement or action and cannot be knocked down or moved. Its front arc extend to 360°. It has no melee range, cannot engage, and is automatically hit by melee attacks.</capacity>
           <capacity title="Prowl">This model gains Stealth while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.</capacity>
           <capacity title="Strange Growth">Once per turn during its activation, place this model anywhere within 5" of its current location. This model cannot be placed except as a result of Strange Growth.</capacity>
@@ -1048,7 +1091,7 @@
               </ranged_weapon>
               <melee_weapon p_plus_s="9" pow="4" name="Talonstrike" reach="true" magical="true"></melee_weapon>
           </weapons>
-          <spell name="Dog Pile" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Warbeasts in this model's battlegroup can charge or make slam power attacks against target enemy model without being forced and regardless of LOS.  When a warbeast does, it gains +2 movement and gains Pathfinder while resolving that charge or slam.</spell>
+                    <spell name="DOG PILE" cost="2" rng="10" aoe="-" pow="-" up="YES" off="YES">Warbeasts in this model's battlegroup can charge or make slam power attacks against target enemy model without being forced and regardless of LOS.  When a warbeast does, it gains +2 movement and gains Pathfinder while resolving that charge or slam.</spell>
           <spell name="WATCHER" cost="3" rng="SELF" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement within 6" of this model, choose a warjack in this model's battlegroup that is in it's control area. That warjack can immediately make a full advance and then can make one normal melee or ranged attack targeting the enemy model. The attack and damage rolls againt that model are boosted. After the attack is resolved Watcher expires.</spell>
           <capacity title="Bird's Eye">While in this model's control area, models in its battlegroup extend their front arcs 360 degrees and when determining LOS ignore cloud effects, forest terrain, and intervening models.</capacity>
           <capacity title="Lesser Warlock">This model is not a warlock but has the following warlock special rules : Battlegroup Commander, Control Area, Damage Transferance, Forcing, Fury Manipulation, Healing, and Spellcaster</capacity>
@@ -1057,6 +1100,18 @@
           <restricted_to id="OB16"/>
           <restricted_to id="OB19"/>
         </solo>
+          <solo id="OS10" name="Bloodweaver Night Witch" full_name="Bloodweaver Night Witch" cost="2" qualification="Circle Tharn Solo" fa="2" completed="true">
+              <basestats name="NIGHT WITCH" spd="7" str="6" mat="7" rat="5" def="14" arm="11" cmd="9" hitpoints="5" fearless="true" pathfinder="true" stealth="true"/>
+              <weapons>
+                  <melee_weapon p_plus_s="10" pow="4" name="Implements of Death" magical="true" count="2">
+                      <capacity title="Grievous Wounds"> When a model is hit by this weapon, for one round it loses Tough, cannot heal or be healed, and cannot transfer damage.</capacity>
+                      <capacity title="Life Drinker">When it destroys a living enemy model with this weapon, immediately after the attack is resolved this model heals d3 damage points.</capacity>
+                  </melee_weapon>
+              </weapons>
+              <capacity title="Blood Rituals">Each time this model makes an attack or damage roll during its activation, it can suffer d3 damage points to boost the roll. This damage is suffered before the roll is made.</capacity>
+              <capacity title="Killing Spree">When this model destroys one or more enemy models with a melee attack during its combat action, after that attack is resolved this model can move up to 1" and make one additional melee attack.</capacity>
+              <capacity title="Leadership [Tharn Bloodweavers]">While in this model’s command range, friendly Tharn Bloodweaver models gain Killing Spree.</capacity>
+          </solo>
       </solos>
     </army>
   </armies>

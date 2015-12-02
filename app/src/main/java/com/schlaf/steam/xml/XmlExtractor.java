@@ -208,12 +208,12 @@ public class XmlExtractor {
 			R.xml.inapp_khador, R.xml.inapp_menoth, R.xml.inapp_mercenaries, R.xml.inapp_retribution,
             R.xml.inapp_everblight, R.xml.inapp_orboros, R.xml.inapp_skorne, R.xml.inapp_trollbloods, R.xml.inapp_minions, R.xml.objectives};
 
-/*     int[] XML_FILES = new int[] {R.xml.completed_cryx, R.xml.completed_cygnar, R.xml.completed_cyriss,
+        /*
+
+     int[] XML_FILES = new int[] {R.xml.completed_cryx, R.xml.completed_cygnar, R.xml.completed_cyriss,
             R.xml.completed_khador, R.xml.completed_menoth, R.xml.completed_mercenaries, R.xml.completed_retribution,
             R.xml.completed_everblight, R.xml.completed_orboros, R.xml.completed_skorne, R.xml.completed_trollbloods, R.xml.completed_minions, R.xml.objectives};
-
-            */
-
+*/
 
 	/** access to local resources */
 	Resources res;

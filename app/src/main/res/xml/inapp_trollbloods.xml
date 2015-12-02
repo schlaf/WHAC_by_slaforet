@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="warmachine.xsd">
+<ruleset xmlns="http://www.whac.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
+
 	<armies>
 	    
 <army faction="faction_trollblood" name="Trollbloods" version="inapp_trollblood_001">
@@ -10,42 +12,51 @@
 <warlock  id="Tw01" name="Chief Madrak Ironhide" full_name="Chief Madrak Ironhide" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
 	<basestats name="Chief Madrak Ironhide" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
 <warlock  id="Tx01" name="Madrak Ironhide, World Ender" full_name="Madrak Ironhide, World Ender" generation="E" qualification="warlock" fury="6" warbeast_points="5" fa="C">
 	<basestats name="Madrak Ironhide, World Ender" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
 	<weapons></weapons>
-	<feat></feat>
+    <feat title=""></feat>
 </warlock>
 <warlock  id="Tw02" name="Hoarluk Doomshaper" full_name="Hoarluk Doomshaper" generation="P" qualification="warlock" fury="6" warbeast_points="7" fa="C">
 	<basestats name="Hoarluk Doomshaper" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
 	<weapons></weapons>
-	<feat></feat>
+    <feat title=""></feat>
 </warlock>
 <warlock  id="Tx02" name="Hoarluk Doomshaper, Rage of Dhunia" full_name="Hoarluk Doomshaper, Rage of Dhunia" generation="E" qualification="warlock" fury="6" warbeast_points="6" fa="C">
 	<basestats name="Hoarluk Doomshaper, Rage of Dhunia" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
 	<weapons></weapons>
-	<feat></feat>
+    <feat title=""></feat>
+</warlock>
+<warlock  id="Tz02" name="Hoarluk Doomshaper, Dire Prophet" full_name="Hoarluk Doomshaper, Dire Prophet" generation="E" qualification="warlock" fury="6" warbeast_points="3" fa="C">
+    <basestats name="Hoarluk Doomshaper, Dire Prophet" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
+    <weapons></weapons>
+    <feat title=""></feat>
+    <model>
+        <basestats name="Scroll Bearer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5" />
+        <weapons/>
+    </model>
 </warlock>
 <warlock  id="Tw03" name="Grissel Bloodsong" full_name="Grissel Bloodsong" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
 	<basestats name="Grissel Bloodsong" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
 <warlock  id="Tx03" name="Grissel Bloodsong, Marshal of the Kriels" full_name="Grissel Bloodsong, Marshal of the Kriels" generation="E" qualification="warlock" fury="6" warbeast_points="6" fa="C">
 	<basestats name="Grissel Bloodsong, Marshal of the Kriels" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
 <warlock  id="Tw04" name="Grim Angus" full_name="Grim Angus" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
 	<basestats name="Grim Angus" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
 <warlock  id="Tx04" name="Hunters Grim" full_name="Hunters Grim" generation="E" qualification="warlock" fury="6" warbeast_points="4" fa="C">
 	<basestats name="Hunters Grim" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 	<model  id="Muggs">
 	  <basestats name="Muggs" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
     </model>
@@ -56,7 +67,7 @@
 <warlock  id="TW05" name="Borka Kegslayer" full_name="Borka Kegslayer" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
 	<basestats name="Borka Kegslayer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
     <model  id="Pyg Keg Carrier">
 	  <basestats name="Pyg Keg Carrier" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="5"/>
     </model>
@@ -64,22 +75,22 @@
 <warlock id="TX05" name="Borka, Vengeance of the Rimeshaws" generation="E" full_name="Borka, Vengeance of the Rimeshaws" qualification="Trollblood Epic Trollkin Cavalry Warlock" fury="5" warbeast_points="6" fa="C">
   <basestats name="BORKA" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
 <warlock  id="TW06" name="Calandra Truthsayer" full_name="Calandra Truthsayer" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
 	<basestats name="Calandra Truthsayer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
 <warlock  id="TW07" name="Captain Gunnbjorn" full_name="Captain Gunnbjorn" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
 	<basestats name="Captain Gunnbjorn" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="17" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
 <warlock  id="TW08" name="Jarl Skuld" full_name="Jarl Skuld" generation="P" qualification="warlock" fury="6" warbeast_points="6" fa="C">
 	<basestats name="Jarl Skuld" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
 	<weapons></weapons>
-	<feat></feat>
+	<feat title=""></feat>
 </warlock>
     
     
@@ -153,9 +164,13 @@
 <warbeast id="TB17" name="Dozer &amp; Smigg" full_name="Dozer &amp; Smigg" qualification="Trollblood Dire Troll Character Heavy Warbeast" fa="C" cost="9" fury="4" threshold="10" damage_spiral="9-10-9">
     <basestats name="DOZER &amp; SMIGG" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
     <weapons/>
-</warbeast>        
+</warbeast>
+<warbeast  id="TB18" name="Glacier King" full_name="Glacier King" damage_spiral="11-20-17" fury="0" threshold="0" cost="18" qualification="Trollblood Gargantuan" fa="2">
+    <basestats name="Glacier King" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+    <weapons></weapons>
+</warbeast>
 
-    
+
 </warbeasts>
 
 <battleEngines>
@@ -191,13 +206,21 @@
 </model>
 </unit_attachment>
 </unit>
-<unit  id="TU03" name="Pyg Burrowers" full_name="Pyg Burrowers" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="1">
+<unit  id="TU03" name="Pyg Burrowers" full_name="Pyg Burrowers" base_cost="4" baseCount="6" full_cost="6" fullCount="10" qualification="Unit" fa="1" >
 	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
 	<weapons></weapons>
 </unit>
-<unit  id="TU04" name="Pyg Bushwhackers" full_name="Pyg Bushwhackers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
+<unit  id="TU04" name="Pyg Bushwhackers" full_name="Pyg Bushwhackers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
 	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
 	<weapons></weapons>
+    <unit_attachment id="TA07" cost="2" fa="1" qualification="Trollblood unit attachment" name="Pyg Bushwhacker Officer &amp; Mortar">
+        <model id="pyg_officer">
+            <basestats name="Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+        </model>
+        <model id="pyg_mortar">
+            <basestats name="Mortar Pyg" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+        </model>
+    </unit_attachment>
 </unit>
 <unit  id="TU05" name="Thumpercrew" full_name="Thumpercrew" base_cost="3" baseCount="3" full_cost="-" fullCount="-" qualification="Unit" fa="2">
 	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
@@ -281,12 +304,17 @@
     </weapons>
   </model>
 </unit>
-<unit id="TU16" name="Trollkin Highwaymen" full_name="Trollkin Highwaymen" qualification="Trollblood Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10">
+<unit id="TU16" name="Trollkin Highwaymen" full_name="Trollkin Highwaymen" qualification="Trollblood Unit" fa="2" base_cost="3" full_cost="8" baseCount="6" fullCount="10">
   <basestats name="LEADER &amp; GRUNTS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
   <weapons>
   </weapons>
 </unit>
-    
+<unit id="TU17" name="Dhunian Knot" full_name="Dhunian Knot" qualification="Trollblood Trollkin Unit" fa="2" base_cost="3" full_cost="-" baseCount="3" fullCount="-">
+    <basestats name="LEADER &amp; GRUNTS" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+    <weapons>
+    </weapons>
+</unit>
+
 </units>
 
 <solos>

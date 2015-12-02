@@ -1306,7 +1306,12 @@ public class JsonConverter {
 
     private static void putBasicValues(Faction faction, ArmyElement entry, JSONObject result) {
         result.put(ID, entry.getId());
-        result.put("name", entry.getName());
+        if (entry.getName().equals(entry.getFullName())) {
+            result.put("name", entry.getName());
+        } else {
+            result.put("name", entry.getName() + "(" + entry.getFullName() + ")");
+        }
+
         result.put("cost", entry.getBaseCost());
         result.put("faction", faction.getId());
 //        result.put("selectedFA", 0);

@@ -111,6 +111,7 @@
         <entry id="SB19" />
         <entry id="SB20" />
         <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU01" />
         <entry id="SU05" />
         <entry id="SS03" />
@@ -214,6 +215,7 @@
         <entry id="SB19" />
         <entry id="SB20" />
         <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU03" />
         <entry id="SA03" />
         <entry id="SU05" />
@@ -390,6 +392,7 @@
         <entry id="SB19" />
         <entry id="SB20" />
         <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SE01" />
         <entry id="SU05" />
         <entry id="SU02" />
@@ -441,6 +444,7 @@
             <entry id="SB19" />
             <entry id="SB20" />
             <entry id="SB21" />
+            <entry id="SB22" /> <!-- add desert hydra -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -494,6 +498,7 @@
           <entry id="SB19" />
           <entry id="SB20" />
           <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU05" />
         <entry id="SU02" />
         <entry id="SU03" />
@@ -585,6 +590,7 @@
           <entry id="SB19" />
           <entry id="SB20" />
           <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU05" />
         <entry id="SU06" />
         <entry id="SU07" />
@@ -664,6 +670,7 @@
             <entry id="SB19" />
             <entry id="SB20" />
             <entry id="SB21" />
+            <entry id="SB22" /> <!-- add desert hydra -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -788,6 +795,7 @@
           <entry id="SB19" />
           <entry id="SB20" />
           <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU03" />
         <entry id="SU05" />
         <entry id="SU07" />
@@ -877,6 +885,7 @@
                 <entry id="SB19" />
                 <entry id="SB20" />
                 <entry id="SB21" />
+                <entry id="SB22" /> <!-- add desert hydra -->
                 <entry id="SU05" /> <!-- Paingiver Beast Handlers -->
                 <entry id="SU06" /> <!-- Skorne cavalry units -->
                 <entry id="SU09" /> <!-- Skorne Tyrant units -->
@@ -958,7 +967,9 @@
           <entry id="SB19" />
           <entry id="SB20" />
           <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU04" />
+          <entry id="SA04" /> <!-- immortals +  UA-->
         <entry id="SU06" />
         <entry id="SU07" />
         <entry id="SU08" />
@@ -1027,6 +1038,98 @@
       </benefits>
     </level>
   </tiers>
+    <tiers name="Zaal2 - Exalted Legions" casterId="Sx05" faction="faction_skorne">
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Skorne non-character warbeasts</models>
+            </type>
+            <type type="UNITS">
+                <models>Paingiver Beast Handlers, Skorne Construct units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Skorne Construct solos</models>
+            </type>
+        </availableModels>
+        <level number="1">
+            <only>
+                <entry id="Sx05" />
+                <entry id="SB01" />
+                <entry id="SB02" />
+                <entry id="SB03" />
+                <entry id="SB04" />
+                <entry id="SB05" />
+                <entry id="SB06" />
+                <entry id="SB07" />
+                <entry id="SB08" />
+                <entry id="SB09" />
+                <entry id="SB11" />
+                <entry id="SB12" />
+                <entry id="SB14" />
+                <entry id="SB15" />
+                <entry id="SB17" />
+                <entry id="SB18" />
+                <entry id="SB19" />
+                <entry id="SB20" />
+                <entry id="SB21" />
+                <entry id="SB22" /> <!-- add desert hydra -->
+                <entry id="SU05" /> <!-- paingivers -->
+                <entry id="SU04" />
+                <entry id="SA04" /> <!-- immortals +  UA-->
+                <entry id="SS02" />
+                <entry id="SS09" />
+            </only>
+            <benefits>
+                <ingameeffect  />
+                <alterFA bonus="1" entryId="SU04" />
+                <alterFA bonus="1" entryId="SS02"/>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- The army includes two or more warbeasts
+with SPD 6 or greater.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="SB01" />
+                    <entry id="SB02" />
+                    <entry id="SB03" />
+                    <entry id="SB04" />
+                    <entry id="SB05" />
+                    <entry id="SB12" />
+                    <entry id="SB14" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Your deployment zone is extended 2" forward.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- The army includes two or more Immortals units.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="SU04" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <freeModel>
+                    <entry id="SA04"/>
+                </freeModel>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- The army includes three or more Construct solos.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+                    <entry id="SS02" />
+                    <entry id="SS09" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Construct solos in the army begin the game with three soul tokens.</ingameeffect>
+            </benefits>
+        </level>
+    </tiers>
+
+
   <tiers name="Mordikaar - Legions of the Abyss" casterId="SW06" faction="faction_skorne">
       <availableModels>
           <type type="WARBEASTS">
@@ -1061,6 +1164,7 @@
           <entry id="SB19" />
           <entry id="SB20" />
           <entry id="SB21" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU12" />
         <entry id="SU07" />
         <entry id="SU08" />
@@ -1124,6 +1228,7 @@
             <entry id="SB19" />
             <entry id="SB20" />
             <entry id="SB21" />
+            <entry id="SB22" /> <!-- add desert hydra -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -1167,6 +1272,8 @@
         <entry id="IU05" />
         <entry id="IU06" />
         <entry id="IU07" />
+        <entry id="IU08" /> <!-- add bokor &amp; shamblers -->
+        <entry id="IU09" /> <!-- add croak raiders -->
         <entry id="SS01" />
         <entry id="SS07" />
       </only>
@@ -1200,6 +1307,8 @@
           <entry id="IU05" />
           <entry id="IU06" />
           <entry id="IU07" />
+            <entry id="IU08" /> <!-- add bokor &amp; shamblers -->
+            <entry id="IU09" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -1257,6 +1366,7 @@
         <entry id="SB14" />
         <entry id="SB15" />
         <entry id="SB17" />
+          <entry id="SB22" /> <!-- add desert hydra -->
         <entry id="SU01" />
         <entry id="SU05" />
         <entry id="SU12" />
@@ -1306,6 +1416,7 @@
           <entry id="SB14" />
           <entry id="SB15" />
           <entry id="SB17" />
+            <entry id="SB22" /> <!-- add desert hydra -->
         </entrygroup>
       </must_have>
       <benefits>

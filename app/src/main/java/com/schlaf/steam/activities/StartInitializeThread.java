@@ -112,7 +112,7 @@ public class StartInitializeThread extends AsyncTask<String, Integer, Boolean> {
 	            rulesExtractor.doExtract();
 	            publishProgress( 5);
 
-                if (false) {
+                if (true) {
                     File externalStorageDir = Environment.getExternalStorageDirectory ();
                     String whacExternalDirPath = externalStorageDir.getPath() + StorageManager.WHAC_SUBDIR;
 

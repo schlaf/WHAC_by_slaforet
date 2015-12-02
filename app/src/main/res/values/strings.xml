@@ -126,7 +126,7 @@
     <string name="min_size">Min. size</string>
     <string name="max_size">Max. size</string>
     <string name="exit_create_army">You are about to leave the page</string>
-    <string name="exit_create_army_confirm">Your army as not been saved? Changes will be lost. Exit anyway?</string>
+    <string name="exit_create_army_confirm">Your army has not been saved? Changes will be lost. Exit anyway?</string>
     <string name="plus">+</string>
     <string name="moins">-</string>
     <string name="_1">1</string>

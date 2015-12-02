@@ -3,10 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_004">
+    <army faction="faction_mercs" name="Mercenaries" version="forum_mercs_006">
         <!-- 002 add cyphon, siege crawler, nicolas verendrye, correct puppet masters affiliation solos + swamp gobber river raiders + trench buster for Magnus bad seeds-->
         <!-- 003 corrected drudge grunt ARM -->
         <!-- 004 add savio montera + swamp gobber raiders + allow monstrosities for cyphon -->
+        <!-- 005 august 2015 errata -->
+        <!-- 006 gallant has a buckler + add Lynus Wesselbaum &amp; Edrea Lloryrr -->
       <warcasters>
         <warcaster id="Mw01" name="Magnus the Traitor" generation="P" full_name="Magnus the Traitor" qualification="Mercenary Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="MAGNUS" spd="5" str="6" mat="7" rat="5" def="14" arm="17" cmd="7" hitpoints="17" />
@@ -384,7 +386,7 @@
           <basestats name="GALLANT" spd="5" str="11" mat="7" rat="6" def="13" arm="18" cmd="0" />
           <weapons>
             <melee_weapon name="Lasting Light" pow="6" p_plus_s="17" magical="true" reach="true" location="L" />
-            <melee_weapon name="Open Fist" pow="3" p_plus_s="14" open_fist="true" location="R" />
+            <melee_weapon name="Open Fist" pow="3" p_plus_s="14" open_fist="true" location="R" buckler="true" />
           </weapons>
           <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
           <capacity title="AFFINITY [BLAIZE]">While in Blaize's control area this model's melee weapons gain Purgation. (Weapons with Purgation gain an additional die on attack and damage roll made against models with an enemy upkeep spell on them.)</capacity>
@@ -1065,7 +1067,53 @@
           <capacity title="LESSER WARBEAST">This model cannot make power attacks.</capacity>
 		  <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>          
           <restricted_to id="IW03_mercs" />
-        </warbeast>        
+        </warbeast>
+
+
+          <warbeast  id="IB10_mercs" name="Battle Boar" full_name="Battle Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="4" qualification="Minion Farrow Light Warbeast" fa="U" completed="true">
+              <basestats name="Battle Boar" spd="5" str="8" mat="5" rat="5" def="12" arm="17" cmd="6" />
+              <weapons>
+                  <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="L"></melee_weapon>
+                  <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="R"></melee_weapon>
+              </weapons>
+              <animus name="HEIGHTENED METABOLISM" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly warbeast gains Snacking. Heightened Metabolism lasts for one turn. (When a model with Snacking boxes a living model with a melee attack, the model with Snacking can heal d3 damage points. If the model heals, the boxed model is removed from play.)</animus>
+              <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>
+              <capacity title="RABID">This model can be forced during its activation to gain +2 SPD, Pathfinder, and boosted attack and damage rolls for one turn.</capacity>
+              <restricted_to id="IW03_mercs" />
+          </warbeast>
+
+          <warbeast  id="IB11_mercs" name="Splatter Boar" full_name="Splatter Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="5" qualification="Minion Farrow Light Warbeast" fa="U" completed="true">
+              <basestats name="Splatter Boar" spd="5" str="8" mat="5" rat="5" def="12" arm="17" cmd="6" immunity_corrosion="true"/>
+              <weapons>
+                  <ranged_weapon name="Alchemical Mortar" rng="12" rof="1" aoe="3" pow="*">
+                      <capacity title="AMMO TYPE">Each time this weapon is used to make an attack, choose one of the following abilities:</capacity>
+                      <capacity title="● Acid Bomb">Models in the AOE are hit and suffer a POW 12 Corrosion damage roll and suffer the Corrosion continuous effect.</capacity>
+                      <capacity title="● Psychoactive Gas">This attack is a gas effect and causes no damage. Models/units hit must pass a command check or flee. Enemy warbeasts hit must pass a THR check or frenzy.</capacity>
+                      <capacity title="● Smoke Blast">The weapon’s base POW becomes 14 for this attack. This attack causes fire damage. This weapon’s AOE is a cloud effect that remains in play for one round.</capacity>
+                      <capacity title="Arcing Fire">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+                      <capacity title="Inaccurate">This model suffers -4 to attack rolls with this weapon.</capacity>
+                  </ranged_weapon>
+                  <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="L"></melee_weapon>
+                  <melee_weapon name="Open Fist" pow="3" p_plus_s="11" open_fist="true" location="R"></melee_weapon>
+              </weapons>
+              <animus name="ACIDIC TOUCH" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains +2 to melee damage rolls and Immunity: Corrosion, and its melee weapons gain Critical Corrosion. Acidic Touch lasts for one round.</animus>
+              <capacity title="ALCHEMICAL MASK">This model ignores Gas effects. When determining LOS or resolving attacks, this model ignores cloud effects</capacity>
+              <capacity title="BACON">When this model is destroyed, each living warbeast B2B with it heals d3 damage points.</capacity>
+              <restricted_to id="IW03_mercs" />
+          </warbeast>
+
+          <warbeast  id="IB12_mercs" name="Blind Walker" full_name="Blind Walker" damage_spiral="5-14-8" fury="3" threshold="10" cost="7" qualification="Minion Gatorman Heavy Warbeast" fa="U" completed="true">
+              <basestats name="Walker" spd="5" str="11" mat="5" rat="1" def="10" arm="20" cmd="10" />
+              <weapons>
+                  <melee_weapon name="Claw" pow="2" p_plus_s="14" open_fist="true" location="L" />
+                  <melee_weapon name="Claw" pow="2" p_plus_s="14" open_fist="true" location="R" />
+              </weapons>
+              <animus name="RITES OF POWER" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">This model’s controller can channel spells through it. After a spell is channeled through it, this model suffers d3 damage points. Rites of Power lasts for one turn.</animus>
+              <capacity title="AMPHIBIOUS">This model ignores the effects of deep and shallow water and can move through them without penalty. While completely in deep water, it cannot be targeted by ranged or magic attacks and can make attacks only against other models in deep water. While completely in deep water, this model does not block LOS.</capacity>
+              <capacity title="EMPHATIC TRANSFERENCE">A friendly Faction warlock can transfer damage to this model even if this model has a number of fury points equal to its current FURY.</capacity>
+              <capacity title="SHIELD GUARD">Once per round, when a friendly model is directly hit by a ranged attack during your opponent's turn while within 2" of this model, you can choose to have this model directly hit instead. This model is automatically hit and suffers all damage and effects. This model cannot use Shield Guard if it is incorporeal, knocked down, or stationary.</capacity>
+              <restricted_to id="IW04_mercs" />
+          </warbeast>
       </warbeasts>
       <colossals>
         <colossal id="MJ18" name="Galleon" full_name="Galleon" qualification="Mercenary Colossal" fa="2" cost="18" damage_grid_left="xxxx..xxx............LCC.LLCCCLLMMMM" damage_grid_right="..xxxx...xxx......CCR...CCCRR.MMMMRR" completed="true">
@@ -1631,6 +1679,36 @@
           </model>
           <works_for id="faction_cryx" />
         </unit>
+
+
+
+          <unit id="IU10_mercs" name="Lynus Wesselbaum &amp; Edrea Lloryrr" full_name="Lynus Wesselbaum &amp; Edrea Lloryrr" qualification="Mercenary Minion Character Unit" fa="C" base_cost="3" full_cost="-" baseCount="3" fullCount="-" completed="true">
+              <basestats name="Lynus" spd="6" str="5" mat="5" rat="5" def="14" arm="12" cmd="9" hitpoints="5" officer="true"/>
+              <weapons>
+                  <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11"></ranged_weapon>
+                  <melee_weapon name="Heavy Sword" pow="5" p_plus_s="10" reach="true"></melee_weapon>
+              </weapons>
+              <capacity title="Mercenaries">These models will work for Cygnar.</capacity>
+              <capacity title="Minions">These models will work for Circle and Trollbloods and the Blindwater Congregation and Thornfall Alliance pacts.</capacity>
+              <capacity title="Animosity [Saxon Orrik]">This unit cannot be included in an army that includes one or more models of the listed type.</capacity>
+              <capacity title="Collaboration" type="*Action">RNG CMD. Target friendly warrior model’s next attack roll this turn is boosted.</capacity>
+              <capacity title="Granted: Applied Knowledge">While this model is in play, models in this unit gain Applied Knowledge. (If a model with Applied Knowledge makes only normal attacks during its combat action, it can make an additional combat action during its activation this turn.)</capacity>
+
+              <model>
+                  <basestats name="EDREA" spd="6" str="4" mat="5" rat="5" def="14" arm="12" cmd="9" hitpoints="5" />
+                  <weapons>
+                      <ranged_weapon name="Military Rifle" rng="10" rof="1" aoe="-" pow="11"></ranged_weapon>
+                      <melee_weapon name="Sword" pow="3" p_plus_s="7"></melee_weapon>
+                  </weapons>
+                  <capacity title="Magic Ability [7]"></capacity>
+                  <capacity title="•	Arcane Bolt" type="*Attack">Arcane Bolt is a RNG 12, POW 11 magic attack.</capacity>
+                  <capacity title="•	Wind Barrier" type="*Action">Non-magical ranged attacks targeting this model or a model in this unit completely within 3" of this model automatically miss. Wind Barrier lasts for one round.</capacity>
+                  <capacity title="•	Zephyr" type="*Action">Models in this unit that are in formation can immediately advance up to 3". They cannot be targeted by free strikes during this movement.</capacity>
+                  <capacity title="True Sight"> This model ignores concealment, Camouflage, and Stealth.</capacity>
+              </model>
+              <works_for id="faction_cygnar" />
+          </unit>
+
         <!-- below, allies and other special cases... -->
         <!-- cygnar allies & mercs -->
         <unit id="YU12_mercs" name="Precursor Knights" full_name="Precursor Knights" qualification="Cygnar Morrowan Ally Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
@@ -2696,7 +2774,7 @@
           </weapons>
           <capacity title="MERCENARY">This model will work for Cryx, Cygnar, Khador and the Protectorate</capacity>
             <capacity title="Field Medic">While within 3" of this model, other friendly living non-warcaster, non-warlock Faction warrior models gain Tough</capacity>
-            <capacity title="Flank [Steelhead]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
+            <capacity title="Flank [Another Steelhead]">When this model makes a melee attack against an enemy model within the melee range of a friendly model of type indicated, this model gains +2 to attacks rolls and gains an additional damage die.</capacity>
             <capacity title="Hold the line">While B2B with one or more Steelhead models, this model gains +2 ARM.</capacity>
             <capacity title="Leadership [Steelhead]">While in this model's command range, friendly Steelhead models gain Defensive Line. (While a model with Defensive line is B2B with one or more models in its unit, it gains +2 ARM)</capacity>
           <works_for id="faction_cryx"/>
@@ -2724,7 +2802,7 @@
           </solo>
 
 
-          <solo id="MS31" name="Savio Montero Acosta" full_name="Sergeant Nicolas Verendrye" fa="C" cost="3" qualification="Mercenary Thamarite Character Solo" >
+          <solo id="MS31" name="Savio Montero Acosta" full_name="Savio Montero Acosta" fa="C" cost="3" qualification="Mercenary Thamarite Character Solo" >
               <basestats name="Acosta" spd="7" str="6" mat="9" rat="6" def="15" arm="15" cmd="9" hitpoints="5" fearless="true" immunity_electricity="true"/>
               <weapons>
                   <melee_weapon name="Storm Glaive" pow="7" p_plus_s="13" weapon_master="true" count="2"/>

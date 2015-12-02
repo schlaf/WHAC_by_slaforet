@@ -3,9 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_trollblood" name="Trollbloods" version="forum_trollblood_001">
+    <army faction="faction_trollblood" name="Trollbloods" version="forum_trollblood_003">
+        <!--002 august 2015 errata (mountain king) -->
+        <!--003 add devastation entries -->
       <warlocks>
-        <warlock id="Tw01" name="Madrak Ironhide, Thornwood Chieftain" generation="P" full_name="Madrak Ironhide, Thornwood Chieftain" qualification="Trollblood Trollkin Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
+        <warlock id="Tw01" name="Madrak1" generation="P" full_name="Madrak Ironhide, Thornwood Chieftain" qualification="Trollblood Trollkin Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
           <basestats name="IRONHIDE" spd="6" str="8" mat="7" rat="6" def="14" arm="16" cmd="9" hitpoints="18" tough="true" />
           <weapons>
 			<ranged_weapon name="Thrown Rathrok" rng="8" rof="1" aoe="-" pow="7" magical="true">
@@ -24,7 +26,7 @@
           <capacity title="SCROLL OF GRINDAR'S PERSEVERENCE">This model can use Scroll of Grindar's Perseverance once per game, when this model is directly hit by an attack. If this model uses the scroll, it suffers no damage roll from the attack. Declare use of the scroll after this model is hit but before the damage roll is made.</capacity>
           <capacity title="TALISMAN OF SUBDUAL">This model cannot be charged or slam power attacked by a warbeast that began the charge or slam power attack in this model's front arc. If a warbeast frenzies and would normally charge or slam Ironhide, it makes a full advance toward him instead.</capacity>
         </warlock>
-        <warlock id="Tx01" name="Madrak Ironhide, World Ender" generation="E" full_name="Madrak Ironhide, World Ender" qualification="Trollblood Trollkin Epic Warlock" fury="5" warbeast_points="5" fa="C" completed="true">
+        <warlock id="Tx01" name="Madrak2" generation="E" full_name="Madrak Ironhide, World Ender" qualification="Trollblood Trollkin Epic Warlock" fury="5" warbeast_points="5" fa="C" completed="true">
           <basestats name="IRONHIDE" spd="6" str="8" mat="8" rat="6" def="14" arm="17" cmd="9" hitpoints="18" tough="true" />
           <weapons>            
             <ranged_weapon name="Thrown Rathrok" rng="8" rof="1" aoe="-" pow="7" magical="true">              
@@ -44,7 +46,7 @@
           <capacity title="GRIM SALVATION">When this model would be damaged by an enemy melee or ranged attack, it does not suffer the damage and effects triggered by taking damage from the attack. Instead, remove one friendly Trollkin warrior model within 1" of this model from play. If there is not a friendly Trollkin warrior model within 1" of this model, it suffers the damage and effects of the attack normally.</capacity>
           <capacity title="TIDE OF DEATH">When this model destroys one or more enemy models with an attack, immediately after the attack is resolved this model can spend 1 fury point to advance up to 1".</capacity>
         </warlock>
-        <warlock id="Tw02" name="Hoarluk Doomshaper, Shaman of the Gnarls" generation="P" full_name="Hoarluk Doomshaper, Shaman of the Gnarls" qualification="Trollblood Trollkin Warlock" fury="7" warbeast_points="7" fa="C" completed="true">
+        <warlock id="Tw02" name="Hoarluk1" generation="P" full_name="Hoarluk Doomshaper, Shaman of the Gnarls" qualification="Trollblood Trollkin Warlock" fury="7" warbeast_points="7" fa="C" completed="true">
           <basestats name="DOOMSHAPER" spd="5" str="6" mat="5" rat="4" def="13" arm="15" cmd="7" hitpoints="16" tough="true" />
           <weapons>
             <melee_weapon name="Gnarlroot" pow="6" p_plus_s="12" magical="true" reach="true" />
@@ -59,7 +61,7 @@
           <capacity title="GREAT POWER">During your Control Phase, this model can upkeep one spell without spending focus or fury.</capacity>
           <capacity title="SCROLL OF THE WILL OF BALASAR">This model can use this ability once per game when a warbeast frenzies in its control area. When Scroll of the Will of Balasar is used, choose the frenzy target of the warbeast.</capacity>
         </warlock>
-        <warlock id="Tx02" name="Hoarluk Doomshaper, Rage of Dhunia" generation="E" full_name="Hoarluk Doomshaper, Rage of Dhunia" qualification="Trollblood Trollkin Epic Warlock" fury="7" warbeast_points="6" fa="C" completed="true">
+        <warlock id="Tx02" name="Hoarluk2" generation="E" full_name="Hoarluk Doomshaper, Rage of Dhunia" qualification="Trollblood Trollkin Epic Warlock" fury="7" warbeast_points="6" fa="C" completed="true">
           <basestats name="DOOMSHAPER" spd="5" str="7" mat="5" rat="4" def="13" arm="15" cmd="7" hitpoints="16" tough="true" />
           <weapons>
             <melee_weapon name="Willbreaker" pow="6" p_plus_s="13" magical="true" reach="true">
@@ -76,7 +78,33 @@
           <capacity title="GOAD">When a warbeast in this model's battlegroup destroys one or more enemy models with a melee attack during its combat action, immediately after the attack is resolved this model can force the warbeast to advance up to 2".</capacity>
           <capacity title="HYPER REGENERATION">This model automatically heals d3 damage points at the start of each of its activations.			</capacity>
         </warlock>
-        <warlock id="Tw03" name="Grissel Bloodsong, Fell Caller" generation="P" full_name="Grissel Bloodsong, Fell Caller" qualification="Trollblood Trollkin Warlock" fury="6" warbeast_points="5" fa="C" completed="true">
+        <warlock  id="Tz02" name="Hoarluk3" full_name="Hoarluk Doomshaper, Dire Prophet" generation="E" qualification="Trollblood Epic Trollkin Warlock Unit" fury="7" warbeast_points="3" fa="C" completed="true">
+          <basestats name="Hoarluk Doomshaper, Dire Prophet" spd="5" str="7" mat="5" rat="4" def="13" arm="15" cmd="8" hitpoints="16" tough="true"/>
+          <weapons>
+              <melee_weapon name="Kriel Staff" pow="6" p_plus_s="13" reach="true" magical="true">
+                  <capacity title="CRITICAL SMITE">On a critical hit, this model can slam the model hit instead of rolling damage normally. The model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model's STR plus the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>
+              </melee_weapon>
+          </weapons>
+          <feat title="Blood of Dhunia">While within Doomshaper's control area, models in its battlegroup gain an additional die on melee attack rolls. When a model in Doomshaper's control area is hit by an enemy attack, the attacker rolls one fewer die on the attack damage roll. After the attack is resolved, if the model in Doomshaper's control area was damaged by the attack, it heals d3 damage points. Blood of Dhunia lasts for one round.</feat>
+            <spell name="ADMONITION" cost="2" rng="6" aoe="-" pow="-" up="YES" off="NO">When an enemy model advances and ends its movement within 6" of target model in this model's battlegroup, the affected model can immediately advance up to 3", then Admonition expires. The affected model cannot be targeted by free strikes during this movement.</spell>
+            <spell name="IMPLACABILITY" cost="2" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, models in it's battlegroup cannot be knocked down, placed, pushed, or moved by a slam. Implacability lasts for one round.</spell>
+            <spell name="REPUDIATE" cost="2" rng="10" aoe="-" pow="-" up="NO" off="YES">Enemy upkeep spells and animi on the model/unit directly hit by Repudiate immediately expire. An enemy model maintaining an upkeep spell that expired as a result of Repudiate suffers d3 damage points.</spell>
+            <spell name="STRANGLEHOLD" cost="2" rng="10" aoe="-" pow="11" up="NO" off="YES">A model damaged by Stranglehold forfeits either its movement or its action during its next activation, as its controller chooses.</spell>
+            <spell name="UNMINDING" cost="3" rng="10" aoe="-" pow="-" up="YES" off="YES">Target enemy warbeast suffers -2 FURY and THR and loses its animus. This model can cast an affected warbeast's animus as a spell as if the animus belonged to a warbeast in this model's battlegroup and in its control area.</spell>
+            <capacity title="FIELD MARSHALL[HYPER REGENERATION]">Models in this model's battlegroup gain Hyper Regeneration. (A model with Hyper Regeneration automatically heals d3 damage points at the start of each of its activations.)</capacity>
+            <capacity title="GOAD">When a warbeast in this model's battlegroup destroys one or more enemy models with a melee attack during its combat action, immediately after the attack is resolved this model can force the warbeast to advance up to 2".</capacity>
+
+            <model>
+              <basestats name="Scroll Bearer" spd="5" str="6" mat="5" rat="4" def="13" arm="13" cmd="8" hitpoints="5" tough="true"/>
+              <weapons/>
+              <capacity title="ATTACHED TO [DOOMSHAPER]">This model is attached to Doomshaper for the rest of the game. Each warlock can have only one model attached to it.</capacity>
+                <capacity title="SCROLL BEARER">Once per turn during Doomshaper's activation while he is B2B with this model, he can use on of the following scrolls. Each scroll can be used only once per game.</capacity>
+                <capacity title="● SCROLL OF THE CALL OF TROQAL">While within Doomshaper's control area, each warbeast in his battlegroup can gain 0 fury when forced to use its animus instead of gaining fury points equal to the COST of the animus. Call of Troqal lasts for one turn.</capacity>
+                <capacity title="● SCROLL OF HAND OF YOLANDI">Enemy models pay double the focus or fury point cost to cast or upkeep spells in Doomshaper's control area for one round. </capacity>
+                <capacity title="● TIME OF THE MOLGUR">While in Doomshaper's control area this turn, friendly Faction warrior models gain an additional die on attack rolls. Discard the lowest die in each roll.</capacity>
+          </model>
+        </warlock>
+        <warlock id="Tw03" name="Grissel1" generation="P" full_name="Grissel Bloodsong, Fell Caller" qualification="Trollblood Trollkin Warlock" fury="6" warbeast_points="5" fa="C" completed="true">
           <basestats name="BLOODSONG" spd="6" str="7" mat="6" rat="5" def="15" arm="16" cmd="9" hitpoints="17" tough="true" />
           <weapons>
             <ranged_weapon name="Sonic Blast" rng="SP8" rof="1" aoe="-" pow="12" />
@@ -93,7 +121,7 @@
           <capacity title="● HEROIC BALLAD">RNG CMD. Target friendly non-warlock Faction model/unit. If the model/unit is in range, it gains Fearless and affected models can make one additional melee attack during their activations this turn. Heroic Ballad lasts for one round.</capacity>
           <capacity title="● HOOF IT">RNG CMD. Target friendly non-warlock Faction model/unit. If the model/unit is in range, affected models can make a full advance at the end of this turn after all friendly models have ended their activations. Affected models cannot be targeted by free strikes during this movement.</capacity>
         </warlock>
-        <warlock id="Tx03" name="Grissel Bloodsong, Marshal of the Kriels" generation="E" full_name="Grissel Bloodsong, Marshal of the Kriels" qualification="Trollblood Epic Trollkin Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+        <warlock id="Tx03" name="Grissel2" generation="E" full_name="Grissel Bloodsong, Marshal of the Kriels" qualification="Trollblood Epic Trollkin Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
           <basestats name="BLOODSONG" spd="6" str="7" mat="7" rat="6" def="15" arm="17" cmd="9" hitpoints="17" tough="true" />
           <weapons>
             <melee_weapon name="Resounder" pow="7" p_plus_s="14" magical="true">
@@ -113,7 +141,7 @@
           <spell name="INHOSPITABLE GROUND" cost="3" rng="SELF" aoe="CTRL" pow="-" up="NO" off="NO">While in this model's control area, enemy models treat open terrain as rough terrain. Inhospitable Ground lasts for one round.</spell>
           <capacity title="INSPIRATION [FACTION]">Friendly Faction models/units in this model's command range never flee and immediately rally. 	</capacity>
         </warlock>
-        <warlock id="Tw04" name="Grim Angus" generation="P" full_name="Grim Angus" qualification="Trollblood Trollkin Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
+        <warlock id="Tw04" name="Grim1" generation="P" full_name="Grim Angus" qualification="Trollblood Trollkin Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
           <basestats name="GRIM ANGUS" spd="6" str="7" mat="6" rat="7" def="16" arm="15" cmd="8" hitpoints="17" pathfinder="true" tough="true" />
           <weapons>            
             <ranged_weapon name="Headhunter" rng="13" rof="1" aoe="-" pow="13" magical="true">
@@ -133,7 +161,7 @@
           <capacity title="TAKE DOWN">Models disabled by a melee attack made by this model cannot make a Tough roll. Models boxed by a melee attack made by this model are removed from play.</capacity>
           <capacity title="TRUE SIGHT">This model ignores concealment, Camouflage, and Stealth.</capacity>
         </warlock>
-        <warlock id="Tx04" name="Hunters Grim" generation="E" full_name="Hunters Grim" qualification="Trollblood Epic Warlock Unit" fury="6" warbeast_points="4" fa="C" completed="true">
+        <warlock id="Tx04" name="Grim2" generation="E" full_name="Hunters Grim" qualification="Trollblood Epic Warlock Unit" fury="6" warbeast_points="4" fa="C" completed="true">
           <basestats name="GRIM" spd="6" str="7" mat="6" rat="8" def="16" arm="15" cmd="8" hitpoints="17" officer="true" pathfinder="true" tough="true" />
           <weapons>            
             <ranged_weapon name="Headhunter" rng="13" rof="1" aoe="-" pow="13" magical="true">
@@ -173,7 +201,7 @@
             <capacity title="PYG"> This model is a pyg.</capacity>
           </model>
         </warlock>
-        <warlock id="TW05" name="Borka Kegslayer &amp; Pyg Keg Carrier" generation="P" full_name="Borka Kegslayer &amp; Pyg Keg Carrier" qualification="Trollblood Trollkin Warlock &amp; Character Solo" fury="5" warbeast_points="5" fa="C" completed="true">
+        <warlock id="TW05" name="Borka1" generation="P" full_name="Borka Kegslayer &amp; Pyg Keg Carrier" qualification="Trollblood Trollkin Warlock &amp; Character Solo" fury="5" warbeast_points="5" fa="C" completed="true">
           <basestats name="KEGSLAYER" spd="6" str="9" mat="7" rat="5" def="14" arm="17" cmd="8" hitpoints="18" immunity_frost="true" tough="true" />
           <weapons>
             <ranged_weapon name="Bomb" rng="8" rof="1" aoe="3" pow="12" />
@@ -197,7 +225,7 @@
             <capacity title="TOP OFF (★ACTION)">If this model is B2B with Borka Kegslayer, Borka Kegslayer gains 2 fury points and Stumbling Drunk. Stumbling Drunk lasts for one round. (A model with Stumbling Drunk cannot be knocked down. If it is hit by an enemy attack anytime except while it is advancing, after the attack is resolved it is pushed d3" in a direction determined by the deviation template, then you can choose its facing.)</capacity>
           </model>
         </warlock>
-		<warlock id="TX05" name="Borka, Vengeance of the Rimeshaws" generation="E" full_name="Borka, Vengeance of the Rimeshaws" qualification="Trollblood Epic Trollkin Cavalry Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
+		<warlock id="TX05" name="Borka2" generation="E" full_name="Borka, Vengeance of the Rimeshaws" qualification="Trollblood Epic Trollkin Cavalry Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
 		  <basestats name="BORKA" spd="7" str="9" mat="8" rat="5" def="14" arm="18" cmd="9" hitpoints="18" pathfinder="true" tough="true" />
 			<weapons>
 				<ranged_weapon name="Bomb" rng="8" rof="1" aoe="3" pow="12" />
@@ -475,6 +503,7 @@
             <melee_weapon name="Big Meaty Fist" pow="4" p_plus_s="19" open_fist="true" location="R" />            
           </weapons>
           <animus name="AMUCK" cost="1" rng="6" aoe="-" pow="-" up="NO" off="NO">When target friendly warbeast makes a special attack, its attack rolls are boosted. Amuck lasts for one turn.</animus>
+          <capacity title="ASSAULT">As part of a charge, after moving but before making its charge attack, this model can make one ranged attack targeting the model charged unless they were in melee with each other at the start of this model’s activation. When resolving an Assault ranged attack, the attacking model does not suffer the target in melee penalty. If the target is not in melee range after moving, this model must still make the Assault ranged attack before its activation ends.</capacity>
           <capacity title="KILL SHOT">Once per activation, when a living enemy model is destroyed or removed from play as a result of a melee attack made by this model during is activation, immediately after that attack is resolved this model can make one normal ranged attack ignoring ROF.</capacity>
           <capacity title="SNACKING">When this model boxes a living model with a melee attack, this model can heal d3 damage points. It this model heals, the boxed model is removed from play.</capacity>
           <capacity title="WHELP SHEDDING">When this model suffers damage from an enemy attack anytime except during its activation, immediately after the attack has been resolved you can place a Troll Whelp model into play B2B with this model. Do not place a Whelp in play if there is not room for its base.</capacity>
@@ -489,14 +518,32 @@
                 <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="R" />
                 <melee_weapon name="Claw" pow="3" p_plus_s="15" open_fist="true" location="R" />
             </weapons>
+            <animus name="BANK SHOT" cost="2" rng="6" aoe="-" pow="-" up="NO" off="NO">Target friendly Faction model gains +2 to AOE ranged attack rolls. When the target model's AOE ranged attacks deviate, you can reroll the direction and/or distance of deviation. Each roll can be rerolled only once as a result of Bank Shot. Bank Shot lasts for one turn.</animus>
             <capacity title="AFFINITY [GUNNBJORN]">While Dozer &amp; Smigg is in Gunnbjorn's control area, it gains boosted blast damage rolls.</capacity>
             <capacity title="REGENERATION [D3]">This model can be forced to heal d3 damage points once per activation. This model cannot use Regeneration during an activation it runs.</capacity>
             <capacity title="SNACKING">When this model boxes a living model with a melee attack, this model can heal d3 damage points. If this model heals, the boxed model is removed from play.</capacity>
             <capacity title="SPECIAL ISSUE [GUNNBJORN)">This model can be included in Gunnbjorn's theme forces. It can also be bonded to Gunnbjorn.</capacity>
             <capacity title="VETERAN LEADER [DIRE TROLL BLITZER]">Friendly Dire Troll Blitzer warbeasts gain +2 to attack rolls while this model is in their LOS.</capacity>
             <capacity title="VIRTUOSO">This model can make melee and ranged attacks during the same combat action. When this model makes its initial attacks, it can make both its initial ranged and melee attacks.</capacity>
-
 	    </warbeast>
+        <warbeast  id="TB18" name="Glacier King" full_name="Glacier King" damage_spiral="11-20-17" fury="5" threshold="6" cost="18" qualification="Trollblood Gargantuan" fa="2" completed="true">
+          <basestats name="Glacier King" spd="5" str="15" mat="5" rat="5" def="9" arm="19" cmd="4" terror="true" immunity_frost="true" />
+          <weapons>
+              <melee_weapon name="Big Frosty Fist" pow="4" p_plus_s="19" location="L" open_fist="true">
+                  <capacity title="FREEZE">A model hit by this weapon becomes stationary for one round unless it has Immunity:Cold</capacity>
+              </melee_weapon>
+              <melee_weapon name="Big Frosty Fist" pow="4" p_plus_s="19" location="R" open_fist="true">
+                  <capacity title="FREEZE">A model hit by this weapon becomes stationary for one round unless it has Immunity:Cold</capacity>
+              </melee_weapon>
+              <ranged_weapon name="Wind Thrower" rng="12" rof="3" aoe="" pow="14" frost="true">
+                  <capacity title="Thunderbolt">Enemy models hit are pushed d3" directly away from the attacking model. On a critical hit, the enemy model is knocked down after being pushed.</capacity>
+              </ranged_weapon>
+          </weapons>
+          <animus name="FROZEN GROUND" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">When an enemy model without Immunity:Cold ends its activation within 3" of this model, the enemy model is knocked down. Frozen Ground lasts for one round.</animus>
+          <capacity title="SNACKING">When this model boxes a living model with a melee attack, this model can heal d3 damage points. If this model heals, the boxed model is removed from play.</capacity>
+          <capacity title="SNOWFALL">While within 3" of this model, friendly models gain Concealment and friendly models with Prowl gain Stealth.</capacity>
+        </warbeast>
+
       </warbeasts>
       <battleEngines>
         <battleEngine id="TE01" name="Trollkin War Wagon" full_name="Trollkin War Wagon" qualification="Trollblood Cavalry Battle Engine" fa="2" cost="9" completed="true">
@@ -596,6 +643,30 @@
 			<melee_weapon name="Hand Weapon" pow="3" p_plus_s="8" />            
           </weapons>
           <capacity title="BUSHWHACK (ORDER)">During this unit's activation, affected models make their combat actions before their normal movement. Affected models must make a full advance as their normal movement this activation.</capacity>
+            <unit_attachment id="TA07" cost="2" fa="1" qualification="Trollblood unit attachment" name="Pyg Bushwhacker Officer &amp; Mortar" full_name="Pyg Bushwhacker Officer &amp; Mortar" completed="true">
+
+                <model id="pyg_officer">
+                    <basestats name="Officer" spd="6" str="5" mat="5" rat="5" def="13" arm="12" cmd="8" tough="true" pathfinder="true" officer="true" cra="true" advance_deployment="true" />
+                    <weapons>
+                        <ranged_weapon name="Rifle" rng="14" rof="1" aoe="-" pow="10" />
+                        <melee_weapon name="Hand Weapon" pow="3" p_plus_s="8" />
+                    </weapons>
+                    <capacity title="ATTACHMENT [PYG BUSHWACKERS]">This attachment can be added to a Pyg Bushwackers unit.</capacity>
+                    <capacity title="Granted: Combined Arms">While this model is in play, models in its unit gain Combined Arms. (When a model with Combined Arms misses an attack roll for a combined ranged attack, it can reroll that attack roll. Each attack roll can be rerolled only once as a result of Combined Arms.)</capacity>
+                    <capacity title="SLIP AWAY" type="Order">Affected models make a full advance during their normal movement this activation, can advance through other models if they have enough movement to move completely past them, and cannot be targeted by free strikes.</capacity>
+                    <capacity title="TACTICS : CAMOUFLAGE">Models in this unit gain Camouflage. (Models with Camouflage gains an additional +2 DEF when benefiting from concealment or cover.)</capacity>
+                </model>
+                <model id="pyg_mortar">
+                    <basestats name="Mortar Pyg" spd="6" str="5" mat="4" rat="4" def="13" arm="12" cmd="7" tough="true" pathfinder="true" advance_deployment="true"/>
+                    <weapons>
+                        <ranged_weapon name="Light Mortar" rng="14" rof="1" aoe="4" pow="12">
+                            <capacity title="ARCING FIRE">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
+                            <capacity title="RANGE FINDER">While B2B with one or more grunts in this unit, this model gains +2 to attack rolls with this weapon.</capacity>
+                        </ranged_weapon>
+                        <melee_weapon name="Hand Weapon" pow="3" p_plus_s="8" />
+                    </weapons>
+                </model>
+            </unit_attachment>
         </unit>
         <unit id="TU05" name="Thumper Crew" full_name="Thumper Crew" qualification="Trollblood Trollkin Weapon Crew Unit" fa="2" base_cost="3" full_cost="-" baseCount="3" fullCount="-" completed="true">
           <basestats name="LEADER" spd="4" str="6" mat="5" rat="5" def="12" arm="14" cmd="8" tough="true" />
@@ -808,7 +879,18 @@
             </weapons>
             <capacity title="CAMOUFLAGE">This model gains an additional +2 DEF when benefiting from concealment or cover.</capacity>
             <capacity title="SWIFT HUNTER">When this model destroys an enemy model with a normal ranged attack, immediately after the attack is resolved it can advance up to 2".</capacity>            
-        </unit>        
+        </unit>
+        <unit id="TU17" name="Dhunian Knot" full_name="Dhunian Knot" qualification="Trollblood Trollkin Unit" fa="2" base_cost="3" full_cost="-" baseCount="3" fullCount="-" completed="true">
+          <basestats name="LEADER &amp; GRUNTS" spd="6" str="6" mat="5" rat="4" def="13" arm="13" cmd="8" tough="true" />
+          <weapons>
+              <melee_weapon name="Ritual Blade" pow="2" p_plus_s="8" magical="true"/>
+          </weapons>
+            <capacity title="MAGIC ABILITY[5]"/>
+            <capacity title="● HEAL" type="*Action">Choose a friendly living model B2B with this model. That model heals d3 damage points.</capacity>
+            <capacity title="● PUPPET MASTER" type="*Action or attack">Puppet Master is a RNG 10 spell. When it targets an enemy model/unit, it is a magic attack. You can have one affected model reroll one or more dice of your choice  rolled for a command check, attack, or damage roll, then Puppet Master expires. Puppet Master lasts for one round.</capacity>
+            <capacity title="WILD COMMUNION">When a warbeast within 3" of this model makes a Threshold check, you can have the warbeast reroll one or more dice of your choice. Dice can be rerolled only once as a result of Wild Communion.</capacity>
+        </unit>
+
       </units>
       <solos>
         <solo id="TS01" name="Fell Caller Hero" full_name="Fell Caller Hero" qualification="Trollblood Trollkin Solo" fa="2" cost="3" completed="true">

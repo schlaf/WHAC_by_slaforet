@@ -37,16 +37,19 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB24" /> <!-- add blightbringer -->
         <entry id="EU01" />
         <entry id="EA01" />
         <entry id="EU04" />
         <entry id="EU07" />
         <entry id="EA03" />
         <entry id="EU11" />
+        <entry id="EU13" /> <!-- Blightblades have Stealth, so they should be available in Lylyth1 - Hunter Killers -->
         <entry id="EA04" />
         <entry id="ES02" />
         <entry id="ES04" />
         <entry id="ES08" />
+        <entry id="ES12" /> <!-- Grotesque Assassin have Stealth, so they should be available in Lylyth1 - Hunter Killers -->
       </only>
       <benefits>
         <ingameeffect>Additionally, you gain +1 on your starting roll for the game.</ingameeffect>
@@ -54,7 +57,7 @@
       </benefits>
     </level>
     <level number="2">
-      <!-- Must have  2EU01-->
+      <!-- The army includes two Blighted Nyss Archer units-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EU01" />
@@ -68,7 +71,7 @@
       </benefits>
     </level>
     <level number="3">
-      <!-- Must have  ES08-->
+      <!-- The army includes Annyssa Ryvaal.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
           <entry id="ES08" />
@@ -79,7 +82,7 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  2EB05-->
+      <!--Lylyth's battlegroup includes two or more Raek warbeasts. -->
       <must_have>
         <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
           <entry id="EB05" />
@@ -96,7 +99,7 @@
               <models>Non-character Legion warbeasts with ranged weapons</models>
           </type>
           <type type="UNITS">
-              <models>Blighted Nyss Raptors, Blighted Nyss Striders</models>
+              <models>Blighted Nyss Raptors, Strider Rangers</models>
           </type>
           <type type="SOLOS">
               <models>Striders solos, Annyssa Ryvaal</models>
@@ -114,6 +117,7 @@
         <entry id="EB14" />
         <entry id="EB16" />
         <entry id="EB17" />
+        <entry id="EB24" /> <!-- add blightbringer -->
         <entry id="EU04" />
         <entry id="EU07" />
         <entry id="EA03" />
@@ -132,7 +136,7 @@
       </benefits>
     </level>
     <level number="2">
-      <!-- Must have  2EU07-->
+      <!--The army includes two Strider Rangers units. -->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EU07" />
@@ -146,7 +150,7 @@
       </benefits>
     </level>
     <level number="3">
-      <!-- Must have  2ES04-->
+      <!-- The army includes two or more Strider Deathstalker solos.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="ES04" />
@@ -157,7 +161,7 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  3(EB06 EB07 EB08 EB09 EB12 EB13 EB14 EB16)-->
+      <!-- Lylyth's battlegroup includes three or more warbeasts.-->
       <must_have>
         <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="3">
           <entry id="EB06" />
@@ -169,6 +173,7 @@
           <entry id="EB14" />
           <entry id="EB16" />
           <entry id="EB17" />
+          <entry id="EB24" /> <!-- add blightbringer -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -210,6 +215,7 @@
         <entry id="EB18" />
         <entry id="EB19" />
         <entry id="EB21" />
+        <entry id="EB24" /> <!-- add blightbringer -->
         <entry id="EU01" />
         <entry id="EA01" />
         <entry id="EU05" />
@@ -309,6 +315,7 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB24" /> <!-- add blightbringer -->
         <entry id="EA06" />
         <entry id="EU06" />
         <entry id="EU08" />
@@ -324,7 +331,7 @@
       </benefits>
     </level>
     <level number="2">
-      <!-- Must have  2(EU08 EU09)-->
+      <!-- The army includes two or more Blighted Ogrun units.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EU08" />
@@ -339,7 +346,7 @@
       </benefits>
     </level>
     <level number="3">
-      <!-- Must have  EU06-->
+      <!-- The army includes one or more Spawning Vessel units.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
           <entry id="EU06" />
@@ -350,7 +357,7 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  2(EB07 EB08 EB09 EB11 EB13)-->
+      <!-- Thagrosh's battlegroup includes two or more heavy warbeasts.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EB07" />
@@ -375,7 +382,7 @@
               <models>Blighted Nyss Legionnaires, Legion units with Flight</models>
           </type>
           <type type="SOLOS">
-              <models>Incubi, Spell Martyrs, The Forsaken, Legion solos with Flight</models>
+              <models>Incubi, Spell Martyrs, The Forsaken, Legion solos with Flight, Blighted Nyss Shepherds </models>
           </type>
       </availableModels>         
     <level number="1">
@@ -401,14 +408,17 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB24" /> <!-- add blightbringer -->
         <entry id="EU02" />
         <entry id="EA05" />
         <entry id="EU10" />
+        <entry id="EU14"/> <!-- grotesque banshees -->
         <entry id="ES02" />
         <entry id="ES07" />
         <entry id="ES05" />
         <entry id="ES01" />
         <entry id="ES03" />
+        <entry id="ES12"/>
       </only>
       <benefits>
         <ingameeffect>Additionally, units and solos with Flight gain Advance Deployment</ingameeffect>
@@ -416,7 +426,8 @@
       </benefits>
     </level>
     <level number="2">
-      <!-- Must have  ES01-->
+      <!-- The army includes one or more Blighted
+Nyss Sorceress & Hellion solos. -->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
           <entry id="ES01" />
@@ -427,7 +438,8 @@
       </benefits>
     </level>
     <level number="3">
-      <!-- Must have  2EU02-->
+      <!-- The army includes two or more Blighted
+Nyss Legionnaire units.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EU02" />
@@ -438,7 +450,7 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  2(EB07 EB08 EB09 EB10 EB11 EB13)-->
+      <!--The army includes two or more heavy warbeasts.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EB07" />
@@ -454,7 +466,7 @@
         <ingameeffect>For every two heavy warbeasts in the army, add a Blighted Nyss Shepherd solo to the army free of cost. These solos ignore FA restrictions.</ingameeffect>
         <freeModel>
           <entry id="ES03" />
-          <forEach>
+          <forEach groupOf="2">
             <entry id="EB07" />
             <entry id="EB08" />
             <entry id="EB09" />
@@ -505,6 +517,7 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB24" /> <!-- add blightbringer -->
         <!-- Spawning Vessel -->
         <entry id="EU06" />
         <!-- Beast Mistress, Blighted Nyss Shepherd, Blighted Nyss Sorceress & Hellion, Spell Martyr, Succubus -->
@@ -598,6 +611,7 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB24" /> <!-- add blightbringer -->
         <entry id="EU01" />
         <entry id="EA01" />
         <entry id="EU02" />
@@ -625,7 +639,7 @@
       </benefits>
     </level>
     <level number="2">
-      <!-- Must have  2EU11-->
+      <!-- The army includes two Blighted Nyss Hex Hunter units-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EU11" />
@@ -639,7 +653,7 @@
       </benefits>
     </level>
     <level number="3">
-      <!-- Must have  EU06-->
+      <!-- The army includes the Spawning Vessel unit. -->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
           <entry id="EU06" />
@@ -650,7 +664,7 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  5(EB01 EB02 EB03 EB04 EB05 EB06 EB07 EB08 EB09 EB11 EB12 EB13 EB14 EB16 EB17 EB18 EB19)-->
+      <!-- Vayl's battlegroup includes five or more warbeasts.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="5">
           <entry id="EB01" />
@@ -672,6 +686,7 @@
           <entry id="EB19" />
           <entry id="EB21" />
           <entry id="EB22" />
+          <entry id="EB24" />
         </entrygroup>
       </must_have>
       <benefits>
@@ -983,6 +998,7 @@
         <entry id="EB22" />
         <entry id="EB23" />
         <entry id="EU10" />
+          <entry id="EU14"/> <!-- grotesque banshees -->
         <entry id="ES01" />
         <entry id="ES03" />
         <entry id="ES07" />
@@ -1038,6 +1054,110 @@
       </benefits>
     </level>
   </tiers>
+
+
+
+    <tiers name="Saeryn &amp; Rhyas - Might &amp; Magic" casterId="EW09" faction="faction_everblight">
+
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Legion non-character warbeasts, Zuriel</models>
+            </type>
+            <type type="UNITS">
+                <models>Blighted Nyss Swordsmen, Hex Hunters</models>
+            </type>
+            <type type="SOLOS">
+                <models>Blighted Nyss Sorceress &amp; Hellion, Incubi, Spell Martyrs</models>
+            </type>
+        </availableModels>
+
+        <level number="1">
+            <only>
+                <entry id="EW09" />
+                <entry id="EB01" />
+                <entry id="EB02" />
+                <entry id="EB03" />
+                <entry id="EB04" />
+                <entry id="EB05" />
+                <entry id="EB06" />
+                <entry id="EB07" />
+                <entry id="EB08" />
+                <entry id="EB09" />
+                <entry id="EB11" />
+                <entry id="EB12" />
+                <entry id="EB13" />
+                <entry id="EB14" />
+                <entry id="EB15" />
+                <entry id="EB16" />
+                <entry id="EB18" />
+                <entry id="EB17" />
+                <entry id="EB19" />
+                <entry id="EB21" />
+                <entry id="EB22" />
+                <entry id="EB23" />
+                <entry id="EB24" />
+                <entry id="EU03" />
+                <entry id="EA02" />
+                <entry id="EU11"/>
+                <entry id="EA04"/>
+                <entry id="ES01" />
+                <entry id="ES02" />
+                <entry id="ES07" />
+            </only>
+            <benefits>
+                <alterFA bonus="1" entryId="EU03"></alterFA>
+                <alterFA bonus="1" entryId="EU11"></alterFA>
+                <alterFA bonus="1" entryId="EA02"></alterFA>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- The army includes one or more Spell Martyrs.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="ES07" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Spell Martyrs gain Stealth during the first round of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- The army includes three or more different Nephilim warbeasts.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
+                    <entry id="EB03" />
+                    <entry id="EB04" />
+                    <entry id="EB14" />
+                    <entry id="EB18" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>(The nephilim warbeasts must be different) Nephilim warbeasts gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- Must have in battlegroup  4(EB03 EB04 EB14 EB18)-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="4">
+                    <entry id="EB03" />
+                    <entry id="EB04" />
+                    <entry id="EB14" />
+                    <entry id="EB18" />
+                    <entry id="EB23" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect  />
+                <freeModel>
+                    <entry id="EB14" />
+                    <entry id="EB03" />
+                    <entry id="EB04" />
+                    <entry id="EB18" />
+                </freeModel>
+            </benefits>
+        </level>
+    </tiers>
+
   <tiers name="Absylonia - Winds of Change" casterId="EW06" faction="faction_everblight">
       <availableModels>
           <type type="WARBEASTS">
@@ -1075,6 +1195,7 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB24" />
         <entry id="EU06" />
         <entry id="ES03" />
         <entry id="ES05" />
@@ -1095,7 +1216,7 @@
       </benefits>
     </level>
     <level number="2">
-      <!-- Must have  3(EB01 EB02 EB12)-->
+      <!-- Absylonia's battlegroup includes three or more lesser warbeasts. -->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="3">
           <entry id="EB01" />
@@ -1108,7 +1229,8 @@
       </benefits>
     </level>
     <level number="3">
-      <!-- Must have  2(ES05)-->
+      <!-- The army includes two or more Forsaken
+solos.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="ES05" />
@@ -1119,7 +1241,7 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  2(EB07 EB08 EB09 EB10 EB11 EB13 EB15)-->
+      <!-- Absylonia's battlegroup includes two or more heavy warbeasts. -->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EB07" />
@@ -1186,11 +1308,14 @@
                 <entry id="EB22" />
                 <entry id="EU13" /> <!-- Strider Blightblades -->
                 <entry id="EU07" /> <entry id="EA03" /> <!-- Strider Rangers + UA -->
-                <entry id="EU10" /> <!-- grotesques -->
+                <entry id="EU10" /> <!-- grotesques raiderss-->
+                <entry id="EU14"/> <!-- grotesque banshees -->
+
                 <entry id="ES05" /> <!-- The Forsaken -->
                 <entry id="ES04" /> <!-- Strider Deathstalker -->
                 <entry id="ES01" /> <!-- Blighted Nyss Sorceress &amp; Hellion -->
                 <entry id="EE01" /> <!-- throne -->
+                <entry id="ES12" /> <!-- grotesque assassin -->
             </only>
             <benefits>
                 <ingameeffect>Flying models gain +2 SPD during your first turn of the game. </ingameeffect>
@@ -1287,6 +1412,7 @@
         <entry id="EB19" />
         <entry id="EB21" />
         <entry id="EB22" />
+        <entry id="EB24" />
         <entry id="EU06" />
         <entry id="EU11" />
         <entry id="EA04" />
@@ -1310,7 +1436,7 @@
       </benefits>
     </level>
     <level number="2">
-      <!-- Must have  2ES01-->
+      <!-- The army includes two or more Blighted Nyss Sorceress & Hellion solos. -->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="ES01" />
@@ -1321,7 +1447,7 @@
       </benefits>
     </level>
     <level number="3">
-      <!-- Must have  2(EU11 EU12)-->
+      <!-- The army includes two or more units with Magic Ability.-->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EU11" />
@@ -1333,7 +1459,7 @@
       </benefits>
     </level>
     <level number="4">
-      <!-- Must have  2(EB07 EB08 EB09 EB11 EB13)-->
+      <!-- Bethayne's battlegroup includes two or more heavy warbeasts. -->
       <must_have>
         <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="2">
           <entry id="EB07" />

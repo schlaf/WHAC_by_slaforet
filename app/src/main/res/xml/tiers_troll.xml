@@ -33,12 +33,14 @@
         <entry id="TB14" />
         <entry id="TB15" />
         <entry id="TB16" />
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU02" />
         <entry id="TA03" />
         <entry id="TU01" />
         <entry id="TA01" />
         <entry id="TA02" />
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="TU07" />
         <entry id="TA04" />
         <entry id="TU10" />
@@ -125,6 +127,7 @@
         <entry id="TB14" />
         <entry id="TB15" />
         <entry id="TB16" />
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU01" />
         <entry id="TA01" />
         <entry id="TA02" />
@@ -212,6 +215,7 @@
         <entry id="TB12" />
         <entry id="TB14" />
         <entry id="TB16" />
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU02" />
         <entry id="TA03" />
         <entry id="TU09" />
@@ -267,7 +271,7 @@
   <tiers name="epic Hoarluk - Unbridled Fury" casterId="Tx02" faction="faction_trollblood">
       <availableModels>
           <type type="WARBEASTS">
-              <models>Trollblood Non-character warbeasts, Mulg the Ancient</models>
+              <models>Trollblood Non-character Dire Trolls, Mulg the Ancient</models>
           </type>
           <type type="UNITS">
               <models>Trollkin Scouts, Trollkin Champions</models>
@@ -379,6 +383,7 @@
         <entry id="TU12" />
         <entry id="TU03" />
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="TS04" />
         <entry id="TS01" />
         <entry id="IS01_minion" />
@@ -459,6 +464,7 @@
         <entry id="TA01" />
         <entry id="TA02" />
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="TU08" />
         <entry id="TU13" />
         <entry id="TS05" />
@@ -536,9 +542,12 @@
         <entry id="TB11" />
         <entry id="TB12" />
         <entry id="TB14" />
+        <entry id="TB16" /> <!-- add mountain king -->
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU11" />
         <entry id="TU03" />
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="MU16_minion" />
         <entry id="TS07" />
         <entry id="IS01_minion" />
@@ -593,6 +602,7 @@
           <entry id="TB12" />
           <entry id="TB14" />
           <entry id="TB16" />
+          <entry id="TB18" /> <!-- add glacier king -->
         </entrygroup>
       </must_have>
       <benefits>
@@ -629,7 +639,9 @@
         <entry id="TB14" />
         <entry id="TB15" />
         <entry id="TB16" />
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="TU05" />
         <entry id="TU11" />
         <entry id="TU12" />
@@ -795,6 +807,7 @@
         <entry id="TB13" />
         <entry id="TB14" />
         <entry id="TB16" />
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU02" />
         <entry id="TA03" />
         <entry id="TU06" />
@@ -883,11 +896,14 @@
                 <entry id="TB14" />
                 <entry id="TB15" />
                 <entry id="TB16" />
+                <entry id="TB18" /> <!-- add glacier king -->
                 <entry id="TB13" /> <!-- rok -->
                 <entry id="TU01" /> <entry id="TA01"/> <entry id="TA02"/> <!-- Kriel Warriors -->
                 <entry id="TU02" /> <entry id="TA03"/> <!-- Krielstone Bearer &amp; Stone Scribes -->
                 <entry id="TU08" /> <!-- Trollkin Cavalry units -->
                 <entry id="TU11"/> <entry id="TU15"/> <!-- Trollblood units with Advance Deployment. -->
+                <entry id="TU03"/> <entry id="TU04" /> <!-- Pygs (both units) have Advanced deploy, so Borka2's avalanche tier should work. -->
+                <entry id="TA07"/> <!-- add pyg officer and mortar -->
                 <entry id="TS01" />  <!-- Fell Caller Hero  -->
                 <entry id="TS03" /> <!-- Troll Whelps  -->
                 <entry id="TS05" /> <!-- Trollkin Cavalry solos  -->
@@ -928,7 +944,7 @@
             </benefits>
         </level>
         <level number="4">
-            <!-- Must have  3(TU12 TU06)-->
+            <!-- Must have  1 TE01-->
             <must_have>
                 <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
                     <entry id="TE01" />
@@ -975,6 +991,7 @@
         <entry id="TU11" />
         <entry id="TU03" />
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="TS01" />
         <entry id="TS02" />
         <entry id="TS06" />
@@ -1050,8 +1067,11 @@
         <entry id="TB12" />
         <entry id="TB14" />
         <entry id="TB16" />
+        <entry id="TB17"/> <!-- dozer and smigg special issue -->
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU03" />
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="TU05" />
         <entry id="TU10" />
         <entry id="TA06" />
@@ -1141,10 +1161,12 @@
         <entry id="TB14" />
         <entry id="TB15" />
         <entry id="TB16" />
+        <entry id="TB18" /> <!-- add glacier king -->
         <entry id="TU01" />
         <entry id="TA01" />
         <entry id="TA02" />
         <entry id="TU04" />
+        <entry id="TA07"/> <!-- add pyg officer and mortar -->
         <entry id="TU10" />
         <entry id="TA06" />
         <entry id="TU13" />
@@ -1283,4 +1305,87 @@
       </benefits>
     </level>
   </tiers>
+
+    <tiers name="Hoarluk3 - Immovable Mountains" casterId="Tz02" faction="faction_trollblood">
+        <availableModels>
+            <type type="WARBEASTS">
+                <models>Trollblood non-character warbeasts, Mulg the Ancient</models>
+            </type>
+            <type type="UNITS">
+                <models>Krielstone Bearer &amp; Stone Scribes, Pyg units</models>
+            </type>
+            <type type="SOLOS">
+                <models>Pyg solos, Troll Whelps</models>
+            </type>
+        </availableModels>
+        <level number="1">
+            <only>
+                <entry id="Tz02" />
+                <!-- Trollblood non-character warbeasts, Mulg the Ancient -->
+                <entry id="TB01" />
+                <entry id="TB02" />
+                <entry id="TB03" />
+                <entry id="TB04" />
+                <entry id="TB05" />
+                <entry id="TB06" />
+                <entry id="TB07" />
+                <entry id="TB08" />
+                <entry id="TB09" />
+                <entry id="TB11" />
+                <entry id="TB12" />
+                <entry id="TB14" />
+                <entry id="TB15" />
+                <entry id="TB16" />
+                <entry id="TB18" />
+                <entry id="TB10" />
+                <!-- krielstone bearer, runeshapers, warders -->
+                <entry id="TU02" />
+                <entry id="TA03" />
+                <entry id="TU03" />
+                <entry id="TU04" />
+                <entry id="TA07"/> <!-- add pyg officer and mortar -->
+                <!-- whelps, pyg solos (???)-->
+                <entry id="TS03" />
+            </only>
+            <benefits>
+                <ingameeffect>Models in the army gain +2 ARM during the first round of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="2">
+            <!-- The army includes Troll Whelps. -->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" jackMarshalledOnly="false" minNumber="1">
+                    <entry id="TS03" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>Warbeasts in the army gain +2 SPD during the first round of the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="3">
+            <!-- The army includes one or more units with Advance Deployment -->
+            <must_have>
+                <entrygroup inBattlegroupOnly="false" minNumber="1">
+                    <entry id="TU03"/>
+                    <entry id="TU04"/>
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <ingameeffect>You gain +1 on your starting roll for the game.</ingameeffect>
+            </benefits>
+        </level>
+        <level number="4">
+            <!-- The army includes two or more gargantuans.-->
+            <must_have>
+                <entrygroup inBattlegroupOnly="true" jackMarshalledOnly="false" minNumber="2">
+                    <entry id="TB16" />
+                    <entry id="TB18" />
+                </entrygroup>
+            </must_have>
+            <benefits>
+                <alterCost bonus="2" entryId="TB16"></alterCost>
+                <alterCost bonus="2" entryId="TB18"></alterCost>
+            </benefits>
+        </level>
+    </tiers>
 </tierslist>
