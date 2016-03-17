@@ -1259,13 +1259,7 @@
         <entry id="TS08" />
       </only>
       <benefits>
-        <ingameeffect  />
-        <alterCost entryId="TB01" bonus="1"/>
-        <alterCost entryId="TB02" bonus="1"/>
-        <alterCost entryId="TB06" bonus="1"/>
-        <alterCost entryId="TB14" bonus="1"/>
-        <alterCost entryId="TB16" bonus="1"/>
-        
+        <ingameeffect>At the start of your first turn, choose one warbeast in Calandra’s battlegroup. All models in the army are affected by that warbeast's animus.</ingameeffect>
       </benefits>
     </level>
     <level number="2">
@@ -1301,7 +1295,12 @@
         </entrygroup>
       </must_have>
       <benefits>
-        <ingameeffect>At the start of your first turn, choose one warbeast in Calandra's battlegroup. All models in the army are affected by that warbeast's animus.</ingameeffect>
+          <ingameeffect></ingameeffect>
+          <alterCost entryId="TB01" bonus="1"/>
+          <alterCost entryId="TB02" bonus="1"/>
+          <alterCost entryId="TB06" bonus="1"/>
+          <alterCost entryId="TB14" bonus="1"/>
+          <alterCost entryId="TB16" bonus="1"/>
       </benefits>
     </level>
   </tiers>
