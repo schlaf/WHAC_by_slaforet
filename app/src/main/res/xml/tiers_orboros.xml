@@ -1544,7 +1544,7 @@ id="OB22" name="storm raptor"
                 </entrygroup>
             </must_have>
             <benefits>
-                <ingameeffect >Sentry Stones start the game with 3 Fury</ingameeffect>
+                <ingameeffect >You gain +1 on your starting roll for the game.</ingameeffect>
             </benefits>
         </level>
         <level number="4">
