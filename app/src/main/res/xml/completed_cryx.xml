@@ -3,11 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_cryx" name="cryx" version="forum_cryx_005">
+        <army faction="faction_cryx" name="cryx" version="forum_cryx_006">
             <!-- 002 include deny3, barathrum, sepulcher, soul trapper -->
             <!-- 003 correct soul trapper range for collecting souls + machine wraith FA-->
             <!-- 004 Duplicate spells now have same wording, fixed wrong cost on Parasite -->
             <!-- 005 August 2015 errata -->
+            <!-- 006 pistol wraith errata jan. 2016 -->
             <warcasters>
                 <!-- ************************************************************* -->
                 <!-- ***********************asphyxious   ************************* -->
@@ -1144,7 +1145,7 @@
                     <basestats name="Pistol Wraith" spd="6" str="4" mat="4" rat="7" def="14" arm="12" cmd="7" undead="true" gunfighter="true" incorporeal="true" hitpoints="5" />
                     <weapons>
                         <ranged_weapon name="Wraithlock Pistol" rng="10" rof="1" aoe="-" pow="12" magical="true" count="2">
-                            <capacity title="CHAIN ATTACK: DEATH CHILL">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional ranged attack against that model ignoring ROF. If the additional attack hits, it does not inflict damage but the model hit becomes stationary for one round.</capacity>
+                            <capacity title="CHAIN ATTACK: STATIONARY">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional ranged attack against that model ignoring ROF. If the additional attack hits, it does not inflict damage but the model hit becomes stationary for one round.</capacity>
                         </ranged_weapon>
                     </weapons>
                     <capacity title="BODY COUNT">This model gains one soul token each time it destroys a living enemy model. It can have up to three soul tokens at a time. During its activation, this model can spend soul tokens to boost attack or damage rolls at one token per boost.</capacity>

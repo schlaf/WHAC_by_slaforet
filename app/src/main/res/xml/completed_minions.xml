@@ -3,10 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_minions" name="Minions" version="forum_minions_004">
+        <army faction="faction_minions" name="Minions" version="forum_minions_005">
             <!-- 002 add croak raiders, swamp gobber river raiders, gremlin swarm-->
             <!-- 003 add gorax for arkadius -->
-            <!-- 004 add devastation entries : battle boar, splatter board, blind walker, Lynus Wesselbaum &amp; Edrea Lloryrr, farrow brigand -->
+            <!-- 004 add devastation entries : battle boar, splatter boar, blind walker, Lynus Wesselbaum &amp; Edrea Lloryrr, farrow brigand -->
+            <!-- 005 splatter boar errata jan. 2016 -->
             <warlocks>
                 <warlock id="IW05" name="Lord Carver, BMMD, Esq. III" generation="P" full_name="Lord Carver, BMMD, Esq. III" qualification="Minion Farrow Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
                     <basestats name="CARVER" spd="6" str="8" mat="7" rat="6" def="15" arm="17" cmd="9" hitpoints="16" tough="true" />
@@ -579,7 +580,7 @@
                         <ranged_weapon name="Alchemical Mortar" rng="12" rof="1" aoe="3" pow="*">
                             <capacity title="AMMO TYPE">Each time this weapon is used to make an attack, choose one of the following abilities:</capacity>
                             <capacity title="● Acid Bomb">Models in the AOE are hit and suffer a POW 12 Corrosion damage roll and suffer the Corrosion continuous effect.</capacity>
-                            <capacity title="● Psychoactive Gas">This attack is a gas effect and causes no damage. Models/units hit must pass a command check or flee. Enemy warbeasts hit must pass a THR check or frenzy.</capacity>
+                            <capacity title="● Psychoactive Gas">This attack is a gas effect and causes no damage. Models/units hit must pass a command check or flee. Each enemy warbeast hit must pass a THR check or automatically frenzy during its controller’s next Control Phase.</capacity>
                             <capacity title="● Smoke Blast">The weapon’s base POW becomes 14 for this attack. This attack causes fire damage. This weapon’s AOE is a cloud effect that remains in play for one round.</capacity>
                             <capacity title="Arcing Fire">When attacking with this weapon, this model can ignore intervening models except those within 1" of the target.</capacity>
                             <capacity title="Inaccurate">This model suffers -4 to attack rolls with this weapon.</capacity>

@@ -3,10 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_retribution" name="retribution" version="forum_retribution_004">
+    <army faction="faction_retribution" name="retribution" version="forum_retribution_005">
         <!-- 002 thyron, helios, electromancers, arcanist (force wall) -->
         <!-- 003 august 2015 errata (thyron blades of vengeance) -->
         <!-- 004 ground zero for thyron -->
+        <!-- 005 destors quick work errata jan. 2016  -->
       <warcasters>
         <!--Adeptis Rahn1 complete-->
         <warcaster id="RW01" name="Rahn1" full_name="Adeptis Rahn" generation="P" qualification="Retribution Warcaster" focus="8" warjack_points="6" fa="C" completed="true" generation_id="Rahn">
@@ -530,6 +531,7 @@
             <mount_weapon pow="10" name="Mount"></mount_weapon>
           </weapons>
           <capacity title="Dual Shot">When this model forfeits its movement to gain the aiming bonus it can also make one additional ranged attack this activation.</capacity>
+          <capacity title="Quickwork">When this model destroys one or more enemy models with a melee attack during its combat action, immediately after that attack is resolved this model can make one normal ranged attack. Attacks gained from Quick Work do not count against a weapon’s ROF.</capacity>
           <capacity title="Unyielding">While engaging an enemy model, this model gains +2 ARM.</capacity>
         </unit>
         <!--Houseguard Halberdiers complete-->

@@ -3,13 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_skorne" name="Skorne" version="forum_skorne_007">
+        <army faction="faction_skorne" name="Skorne" version="forum_skorne_008">
             <!-- 002 add zaal2 -->
             <!-- 003 Fixed spell typos -->
             <!-- 004 Fixed Zaal2 typo -->
             <!-- 005 august 2015 errata (animantarax) -->
             <!-- 006 add devastation entries -->
             <!-- 007 correct id for legends of halaak (was overwritting praetorian keltarii) -->
+            <!-- 008 karax set def, molik fury, advocate fearless  errata jan. 2016 -->
             <warlocks>
                 <warlock id="Sw01" name="Morghoul1" generation="P" full_name="Master Tormentor Morghoul" qualification="Skorne Warlock" fury="5" warbeast_points="7" fa="C" completed="true">
                     <basestats name="MORGHOUL" spd="7" str="6" mat="8" rat="4" def="17" arm="13" cmd="8" hitpoints="15" pathfinder="true" />
@@ -393,7 +394,7 @@
                         </melee_weapon>
                     </weapons>
                     <animus name="FATE WALKER" cost="2" rng="SELF" aoe="-" pow="-" up="NO" off="NO">After all friendly models end their activation this turn, this model can make a full advance. Fate Walker lasts for one turn.</animus>
-                    <capacity title="AFFINITY [MAKEDA]">While in Makeda's control area, Molik Karn gains +1 FURY.</capacity>
+                    <capacity title="AFFINITY [MAKEDA]">While in Makeda’s battlegroup, Molik Karn gains +1 FURY.</capacity>
                     <capacity title="CHIEFTAIN [CYCLOPS]">While in this model's command range, friendly Cyclops models can use its current CMD and THR in place of their own current values.</capacity>
                     <capacity title="FUTURE SIGHT">This model can boost attack and damage rolls after rolling.</capacity>
                     <capacity title="INTUITION">When an enemy model targets this model with an attack and the attack roll results in a hit, you can immediately force this model to cause the enemy model to reroll the attack roll.</capacity>
@@ -631,7 +632,7 @@
                     <capacity title="VENGEANCE">During your Maintenance Phase, if one or more models in this unit were destroyed or removed from play by enemy attacks during your opponent's last turn, each model in the unit can advance 3" and make one normal melee attack.</capacity>
                     <unit_attachment id="SA04" name="Extoller Advocate" full_name="Extoller Advocate" qualification="Skorne Unit Attachment" fa="1" completed="true" cost="2">
                         <model id="advocate">
-                            <basestats name="ADVOCATE" spd="6" str="5" mat="5" rat="5" def="14" arm="13" cmd="8" gunfighter="true" officer="true"/>
+                            <basestats name="ADVOCATE" spd="6" str="5" mat="5" rat="5" def="14" arm="13" cmd="8" gunfighter="true" officer="true" fearless="true"/>
                             <weapons>
                                 <ranged_weapon name="Spirit Eye" rng="8" rof="1" aoe="-" pow="6" magical="true">
                                     <capacity title="ANNIHILATING GAZE">When a living model is hit by this attack, add its current STR to the damage roll.</capacity>
@@ -682,6 +683,7 @@
                     </weapons>
                     <capacity title="GIRDED">This model does not suffer blast damage. Friendly models B2B with it do not suffer blast damage.</capacity>
                     <capacity title="RANKED ATTACKS">Friendly Faction models can ignore this model when determining LOS.</capacity>
+                    <capacity title="SET DEFENSE">A model in this model's front arc suffers -2 on charge, slam power attack, and impact attack rolls against this model.</capacity>
                     <capacity title="SHIELD WALL (ORDER)">For one round, each affected model gains a +4 ARM bonus while B2B with another affected model in its unit. This bonus does not apply to damage originating in the model's back arc. Models in this unit can begin the game affected by Shield Wall.</capacity>
                 </unit>
                 <unit id="SU08" name="Praetorian Swordsmen" full_name="Praetorian Swordsmen" qualification="Skorne Unit" fa="3" base_cost="4" full_cost="6" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">

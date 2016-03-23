@@ -72,12 +72,15 @@
             <entry id="IB02_mercs"/>
             <entry id="IB06_mercs"/>
             <entry id="IB09_mercs"/>
+            <entry id="IB10_mercs"/>
+            <entry id="IB11_mercs"/>
             
             <entry id="IB08_mercs"/> <!-- because of snapjaw -->
             <entry id="IB07_mercs"/>
             <entry id="IB05_mercs"/>
             <entry id="IB04_mercs"/>
             <entry id="IB03_mercs"/>
+            <entry id="IB12_mercs"/>
 
             <!-- be -->
             <entry id="ME01"/>
@@ -141,6 +144,7 @@
             <entry id="MS26" />
             <entry id="MS29" />
             <entry id="MS30" />
+            <entry id="MS32" />
             <entry id="IS01_mercs" />
             <entry id="IS03_mercs" />
             <!-- <entry id="IS04_mercs" />  removed in 1.3 --> 
@@ -222,6 +226,8 @@
             <entry id="IB02_mercs"/>
             <entry id="IB06_mercs"/>
             <entry id="IB09_mercs"/>
+            <entry id="IB10_mercs"/>
+            <entry id="IB11_mercs"/>
 
             <!-- be -->
             <entry id="ME01"/>
@@ -289,6 +295,7 @@
             <entry id="MS26" />
             <entry id="MS29" />
             <entry id="MS31" />
+            <entry id="MS32" />
             <entry id="IS01_mercs" />
             <entry id="IS03_mercs" />
             <entry id="IS04_mercs" />
@@ -427,6 +434,7 @@
             <entry id="MS05" />
             <entry id="MS12" />
             <entry id="MS17" />
+            <entry id="MS32" />
             <entry id="IS03_mercs" />
             <entry id="IW01_mercs"/>
             <entry id="Lug_mercs"/>
@@ -562,6 +570,8 @@
             <entry id="IB02" />
             <entry id="IB06" />
             <entry id="IB09" />
+            <entry id="IB10" />
+            <entry id="IB11" />
             
             <!-- jacks for raluk -->
             <entry id="MJ04_minion"/>

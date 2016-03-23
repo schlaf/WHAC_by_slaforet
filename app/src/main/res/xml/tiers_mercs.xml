@@ -154,6 +154,8 @@
         <entry id="MS15" />
         <entry id="IS06_mercs" />
         <entry id="MS16" />
+          <entry id="MS29"/>
+
       </only>
       <benefits>
         <ingameeffect>Additionally, this army can include one Cygnar Long Gunner Infantry unit or one Cygnar Trencher Infantry unit. This unit is considered to be a friendly Mercenary unit instead of a Cygnar unit and can include attachments.</ingameeffect>
@@ -310,6 +312,7 @@
         <entry id="MJ08" />
         <entry id="MJ14" />
         <entry id="MJ15" />
+        <entry id="MJ19"/>
         <entry id="MU02" />
         <entry id="MU06" />
         <entry id="MA03" />
@@ -322,6 +325,7 @@
         <entry id="MS05" />
         <entry id="MS12" />
         <entry id="MS17" />
+        <entry id="MS32"/>
       </only>
       <benefits>
         <ingameeffect  />
@@ -362,6 +366,7 @@
           <entry id="MJ08" />
           <entry id="MJ14" />
           <entry id="MJ15" />
+          <entry id="MJ19"/>
         </entrygroup>
       </must_have>
       <benefits>
@@ -579,6 +584,7 @@
         <entry id="MS10" />
         <entry id="MS06" />
         <entry id="MS22" />
+          <entry id="MS31"/>
       </only>
       <benefits>
         <ingameeffect>All units in the army are cultists. (Fiona can still gain only 1 focus point from cultists each turn regardless of how many are in her proximity.)</ingameeffect>
@@ -714,30 +720,34 @@
     </availableModels>                 
       
     <level number="1">
-      <only>
+        <only>
         <entry id="MW07" />
-        <entry id="MJ02" />
-        <entry id="MJ03" />
-        <entry id="MJ04" />
-        <entry id="MJ09" />
-        <entry id="MJ10" />
-        <entry id="MJ11" />
-        <entry id="MJ12" />
-        <entry id="MJ13" />
-        <entry id="MJ16" />
-        <entry id="MJ18" />
-        <entry id="MU10" />
-        <entry id="MU11" />
-        <entry id="MU12" />
-        <entry id="MU13" />
-        <entry id="MA01" />
-        <entry id="MA02" />
-        <entry id="MU14" />
-        <entry id="MS08" />
-        <entry id="MS09" />
-        <entry id="MS10" />
-        <entry id="MS11" />
-        <entry id="MS12" />
+        <!-- Mercenary Non-Character warjacks -->
+        <entry id="MJ02" /> <!-- Talon -->
+        <entry id="MJ03" /> <!-- Vanguard -->
+        <entry id="MJ04" /> <!-- Buccaneer -->
+        <entry id="MJ09" /> <!-- Magler -->
+        <entry id="MJ10" /> <!-- Mule -->
+        <entry id="MJ11" /> <!-- Nomad -->
+        <entry id="MJ12" /> <!-- Freebooter -->
+        <entry id="MJ13" /> <!-- Mariner -->
+        <entry id="MJ16" /> <!-- Rover -->
+        <entry id="MJ18" /> <!-- Galleon -->
+        <!-- Sea Dog units, Lady Aiyana & Master Holt -->
+        <entry id="MU10" /> <!-- The Commodore Cannon -->
+        <entry id="MU11" /> <!-- Lady Aiyana & Master Holt -->
+        <entry id="MU12" /> <!-- Press Gangers -->
+        <entry id="MU13" /> <!-- Sea Dog Boarding Crew -->
+        <entry id="MA01" /> <!-- Mr. Walls -->
+        <entry id="MA02" /> <!-- Sea Dog Crew Rifleman -->
+        <entry id="MU14" /> <!-- Sea Dog Deck Gun -->
+        <entry id="MU21" /> <!-- Devil's Shadow Mutineers -->
+        <!-- Bosun Grogspar, Dirty Meg, Doc Killingsworth, First Mate Hawk, Lord Rockbottom -->
+        <entry id="MS08" /> <!-- Bosun Grogspar -->
+        <entry id="MS09" /> <!-- Dirty Meg -->
+        <entry id="MS10" /> <!-- Doc Killingsworth -->
+        <entry id="MS11" /> <!-- First Mate Hawk -->
+        <entry id="MS12" /> <!-- Lord Rockbottom -->
       </only>
       <benefits>
         <ingameeffect  />
@@ -997,6 +1007,7 @@
         <entry id="MS05" />
         <entry id="MS12" />
         <entry id="MS17" />
+          <entry id="MS32"></entry>
         <entry id="IW01_mercs" />
         <entry id="Lug_mercs" />
       </only>

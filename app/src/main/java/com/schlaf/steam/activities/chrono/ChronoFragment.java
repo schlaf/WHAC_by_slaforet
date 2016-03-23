@@ -306,8 +306,9 @@ public class ChronoFragment extends Fragment implements
 			if (remainingSeconds < 10 * 60) {
 				color = "<font color=\"red\">";
 			}
-			
-			displayNotificationString = getActivity().getString(R.string.p1_time) + color + time1String + "</font>";
+			if (getActivity() != null) { // if rotate, current activity may be null
+                displayNotificationString = getActivity().getString(R.string.p1_time) + color + time1String + "</font>";
+            }
 		} else if (BattleSingleton.getInstance().getPlayer2Chrono().isRunning()) {
 			int remainingSeconds = (int) BattleSingleton.getInstance().getPlayer2Chrono().getTimeRemainingMillis() / 1000;
 			String color = "<font>";
@@ -317,9 +318,13 @@ public class ChronoFragment extends Fragment implements
 			if (remainingSeconds < 10 * 60) {
 				color = "<font color=\"red\">";
 			}
-			displayNotificationString = getActivity().getString(R.string.p2_time) + color + time2String + "</font>";
+            if (getActivity() != null) { // if rotate, current activity may be null
+                displayNotificationString = getActivity().getString(R.string.p2_time) + color + time2String + "</font>";
+            }
 		} else {
-			displayNotificationString = getActivity().getString(R.string.paused);
+            if (getActivity() != null) { // if rotate, current activity may be null
+                displayNotificationString = getActivity().getString(R.string.paused);
+            }
 		}
 			
 		// build notification

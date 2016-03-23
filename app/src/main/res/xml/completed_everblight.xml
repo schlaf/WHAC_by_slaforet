@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ruleset xmlns="http://www.whac.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
     <armies>
-        <army faction="faction_everblight" name="Everblight" version="forum_everblight_005">
+        <army faction="faction_everblight" name="Everblight" version="forum_everblight_006">
             <!-- 003 Updated spell typos -->
             <!-- 004 add devastation entries -->
             <!-- 005 correct Blight Ash pow for blight bringer -->
+            <!-- 006 saeryn errata jan. 2016  -->
             <warlocks>
                 <warlock id="Ew01" name="Lylyth1" generation="P" generation_id="Lylyth" full_name="Lylyth, Herald of Everblight" qualification="Legion Blighted Nyss Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
                     <basestats name="LYLYTH" spd="7" str="4" mat="5" rat="7" def="16" arm="14" cmd="8" hitpoints="15" eyelesssight="true" pathfinder="true" />
@@ -253,6 +254,7 @@
                     <capacity title="Bond of Blood [Rhyas]">This model can spend fury points to transfer damage to Rhyas.</capacity>
                     <capacity title="Channeler [Rhyas]">While this model is not engaged and in Rhyas' control area, Rhyas can channel spells through it.</capacity>
                     <capacity title="Twin Sister">Saeryn and Rhyas are both warlock models, but only Saeryn has the Officer advantage. Saeryn and Rhyas share a single battlegroup and count as one warlock for the purposes of army construction. Saeryn cannot make attacks against Rhyas, and Rhyas cannot make attacks against Saeryn. Saeryn and Rhyas cannot have an attached model. Your warlock is destroyed only if both Saeryn and Rhyas are destroyed or removed from play.</capacity>
+                    <capacity title="Warlock Unit">This unit is made up of Saeryn and Rhyas.</capacity>
                     <model>
                         <basestats name="Rhyas" spd="7" str="5" mat="8" rat="6" def="16" arm="14" cmd="8" hitpoints="8" focus="5" />
                         <weapons>

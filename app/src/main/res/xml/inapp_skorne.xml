@@ -55,6 +55,12 @@
           <weapons />
           <feat title=""/>
         </warlock>
+          <warlock id="Sx05" name="Zaal2" generation="E" full_name="Zaal, The Ancestral Advocate" qualification="Skorne Warlock" fury="7" warbeast_points="6" fa="C" >
+              <basestats name="ZAAL" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="18" />
+              <weapons />
+              <feat title=""/>
+          </warlock>
+
         <warlock id="SW06" name="Mordikaar" full_name="Mordikaar" generation="P" qualification="warlock" fury="6" warbeast_points="5" fa="C">
           <basestats name="Mordikaar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="16" />
           <weapons />
@@ -155,7 +161,13 @@
         <warbeast id="SB21" name="Aradus Sentinel" full_name="Aradus Sentinel" qualification="Skorne Heavy Warbeast" fa="U" cost="8" fury="4" threshold="9" damage_spiral="7-14-8">
           <basestats name="SENTINEL" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
           <weapons/>            
-        </warbeast>         
+        </warbeast>
+          <warbeast id="SB22" name="Desert Hydra" full_name="Desert Hydra" qualification="Skorne Gargantuan" fa="2" cost="19" fury="4" threshold="8" damage_spiral="14-20-14">
+              <basestats name="HYDRA"  spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
+              <weapons>
+              </weapons>
+          </warbeast>
+
       </warbeasts>
       <battleEngines>
         <battleEngine id="SE01" name="Siege Animantarax" full_name="Siege Animantarax" cost="9" qualification="Battle engine" fa="2">
@@ -184,6 +196,13 @@
         <unit id="SU04" name="Immortals" full_name="Immortals" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2">
           <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
           <weapons />
+            <unit_attachment id="SA04" name="Extoller Advocate" full_name="Extoller Advocate" qualification="Skorne Unit Attachment" fa="1" cost="2">
+                <model id="advocate">
+                    <basestats name="ADVOCATE" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0"/>
+                    <weapons>
+                    </weapons>
+                </model>
+            </unit_attachment>
         </unit>
         <unit id="SU05" name="Paingiver Beast Handlers" full_name="Paingiver Beast Handlers" base_cost="2" baseCount="4" full_cost="3" fullCount="6" qualification="Unit" fa="2">
           <basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />

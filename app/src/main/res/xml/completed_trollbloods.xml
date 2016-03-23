@@ -3,9 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_trollblood" name="Trollbloods" version="forum_trollblood_003">
+    <army faction="faction_trollblood" name="Trollbloods" version="forum_trollblood_004">
         <!--002 august 2015 errata (mountain king) -->
         <!--003 add devastation entries -->
+        <!--004 warders, runeshapers, errata jan. 2016  -->
       <warlocks>
         <warlock id="Tw01" name="Madrak1" generation="P" full_name="Madrak Ironhide, Thornwood Chieftain" qualification="Trollblood Trollkin Warlock" fury="5" warbeast_points="6" fa="C" completed="true">
           <basestats name="IRONHIDE" spd="6" str="8" mat="7" rat="6" def="14" arm="16" cmd="9" hitpoints="18" tough="true" />
@@ -79,7 +80,7 @@
           <capacity title="HYPER REGENERATION">This model automatically heals d3 damage points at the start of each of its activations.			</capacity>
         </warlock>
         <warlock  id="Tz02" name="Hoarluk3" full_name="Hoarluk Doomshaper, Dire Prophet" generation="E" qualification="Trollblood Epic Trollkin Warlock Unit" fury="7" warbeast_points="3" fa="C" completed="true">
-          <basestats name="Hoarluk Doomshaper, Dire Prophet" spd="5" str="7" mat="5" rat="4" def="13" arm="15" cmd="8" hitpoints="16" tough="true"/>
+          <basestats name="Hoarluk Doomshaper, Dire Prophet" spd="5" str="7" mat="5" rat="4" def="13" arm="15" cmd="8" hitpoints="16" tough="true" officer="true"/>
           <weapons>
               <melee_weapon name="Kriel Staff" pow="6" p_plus_s="13" reach="true" magical="true">
                   <capacity title="CRITICAL SMITE">On a critical hit, this model can slam the model hit instead of rolling damage normally. The model hit is slammed d6" directly away from this model and suffers a damage roll with POW equal to this model's STR plus the POW of this weapon. The POW of collateral damage is equal to this model's STR.</capacity>
@@ -93,6 +94,7 @@
             <spell name="UNMINDING" cost="3" rng="10" aoe="-" pow="-" up="YES" off="YES">Target enemy warbeast suffers -2 FURY and THR and loses its animus. This model can cast an affected warbeast's animus as a spell as if the animus belonged to a warbeast in this model's battlegroup and in its control area.</spell>
             <capacity title="FIELD MARSHALL[HYPER REGENERATION]">Models in this model's battlegroup gain Hyper Regeneration. (A model with Hyper Regeneration automatically heals d3 damage points at the start of each of its activations.)</capacity>
             <capacity title="GOAD">When a warbeast in this model's battlegroup destroys one or more enemy models with a melee attack during its combat action, immediately after the attack is resolved this model can force the warbeast to advance up to 2".</capacity>
+            <capacity title="TROLLKIN">This model is a Trollkin</capacity>
 
             <model>
               <basestats name="Scroll Bearer" spd="5" str="6" mat="5" rat="4" def="13" arm="13" cmd="8" hitpoints="5" tough="true"/>
@@ -102,6 +104,7 @@
                 <capacity title="● SCROLL OF THE CALL OF TROQAL">While within Doomshaper's control area, each warbeast in his battlegroup can gain 0 fury when forced to use its animus instead of gaining fury points equal to the COST of the animus. Call of Troqal lasts for one turn.</capacity>
                 <capacity title="● SCROLL OF HAND OF YOLANDI">Enemy models pay double the focus or fury point cost to cast or upkeep spells in Doomshaper's control area for one round. </capacity>
                 <capacity title="● TIME OF THE MOLGUR">While in Doomshaper's control area this turn, friendly Faction warrior models gain an additional die on attack rolls. Discard the lowest die in each roll.</capacity>
+                <capacity title="PYG">This model is a Pyg</capacity>
           </model>
         </warlock>
         <warlock id="Tw03" name="Grissel1" generation="P" full_name="Grissel Bloodsong, Fell Caller" qualification="Trollblood Trollkin Warlock" fury="6" warbeast_points="5" fa="C" completed="true">
@@ -752,7 +755,7 @@
           </weapons>
           <capacity title="MAGIC ABILITY [7]" />
           <capacity title="● ROCK HAMMER (★ATTACK)">Rock Hammer is a RNG 8, AOE 3, POW 14 magic attack. On a critical hit, models hit are knocked down.</capacity>
-          <capacity title="● TREMOR (★ATTACK)">Tremor affects every model within 2" of this model and does not require a target. Make one magic attack roll. If the roll equals or exceeds the DEF of an affected model, it is knocked down. This attack roll cannot be rerolled. This model can make a Tremor special attack if it charges.</capacity>
+          <capacity title="● TREMBLER (★ATTACK)">Center a 3" AOE on this model. Other models in the AOE are knocked down.</capacity>
           <capacity title="STEADY">This model cannot be knocked down.</capacity>
         </unit>
         <unit id="TU10" name="Scattergunners" full_name="Scattergunners" qualification="Trollblood Trollkin Unit" fa="2" base_cost="5" full_cost="8" baseCount="6" fullCount="10" has_unit_attachment="true" completed="true">
@@ -838,7 +841,7 @@
         <unit id="TU14" name="Trollkin Warders" full_name="Trollkin Warders" qualification="Trollblood Unit" fa="2" base_cost="5" full_cost="8" baseCount="3" fullCount="5" completed="true">
           <basestats name="LEADER &amp; GRUNTS" spd="4" str="7" mat="7" rat="4" def="12" arm="17" cmd="9" hitpoints="8" fearless="true" tough="true" />
           <weapons>
-            <melee_weapon name="Battle Weapon" pow="3" p_plus_s="10" reach="true" weapon_master="true" />
+            <melee_weapon name="Battle Weapon" pow="3" p_plus_s="10" reach="true" />
           </weapons>
           <capacity title="BATTLE-DRIVEN">When a model in this unit is damaged by an enemy attack, after the attack is resolved models in this unit gain +2 STR and ARM and Pathfinder for one round.</capacity>
         </unit>

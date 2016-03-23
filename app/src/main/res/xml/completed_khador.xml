@@ -3,9 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_khador" name="Khador" version="forum_khador_003">
+    <army faction="faction_khador" name="Khador" version="forum_khador_004">
         <!-- 002 add zerkova2, Ruin, Victor, Rager and Mad Dog -->
         <!-- 003 vlad3 foc, kovnik axe P+S, irusk2 tactical supremacy -->
+        <!-- 004 bombardier CRA errata jan. 2016  -->
       <warcasters>
         <warcaster id="Kw01" name="Butcher1" full_name="The Butcher of Khardov" generation="P" qualification="Khador Warcaster" focus="6" warjack_points="6" fa="C" completed="true">
           <basestats name="BUTCHER" spd="5" str="8" mat="9" rat="5" def="14" arm="18" cmd="7" hitpoints="20" terror="true"/>
@@ -940,7 +941,7 @@
           </unit_attachment>
         </unit>
         <unit id="KU16" name="Man-o-war Bombardiers" full_name="Man-o-war Bombardiers" base_cost="7" baseCount="3" full_cost="11" fullCount="5" qualification="Khador Unit" fa="1" completed="true">
-          <basestats name="Leader &amp; grunts" spd="4" str="9" mat="7" rat="5" def="11" arm="16" cmd="9" hitpoints="8" fearless="true" />
+          <basestats name="Leader &amp; grunts" spd="4" str="9" mat="7" rat="5" def="11" arm="16" cmd="9" hitpoints="8" fearless="true" cra="true"/>
           <weapons>
             <melee_weapon p_plus_s="13" pow="4" name="Chain Blade">
               <capacity title="Critical Shred">On a critical hit, after the attack is resolved this model can make one additional attack against the model hit.</capacity>

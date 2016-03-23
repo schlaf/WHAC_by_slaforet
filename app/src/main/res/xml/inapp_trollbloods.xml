@@ -213,7 +213,7 @@
 <unit  id="TU04" name="Pyg Bushwhackers" full_name="Pyg Bushwhackers" base_cost="5" baseCount="6" full_cost="8" fullCount="10" qualification="Unit" fa="2" has_unit_attachment="true">
 	<basestats name="Leader and grunts" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
 	<weapons></weapons>
-    <unit_attachment id="TA07" cost="2" fa="1" qualification="Trollblood unit attachment" name="Pyg Bushwhacker Officer &amp; Mortar">
+    <unit_attachment id="TA07" cost="2" fa="1" qualification="Trollblood unit attachment" name="Pyg Bushwhacker Officer &amp; Mortar" full_name="Pyg Bushwhacker Officer &amp; Mortar">
         <model id="pyg_officer">
             <basestats name="Officer" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
         </model>

@@ -3,12 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="www.whac.com/Sample warmachine.xsd" >
   <armies>
-    <army faction="faction_orboros" name="Orboros" version="forum_orboros_006">
+    <army faction="faction_orboros" name="Orboros" version="forum_orboros_007">
         <!-- 002 add kromac 2-->
         <!-- 003 Winter Coat animus for winter argus -->
         <!-- 004 Upper cased all spells; Fixed typos -->
         <!-- 005 add devastation entries -->
         <!-- 006 correct entropic force for gallow groves + baldur2 ground zero-->
+        <!-- 007 woldwarden errata jan. 2016 -->
       <warlocks>
         <!--Kaya Wildborne complete-->
         <warlock id="Ow01" name="Kaya1" full_name="Kaya the Wildborne" generation="P" qualification="Circle Warlock" fury="6" warbeast_points="6" fa="C" completed="true">
@@ -422,7 +423,7 @@
               <capacity title="Chain Attack: Smite">If this model hits the same model with both its initial attacks with this weapon, after resolving the attacks it can immediately make one additional melee attack against that model.  If the additional attack hits, the target is slammed d6" directly away from this model.  The POW of the slam damage roll is equal to the STR of this model + the POW of this weapon.  The POW of collateral damage is equal to the STR of this model.</capacity>
             </melee_weapon>
           </weapons>
-          <animus name="Wild Growth" cost="2" rng="Self" aoe="-" pow="-" up="NO" off="NO">Center a 4" AOE on this model.  The AOE is a forest that remains in play for one round.</animus>
+          <animus name="Wild Growth" cost="2" rng="*" aoe="-" pow="-" up="NO" off="NO">Center a 4" AOE on this model.  The AOE is a forest that remains in play for one round.</animus>
           <capacity title="Geomancy">Once per activation while in his controller's control area, this model can be forced to cast one of its warlock's spells with a cost of 3 or less.  This model's controller is considered to have cast the spell but this model is the point of origin.  When making a magic attack roll, this model uses its controller's FURY.  This model cannot cast spells with a RNG of SELF or CTRL.</capacity>
         </warbeast>
         <!--Warpwolf Stalker complete-->

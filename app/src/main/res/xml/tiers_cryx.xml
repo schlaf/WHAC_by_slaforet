@@ -1684,6 +1684,7 @@
         <entry id="CJ18" />
         <entry id="CJ20" />
         <entry id="CJ21" />
+        <entry id="CJ22" />
         
         <entry id="CJ13"/>
         <entry id="CJ12"/>
@@ -1699,6 +1700,7 @@
         <entry id="CU15"/>
         
         <!-- Iron lich overseer, Necrotech & Scrapthralls, Ragman, Scarlock thrall, Warwitch sirens -->
+        <entry id="CS01" />
         <entry id="CS13" />
         <entry id="CS03" />
         <entry id="CS04" />

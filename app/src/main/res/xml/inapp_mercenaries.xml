@@ -525,21 +525,21 @@
           <restricted_to id="IW03_mercs" />
         </warbeast>
 
-          <warbeast  id="IB10" name="Battle Boar" full_name="Battle Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="4" qualification="Minion Farrow Light Warbeast" fa="U">
+          <warbeast  id="IB10_mercs" name="Battle Boar" full_name="Battle Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="4" qualification="Minion Farrow Light Warbeast" fa="U">
               <basestats name="Battle Boar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
               <weapons>
               </weapons>
               <restricted_to id="IW03_mercs" />
           </warbeast>
 
-          <warbeast  id="IB11" name="Splatter Boar" full_name="Splatter Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="5" qualification="Minion Farrow Light Warbeast" fa="U">
+          <warbeast  id="IB11_mercs" name="Splatter Boar" full_name="Splatter Boar" damage_spiral="6-10-6" fury="3" threshold="7" cost="5" qualification="Minion Farrow Light Warbeast" fa="U">
               <basestats name="Splatter Boar" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
               <weapons>
               </weapons>
               <restricted_to id="IW03_mercs" />
           </warbeast>
 
-          <warbeast  id="IB12" name="Blind Walker" full_name="Blind Walker" damage_spiral="5-14-8" fury="3" threshold="10" cost="7" qualification="Minion Gatorman Heavy Warbeast" fa="U">
+          <warbeast  id="IB12_mercs" name="Blind Walker" full_name="Blind Walker" damage_spiral="5-14-8" fury="3" threshold="10" cost="7" qualification="Minion Gatorman Heavy Warbeast" fa="U">
               <basestats name="Walker" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" />
               <weapons>
               </weapons>
@@ -1320,6 +1320,13 @@
               <weapons />
               <works_for id="faction_cygnar"/>
           </solo>
+
+          <solo id="MS32" name="Hutchuck, Ogrun Bounty Hunter" full_name="Hutchuck, Ogrun Bounty Hunter" fa="C" cost="3" qualification="Mercenary Minions Character Solo" >
+              <basestats name="HUTCHUCK" spd="0" str="0" mat="0" rat="0" def="0" arm="0" cmd="0" hitpoints="8" />
+              <works_for id="faction_cygnar"/>
+              <works_for id="faction_khador"/>
+          </solo>
+
 
         <!-- cryx solos that can be taken in cephalyx contract -->
         <solo id="CS02_mercs" name="Bloat Thrall" full_name="Bloat Thrall" cost="2" qualification="Solo" fa="2">
