@@ -77,6 +77,10 @@ public class Warlock extends ArmyCommander implements SpellCaster, Serializable,
 		return new ArrayList<String>();
 	}
 
+	@Override
+	public boolean hasSpells() {
+		return ! getSpells().isEmpty();
+	}
 
 
 }

@@ -13,34 +13,33 @@ public class RangedWeapon extends Weapon implements Serializable {
 
 	/** serial */
 	private static final long serialVersionUID = 3500890056823478091L;
-	private boolean spray;
-	private int range;
-	private int rof;
-	private int aoe;
-	private int pow;
+	private String range;
+	private String rof;
+	private String aoe;
+	private String pow;
 	
-	public int getRange() {
+	public String getRange() {
 		return range;
 	}
-	public void setRange(int range) {
+	public void setRange(String range) {
 		this.range = range;
 	}
-	public int getRof() {
+	public String getRof() {
 		return rof;
 	}
-	public void setRof(int rof) {
+	public void setRof(String rof) {
 		this.rof = rof;
 	}
-	public int getAoe() {
+	public String getAoe() {
 		return aoe;
 	}
-	public void setAoe(int aoe) {
+	public void setAoe(String aoe) {
 		this.aoe = aoe;
 	}
-	public int getPow() {
+	public String getPow() {
 		return pow;
 	}
-	public void setPow(int pow) {
+	public void setPow(String pow) {
 		this.pow = pow;
 	}
 	
@@ -49,12 +48,6 @@ public class RangedWeapon extends Weapon implements Serializable {
 		sb.append("[").append(getName()).append("(ranged)-RNG=").append(range).append("-ROF=").append(rof).append("-AOE=").append(aoe).append("-POW=").append(pow).append("]");
 		return sb.toString();
 	}
-	public boolean isSpray() {
-		return spray;
-	}
-	public void setSpray(boolean spray) {
-		this.spray = spray;
-	}
-	
+
 	
 }

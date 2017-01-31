@@ -14,30 +14,24 @@ public class MeleeWeapon extends Weapon implements Serializable {
 
 	/** serial */
 	private static final long serialVersionUID = 7401124131758623722L;
-	private boolean reach;
 	private boolean openFist;
 	private boolean chain;
 	
 	
-	private int pow;
-	private int p_plus_s;
+	private String pow;
+    private String range;
+    private String p_plus_s;
 	
-	public boolean isReach() {
-		return reach;
-	}
-	public void setReach(boolean reach) {
-		this.reach = reach;
-	}
-	public int getPow() {
+	public String getPow() {
 		return pow;
 	}
-	public void setPow(int pow) {
+	public void setPow(String pow) {
 		this.pow = pow;
 	}
-	public int getP_plus_s() {
+	public String getP_plus_s() {
 		return p_plus_s;
 	}
-	public void setP_plus_s(int p_plus_s) {
+	public void setP_plus_s(String p_plus_s) {
 		this.p_plus_s = p_plus_s;
 	}
 	
@@ -60,6 +54,12 @@ public class MeleeWeapon extends Weapon implements Serializable {
 	public void setChain(boolean chain) {
 		this.chain = chain;
 	}
-	
+    public String getRange() {
+        return range;
+    }
+
+    public void setRange(String range) {
+        this.range = range;
+    }
 	
 }

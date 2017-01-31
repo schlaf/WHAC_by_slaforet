@@ -17,8 +17,8 @@ public enum FactionNamesEnum {
 	SKORNE("faction_skorne", R.drawable.skorne, GameSystem.HORDES ),
 	TROLLBLOOD("faction_trollblood", R.drawable.trolls, GameSystem.HORDES),
 	MINIONS("faction_minions", R.drawable.minion,GameSystem.HORDES),
-	OBJECTIVES("faction_objectives", R.drawable.mercs, GameSystem.NONE),
-	OBJECTIVES_SR2015("faction_objectives_sr2015", R.drawable.objo, GameSystem.NONE)
+	// OBJECTIVES("faction_objectives", R.drawable.mercs, GameSystem.NONE),
+	OBJECTIVES_SR2016("faction_objectives_sr2016", R.drawable.objo, GameSystem.NONE)
 	;
 
 	private FactionNamesEnum(String id, int logoResource, GameSystem gameSystem) {

@@ -174,7 +174,7 @@ public class BattleListAdapter extends BaseAdapter {
 				damageTV.setBackgroundResource(R.drawable.undead_icon);
 			}
 			
-			defArmTV.setText(((SingleDamageLineEntry) entry).getModel().getDefArmLabel());
+			defArmTV.setText(Html.fromHtml(((SingleDamageLineEntry) entry).getModel().getDefArmLabel()));
 			
 			systemsLayout.removeAllViews(); 
 			// systemsLayout.removeViews(1, systemsLayout.getChildCount() - 1);
@@ -238,7 +238,7 @@ public class BattleListAdapter extends BaseAdapter {
 				int modelNumber = 0;
 				for (SingleDamageLineEntry model : unit.getModels()) {
 					if (first) {
-						defArmUnitTV.setText(model.getModel().getDefArmLabel());
+						defArmUnitTV.setText(Html.fromHtml(model.getModel().getDefArmLabel()));
 						first = false;
 					}
 					
@@ -307,7 +307,7 @@ public class BattleListAdapter extends BaseAdapter {
 					}
 
 
-					gruntDefArm.setText(model.getModel().getDefArmLabel());
+					gruntDefArm.setText(Html.fromHtml(model.getModel().getDefArmLabel()));
 					gruntTitle.setText(model.getLabel());
 
 					if (damageLine.getTotalHits() > 1) {
@@ -374,7 +374,7 @@ public class BattleListAdapter extends BaseAdapter {
 			WarjackLikeDamageGrid grid = jack.getDamageGrid();
 			
 			damageTV.setText(Html.fromHtml(jack.getDamageGrid().getDamageStatus().toHTMLString()));
-			defArmTV.setText(((JackEntry) entry).getModel().getDefArmLabel());
+			defArmTV.setText(Html.fromHtml(((JackEntry) entry).getModel().getDefArmLabel()));
 			
 			generateWarjackDamageLine(grid, systemsLayout, inflater);
 						
@@ -421,7 +421,7 @@ public class BattleListAdapter extends BaseAdapter {
 			WarbeastDamageSpiral spiral = beast.getDamageGrid();
 			
 			damageTV.setText(Html.fromHtml(beast.getDamageGrid().getDamageStatus().toHTMLString()));
-			defArmTV.setText(((BeastEntry) entry).getModel().getDefArmLabel());
+			defArmTV.setText(Html.fromHtml(((BeastEntry) entry).getModel().getDefArmLabel()));
 			
 			generateWarbeastDamageLine(spiral, systemsLayout, inflater);
 						
@@ -466,7 +466,7 @@ public class BattleListAdapter extends BaseAdapter {
 		} else {
 			// solo with no hitpoints...
 			MiniModelDescription description = new MiniModelDescription(entry.getReference().getModels().get(0));
-			defArmTV.setText(description.getDefArmLabel());
+			defArmTV.setText(Html.fromHtml(description.getDefArmLabel()));
 			damageTV.setText(""); //$NON-NLS-1$
 		}
 

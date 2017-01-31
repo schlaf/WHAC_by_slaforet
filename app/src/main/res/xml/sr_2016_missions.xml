@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<missions>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>1</number>
+	<name>ENTRENCHED</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have more control points than the opponent immediately wins the game. If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within the enemy zone.</victory>
+	<specialRules>&lt;b&gt;Kill Box&lt;/b&gt;: NO &lt;br/&gt;
+		Mark two zones (12" × 6" rectangle) and place two objectivesin accordance with the diagram below. Starting on the second player’s second turn, at the end of each player’s turn, a player earns control points (CP) as follows:
+&lt;ul&gt;
+&lt;li/&gt;&lt;b&gt;Friendly Zone: Dominate = 1 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Zone: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective)&lt;/b&gt;
+&lt;/ul&gt;
+</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>sr2016_1</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>2</number>
+	<name>LINE BREAKER</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have more control points than the opponent immediately wins the game. If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points 4" of the enemy flag.</victory>
+	<specialRules>&lt;b&gt;Kill Box&lt;/b&gt;: NO &lt;br/&gt;
+Place four flags and two objectives in accordance with the diagram below. Starting on the second player’s second turn, at the end of each player’s turn, a player earns control points (CP) as follows:
+&lt;ul&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Flag: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective)&lt;/b&gt;
+&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>sr2016_2</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>3</number>
+	<name>TAKE AND HOLD</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have more control points than the opponent immediately wins the game. If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within 4" of the enemy flag.</victory>
+	<specialRules>Place two flags in accordance with the diagram below. Starting on the second player’s second turn, at the end of each player’s turn a player earns control points (CP) as follows:
+&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Friendly Flag: Dominate = 1 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Flag: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;
+&lt;/ul&gt;
+</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>sr2016_3</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>4</number>
+	<name>THE PIT</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have more control points than the opponent immediately wins the game.
+If time runs out before a player has won the game via scenario or assassination victory, break the tie as outlined on the Scenario Reference Sheet. For the 3rd tiebreaker, double the army points within 4" of the enemey flag and within the zone.</victory>
+	<specialRules>&lt;b&gt;Kill Box: YES&lt;/b&gt;&lt;br&gt;
+		Place two flags and a zone (12" diameter circle) in accordance with the diagram below. Starting on the second player’s second turn, at the end of each player’s turn, a player earns control points (CP) as follows:
+&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Zone: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Friendly Flag: Dominate = 1 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Flag: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;
+&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>sr2016_4</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>5</number>
+	<name>EXTRACTION</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have more
+control points than the opponent immediately wins the game.
+If time runs out before a player has won the game via
+scenario or assassination victory, break the tie as outlined on
+the Scenario Reference Sheet. For the 3rd tiebreaker, double
+the army points within 4" of a flag.</victory>
+	<specialRules>&lt;b&gt;Kill Box: YES&lt;/b&gt;&lt;br&gt;
+Place two flags and two objectives in accordance with the diagram below. Starting on the second player’s second turn, at the end of each player’s turn, a player earns control points (CP) as follows:
+&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Flag: Control = 1 CP, Dominate = 1 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective)&lt;/b&gt;
+&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>sr2016_5</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>6</number>
+	<name>Incursion</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have more
+control points than the opponent immediately wins the game.
+If time runs out before a player has won the game via
+scenario or assassination victory, break the tie as outlined on
+the Scenario Reference Sheet. For the 3rd tiebreaker, double
+the army points within 4" of each flag.</victory>
+	<specialRules>&lt;b&gt;Kill Box: NO&lt;/b&gt;&lt;br/&gt;
+Place three flags in accordance with the diagram below.
+Starting on the second player’s second turn, at the end
+of each player’s turn a player earns control points (CP)
+as follows:
+&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Flag: Control = 1 CP, Dominate = 1 CP&lt;/b&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag</tacticalTips>
+	<map>sr2016_6</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>7</number>
+	<name>OUTLAST</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have
+more control points than the opponent immediately
+wins the game.
+If time runs out before a player has won the game via
+scenario or assassination victory, break the tie as outlined
+on the Scenario Reference Sheet. For the 3rd tiebreaker,
+double the army points within each zone.</victory>
+	<specialRules>&lt;b&gt;Kill Box: NO&lt;/b&gt;&lt;br/&gt;
+Mark two zones (12"-diameter circles) in accordance with
+the diagram below. Starting on the second player’s second
+turn, at the end of each player’s turn a player earns control
+points (CP) as follows:
+&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Zone: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag.</tacticalTips>
+	<map>sr2016_7</map>
+	<objective>NA</objective>
+</mission>
+<mission>
+	<packet>Standard</packet>
+	<type>2016</type>
+	<number>8</number>
+	<name>Recon</name>
+	<victory>The first player to earn at least 5 control points &lt;i&gt;and&lt;/i&gt; have
+more control points than the opponent immediately wins
+the game.
+If time runs out before a player has won the game via
+scenario or assassination victory, break the tie as outlined
+on the Scenario Reference Sheet. For the 3rd tiebreaker,
+double the army points within the zone and within 4" of
+the flags.</victory>
+	<specialRules>&lt;b&gt;Kill Box: NO&lt;/b&gt;&lt;br/&gt;
+Mark a zone (6" × 12" rectangle) and place two flags and
+two objectives in accordance with the diagram below. Starting on the second
+player’s second turn, at the end of each player’s turn a
+player earns control points (CP) as follows:
+&lt;ul&gt;&lt;li/&gt;&lt;b&gt;Zone: Control = 1 CP, Dominate = 2 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Flag: Dominate = 1 CP&lt;/b&gt;
+&lt;li/&gt;&lt;b&gt;Enemy Objective: Destroyed/Removed from Play = 1 CP (once per objective)&lt;/b&gt;&lt;/ul&gt;</specialRules>
+	<tacticalTips>Only the active player scores when multiple players dominate the same zone or flag. </tacticalTips>
+	<map>sr2016_8</map>
+	<objective>NA</objective>
+</mission>
+</missions>

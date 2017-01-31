@@ -15,8 +15,8 @@ android {
         applicationId 'com.schlaf.steam'
         minSdkVersion 7
         targetSdkVersion 22
-        versionCode 34
-        versionName '1.6.4'
+        versionCode 36
+        versionName '2.0.0RC1'
         signingConfig signingConfigs.test
     }
     buildTypes {
@@ -31,10 +31,11 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:support-v4:22.0.0'
-    compile 'com.android.support:appcompat-v7:22.0.0'
-    compile 'com.android.support:recyclerview-v7:21.0.3'
-    compile 'com.android.support:cardview-v7:22.0.0'
-    compile 'com.stripe:stripe-android:+'
 
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.android.support:cardview-v7:22.2.1'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.7.3'
+    compile 'com.android.support:design:22.2.1'
 }

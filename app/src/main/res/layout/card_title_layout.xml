@@ -10,18 +10,35 @@
 
     <LinearLayout
         style="@style/lightUI"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="2dp"
         android:paddingTop="1dp" >
 
-        <TextView
-            android:id="@+id/card_title"
-            style="@style/lightUI.title"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Commander Coleman Striker" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/card_title"
+                style="@style/lightUI.title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Commander Coleman Striker"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="2016v1"
+                android:id="@+id/card_version"
+                android:layout_gravity="right"
+                android:gravity="right"/>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/card_subtitle"

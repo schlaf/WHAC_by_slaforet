@@ -239,7 +239,7 @@ public class SearchHelper {
         private void loadCards() throws IOException {
             Log.d(TAG, "Loading cards...");
             final Resources resources = mHelperContext.getResources();
-            InputStream inputStream = resources.openRawResource(R.raw.models);
+            InputStream inputStream = resources.openRawResource(R.raw.models_json);
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
             try {

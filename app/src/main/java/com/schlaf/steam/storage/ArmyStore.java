@@ -8,7 +8,6 @@ import com.schlaf.steam.activities.selectlist.selected.BeastCommander;
 import com.schlaf.steam.activities.selectlist.selected.JackCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedArmyCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedEntry;
-import com.schlaf.steam.activities.selectlist.selected.SelectedRankingOfficer;
 import com.schlaf.steam.activities.selectlist.selected.SelectedSolo;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUA;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUnit;
@@ -18,7 +17,6 @@ import com.schlaf.steam.activities.selectlist.selected.SelectedWarjack;
 import com.schlaf.steam.data.ArmyCommander;
 import com.schlaf.steam.data.ArmyElement;
 import com.schlaf.steam.data.ArmySingleton;
-import com.schlaf.steam.data.FactionNamesEnum;
 import com.schlaf.steam.data.Solo;
 import com.schlaf.steam.data.Warbeast;
 import com.schlaf.steam.data.Warjack;
@@ -168,17 +166,7 @@ public class ArmyStore implements Serializable {
                     }
 				}
 				
-				if ( ((SelectedUnit) entry).getRankingOfficer() != null) {
-					SelectedRankingOfficer ra = ((SelectedUnit) entry).getRankingOfficer();
-					ArmyElement raDescription = ArmySingleton.getInstance().getArmyElement(ra.getId());
-					sb.append("<br>* ").append(raDescription.toString()).append("(").append(ra.getCost()).append(POINTS);;
-                    if (ra.isSpecialist()) {
-                        sb.append(SPECIALIST);
-                    }
-				}
-				
 				if ( ((SelectedUnit) entry).getSoloAttachment() != null) {
-					
 					SelectedSolo solo = ((SelectedUnit) entry).getSoloAttachment();
 					ArmyElement raDescription = ArmySingleton.getInstance().getArmyElement(solo.getId());
 					sb.append("<br>* ").append(raDescription.toString()).append("(").append(solo.getCost()).append(POINTS);;

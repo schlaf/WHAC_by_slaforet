@@ -6,8 +6,12 @@ public class MountWeapon extends Weapon implements Serializable {
 
 	/** serial */
 	private static final long serialVersionUID = -6863816110225265913L;
+
+	/** range of mount */
+	private String range;
+
 	/** pow of mount */
-	private int pow;
+	private String pow;
 
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
@@ -15,11 +19,19 @@ public class MountWeapon extends Weapon implements Serializable {
 		return sb.toString();
 	}	
 	
-	public int getPow() {
+	public String getPow() {
 		return pow;
 	}
 
-	public void setPow(int pow) {
+	public void setPow(String pow) {
 		this.pow = pow;
+	}
+
+	public String getRange() {
+		return range;
+	}
+
+	public void setRange(String range) {
+		this.range = range;
 	}
 }

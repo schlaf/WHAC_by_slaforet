@@ -14,11 +14,6 @@ public class SelectionSolo extends SelectionEntry {
 	 */
 	private boolean warcasterAttached;
 	
-	/**
-	 * must be attached to a mercenary unit (valachev, attendant priest, ...)
-	 */
-	private boolean mercenaryUnitAttached;
-	
 	/** can be attached to some unit, not specifically to one. see "restrictions" to see which unit can have the solo */
 	private boolean genericUnitAttached;
 	
@@ -41,7 +36,6 @@ public class SelectionSolo extends SelectionEntry {
 	public SelectionSolo(Solo baseUnit) {
 		super(baseUnit);
 		this.warcasterAttached = baseUnit.isWarcasterAttached();
-		this.mercenaryUnitAttached = baseUnit.isMercenaryUnitAttached();
 		this.genericUnitAttached = baseUnit.isGenericUnitAttached();
 		this.weaponAttachement = baseUnit.isWeaponAttachement();
 		
@@ -52,10 +46,10 @@ public class SelectionSolo extends SelectionEntry {
 		if (baseUnit.getModels().get(0).isJackMarshal()) {
 			jackMarshall = true;
 		}
-		if (baseUnit.getModels().get(0).isJourneyManWarcaster()) {
+		if (baseUnit.isJourneyMan()) {
 			journeyManWarcaster = true;
 		};
-		if (baseUnit.getModels().get(0).isLesserWarlock()) {
+		if (baseUnit.isLesserWarlock()) {
 			lesserWarlock = true;
 		};
 
@@ -111,17 +105,6 @@ public class SelectionSolo extends SelectionEntry {
 	public void setWarcasterAttached(boolean warcasterAttached) {
 		this.warcasterAttached = warcasterAttached;
 	}
-
-
-	public boolean isMercenaryUnitAttached() {
-		return mercenaryUnitAttached;
-	}
-
-
-	public void setMercenaryUnitAttached(boolean mercenaryUnitAttached) {
-		this.mercenaryUnitAttached = mercenaryUnitAttached;
-	}
-
 
 	public boolean isGenericUnitAttached() {
 		return genericUnitAttached;

@@ -161,7 +161,7 @@ public class Faction implements Serializable, Comparable<Faction> {
 	 */
 	private List<SelectionEntry> getAvailableObjectives() {
 		
-		Faction objs = ArmySingleton.getInstance().getFactions().get(FactionNamesEnum.OBJECTIVES_SR2015.getId());
+		Faction objs = ArmySingleton.getInstance().getFactions().get(FactionNamesEnum.OBJECTIVES_SR2016.getId());
 		
 		List<SelectionEntry> models = new ArrayList<SelectionEntry>(objs.getSolos().size());
 		for (Solo solo : objs.getSolos().values()) {

@@ -154,7 +154,7 @@ public class ViewCardFragment extends Fragment {
 	 * @param drawableResource
 	 */
 	private void addCapacityImage(LinearLayout modelTitleLayout,
-			final int drawableResource, final int textResource) {
+			final int drawableResource, final int textResource, final int descResource) {
 		ImageView imageView = new ImageView(getActivity());
 		imageView.setImageResource(drawableResource);
 		LayoutParams imageViewLayoutParams = new LayoutParams(
@@ -170,7 +170,7 @@ public class ViewCardFragment extends Fragment {
 				AlertDialog.Builder weaponDialog = new AlertDialog.Builder(getActivity());
 				weaponDialog.setIcon(drawableResource);
 				weaponDialog.setTitle(textResource);
-				weaponDialog.setMessage(textResource);
+				weaponDialog.setMessage(descResource);
 				weaponDialog.show();
 			}
 		});
@@ -185,7 +185,7 @@ public class ViewCardFragment extends Fragment {
 	 * @param drawableResource
 	 */
 	private void addWeaponImage(LinearLayout weapon1TitleLayout,
-			final int drawableResource, final int textResource) {
+			final int drawableResource, final int textResource, final int descResource) {
 		ImageView imageView = new ImageView(getActivity());
 		imageView.setImageResource(drawableResource);
 	
@@ -202,7 +202,7 @@ public class ViewCardFragment extends Fragment {
 				AlertDialog.Builder weaponDialog = new AlertDialog.Builder(getActivity());
 				weaponDialog.setIcon(drawableResource);
 				weaponDialog.setTitle(textResource);
-				weaponDialog.setMessage(textResource);
+				weaponDialog.setMessage(descResource);
 				weaponDialog.show();
 			}
 		});
@@ -232,7 +232,11 @@ public class ViewCardFragment extends Fragment {
 	
 		TextView title = (TextView) getView().findViewById(R.id.card_title);
 		title.setText(element.getFullName());
-	
+
+		TextView version = (TextView) getView().findViewById(R.id.card_version);
+		version.setText(element.getVersion());
+
+
 		TextView subtitle = (TextView) getView().findViewById(R.id.card_subtitle);
 		subtitle.setText(element.getQualification());
 		
@@ -357,9 +361,9 @@ public class ViewCardFragment extends Fragment {
 					for (Capacity capacity : model.getCapacities()) {
 						fullText.append("<B>").append(capacity.getTitle()).append("</B>");
 						if (capacity.getType() !=null && capacity.getType().trim().length() > 0) {
-							fullText.append("[").append(capacity.getType()).append("]");
+							fullText.append("[").append(capacity.getType().replace('*', '\u2605')).append("]");
 						}
-						fullText.append(" - ").append(capacity.getLabel()).append("<BR><BR>");
+						fullText.append(" - ").append(capacity.getLabel().replace("\n", "<BR>")).append("<BR><BR>");
 					}
 				}
 				if (D) Log.d(TAG, "--- handle model grid : end");
@@ -400,7 +404,7 @@ public class ViewCardFragment extends Fragment {
 		}
 		
 		if (D) Log.d(TAG, "--- handle spells : Start");
-		if (element instanceof SpellCaster &&  ! ((SpellCaster) element).getSpells().isEmpty()) {
+		if (element instanceof SpellCaster && ((SpellCaster) element).hasSpells()) {
 			View spellView = (View) getView().findViewById(R.id.spellView);
 			
 			TableLayout spellTable = (TableLayout) spellView.findViewById(R.id.spellTable);
@@ -431,14 +435,14 @@ public class ViewCardFragment extends Fragment {
                     }
 
 
-                    for (Spell spell : ((SpellCaster)model).getSpells()) {
+                    for (Spell spell : model.getSpells()) {
                         View spellLineCaracView = getLayoutInflater(null).inflate(R.layout.spell_line_carac, null, false);
                         ((TextView) spellLineCaracView.findViewById(R.id.spellTitle)).setText(spell.getTitle());
                         ((TextView) spellLineCaracView.findViewById(R.id.spellCost)).setText(spell.getCost());
                         ((TextView) spellLineCaracView.findViewById(R.id.spellRange)).setText(spell.getRange());
                         ((TextView) spellLineCaracView.findViewById(R.id.spellAOE)).setText(spell.getAoe());
                         ((TextView) spellLineCaracView.findViewById(R.id.spellPOW)).setText(spell.getPow());
-                        ((TextView) spellLineCaracView.findViewById(R.id.spellUP)).setText(spell.getUpkeep());
+                        ((TextView) spellLineCaracView.findViewById(R.id.spellUP)).setText(spell.getDuration());
                         ((TextView) spellLineCaracView.findViewById(R.id.spellOFF)).setText(spell.getOffensive());
                         spellTable.addView(spellLineCaracView);
 
@@ -519,121 +523,108 @@ public class ViewCardFragment extends Fragment {
 		ImageView imageThr = (ImageView) container.findViewById(R.id.imageViewThreshold);
 		Log.d("ViewCardFragment", "army element class = " + parent.getClass().getName());
 		boolean noFocusOrFury = true;
-		if (true) {
-			if (parent instanceof Warcaster || (element.getFocus() > 0 && element.isJourneyManWarcaster())) {
-				noFocusOrFury = false;
-				int focus = 0;
-				if (parent instanceof Warcaster) {
-					focus = ((Warcaster) parent).getFocus();
-				}
-				if (element.getFocus() > 0) {
-					focus = element.getFocus();
-				}
-				Log.d("ViewCardFragment", "warcaster : focus = " + focus);
-				switch ( focus ) {
-				case 3: 
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_3_icon)); break;
-				case 4:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_4_icon)); break;
-				case 5:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_5_icon)); break;
-				case 6:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_6_icon)); break;
-				case 7:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_7_icon)); break;
-				case 8:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_8_icon)); break;
-				case 9:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_9_icon)); break;
-				case 10:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_10_icon)); break;
+		if (element.getFocus() != null && element.getFocus().length() > 0) {
+			noFocusOrFury = false;
+			String focus = element.getFocus().trim();
+			Log.d("ViewCardFragment", "warcaster : focus = " + focus);
+			switch (focus) {
+				case "3":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_3_icon));
+					break;
+				case "4":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_4_icon));
+					break;
+				case "5":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_5_icon));
+					break;
+				case "6":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_6_icon));
+					break;
+				case "7":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_7_icon));
+					break;
+				case "8":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_8_icon));
+					break;
+				case "9":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_9_icon));
+					break;
+				case "10":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.focus_10_icon));
+					break;
 				default:
 					image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-				}
-				imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-			} else if (parent instanceof Warlock || (element.getFocus() > 0 && element.isLesserWarlock())) {
-				noFocusOrFury = false;
-				int fury = 0;
-				if (parent instanceof Warlock) {
-					fury = ((Warlock) parent).getFury();
-				}
-				if (element.getFocus() > 0) {
-					fury = element.getFocus();
-				}
-				
-				switch (fury) {
-				case 3: 
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_3_icon)); break;
-				case 4:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_4_icon)); break;
-				case 5:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_5_icon)); break;
-				case 6:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_6_icon)); break;
-				case 7:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_7_icon)); break;
-				case 8:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_8_icon)); break;
-				default:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-				}
-				imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-			} else if (parent instanceof Warbeast) {
-				noFocusOrFury = false;
-				switch ( ((Warbeast) parent).getFury()) {
-				case 2: 
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_2_icon)); break;
-				case 3: 
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_3_icon)); break;
-				case 4:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_4_icon)); break;
-				case 5:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_5_icon)); break;
-				case 6:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_6_icon)); break;
-				case 7:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_7_icon)); break;
-				case 8:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_8_icon)); break;
-				default:
-					image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-				}
-				
-				if (parent instanceof WarbeastPack) {
+			}
+		} else {
+			image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
+		}
+		if (element.getFury() != null && element.getFury().length() > 0) {
+			noFocusOrFury = false;
+			String fury = element.getFury().trim();
+
+			switch (fury) {
+				case "2":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_2_icon));
+					break;
+				case "3":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_3_icon));
+					break;
+				case "4":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_4_icon));
+					break;
+				case "5":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_5_icon));
+					break;
+				case "6":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_6_icon));
+					break;
+				case "7":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_7_icon));
+					break;
+				case "8":
+					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_8_icon));
+					break;
+				case "*":
 					image.setImageDrawable(getResources().getDrawable(R.drawable.fury_star_icon));
-				}
-				
-				switch ( ((Warbeast) parent).getThreshold()) {
-				case 3: 
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_3_icon)); break;
+				default:
+					image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
+			}
+		}
+		if (element.getThreshold() > 0) {
+			noFocusOrFury = false;
+			switch (element.getThreshold()) {
+				case 3:
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_3_icon));
+					break;
 				case 4:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_4_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_4_icon));
+					break;
 				case 5:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_5_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_5_icon));
+					break;
 				case 6:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_6_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_6_icon));
+					break;
 				case 7:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_7_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_7_icon));
+					break;
 				case 8:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_8_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_8_icon));
+					break;
 				case 9:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_9_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_9_icon));
+					break;
 				case 10:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_10_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_10_icon));
+					break;
 				case 11:
-					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_11_icon)); break;
+					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.thr_11_icon));
+					break;
 				default:
 					imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-				}
-			}else {
-				imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-				image.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-			}			
+			}
 		} else {
-			image.setImageDrawable(getResources().getDrawable(R.drawable.empty));;
-			image.setVisibility(View.GONE);
 			imageThr.setImageDrawable(getResources().getDrawable(R.drawable.empty));
-			imageThr.setVisibility(View.GONE);
 		}
 
 		
@@ -793,79 +784,84 @@ public class ViewCardFragment extends Fragment {
 		LinearLayout titleLinearLayout = (LinearLayout) baseStatsView
 				.findViewById(R.id.model_title_linear_layout);
 		titleLinearLayout.removeAllViews();
-	
-		if (element.isAbomination()) {
-			addCapacityImage(titleLinearLayout, R.drawable.abomination_icon, R.string.abomination);
+
+		if (element.isAmphibious()) {
+			addCapacityImage(titleLinearLayout, R.drawable.amphibious_icon, R.string.amphibious, R.string.desc_amphibious);
 		}
 		if (element.isAdvanceDeployment()) {
-			addCapacityImage(titleLinearLayout, R.drawable.advance_deployment_icon, R.string.advance_deployment);
+			addCapacityImage(titleLinearLayout, R.drawable.advance_deployment_icon, R.string.advance_deployment, R.string.desc_advance_deploy);
 		}
 		if (element.isArcNode()) {
-			addCapacityImage(titleLinearLayout, R.drawable.arcnode_icon, R.string.arc_node);
+			addCapacityImage(titleLinearLayout, R.drawable.arcnode_icon, R.string.arc_node, R.string.desc_arc_node);
+		}
+		if (element.isAssault()) {
+			addCapacityImage(titleLinearLayout, R.drawable.assult_icon, R.string.assault, R.string.desc_assault);
+		}
+		if (element.isCavalry()) {
+			addCapacityImage(titleLinearLayout, R.drawable.cavalry_icon, R.string.cavalry, R.string.desc_cavalry);
 		}
 		if (element.isCra()) {
-			addCapacityImage(titleLinearLayout, R.drawable.cra_icon, R.string.cra);
+			addCapacityImage(titleLinearLayout, R.drawable.cra_icon, R.string.cra,  R.string.desc_cra);
 		}
 		if (element.isCma()) {
-			addCapacityImage(titleLinearLayout, R.drawable.cma_icon, R.string.cma);
-		}
-		if (element.isCommander()) {
-			addCapacityImage(titleLinearLayout, R.drawable.commander_icon, R.string.commander);
+			addCapacityImage(titleLinearLayout, R.drawable.cma_icon, R.string.cma,  R.string.desc_cma);
 		}
 		if (element.isConstruct()) {
-			addCapacityImage(titleLinearLayout, R.drawable.construct_icon, R.string.construct);
+			addCapacityImage(titleLinearLayout, R.drawable.construct_icon, R.string.construct, R.string.desc_construct);
 		}
 		if (element.isEyelessSight()) {
-			addCapacityImage(titleLinearLayout, R.drawable.eyeless_sight, R.string.eyeless);
+			addCapacityImage(titleLinearLayout, R.drawable.eyeless_sight, R.string.eyeless, R.string.desc_eyeless);
 		}
-		if (element.isFearless()) {
-			addCapacityImage(titleLinearLayout, R.drawable.fearless_icon, R.string.fearless);
+		if (element.isFlight()) {
+			addCapacityImage(titleLinearLayout, R.drawable.flight_icon, R.string.flight, R.string.desc_flight);
 		}
 		if (element.isGunfighter()) {
-			addCapacityImage(titleLinearLayout, R.drawable.gunfighter, R.string.gunfighter);
+			addCapacityImage(titleLinearLayout, R.drawable.gunfighter, R.string.gunfighter, R.string.desc_gunfighter);
 		}
 		if (element.isIncorporeal()) {
-			addCapacityImage(titleLinearLayout, R.drawable.incorporeal_icon, R.string.incorporeal);
+			addCapacityImage(titleLinearLayout, R.drawable.incorporeal_icon, R.string.incorporeal, R.string.desc_incorporeal);
 		}
 		if (element.isJackMarshal()) {
-			addCapacityImage(titleLinearLayout, R.drawable.jack_marshal_icon, R.string.jack_marshal);
+			addCapacityImage(titleLinearLayout, R.drawable.jack_marshal_icon, R.string.jack_marshal, R.string.desc_jack_marshal);
 		}
 		if (element.isOfficer()) {
-			addCapacityImage(titleLinearLayout, R.drawable.officer_icon, R.string.officer);
+			addCapacityImage(titleLinearLayout, R.drawable.officer_icon, R.string.officer, R.string.desc_officer);
+		}
+		if (element.isParry()) {
+			addCapacityImage(titleLinearLayout, R.drawable.parry_icon, R.string.parry, R.string.desc_parry);
 		}
 		if (element.isPathfinder()) {
-			addCapacityImage(titleLinearLayout, R.drawable.pathfinder_icon, R.string.pathfinder);
+			addCapacityImage(titleLinearLayout, R.drawable.pathfinder_icon, R.string.pathfinder, R.string.desc_pathfinder);
+		}
+		if (element.isSoulless()) {
+			addCapacityImage(titleLinearLayout, R.drawable.soulless_icon, R.string.soulless, R.string.desc_soulless);
 		}
 		if (element.isStandardBearer()) {
-			addCapacityImage(titleLinearLayout, R.drawable.standard_bearer_icon, R.string.standard_bearer);
+			addCapacityImage(titleLinearLayout, R.drawable.standard_bearer_icon, R.string.standard_bearer, R.string.standard_bearer);
 		}
 		if (element.isStealth()) {
-			addCapacityImage(titleLinearLayout, R.drawable.stealth_icon, R.string.stealth);
-		}
-		if (element.isTerror()) {
-			addCapacityImage(titleLinearLayout, R.drawable.terror_icon, R.string.terror);
+			addCapacityImage(titleLinearLayout, R.drawable.stealth_icon, R.string.stealth, R.string.desc_stealth);
 		}
 		if (element.isTough()) {
-			addCapacityImage(titleLinearLayout, R.drawable.tough_icon, R.string.tough);
+			addCapacityImage(titleLinearLayout, R.drawable.tough_icon, R.string.tough, R.string.desc_tough);
 		}
 		if (element.isUndead()) {
-			addCapacityImage(titleLinearLayout, R.drawable.undead_icon, R.string.undead);
+			addCapacityImage(titleLinearLayout, R.drawable.undead_icon, R.string.undead, R.string.desc_undead);
 		}
 		if (element.isImmunityFire()) {
-			addCapacityImage(titleLinearLayout, R.drawable.immunity_fire_icon, R.string.immunity_fire);
+			addCapacityImage(titleLinearLayout, R.drawable.immunity_fire_icon, R.string.immunity_fire, R.string.desc_immune_fire);
 		}
 		if (element.isImmunityCorrosion()) {
-			addCapacityImage(titleLinearLayout, R.drawable.immunity_corrosion_icon, R.string.immunity_corrosion);
+			addCapacityImage(titleLinearLayout, R.drawable.immunity_corrosion_icon, R.string.immunity_corrosion, R.string.desc_immune_corrosion);
 		}
 		if (element.isImmunityElectricity()) {
-			addCapacityImage(titleLinearLayout, R.drawable.immunity_electricity_icon, R.string.immunity_electricity);
+			addCapacityImage(titleLinearLayout, R.drawable.immunity_electricity_icon, R.string.immunity_electricity, R.string.desc_immune_electricity);
 		}
 		if (element.isImmunityFrost()) {
-			addCapacityImage(titleLinearLayout, R.drawable.immunity_frost_icon, R.string.immunity_frost);
+			addCapacityImage(titleLinearLayout, R.drawable.immunity_frost_icon, R.string.immunity_frost, R.string.desc_immune_cold);
 		}
-	
 		if (element.getWeapons().isEmpty()) {
-			addCapacityImage(titleLinearLayout, R.drawable.no_melee_icon, R.string.no_weapon);
+			addCapacityImage(titleLinearLayout, R.drawable.no_melee_icon, R.string.no_weapon, R.string.no_weapon);
 		}
 		
 	}
@@ -890,6 +886,8 @@ public class ViewCardFragment extends Fragment {
 		// weapon POW and P+S
 		TextView weaponTitle = (TextView) meleeWeaponView
 				.findViewById(R.id.text_weapon_name);
+		TextView weaponRng = (TextView) meleeWeaponView
+				.findViewById(R.id.carac_rng_value);
 		TextView weaponPow = (TextView) meleeWeaponView
 				.findViewById(R.id.carac_pow_value);
 		TextView weaponP_plus_s = (TextView) meleeWeaponView
@@ -903,10 +901,15 @@ public class ViewCardFragment extends Fragment {
 
 	
 		generateWeaponCapacities(weapon, weaponCapacities);
-		
-		
-		weaponPow.setText(convertCaracToString(weapon.getPow()));
-		weaponP_plus_s.setText(convertCaracToString(weapon.getP_plus_s()));
+
+		if ("*".equals(weapon.getRange())) {
+			weaponRng.setText("*");
+		} else {
+			weaponRng.setText("0.5".equals(weapon.getRange())?"½\"": weapon.getRange()+"\"");
+		}
+
+		weaponPow.setText(weapon.getPow());
+		weaponP_plus_s.setText(weapon.getP_plus_s());
 	
 		if (D) Log.d(TAG, "--- melee weapon generated");
 		return meleeWeaponView;
@@ -938,10 +941,12 @@ public class ViewCardFragment extends Fragment {
 		if (! weapon.getCapacities().isEmpty() ) {
 			for (Capacity capacity : weapon.getCapacities()) {
 				weaponCapacitiesBf.append("<B>").append(capacity.getTitle()).append("</B>");
-				if (capacity.getType() !=null) {
-					weaponCapacitiesBf.append("[").append(capacity.getType()).append("]");
+				if (capacity.getType() !=null && capacity.getType().length() > 0) {
+					weaponCapacitiesBf.append("[").append(capacity.getType().replace('*', '\u2605')).append("]");
 				}
-				weaponCapacitiesBf.append(" - ").append(capacity.getLabel()).append("<BR>");
+				String capacityFormated = capacity.getLabel().replace("\n", "<BR>");
+
+				weaponCapacitiesBf.append(" - ").append(capacityFormated).append("<BR>");
 			}
 			weaponCapacities.setText(Html.fromHtml(weaponCapacitiesBf.toString()));
 			
@@ -958,9 +963,10 @@ public class ViewCardFragment extends Fragment {
 					for (Capacity capacity : weapon.getCapacities()) {
 						weaponCapacitiesBf.append("<B>").append(capacity.getTitle()).append("</B>");
 						if (capacity.getType() !=null) {
-							weaponCapacitiesBf.append("[").append(capacity.getType()).append("]");
+							weaponCapacitiesBf.append("[").append(capacity.getType().replace('*', '\u2605')).append("]");
 						}
-						weaponCapacitiesBf.append(" - ").append(capacity.getLabel()).append("<BR>");
+						String capacityFormated = capacity.getLabel().replace("\n", "<BR>");
+						weaponCapacitiesBf.append(" - ").append(capacityFormated).append("<BR>");
 					}
 					
 					weaponDialog.setMessage(Html.fromHtml(weaponCapacitiesBf.toString()));
@@ -989,6 +995,8 @@ public class ViewCardFragment extends Fragment {
 				true);
 		TextView weaponTitle = (TextView) mountWeaponView
 				.findViewById(R.id.text_weapon_name);
+		TextView weaponRng = (TextView) mountWeaponView
+				.findViewById(R.id.carac_rng_value);
 		TextView weaponPow = (TextView) mountWeaponView
 				.findViewById(R.id.carac_pow_value);
 		TextView weaponCapacities = (TextView) mountWeaponView
@@ -997,8 +1005,9 @@ public class ViewCardFragment extends Fragment {
 		
 		generateWeaponName(weapon, weaponTitle);
 		generateWeaponCapacities(weapon, weaponCapacities);
-	
-		weaponPow.setText(convertCaracToString(weapon.getPow()));
+
+		weaponRng.setText(weapon.getRange());
+		weaponPow.setText(weapon.getPow());
 	
 		generateWeaponIcons(weapon, mountWeaponView);
 	
@@ -1035,14 +1044,10 @@ public class ViewCardFragment extends Fragment {
 	
 		generateWeaponCapacities(weapon, weaponCapacities);
 		
-		if (weapon.isSpray()) {
-			weaponRng.setText("SP" + convertCaracToString(weapon.getRange()));
-		} else {
-			weaponRng.setText(convertCaracToString(weapon.getRange()));
-		}
-		weaponRof.setText(convertCaracToString(weapon.getRof()));
-		weaponAoe.setText(convertCaracToString(weapon.getAoe()));
-		weaponPow.setText(convertCaracToString(weapon.getPow()));
+    	weaponRng.setText(weapon.getRange());
+		weaponRof.setText(weapon.getRof());
+		weaponAoe.setText(weapon.getAoe());
+		weaponPow.setText(weapon.getPow());
 	
 		generationWeaponLocationCount(weapon, rangedWeaponView);
 		
@@ -1065,51 +1070,57 @@ public class ViewCardFragment extends Fragment {
 	
 		// add weapon icons to linear layout
 		if (weapon.isMagical()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.magical_weapon_icon, R.string.magical);
+			addWeaponImage(weapon1TitleLayout, R.drawable.magical_weapon_icon, R.string.magical, R.string.desc_weapon_magical);
 		}
 		if (weapon instanceof MeleeWeapon) {
-			if (((MeleeWeapon) weapon).isReach()) {
-				addWeaponImage(weapon1TitleLayout, R.drawable.reach_icon, R.string.reach);
-			}
 			if (((MeleeWeapon) weapon).isOpenFist()) {
-				addWeaponImage(weapon1TitleLayout, R.drawable.open_fist_icon, R.string.open_fist);
+				addWeaponImage(weapon1TitleLayout, R.drawable.open_fist_icon, R.string.open_fist, R.string.desc_weapon_open_fist);
 			}
 			if (((MeleeWeapon) weapon).isChain()) {
-				addWeaponImage(weapon1TitleLayout, R.drawable.chain_weapon, R.string.chain_weapon);
+				addWeaponImage(weapon1TitleLayout, R.drawable.chain_weapon, R.string.chain_weapon, R.string.desc_weapon_chain);
 			}
 		}
 		if (weapon.isShield()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.shield_icon, R.string.shield);
+			addWeaponImage(weapon1TitleLayout, R.drawable.shield_icon, R.string.shield, R.string.desc_weapon_shield);
+		}
+		if (weapon.isBlessed()) {
+			addWeaponImage(weapon1TitleLayout, R.drawable.blessed_icon, R.string.blessed, R.string.desc_weapon_blessed);
 		}
 		if (weapon.isBuckler()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.buckler_icon, R.string.buckler);
+			addWeaponImage(weapon1TitleLayout, R.drawable.buckler_icon, R.string.buckler, R.string.desc_weapon_buckler);
 		}
 		if (weapon.isFire()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.fire_icon, R.string.fire);
+			addWeaponImage(weapon1TitleLayout, R.drawable.fire_icon, R.string.fire, R.string.desc_weapon_fire);
 		}
 		if (weapon.isContinuousFire()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.continuous_fire_icon, R.string.continuous_fire);
+			addWeaponImage(weapon1TitleLayout, R.drawable.continuous_fire_icon, R.string.continuous_fire, R.string.desc_weapon_cont_fire);
 		}
 		if (weapon.isCorrosion()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.corrosion_icon, R.string.corrosion);
+			addWeaponImage(weapon1TitleLayout, R.drawable.corrosion_icon, R.string.corrosion, R.string.desc_weapon_corrosion);
 		}
 		if (weapon.isContinuousCorrosion()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.continuous_corrosion_icon, R.string.continuous_corrosion);
+			addWeaponImage(weapon1TitleLayout, R.drawable.continuous_corrosion_icon, R.string.continuous_corrosion, R.string.desc_weapon_cont_corrosion);
+		}
+		if (weapon.isDisrupt()) {
+			addWeaponImage(weapon1TitleLayout, R.drawable.disrupt_icon, R.string.disrupt, R.string.desc_weapon_disruption);
+		}
+		if (weapon.isCriticalDisrupt()) {
+			addWeaponImage(weapon1TitleLayout, R.drawable.critical_disrupt_icon, R.string.critical_disruption, R.string.des_weapon_crit_disruption);
 		}
 		if (weapon.isWeaponMaster()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.weapon_master_icon, R.string.weapon_master);
+			addWeaponImage(weapon1TitleLayout, R.drawable.weapon_master_icon, R.string.weapon_master, R.string.desc_weapon_weapon_master);
 		}
 		if (weapon.isCriticalFire()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.critical_fire_icon, R.string.critical_fire);
+			addWeaponImage(weapon1TitleLayout, R.drawable.critical_fire_icon, R.string.critical_fire, R.string.desc_weapon_crit_fire);
 		}
 		if (weapon.isCriticalCorrosion()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.critical_corrosion_icon, R.string.critical_corrosion);
+			addWeaponImage(weapon1TitleLayout, R.drawable.critical_corrosion_icon, R.string.critical_corrosion, R.string.desc_weapon_crit_corrosion);
 		}
 		if (weapon.isFrost()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.frost, R.string.frost);
+			addWeaponImage(weapon1TitleLayout, R.drawable.frost, R.string.frost, R.string.desc_weapon_cold);
 		}
 		if (weapon.isElectricity()) {
-			addWeaponImage(weapon1TitleLayout, R.drawable.electricity_icon, R.string.electricity);
+			addWeaponImage(weapon1TitleLayout, R.drawable.electricity_icon, R.string.electricity, R.string.desc_weapon_electricity);
 		}
 	}
 
@@ -1143,7 +1154,7 @@ public class ViewCardFragment extends Fragment {
 		((TextView) spellLineCaracView.findViewById(R.id.spellRange)).setText(spell.getRange());
 		((TextView) spellLineCaracView.findViewById(R.id.spellAOE)).setText(spell.getAoe());
 		((TextView) spellLineCaracView.findViewById(R.id.spellPOW)).setText(spell.getPow());
-		((TextView) spellLineCaracView.findViewById(R.id.spellUP)).setText(spell.getUpkeep());
+		((TextView) spellLineCaracView.findViewById(R.id.spellUP)).setText(spell.getDuration());
 		((TextView) spellLineCaracView.findViewById(R.id.spellOFF)).setText(spell.getOffensive());
 		spellTable.addView(spellLineCaracView);
 		

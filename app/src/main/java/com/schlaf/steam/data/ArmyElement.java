@@ -35,6 +35,9 @@ public abstract class ArmyElement implements Serializable, Comparable<ArmyElemen
 	
 	/** full name */
 	private String fullName;
+
+	/** version of card */
+	private String version;
 	
 	/** subtitle : ex. PROTECTORATE HEAVY CHARACTER WARJACK */
 	private String qualification;
@@ -253,5 +256,14 @@ public abstract class ArmyElement implements Serializable, Comparable<ArmyElemen
 	public void setCompleted(boolean completed) {
 		this.completed = completed;
 	}
-	
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+
 }

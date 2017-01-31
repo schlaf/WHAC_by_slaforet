@@ -104,7 +104,7 @@ public class SelectionAdapter extends RecyclerView.Adapter<SelectionViewHolder> 
 				groupMercOrMinions = new SelectionGroup(model.getType(), FactionNamesEnum.MINIONS);
 			}
 				
-			SelectionGroup groupObjectives = new SelectionGroup(ModelTypeEnum.OBJECTIVE, FactionNamesEnum.OBJECTIVES_SR2015);
+			SelectionGroup groupObjectives = new SelectionGroup(ModelTypeEnum.OBJECTIVE, FactionNamesEnum.OBJECTIVES_SR2016);
 				
 
 			if (model.isVisible()) {

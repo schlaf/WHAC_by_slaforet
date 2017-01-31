@@ -13,7 +13,7 @@ public class Spell implements Serializable {
 	private String range;
 	private String aoe;
 	private String pow;
-	private String upkeep;
+	private String duration;
 	private String offensive;
 	
 	private String fullText;
@@ -21,7 +21,7 @@ public class Spell implements Serializable {
 	public String getStringResume() {
 		StringBuffer sb = new StringBuffer(512);
 		sb.append("[COST=").append(cost).append("|RNG=").append(range).append("|AOE=").append(aoe)
-			.append("|POW=").append(pow).append("|UP=").append(upkeep).append("|OFF=").append(offensive);
+			.append("|POW=").append(pow).append("|DUR=").append(duration).append("|OFF=").append(offensive);
 		sb.append("] ").append(fullText.replace("\n", ""));
 		return sb.toString();
 	}
@@ -58,12 +58,12 @@ public class Spell implements Serializable {
 		this.aoe = aoe;
 	}
 
-	public String getUpkeep() {
-		return upkeep;
+	public String getDuration() {
+		return duration;
 	}
 
-	public void setUpkeep(String upkeep) {
-		this.upkeep = upkeep;
+	public void setDuration(String duration) {
+		this.duration = duration;
 	}
 
 	public String getOffensive() {

@@ -60,7 +60,6 @@
     <string name="version">Version</string>
     <string name="donate">Donner</string>
     
-    <string name="empty"></string>
 
     <!-- donation -->
     <string name="small_donation">Petit don</string>
@@ -524,6 +523,34 @@
     <string name="specialists">Spécialistes</string>
     <string name="choose_specialists">Choix des spécialistes</string>
     <string name="specialists_points">Points de spécialistes = </string>
+    <string name="dur">DUR</string>
+    <string name="soulless">Soulless</string>
+    <string name="amphibious">Amphibious</string>
+    <string name="flight">Flight</string>
+    <string name="disrupt">Disruption</string>
+    <string name="critical_disruption">Critical Disruption</string>
+    <string name="blessed">Blessed</string>
+    <string name="cavalry">Cavalry</string>
+    <string name="connectivity_missing">Votre appareil n\'est pas connecté</string>
+    <string name="connectivity_missing_explanation">Cette version utilise des données issues d\'internet pour la première mise à jour. Réglez les paramètres via l\'écran \"Import Données\".</string>
+    <string name="pref_import_group">Import de données</string>
+    <string name="pref_import_always">Toujours</string>
+    <string name="pref_list_import_options">Options d\'import</string>
+    <string name="pref_list_import_summary">Default import policy is : !replace!</string>
+    <string name="data_connection_warning">Les données seront téléchargées d\'internet en fonction du réglage ci-dessus et de l\'existence d\'une connexion de données. Si aucune connexion n\'est disponible, les données en cache local seront utilisées.</string>
+    <string name="data_langage_description">Les données sont disponibles en anglais (VO) ou français (VF). Choisissez la version que vous souhaitez utiliser.</string>
+    <string name="update_data_button">Télécharger les données</string>
+    <string name="import_network_pref">En sélectionnant WIFI, les données ne seront téléchargées que si un réseau WIFI est accessible, sans consommer votre forfait de données mobile. En sélectionnant Mobile, les données seront téléchargées quel que soit le réseau</string>
+    <string name="import_network_pref_title">Choix du réseau</string>
+    <string name="import_pref_langage_title">Choix de la langue des cartes</string>
+    <string name="french">Français (VF)</string>
+    <string name="us_english">Anglais (VO)</string>
+    <string name="never">Jamais</string>
+    <string name="once_per_week">Une fois par semaine</string>
+    <string name="always">Toujours</string>
+    <string name="title_activity_import_mk3">ImportMK3Activity</string>
+    <string name="import_pref_frequency_title">Fréquence d\'import des données</string>
+    <string name="assault">Assault</string>
 
 
 </resources>

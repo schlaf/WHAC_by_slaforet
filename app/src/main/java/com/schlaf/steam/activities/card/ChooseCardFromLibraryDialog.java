@@ -94,6 +94,10 @@ public class ChooseCardFromLibraryDialog extends DialogFragment implements Chang
 		String faction = save.getString(CardLibraryActivity.LIBRARY_PREF_FACTION_KEY, FactionNamesEnum.CRYX.getId());
 		HashMap<String, Faction> factions = ArmySingleton.getInstance().getFactions();
 
+		if (factions.get(faction) == null) { // to handle last preference on SR2015 objectives, which do not exist anymore.
+			faction = FactionNamesEnum.CYGNAR.getId();
+		}
+
         if (factions.isEmpty() ) {
             // app closed, singleton empty, quit
             return;

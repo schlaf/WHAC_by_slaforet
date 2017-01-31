@@ -42,7 +42,7 @@ public class SR2014Extractor {
 	
 	int[] XML_FILES = new int[] {
 //            R.xml.sr_2014_missions,
-            R.xml.sr_2015_missions};
+            R.xml.sr_2016_missions};
 
 	/** access to local resources */
 	Resources res;

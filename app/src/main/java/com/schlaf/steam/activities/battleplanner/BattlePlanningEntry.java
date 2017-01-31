@@ -79,17 +79,17 @@ public class BattlePlanningEntry {
 			// rien
 		}
 		
-		if (entry.getReference() instanceof SpellCaster) {
-			List<Spell> spellsList = ((SpellCaster) entry.getReference()).getSpells();
-			if (spellsList != null && ! spellsList.isEmpty()) {
-				spells = new ArrayList<PlanningSpell>(spellsList.size());
-				for (Spell spell : spellsList) {
-					spells.add(new PlanningSpell(spell));
-				}
-				spellsAvailable = true;
-			}
-			
-		}
+//		if (entry.getReference() instanceof SpellCaster) {
+//			List<Spell> spellsList = ((SpellCaster) entry.getReference()).getSpells();
+//			if (spellsList != null && ! spellsList.isEmpty()) {
+//				spells = new ArrayList<PlanningSpell>(spellsList.size());
+//				for (Spell spell : spellsList) {
+//					spells.add(new PlanningSpell(spell));
+//				}
+//				spellsAvailable = true;
+//			}
+//
+//		}
 	}
 
 	public String getLabel() {

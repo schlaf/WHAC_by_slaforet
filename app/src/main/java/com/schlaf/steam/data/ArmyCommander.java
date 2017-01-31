@@ -82,4 +82,5 @@ public abstract class ArmyCommander extends ArmyElement {
 		this.generationId = generationId;
 	}
 
+
 }

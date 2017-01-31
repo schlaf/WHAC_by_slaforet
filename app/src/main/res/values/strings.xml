@@ -56,7 +56,7 @@
     <string name="my_collection">My collection</string>
     <string name="version">Version</string>
     <string name="donate">Donate</string>
-    <string name="empty"></string>
+    <string name="empty" translatable="false">_</string>
 
     <!-- donation -->
     <string name="small_donation">Small donation</string>
@@ -205,14 +205,14 @@
         <item>4</item>
     </string-array>
     <string-array name="army_size">
-        <item>15</item>
+        <item>0</item>
         <item>25</item>
-        <item>35</item>
         <item>50</item>
         <item>75</item>
         <item>100</item>
         <item>150</item>
         <item>200</item>
+        <item>300</item>
     </string-array>
     <string-array name="use_tiers">
         <item>yes</item>
@@ -297,7 +297,6 @@
     <string name="pref_list_building_group">List building settings</string>
     <string name="pref_list_building_army_size">Army default size</string>
     <string name="pref_list_building_caster_count">Default caster count</string>
-    <string name="pref_list_building_use_specialists">Use specialists</string>
     <string name="pref_list_building_army_size_summary">Default size is !replace! points</string>
     <string name="pref_list_building_caster_count_summary">Default caster(s) count is !replace!</string>
     <string name="pref_list_building_use_specialists_summary">Use specialist = !replace!</string>
@@ -451,7 +450,7 @@
     <string name="rng">RNG</string>
     <string name="aoe">AOE</string>
     <string name="pow">POW</string>
-    <string name="up">UP</string>
+    <string name="dur">DUR</string>
     <string name="off">OFF</string>
 
     <!-- display tier & contracts -->
@@ -469,6 +468,78 @@
     <string name="choose_specialists">Choose specialists</string>
     <string name="specialists">Specialists</string>
     <string name="specialists_points">Points of selected specialists = </string>
+    <string name="soulless">Soulless</string>
+    <string name="amphibious">Amphibious</string>
+    <string name="flight">Flight</string>
+    <string name="parry" translatable="false">Parry</string>
+    <string name="disrupt">Disruption</string>
+    <string name="critical_disruption">Critical Disruption</string>
+    <string name="blessed">Blessed</string>
+    <string name="cavalry">Cavalry</string>
+    <string name="desc_amphibious" translatable="false">This model treats shallow water as open terrain while advancing. While completely in shallow water, this model gains concealment and does not block line of sight.</string>
+    <string name="desc_advance_deploy" translatable="false">This model can be placed after normal deployment, up to 6" beyond the established deployment zoneeats shallow water as open terrain while advancing.</string>
+    <string name="desc_arc_node" translatable="false">This model is a channeler and can be a conduit for spells cast by its warcaster</string>
+    <string name="desc_cavalry" translatable="false">This model is a cavalry model.</string>
+    <string name="desc_flight" translatable="false">This model treats all non-impassable terrain as open terrain while advancing. It can move through obstructions and through other models if it has enough movement to move completely past them. While charging, power attack slamming, or power attack trampling, this model does not stop its movement when it contacts an obstacle, an obstruction, or another model. This model ignores intervening models when declaring its charge target.</string>
+    <string name="desc_eyeless" translatable="false">This model ignores cloud effects when determining line of sight. This model ignores concealment and Stealth and never suffers Blind.</string>
+    <string name="desc_construct" translatable="false">This model is a construct and is not a living model.</string>
+    <string name="desc_gunfighter" translatable="false">This model is a gunfighter</string>
+    <string name="desc_incorporeal" translatable="false">This model treats all non-impassable terrain as open terrain (while advancing. It can move through obstructions and through other models if it has enough movement to move completely past them. While charging, power attack slamming, or power attack trampling, this model does not stop its movement when it contacts an obstacle, an obstruction, or another model. Other models, including slammed, pushed, or thrown models, can move through this model without effect if they have enough movement to move completely past it. This model does not count as an intervening model. This model is immune to continuous effects and non-magical damage. This model cannot be moved by a push, slam, or throw. When this model makes a melee or ranged attack, before the attack roll is made it loses Incorporeal until the start of its next activation. This model cannot make free strikes while Incorporeal.</string>
+    <string name="desc_jack_marshal" translatable="false">This model is a ’jack marshal and can command warjacks</string>
+    <string name="desc_officer" translatable="false">This model is an Officer</string>
+    <string name="desc_parry" translatable="false">This model cannot be targeted by free strikes.</string>
+    <string name="desc_pathfinder" translatable="false">This model treats rough terrain as open terrain while advancing. While charging, power attack slamming, or power attack trampling, this model does not stop its movement when it contacts an obstacle.</string>
+    <string name="desc_soulless" translatable="false">This living model does not generate a soul token when it is destroyed.</string>
+    <string name="desc_stealth" translatable="false">Ranged and magic attacks targeting this model from a point of origin greater than 5" away automatically miss. This model is not an intervening model when determining line of sight from a model more than 5" away</string>
+    <string name="desc_tough" translatable="false">When this model is disabled, roll a d6. On a 5 or 6, remove 1 damage point from this model; it is no longer disabled and becomes knocked down. While knocked down this model loses Tough.</string>
+    <string name="desc_undead" translatable="false">This model is an undead model and not a living model.</string>
+    <string name="desc_cra" translatable="false">This model can participate in combined ranged attacks with other models in its unit</string>
+    <string name="desc_cma" translatable="false">This model can participate in combined melee attacks with other models in its unit</string>
+    <string name="desc_immune_cold" translatable="false">This model does not suffer cold damage</string>
+    <string name="desc_immune_corrosion" translatable="false">This model does not suffer corrosion damage and is immune to the Corrosion continuous effect</string>
+    <string name="desc_immune_fire" translatable="false">This model does not suffer fire damage and is immune to the Fire continuous effect</string>
+    <string name="desc_immune_electricity" translatable="false">This model does not suffer electrical damage. Additionally, when lightning arcs as a result of a special rule, ignore models with Immunity:Electricity when determining which model the lightning arcs to.</string>
+    <string name="desc_weapon_blessed" translatable="false">Attacks with this weapon ignore bonuses from spells, including animi, that add to a model’s ARM or DEF.</string>
+    <string name="desc_weapon_buckler" translatable="false">This weapon has an integral buckler that gives the model a cumulative +1 ARM bonus; for example, a model with two of them gains a bonus of +2 ARM. A model does not gain this bonus while the weapon system with the buckler is crippled or when resolving damage that originates in its back arc.</string>
+    <string name="desc_weapon_chain" translatable="false">Attacks with this weapon ignore the Buckler and Shield weapon qualities and Shield Wall.</string>
+    <string name="desc_weapon_cont_corrosion" translatable="false">A model hit by this attack suffers the Corrosion continuous effect.</string>
+    <string name="desc_weapon_crit_corrosion" translatable="false">On a critical hit, the model hit by this attack suffers the Corrosion continuous effect.</string>
+    <string name="desc_weapon_cont_fire" translatable="false">A model hit by this attack suffers the Fire continuous effect.</string>
+    <string name="desc_weapon_crit_fire" translatable="false">On a critical hit, the model hit by this attack suffers the Fire continuous effect.</string>
+    <string name="desc_weapon_open_fist" translatable="false">This weapon is an Open Fist. A warjack or warbeast can use a weapon with an Open Fist to make some power attacks.</string>
+    <string name="desc_weapon_shield" translatable="false">This weapon is a shield that gives the model a cumulative +2  ARM bonus; for example, a model with two of them gains a bonus of +4 ARM. A model does not gain this bonus while the weapon system with the shield is crippled or when resolving damage that originates in its back arc.</string>
+    <string name="desc_weapon_weapon_master" translatable="false">When attacking with this weapon, add an additional die to its damage rolls.</string>
+    <string name="desc_weapon_cold" translatable="false">This weapon causes cold damage</string>
+    <string name="desc_weapon_fire" translatable="false">This weapon causes fire damage</string>
+    <string name="desc_weapon_corrosion" translatable="false">This weapon causes corrosion damage</string>
+    <string name="desc_weapon_electricity" translatable="false">This weapon causes electrical damage</string>
+    <string name="desc_weapon_magical" translatable="false">This weapon causes magical damage</string>
+    <string name="desc_weapon_disruption" translatable="false">A warjack hit by this attack loses its focus points and cannot gain focus or channel spells for one round</string>
+    <string name="des_weapon_crit_disruption" translatable="false">On a critical hit on a warjack, the warjack suffers Disruption. A warjack suffering Disruption loses its focus points and cannot gain focus or channel spells for one round.</string>
+    <string name="connectivity_missing">Your device is not connected</string>
+    <string name="connectivity_missing_explanation">This new version uses an online internet database to update the cards. You need to have connectivity in order to download the latest data. Check the import screen to choose the default parameters</string>
+    <string name="up">UP</string>
+
+    <string name="pref_import_group">Import Data</string>
+    <string name="pref_import_always">Always</string>
+    <string name="pref_list_import_options">Import options</string>
+    <string name="pref_list_import_summary">Default import policy is : !replace!</string>
+    <string name="pref_list_building_use_specialists">Use specialists</string>
+    <string name="title_activity_import_mk3">ImportMK3Activity</string>
+    <string name="data_connection_warning">Models data will be downloaded from internet depending on the setting above and the existence of a data connection on your device. If no connection available or download disabled, a local cache data will be used.</string>
+    <string name="data_langage_description">Data are available in US/English or in French. Choose which version you wish to use.</string>
+    <string name="update_data_button">Download data now</string>
+    <string name="import_network_pref">If checking WIFI, data will be downloaded only if WIFI is available and will not consume you data plan. If Mobile, data will be downloaded whatever the network you have</string>
+    <string name="import_network_pref_title">Network preference</string>
+    <string name="import_pref_langage_title">Choose data langage</string>
+    <string name="french">French</string>
+    <string name="us_english">US_ENGLISH</string>
+    <string name="never">Never</string>
+    <string name="once_per_week">Once per week</string>
+    <string name="always">Always</string>
+    <string name="import_pref_frequency_title">Data auto-import frequency</string>
+    <string name="assault">Assault</string>
+    <string name="desc_assault" translatable="false">A model with the Assault advantage can make one ranged attack as part of a charge during its activation. This ranged attack must occur after the model ends its movement but before it begins its Combat Action and must target the model charged. The model cannot make an assault attack if it is in melee with its charge target at the start of its Normal Movement. If the target is not in the charging model’s melee range after ending its movement, the charge fails, but the can still make the Assault ranged model with Assault attack before its activation ends.</string>
 
 
 </resources>

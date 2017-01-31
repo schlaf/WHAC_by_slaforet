@@ -13,7 +13,7 @@ public class PlanningSpell {
 	public PlanningSpell(Spell spell) {
 		label = spell.getTitle();
 		cost = spell.getCost();
-		canUpkeep = Boolean.valueOf(spell.getUpkeep());
+		canUpkeep = Boolean.valueOf(spell.getDuration());
 	}
 	
 	public String getDescription() {

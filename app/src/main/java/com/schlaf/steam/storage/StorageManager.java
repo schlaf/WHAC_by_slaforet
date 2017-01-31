@@ -2,7 +2,9 @@ package com.schlaf.steam.storage;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintStream;
@@ -43,7 +45,6 @@ import com.schlaf.steam.activities.selectlist.selected.JackCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedArmyCommander;
 import com.schlaf.steam.activities.selectlist.selected.SelectedEntry;
 import com.schlaf.steam.activities.selectlist.selected.SelectedModel;
-import com.schlaf.steam.activities.selectlist.selected.SelectedRankingOfficer;
 import com.schlaf.steam.activities.selectlist.selected.SelectedSolo;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUA;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUnit;
@@ -62,12 +63,11 @@ import com.schlaf.steam.data.Warbeast;
 import com.schlaf.steam.data.WarbeastPack;
 import com.schlaf.steam.data.Warjack;
 import com.schlaf.steam.data.WarjackDamageGrid;
-import com.schlaf.steam.data.WeaponAttachment;
 
 public class StorageManager {
 	
 	private static final boolean D = false; // for debug
-	
+
 	public static final String WHAC_SUBDIR = "/Whac";
 	/** directory for army lists */
 	public static final String ARMIES_SUBDIR = "armies";
@@ -90,8 +90,11 @@ public class StorageManager {
 	public static final String IMPORT_FILES_DIR = "import";
 	public static final String ARMY_LISTS_DIR = "armylists";
 	public static final String BATTLE_RESULTS_DIR = "battleresults";
-	
-	
+
+
+	public static final String MODELS_FILENAME = "models.json";
+
+
 	private static final char[] ILLEGAL_CHARACTERS = { '/', '\n', '\r', '\t',
 		'\0', '\f', '`', '?', '*', '\\', '<', '>', '|', '\"', ':', '.', ' ', ',' };
 
@@ -105,7 +108,7 @@ public class StorageManager {
 			return created;
 			
 		} catch (Exception e) {
-			Log.e("StorageManager - createArmyListDirectory", e.getMessage());
+			Log.e(TAG ," createArmyListDirectory - " + e.getMessage());
 			e.printStackTrace();
 		} finally {
 		}
@@ -151,7 +154,7 @@ public class StorageManager {
 			Log.d(TAG,"armies = " + result.toString());
 			
 		} catch (Exception e) {
-			Log.e("StorageManager - getArmyLists", e.toString());
+			Log.e(TAG, "getArmyLists -" +  e.toString());
 			e.printStackTrace();
 		} finally {
 		}
@@ -302,7 +305,7 @@ public class StorageManager {
 			}
 			Log.d(TAG,"battles = " + result.toString());
 		} catch (Exception e) {
-			Log.e("StorageManager - getArmyLists", e.toString());
+			Log.e(TAG, "getArmyLists - " + e.toString());
 			e.printStackTrace();
 		} finally {
 		}
@@ -821,16 +824,6 @@ public class StorageManager {
 					bEntry = new MultiPVUnit((SelectedUnit) entry, unit, entryCounter++, entry.getCost(), entry.isSpecialist());
 					entries.add(bEntry);
 					
-					if ( ((SelectedUnit) entry).getRankingOfficer() != null) {
-						SelectedRankingOfficer ra = ((SelectedUnit) entry).getRankingOfficer();
-						ArmyElement raDescription = ArmySingleton.getInstance().getArmyElement(ra.getId());
-						BattleEntry raEntry = new MultiPVUnit(ra, (ArmyElement) raDescription, entryCounter++, ra.getCost(), ra.isSpecialist());
-						raEntry.setAttached(true);
-						raEntry.setParentId(bEntry.getUniqueId());
-						//bEntry.getChilds().add(raEntry);
-						entries.add(raEntry);
-					}
-					
 					if ( ((SelectedUnit) entry).getSoloAttachment() != null) {
 						SelectedSolo solo = ((SelectedUnit) entry).getSoloAttachment();
 						ArmyElement soloDescription = ArmySingleton.getInstance().getArmyElement(solo.getId());
@@ -1094,7 +1087,53 @@ public class StorageManager {
 		return true;
 
 	}
-	
+
+	public static InputStream getDataStream(Context applicationContext, String filename) throws FileNotFoundException {
+		// File importFilesDir = Environment.getExternalStorageDirectory ();
+		File importFilesDir = applicationContext.getDir(IMPORT_FILES_DIR, Context.MODE_PRIVATE);
+		String whacExternalDirPath = importFilesDir.getPath();
+		// File importFilesDir = applicationContext.getDir(IMPORT_FILES_DIR, Context.MODE_PRIVATE);
+		File dataFile = new File(whacExternalDirPath, filename);
+		return new FileInputStream(dataFile);
+	}
+
+	public static boolean importDataFromInternet(Context applicationContext, InputStream inStream, String fileName) {
+		Log.d(TAG,"importDataFileFromInternet");
+
+		File importFilesDir = applicationContext.getDir(IMPORT_FILES_DIR, Context.MODE_PRIVATE);
+		String whacExternalDirPath = importFilesDir.getPath();
+
+//		File importFilesDir = Environment.getExternalStorageDirectory ();
+//		String whacExternalDirPath = importFilesDir.getPath() + WHAC_SUBDIR;
+
+		Log.d(TAG,"creating file : " + fileName);
+		File fileToWrite = new File(whacExternalDirPath, fileName);
+		try {
+			FileOutputStream outStream = new FileOutputStream(fileToWrite);
+			// FileInputStream inStream = new FileInputStream(content);
+			// copy the file content in bytes
+
+			byte[] buf = new byte[1024];
+			int len;
+			while ((len = inStream.read(buf)) > 0){
+				outStream.write(buf, 0, len);
+			}
+			inStream.close();
+			outStream.close();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			Log.e(TAG, "importDataFileFromInternet - " + e.getMessage());
+			return false;
+		} finally {
+		}
+
+		return true;
+
+	}
+
+
+
 	public static boolean importDataFileFromFile(Context applicationContext, String fileName, File content) {
 		Log.d(TAG,"importDataFileFromInternet");
 		File importFilesDir = applicationContext.getDir(IMPORT_FILES_DIR, Context.MODE_PRIVATE);

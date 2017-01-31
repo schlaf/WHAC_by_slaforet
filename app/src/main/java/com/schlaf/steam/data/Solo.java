@@ -27,11 +27,6 @@ public class Solo extends ArmyElement implements SpellCaster, Serializable, Rest
 	private boolean warcasterAttached;
 	
 	/**
-	 * must be attached to a mercenary unit (valachev, attendant priest, ...)
-	 */
-	private boolean mercenaryUnitAttached;
-	
-	/**
 	 * can be attached to some unit, not specifically to one. see "restrictions" to see which unit can have the solo 
 	 */
 	private boolean genericUnitAttached;
@@ -49,6 +44,12 @@ public class Solo extends ArmyElement implements SpellCaster, Serializable, Rest
 	
 	/** cost with dismount option */
 	private int dismountCost;
+
+	/** is a journeyman warcaster */
+	private boolean journeyMan;
+
+	/** is a lesser warlock */
+	private boolean lesserWarlock;
 	
 	
 	/** if solo is an attachment, list the units it can be attached to */
@@ -58,7 +59,7 @@ public class Solo extends ArmyElement implements SpellCaster, Serializable, Rest
 	
 	@Override
 	public ModelTypeEnum getModelType() {
-		if (mercenaryUnitAttached || genericUnitAttached) {
+		if (genericUnitAttached) {
 			return ModelTypeEnum.UNIT_ATTACHMENT;
 		}
 		if (weaponAttachement) {
@@ -114,14 +115,6 @@ public class Solo extends ArmyElement implements SpellCaster, Serializable, Rest
 		this.warcasterAttached = warcasterAttached;
 	}
 
-	public boolean isMercenaryUnitAttached() {
-		return mercenaryUnitAttached;
-	}
-
-	public void setMercenaryUnitAttached(boolean mercenaryUnitAttached) {
-		this.mercenaryUnitAttached = mercenaryUnitAttached;
-	}
-
 	public boolean isGenericUnitAttached() {
 		return genericUnitAttached;
 	}
@@ -164,4 +157,26 @@ public class Solo extends ArmyElement implements SpellCaster, Serializable, Rest
     public void setSpells(ArrayList<Spell> spells) {
         throw new UnsupportedOperationException();
     }
+
+	public boolean isJourneyMan() {
+		return journeyMan;
+	}
+
+	public void setJourneyMan(boolean journeyMan) {
+		this.journeyMan = journeyMan;
+	}
+
+	public boolean isLesserWarlock() {
+		return lesserWarlock;
+	}
+
+	public void setLesserWarlock(boolean lesserWarlock) {
+		this.lesserWarlock = lesserWarlock;
+	}
+
+	@Override
+	public boolean hasSpells() {
+		return ! getSpells().isEmpty();
+	}
+
 }

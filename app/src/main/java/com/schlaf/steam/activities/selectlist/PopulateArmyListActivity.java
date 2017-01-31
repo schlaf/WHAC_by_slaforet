@@ -988,7 +988,17 @@ public class PopulateArmyListActivity extends ActionBarActivity
 			} else if (entry.getType() == ModelTypeEnum.SOLO) {
 				SelectionSolo solo = (SelectionSolo) entry;
 				if (solo.isWarcasterAttached()) {
-					if (SelectionModelSingleton.getInstance()
+
+					int candidatesCount = SelectionModelSingleton.getInstance()
+							.modelsToWhichAttach(entry).size();
+
+					if (candidatesCount == 0) {
+						directlyAdded = false;
+						Toast.makeText(
+								getApplicationContext(),
+								R.string.no_entry_to_attach,
+								Toast.LENGTH_SHORT).show();
+					} else if (SelectionModelSingleton.getInstance()
 							.modelsToWhichAttach(entry).size() > 1) {
 						directlyAdded = false;
 						askWhoToAttach(entry);
@@ -997,24 +1007,6 @@ public class PopulateArmyListActivity extends ActionBarActivity
 					} else {
 						SelectionModelSingleton.getInstance()
 								.addAttachedElementByDefault(entry);
-					}
-				} else if (solo.isMercenaryUnitAttached()) {
-					int candidatesCount = SelectionModelSingleton.getInstance()
-							.modelsToWhichAttach(entry).size();
-					if (candidatesCount > 1) {
-						directlyAdded = false;
-						askWhoToAttach(entry);
-						// return of dialog is treated in onActivityResult()
-						// method
-					} else if (candidatesCount == 1) {
-						SelectionModelSingleton.getInstance()
-								.addAttachedElementByDefault(entry);
-					} else {
-						directlyAdded = false;
-						Toast.makeText(
-								getApplicationContext(),
-								R.string.no_entry_to_attach,
-								Toast.LENGTH_SHORT).show();
 					}
 				} else if (solo.isGenericUnitAttached()) {
 					int candidatesCount = SelectionModelSingleton.getInstance()

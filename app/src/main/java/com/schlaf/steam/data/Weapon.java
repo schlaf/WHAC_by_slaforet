@@ -13,28 +13,25 @@ public abstract class Weapon implements Serializable {
 	
 	/** the number of times the model has the weapon */
 	private int count;
-	
-	private boolean magical;
-	private boolean fire;
+
+    private boolean blessed;
+    private boolean buckler;
 	private boolean frost;
 	private boolean electricity;
 	private boolean corrosion;
-	
-	private boolean criticalFire;
-	private boolean criticalFrost;
-	private boolean criticalElectricity;
-	private boolean criticalCorrosion;
-
+    private boolean criticalCorrosion;
+    private boolean continuousCorrosion;
+    private boolean disrupt;
+    private boolean criticalDisrupt;
+    private boolean fire;
+    private boolean criticalFire;
 	private boolean continuousFire;
-	private boolean continuousFrost;
-	private boolean continuousElectricity;
-	private boolean continuousCorrosion;
+    private boolean criticalFrost;
+    private boolean magical;
+    private boolean shield;
+    private boolean weaponMaster;
 	
-	private boolean weaponMaster;
 	
-	
-	private boolean shield;
-	private boolean buckler;
 
 	
 	/** for warjacks only */
@@ -90,12 +87,6 @@ public abstract class Weapon implements Serializable {
 	public void setCriticalFrost(boolean criticalFrost) {
 		this.criticalFrost = criticalFrost;
 	}
-	public boolean isCriticalElectricity() {
-		return criticalElectricity;
-	}
-	public void setCriticalElectricity(boolean criticalElectricity) {
-		this.criticalElectricity = criticalElectricity;
-	}
 	public boolean isCriticalCorrosion() {
 		return criticalCorrosion;
 	}
@@ -107,18 +98,6 @@ public abstract class Weapon implements Serializable {
 	}
 	public void setContinuousFire(boolean continuousFire) {
 		this.continuousFire = continuousFire;
-	}
-	public boolean isContinuousFrost() {
-		return continuousFrost;
-	}
-	public void setContinuousFrost(boolean continuousFrost) {
-		this.continuousFrost = continuousFrost;
-	}
-	public boolean isContinuousElectricity() {
-		return continuousElectricity;
-	}
-	public void setContinuousElectricity(boolean continuousElectricity) {
-		this.continuousElectricity = continuousElectricity;
 	}
 	public boolean isContinuousCorrosion() {
 		return continuousCorrosion;
@@ -169,5 +148,29 @@ public abstract class Weapon implements Serializable {
 	public void setBuckler(boolean buckler) {
 		this.buckler = buckler;
 	}
-	
+
+    public boolean isBlessed() {
+        return blessed;
+    }
+
+    public void setBlessed(boolean blessed) {
+        this.blessed = blessed;
+    }
+
+    public boolean isDisrupt() {
+        return disrupt;
+    }
+
+    public void setDisrupt(boolean disrupt) {
+        this.disrupt = disrupt;
+    }
+
+    public boolean isCriticalDisrupt() {
+        return criticalDisrupt;
+    }
+
+    public void setCriticalDisrupt(boolean criticalDisrupt) {
+        this.criticalDisrupt = criticalDisrupt;
+    }
+
 }

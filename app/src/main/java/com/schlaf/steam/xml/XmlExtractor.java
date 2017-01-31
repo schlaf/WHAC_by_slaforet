@@ -204,16 +204,12 @@ public class XmlExtractor {
 //            R.xml.completed_everblight, R.xml.completed_orboros, R.xml.completed_skorne, R.xml.completed_trollbloods, R.xml.completed_minions, R.xml.objectives};
 
 
-    int[] XML_FILES = new int[] {R.xml.inapp_cryx, R.xml.inapp_cygnar, R.xml.inapp_cyriss,
-			R.xml.inapp_khador, R.xml.inapp_menoth, R.xml.inapp_mercenaries, R.xml.inapp_retribution,
-            R.xml.inapp_everblight, R.xml.inapp_orboros, R.xml.inapp_skorne, R.xml.inapp_trollbloods, R.xml.inapp_minions, R.xml.objectives};
+//    int[] XML_FILES = new int[] {R.xml.inapp_cryx, R.xml.inapp_cygnar, R.xml.inapp_cyriss,
+//			R.xml.inapp_khador, R.xml.inapp_menoth, R.xml.inapp_mercenaries, R.xml.inapp_retribution,
+//            R.xml.inapp_everblight, R.xml.inapp_orboros, R.xml.inapp_skorne, R.xml.inapp_trollbloods, R.xml.inapp_minions, R.xml.objectives};
 
+	int[] XML_FILES = new int[] {R.xml.objectives};
 
-    /*
-         int[] XML_FILES = new int[] {R.xml.completed_cryx, R.xml.completed_cygnar, R.xml.completed_cyriss,
-                R.xml.completed_khador, R.xml.completed_menoth, R.xml.completed_mercenaries, R.xml.completed_retribution,
-                R.xml.completed_everblight, R.xml.completed_orboros, R.xml.completed_skorne, R.xml.completed_trollbloods, R.xml.completed_minions, R.xml.objectives};
-  */
 
 
         /** access to local resources */
@@ -231,7 +227,7 @@ public class XmlExtractor {
 
 		XmlResourceParser xppFactions = res.getXml(R.xml.factions);
 
-		extractFactions(xppFactions);
+		// extractFactions(xppFactions);
 
 		for (int resource : XML_FILES) {
 			extractArmies(resource);
@@ -1018,7 +1014,7 @@ public class XmlExtractor {
 		String unit_attachment = xpp.getAttributeValue(null, "unit_attachment");
 		String weapon_attachment = xpp.getAttributeValue(null, "weapon_attachment");
 		solo.setWarcasterAttached(Boolean.valueOf(warcaster_attachment));
-		solo.setMercenaryUnitAttached(Boolean.valueOf(mercenary_attachment));
+		// solo.setMercenaryUnitAttached(Boolean.valueOf(mercenary_attachment));
 		solo.setGenericUnitAttached(Boolean.valueOf(unit_attachment));
 		solo.setWeaponAttachement(Boolean.valueOf(weapon_attachment));
 		
@@ -1428,7 +1424,7 @@ public class XmlExtractor {
 			
 			if (eventType == XmlPullParser.START_TAG && ANIMUS_TAG.equals(xpp.getName())) {
 				Spell spell = loadAnimus(xpp);
-				beast.setAnimus(spell);
+				// beast.setAnimus(spell);
                 model.getSpells().add(spell);
 			}
 			
@@ -1642,15 +1638,15 @@ public class XmlExtractor {
 				String fury = xpp.getAttributeValue(null, "fury");
 				
 
-				container.setAbomination(Boolean.valueOf(abomination));
+				//container.setAbomination(Boolean.valueOf(abomination));
 				container.setAdvanceDeployment(Boolean.valueOf(advanceDeployment));
 				container.setArcNode(Boolean.valueOf(arcNode));
 				container.setCra(Boolean.valueOf(cra));
 				container.setCma(Boolean.valueOf(cma));
-				container.setCommander(Boolean.valueOf(commander));
+				// container.setCommander(Boolean.valueOf(commander));
 				container.setConstruct(Boolean.valueOf(construct));
 				container.setEyelessSight(Boolean.valueOf(eyelessSight));
-				container.setFearless(Boolean.valueOf(fearless));
+				// container.setFearless(Boolean.valueOf(fearless));
 				container.setGunfighter(Boolean.valueOf(gunfighter));
 				container.setIncorporeal(Boolean.valueOf(incorporeal));
 				container.setJackMarshal(Boolean.valueOf(jackMarshal));
@@ -1660,7 +1656,7 @@ public class XmlExtractor {
 				container.setPathfinder(Boolean.valueOf(pathfinder));
 				container.setStandardBearer(Boolean.valueOf(standardBearer));
 				container.setStealth(Boolean.valueOf(stealth));
-				container.setTerror(Boolean.valueOf(terror));
+				// container.setTerror(Boolean.valueOf(terror));
 				container.setTough(Boolean.valueOf(tough));
 				container.setUndead(Boolean.valueOf(undead));			
 				
@@ -1669,8 +1665,8 @@ public class XmlExtractor {
 				container.setImmunityFire(Boolean.valueOf(immunityFire));
 				container.setImmunityFrost(Boolean.valueOf(immunityFrost));
 				
-				container.setFocus(extractFromString(focus));
-				container.setFury(extractFromString(fury));
+				container.setFocus(focus);
+				container.setFury(fury);
 				
 			}
 	
@@ -1803,7 +1799,7 @@ public class XmlExtractor {
 			spell.setRange(spellRange);
 			spell.setAoe(spellAOE);
 			spell.setPow(spellPOW);
-			spell.setUpkeep(spellUpkeep);
+			spell.setDuration(spellUpkeep);
 			spell.setOffensive(spellOff);
 			spell.setFullText(spellLabel);
 		}
@@ -1830,7 +1826,7 @@ public class XmlExtractor {
 			spell.setRange(spellRange);
 			spell.setAoe(spellAOE);
 			spell.setPow(spellPOW);
-			spell.setUpkeep(spellUpkeep);
+			spell.setDuration(spellUpkeep);
 			spell.setOffensive(spellOff);
 			spell.setFullText(spellLabel);
 		}
@@ -2034,11 +2030,11 @@ public class XmlExtractor {
 			
 			
 			weapon.setName(name);
-			weapon.setPow(extractFromString(pow));
-			weapon.setP_plus_s(extractFromString(p_plus_s));
+			weapon.setPow(pow);
+			weapon.setP_plus_s(p_plus_s);
 			
 			String reach = xpp.getAttributeValue(null, REACH_ATTRIBUTE);
-			weapon.setReach(Boolean.valueOf(reach));
+			// weapon.setReach(Boolean.valueOf(reach));
 
 			String chain = xpp.getAttributeValue(null, CHAIN_ATTRIBUTE);
 			weapon.setChain(Boolean.valueOf(chain));
@@ -2126,9 +2122,9 @@ public class XmlExtractor {
 			extractRangeFromString(rng, weapon);
 //			weapon.setSpray(Boolean.valueOf(spray));
 //			weapon.setRange(extractFromString(rng));
-			weapon.setRof(extractFromString(rof));
-			weapon.setAoe(extractFromString(aoe));
-			weapon.setPow(extractFromString(pow));
+//			weapon.setRof(extractFromString(rof));
+//			weapon.setAoe(extractFromString(aoe));
+//			weapon.setPow(extractFromString(pow));
 			
 			extractWeaponSpecials(xpp, weapon);
 		}
@@ -2156,7 +2152,7 @@ public class XmlExtractor {
 			String pow = xpp.getAttributeValue(null, POW_ATTRIBUTE);
 
 			weapon.setName(name);
-			weapon.setPow(extractFromString(pow));
+			weapon.setPow(pow);
 			
 			extractWeaponSpecials(xpp, weapon);
 		}
@@ -2166,18 +2162,18 @@ public class XmlExtractor {
 
 	private void extractRangeFromString(String rangeString, RangedWeapon weapon) {
 		if (rangeString == null || rangeString.length() == 0 || rangeString.trim().length() == 0) {
-			weapon.setRange(0);
+			//weapon.setRange(0);
 		} else {
 			try {
 				if (rangeString.startsWith("SP")) {
-					weapon.setSpray(true);
+					// weapon.setSpray(true);
 					String range = rangeString.substring(2);
-					weapon.setRange(Integer.valueOf(range));
+					// weapon.setRange(Integer.valueOf(range));
 				} else {
-					weapon.setRange(Integer.valueOf(rangeString));	
+					// weapon.setRange(Integer.valueOf(rangeString));
 				}
 			} catch (Exception e) {
-				weapon.setRange(0);
+				//weapon.setRange(0);
 			}
 		}
 	}

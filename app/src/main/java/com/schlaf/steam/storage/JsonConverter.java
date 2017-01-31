@@ -2,7 +2,6 @@ package com.schlaf.steam.storage;
 
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.json.compatibility.JSONArray;
@@ -32,7 +31,6 @@ import com.schlaf.steam.activities.selectlist.selected.SelectedJourneyManWarcast
 import com.schlaf.steam.activities.selectlist.selected.SelectedLesserWarlock;
 import com.schlaf.steam.activities.selectlist.selected.SelectedModel;
 import com.schlaf.steam.activities.selectlist.selected.SelectedObjective;
-import com.schlaf.steam.activities.selectlist.selected.SelectedRankingOfficer;
 import com.schlaf.steam.activities.selectlist.selected.SelectedSolo;
 import com.schlaf.steam.activities.selectlist.selected.SelectedSoloMarshal;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUA;
@@ -50,7 +48,6 @@ import com.schlaf.steam.data.AvailableModels;
 import com.schlaf.steam.data.BattleEngine;
 import com.schlaf.steam.data.Contract;
 import com.schlaf.steam.data.Faction;
-import com.schlaf.steam.data.ModelTypeEnum;
 import com.schlaf.steam.data.MultiPVUnitGrid;
 import com.schlaf.steam.data.Solo;
 import com.schlaf.steam.data.Tier;
@@ -86,8 +83,13 @@ public class JsonConverter {
 	private static final String DAMAGES = "DAMAGES";
 	private static final String PARENT_ID = "PARENT_ID";
 	private static final String BATTLE_ID = "BATTLE_ID";
+	private static final String SPD = "SPD";
+	private static final String STR = "STR";
+	private static final String MAT= "MAT";
+	private static final String RAT= "RAT";
 	private static final String ARM = "ARM";
 	private static final String DEF = "DEF";
+	private static final String CMD = "CMD";
 	private static final String NAME = "NAME";
 	private static final String ENTRIES1 = "ENTRIES1";
 	private static final String ENTRIES2 = "ENTRIES2";
@@ -106,7 +108,6 @@ public class JsonConverter {
     private static final String SOLO_DRAGOON_DISMOUNT_OPTION = "soloDragoonDismountOption";
 	private static final String SOLO_OBJECTIVE = "soloObjective";
 	private static final String SOLO_WITH_MARSHAL = "soloWithMarshal";
-	private static final String RANKING_OFFICER = "rankingOfficer";
 	private static final String CASTER_ATTACHMENT = "casterAttachment";
 	private static final String WARBEAST = "warbeast";
 	private static final String WARBEAST_PACK = "warbeastPack";
@@ -276,9 +277,6 @@ public class JsonConverter {
 				result = new SelectedUnitMarshall(id, label, false, false);
 			}
 		}
-		if (RANKING_OFFICER.equals(type)) {
-			result = new SelectedRankingOfficer(id, label);
-		}
 		if (WEAPON_ATTACHMENT.equals(type)) {
 			result = new SelectedWA(id, label);
 		}
@@ -299,10 +297,6 @@ public class JsonConverter {
 			for (int i = 0; i < attachments.length(); i++) {
 				
 				SelectedEntry attach = readEntryObject( (JSONObject) attachments.get(i));
-				
-				if (attach instanceof SelectedRankingOfficer) {
-					unit.setRankingOfficer( (SelectedRankingOfficer) attach);
-				}
 				
 				if (attach instanceof SelectedUA) {
 					unit.setUnitAttachment( (SelectedUA) attach);
@@ -430,10 +424,6 @@ public class JsonConverter {
 		
 		if (entry instanceof SelectedCasterAttachment) {
 			result.put(TYPE, CASTER_ATTACHMENT);
-		}
-
-		if (entry instanceof SelectedRankingOfficer) {
-			result.put(TYPE, RANKING_OFFICER);
 		}
 
 		if (entry instanceof SelectedObjective) {
@@ -624,13 +614,18 @@ public class JsonConverter {
 	private static JSONObject writeModelDescription(MiniModelDescription desc) {
 		JSONObject result = new JSONObject();
 		result.put(NAME, desc.getName());
+		result.put(SPD, desc.getSpd());
+		result.put(STR, desc.getStr());
+		result.put(MAT, desc.getMat());
+		result.put(RAT, desc.getRat());
+		result.put(CMD, desc.getCmd());
 		result.put(DEF, desc.getDef());
 		result.put(ARM, desc.getArm());
 		return result;
 	}
 	
 	private static MiniModelDescription readModelDescription(JSONObject desc) {
-		MiniModelDescription result = new MiniModelDescription(desc.getString(NAME), desc.getInt(DEF), desc.getInt(ARM));
+		MiniModelDescription result = new MiniModelDescription(desc.getString(NAME), desc.optInt(SPD), desc.optInt(STR), desc.optInt(MAT), desc.optInt(RAT), desc.getInt(DEF), desc.getInt(ARM), desc.optInt(CMD));
 		return result;
 	}
 
@@ -1250,10 +1245,6 @@ public class JsonConverter {
             JSONObject result = new JSONObject();
             result.put("type", "solo");
             putBasicValues(faction, entry, result);
-            if (entry.isMercenaryUnitAttached()) {
-                result.put("type", "RA");
-                ua = true;
-            }
             if (entry.isGenericUnitAttached()) {
                 result.put("type", "UA");
                 ua = true;

@@ -3,18 +3,6 @@
 	<alterFA bonus="1" entryId="KU12" onlyIfPresent="KS02" />
 	<alterFA bonus="1" entryId="KU04" onlyIfPresent="KS02" />
 	
-	<!-- Dougal MacNaile, sea dog deck gun -->
-	<alterFA bonus="1" entryId="MU14" onlyIfPresent="MS13" />
-	 
-	<!-- Horgle Ironstrike has pyre and slag trolls -->
-	<alterCost entryId="TB01" bonus="1" onlyIfAttachedTo="TS11"/>
-	<alterCost entryId="TB02" bonus="1" onlyIfAttachedTo="TS11"/>
-	
-	<!-- una and griffons -->
-	<alterCost entryId="OB13" bonus="1" onlyIfAttachedTo="OS09"/>
-	<alterCost entryId="OB16" bonus="1" onlyIfAttachedTo="OS09"/>
-	<alterCost entryId="OB19" bonus="1" onlyIfAttachedTo="OS09"/>
-	
     <alterFA bonus="1" entryId="KU12" onlyIfPresent="KS02" />
     
     <!-- cephalyx can have only ONE merc unit with a dominator, so add a negative FA to make each unit FA:0 

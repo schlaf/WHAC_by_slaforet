@@ -41,9 +41,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 	/** the unit is at min size */
 	private boolean minSize;
 	
-	/** ranking officer (for mercs units only) */
-	private SelectedRankingOfficer rankingOfficer;
-	
 	/** generic attachment, like the soulless escort */
 	private SelectedSolo soloAttachment;
 	
@@ -60,9 +57,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 	 */
 	public List<SelectedEntry> getChilds() {
 		List<SelectedEntry> result = new ArrayList<SelectedEntry>();
-		if (rankingOfficer != null) {
-			result.add(rankingOfficer);
-		}
 		if (soloAttachment != null) {
 			result.add(soloAttachment);
 		}
@@ -128,12 +122,9 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 			sb.append(selection.getMinSize());
 		}
 		sb.append(" models");
-		if (rankingOfficer != null) {
-			sb.append(" + ranking officer");
-		}
 		if (unitAttachment != null) {
 			ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
-			sb.append(" + UA");
+			sb.append(" + CA");
 		}
 		if (weaponAttachments != null && weaponAttachments.size() > 0) {
 			// ArmyElement wa = ArmySingleton.getInstance().getArmyElement(weaponAttachments.get(0).getId());
@@ -158,9 +149,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 		} else {
 			sb.append("Unit");
 		}
-		if (rankingOfficer != null) {
-			sb.append(" + ranking officer");
-		}
 		if (unitAttachment != null) {
 			sb.append(" + UA");
 		}
@@ -181,19 +169,8 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 		if (isTiersAltered()) {
 			sb.append("</font>");
 		}
-		if (rankingOfficer != null) {
-			sb.append("+RA(");
-			if (rankingOfficer.isTiersAltered()) {
-				sb.append("<font color=\"blue\">");
-			}
-			sb.append(rankingOfficer.getCost());
-			if (rankingOfficer.isTiersAltered()) {
-				sb.append("</font>");
-			}
-			sb.append(")");
-		}
 		if (unitAttachment != null) {
-			sb.append("+UA(");
+			sb.append("+CA(");
 			if (unitAttachment.isTiersAltered()) {
 				sb.append("<font color=\"blue\">");
 			}
@@ -279,10 +256,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 			modelCount = unit.getBaseNumberOfModels();
 		}
 		
-		if (rankingOfficer != null) {
-			modelCount ++;
-		}
-
 		if (unitAttachment != null) {
 			ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
 			modelCount += ua.getModels().size();
@@ -299,10 +272,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 	@Override
 	public int getTotalCost() {
 		int result = getCost();
-		if (rankingOfficer != null && ! rankingOfficer.isSpecialist()) {
-			// ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
-			result += rankingOfficer.getCost();
-		}
 		if (unitAttachment != null && ! unitAttachment.isSpecialist()) {
 			// ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
 			result += unitAttachment.getCost();
@@ -324,9 +293,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
     public void setSpecialist(boolean specialist) {
         super.setSpecialist(specialist);
         if (specialist) {
-            if (rankingOfficer != null && ! rankingOfficer.isSpecialist()) {
-                rankingOfficer.setSpecialist(true);
-            }
             if (unitAttachment != null && ! unitAttachment.isSpecialist()) {
                 unitAttachment.setSpecialist(true);
             }
@@ -344,10 +310,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
     @Override
     public int getTotalSubSpecialistCost() {
         int result = 0;
-        if (rankingOfficer != null && rankingOfficer.isSpecialist()) {
-            // ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
-            result += rankingOfficer.getCost();
-        }
         if (unitAttachment != null && unitAttachment.isSpecialist()) {
             // ArmyElement ua = ArmySingleton.getInstance().getArmyElement(unitAttachment.getId());
             result += unitAttachment.getCost();
@@ -387,14 +349,6 @@ public class SelectedUnit extends SelectedEntry implements Serializable {
 
 	public void setWeaponAttachments(List<SelectedWA> weaponAttachments) {
 		this.weaponAttachments = weaponAttachments;
-	}
-
-	public SelectedRankingOfficer getRankingOfficer() {
-		return rankingOfficer;
-	}
-
-	public void setRankingOfficer(SelectedRankingOfficer rankingOfficer) {
-		this.rankingOfficer = rankingOfficer;
 	}
 
 	public SelectedSolo getSoloAttachment() {

@@ -1271,7 +1271,7 @@ startActivity(intent);
 				boolean listAltered = false;
 				List<BattleEntry> entries = BattleSingleton.getInstance().getEntries(BattleSingleton.PLAYER1);
 				for (BattleEntry entry : entries) {
-					if (entry.getReference().getFaction() == FactionNamesEnum.OBJECTIVES) {
+					if (entry.getReference().getFaction() == FactionNamesEnum.OBJECTIVES_SR2016) {
 						entries.remove(entry);
 						listAltered = true;
 						break;

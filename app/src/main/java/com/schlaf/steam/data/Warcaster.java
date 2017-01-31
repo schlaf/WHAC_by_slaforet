@@ -68,5 +68,10 @@ public class Warcaster extends ArmyCommander implements SpellCaster, Serializabl
 		return "*" + warjackPoints;
 	}
 
-	
+	@Override
+	public boolean hasSpells() {
+		return ! getSpells().isEmpty();
+	}
+
+
 }

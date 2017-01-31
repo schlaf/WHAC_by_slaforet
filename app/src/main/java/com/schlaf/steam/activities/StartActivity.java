@@ -8,6 +8,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
@@ -31,6 +33,7 @@ import com.schlaf.steam.activities.card.ViewCardActivity;
 import com.schlaf.steam.activities.chrono.ChronoActivity;
 import com.schlaf.steam.activities.collection.MyCollectionActivity;
 import com.schlaf.steam.activities.donation.DonationActivity;
+import com.schlaf.steam.activities.importation.ImportMK3Activity;
 import com.schlaf.steam.activities.importation.ImportSelector;
 import com.schlaf.steam.activities.managelists.ManageArmyListsActivity;
 import com.schlaf.steam.activities.preferences.PreferenceActivity;
@@ -47,13 +50,13 @@ import com.schlaf.steam.storage.StorageManager;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class StartActivity extends ActionBarActivity implements ChangeFactionListener, ChooseArmyListener {
+public class StartActivity extends ActionBarActivity implements ChangeFactionListener, ChooseArmyListener, LoadActivityInterface {
 	
 	
 	private static final String TAG = "StartActivity";
 	
 	private static final String NOTIFY_NEWS = "notify_news";
-	private static final String NOTIFICATION_DONE_V164 = "v1.6.4";
+	private static final String NOTIFICATION_DONE_V200FINAL = "v2.0.0Final";
 	private static final String DONATION = "donation";
 	private static final String REMIND_COUNT = "count";
 	private static final String REMIND_COUNT_THRESHOLD = "threshold";
@@ -81,7 +84,8 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE | ActionBar.DISPLAY_USE_LOGO);
         getSupportActionBar().setIcon(R.drawable.ic_launcher);
 		getSupportActionBar().setTitle("W&H Army Creator");
-    
+
+
 		if (! ArmySingleton.getInstance().isFullyLoaded()) {
 			
 			progressBar = new ProgressDialog(this);
@@ -89,16 +93,15 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 			progressBar.setMessage(getString(R.string.loading_data));
 			progressBar.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 			progressBar.setProgress(0);
-			progressBar.setMax(5);
-			// progressBar.show();
-			
+			progressBar.setMax(8);
+
 	        initThread = new StartInitializeThread(this, (SteamPunkRosterApplication) getApplication(), progressBar);
 	        initThread.execute();
 		}
         
 		
 		final SharedPreferences notifyNews = getSharedPreferences(NOTIFY_NEWS, Context.MODE_PRIVATE);
-		if ( ! notifyNews.contains(NOTIFICATION_DONE_V164)) {
+		if ( ! notifyNews.contains(NOTIFICATION_DONE_V200FINAL)) {
 			
 			AlertDialog.Builder alert = new AlertDialog.Builder(this);
 			
@@ -114,7 +117,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 		    WebView wvChanges= (WebView) versionView.findViewById(R.id.wvChanges);
 		    
 		    try {
-	            InputStream fin = getAssets().open("version164.html");
+	            InputStream fin = getAssets().open("version200.html");
 	                byte[] buffer = new byte[fin.available()];
 	                fin.read(buffer);
 	                fin.close();
@@ -128,7 +131,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 			alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int whichButton) {
 					Editor editor = notifyNews.edit();
-					editor.putBoolean(NOTIFICATION_DONE_V164, true);
+					editor.putBoolean(NOTIFICATION_DONE_V200FINAL, true);
 					editor.commit();
 				}
 			});
@@ -169,8 +172,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 			
 		}
 
-		
-     }
+	}
 
     /**
      * {@inheritDoc}
@@ -380,7 +382,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 	
 	public void importDataFile(View v) {
 		
-	       Intent intent = new Intent(this, ImportSelector.class);
+	       Intent intent = new Intent(this, ImportMK3Activity.class);
 	        startActivity(intent);
 
 	}
@@ -479,5 +481,65 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 	}
 
 
-	
+    /**
+     * disable click on action buttons that can lead to crash if data not present...
+     */
+    public void blockButtons() {
+
+        findViewById(R.id.button_load_army).setClickable(false);
+        findViewById(R.id.button_build_army).setClickable(false);
+        findViewById(R.id.button_launch_battle).setClickable(false);
+        findViewById(R.id.button_card_library).setClickable(false);
+        findViewById(R.id.button_scenario_library).setClickable(false);
+        findViewById(R.id.button_battle_results).setClickable(false);
+        findViewById(R.id.button_collection).setClickable(false);
+
+        findViewById(R.id.button_load_army).setEnabled(false);
+        findViewById(R.id.button_build_army).setEnabled(false);
+        findViewById(R.id.button_launch_battle).setEnabled(false);
+        findViewById(R.id.button_card_library).setEnabled(false);
+        findViewById(R.id.button_scenario_library).setEnabled(false);
+        findViewById(R.id.button_battle_results).setEnabled(false);
+        findViewById(R.id.button_collection).setEnabled(false);
+
+
+
+    }
+
+
+    @Override
+    public boolean forceDownload() {
+        // this activity does not force download... use preferences
+        return false;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (ArmySingleton.getInstance().isFullyLoaded()) {
+            restaureButtons();
+        } else {
+            blockButtons();
+        }
+    }
+
+    public void restaureButtons() {
+        findViewById(R.id.button_load_army).setClickable(true);
+        findViewById(R.id.button_build_army).setClickable(true);
+        findViewById(R.id.button_launch_battle).setClickable(true);
+        findViewById(R.id.button_card_library).setClickable(true);
+        findViewById(R.id.button_scenario_library).setClickable(true);
+        findViewById(R.id.button_battle_results).setClickable(true);
+        findViewById(R.id.button_collection).setClickable(true);
+
+        findViewById(R.id.button_load_army).setEnabled(true);
+        findViewById(R.id.button_build_army).setEnabled(true);
+        findViewById(R.id.button_launch_battle).setEnabled(true);
+        findViewById(R.id.button_card_library).setEnabled(true);
+        findViewById(R.id.button_scenario_library).setEnabled(true);
+        findViewById(R.id.button_battle_results).setEnabled(true);
+        findViewById(R.id.button_collection).setEnabled(true);
+
+    }
+
 }

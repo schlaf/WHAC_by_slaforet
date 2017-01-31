@@ -14,7 +14,8 @@ public class SingleModel implements SpellCaster, Serializable {
 	private String name;
 	/** speed */
 	private int SPD;
-	/** strength */
+
+    /** strength */
 	private int STR;
 	/** melee attack */
 	private int MAT;
@@ -39,25 +40,27 @@ public class SingleModel implements SpellCaster, Serializable {
 	private List<Capacity> capacities = new ArrayList<Capacity>();
 	
 	// liste des caracs spéciales
-	boolean abomination;
 	boolean advanceDeployment;
+    boolean amphibious;
 	boolean arcNode;
+    boolean assault;
+    boolean cavalry;
 	boolean cra;
 	boolean cma;
-	boolean commander;
 	boolean construct;
 	boolean eyelessSight;
-	boolean fearless;
+    boolean flight;
 	boolean gunfighter;
 	boolean incorporeal;
 	boolean jackMarshal;
 	boolean journeyManWarcaster;
 	boolean lesserWarlock;
 	boolean officer;
+    boolean parry;
 	boolean pathfinder;
+    boolean soulless;
 	boolean standardBearer;
 	boolean stealth;
-	boolean terror;
 	boolean tough;
 	boolean undead;
 	
@@ -66,9 +69,10 @@ public class SingleModel implements SpellCaster, Serializable {
 	boolean immunityElectricity;
 	boolean immunityCorrosion;
 	
-	// for journeymen
-	int focus;
-	int fury;
+	// for casters, warlocks, warbeasts
+	String focus;
+	String fury;
+    int threshold;
 	
 	
 	public String getHTMLResume() {
@@ -144,14 +148,6 @@ public class SingleModel implements SpellCaster, Serializable {
 		this.weapons = weapons;
 	}
 
-	public boolean isAbomination() {
-		return abomination;
-	}
-
-	public void setAbomination(boolean abomination) {
-		this.abomination = abomination;
-	}
-
 	public boolean isAdvanceDeployment() {
 		return advanceDeployment;
 	}
@@ -184,14 +180,6 @@ public class SingleModel implements SpellCaster, Serializable {
 		this.cma = cma;
 	}
 
-	public boolean isCommander() {
-		return commander;
-	}
-
-	public void setCommander(boolean commander) {
-		this.commander = commander;
-	}
-
 	public boolean isConstruct() {
 		return construct;
 	}
@@ -206,14 +194,6 @@ public class SingleModel implements SpellCaster, Serializable {
 
 	public void setEyelessSight(boolean eyelessSight) {
 		this.eyelessSight = eyelessSight;
-	}
-
-	public boolean isFearless() {
-		return fearless;
-	}
-
-	public void setFearless(boolean fearless) {
-		this.fearless = fearless;
 	}
 
 	public boolean isGunfighter() {
@@ -270,14 +250,6 @@ public class SingleModel implements SpellCaster, Serializable {
 
 	public void setStealth(boolean stealth) {
 		this.stealth = stealth;
-	}
-
-	public boolean isTerror() {
-		return terror;
-	}
-
-	public void setTerror(boolean terror) {
-		this.terror = terror;
 	}
 
 	public boolean isTough() {
@@ -364,19 +336,19 @@ public class SingleModel implements SpellCaster, Serializable {
 		this.immunityCorrosion = immunityCorrosion;
 	}
 
-	public int getFocus() {
+	public String getFocus() {
 		return focus;
 	}
 
-	public void setFocus(int focus) {
+	public void setFocus(String focus) {
 		this.focus = focus;
 	}
 
-	public int getFury() {
+	public String getFury() {
 		return fury;
 	}
 
-	public void setFury(int fury) {
+	public void setFury(String fury) {
 		this.fury = fury;
 	}
 
@@ -388,5 +360,64 @@ public class SingleModel implements SpellCaster, Serializable {
         this.spells = spells;
     }
 
+    public boolean isAmphibious() {
+        return amphibious;
+    }
 
+    public void setAmphibious(boolean amphibious) {
+        this.amphibious = amphibious;
+    }
+
+    public boolean isAssault() {
+        return assault;
+    }
+
+    public void setAssault(boolean assault) {
+        this.assault = assault;
+    }
+
+    public boolean isCavalry() {
+        return cavalry;
+    }
+
+    public void setCavalry(boolean cavalry) {
+        this.cavalry = cavalry;
+    }
+
+    public boolean isFlight() {
+        return flight;
+    }
+
+    public void setFlight(boolean flight) {
+        this.flight = flight;
+    }
+
+    public boolean isParry() {
+        return parry;
+    }
+
+    public void setParry(boolean parry) {
+        this.parry = parry;
+    }
+
+    public boolean isSoulless() {
+        return soulless;
+    }
+
+    public void setSoulless(boolean soulless) {
+        this.soulless = soulless;
+    }
+
+    public int getThreshold() {
+        return threshold;
+    }
+
+    public void setThreshold(int threshold) {
+        this.threshold = threshold;
+    }
+
+	@Override
+	public boolean hasSpells() {
+		return ! getSpells().isEmpty();
+	}
 }

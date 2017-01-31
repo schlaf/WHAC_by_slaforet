@@ -26,9 +26,7 @@ public class Warbeast extends ArmyElement implements Serializable, Restrictable,
 	
 	private int fury;
 	private int threshold;
-	
-	private Spell animus;
-	
+
 	private ArrayList<String> allowedCastersToWorkFor = new ArrayList<String>();
 	
 	private ArrayList<String> tiersInWhicAllowedToAppear = new ArrayList<String>();
@@ -82,26 +80,17 @@ public class Warbeast extends ArmyElement implements Serializable, Restrictable,
 		this.threshold = threshold;
 	}
 
-	public Spell getAnimus() {
-		return animus;
-	}
-
-	public void setAnimus(Spell animus) {
-		this.animus = animus;
-	}
-
-	@Override
 	public ArrayList<Spell> getSpells() {
-		ArrayList<Spell> spells = new ArrayList<Spell>(1);
-		if (animus != null) {
-			spells.add(animus);
+		if (getModels()!=null && getModels().size() > 0) {
+			return getModels().get(0).getSpells();
 		}
-		return spells;
+		return new ArrayList<Spell>();
 	}
 
-	@Override
 	public void setSpells(ArrayList<Spell> spells) {
+		throw new UnsupportedOperationException();
 	}
+
 
 	@Override
 	public ArrayList<String> getTiersInWhichAllowedToAppear() {
@@ -113,6 +102,11 @@ public class Warbeast extends ArmyElement implements Serializable, Restrictable,
 	@Override
 	public String getCostString() {
 		return String.valueOf(baseCost);
-	}	
+	}
+
+	@Override
+	public boolean hasSpells() {
+		return ! getSpells().isEmpty();
+	}
 
 }

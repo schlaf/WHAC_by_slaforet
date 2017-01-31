@@ -25,7 +25,6 @@ import com.schlaf.steam.activities.selectlist.selected.SelectedJourneyManWarcast
 import com.schlaf.steam.activities.selectlist.selected.SelectedLesserWarlock;
 import com.schlaf.steam.activities.selectlist.selected.SelectedModel;
 import com.schlaf.steam.activities.selectlist.selected.SelectedObjective;
-import com.schlaf.steam.activities.selectlist.selected.SelectedRankingOfficer;
 import com.schlaf.steam.activities.selectlist.selected.SelectedSolo;
 import com.schlaf.steam.activities.selectlist.selected.SelectedSoloMarshal;
 import com.schlaf.steam.activities.selectlist.selected.SelectedUA;
@@ -81,7 +80,10 @@ public class SelectionModelSingleton {
 
 	private static SelectionModelSingleton instance;
 
-	
+	/** number max of weapon attachment for an unit */
+	private static final int MAX_WA_FOR_UNIT = 3;
+
+
 	private FactionNamesEnum faction;
 
 	private List<SelectionEntry> selectionEntries = new ArrayList<SelectionEntry>(
@@ -555,8 +557,6 @@ public class SelectionModelSingleton {
 			SelectedUnit unit = (SelectedUnit) group;
 			if (unit.getUnitAttachment() != null && unit.getUnitAttachment().equals(child)) {
 				unit.setUnitAttachment(null);
-			} else if (unit.getRankingOfficer() != null && unit.getRankingOfficer().equals(child)) {
-				unit.setRankingOfficer(null);
 			} else if (unit.getSoloAttachment() != null && unit.getSoloAttachment().equals(child)) {
 				unit.setSoloAttachment(null);
 			} else if (unit instanceof SelectedUnitMarshall){
@@ -653,12 +653,7 @@ public class SelectionModelSingleton {
                     addedEntry = newSolo;
                     ((SelectedArmyCommander) candidates.get(0)).setAttachment(newSolo);
 				}
-			} else if ( ((SelectionSolo) entry).isMercenaryUnitAttached() ) {
-                List<SelectedEntry> candidates = modelsToWhichAttach(entry);
-                SelectedRankingOfficer rankingOfficer = new SelectedRankingOfficer(entry.getId(), entry.getFullLabel());
-                addedEntry = rankingOfficer;
-                ((SelectedUnit) candidates.get(0)).setRankingOfficer(rankingOfficer);
-            } else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
+			} else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
                 List<SelectedEntry> candidates = modelsToWhichAttach(entry);
                 SelectedSolo genericAttachment = new SelectedSolo(entry.getId(), entry.getFullLabel());
                 addedEntry = genericAttachment;
@@ -673,12 +668,7 @@ public class SelectionModelSingleton {
 
 		if (entry.getType() == ModelTypeEnum.UNIT_ATTACHMENT) {
 			if (entry instanceof SelectionSolo) {
-				if (((SelectionSolo) entry).isMercenaryUnitAttached() ) {
-					List<SelectedEntry> candidates = modelsToWhichAttach(entry);
-					SelectedRankingOfficer rankingOfficer = new SelectedRankingOfficer(entry.getId(), entry.getFullLabel());
-					addedEntry = rankingOfficer;
-					((SelectedUnit) candidates.get(0)).setRankingOfficer(rankingOfficer);
-				} else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
+				if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
 					List<SelectedEntry> candidates = modelsToWhichAttach(entry);
 					SelectedUA genericAttachment = new SelectedUA(entry.getId(), entry.getFullLabel());
 					addedEntry = genericAttachment;
@@ -714,20 +704,11 @@ public class SelectionModelSingleton {
 			}
 			SelectionUnit unit = (SelectionUnit) getSelectionEntryById(possibleUnit.getId());
 
-			int waMaxCount = 0; 
-			if (entry instanceof SelectionSolo) {
-				// fucking soulless, don't mess with other WA!
-				waMaxCount = 1;
-			} else {
-				waMaxCount = unit.getMaxWACount();
-			}
-
-			if (((SelectedUnit) possibleUnit).getWeaponAttachments().size() < waMaxCount) {
+			if (((SelectedUnit) possibleUnit).getWeaponAttachments().size() < MAX_WA_FOR_UNIT) {
 				// can add WA only if unit is not full
 				SelectedWA wa = new SelectedWA(entry.getId(), entry.getFullLabel());
 				addedEntry = wa;
 				((SelectedUnit) possibleUnit).getWeaponAttachments().add(wa);
-
 			}
 		}
 		
@@ -773,10 +754,6 @@ public class SelectionModelSingleton {
 				SelectedCasterAttachment newSolo = new SelectedCasterAttachment(entry.getId(), entry.getFullLabel());
 				addedEntry = newSolo;
 				((SelectedArmyCommander) parent).setAttachment(newSolo);
-			} else if ( ((SelectionSolo) entry).isMercenaryUnitAttached() ) {
-				SelectedRankingOfficer rankingOfficer = new SelectedRankingOfficer(entry.getId(), entry.getFullLabel());
-				addedEntry = rankingOfficer;
-				((SelectedUnit) parent).setRankingOfficer(rankingOfficer);
 			} else if ( ((SelectionSolo) entry).isGenericUnitAttached() ) {
 				SelectedSolo genericAttachment = new SelectedSolo(entry.getId(), entry.getFullLabel());
 				addedEntry = genericAttachment;
@@ -1004,19 +981,7 @@ public class SelectionModelSingleton {
 			}
 		} else if (selection.getType() == ModelTypeEnum.UNIT_ATTACHMENT) {
 			if (selection instanceof SelectionSolo) {
-				if (((SelectionSolo) selection).isMercenaryUnitAttached()) {
-					// attach only to mercenary/minion unit
-					for (SelectedEntry entry : selectedEntries) {
-						if (entry instanceof SelectedUnit ) {
-							if ( getSelectionEntryById(entry.getId()).isMercenaryOrMinion()) {
-								if (((SelectedUnit) entry).getRankingOfficer() == null) {
-									// may attach only if unit has no attachment
-									result.add(entry);
-								}
-							}
-						}
-					}
-				}  else if (((SelectionSolo) selection).isGenericUnitAttached()) {
+				if (((SelectionSolo) selection).isGenericUnitAttached()) {
 					// attach only to faction unit, see restricted list
 					ArmyElement solo = ArmySingleton.getInstance().getArmyElement(selection.getId());
 					ArrayList<String> attachableTo = ((Restrictable) solo).getAllowedEntriesToAttach();
@@ -1058,7 +1023,7 @@ public class SelectionModelSingleton {
 						if (entry instanceof SelectedUnit ) {
 							SelectionUnit unit = (SelectionUnit) getSelectionEntryById(entry.getId());
 							SelectedUnit selected = (SelectedUnit) entry;
-							if (selected.getWeaponAttachments().size() < 1) { // if this is a generic solo / WA, this WA must be unique.
+							if (selected.getWeaponAttachments().size() < MAX_WA_FOR_UNIT) { // if this is a generic solo / WA, this WA must be unique.
 								result.add(entry);	
 							}
 						}
@@ -1271,11 +1236,6 @@ public class SelectionModelSingleton {
 					selectionUnit.addOneMinUnit();
 				} else {
 					selectionUnit.addOneMaxUnit();
-				}
-				
-				if (unit.getRankingOfficer() != null) {
-					SelectionEntry ra = getSelectionEntryById(unit.getRankingOfficer().getId());
-					ra.addOne();
 				}
 				
 				if (unit.getUnitAttachment() != null) {
@@ -2108,28 +2068,28 @@ public class SelectionModelSingleton {
 		handleObjectives();
 		
 		
-		// last of all, treats warcaster generation!
-		if (nbCasters > 1) {
-//			Log.d("computeSelection", "multiple casters - prevents selection of P and E version");
-//			Log.d("computeSelection", "already selected : " + commandersIds.toString());
-			// prevents selecting normal & epic version
-			for (String id : commandersIds) {
-				ArmyCommander commander = (ArmyCommander) ArmySingleton.getInstance().getArmyElement(id);
-				commander.getGenerationId();
-				
-				if (commander.getGenerationId() != null && commander.getGenerationId().length() > 0)
-				for (SelectionEntry model : selectionEntries) {
-					if (model.getType() == ModelTypeEnum.WARCASTER || model.getType() == ModelTypeEnum.WARLOCK) {
-						ArmyCommander maybeSameIdCommander = (ArmyCommander) ArmySingleton.getInstance().getArmyElement(model.getId());
-						if (commander.getGenerationId().equals(maybeSameIdCommander.getGenerationId()) && ! maybeSameIdCommander.getId().equals(id)) {
-							// same generation_id, different model => not allowed
-							model.setSelectable(false);
-							model.setVisible(true);
-						}
-					}
-				}
-			}
-		}
+//		// last of all, treats warcaster generation!
+//		if (nbCasters > 1) {
+////			Log.d("computeSelection", "multiple casters - prevents selection of P and E version");
+////			Log.d("computeSelection", "already selected : " + commandersIds.toString());
+//			// prevents selecting normal & epic version
+//			for (String id : commandersIds) {
+//				ArmyCommander commander = (ArmyCommander) ArmySingleton.getInstance().getArmyElement(id);
+//				commander.getGenerationId();
+//
+//				if (commander.getGenerationId() != null && commander.getGenerationId().length() > 0)
+//				for (SelectionEntry model : selectionEntries) {
+//					if (model.getType() == ModelTypeEnum.WARCASTER || model.getType() == ModelTypeEnum.WARLOCK) {
+//						ArmyCommander maybeSameIdCommander = (ArmyCommander) ArmySingleton.getInstance().getArmyElement(model.getId());
+//						if (commander.getGenerationId().equals(maybeSameIdCommander.getGenerationId()) && ! maybeSameIdCommander.getId().equals(id)) {
+//							// same generation_id, different model => not allowed
+//							model.setSelectable(false);
+//							model.setVisible(true);
+//						}
+//					}
+//				}
+//			}
+//		}
 
 	}
 	
@@ -2417,7 +2377,7 @@ public class SelectionModelSingleton {
                 groupMercOrMinions = new SelectionGroup(model.getType(), FactionNamesEnum.MINIONS);
             }
 
-            SelectionGroup groupObjectives = new SelectionGroup(ModelTypeEnum.OBJECTIVE, FactionNamesEnum.OBJECTIVES_SR2015);
+            SelectionGroup groupObjectives = new SelectionGroup(ModelTypeEnum.OBJECTIVE, FactionNamesEnum.OBJECTIVES_SR2016);
 
 
             if (model.isVisible()) {

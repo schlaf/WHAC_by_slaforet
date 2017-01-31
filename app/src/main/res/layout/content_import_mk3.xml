@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewImport">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayoutDownload"
+        android:weightSum="1"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/import_pref_frequency_title"
+            android:id="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.5"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/radioGroupDownloadPrefs">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/never"
+                android:id="@+id/radioButtonNever"
+                android:onClick="onRadioDownloadPrefsClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/once_per_week"
+                android:id="@+id/radioButtonOncePerWeek"
+                android:onClick="onRadioDownloadPrefsClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/always"
+                android:id="@+id/radioButtonAlways"
+                android:onClick="onRadioDownloadPrefsClicked"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/data_connection_warning"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/linearLayoutDownload"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutNetwork"
+        android:layout_below="@+id/textView11">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/import_network_pref_title"
+            android:id="@+id/textView13"
+            android:layout_weight="0.5"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wifi/Ethernet only"
+                android:id="@+id/radioButtonWifi"
+                android:onClick="onRadioNetworkPrefsClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:id="@+id/radioButtonMobile"
+                android:onClick="onRadioNetworkPrefsClicked"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/import_network_pref"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/linearLayoutNetwork"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:weightSum="1"
+        android:id="@+id/linearLayoutLangage"
+        android:layout_below="@+id/textView14">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/import_pref_langage_title"
+            android:id="@+id/textView10"
+            android:layout_weight="0.5"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/radioGroupChooseLangage">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/us_english"
+                android:id="@+id/radioButtonUS"
+                android:onClick="onRadioDownloadLangClicked"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/french"
+                android:id="@+id/radioButtonFR"
+                android:onClick="onRadioDownloadLangClicked"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/data_langage_description"
+        android:id="@+id/textView12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.5"
+        android:layout_below="@+id/linearLayoutLangage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_data_button"
+        android:id="@+id/buttonImport"
+        android:layout_centerHorizontal="true"
+        android:onClick="updateNow"
+        android:layout_below="@+id/textView12"/>
+
+</RelativeLayout>
+</ScrollView>
