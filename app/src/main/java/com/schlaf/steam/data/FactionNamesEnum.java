@@ -14,6 +14,7 @@ public enum FactionNamesEnum {
 	MERCENARIES("faction_mercs", R.drawable.mercs, GameSystem.WARMACHINE),
 	ORBOROS("faction_orboros", R.drawable.orboros, GameSystem.HORDES),
 	EVERBLIGHT("faction_everblight", R.drawable.everblight, GameSystem.HORDES),
+	GRYMKIN("faction_grymkin", R.drawable.grymkin, GameSystem.HORDES),
 	SKORNE("faction_skorne", R.drawable.skorne, GameSystem.HORDES ),
 	TROLLBLOOD("faction_trollblood", R.drawable.trolls, GameSystem.HORDES),
 	MINIONS("faction_minions", R.drawable.minion,GameSystem.HORDES),

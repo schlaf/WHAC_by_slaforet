@@ -56,7 +56,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 	private static final String TAG = "StartActivity";
 	
 	private static final String NOTIFY_NEWS = "notify_news";
-	private static final String NOTIFICATION_DONE_V200FINAL = "v2.0.0Final";
+	private static final String NOTIFICATION_DONE_V202 = "v2.0.2";
 	private static final String DONATION = "donation";
 	private static final String REMIND_COUNT = "count";
 	private static final String REMIND_COUNT_THRESHOLD = "threshold";
@@ -101,7 +101,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
         
 		
 		final SharedPreferences notifyNews = getSharedPreferences(NOTIFY_NEWS, Context.MODE_PRIVATE);
-		if ( ! notifyNews.contains(NOTIFICATION_DONE_V200FINAL)) {
+		if ( ! notifyNews.contains(NOTIFICATION_DONE_V202)) {
 			
 			AlertDialog.Builder alert = new AlertDialog.Builder(this);
 			
@@ -117,7 +117,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 		    WebView wvChanges= (WebView) versionView.findViewById(R.id.wvChanges);
 		    
 		    try {
-	            InputStream fin = getAssets().open("version200.html");
+	            InputStream fin = getAssets().open("version202.html");
 	                byte[] buffer = new byte[fin.available()];
 	                fin.read(buffer);
 	                fin.close();
@@ -131,7 +131,7 @@ public class StartActivity extends ActionBarActivity implements ChangeFactionLis
 			alert.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int whichButton) {
 					Editor editor = notifyNews.edit();
-					editor.putBoolean(NOTIFICATION_DONE_V200FINAL, true);
+					editor.putBoolean(NOTIFICATION_DONE_V202, true);
 					editor.commit();
 				}
 			});
